@@ -123,16 +123,16 @@ Please follow up with this phishing test request promptly.
           html: emailHtml,
         });
 
-        console.log("✅ Email sent successfully to Farbod:", emailResult);
+        console.log("✅ Email sent successfully to team@com-sec.io:", emailResult);
       } catch (emailError) {
-        console.error("❌ Failed to send email to Farbod:", emailError);
+        console.error("❌ Failed to send email to team@com-sec.io:", emailError);
         // Still return success to user, but log the email failure
       }
     } else {
       console.log(
         "⚠️  Email not configured. Set RESEND_API_KEY environment variable.",
       );
-      console.log("📧 Would have sent this email to farbod@com-sec.io:");
+      console.log("📧 Would have sent this email to team@com-sec.io:");
       console.log(emailText);
     }
     res.status(200).json({
