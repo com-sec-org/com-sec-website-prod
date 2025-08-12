@@ -402,7 +402,7 @@ export default function MeetTeamRojin() {
                   <Button
                     variant="outline"
                     asChild
-                    className="border-white text-white hover:bg-white hover:text-emerald-600"
+                    className="border-white text-white bg-transparent hover:bg-white hover:text-emerald-600"
                   >
                     <Link to="/services/penetration-testing">
                       Learn About Our Testing
