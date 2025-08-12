@@ -81,17 +81,6 @@ export default function Company() {
                   <Rocket className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-purple-900 backdrop-blur-sm transform hover:scale-105 transition-all duration-300"
-                asChild
-              >
-                <Link to="/services">
-                  Explore Our Services
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
             </div>
           </div>
         </div>
