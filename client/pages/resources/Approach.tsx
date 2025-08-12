@@ -71,7 +71,7 @@ export default function Approach() {
               </Button>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-primary to-blue-700 hover:from-blue-600 hover:to-blue-800 transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-slate-600 to-gray-700 hover:from-slate-500 hover:to-gray-600 transform hover:scale-105 transition-all duration-300"
                 asChild
               >
                 <Link to="/contact">
@@ -566,10 +566,10 @@ export default function Approach() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white/10"
+              className="border-white text-white bg-transparent hover:bg-white hover:text-emerald-600"
               asChild
             >
-              <Link to="/contact">
+              <Link to="/contact" className="text-white hover:text-emerald-600">
                 Learn About Our Methodology
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
