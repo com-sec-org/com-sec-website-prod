@@ -32,16 +32,6 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/"
-              className={`transition-colors ${
-                isActive("/")
-                  ? "text-accent font-medium"
-                  : "text-foreground hover:text-accent"
-              }`}
-            >
-              Home
-            </Link>
             {/* Services Dropdown */}
             <div className="relative group">
               <button className="flex items-center text-foreground hover:text-accent transition-colors">
@@ -247,20 +237,6 @@ export function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-white border-t max-h-[70vh] overflow-y-auto">
             <div className="flex flex-col pt-2">
-              {/* Home Link */}
-              <div className="border-b border-gray-100">
-                <Link
-                  to="/"
-                  className={`block px-4 py-3 font-medium transition-colors ${
-                    isActive("/")
-                      ? "text-accent bg-accent/10"
-                      : "text-foreground hover:text-accent hover:bg-gray-50"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Home
-                </Link>
-              </div>
               {/* Services Section */}
               <div className="border-b border-gray-100">
                 <button
