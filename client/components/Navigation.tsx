@@ -237,14 +237,6 @@ export function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-white border-t max-h-[70vh] overflow-y-auto">
             <div className="flex flex-col pt-2">
-              {/* Home Link */}
-              <Link
-                to="/"
-                className="block px-4 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors border-b border-gray-100"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
               {/* Services Section */}
               <div className="border-b border-gray-100">
                 <button
