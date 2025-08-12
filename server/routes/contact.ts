@@ -27,6 +27,8 @@ export async function submitContactForm(req: Request, res: Response) {
   const timestamp = new Date().toISOString();
 
   console.log("📧 Contact form submission received:", { email, company });
+  console.log("🔍 Debug - resend:", !!resend, "isEmailConfigured:", isEmailConfigured);
+  console.log("🔍 Debug - RESEND_CONTACT_API_KEY present:", !!process.env.RESEND_CONTACT_API_KEY);
 
   // Check if Resend is configured
   if (!resend || !isEmailConfigured) {
