@@ -61,7 +61,7 @@ export async function submitContactForm(req: Request, res: Response) {
   try {
     const emailResult = await resend.emails.send({
       from: 'Com-Sec <onboarding@resend.dev>',
-      to: ['parag@com-sec.io'],
+      to: ['team@com-sec.io'],
       subject: `💬 New Contact Form Inquiry from ${company}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
