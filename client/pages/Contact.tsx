@@ -217,12 +217,14 @@ ${formData.get("message")}
                   </div>
 
                   <Button
-                    type="submit"
+                    asChild
                     className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300"
                     size="lg"
                   >
-                    <Send className="mr-2 h-5 w-5" />
-                    Send Message to Farbod
+                    <a href="mailto:farbod@com-sec.io?subject=Contact Form Inquiry&body=Hi Farbod,%0D%0A%0D%0AI would like to discuss cybersecurity services.%0D%0A%0D%0APlease reach out to me at your earliest convenience.%0D%0A%0D%0ABest regards,">
+                      <Send className="mr-2 h-5 w-5" />
+                      Send Message to Farbod
+                    </a>
                   </Button>
                 </form>
               </CardContent>
