@@ -32,6 +32,16 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link
+              to="/"
+              className={`transition-colors ${
+                isActive("/")
+                  ? "text-accent font-medium"
+                  : "text-foreground hover:text-accent"
+              }`}
+            >
+              Home
+            </Link>
             {/* Services Dropdown */}
             <div className="relative group">
               <button className="flex items-center text-foreground hover:text-accent transition-colors">
