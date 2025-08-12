@@ -351,7 +351,7 @@ export default function MeetTeamJayush() {
                   <Button
                     variant="outline"
                     asChild
-                    className="border-white text-white hover:bg-white hover:text-purple-600"
+                    className="border-white text-white bg-transparent hover:bg-white hover:text-purple-600"
                   >
                     <Link to="/services">Our Services</Link>
                   </Button>
