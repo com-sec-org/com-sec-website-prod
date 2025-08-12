@@ -4,6 +4,7 @@ import dotenv from "dotenv"; // 👈 ADD THIS LINE
 import { handleDemo } from "./routes/demo";
 import phishingTestRoutes from "./routes/phishing-test";
 import submitPhishingTestRoutes from "./routes/submitPhishingTest";
+import { submitContactForm } from "./routes/contact";
 
 // ✅ Load environment variables from .env
 dotenv.config();
