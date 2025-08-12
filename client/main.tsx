@@ -218,6 +218,10 @@ const App = () => (
               path="/resources/blog/soc2-vs-iso27001-comparison"
               element={<Soc2VsIso27001 />}
             />
+            <Route
+              path="/resources/blog/transparency-accuracy-ai-healthcare"
+              element={<TransparencyAccuracyAiHealthcare />}
+            />
             <Route path="/about" element={<About />} />
 
             <Route path="/testimonials" element={<Testimonials />} />
