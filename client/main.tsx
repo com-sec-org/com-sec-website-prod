@@ -228,6 +228,10 @@ const App = () => (
               path="/resources/blog/cybersecurity-roundup-startups-may"
               element={<CybersecurityRoundupStartupsMay />}
             />
+            <Route
+              path="/resources/blog/security-compliance-health-companies"
+              element={<SecurityComplianceHealthCompanies />}
+            />
             <Route path="/about" element={<About />} />
 
             <Route path="/testimonials" element={<Testimonials />} />
