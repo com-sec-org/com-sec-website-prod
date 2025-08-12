@@ -76,7 +76,7 @@ export default function CloudSecurity() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 backdrop-blur-sm"
+                  className="border-white text-white bg-transparent hover:bg-white hover:text-blue-600 backdrop-blur-sm"
                 >
                   Free Security Assessment
                 </Button>
