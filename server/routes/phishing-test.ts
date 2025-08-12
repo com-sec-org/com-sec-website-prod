@@ -23,6 +23,9 @@ const initializeResend = async () => {
   }
 };
 
+// Initialize on module load
+initializeResend();
+
 // POST endpoint for phishing test form submission
 router.post("/submit-phishing-test", async (req, res) => {
   try {
