@@ -233,6 +233,10 @@ const App = () => (
               path="/resources/blog/security-compliance-health-companies"
               element={<SecurityComplianceHealthCompanies />}
             />
+            <Route
+              path="/resources/blog/safeguarding-data-sharing-tech-companies"
+              element={<SafeguardingDataSharingTechCompanies />}
+            />
             <Route path="/about" element={<About />} />
 
             <Route path="/testimonials" element={<Testimonials />} />
