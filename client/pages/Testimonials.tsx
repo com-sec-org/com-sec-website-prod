@@ -720,7 +720,7 @@ export default function Testimonials() {
         .animate-float-delayed { animation: float-delayed 8s ease-in-out infinite; }
         .animate-float-slow { animation: float-slow 10s ease-in-out infinite; }
         .animate-gradient-x { animation: gradient-x 15s ease infinite; background-size: 200% 200%; }
-        .animate-sparkle { animation: sparkle 2s ease-in-out infinite; }
+        .animate-sparkle { animation: sparkle 2s ease-in-out 1; animation-fill-mode: forwards; }
         .animate-glow { animation: glow 3s ease-in-out infinite; }
         .animate-shimmer { animation: shimmer 2s infinite; }
         .animate-fade-in { animation: fade-in 1s ease-out; }
