@@ -57,6 +57,7 @@ import Soc2VsIso27001 from "./pages/resources/blog/Soc2VsIso27001";
 import TransparencyAccuracyAiHealthcare from "./pages/resources/blog/TransparencyAccuracyAiHealthcare";
 import CybersecurityRoundupStartupsMay from "./pages/resources/blog/CybersecurityRoundupStartupsMay";
 import SecurityComplianceHealthCompanies from "./pages/resources/blog/SecurityComplianceHealthCompanies";
+import SafeguardingDataSharingTechCompanies from "./pages/resources/blog/SafeguardingDataSharingTechCompanies";
 
 import NotFound from "./pages/NotFound";
 
