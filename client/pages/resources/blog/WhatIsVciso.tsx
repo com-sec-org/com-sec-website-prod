@@ -558,10 +558,10 @@ export default function WhatIsVciso() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-purple-600"
+                className="border-white text-white bg-transparent hover:bg-white hover:text-purple-600"
                 asChild
               >
-                <Link to="/services">Learn About Our Services</Link>
+                <Link to="/services" className="text-white hover:text-purple-600">Learn About Our Services</Link>
               </Button>
             </div>
           </div>
