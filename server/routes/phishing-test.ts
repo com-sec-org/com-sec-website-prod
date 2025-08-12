@@ -7,10 +7,19 @@ let resend: any = null;
 let isEmailConfigured = false;
 
 const initializeResend = async () => {
-  if (!resend && process.env.RESEND_API_KEY) {
-    const { Resend } = await import("resend");
-    resend = new Resend(process.env.RESEND_API_KEY);
-    isEmailConfigured = true;
+  try {
+    if (!resend && process.env.RESEND_API_KEY) {
+      const { Resend } = await import("resend");
+      resend = new Resend(process.env.RESEND_API_KEY);
+      isEmailConfigured = true;
+      console.log("✅ Resend initialized successfully in phishing-test.ts");
+      console.log("🔑 API Key present:", !!process.env.RESEND_API_KEY);
+    } else {
+      console.log("⚠️  RESEND_API_KEY not found in phishing-test.ts");
+      console.log("📝 Available env vars:", Object.keys(process.env).filter(key => key.includes('RESEND')));
+    }
+  } catch (error) {
+    console.error("❌ Failed to initialize Resend in phishing-test.ts:", error);
   }
 };
 
