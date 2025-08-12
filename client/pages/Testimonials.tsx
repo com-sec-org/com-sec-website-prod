@@ -133,20 +133,10 @@ const testimonials = [
 
 function TestimonialsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  useEffect(() => {
-    if (isAutoPlaying && !isHovered) {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) =>
-          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1,
-        );
-      }, 5000);
-
-      return () => clearInterval(interval);
-    }
-  }, [isAutoPlaying, isHovered]);
+  // Removed auto-playing functionality to keep testimonials fixed
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -395,7 +385,7 @@ export default function Testimonials() {
           <div className="text-center">
             <div className="inline-flex items-center bg-white/10 rounded-full px-6 py-3 text-white/90 font-medium mb-8 backdrop-blur-sm border border-white/20">
               <Heart className="h-5 w-5 mr-2 text-red-400 animate-pulse" />
-              Loved by 200+ Companies
+              Loved by 50+ Companies
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-fade-in">
@@ -419,18 +409,14 @@ export default function Testimonials() {
               </div>
               <div className="inline-flex items-center bg-green-400/20 rounded-full px-8 py-4 text-green-300 font-medium backdrop-blur-sm border border-green-400/30 shadow-lg">
                 <Users className="h-6 w-6 mr-3 animate-pulse" />
-                200+ Happy Clients
+                50+ Happy Clients
               </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div className="text-center group">
                 <div className="text-4xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform duration-300">100%</div>
                 <div className="text-white/80">Client Satisfaction</div>
-              </div>
-              <div className="text-center group">
-                <div className="text-4xl font-bold text-green-400 mb-2 group-hover:scale-110 transition-transform duration-300">200+</div>
-                <div className="text-white/80">Projects Completed</div>
               </div>
               <div className="text-center group">
                 <div className="text-4xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
@@ -664,8 +650,8 @@ export default function Testimonials() {
               Start Your Security Journey
               <ChevronRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group">
-              <Link to="/contact">
+            <Button size="lg" variant="outline" asChild className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary font-bold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group">
+              <Link to="/contact" className="text-white hover:text-primary">
                 Schedule a Call
                 <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -675,20 +661,12 @@ export default function Testimonials() {
           {/* Trust Indicators */}
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-white/70">
             <div className="flex items-center">
-              <Shield className="h-5 w-5 mr-2" />
-              <span className="text-sm">SOC 2 Certified</span>
-            </div>
-            <div className="flex items-center">
               <Award className="h-5 w-5 mr-2" />
               <span className="text-sm">Industry Leader</span>
             </div>
             <div className="flex items-center">
               <Users className="h-5 w-5 mr-2" />
-              <span className="text-sm">200+ Clients</span>
-            </div>
-            <div className="flex items-center">
-              <Heart className="h-5 w-5 mr-2 text-red-400" />
-              <span className="text-sm">5-Star Service</span>
+              <span className="text-sm">50+ Clients</span>
             </div>
           </div>
         </div>
