@@ -223,6 +223,10 @@ const App = () => (
               path="/resources/blog/transparency-accuracy-ai-healthcare"
               element={<TransparencyAccuracyAiHealthcare />}
             />
+            <Route
+              path="/resources/blog/cybersecurity-roundup-startups-may"
+              element={<CybersecurityRoundupStartupsMay />}
+            />
             <Route path="/about" element={<About />} />
 
             <Route path="/testimonials" element={<Testimonials />} />
