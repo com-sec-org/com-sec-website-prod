@@ -191,18 +191,7 @@ export default function Careers() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-purple-900 backdrop-blur-sm transform hover:scale-105 transition-all duration-300"
-                asChild
-              >
-                <a href="mailto:jobs@com-sec.io">
-                  Contact Us
-                  <Mail className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-            </div>
+              </div>
           </div>
         </div>
       </section>
@@ -417,10 +406,10 @@ export default function Careers() {
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button
                         size="lg"
-                        className={`bg-gradient-to-r ${job.gradient} hover:opacity-90 text-white shadow-lg`}
+                        className={`bg-gradient-to-r ${job.gradient} hover:opacity-90 text-white shadow-lg transform hover:scale-105 transition-all duration-300`}
                         asChild
                       >
-                        <a href="mailto:jobs@com-sec.io">
+                        <a href={`mailto:jobs@com-sec.io?subject=Application for ${job.title}&body=Hi Com-Sec Team,%0D%0A%0D%0AI am interested in applying for the ${job.title} position.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0ABest regards,`}>
                           Send Application
                           <Mail className="ml-2 h-5 w-5" />
                         </a>
