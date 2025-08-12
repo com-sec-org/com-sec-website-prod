@@ -28,6 +28,7 @@ export function createServer() {
 
   // Phishing test routes
   app.use("/api", phishingTestRoutes);
+  app.use("/api", submitPhishingTestRoutes);
 
   return app;
 }
