@@ -55,6 +55,7 @@ import PatientConfidentialityAi from "./pages/resources/blog/PatientConfidential
 import HumanSideAiPatientSafety from "./pages/resources/blog/HumanSideAiPatientSafety";
 import Soc2VsIso27001 from "./pages/resources/blog/Soc2VsIso27001";
 import TransparencyAccuracyAiHealthcare from "./pages/resources/blog/TransparencyAccuracyAiHealthcare";
+import CybersecurityRoundupStartupsMay from "./pages/resources/blog/CybersecurityRoundupStartupsMay";
 
 import NotFound from "./pages/NotFound";
 
