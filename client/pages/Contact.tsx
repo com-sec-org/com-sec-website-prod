@@ -241,15 +241,26 @@ export default function Contact() {
                   </div>
 
                   <Button
-                    asChild
-                    className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300"
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 disabled:opacity-50"
                     size="lg"
+                    disabled={isSubmitting}
                   >
-                    <a href="mailto:farbod@com-sec.io?subject=Contact Form Inquiry&body=Hi Farbod,%0D%0A%0D%0AI would like to discuss cybersecurity services.%0D%0A%0D%0APlease reach out to me at your earliest convenience.%0D%0A%0D%0ABest regards,">
-                      <Send className="mr-2 h-5 w-5" />
-                      Send Message to Farbod
-                    </a>
+                    <Send className="mr-2 h-5 w-5" />
+                    {isSubmitting ? 'Sending...' : 'Send Message to Farbod'}
                   </Button>
+
+                  {submitStatus === 'success' && (
+                    <div className="text-green-600 text-center mt-4 p-3 bg-green-50 rounded-lg">
+                      ✅ Message sent successfully! Farbod will get back to you within 24 hours.
+                    </div>
+                  )}
+
+                  {submitStatus === 'error' && (
+                    <div className="text-red-600 text-center mt-4 p-3 bg-red-50 rounded-lg">
+                      ❌ Failed to send message. Please try again or email farbod@com-sec.io directly.
+                    </div>
+                  )}
                 </form>
               </CardContent>
             </Card>
