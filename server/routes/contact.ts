@@ -30,6 +30,12 @@ export async function submitContactForm(req: Request, res: Response) {
   console.log("🔍 Debug - resend:", !!resend, "isEmailConfigured:", isEmailConfigured);
   console.log("🔍 Debug - RESEND_CONTACT_API_KEY present:", !!process.env.RESEND_CONTACT_API_KEY);
 
+  // Re-initialize if needed
+  if ((!resend || !isEmailConfigured) && process.env.RESEND_CONTACT_API_KEY) {
+    console.log("🔄 Re-initializing Resend...");
+    initializeResend();
+  }
+
   // Check if Resend is configured
   if (!resend || !isEmailConfigured) {
     console.log("⚠️  Email not configured. Logging submission instead:");
