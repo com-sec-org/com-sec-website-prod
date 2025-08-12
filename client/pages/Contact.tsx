@@ -30,25 +30,48 @@ import {
 } from "lucide-react";
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
 
     const formData = new FormData(e.currentTarget);
-    const subject = `Contact Form: ${formData.get("service") || "General Inquiry"}`;
-    const body = `
-Name: ${formData.get("firstName")} ${formData.get("lastName")}
-Email: ${formData.get("email")}
-Phone: ${formData.get("phone") || "Not provided"}
-Company: ${formData.get("company")}
-Service Interest: ${formData.get("service") || "Not specified"}
-Budget Range: ${formData.get("budget") || "Not specified"}
+    const formJson = {
+      firstName: formData.get("firstName") as string,
+      lastName: formData.get("lastName") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      company: formData.get("company") as string,
+      service: formData.get("service") as string,
+      budget: formData.get("budget") as string,
+      message: formData.get("message") as string,
+    };
 
-Message:
-${formData.get("message")}
-    `.trim();
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formJson),
+      });
 
-    const mailtoUrl = `mailto:farbod@com-sec.io?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoUrl;
+      if (response.ok) {
+        setSubmitStatus('success');
+        // Reset form
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
