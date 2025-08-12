@@ -409,7 +409,7 @@ export default function Careers() {
                         className={`bg-gradient-to-r ${job.gradient} hover:opacity-90 text-white shadow-lg transform hover:scale-105 transition-all duration-300`}
                         asChild
                       >
-                        <a href={`mailto:jobs@com-sec.io?subject=Application for ${job.title}&body=Hi Com-Sec Team,%0D%0A%0D%0AI am interested in applying for the ${job.title} position.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0ABest regards,`}>
+                        <a href={`mailto:jobs@com-sec.io?subject=${encodeURIComponent(`Application for ${job.title}`)}&body=${encodeURIComponent(`Hi Com-Sec Team,\n\nI am interested in applying for the ${job.title} position.\n\nPlease find my resume attached.\n\nBest regards,`)}`}>
                           Send Application
                           <Mail className="ml-2 h-5 w-5" />
                         </a>
