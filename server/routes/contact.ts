@@ -7,12 +7,12 @@ let isEmailConfigured = false;
 
 const initializeResend = () => {
   try {
-    if (process.env.RESEND_API_KEY) {
-      resend = new Resend(process.env.RESEND_API_KEY);
+    if (process.env.RESEND_CONTACT_API_KEY) {
+      resend = new Resend(process.env.RESEND_CONTACT_API_KEY);
       isEmailConfigured = true;
-      console.log("✅ Contact form Resend API initialized successfully");
+      console.log("✅ Contact form Resend API initialized successfully with contact key");
     } else {
-      console.log("⚠️  RESEND_API_KEY not found in environment variables");
+      console.log("⚠️  RESEND_CONTACT_API_KEY not found in environment variables");
     }
   } catch (error) {
     console.error("❌ Failed to initialize Contact form Resend:", error);
