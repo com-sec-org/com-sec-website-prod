@@ -31,5 +31,8 @@ export function createServer() {
   app.use("/api", phishingTestRoutes);
   app.use("/api", submitPhishingTestRoutes);
 
+  // Contact form route
+  app.post("/api/contact", submitContactForm);
+
   return app;
 }
