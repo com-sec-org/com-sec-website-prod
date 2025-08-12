@@ -520,7 +520,7 @@ export default function PrepareComplianceAudit() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-green-600"
+                className="border-white text-white bg-transparent hover:bg-white hover:text-green-600"
                 asChild
               >
                 <Link to="/services">View Our Services</Link>
