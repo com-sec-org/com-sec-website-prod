@@ -42,7 +42,7 @@ export function Navigation() {
                 <div className="py-2">
                   <Link
                     to="/services/compliance-audit-readiness"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                    className="block px-4 py-2 text-sm text-primary hover:bg-accent/10 hover:text-accent transition-colors font-medium"
                   >
                     Compliance and Audit Readiness
                   </Link>
@@ -259,7 +259,7 @@ export function Navigation() {
                     <div className="flex flex-col space-y-1">
                       <Link
                         to="/services/compliance-audit-readiness"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        className="block px-3 py-2 text-sm text-primary hover:text-accent hover:bg-white rounded transition-colors font-medium"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Compliance and Audit Readiness
