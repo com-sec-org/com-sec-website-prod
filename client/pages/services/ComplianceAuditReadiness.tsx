@@ -42,19 +42,19 @@ export default function ComplianceAuditReadiness() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="inline-flex items-center bg-blue-400/20 rounded-full px-6 py-2 text-blue-300 font-medium text-sm mb-8">
+            <div className="inline-flex items-center bg-gradient-to-r from-red-100 to-green-100 rounded-full px-6 py-2 text-red-700 font-semibold text-sm mb-8 border border-red-200">
               <Award className="h-4 w-4 mr-2" />
               Compliance & Audit Excellence
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
+              <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
                 Compliance
               </span>
-              <span className="mx-2 animate-typewriter-word animation-delay-400 bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
+              <span className="mx-2 animate-typewriter-word animation-delay-400 bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
                 & Audit
               </span>
-              <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-600 bg-clip-text text-transparent animate-gradient-shift">
+              <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-red-500 via-green-400 to-green-600 bg-clip-text text-transparent animate-gradient-shift">
                 Readiness
               </span>
             </h1>
