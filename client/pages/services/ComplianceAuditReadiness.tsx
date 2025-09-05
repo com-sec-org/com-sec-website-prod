@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
@@ -98,67 +99,76 @@ export default function ComplianceAuditReadiness() {
             {[
               {
                 name: "SOC 2",
+                slug: "soc2",
                 description: "Service Organization Control 2",
                 icon: "🛡️",
                 color: "bg-blue-50 border-blue-200",
               },
               {
                 name: "HIPAA",
+                slug: "hipaa",
                 description: "Health Insurance Portability",
                 icon: "🏥",
                 color: "bg-green-50 border-green-200",
               },
               {
                 name: "ISO 27001",
+                slug: "iso27001",
                 description: "Information Security Management",
                 icon: "🌐",
                 color: "bg-purple-50 border-purple-200",
               },
               {
                 name: "PCI DSS",
+                slug: "pci-dss",
                 description: "Payment Card Industry",
                 icon: "💳",
                 color: "bg-red-50 border-red-200",
               },
               {
                 name: "GDPR",
+                slug: "gdpr",
                 description: "General Data Protection",
                 icon: "🇪🇺",
                 color: "bg-yellow-50 border-yellow-200",
               },
               {
                 name: "NIST",
+                slug: "nist",
                 description: "Cybersecurity Framework",
                 icon: "🔒",
                 color: "bg-indigo-50 border-indigo-200",
               },
               {
                 name: "HITRUST",
+                slug: "hitrust",
                 description: "Healthcare Trust Alliance",
                 icon: "⚕️",
                 color: "bg-teal-50 border-teal-200",
               },
               {
                 name: "CMMC",
+                slug: "cmmc",
                 description: "Cybersecurity Maturity Model",
                 icon: "🏛️",
                 color: "bg-orange-50 border-orange-200",
               },
-            ].map((framework, index) => (
-              <Card
-                key={index}
-                className={`text-center hover:shadow-lg transition-all duration-300 border-2 ${framework.color}`}
-              >
-                <CardContent className="pt-6">
-                  <div className="text-3xl mb-3">{framework.icon}</div>
-                  <h3 className="font-bold text-primary mb-2">
-                    {framework.name}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {framework.description}
-                  </p>
-                </CardContent>
-              </Card>
+            ].map((framework) => (
+              <Link key={framework.slug} to={`/frameworks/${framework.slug}`} className="no-underline">
+                <Card
+                  className={`text-center hover:shadow-lg transition-all duration-300 border-2 ${framework.color}`}
+                >
+                  <CardContent className="pt-6">
+                    <div className="text-3xl mb-3">{framework.icon}</div>
+                    <h3 className="font-bold text-primary mb-2">
+                      {framework.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {framework.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
