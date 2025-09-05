@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Navigation } from "@/components/Navigation";
 import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
