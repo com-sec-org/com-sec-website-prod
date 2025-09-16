@@ -1189,124 +1189,58 @@ export default function Index() {
           {/* Partner Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
             {/* A-LIGN */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:rotate-3 group shadow-lg animate-float animation-delay-100 hover:animate-bounce-slow partner-card-rainbow">
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <div className="w-6 h-6 border-2 border-blue-600 rotate-45 mr-2 animate-spin-slow group-hover:animate-wiggle"></div>
-                  <div className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors animate-shimmer-text">
-                    A-LIGN
-                  </div>
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">A-LIGN</div>
             </div>
 
             {/* Vanta */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:rotate-2 group shadow-lg animate-bounce-slow animation-delay-200 hover:animate-twinkle partner-card-glitch">
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-gray-800 group-hover:text-purple-600 transition-colors tracking-wide animate-typewriter-reveal">
-                  Vanta
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Vanta</div>
             </div>
 
             {/* DRATA */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:-rotate-2 group shadow-lg animate-float animation-delay-300 hover:animate-magical-sparkle partner-card-pulse">
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-gray-800 group-hover:text-green-600 transition-colors tracking-widest animate-gradient-shift">
-                  DRATA
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">DRATA</div>
             </div>
 
             {/* SPRINTO */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:rotate-1 group shadow-lg animate-wiggle animation-delay-400 hover:animate-counter partner-card-neon">
-              <div className="text-center">
-                <div className="flex items-center justify-center">
-                  <div className="w-8 h-8 bg-blue-600 rounded text-white font-bold flex items-center justify-center mr-2 text-sm animate-bounce-x group-hover:animate-spin-slow">
-                    S
-                  </div>
-                  <div className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors animate-shimmer-text">
-                    SPRINTO
-                  </div>
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">SPRINTO</div>
             </div>
 
             {/* Assurance Lab */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:rotate-3 group shadow-lg animate-twinkle animation-delay-500 hover:animate-float partner-card-matrix">
-              <div className="text-center">
-                <div className="text-sm sm:text-base font-bold text-gray-800 group-hover:text-teal-600 transition-colors animate-typewriter-reveal">
-                  assurance
-                </div>
-                <div className="text-xs sm:text-sm font-medium text-gray-600 animate-shimmer-text">
-                  LAB
-                </div>
-                <div className="text-xs text-gray-500 mt-1 animate-fade-in-delayed">
-                  A SEHIRUS COMPANY
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Assurance Lab</div>
             </div>
 
-            {/* Scrut Automation */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:-rotate-1 group shadow-lg">
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-1">
-                  <div className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-teal-600 transition-colors">
-                    Scrut
-                  </div>
-                </div>
-                <div className="text-xs sm:text-sm font-medium text-gray-600">
-                  Automation
-                </div>
-              </div>
+            {/* Scrut */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Scrut</div>
             </div>
 
             {/* Prescient */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:rotate-2 group shadow-lg animate-bounce-slow animation-delay-700 hover:animate-twinkle partner-card-hologram">
-              <div className="text-center">
-                <div className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-indigo-600 transition-colors tracking-wide animate-typewriter-reveal">
-                  PRESCIENT
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">PRESCIENT</div>
             </div>
 
             {/* MJD Advisors */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:-rotate-3 group shadow-lg animate-float animation-delay-800 hover:animate-magical-sparkle partner-card-electric">
-              <div className="text-center">
-                <div className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors animate-shimmer-text">
-                  MJD
-                </div>
-                <div className="text-sm font-medium text-gray-600 animate-gradient-shift">
-                  ADVISORS
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">MJD Advisors</div>
             </div>
 
             {/* Socurely */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:rotate-1 group shadow-lg animate-wiggle animation-delay-900 hover:animate-bounce-slow partner-card-quantum">
-              <div className="text-center">
-                <div className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-green-600 transition-colors animate-typewriter-reveal">
-                  Socurely
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Socurely</div>
             </div>
 
             {/* oneleet */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-110 hover:-rotate-2 group shadow-lg animate-twinkle animation-delay-1000 hover:animate-counter partner-card-digital">
-              <div className="text-center">
-                <div className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-purple-600 transition-colors lowercase font-mono animate-gradient-shift">
-                  oneleet
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">oneleet</div>
             </div>
 
             {/* Wiz */}
-            <div className="flex items-center justify-center p-4 sm:p-6 bg-white rounded-xl hover:bg-white/95 transition-all duration-300 transform hover:scale-105 group shadow-lg animate-float animation-delay-1000 hover:animate-wiggle">
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-gray-800 group-hover:text-purple-600 transition-colors animate-gradient-shift">
-                  Wiz
-                </div>
-              </div>
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Wiz</div>
             </div>
           </div>
 

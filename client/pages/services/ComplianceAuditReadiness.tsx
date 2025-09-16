@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
@@ -32,29 +32,26 @@ export default function ComplianceAuditReadiness() {
       {/* Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-to-br from-indigo-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-blue-400/10 rounded-full animate-float"></div>
-          <div className="absolute top-40 right-20 w-24 h-24 bg-white/5 rounded-full animate-bounce-slow"></div>
-          <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-indigo-400/20 rounded-full animate-ping-slow"></div>
-          <div className="absolute top-1/2 right-1/3 w-20 h-20 bg-blue-300/10 rounded-full animate-wiggle"></div>
-          <div className="absolute bottom-1/3 left-2/3 w-12 h-12 bg-indigo-400/20 rounded-full animate-twinkle"></div>
-          <div className="absolute top-1/4 left-3/4 w-8 h-8 bg-blue-400/30 rounded-full animate-magical-sparkle"></div>
+          <div className="absolute top-16 left-8 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-12 right-24 w-28 h-28 bg-emerald-400/10 rounded-full blur-xl"></div>
+          <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-red-400/10 rounded-full blur-lg"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="inline-flex items-center bg-blue-400/20 rounded-full px-6 py-2 text-blue-300 font-medium text-sm mb-8">
+            <div className="inline-flex items-center bg-gradient-to-r from-red-100 to-green-100 rounded-full px-6 py-2 text-red-700 font-semibold text-sm mb-8 border border-red-200">
               <Award className="h-4 w-4 mr-2" />
               Compliance & Audit Excellence
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
+              <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
                 Compliance
               </span>
-              <span className="mx-2 animate-typewriter-word animation-delay-400 bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
+              <span className="mx-2 animate-typewriter-word animation-delay-400 bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
                 & Audit
               </span>
-              <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-600 bg-clip-text text-transparent animate-gradient-shift">
+              <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-red-500 via-green-400 to-green-600 bg-clip-text text-transparent animate-gradient-shift">
                 Readiness
               </span>
             </h1>
@@ -68,7 +65,7 @@ export default function ComplianceAuditReadiness() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-500 hover:to-indigo-600 transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-red-500 to-emerald-600 hover:from-red-500/90 hover:to-emerald-600/90 transform hover:scale-105 transition-all duration-300"
                 asChild
               >
                 <Link to="/contact">
@@ -98,74 +95,83 @@ export default function ComplianceAuditReadiness() {
             {[
               {
                 name: "SOC 2",
+                slug: "soc2",
                 description: "Service Organization Control 2",
                 icon: "🛡️",
                 color: "bg-blue-50 border-blue-200",
               },
               {
                 name: "HIPAA",
+                slug: "hipaa",
                 description: "Health Insurance Portability",
                 icon: "🏥",
                 color: "bg-green-50 border-green-200",
               },
               {
                 name: "ISO 27001",
+                slug: "iso27001",
                 description: "Information Security Management",
                 icon: "🌐",
                 color: "bg-purple-50 border-purple-200",
               },
               {
                 name: "PCI DSS",
+                slug: "pci-dss",
                 description: "Payment Card Industry",
                 icon: "💳",
                 color: "bg-red-50 border-red-200",
               },
               {
                 name: "GDPR",
+                slug: "gdpr",
                 description: "General Data Protection",
                 icon: "🇪🇺",
                 color: "bg-yellow-50 border-yellow-200",
               },
               {
                 name: "NIST",
+                slug: "nist",
                 description: "Cybersecurity Framework",
                 icon: "🔒",
                 color: "bg-indigo-50 border-indigo-200",
               },
               {
                 name: "HITRUST",
+                slug: "hitrust",
                 description: "Healthcare Trust Alliance",
                 icon: "⚕️",
                 color: "bg-teal-50 border-teal-200",
               },
               {
                 name: "CMMC",
+                slug: "cmmc",
                 description: "Cybersecurity Maturity Model",
                 icon: "🏛️",
                 color: "bg-orange-50 border-orange-200",
               },
-            ].map((framework, index) => (
-              <Card
-                key={index}
-                className={`text-center hover:shadow-lg transition-all duration-300 border-2 ${framework.color}`}
-              >
-                <CardContent className="pt-6">
-                  <div className="text-3xl mb-3">{framework.icon}</div>
-                  <h3 className="font-bold text-primary mb-2">
-                    {framework.name}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {framework.description}
-                  </p>
-                </CardContent>
-              </Card>
+            ].map((framework) => (
+              <Link key={framework.slug} to={`/frameworks/${framework.slug}`} className="no-underline">
+                <Card
+                  className={`text-center hover:shadow-lg transition-all duration-300 border-2 ${framework.color}`}
+                >
+                  <CardContent className="pt-6">
+                    <div className="text-3xl mb-3">{framework.icon}</div>
+                    <h3 className="font-bold text-primary mb-2">
+                      {framework.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {framework.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* Readiness Process */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -233,10 +239,10 @@ export default function ComplianceAuditReadiness() {
               >
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
                       {step.step}
                     </div>
-                    <step.icon className="h-8 w-8 text-blue-600" />
+                    <step.icon className="h-8 w-8 text-emerald-600" />
                   </div>
                   <CardTitle className="text-xl">{step.title}</CardTitle>
                   <CardDescription className="text-base">
@@ -244,7 +250,7 @@ export default function ComplianceAuditReadiness() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-sm text-blue-600 font-medium">
+                  <div className="text-sm text-emerald-600 font-medium">
                     Duration: {step.duration}
                   </div>
                 </CardContent>
@@ -267,7 +273,7 @@ export default function ComplianceAuditReadiness() {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary mb-4 flex items-center">
-                  <Shield className="h-8 w-8 mr-3 text-blue-600" />
+                  <Shield className="h-8 w-8 mr-3 text-emerald-600" />
                   Gap Assessment & Analysis
                 </CardTitle>
               </CardHeader>
@@ -300,7 +306,7 @@ export default function ComplianceAuditReadiness() {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary mb-4 flex items-center">
-                  <FileCheck className="h-8 w-8 mr-3 text-blue-600" />
+                  <FileCheck className="h-8 w-8 mr-3 text-emerald-600" />
                   Policy & Procedure Development
                 </CardTitle>
               </CardHeader>
@@ -333,7 +339,7 @@ export default function ComplianceAuditReadiness() {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary mb-4 flex items-center">
-                  <Users className="h-8 w-8 mr-3 text-blue-600" />
+                  <Users className="h-8 w-8 mr-3 text-emerald-600" />
                   Training & Awareness Programs
                 </CardTitle>
               </CardHeader>
@@ -366,7 +372,7 @@ export default function ComplianceAuditReadiness() {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary mb-4 flex items-center">
-                  <Clock className="h-8 w-8 mr-3 text-blue-600" />
+                  <Clock className="h-8 w-8 mr-3 text-emerald-600" />
                   Continuous Monitoring
                 </CardTitle>
               </CardHeader>
@@ -400,7 +406,7 @@ export default function ComplianceAuditReadiness() {
       </section>
 
       {/* Success Stats */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -433,7 +439,7 @@ export default function ComplianceAuditReadiness() {
             ].map((metric, index) => (
               <div key={index} className="text-center">
                 <div className="bg-white rounded-lg p-6 shadow-lg">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">
+                  <div className="text-4xl font-bold text-emerald-600 mb-2">
                     {metric.stat}
                   </div>
                   <div className="font-semibold text-primary mb-2">
@@ -462,7 +468,7 @@ export default function ComplianceAuditReadiness() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-500 hover:to-indigo-600 transform hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-red-500 to-emerald-600 hover:from-red-500/90 hover:to-emerald-600/90 transform hover:scale-105 transition-all duration-300"
               asChild
             >
               <Link to="/contact">
@@ -473,7 +479,7 @@ export default function ComplianceAuditReadiness() {
             <Button
               size="lg"
               variant="outline"
-              className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+              className="border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white"
               asChild
             >
               <Link to="/frameworks/soc2">
