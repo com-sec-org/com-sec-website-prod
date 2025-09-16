@@ -1204,7 +1204,7 @@ export default function Index() {
             </div>
 
             {/* SPRINTO */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg:white/95 transition-colors min-h-[84px]">
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">SPRINTO</div>
             </div>
 
