@@ -987,7 +987,7 @@ export default function Index() {
 
             {/* First ticker - left to right */}
             <div className="overflow-hidden mb-2 sm:mb-4">
-              <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex animate-scroll-right whitespace-nowrap">
                 {[
                   "RaveHealth",
                   "GPTZero",
@@ -1034,7 +1034,7 @@ export default function Index() {
 
             {/* Second ticker - right to left */}
             <div className="overflow-hidden">
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex animate-scroll-left whitespace-nowrap">
                 {[
                   "GloveBox",
                   "Cycloid",
