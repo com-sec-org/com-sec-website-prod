@@ -819,7 +819,7 @@ export default function Index() {
           </div>
 
           {/* Floating Client Cards - Mobile responsive */}
-          <div className="relative h-64 sm:h-80 lg:h-96 mb-10 sm:mb-12 lg:mb-16 overflow-hidden">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-12 lg:mb-16">
             {[
               {
                 name: "RaveHealth",
@@ -957,31 +957,21 @@ export default function Index() {
             ].map((client, index) => (
               <div
                 key={client.name}
-                className="absolute transform transition-all duration-1000 ease-in-out animate-float"
-                style={{
-                  left: `${client.position.x}%`,
-                  top: `${client.position.y}%`,
-                  animationDelay: `${client.delay}s`,
-                  animationDuration: `${4 + (index % 3)}s`,
-                }}
+                className=""
+                
               >
                 <div
-                  className={`bg-gradient-to-br ${client.color} p-2 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-2xl transform hover:scale-110 sm:hover:scale-125 hover:rotate-3 sm:hover:rotate-6 transition-all duration-500 cursor-pointer group backdrop-blur-sm border border-white/20 hover:border-white/40`}
+                  className={`bg-gradient-to-br ${client.color} p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl shadow-md hover:shadow-lg transition-shadow cursor-default backdrop-blur-sm border border-white/15`}
                 >
                   <div className="text-white relative z-10">
-                    <h3 className="font-bold text-xs sm:text-sm md:text-lg mb-1 group-hover:animate-bounce-x">
+                    <h3 className="font-semibold text-xs sm:text-sm md:text-base mb-1">
                       {client.name}
                     </h3>
                     <p className="text-white/90 text-xs sm:text-xs md:text-sm font-medium">
                       {client.sector}
                     </p>
                   </div>
-                  {/* Dynamic glow effect */}
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${client.color} rounded-2xl opacity-0 group-hover:opacity-30 transition-all duration-500 blur-xl transform group-hover:scale-150`}
-                  ></div>
-                  {/* Sparkle effect on hover */}
-                  <div className="absolute -top-1 -right-1 w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-twinkle"></div>
+
                 </div>
               </div>
             ))}
@@ -997,7 +987,7 @@ export default function Index() {
 
             {/* First ticker - left to right */}
             <div className="overflow-hidden mb-2 sm:mb-4">
-              <div className="flex animate-scroll-right whitespace-nowrap">
+              <div className="flex flex-wrap justify-center gap-6">
                 {[
                   "RaveHealth",
                   "GPTZero",
@@ -1044,7 +1034,7 @@ export default function Index() {
 
             {/* Second ticker - right to left */}
             <div className="overflow-hidden">
-              <div className="flex animate-scroll-left whitespace-nowrap">
+              <div className="flex flex-wrap justify-center gap-4">
                 {[
                   "GloveBox",
                   "Cycloid",
