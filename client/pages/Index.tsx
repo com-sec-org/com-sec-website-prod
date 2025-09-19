@@ -30,10 +30,10 @@ export default function Index() {
       <section className="pt-20 sm:pt-24 pb-16 sm:pb-20 text-white min-h-screen flex items-center relative overflow-hidden">
         {/* Custom Compliance Frameworks Background */}
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
+          <div className="w-full h-full bg-gradient-to-br from-slate-950 via-slate-900 to-black">
             {/* Custom SVG Background with Compliance Frameworks */}
             <svg
-              className="absolute inset-0 w-full h-full opacity-20"
+              className="absolute inset-0 w-full h-full opacity-20 hidden"
               viewBox="0 0 1200 800"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -317,7 +317,7 @@ export default function Index() {
         </div>
 
         {/* ULTRA CRAZY Orbital Framework Pattern with 3D Effects */}
-        <div className="absolute inset-0 z-5 pointer-events-none">
+        <div className="absolute inset-0 z-5 pointer-events-none hidden">
           {/* Left Side INSANE Orbital Pattern */}
           <div className="absolute left-8 top-1/2 -translate-y-1/2 w-32 h-32 opacity-80">
             {/* 3D Holographic Ring */}
@@ -584,7 +584,7 @@ export default function Index() {
           <div className="text-center">
             {/* Compliance badges */}
             <div className="mb-6 sm:mb-8 animate-slide-down animation-delay-300">
-              <div className="inline-flex items-center bg-accent/20 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 text-accent font-medium text-xs sm:text-sm border border-accent/30 hover:scale-105 transition-transform duration-300">
+              <div className="inline-flex items-center bg-orange-500/10 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 text-orange-300 font-medium text-xs sm:text-sm border border-orange-400/30 hover:scale-105 transition-transform duration-300">
                 <Shield className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 animate-magical-sparkle flex-shrink-0" />
                 <span className="hidden sm:inline">
                   SOC 2 • HIPAA • ISO 27001 • GDPR • PCI-DSS • NIST
@@ -594,21 +594,21 @@ export default function Index() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
-              <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
+              <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
                 Compliance
               </span>{" "}
-              <span className="inline-block animate-typewriter-word animation-delay-1000 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+              <span className="inline-block animate-typewriter-word animation-delay-1000 text-white">
                 Meets
               </span>{" "}
               <span className="inline-block animate-confidence-reveal animation-delay-1500">
-                <span className="bg-gradient-to-r from-accent via-orange-400 to-yellow-400 bg-clip-text text-transparent animate-gradient-shift">
+                <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
                   Confidence.
                 </span>
               </span>
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/90 max-w-4xl mx-auto animate-fade-in-delayed animation-delay-2000 opacity-0 drop-shadow-lg">
-              <span className="animate-shimmer-text bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent">
+              <span className="animate-shimmer-text bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent">
                 Your trusted partner
               </span>{" "}
               <span className="animate-typewriter-reveal animation-delay-2500 opacity-0">
