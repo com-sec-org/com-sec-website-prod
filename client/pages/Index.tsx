@@ -30,7 +30,7 @@ export default function Index() {
       <section className="pt-20 sm:pt-24 pb-16 sm:pb-20 text-white min-h-screen flex items-center relative overflow-hidden">
         {/* Custom Compliance Frameworks Background */}
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-gradient-to-br from-slate-950 via-slate-900 to-black">
+          <div className="w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
             {/* Custom SVG Background with Compliance Frameworks */}
             <svg
               className="absolute inset-0 w-full h-full opacity-20 hidden"
@@ -314,6 +314,8 @@ export default function Index() {
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/50"></div>
+          <div className="absolute -top-24 -left-24 w-72 sm:w-96 h-72 sm:h-96 bg-orange-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-16 -right-16 w-60 sm:w-80 h-60 sm:h-80 bg-amber-400/10 rounded-full blur-3xl"></div>
         </div>
 
         {/* ULTRA CRAZY Orbital Framework Pattern with 3D Effects */}
