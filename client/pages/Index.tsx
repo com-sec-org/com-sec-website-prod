@@ -22,30 +22,6 @@ import {
 } from "lucide-react";
 
 export default function Index() {
-  const clients = useMemo(
-    () => [
-      { name: "RaveHealth", sector: "Healthcare" },
-      { name: "GPTZero", sector: "AI & ML" },
-      { name: "VhedaHealth", sector: "MedTech" },
-      { name: "CloseKnit", sector: "Social" },
-      { name: "Casellum.ai", sector: "AI Security" },
-      { name: "CropTrak", sector: "AgTech" },
-      { name: "NeuroWave", sector: "HealthTech" },
-      { name: "MentorPro", sector: "EdTech" },
-      { name: "GloveBox", sector: "Automotive" },
-      { name: "Cycloid", sector: "DevOps" },
-      { name: "Farlinium", sector: "Enterprise" },
-      { name: "Tangenesis", sector: "Biotech" },
-      { name: "Conover", sector: "Assessment & Training" },
-      { name: "EdFlex", sector: "EdTech" },
-      { name: "Excer.AI", sector: "HealthTech AI" },
-      { name: "Flybits", sector: "FinTech" },
-      { name: "GermainUX", sector: "UX Analytics" },
-      { name: "Powder", sector: "AI Documents" },
-      { name: "PIC", sector: "Enterprise ERP" },
-    ],
-    []
-  );
   const sectors = useMemo(
     () => Array.from(new Set(clients.map((c) => c.sector))),
     [clients]
