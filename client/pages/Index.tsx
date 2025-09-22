@@ -1015,25 +1015,6 @@ export default function Index() {
             ))}
           </div>
 
-          {/* Industry filter buttons */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-12 lg:mb-16">
-            {sectors.map((sector) => (
-              <button
-                key={sector}
-                onClick={() => setSelectedIndustry(sector)}
-                className={`p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border border-white/15 bg-white/10 text-white font-semibold hover:bg-white/15 transition-all ${selectedIndustry === sector ? "ring-2 ring-accent text-accent bg-white/20" : ""}`}
-              >
-                {sector}
-              </button>
-            ))}
-            <button
-              onClick={() => setSelectedIndustry(null)}
-              className={`p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border border-white/15 bg-white/10 text-white font-semibold hover:bg-white/15 transition-all col-span-2 sm:col-span-1 ${selectedIndustry === null ? "ring-2 ring-accent text-accent bg-white/20" : ""}`}
-            >
-              All
-            </button>
-          </div>
-
           {/* Scrolling Ticker with Company Names */}
           <div className="relative mb-10 sm:mb-12 lg:mb-16">
             <div className="text-center mb-6 sm:mb-8">
