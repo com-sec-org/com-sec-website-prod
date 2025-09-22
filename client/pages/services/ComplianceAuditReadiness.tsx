@@ -45,13 +45,13 @@ export default function ComplianceAuditReadiness() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
+              <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 Compliance
               </span>
-              <span className="mx-2 animate-typewriter-word animation-delay-400 bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
+              <span className="mx-2 animate-typewriter-word animation-delay-400 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
                 & Audit
               </span>
-              <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-red-500 via-green-400 to-green-600 bg-clip-text text-transparent animate-gradient-shift">
+              <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
                 Readiness
               </span>
             </h1>

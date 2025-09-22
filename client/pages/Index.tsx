@@ -30,10 +30,10 @@ export default function Index() {
       <section className="pt-20 sm:pt-24 pb-16 sm:pb-20 text-white min-h-screen flex items-center relative overflow-hidden">
         {/* Custom Compliance Frameworks Background */}
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
+          <div className="w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
             {/* Custom SVG Background with Compliance Frameworks */}
             <svg
-              className="absolute inset-0 w-full h-full opacity-20"
+              className="absolute inset-0 w-full h-full opacity-20 hidden"
               viewBox="0 0 1200 800"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -314,10 +314,12 @@ export default function Index() {
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/50"></div>
+          <div className="absolute -top-24 -left-24 w-72 sm:w-96 h-72 sm:h-96 bg-orange-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-16 -right-16 w-60 sm:w-80 h-60 sm:h-80 bg-amber-400/10 rounded-full blur-3xl"></div>
         </div>
 
         {/* ULTRA CRAZY Orbital Framework Pattern with 3D Effects */}
-        <div className="absolute inset-0 z-5 pointer-events-none">
+        <div className="absolute inset-0 z-5 pointer-events-none hidden">
           {/* Left Side INSANE Orbital Pattern */}
           <div className="absolute left-8 top-1/2 -translate-y-1/2 w-32 h-32 opacity-80">
             {/* 3D Holographic Ring */}
@@ -584,7 +586,7 @@ export default function Index() {
           <div className="text-center">
             {/* Compliance badges */}
             <div className="mb-6 sm:mb-8 animate-slide-down animation-delay-300">
-              <div className="inline-flex items-center bg-accent/20 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 text-accent font-medium text-xs sm:text-sm border border-accent/30 hover:scale-105 transition-transform duration-300">
+              <div className="inline-flex items-center bg-orange-500/10 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 text-orange-300 font-medium text-xs sm:text-sm border border-orange-400/30 hover:scale-105 transition-transform duration-300">
                 <Shield className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 animate-magical-sparkle flex-shrink-0" />
                 <span className="hidden sm:inline">
                   SOC 2 • HIPAA • ISO 27001 • GDPR • PCI-DSS • NIST
@@ -594,21 +596,21 @@ export default function Index() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
-              <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
+              <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
                 Compliance
               </span>{" "}
-              <span className="inline-block animate-typewriter-word animation-delay-1000 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+              <span className="inline-block animate-typewriter-word animation-delay-1000 text-white">
                 Meets
               </span>{" "}
               <span className="inline-block animate-confidence-reveal animation-delay-1500">
-                <span className="bg-gradient-to-r from-accent via-orange-400 to-yellow-400 bg-clip-text text-transparent animate-gradient-shift">
+                <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
                   Confidence.
                 </span>
               </span>
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/90 max-w-4xl mx-auto animate-fade-in-delayed animation-delay-2000 opacity-0 drop-shadow-lg">
-              <span className="animate-shimmer-text bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent">
+              <span className="animate-shimmer-text bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent">
                 Your trusted partner
               </span>{" "}
               <span className="animate-typewriter-reveal animation-delay-2500 opacity-0">
@@ -817,7 +819,7 @@ export default function Index() {
           </div>
 
           {/* Floating Client Cards - Mobile responsive */}
-          <div className="relative h-64 sm:h-80 lg:h-96 mb-10 sm:mb-12 lg:mb-16 overflow-hidden">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-12 lg:mb-16">
             {[
               {
                 name: "RaveHealth",
@@ -955,31 +957,21 @@ export default function Index() {
             ].map((client, index) => (
               <div
                 key={client.name}
-                className="absolute transform transition-all duration-1000 ease-in-out animate-float"
-                style={{
-                  left: `${client.position.x}%`,
-                  top: `${client.position.y}%`,
-                  animationDelay: `${client.delay}s`,
-                  animationDuration: `${4 + (index % 3)}s`,
-                }}
+                className=""
+                
               >
                 <div
-                  className={`bg-gradient-to-br ${client.color} p-2 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-2xl transform hover:scale-110 sm:hover:scale-125 hover:rotate-3 sm:hover:rotate-6 transition-all duration-500 cursor-pointer group backdrop-blur-sm border border-white/20 hover:border-white/40`}
+                  className={`bg-gradient-to-br ${client.color} p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl shadow-md hover:shadow-lg transition-shadow cursor-default backdrop-blur-sm border border-white/15`}
                 >
                   <div className="text-white relative z-10">
-                    <h3 className="font-bold text-xs sm:text-sm md:text-lg mb-1 group-hover:animate-bounce-x">
+                    <h3 className="font-semibold text-xs sm:text-sm md:text-base mb-1">
                       {client.name}
                     </h3>
                     <p className="text-white/90 text-xs sm:text-xs md:text-sm font-medium">
                       {client.sector}
                     </p>
                   </div>
-                  {/* Dynamic glow effect */}
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${client.color} rounded-2xl opacity-0 group-hover:opacity-30 transition-all duration-500 blur-xl transform group-hover:scale-150`}
-                  ></div>
-                  {/* Sparkle effect on hover */}
-                  <div className="absolute -top-1 -right-1 w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-twinkle"></div>
+
                 </div>
               </div>
             ))}
