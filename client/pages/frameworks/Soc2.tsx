@@ -294,30 +294,8 @@ export default function Soc2() {
             <p className="text-xl text-muted-foreground">Clear, outcome-focused pricing for your SOC 2 journey</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
             {[
-              {
-                name: "SOC 2 Type I",
-                price: "$8,000",
-                description: "Point‑in‑time report to validate control design",
-                features: [
-                  "Readiness and gap assessment",
-                  "Policies and procedures mapping",
-                  "Control design and implementation",
-                  "Auditor‑ready evidence package",
-                ],
-              },
-              {
-                name: "SOC 2 Type II",
-                price: "$15,000",
-                description: "Operating effectiveness over an observation period",
-                features: [
-                  "Evidence collection and walkthroughs",
-                  "Continuous control monitoring",
-                  "Observation period testing",
-                  "Auditor liaison and support",
-                ],
-              },
               {
                 name: "Continued SOC 2 Support",
                 price: "Custom pricing",
@@ -328,17 +306,6 @@ export default function Soc2() {
                   "Evidence automation and upkeep",
                   "Security questionnaire responses",
                   "Executive reporting and metrics",
-                ],
-              },
-              {
-                name: "Custom Engagement",
-                price: "Custom pricing",
-                description: "Tailored scope for unique environments or timelines",
-                features: [
-                  "Multi‑entity/multi‑system coverage",
-                  "Custom SLAs and integrations",
-                  "Program design and remediation",
-                  "Dedicated compliance lead",
                 ],
               },
             ].map((plan, index) => (
