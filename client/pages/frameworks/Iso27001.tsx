@@ -625,6 +625,45 @@ export default function Iso27001() {
         </div>
       </section>
 
+      {/* ISO 27001 Pricing */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">ISO 27001 Pricing</h2>
+            <p className="text-xl text-muted-foreground">Clear, outcome-focused pricing for your ISO 27001 journey</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Internal Audit",
+                price: "$3,500",
+              },
+              {
+                name: "Full Audit Support",
+                price: "$12,000",
+              },
+              {
+                name: "Continued ISO 27001 Support",
+                price: "Custom Pricing",
+              },
+            ].map((plan, index) => (
+              <Card key={index} className="relative hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-primary">{plan.name}</CardTitle>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">{plan.price}</div>
+                </CardHeader>
+                <CardContent>
+                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-500 hover:to-purple-600" asChild>
+                    <Link to="/contact">Get Started</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
