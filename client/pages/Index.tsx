@@ -1003,16 +1003,28 @@ export default function Index() {
                 ].map((client, index) => (
                   <span
                     key={`right-${index}`}
-                    className={`mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold ${selectedIndustry ? "text-accent" : "text-white/30"} hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3`}
+                    className="mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold text-white/30 hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {client}
                   </span>
                 ))}
-                {visibleClients.map((client, index) => (
+                {[
+                  "RaveHealth",
+                  "GPTZero",
+                  "VhedaHealth",
+                  "CloseKnit",
+                  "Casellum.ai",
+                  "CropTrak",
+                  "NeuroWave",
+                  "MentorPro",
+                  "EdFlex",
+                  "Flybits",
+                  "GermainUX",
+                ].map((client, index) => (
                   <span
                     key={`right-dup-${index}`}
-                    className={`mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold ${selectedIndustry ? "text-accent" : "text-white/30"} hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3`}
+                    className="mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold text-white/30 hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3"
                   >
                     {client}
                   </span>
@@ -1023,19 +1035,45 @@ export default function Index() {
             {/* Second ticker - right to left */}
             <div className="overflow-hidden">
               <div className="flex animate-scroll-left whitespace-nowrap">
-                {visibleClients.map((client, index) => (
+                {[
+                  "GloveBox",
+                  "Cycloid",
+                  "Farlinium",
+                  "Tangenesis",
+                  "CaryHealth",
+                  "Cicerai",
+                  "Xchart",
+                  "ThePublicInterestCompany",
+                  "Conover",
+                  "Excer.AI",
+                  "Powder",
+                  "PIC",
+                ].map((client, index) => (
                   <span
                     key={`left-${index}`}
-                    className={`mx-3 sm:mx-6 text-sm sm:text-lg md:text-2xl font-bold ${selectedIndustry ? "text-accent" : "text-white/25"} hover:text-purple-300 hover:scale-110 transition-all duration-300 cursor-pointer transform hover:-rotate-3`}
+                    className="mx-3 sm:mx-6 text-sm sm:text-lg md:text-2xl font-bold text-white/25 hover:text-purple-300 hover:scale-110 transition-all duration-300 cursor-pointer transform hover:-rotate-3"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {client}
                   </span>
                 ))}
-                {visibleClients.map((client, index) => (
+                {[
+                  "GloveBox",
+                  "Cycloid",
+                  "Farlinium",
+                  "Tangenesis",
+                  "CaryHealth",
+                  "Cicerai",
+                  "Xchart",
+                  "ThePublicInterestCompany",
+                  "Conover",
+                  "Excer.AI",
+                  "Powder",
+                  "PIC",
+                ].map((client, index) => (
                   <span
                     key={`left-dup-${index}`}
-                    className={`mx-3 sm:mx-6 text-sm sm:text-lg md:text-2xl font-bold ${selectedIndustry ? "text-accent" : "text-white/25"} hover:text-purple-300 hover:scale-110 transition-all duration-300 cursor-pointer transform hover:-rotate-3`}
+                    className="mx-3 sm:mx-6 text-sm sm:text-lg md:text-2xl font-bold text-white/25 hover:text-purple-300 hover:scale-110 transition-all duration-300 cursor-pointer transform hover:-rotate-3"
                   >
                     {client}
                   </span>
