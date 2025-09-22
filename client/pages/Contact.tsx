@@ -82,8 +82,8 @@ export default function Contact() {
       <section className="pt-24 pb-20 bg-gradient-to-br from-primary to-blue-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photos/32866728/pexels-photo-32866728.jpeg"
-            alt="Group of colleagues collaborating in a modern office setting, engaging in a discussion around a laptop"
+            src="https://images.pexels.com/photos/2881229/pexels-photo-2881229.jpeg"
+            alt="Abstract data center corridor with servers and network lights"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-blue-900/80"></div>
@@ -247,18 +247,18 @@ export default function Contact() {
                     disabled={isSubmitting}
                   >
                     <Send className="mr-2 h-5 w-5" />
-                    {isSubmitting ? 'Sending...' : 'Send Message to Farbod'}
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </Button>
 
                   {submitStatus === 'success' && (
                     <div className="text-green-600 text-center mt-4 p-3 bg-green-50 rounded-lg">
-                      ✅ Message sent successfully! Farbod will get back to you within 24 hours.
+                      ✅ Message sent successfully! Our team will get back to you within 24 hours.
                     </div>
                   )}
 
                   {submitStatus === 'error' && (
                     <div className="text-red-600 text-center mt-4 p-3 bg-red-50 rounded-lg">
-                      ❌ Failed to send message. Please try again or email farbod@com-sec.io directly.
+                      ❌ Failed to send message. Please try again or email team@com-sec.io directly.
                     </div>
                   )}
                 </form>
@@ -270,8 +270,8 @@ export default function Contact() {
               {/* Team Image */}
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://images.pexels.com/photos/32866724/pexels-photo-32866724.jpeg"
-                  alt="Young professionals collaborate around a laptop in a vibrant, modern office environment"
+                  src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
+                  alt="Close-up of network equipment and circuit board with no people"
                   className="w-full h-64 object-cover"
                 />
               </div>
@@ -288,7 +288,7 @@ export default function Contact() {
                     <div>
                       <div className="font-medium">Email</div>
                       <div className="text-muted-foreground">
-                        farbod@com-sec.io
+                        team@com-sec.io
                       </div>
                     </div>
                   </div>
@@ -410,7 +410,7 @@ export default function Contact() {
                   Get detailed responses to your inquiries
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="mailto:farbod@com-sec.io">farbod@com-sec.io</a>
+                  <a href="mailto:team@com-sec.io">team@com-sec.io</a>
                 </Button>
               </CardContent>
             </Card>
