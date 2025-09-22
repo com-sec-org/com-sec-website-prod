@@ -22,10 +22,6 @@ import {
 } from "lucide-react";
 
 export default function Index() {
-  const sectors = useMemo(
-    () => Array.from(new Set(clients.map((c) => c.sector))),
-    [clients]
-  );
   const visibleClients = useMemo(
     () =>
       (selectedIndustry
