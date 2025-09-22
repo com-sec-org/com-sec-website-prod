@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -22,6 +23,43 @@ import {
 } from "lucide-react";
 
 export default function Index() {
+  const [selectedIndustry, setSelectedIndustry] = useState<string | null>(null);
+  const clients = useMemo(
+    () => [
+      { name: "RaveHealth", sector: "Healthcare" },
+      { name: "GPTZero", sector: "AI & ML" },
+      { name: "VhedaHealth", sector: "MedTech" },
+      { name: "CloseKnit", sector: "Social" },
+      { name: "Casellum.ai", sector: "AI Security" },
+      { name: "CropTrak", sector: "AgTech" },
+      { name: "NeuroWave", sector: "HealthTech" },
+      { name: "MentorPro", sector: "EdTech" },
+      { name: "GloveBox", sector: "Automotive" },
+      { name: "Cycloid", sector: "DevOps" },
+      { name: "Farlinium", sector: "Enterprise" },
+      { name: "Tangenesis", sector: "Biotech" },
+      { name: "Conover", sector: "Assessment & Training" },
+      { name: "EdFlex", sector: "EdTech" },
+      { name: "Excer.AI", sector: "HealthTech AI" },
+      { name: "Flybits", sector: "FinTech" },
+      { name: "GermainUX", sector: "UX Analytics" },
+      { name: "Powder", sector: "AI Documents" },
+      { name: "PIC", sector: "Enterprise ERP" },
+    ],
+    []
+  );
+  const sectors = useMemo(
+    () => Array.from(new Set(clients.map((c) => c.sector))),
+    [clients]
+  );
+  const visibleClients = useMemo(
+    () =>
+      (selectedIndustry
+        ? clients.filter((c) => c.sector === selectedIndustry)
+        : clients
+      ).map((c) => c.name),
+    [selectedIndustry, clients]
+  );
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -819,7 +857,7 @@ export default function Index() {
           </div>
 
           {/* Floating Client Cards - Mobile responsive */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-12 lg:mb-16">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-12 lg:mb-16 hidden">
             {[
               {
                 name: "RaveHealth",
@@ -977,6 +1015,25 @@ export default function Index() {
             ))}
           </div>
 
+          {/* Industry filter buttons */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-12 lg:mb-16">
+            {sectors.map((sector) => (
+              <button
+                key={sector}
+                onClick={() => setSelectedIndustry(sector)}
+                className={`p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border border-white/15 bg-white/10 text-white font-semibold hover:bg-white/15 transition-all ${selectedIndustry === sector ? "ring-2 ring-accent text-accent bg-white/20" : ""}`}
+              >
+                {sector}
+              </button>
+            ))}
+            <button
+              onClick={() => setSelectedIndustry(null)}
+              className={`p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border border-white/15 bg-white/10 text-white font-semibold hover:bg-white/15 transition-all col-span-2 sm:col-span-1 ${selectedIndustry === null ? "ring-2 ring-accent text-accent bg-white/20" : ""}`}
+            >
+              All
+            </button>
+          </div>
+
           {/* Scrolling Ticker with Company Names */}
           <div className="relative mb-10 sm:mb-12 lg:mb-16">
             <div className="text-center mb-6 sm:mb-8">
@@ -988,43 +1045,19 @@ export default function Index() {
             {/* First ticker - left to right */}
             <div className="overflow-hidden mb-2 sm:mb-4">
               <div className="flex animate-scroll-right whitespace-nowrap">
-                {[
-                  "RaveHealth",
-                  "GPTZero",
-                  "VhedaHealth",
-                  "CloseKnit",
-                  "Casellum.ai",
-                  "CropTrak",
-                  "NeuroWave",
-                  "MentorPro",
-                  "EdFlex",
-                  "Flybits",
-                  "GermainUX",
-                ].map((client, index) => (
+                {visibleClients.map((client, index) => (
                   <span
                     key={`right-${index}`}
-                    className="mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold text-white/30 hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3"
+                    className={`mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold ${selectedIndustry ? "text-accent" : "text-white/30"} hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3`}
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {client}
                   </span>
                 ))}
-                {[
-                  "RaveHealth",
-                  "GPTZero",
-                  "VhedaHealth",
-                  "CloseKnit",
-                  "Casellum.ai",
-                  "CropTrak",
-                  "NeuroWave",
-                  "MentorPro",
-                  "EdFlex",
-                  "Flybits",
-                  "GermainUX",
-                ].map((client, index) => (
+                {visibleClients.map((client, index) => (
                   <span
                     key={`right-dup-${index}`}
-                    className="mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold text-white/30 hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3"
+                    className={`mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold ${selectedIndustry ? "text-accent" : "text-white/30"} hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3`}
                   >
                     {client}
                   </span>
@@ -1035,45 +1068,19 @@ export default function Index() {
             {/* Second ticker - right to left */}
             <div className="overflow-hidden">
               <div className="flex animate-scroll-left whitespace-nowrap">
-                {[
-                  "GloveBox",
-                  "Cycloid",
-                  "Farlinium",
-                  "Tangenesis",
-                  "CaryHealth",
-                  "Cicerai",
-                  "Xchart",
-                  "ThePublicInterestCompany",
-                  "Conover",
-                  "Excer.AI",
-                  "Powder",
-                  "PIC",
-                ].map((client, index) => (
+                {visibleClients.map((client, index) => (
                   <span
                     key={`left-${index}`}
-                    className="mx-3 sm:mx-6 text-sm sm:text-lg md:text-2xl font-bold text-white/25 hover:text-purple-300 hover:scale-110 transition-all duration-300 cursor-pointer transform hover:-rotate-3"
+                    className={`mx-3 sm:mx-6 text-sm sm:text-lg md:text-2xl font-bold ${selectedIndustry ? "text-accent" : "text-white/25"} hover:text-purple-300 hover:scale-110 transition-all duration-300 cursor-pointer transform hover:-rotate-3`}
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {client}
                   </span>
                 ))}
-                {[
-                  "GloveBox",
-                  "Cycloid",
-                  "Farlinium",
-                  "Tangenesis",
-                  "CaryHealth",
-                  "Cicerai",
-                  "Xchart",
-                  "ThePublicInterestCompany",
-                  "Conover",
-                  "Excer.AI",
-                  "Powder",
-                  "PIC",
-                ].map((client, index) => (
+                {visibleClients.map((client, index) => (
                   <span
                     key={`left-dup-${index}`}
-                    className="mx-3 sm:mx-6 text-sm sm:text-lg md:text-2xl font-bold text-white/25 hover:text-purple-300 hover:scale-110 transition-all duration-300 cursor-pointer transform hover:-rotate-3"
+                    className={`mx-3 sm:mx-6 text-sm sm:text-lg md:text-2xl font-bold ${selectedIndustry ? "text-accent" : "text-white/25"} hover:text-purple-300 hover:scale-110 transition-all duration-300 cursor-pointer transform hover:-rotate-3`}
                   >
                     {client}
                   </span>
