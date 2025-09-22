@@ -22,14 +22,6 @@ import {
 } from "lucide-react";
 
 export default function Index() {
-  const visibleClients = useMemo(
-    () =>
-      (selectedIndustry
-        ? clients.filter((c) => c.sector === selectedIndustry)
-        : clients
-      ).map((c) => c.name),
-    [selectedIndustry, clients]
-  );
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
