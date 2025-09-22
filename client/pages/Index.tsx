@@ -988,7 +988,19 @@ export default function Index() {
             {/* First ticker - left to right */}
             <div className="overflow-hidden mb-2 sm:mb-4">
               <div className="flex animate-scroll-right whitespace-nowrap">
-                {visibleClients.map((client, index) => (
+                {[
+                  "RaveHealth",
+                  "GPTZero",
+                  "VhedaHealth",
+                  "CloseKnit",
+                  "Casellum.ai",
+                  "CropTrak",
+                  "NeuroWave",
+                  "MentorPro",
+                  "EdFlex",
+                  "Flybits",
+                  "GermainUX",
+                ].map((client, index) => (
                   <span
                     key={`right-${index}`}
                     className={`mx-3 sm:mx-6 text-base sm:text-xl md:text-3xl font-bold ${selectedIndustry ? "text-accent" : "text-white/30"} hover:text-accent hover:scale-110 transition-all duration-300 cursor-pointer transform hover:rotate-3`}
