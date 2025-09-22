@@ -22,7 +22,6 @@ import {
 } from "lucide-react";
 
 export default function Index() {
-  const [selectedIndustry, setSelectedIndustry] = useState<string | null>(null);
   const clients = useMemo(
     () => [
       { name: "RaveHealth", sector: "Healthcare" },
