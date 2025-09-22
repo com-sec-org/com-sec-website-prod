@@ -520,6 +520,81 @@ export default function Hitrust() {
         </div>
       </section>
 
+      {/* HITRUST Pricing */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">HITRUST Pricing</h2>
+            <p className="text-xl text-muted-foreground">Outcome-focused pricing aligned to HITRUST CSF activities</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Readiness & Gap Assessment",
+                price: "$8,000",
+                description:
+                  "Baseline your program against HITRUST CSF and get a prioritized remediation plan",
+                features: [
+                  "MyCSF scoping workshop",
+                  "Control maturity baseline (e1/i1/r2)",
+                  "Gap analysis and risk-ranked remediation roadmap",
+                  "Policy and procedure templates mapped to CSF",
+                  "Executive readout and next-step plan",
+                ],
+              },
+              {
+                name: "Full Audit Support",
+                price: "$16,000",
+                description:
+                  "End-to-end guidance through validated assessment and certification",
+                features: [
+                  "Project plan and assessor coordination",
+                  "Evidence collection and mapping in MyCSF",
+                  "Remediation guidance and control hardening",
+                  "Pre-validation review and mock interviews",
+                  "Readiness checkpoint before submission",
+                ],
+              },
+              {
+                name: "Continued HITRUST Support",
+                price: "Custom Pricing",
+                description:
+                  "Ongoing program operations to maintain certification and improve maturity",
+                features: [
+                  "Quarterly control monitoring and metrics",
+                  "Annual interim assessment preparation",
+                  "Policy updates and training refresh",
+                  "Vendor risk and security questionnaire support",
+                  "Executive dashboards and board reporting",
+                ],
+              },
+            ].map((plan, index) => (
+              <Card key={index} className="relative hover:shadow-xl transition-all duration-300 border-2">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-primary">{plan.name}</CardTitle>
+                  <div className="text-3xl font-bold text-red-600 mb-2">{plan.price}</div>
+                  <CardDescription>{plan.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 mb-6">
+                    {plan.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center gap-3">
+                        <CheckCircle className="h-4 w-4 text-green-500" />
+                        <span className="text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button className="w-full bg-gradient-to-r from-red-600 to-pink-700 hover:from-red-500 hover:to-pink-600" asChild>
+                    <Link to="/contact">Get Started</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-red-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
