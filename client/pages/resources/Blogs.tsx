@@ -24,8 +24,11 @@ import {
   ChevronRight,
   ExternalLink,
 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 export default function Blogs() {
+  const { toast } = useToast();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchFocused, setSearchFocused] = useState(false);
   const [visibleArticles, setVisibleArticles] = useState(9);
@@ -33,15 +36,61 @@ export default function Blogs() {
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
-      // Search both site content and open Google search in new tab
-      const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(`cybersecurity ${searchQuery} site:com-sec.io OR "SOC 2" OR "penetration testing" OR "compliance"`)}`;
+      setVisibleArticles(20);
+      const q = searchQuery.trim().toLowerCase().replace(/\s|-/g, "");
+      setTimeout(() => {
+        const items = Array.from(
+          document.querySelectorAll<HTMLElement>("[data-article-title]")
+        );
+        const matches = items.filter((el) => {
+          const t = (el.getAttribute("data-article-title") || "").toLowerCase();
+          const c = (el.getAttribute("data-article-category") || "").toLowerCase();
+          const e = (el.getAttribute("data-article-excerpt") || "").toLowerCase();
+          const hay = `${t} ${c} ${e}`.replace(/\s|-/g, "");
+          return hay.includes(q);
+        });
+
+        if (matches.length > 0) {
+          toast({
+            title: "We found blogs for you",
+            description: `${matches.length} matching article${matches.length > 1 ? "s" : ""}.` ,
+            action: (
+              <ToastAction
+                altText="Jump to results"
+                onClick={() => document.getElementById("blog-results")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+              >
+                Jump to results
+              </ToastAction>
+            ),
+          });
+        } else {
+          toast({
+            title: "No on-site matches",
+            description: "Try Google search for broader results.",
+            action: (
+              <ToastAction altText="Search Google" onClick={() => handleGoogleSearch()}>
+                Search Google
+              </ToastAction>
+            ),
+          });
+        }
+      }, 0);
+    }
+  };
+
+  const handleGoogleSearch = () => {
+    if (searchQuery.trim()) {
+      const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
       window.open(googleSearchUrl, "_blank");
     }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
-      handleSearch();
+      e.preventDefault();
+      if (searchQuery.trim()) {
+        setVisibleArticles(20);
+      }
     }
   };
 
@@ -129,6 +178,15 @@ export default function Blogs() {
                 size="lg"
                 onClick={handleSearch}
                 className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-500 hover:to-indigo-600 transform hover:scale-105 transition-all duration-300 smooth-scale"
+              >
+                Search
+                <Search className="ml-2 h-4 w-4" />
+              </Button>
+              <Button
+                size="lg"
+                onClick={handleGoogleSearch}
+                variant="outline"
+                className="border-white/30 bg-white/10 text-white hover:bg-white hover:text-blue-700 transform hover:scale-105 transition-all duration-300"
               >
                 Search with Google
                 <ExternalLink className="ml-2 h-4 w-4" />
@@ -311,7 +369,12 @@ export default function Blogs() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {searchQuery.trim() && (
+            <div className="text-sm text-gray-600 mb-6">
+              Showing results for "<span className="font-semibold">{searchQuery}</span>"
+            </div>
+          )}
+          <div id="blog-results" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 id: "iso-27001-certification-guide",
@@ -791,9 +854,23 @@ export default function Blogs() {
                   "Mobile security application with authentication and zero trust network security architecture",
               },
             ]
+              .filter((article) => {
+                const q = searchQuery.trim().toLowerCase();
+                if (!q) return true;
+                const hay = `${article.title} ${article.excerpt} ${article.category}`.toLowerCase();
+                const norm = (s: string) => s.replace(/\s|-/g, "");
+                return hay.includes(q) || norm(hay).includes(norm(q));
+              })
               .slice(0, visibleArticles)
               .map((article, index) => (
-                <Link key={index} to={`/resources/blog/${article.id}`}>
+                <Link
+                  key={index}
+                  to={`/resources/blog/${article.id}`}
+                  data-article-title={article.title}
+                  data-article-category={article.category}
+                  data-article-excerpt={article.excerpt}
+                  id={`article-${article.id}`}
+                >
                   <Card
                     className={`overflow-hidden transition-all duration-500 group cursor-pointer transform hover:scale-[1.02] hover:shadow-2xl shimmer-effect ${
                       article.featured

@@ -20,8 +20,42 @@ import {
   Star,
   ArrowRight,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function Index() {
+  const [focus, setFocus] = useState<string>("all");
+
+  const mapMarkers = [
+    { id: "north-america", label: "North America", top: 34, left: 22 },
+    { id: "usa", label: "USA", top: 38, left: 28 },
+    { id: "canada", label: "Canada", top: 26, left: 25 },
+    { id: "south-america", label: "South America", top: 68, left: 38 },
+    { id: "europe", label: "Europe", top: 34, left: 55 },
+    { id: "india", label: "India", top: 47, left: 64 },
+    { id: "australia", label: "Australia", top: 75, left: 80 },
+  ];
+
+  const groupMap: Record<string, string[]> = {
+    "north-america": ["north-america", "usa", "canada"],
+  };
+
+  const arcs = [
+    { from: "usa", to: "europe" },
+    { from: "usa", to: "india" },
+    { from: "europe", to: "india" },
+    { from: "india", to: "australia" },
+    { from: "usa", to: "south-america" },
+    { from: "canada", to: "europe" },
+  ];
+
+  const idMap = Object.fromEntries(
+    mapMarkers.map((m) => [m.id, m])
+  ) as Record<string, { id: string; label: string; top: number; left: number }>;
+
+  const isActive = (id: string) =>
+    focus === "all" ||
+    focus === id ||
+    (groupMap[focus] ? groupMap[focus].includes(id) : false);
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -1151,6 +1185,116 @@ export default function Index() {
                 </Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Global Presence Map */}
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-10 -right-10 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-10 sm:mb-14">
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 rounded-full px-4 sm:px-6 py-2 text-blue-700 font-medium text-xs sm:text-sm mb-4">
+              Global Client Footprint
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
+              Where Our Clients Are Based
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+              We’re proud to support teams across North & South America, Canada, USA, Europe, India, and Australia.
+            </p>
+          </div>
+
+          <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+              alt="World map"
+              className="w-full h-72 sm:h-96 md:h-[520px] object-cover grayscale-[35%] contrast-110"
+            />
+
+            {/* Animated connection arcs */}
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0 w-full h-full pointer-events-none">
+              <defs>
+                <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.8" />
+                  <stop offset="50%" stopColor="#A78BFA" stopOpacity="0.9" />
+                  <stop offset="100%" stopColor="#FB923C" stopOpacity="0.8" />
+                </linearGradient>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="1.5" result="coloredBlur" />
+                  <feMerge>
+                    <feMergeNode in="coloredBlur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              {arcs.map((a, i) => {
+                const p1 = idMap[a.from];
+                const p2 = idMap[a.to];
+                if (!p1 || !p2) return null;
+                const cx = (p1.left + p2.left) / 2;
+                const d = `M ${p1.left} ${p1.top} C ${cx} ${p1.top - 12}, ${cx} ${p2.top - 12}, ${p2.left} ${p2.top}`;
+                const active =
+                  focus === "all" ||
+                  [a.from, a.to].includes(focus) ||
+                  (groupMap[focus]?.includes(a.from) || groupMap[focus]?.includes(a.to));
+                return (
+                  <g key={i} opacity={active ? 1 : 0.15} filter="url(#glow)">
+                    <path d={d} stroke="url(#arcGrad)" strokeWidth={0.6} fill="none" strokeLinecap="round" strokeDasharray="4 8">
+                      <animate attributeName="stroke-dashoffset" from="40" to="0" dur="3.5s" repeatCount="indefinite" />
+                    </path>
+                    <path d={d} stroke="#60A5FA" strokeOpacity={0.2} strokeWidth={2} fill="none" />
+                  </g>
+                );
+              })}
+            </svg>
+
+            {/* Pulsing pins */}
+            <div className="absolute inset-0">
+              {mapMarkers.map((m) => (
+                <button
+                  key={m.id}
+                  className={`absolute group transition-all duration-300 ${isActive(m.id) ? "opacity-100" : "opacity-30"}`}
+                  style={{ top: `${m.top}%`, left: `${m.left}%` }}
+                  onClick={() => setFocus(m.id)}
+                  aria-label={`Focus ${m.label}`}
+                >
+                  <span className="absolute -inset-6 rounded-full bg-accent/20 blur-xl"></span>
+                  <span className="absolute -inset-3 rounded-full bg-accent/30 animate-ping"></span>
+                  <span className="relative block w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-accent ring-4 ring-white/70 shadow-lg"></span>
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 whitespace-nowrap text-[10px] sm:text-xs md:text-sm font-semibold bg-white/95 text-slate-900 px-2 py-1 rounded-md shadow-md border border-gray-200 hidden sm:block">
+                    {m.label}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Interactive legend */}
+          <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {[{ id: "all", label: "All" },
+              { id: "north-america", label: "North America" },
+              { id: "usa", label: "USA" },
+              { id: "canada", label: "Canada" },
+              { id: "south-america", label: "South America" },
+              { id: "europe", label: "Europe" },
+              { id: "india", label: "India" },
+              { id: "australia", label: "Australia" },].map((r) => (
+              <button
+                key={r.id}
+                onClick={() => setFocus(r.id)}
+                className={`px-3 py-1.5 text-xs sm:text-sm rounded-full border transition-all duration-300 ${
+                  focus === r.id
+                    ? "bg-blue-600 text-white border-blue-700 shadow"
+                    : "bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-200"
+                }`}
+              >
+                {r.label}
+              </button>
+            ))}
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@ export function Footer() {
               confidence through comprehensive security solutions.
             </p>
             <div className="text-sm text-white/60">
-              © 2024 Com-Sec. All rights reserved.
+              © 2025 Com-Sec. All rights reserved.
             </div>
           </div>
 
