@@ -22,6 +22,7 @@ import {
   Shield,
   FileText,
   ChevronRight,
+  ExternalLink,
 } from "lucide-react";
 
 export default function Blogs() {
@@ -33,6 +34,13 @@ export default function Blogs() {
   const handleSearch = () => {
     if (searchQuery.trim()) {
       setVisibleArticles(20);
+    }
+  };
+
+  const handleGoogleSearch = () => {
+    if (searchQuery.trim()) {
+      const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+      window.open(googleSearchUrl, "_blank");
     }
   };
 
@@ -132,6 +140,15 @@ export default function Blogs() {
               >
                 Search
                 <Search className="ml-2 h-4 w-4" />
+              </Button>
+              <Button
+                size="lg"
+                onClick={handleGoogleSearch}
+                variant="outline"
+                className="border-white/30 bg-white/10 text-white hover:bg-white hover:text-blue-700 transform hover:scale-105 transition-all duration-300"
+              >
+                Search with Google
+                <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
