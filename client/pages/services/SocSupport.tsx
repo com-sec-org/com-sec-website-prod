@@ -293,7 +293,7 @@ export default function SocSupport() {
             {[
               {
                 name: "SOC Essentials",
-                price: "Starting at $2,999/month",
+                price: "Starting at $3,000/month",
                 description: "Core SOC services for small to medium businesses",
                 features: [
                   "24/7 security monitoring",
@@ -301,12 +301,14 @@ export default function SocSupport() {
                   "Monthly security reports",
                   "Email and phone support",
                   "Basic threat intelligence",
+                  "Phishing testing (quarterly)",
+                  "Security awareness training (quarterly)",
                 ],
                 color: "border-purple-300",
               },
               {
                 name: "SOC Professional",
-                price: "Starting at $7,999/month",
+                price: "Starting at $8,000/month",
                 description: "Comprehensive SOC services for enterprises",
                 features: [
                   "Advanced threat hunting",
@@ -315,6 +317,9 @@ export default function SocSupport() {
                   "Bi-weekly reviews",
                   "Advanced threat intelligence",
                   "SIEM customization",
+                  "EDR management",
+                  "Responding to security questionnaires",
+                  "Compliance reporting dashboards",
                 ],
                 color: "border-purple-500",
                 popular: true,
@@ -330,6 +335,12 @@ export default function SocSupport() {
                   "Weekly strategy calls",
                   "Custom threat intelligence",
                   "Compliance assistance",
+                  "Penetration testing program",
+                  "Security awareness training program",
+                  "Vendor risk management",
+                  "Tabletop exercises and IR plan testing",
+                  "Cloud security posture management",
+                  "Executive reporting and board-ready metrics",
                 ],
                 color: "border-purple-700",
               },
@@ -369,6 +380,46 @@ export default function SocSupport() {
                   >
                     <Link to="/contact">Get Started</Link>
                   </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What Com-Sec SOC Delivers */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              What Com-Sec SOC Delivers
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Practical, hands-on services we operate for clients every day
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              "24/7 monitoring across endpoints, network, and cloud",
+              "Incident response with containment and remediation",
+              "Threat hunting and alert tuning",
+              "SIEM administration and log onboarding",
+              "EDR deployment and ongoing management",
+              "Vulnerability scanning and patch guidance",
+              "Cloud security posture monitoring (AWS/Azure/GCP)",
+              "Phishing testing and behavioral analytics",
+              "Security awareness training and campaigns",
+              "Responding to security questionnaires and audits",
+              "Penetration testing coordination and reporting",
+              "Compliance mapping and reporting (SOC 2, HIPAA, ISO 27001)",
+              "Runbooks/playbooks and IR plan development",
+              "Vendor risk management and third‑party due diligence",
+              "Executive dashboards and board‑ready metrics",
+            ].map((item, idx) => (
+              <Card key={idx} className="hover:shadow-md transition-all">
+                <CardContent className="flex items-start gap-3 p-5">
+                  <CheckCircle className="h-5 w-5 text-purple-600 mt-0.5" />
+                  <span className="text-sm">{item}</span>
                 </CardContent>
               </Card>
             ))}

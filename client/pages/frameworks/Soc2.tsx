@@ -286,6 +286,54 @@ export default function Soc2() {
         </div>
       </section>
 
+      {/* SOC 2 Pricing */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">SOC 2 Pricing</h2>
+            <p className="text-xl text-muted-foreground">Clear, outcome-focused pricing for your SOC 2 journey</p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+            {[
+              {
+                name: "Continued SOC 2 Support",
+                price: "Custom pricing",
+                description:
+                  "We become your compliance team—owning ongoing evidence collection, control monitoring, auditor coordination, and security questionnaires.",
+                features: [
+                  "Quarterly risk and control reviews",
+                  "Evidence automation and upkeep",
+                  "Security questionnaire responses",
+                  "Executive reporting and metrics",
+                ],
+              },
+            ].map((plan, index) => (
+              <Card key={index} className="relative hover:shadow-xl transition-all duration-300 border-2">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-primary">{plan.name}</CardTitle>
+                  <div className="text-3xl font-bold text-accent mb-2">{plan.price}</div>
+                  <CardDescription>{plan.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 mb-6">
+                    {plan.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center gap-3">
+                        <CheckCircle className="h-4 w-4 text-green-500" />
+                        <span className="text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button className="w-full bg-accent hover:bg-accent/90" asChild>
+                    <Link to="/contact">Get Started</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-20 bg-accent/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
