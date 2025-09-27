@@ -24,7 +24,6 @@ import {
   ChevronRight,
   ExternalLink,
 } from "lucide-react";
-import { useState } from "react";
 
 export default function Blogs() {
   const [searchQuery, setSearchQuery] = useState("");
