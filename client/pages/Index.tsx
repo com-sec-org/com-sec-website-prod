@@ -1155,6 +1155,71 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Global Presence Map */}
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-10 -right-10 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-10 sm:mb-14">
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 rounded-full px-4 sm:px-6 py-2 text-blue-700 font-medium text-xs sm:text-sm mb-4">
+              Global Client Footprint
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
+              Where Our Clients Are Based
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+              We’re proud to support teams across North & South America, Canada, USA, Europe, India, and Australia.
+            </p>
+          </div>
+
+          <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+              alt="World map"
+              className="w-full h-72 sm:h-96 md:h-[520px] object-cover grayscale-[35%] contrast-110"
+            />
+            <div className="absolute inset-0">
+              {[
+                { label: "North America", top: "34%", left: "22%" },
+                { label: "USA", top: "38%", left: "28%" },
+                { label: "Canada", top: "26%", left: "25%" },
+                { label: "South America", top: "68%", left: "38%" },
+                { label: "Europe", top: "34%", left: "55%" },
+                { label: "India", top: "47%", left: "64%" },
+                { label: "Australia", top: "75%", left: "80%" },
+              ].map((m, i) => (
+                <div key={i} className="absolute group" style={{ top: m.top, left: m.left }}>
+                  <span className="absolute -inset-4 rounded-full bg-accent/20 blur-lg"></span>
+                  <span className="absolute -inset-2 rounded-full bg-accent/20 animate-ping"></span>
+                  <span className="relative block w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-accent ring-4 ring-white/70 shadow-lg"></span>
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 whitespace-nowrap text-[10px] sm:text-xs md:text-sm font-semibold bg-white/95 text-slate-900 px-2 py-1 rounded-md shadow-md border border-gray-200 hidden sm:block">
+                    {m.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {[
+              "North America",
+              "USA",
+              "Canada",
+              "South America",
+              "Europe",
+              "India",
+              "Australia",
+            ].map((r) => (
+              <span key={r} className="px-3 py-1.5 text-xs sm:text-sm rounded-full bg-blue-100 text-blue-700 border border-blue-200">
+                {r}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Vendor Partners Section */}
       <section className="py-16 sm:py-20 bg-gradient-to-br from-primary via-primary/95 to-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
