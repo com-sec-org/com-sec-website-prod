@@ -24,6 +24,7 @@ import {
   ChevronRight,
   ExternalLink,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function Blogs() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -41,7 +42,10 @@ export default function Blogs() {
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
-      handleSearch();
+      e.preventDefault();
+      if (searchQuery.trim()) {
+        setVisibleArticles(20);
+      }
     }
   };
 
@@ -311,6 +315,11 @@ export default function Blogs() {
             </p>
           </div>
 
+          {searchQuery.trim() && (
+            <div className="text-sm text-gray-600 mb-6">
+              Showing results for "<span className="font-semibold">{searchQuery}</span>"
+            </div>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -791,6 +800,13 @@ export default function Blogs() {
                   "Mobile security application with authentication and zero trust network security architecture",
               },
             ]
+              .filter((article) => {
+                const q = searchQuery.trim().toLowerCase();
+                if (!q) return true;
+                const hay = `${article.title} ${article.excerpt} ${article.category}`.toLowerCase();
+                const norm = (s: string) => s.replace(/\s|-/g, "");
+                return hay.includes(q) || norm(hay).includes(norm(q));
+              })
               .slice(0, visibleArticles)
               .map((article, index) => (
                 <Link key={index} to={`/resources/blog/${article.id}`}>
