@@ -24,8 +24,11 @@ import {
   ChevronRight,
   ExternalLink,
 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 export default function Blogs() {
+  const { toast } = useToast();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchFocused, setSearchFocused] = useState(false);
   const [visibleArticles, setVisibleArticles] = useState(9);
@@ -34,6 +37,44 @@ export default function Blogs() {
   const handleSearch = () => {
     if (searchQuery.trim()) {
       setVisibleArticles(20);
+      const q = searchQuery.trim().toLowerCase().replace(/\s|-/g, "");
+      setTimeout(() => {
+        const items = Array.from(
+          document.querySelectorAll<HTMLElement>("[data-article-title]")
+        );
+        const matches = items.filter((el) => {
+          const t = (el.getAttribute("data-article-title") || "").toLowerCase();
+          const c = (el.getAttribute("data-article-category") || "").toLowerCase();
+          const e = (el.getAttribute("data-article-excerpt") || "").toLowerCase();
+          const hay = `${t} ${c} ${e}`.replace(/\s|-/g, "");
+          return hay.includes(q);
+        });
+
+        if (matches.length > 0) {
+          toast({
+            title: "We found blogs for you",
+            description: `${matches.length} matching article${matches.length > 1 ? "s" : ""}.` ,
+            action: (
+              <ToastAction
+                altText="Jump to results"
+                onClick={() => document.getElementById("blog-results")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+              >
+                Jump to results
+              </ToastAction>
+            ),
+          });
+        } else {
+          toast({
+            title: "No on-site matches",
+            description: "Try Google search for broader results.",
+            action: (
+              <ToastAction altText="Search Google" onClick={() => handleGoogleSearch()}>
+                Search Google
+              </ToastAction>
+            ),
+          });
+        }
+      }, 0);
     }
   };
 
@@ -333,7 +374,7 @@ export default function Blogs() {
               Showing results for "<span className="font-semibold">{searchQuery}</span>"
             </div>
           )}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div id="blog-results" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 id: "iso-27001-certification-guide",
@@ -822,7 +863,14 @@ export default function Blogs() {
               })
               .slice(0, visibleArticles)
               .map((article, index) => (
-                <Link key={index} to={`/resources/blog/${article.id}`}>
+                <Link
+                  key={index}
+                  to={`/resources/blog/${article.id}`}
+                  data-article-title={article.title}
+                  data-article-category={article.category}
+                  data-article-excerpt={article.excerpt}
+                  id={`article-${article.id}`}
+                >
                   <Card
                     className={`overflow-hidden transition-all duration-500 group cursor-pointer transform hover:scale-[1.02] hover:shadow-2xl shimmer-effect ${
                       article.featured
