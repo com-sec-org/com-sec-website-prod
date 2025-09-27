@@ -22,7 +22,6 @@ import {
   Shield,
   FileText,
   ChevronRight,
-  ExternalLink,
 } from "lucide-react";
 
 export default function Blogs() {
@@ -33,9 +32,7 @@ export default function Blogs() {
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
-      // Search both site content and open Google search in new tab
-      const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(`cybersecurity ${searchQuery} site:com-sec.io OR "SOC 2" OR "penetration testing" OR "compliance"`)}`;
-      window.open(googleSearchUrl, "_blank");
+      setVisibleArticles(20);
     }
   };
 
@@ -133,8 +130,8 @@ export default function Blogs() {
                 onClick={handleSearch}
                 className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-500 hover:to-indigo-600 transform hover:scale-105 transition-all duration-300 smooth-scale"
               >
-                Search with Google
-                <ExternalLink className="ml-2 h-4 w-4" />
+                Search
+                <Search className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
