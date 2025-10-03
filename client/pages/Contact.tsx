@@ -39,9 +39,8 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     const formData = new FormData(e.currentTarget);
-    const formJson = {
-      firstName: formData.get("firstName") as string,
-      lastName: formData.get("lastName") as string,
+    const payload = {
+      name: `${(formData.get("firstName") as string) || ""} ${(formData.get("lastName") as string) || ""}`.trim(),
       email: formData.get("email") as string,
       phone: formData.get("phone") as string,
       company: formData.get("company") as string,
@@ -51,12 +50,12 @@ export default function Contact() {
     };
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/.netlify/functions/sendEmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formJson),
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
