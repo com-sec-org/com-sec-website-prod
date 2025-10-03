@@ -784,7 +784,6 @@ export default function Index() {
                     >
                       <service.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                     </div>
-                    <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
                   </div>
                   <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300">
                     {service.title}
