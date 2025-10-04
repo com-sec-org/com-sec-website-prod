@@ -203,7 +203,7 @@ export function Navigation() {
               asChild
             >
               <a
-                href="https://calendly.com/bojan-com-sec"
+                href="https://calendly.com/Carter-com-sec"
                 target="_blank"
                 rel="noopener noreferrer"
               >
