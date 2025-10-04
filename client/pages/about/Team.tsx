@@ -46,19 +46,19 @@ export default function Team() {
         "Threat Modeling",
       ],
     },
-    // {
-    //   name: "Christian Manalaysay",
-    //   role: "PSecurity & Compliance Manager",
-    //   image: "/images/team/Jayush.png",
-    //   description:
-    //     "Jayush oversees all penetration testing at Com-Sec. He uses a mix of manual and automated testing, code reviews, threat modeling, and application assessments to find and fix security vulnerabilities, strengthening our clients' defenses. Jayush's thorough testing approach helps clients identify risks before they become problems.",
-    //   expertise: [
-    //     "Manual Testing",
-    //     "Automated Testing",
-    //     "Code Reviews",
-    //     "Threat Modeling",
-    //   ],
-    // },
+    {
+      name: "Christian Manalaysay",
+      role: "Security & Compliance Manager",
+      image: "/images/team/Christian.png",
+      description:
+        "Christian manages Com-Sec’s security and compliance initiatives, ensuring alignment with leading frameworks such as SOC 2, HIPAA, and ISO 27001. He specializes in strengthening organizational security posture, driving audit readiness, and ensuring clients achieve continuous compliance excellence.",
+      expertise: [
+        "Risk Management",
+        "Regulatory Compliance",
+        "Audit Readiness",
+        "Security Governance",
+      ],
+    },
     {
       name: "Christopher Cole",
       role: "Security & Compliance Engineer",
