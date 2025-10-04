@@ -296,7 +296,7 @@ export default function Contact() {
                     <div>
                       <div className="font-medium">Phone</div>
                       <div className="text-muted-foreground">
-                        240-888-1324
+                        857-832-1623
                       </div>
                     </div>
                   </div>
@@ -305,7 +305,7 @@ export default function Contact() {
                     <div>
                       <div className="font-medium">Address</div>
                       <div className="text-muted-foreground">
-                        124 V st NW
+                        Washington
                         <br />
                         DC 20001
                       </div>
@@ -314,7 +314,7 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Clock className="h-6 w-6 text-accent mr-2" />
@@ -347,7 +347,7 @@ export default function Contact() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card>
                 <CardHeader>
@@ -395,7 +395,7 @@ export default function Contact() {
                 <p className="text-muted-foreground mb-4">
                   Speak directly with our security experts
                 </p>
-                <Button variant="outline">+1 (555) 123-4567</Button>
+                <Button variant="outline">+1 (857) 832-1623</Button>
               </CardContent>
             </Card>
 

@@ -630,7 +630,7 @@ export default function Index() {
               </div>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
+            {/* <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.2] drop-shadow-2xl">
               <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
                 Simplifying
               </span>{" "}
@@ -639,10 +639,29 @@ export default function Index() {
               </span>{" "}
               <span className="inline-block animate-confidence-reveal animation-delay-1500">
                 <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
-                  and Compliance
+                  & Compliance
                 </span>
               </span>
-            </h1>
+            </h1> */
+            
+            
+            <h1 
+  className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-2xl leading-[1.3]"
+  style={{ overflow: 'visible' }}
+>
+  <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
+    Simplifying
+  </span>{" "}
+  <span className="inline-block animate-typewriter-word animation-delay-1000 text-white">
+    Security
+  </span>{" "}
+  <span className="inline-block animate-confidence-reveal animation-delay-1500">
+    <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
+      & Compliance
+    </span>
+  </span>
+</h1>
+            }
 
             <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/90 max-w-4xl mx-auto animate-fade-in-delayed animation-delay-2000 opacity-0 drop-shadow-lg">
               <span className="animate-shimmer-text bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent">
