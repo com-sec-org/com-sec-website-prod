@@ -9,7 +9,7 @@ export default function Team() {
   const teamMembers = [
     {
       name: "Farbod Fakhrai",
-      role: "Chief Executive Officer",
+      role: "Security & Compliance Advisor",
       image: "/images/team/farbs1.jpg",
       description:
         "Farbod is the Chief Executive Officer of Com-Sec, bringing visionary leadership and strategic direction to the company's cybersecurity mission. With extensive experience in security and compliance, he drives innovation and growth while ensuring the highest standards of service delivery. Farbod's leadership philosophy focuses on building strong client relationships and empowering his team to deliver exceptional cybersecurity solutions.",
@@ -46,6 +46,19 @@ export default function Team() {
         "Threat Modeling",
       ],
     },
+    // {
+    //   name: "Christian Manalaysay",
+    //   role: "PSecurity & Compliance Manager",
+    //   image: "/images/team/Jayush.png",
+    //   description:
+    //     "Jayush oversees all penetration testing at Com-Sec. He uses a mix of manual and automated testing, code reviews, threat modeling, and application assessments to find and fix security vulnerabilities, strengthening our clients' defenses. Jayush's thorough testing approach helps clients identify risks before they become problems.",
+    //   expertise: [
+    //     "Manual Testing",
+    //     "Automated Testing",
+    //     "Code Reviews",
+    //     "Threat Modeling",
+    //   ],
+    // },
     {
       name: "Christopher Cole",
       role: "Security & Compliance Engineer",
