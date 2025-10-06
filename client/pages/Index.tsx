@@ -782,7 +782,7 @@ export default function Index() {
                 href: "/services/risk-management",
               },
             ].map((service, index) => (
-              <Link to={service.href ?? "/services"} key={index} className="block h-full no-underline">
+              <Link to={service.href ?? "/services"} key={index} className="block h-full no-underline" title={`Learn more about ${service.title}`}>
               <Card
                 className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-0 shadow-lg hover:shadow-2xl hover:-translate-y-2 h-full"
               >
@@ -813,6 +813,7 @@ export default function Index() {
                       </div>
                     ))}
                   </div>
+                  <div className="mt-4 text-sm font-semibold text-accent opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</div>
                 </CardContent>
               </Card>
             </Link>

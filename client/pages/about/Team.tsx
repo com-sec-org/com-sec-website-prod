@@ -310,7 +310,7 @@ export default function Team() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="group">
               <div className="text-4xl font-bold text-accent mb-2 animate-counter group-hover:animate-bounce">
-                15+
+                50+
               </div>
               <div className="text-muted-foreground font-medium">
                 Years Combined Experience
@@ -326,7 +326,7 @@ export default function Team() {
             </div>
             <div className="group">
               <div className="text-4xl font-bold text-green-600 mb-2 animate-counter group-hover:animate-bounce animation-delay-400">
-                30+
+                200+
               </div>
               <div className="text-muted-foreground font-medium">
                 Projects Completed
