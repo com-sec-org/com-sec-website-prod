@@ -12,7 +12,7 @@ export default function Team() {
       role: "Security & Compliance Advisor",
       image: "/images/team/farbs1.jpg",
       description:
-        "Farbod is the Chief Executive Officer of Com-Sec, bringing visionary leadership and strategic direction to the company's cybersecurity mission. With extensive experience in security and compliance, he drives innovation and growth while ensuring the highest standards of service delivery. Farbod's leadership philosophy focuses on building strong client relationships and empowering his team to deliver exceptional cybersecurity solutions.",
+        "Farbod is a Security & Compliance Advisor who guides organizations in building resilient security programs and achieving regulatory assurance. He specializes in risk management, control design, and audit readiness across SOC 2, ISO 27001, HIPAA, and PCI DSS, aligning security investments with business goals. Known for trusted client partnerships and pragmatic execution, he helps teams mature their posture, streamline compliance, and deliver measurable outcomes.",
       expertise: [
         "Strategic Leadership",
         "Business Development",
