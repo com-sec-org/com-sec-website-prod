@@ -1200,8 +1200,8 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Global Presence Map */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+      {/* Global Presence Map (hidden) */}
+      <section className="hidden py-16 sm:py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-10 -right-10 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl"></div>
