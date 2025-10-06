@@ -29,9 +29,9 @@ export default function Index() {
     { id: "north-america", label: "North America", top: 30, left: 24 },
     { id: "usa", label: "USA", top: 38, left: 28 },
     { id: "canada", label: "Canada", top: 22, left: 21 },
-    { id: "south-america", label: "South America", top: 70, left: 40 },
+    { id: "south-america", label: "South America", top: 66, left: 38 },
     { id: "europe", label: "Europe", top: 32, left: 52 },
-    { id: "india", label: "India", top: 46, left: 70 },
+    { id: "india", label: "India", top: 46, left: 72 },
     { id: "australia", label: "Australia", top: 78, left: 84 },
 
   ];
@@ -1223,7 +1223,7 @@ export default function Index() {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
               alt="World map"
-              className="w-full h-72 sm:h-96 md:h-[520px] object-cover grayscale-[35%] contrast-110"
+              className="w-full h-72 sm:h-96 md:h-[520px] object-contain grayscale-[35%] contrast-110 bg-white"
             />
 
             {/* Animated connection arcs */}
