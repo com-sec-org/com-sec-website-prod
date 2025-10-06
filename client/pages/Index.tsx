@@ -630,24 +630,10 @@ export default function Index() {
               </div>
             </div>
 
-            {/* <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.2] drop-shadow-2xl">
-              <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
-                Simplifying
-              </span>{" "}
-              <span className="inline-block animate-typewriter-word animation-delay-1000 text-white">
-                Security
-              </span>{" "}
-              <span className="inline-block animate-confidence-reveal animation-delay-1500">
-                <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
-                  & Compliance
-                </span>
-              </span>
-            </h1> */
             
             
             <h1 
-  className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-2xl leading-[1.3]"
-  style={{ overflow: 'visible' }}
+  className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-2xl leading-[1.2] overflow-visible pb-1 sm:pb-2"
 >
   <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
     Simplifying
@@ -661,8 +647,6 @@ export default function Index() {
     </span>
   </span>
 </h1>
-            }
-
             <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/90 max-w-4xl mx-auto animate-fade-in-delayed animation-delay-2000 opacity-0 drop-shadow-lg">
               <span className="animate-shimmer-text bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent">
                 Your trusted partner
@@ -738,6 +722,7 @@ export default function Index() {
                   "Audit Preparation",
                 ],
                 color: "from-blue-500 to-cyan-500",
+                href: "/services/soc2-readiness",
               },
               {
                 icon: Search,
@@ -750,6 +735,7 @@ export default function Index() {
                   "Social Engineering",
                 ],
                 color: "from-red-500 to-pink-500",
+                href: "/services/penetration-testing",
               },
               {
                 icon: Lock,
@@ -758,6 +744,7 @@ export default function Index() {
                   "Secure your cloud infrastructure with best practices and continuous monitoring.",
                 features: ["AWS Security", "Azure Security", "GCP Security"],
                 color: "from-green-500 to-emerald-500",
+                href: "/services/cloud-security",
               },
               {
                 icon: FileCheck,
@@ -766,6 +753,7 @@ export default function Index() {
                   "Comprehensive audits for HIPAA, ISO 27001, and other regulatory frameworks.",
                 features: ["HIPAA Compliance", "ISO 27001", "GDPR Compliance"],
                 color: "from-purple-500 to-violet-500",
+                href: "/services/compliance-audit-readiness",
               },
               {
                 icon: Users,
@@ -778,6 +766,7 @@ export default function Index() {
                   "Incident Response",
                 ],
                 color: "from-orange-500 to-amber-500",
+                href: "/services",
               },
               {
                 icon: CheckCircle,
@@ -790,10 +779,11 @@ export default function Index() {
                   "Control Testing",
                 ],
                 color: "from-teal-500 to-cyan-500",
+                href: "/services",
               },
             ].map((service, index) => (
+              <Link to={service.href ?? "/services"} key={index} className="block h-full no-underline">
               <Card
-                key={index}
                 className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-0 shadow-lg hover:shadow-2xl hover:-translate-y-2 h-full"
               >
                 <CardHeader className="p-4 sm:p-6">
@@ -825,6 +815,7 @@ export default function Index() {
                   </div>
                 </CardContent>
               </Card>
+            </Link>
             ))}
           </div>
 
