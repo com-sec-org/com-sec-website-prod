@@ -26,13 +26,13 @@ export default function Index() {
   const [focus, setFocus] = useState<string>("all");
 
   const mapMarkers = [
-    { id: "north-america", label: "North America", top: 32, left: 20 },
-    { id: "usa", label: "USA", top: 35, left: 25 },
-    { id: "canada", label: "Canada", top: 20, left: 23 },
-    { id: "south-america", label: "South America", top: 72, left: 35 },
-    { id: "europe", label: "Europe", top: 33, left: 52 },
-    { id: "india", label: "India", top: 52, left: 66 },
-    { id: "australia", label: "Australia", top: 78, left: 82 },
+    { id: "north-america", label: "North America", top: 30, left: 24 },
+    { id: "usa", label: "USA", top: 38, left: 28 },
+    { id: "canada", label: "Canada", top: 22, left: 21 },
+    { id: "south-america", label: "South America", top: 70, left: 40 },
+    { id: "europe", label: "Europe", top: 32, left: 52 },
+    { id: "india", label: "India", top: 46, left: 70 },
+    { id: "australia", label: "Australia", top: 78, left: 84 },
 
   ];
 
