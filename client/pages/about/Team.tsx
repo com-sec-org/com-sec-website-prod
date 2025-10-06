@@ -222,7 +222,7 @@ export default function Team() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
+            {[...teamMembers].sort((a, b) => a.name.localeCompare(b.name)).map((member, index) => (
               <Card
                 key={index}
                 className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-scale-in animation-delay-${(index + 1) * 100} opacity-0 bg-white border-0 shadow-lg overflow-hidden`}
