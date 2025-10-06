@@ -784,17 +784,20 @@ export default function Index() {
             ].map((service, index) => (
               <Link to={service.href ?? "/services"} key={index} className="block h-full no-underline" title={`Learn more about ${service.title}`}>
               <Card
-                className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-0 shadow-lg hover:shadow-2xl hover:-translate-y-2 h-full"
+                className="group relative overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] h-full"
               >
+                <div className={`pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity`}>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-10`}></div>
+                </div>
                 <CardHeader className="p-4 sm:p-6">
                   <div className="flex items-center justify-between mb-3 sm:mb-4">
                     <div
-                      className={`p-2 sm:p-3 rounded-xl bg-gradient-to-br ${service.color} shadow-lg`}
+                      className={`p-2 sm:p-3 rounded-xl bg-gradient-to-br ${service.color} shadow-lg transform transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110`}
                     >
                       <service.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                     </div>
                   </div>
-                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300 transform group-hover:translate-x-0.5">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
@@ -813,7 +816,7 @@ export default function Index() {
                       </div>
                     ))}
                   </div>
-                  <div className="mt-4 text-sm font-semibold text-accent opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</div>
+                  <div className="mt-4 text-sm font-semibold text-accent opacity-0 group-hover:opacity-100 transition-opacity group-hover:translate-x-0.5">Learn more →</div>
                 </CardContent>
               </Card>
             </Link>
