@@ -461,7 +461,7 @@ export default function Soc2Readiness() {
 
       <Footer />
 
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from {
             opacity: 0;
