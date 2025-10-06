@@ -20,6 +20,8 @@ import CloudSecurity from "./pages/services/CloudSecurity";
 import ComplianceAuditReadiness from "./pages/services/ComplianceAuditReadiness";
 import ItSupport from "./pages/services/ItSupport";
 import SocSupport from "./pages/services/SocSupport";
+import SecurityTraining from "./pages/services/SecurityTraining";
+import RiskManagement from "./pages/services/RiskManagement";
 
 // Framework Pages
 import Soc2Framework from "./pages/frameworks/Soc2";
@@ -150,6 +152,14 @@ const App = () => (
             <Route
               path="/services/cloud-security"
               element={<CloudSecurity />}
+            />
+            <Route
+              path="/services/security-training"
+              element={<SecurityTraining />}
+            />
+            <Route
+              path="/services/risk-management"
+              element={<RiskManagement />}
             />
 
             {/* Framework Routes */}

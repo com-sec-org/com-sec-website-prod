@@ -64,6 +64,18 @@ export function Navigation() {
                   >
                     SOC Support
                   </Link>
+                  <Link
+                    to="/services/security-training"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    Security Training
+                  </Link>
+                  <Link
+                    to="/services/risk-management"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    Risk Management
+                  </Link>
                 </div>
               </div>
             </div>
@@ -284,6 +296,20 @@ export function Navigation() {
                         onClick={() => setIsMenuOpen(false)}
                       >
                         SOC Support
+                      </Link>
+                      <Link
+                        to="/services/security-training"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Security Training
+                      </Link>
+                      <Link
+                        to="/services/risk-management"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Risk Management
                       </Link>
                     </div>
                   </div>
