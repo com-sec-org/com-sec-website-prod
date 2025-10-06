@@ -633,15 +633,15 @@ export default function Index() {
             
             
             <h1 
-  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-2xl leading-[1.5] overflow-visible pb-4 sm:pb-5 md:whitespace-nowrap md:tracking-tight"
+  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-2xl leading-[1.5] overflow-visible pb-4 sm:pb-5 md:whitespace-nowrap md:tracking-[-0.02em] lg:tracking-[-0.015em]"
 >
   <span className="inline-block leading-[1.2] pb-1 sm:pb-1.5 md:pb-2 animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
     Simplifying
-  </span>{" "}
-  <span className="inline-block animate-typewriter-word animation-delay-1000 text-white">
+  </span>
+  <span className="inline-block ml-[0.15em] animate-typewriter-word animation-delay-1000 text-white">
     Security
-  </span>{" "}
-  <span className="inline-block animate-confidence-reveal animation-delay-1500">
+  </span>
+  <span className="inline-block ml-[0.15em] animate-confidence-reveal animation-delay-1500">
     <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
       & Compliance
     </span>
