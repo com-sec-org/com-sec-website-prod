@@ -766,7 +766,7 @@ export default function Index() {
                   "Incident Response",
                 ],
                 color: "from-orange-500 to-amber-500",
-                href: "/services",
+                href: "/services/security-training",
               },
               {
                 icon: CheckCircle,
@@ -779,7 +779,7 @@ export default function Index() {
                   "Control Testing",
                 ],
                 color: "from-teal-500 to-cyan-500",
-                href: "/services",
+                href: "/services/risk-management",
               },
             ].map((service, index) => (
               <Link to={service.href ?? "/services"} key={index} className="block h-full no-underline">
