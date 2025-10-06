@@ -633,7 +633,7 @@ export default function Index() {
             
             
             <h1 
-  className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-2xl leading-[1.35] overflow-visible pb-2 sm:pb-3"
+  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-2xl leading-[1.4] overflow-visible pb-2 sm:pb-3"
 >
   <span className="inline-block animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
     Simplifying
