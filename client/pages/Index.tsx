@@ -26,13 +26,13 @@ export default function Index() {
   const [focus, setFocus] = useState<string>("all");
 
   const mapMarkers = [
-    { id: "north-america", label: "North America", top: 34, left: 22 },
-    { id: "usa", label: "USA", top: 38, left: 28 },
-    { id: "canada", label: "Canada", top: 26, left: 25 },
-    { id: "south-america", label: "South America", top: 68, left: 38 },
-    { id: "europe", label: "Europe", top: 34, left: 55 },
-    { id: "india", label: "India", top: 47, left: 64 },
-    { id: "australia", label: "Australia", top: 75, left: 80 },
+    { id: "north-america", label: "North America", top: 32, left: 20 },
+    { id: "usa", label: "USA", top: 35, left: 25 },
+    { id: "canada", label: "Canada", top: 20, left: 23 },
+    { id: "south-america", label: "South America", top: 72, left: 35 },
+    { id: "europe", label: "Europe", top: 33, left: 52 },
+    { id: "india", label: "India", top: 52, left: 66 },
+    { id: "australia", label: "Australia", top: 78, left: 82 },
 
   ];
 
@@ -1131,7 +1131,7 @@ export default function Index() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-6 border border-white/20 hover:border-accent/50 transition-all duration-300 transform hover:scale-105 group">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent mb-1 sm:mb-2 animate-counter group-hover:animate-bounce">
-                17+
+                50+
               </div>
               <div className="text-white/80 text-xs sm:text-sm font-medium">
                 Trusted Partners
@@ -1153,7 +1153,7 @@ export default function Index() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-6 border border-white/20 hover:border-blue-400/50 transition-all duration-300 transform hover:scale-105 group">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-400 mb-1 sm:mb-2 animate-counter group-hover:animate-bounce animation-delay-600">
-                8+
+                15+
               </div>
               <div className="text-white/80 text-xs sm:text-sm font-medium">
                 Industries Served
