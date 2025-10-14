@@ -414,7 +414,7 @@ export default function Soc2() {
               className="bg-gradient-to-r from-accent to-orange-600 hover:from-accent/90 hover:to-orange-600/90 transform hover:scale-105 transition-all duration-300"
               asChild
             >
-              <Link to="/services/soc2-readiness">
+              <Link to="/soc2-readiness">
                 Start SOC 2 Readiness
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Link>
