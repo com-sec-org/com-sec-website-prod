@@ -133,19 +133,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
 
-            {/* Service Routes */}
-            {
-            <Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
-            <Route path="/penetration-testing" element={<PenetrationTesting />} />
-            <Route path="/it-support" element={<ItSupport />} />
-            <Route path="/soc-support" element={<SocSupport />} />
-            <Route path="/soc2-readiness" element={<Soc2Readiness />} />
-            <Route path="/cloud-security" element={<CloudSecurity />} />
-            <Route path="/security-training" element={<SecurityTraining />} />
-            <Route path="/risk-management" element={<RiskManagement />} />
-            
-            
-            /* <Route path="/services" element={<Services />} />
+            {/* Service Routes
+            <Route path="/services" element={<Services />} />
             <Route
               path="/services/compliance-audit-readiness"
               element={<ComplianceAuditReadiness />}
@@ -172,6 +161,16 @@ const App = () => (
               path="/services/risk-management"
               element={<RiskManagement />}
             /> */}
+
+<Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
+<Route path="/penetration-testing" element={<PenetrationTesting />} />
+<Route path="/it-support" element={<ItSupport />} />
+<Route path="/soc-support" element={<SocSupport />} />
+<Route path="/soc2-readiness" element={<Soc2Readiness />} />
+<Route path="/cloud-security" element={<CloudSecurity />} />
+<Route path="/security-training" element={<SecurityTraining />} />
+<Route path="/risk-management" element={<RiskManagement />} />
+
 
             {/* Framework Routes */}
             <Route path="/frameworks/soc2" element={<Soc2Framework />} />
