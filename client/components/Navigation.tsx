@@ -41,37 +41,37 @@ export function Navigation() {
               <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
                   <Link
-                    to="/compliance-audit-readiness"
+                    to="/services/compliance-audit-readiness"
                     className="block px-4 py-2 text-sm text-red-600 hover:text-green-600 hover:bg-accent/10 transition-colors font-semibold"
                   >
                     Compliance and Audit Readiness
                   </Link>
                   <Link
-                    to="/penetration-testing"
+                    to="/services/penetration-testing"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Penetration Testing
                   </Link>
                   <Link
-                    to="/it-support"
+                    to="/services/it-support"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     IT Support
                   </Link>
                   <Link
-                    to="/soc-support"
+                    to="/services/soc-support"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     SOC Support
                   </Link>
                   <Link
-                    to="/security-training"
+                    to="/services/security-training"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Security Training
                   </Link>
                   <Link
-                    to="/risk-management"
+                    to="/services/risk-management"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Risk Management
