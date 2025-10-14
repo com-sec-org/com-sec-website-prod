@@ -41,37 +41,37 @@ export function Navigation() {
               <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
                   <Link
-                    to="/services/compliance-audit-readiness"
+                    to="/compliance-audit-readiness"
                     className="block px-4 py-2 text-sm text-red-600 hover:text-green-600 hover:bg-accent/10 transition-colors font-semibold"
                   >
                     Compliance and Audit Readiness
                   </Link>
                   <Link
-                    to="/services/penetration-testing"
+                    to="/penetration-testing"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Penetration Testing
                   </Link>
                   <Link
-                    to="/services/it-support"
+                    to="/it-support"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     IT Support
                   </Link>
                   <Link
-                    to="/services/soc-support"
+                    to="/soc-support"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     SOC Support
                   </Link>
                   <Link
-                    to="/services/security-training"
+                    to="/security-training"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Security Training
                   </Link>
                   <Link
-                    to="/services/risk-management"
+                    to="/risk-management"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Risk Management
@@ -270,42 +270,42 @@ export function Navigation() {
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
                       <Link
-                        to="/services/compliance-audit-readiness"
+                        to="/compliance-audit-readiness"
                         className="block px-3 py-2 text-sm text-red-600 hover:text-green-600 hover:bg-white rounded transition-colors font-semibold"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Compliance and Audit Readiness
                       </Link>
                       <Link
-                        to="/services/penetration-testing"
+                        to="/penetration-testing"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Penetration Testing
                       </Link>
                       <Link
-                        to="/services/it-support"
+                        to="/it-support"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         IT Support
                       </Link>
                       <Link
-                        to="/services/soc-support"
+                        to="/soc-support"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         SOC Support
                       </Link>
                       <Link
-                        to="/services/security-training"
+                        to="/security-training"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Security Training
                       </Link>
                       <Link
-                        to="/services/risk-management"
+                        to="/risk-management"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
