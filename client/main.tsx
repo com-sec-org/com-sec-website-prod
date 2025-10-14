@@ -162,14 +162,14 @@ const App = () => (
               element={<RiskManagement />}
             />
 
-{/* <Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
+<Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
 <Route path="/penetration-testing" element={<PenetrationTesting />} />
 <Route path="/it-support" element={<ItSupport />} />
 <Route path="/soc-support" element={<SocSupport />} />
 <Route path="/soc2-readiness" element={<Soc2Readiness />} />
 <Route path="/cloud-security" element={<CloudSecurity />} />
 <Route path="/security-training" element={<SecurityTraining />} />
-<Route path="/risk-management" element={<RiskManagement />} /> */}
+<Route path="/risk-management" element={<RiskManagement />} />
 
 
             {/* Framework Routes */}

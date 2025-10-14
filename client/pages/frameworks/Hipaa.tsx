@@ -605,7 +605,7 @@ export default function Hipaa() {
               className="bg-gradient-to-r from-green-600 to-teal-700 hover:from-green-500 hover:to-teal-600 transform hover:scale-105 transition-all duration-300"
               asChild
             >
-              <Link to="/services/compliance-audit-readiness">
+              <Link to="/compliance-audit-readiness">
                 Start HIPAA Assessment
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Link>

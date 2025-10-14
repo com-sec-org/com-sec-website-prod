@@ -404,7 +404,7 @@ export default function MeetTeamRojin() {
                     asChild
                     className="border-white text-white bg-transparent hover:bg-white hover:text-emerald-600"
                   >
-                    <Link to="/services/penetration-testing">
+                    <Link to="/penetration-testing">
                       Learn About Our Testing
                     </Link>
                   </Button>

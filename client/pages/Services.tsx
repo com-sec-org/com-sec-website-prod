@@ -77,7 +77,7 @@ export default function Services() {
                     className="border-accent text-accent hover:bg-accent hover:text-white"
                     asChild
                   >
-                    <Link to="/services/soc2-readiness">
+                    <Link to="/soc2-readiness">
                       Get Started <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
@@ -118,7 +118,7 @@ export default function Services() {
                     className="border-accent text-accent hover:bg-accent hover:text-white"
                     asChild
                   >
-                    <Link to="/services/penetration-testing">
+                    <Link to="/penetration-testing">
                       Get Started <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
@@ -159,7 +159,7 @@ export default function Services() {
                     className="border-accent text-accent hover:bg-accent hover:text-white"
                     asChild
                   >
-                    <Link to="/services/cloud-security">
+                    <Link to="/cloud-security">
                       Get Started <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>

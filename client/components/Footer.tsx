@@ -28,7 +28,7 @@ export function Footer() {
             <ul className="space-y-2 text-white/80">
               <li>
                 <Link
-                  to="/services/soc2-readiness"
+                  to="/soc2-readiness"
                   className="hover:text-accent transition-colors"
                 >
                   SOC 2 Readiness
@@ -36,7 +36,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/services/penetration-testing"
+                  to="/penetration-testing"
                   className="hover:text-accent transition-colors"
                 >
                   Penetration Testing
@@ -44,7 +44,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/services/cloud-security"
+                  to="/cloud-security"
                   className="hover:text-accent transition-colors"
                 >
                   Cloud Security
@@ -52,7 +52,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/services/compliance-audit-readiness"
+                  to="/compliance-audit-readiness"
                   className="hover:text-accent transition-colors"
                 >
                   Audit Readiness

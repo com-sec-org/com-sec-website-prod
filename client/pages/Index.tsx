@@ -722,7 +722,7 @@ export default function Index() {
                   "Audit Preparation",
                 ],
                 color: "from-blue-500 to-cyan-500",
-                href: "/services/soc2-readiness",
+                href: "/soc2-readiness",
               },
               {
                 icon: Search,
@@ -735,7 +735,7 @@ export default function Index() {
                   "Social Engineering",
                 ],
                 color: "from-red-500 to-pink-500",
-                href: "/services/penetration-testing",
+                href: "/penetration-testing",
               },
               {
                 icon: Lock,
@@ -744,7 +744,7 @@ export default function Index() {
                   "Secure your cloud infrastructure with best practices and continuous monitoring.",
                 features: ["AWS Security", "Azure Security", "GCP Security"],
                 color: "from-green-500 to-emerald-500",
-                href: "/services/cloud-security",
+                href: "/cloud-security",
               },
               {
                 icon: FileCheck,
@@ -753,7 +753,7 @@ export default function Index() {
                   "Comprehensive audits for HIPAA, ISO 27001, and other regulatory frameworks.",
                 features: ["HIPAA Compliance", "ISO 27001", "GDPR Compliance"],
                 color: "from-purple-500 to-violet-500",
-                href: "/services/compliance-audit-readiness",
+                href: "/compliance-audit-readiness",
               },
               {
                 icon: Users,
@@ -766,7 +766,7 @@ export default function Index() {
                   "Incident Response",
                 ],
                 color: "from-orange-500 to-amber-500",
-                href: "/services/security-training",
+                href: "/security-training",
               },
               {
                 icon: CheckCircle,
@@ -779,7 +779,7 @@ export default function Index() {
                   "Control Testing",
                 ],
                 color: "from-teal-500 to-cyan-500",
-                href: "/services/risk-management",
+                href: "/risk-management",
               },
             ].map((service, index) => (
               <Link to={service.href ?? "/services"} key={index} className="block h-full no-underline" title={`Learn more about ${service.title}`}>

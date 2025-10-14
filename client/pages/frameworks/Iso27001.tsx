@@ -680,7 +680,7 @@ export default function Iso27001() {
               className="bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-500 hover:to-purple-600 transform hover:scale-105 transition-all duration-300"
               asChild
             >
-              <Link to="/services/compliance-audit-readiness">
+              <Link to="/compliance-audit-readiness">
                 Start Implementation
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Link>

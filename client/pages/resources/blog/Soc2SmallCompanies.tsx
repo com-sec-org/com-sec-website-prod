@@ -292,7 +292,7 @@ export default function Soc2SmallCompanies() {
                     </Link>
                   </Button>
                   <Button variant="outline" asChild>
-                    <Link to="/services/soc2-readiness">
+                    <Link to="/soc2-readiness">
                       Learn About Our SOC 2 Services
                     </Link>
                   </Button>
