@@ -150,7 +150,7 @@ export default function ComplianceAuditReadiness() {
                 color: "bg-orange-50 border-orange-200",
               },
             ].map((framework) => (
-              <Link key={framework.slug} to={`/frameworks/${framework.slug}`} className="no-underline">
+              <Link key={framework.slug} to={`/${framework.slug}`} className="no-underline">
                 <Card
                   className={`text-center hover:shadow-lg transition-all duration-300 border-2 ${framework.color}`}
                 >
@@ -482,7 +482,7 @@ export default function ComplianceAuditReadiness() {
               className="border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white"
               asChild
             >
-              <Link to="/frameworks/soc2">
+              <Link to="/soc2">
                 Explore Frameworks
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
