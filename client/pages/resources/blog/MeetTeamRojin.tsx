@@ -36,7 +36,7 @@ export default function MeetTeamRojin() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Link
-            to="/resources/blogs"
+            to="/blogs"
             className="inline-flex items-center text-emerald-200 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -426,7 +426,7 @@ export default function MeetTeamRojin() {
               {
                 title: "Meet the Team: Jayush Chawla",
                 excerpt: "Learn about our Senior Cybersecurity Consultant",
-                link: "/resources/blog/meet-team-jayush-chawla",
+                link: "/blog/meet-team-jayush-chawla",
                 category: "Team Spotlight",
                 emoji: "👨‍💻",
               },
@@ -434,14 +434,14 @@ export default function MeetTeamRojin() {
                 title: "Internal vs External Penetration Testing",
                 excerpt:
                   "Understanding the differences between testing approaches",
-                link: "/resources/blog/internal-vs-external-penetration-testing",
+                link: "/blog/internal-vs-external-penetration-testing",
                 category: "Penetration Testing",
                 emoji: "🔍",
               },
               {
                 title: "Top 10 Easy Online Safety Tips",
                 excerpt: "Simple security practices everyone should follow",
-                link: "/resources/blog/top-10-online-safety-tips",
+                link: "/blog/top-10-online-safety-tips",
                 category: "Security Tips",
                 emoji: "🛡️",
               },
