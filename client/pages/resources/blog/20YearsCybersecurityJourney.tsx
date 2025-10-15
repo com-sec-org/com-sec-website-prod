@@ -33,7 +33,7 @@ export default function TwentyYearsCybersecurityJourney() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-gray-900 via-slate-800 to-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/resources/blogs">
+          <Link to="/blogs">
             <Button
               variant="ghost"
               className="text-white hover:text-blue-300 mb-8 group"
@@ -385,7 +385,7 @@ export default function TwentyYearsCybersecurityJourney() {
                           <li>• Zero Trust Architecture adoption</li>
                           <li>• SASE and cloud security</li>
                           <li>• Extended detection and response</li>
-                          <li>• Identity-centric security</li>
+                          <li>�� Identity-centric security</li>
                         </ul>
                       </div>
                     </div>
