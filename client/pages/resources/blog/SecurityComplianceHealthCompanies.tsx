@@ -35,7 +35,7 @@ export default function SecurityComplianceHealthCompanies() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-teal-900 via-cyan-800 to-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/resources/blogs">
+          <Link to="/blogs">
             <Button
               variant="ghost"
               className="text-white hover:text-teal-300 mb-8 group"
