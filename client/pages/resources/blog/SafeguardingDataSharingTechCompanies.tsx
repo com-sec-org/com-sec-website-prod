@@ -37,7 +37,7 @@ export default function SafeguardingDataSharingTechCompanies() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-cyan-900 via-blue-800 to-indigo-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/resources/blogs">
+          <Link to="/blogs">
             <Button
               variant="ghost"
               className="text-white hover:text-cyan-300 mb-8 group"
@@ -545,7 +545,7 @@ export default function SafeguardingDataSharingTechCompanies() {
                         <li>• Data inventory and classification</li>
                         <li>• Risk assessment and threat modeling</li>
                         <li>• Current security control evaluation</li>
-                        <li>• Compliance gap analysis</li>
+                        <li>�� Compliance gap analysis</li>
                       </ul>
                     </div>
                     <div>
