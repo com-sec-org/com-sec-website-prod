@@ -32,7 +32,7 @@ export default function PrepareComplianceAudit() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Link
-            to="/resources/blogs"
+            to="/blogs"
             className="inline-flex items-center text-green-200 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -542,21 +542,21 @@ export default function PrepareComplianceAudit() {
                 title: "ISO 27001 Certification Guide",
                 excerpt:
                   "Complete guide to ISO 27001 certification process and requirements.",
-                link: "/resources/blog/iso-27001-certification-guide",
+                link: "/blog/iso-27001-certification-guide",
                 category: "Compliance",
               },
               {
                 title: "Why SOC 2 Matters for Small Companies",
                 excerpt:
                   "Discover why SOC 2 compliance is crucial for companies of all sizes.",
-                link: "/resources/blog/why-soc2-matters-small-companies",
+                link: "/blog/why-soc2-matters-small-companies",
                 category: "Compliance",
               },
               {
                 title: "What is a vCISO?",
                 excerpt:
                   "Understanding the role of virtual Chief Information Security Officers.",
-                link: "/resources/blog/what-is-vciso-role-cybersecurity",
+                link: "/blog/what-is-vciso-role-cybersecurity",
                 category: "Leadership",
               },
             ].map((article, index) => (
