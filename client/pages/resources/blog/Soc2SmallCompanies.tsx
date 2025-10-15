@@ -32,7 +32,7 @@ export default function Soc2SmallCompanies() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Link
-            to="/resources/blogs"
+            to="/blogs"
             className="inline-flex items-center text-green-200 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -354,14 +354,14 @@ export default function Soc2SmallCompanies() {
                 title: "ISO 27001 Certification Guide",
                 excerpt:
                   "Complete guide to ISO 27001 certification process and requirements",
-                link: "/resources/blog/iso-27001-certification-guide",
+                link: "/blog/iso-27001-certification-guide",
                 category: "Compliance",
               },
               {
                 title: "How to Prepare for a Compliance Audit",
                 excerpt:
                   "Essential strategies for successful compliance audits",
-                link: "/resources/blog/prepare-compliance-audit-best-practices",
+                link: "/blog/prepare-compliance-audit-best-practices",
                 category: "Audit Readiness",
               },
               {
@@ -369,7 +369,7 @@ export default function Soc2SmallCompanies() {
                   "Com-Sec: Your Trusted Partner in Achieving SOC2 Compliance",
                 excerpt:
                   "Learn how Com-Sec helps organizations achieve SOC 2 compliance",
-                link: "/resources/blog/comsec-trusted-partner-soc2",
+                link: "/blog/comsec-trusted-partner-soc2",
                 category: "Company",
               },
             ].map((article, index) => (
