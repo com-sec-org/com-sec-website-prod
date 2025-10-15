@@ -181,6 +181,15 @@ const App = () => (
             <Route path="/frameworks/nist" element={<Nist />} />
             <Route path="/frameworks/gdpr" element={<Gdpr />} />
             <Route path="/frameworks/cmmc" element={<Cmmc />} />
+            {/* Top-level Framework Routes (duplicates for new paths) */}
+            <Route path="/soc2" element={<Soc2Framework />} />
+            <Route path="/iso27001" element={<Iso27001 />} />
+            <Route path="/hipaa" element={<Hipaa />} />
+            <Route path="/hitrust" element={<Hitrust />} />
+            <Route path="/pci-dss" element={<PciDss />} />
+            <Route path="/nist" element={<Nist />} />
+            <Route path="/gdpr" element={<Gdpr />} />
+            <Route path="/cmmc" element={<Cmmc />} />
 
             {/* Resource Routes */}
             <Route path="/resources/blogs" element={<Blogs />} />
