@@ -31,7 +31,7 @@ export default function TransparencyAccuracyAiHealthcare() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-900 via-teal-800 to-cyan-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/resources/blogs">
+          <Link to="/blogs">
             <Button
               variant="ghost"
               className="text-white hover:text-emerald-300 mb-8 group"
