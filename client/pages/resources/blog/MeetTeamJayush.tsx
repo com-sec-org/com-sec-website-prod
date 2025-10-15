@@ -35,7 +35,7 @@ export default function MeetTeamJayush() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Link
-            to="/resources/blogs"
+            to="/blogs"
             className="inline-flex items-center text-pink-200 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -374,7 +374,7 @@ export default function MeetTeamJayush() {
                 title: "Meet the Team: Rojin Rezaei",
                 excerpt:
                   "Get to know Rojin Rezaei, our cybersecurity expert specializing in penetration testing",
-                link: "/resources/blog/meet-team-rojin-rezaei",
+                link: "/blog/meet-team-rojin-rezaei",
                 category: "Team Spotlight",
                 emoji: "👩‍💻",
               },
@@ -382,7 +382,7 @@ export default function MeetTeamJayush() {
                 title: "What is a vCISO?",
                 excerpt:
                   "Understanding the role of virtual Chief Information Security Officers",
-                link: "/resources/blog/what-is-vciso-role-cybersecurity",
+                link: "/blog/what-is-vciso-role-cybersecurity",
                 category: "Leadership",
                 emoji: "👨‍💼",
               },
@@ -390,7 +390,7 @@ export default function MeetTeamJayush() {
                 title: "20 Years of Cybersecurity",
                 excerpt:
                   "A journey through the evolution of cybersecurity over two decades",
-                link: "/resources/blog/20-years-cybersecurity-journey",
+                link: "/blog/20-years-cybersecurity-journey",
                 category: "Industry History",
                 emoji: "🕰️",
               },
