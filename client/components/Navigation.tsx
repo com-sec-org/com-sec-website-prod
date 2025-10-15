@@ -119,49 +119,49 @@ export function Navigation() {
               <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
                   <Link
-                    to="/frameworks/soc2"
+                    to="/soc2"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     SOC 2
                   </Link>
                   <Link
-                    to="/frameworks/iso27001"
+                    to="/iso27001"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     ISO 27001
                   </Link>
                   <Link
-                    to="/frameworks/hitrust"
+                    to="/hitrust"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     HITRUST
                   </Link>
                   <Link
-                    to="/frameworks/hipaa"
+                    to="/hipaa"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     HIPAA
                   </Link>
                   <Link
-                    to="/frameworks/pci-dss"
+                    to="/pci-dss"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     PCI-DSS
                   </Link>
                   <Link
-                    to="/frameworks/nist"
+                    to="/nist"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     NIST
                   </Link>
                   <Link
-                    to="/frameworks/gdpr"
+                    to="/gdpr"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     GDPR
                   </Link>
                   <Link
-                    to="/frameworks/cmmc"
+                    to="/cmmc"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     CMMC
@@ -337,56 +337,56 @@ export function Navigation() {
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
                       <Link
-                        to="/frameworks/soc2"
+                        to="/soc2"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         SOC 2
                       </Link>
                       <Link
-                        to="/frameworks/iso27001"
+                        to="/iso27001"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         ISO 27001
                       </Link>
                       <Link
-                        to="/frameworks/hitrust"
+                        to="/hitrust"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         HITRUST
                       </Link>
                       <Link
-                        to="/frameworks/hipaa"
+                        to="/hipaa"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         HIPAA
                       </Link>
                       <Link
-                        to="/frameworks/pci-dss"
+                        to="/pci-dss"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         PCI-DSS
                       </Link>
                       <Link
-                        to="/frameworks/nist"
+                        to="/nist"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         NIST
                       </Link>
                       <Link
-                        to="/frameworks/gdpr"
+                        to="/gdpr"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         GDPR
                       </Link>
                       <Link
-                        to="/frameworks/cmmc"
+                        to="/cmmc"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
