@@ -33,7 +33,7 @@ export default function WhatIsVciso() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Link
-            to="/resources/blogs"
+            to="/blogs"
             className="inline-flex items-center text-purple-200 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
