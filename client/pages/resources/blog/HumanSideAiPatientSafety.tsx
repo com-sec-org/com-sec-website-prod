@@ -30,7 +30,7 @@ export default function HumanSideAiPatientSafety() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/resources/blogs">
+          <Link to="/blogs">
             <Button
               variant="ghost"
               className="text-white hover:text-blue-300 mb-8 group"
