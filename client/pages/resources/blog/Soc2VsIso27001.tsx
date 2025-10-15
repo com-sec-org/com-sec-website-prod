@@ -32,7 +32,7 @@ export default function Soc2VsIso27001() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/resources/blogs">
+          <Link to="/blogs">
             <Button
               variant="ghost"
               className="text-white hover:text-blue-300 mb-8 group"
