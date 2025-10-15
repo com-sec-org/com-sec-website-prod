@@ -189,6 +189,8 @@ const App = () => (
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/approach" element={<Approach />} />
             <Route path="/phishing" element={<PhishingTest />} />
+            <Route path="/approach" element={<Approach />} />
+            <Route path="/phishing" element={<PhishingTest />} />
 
             {/* About Routes */}
             <Route path="/about/company" element={<Company />} />
@@ -260,6 +262,23 @@ const App = () => (
               path="/resources/blog/safeguarding-data-sharing-tech-companies"
               element={<SafeguardingDataSharingTechCompanies />}
             />
+            {/* Top-level Blog Post Routes (duplicates for new paths) */}
+            <Route path="/blog/iso-27001-certification-guide" element={<Iso27001Guide />} />
+            <Route path="/blog/why-soc2-matters-small-companies" element={<Soc2SmallCompanies />} />
+            <Route path="/blog/meet-team-jayush-chawla" element={<MeetTeamJayush />} />
+            <Route path="/blog/meet-team-rojin-rezaei" element={<MeetTeamRojin />} />
+            <Route path="/blog/internal-vs-external-penetration-testing" element={<PentestingComparison />} />
+            <Route path="/blog/prepare-compliance-audit-best-practices" element={<PrepareComplianceAudit />} />
+            <Route path="/blog/what-is-vciso-role-cybersecurity" element={<WhatIsVciso />} />
+            <Route path="/blog/managed-security-compliance-services" element={<ManagedSecurityCompliance />} />
+            <Route path="/blog/ai-ethics-healthcare-innovation" element={<AiEthicsHealthcare />} />
+            <Route path="/blog/patient-confidentiality-ai-healthcare" element={<PatientConfidentialityAi />} />
+            <Route path="/blog/human-side-ai-patient-safety" element={<HumanSideAiPatientSafety />} />
+            <Route path="/blog/soc2-vs-iso27001-comparison" element={<Soc2VsIso27001 />} />
+            <Route path="/blog/transparency-accuracy-ai-healthcare" element={<TransparencyAccuracyAiHealthcare />} />
+            <Route path="/blog/cybersecurity-roundup-startups-may" element={<CybersecurityRoundupStartupsMay />} />
+            <Route path="/blog/security-compliance-health-companies" element={<SecurityComplianceHealthCompanies />} />
+            <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
             {/* Top-level Blog Post Routes (duplicates for new paths) */}
             <Route path="/blog/iso-27001-certification-guide" element={<Iso27001Guide />} />
             <Route path="/blog/why-soc2-matters-small-companies" element={<Soc2SmallCompanies />} />
