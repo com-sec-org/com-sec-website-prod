@@ -89,19 +89,19 @@ export function Navigation() {
               <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
                   <Link
-                    to="/resources/blogs"
+                    to="/blogs"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Blogs
                   </Link>
                   <Link
-                    to="/resources/approach"
+                    to="/approach"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Approach
                   </Link>
                   <Link
-                    to="/resources/phishing"
+                    to="/phishing"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Phishing Test
@@ -418,14 +418,14 @@ export function Navigation() {
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
                       <Link
-                        to="/resources/blogs"
+                        to="/blogs"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Blogs
                       </Link>
                       <Link
-                        to="/resources/approach"
+                        to="/approach"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >

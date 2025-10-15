@@ -205,7 +205,7 @@ export default function Blogs() {
             </h2>
           </div>
 
-          <Link to="/resources/blog/iso-27001-certification-guide">
+          <Link to="/blog/iso-27001-certification-guide">
             <Card className="hover:shadow-2xl transition-all duration-500 border-0 shadow-xl overflow-hidden group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div className="bg-gradient-to-br from-blue-600 to-indigo-700 p-8 lg:p-12 text-white">
@@ -865,7 +865,7 @@ export default function Blogs() {
               .map((article, index) => (
                 <Link
                   key={index}
-                  to={`/resources/blog/${article.id}`}
+                  to={`/blog/${article.id}`}
                   data-article-title={article.title}
                   data-article-category={article.category}
                   data-article-excerpt={article.excerpt}
