@@ -36,7 +36,7 @@ export default function CybersecurityRoundupStartupsMay() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-orange-900 via-red-800 to-pink-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/resources/blogs">
+          <Link to="/blogs">
             <Button
               variant="ghost"
               className="text-white hover:text-orange-300 mb-8 group"
