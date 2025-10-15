@@ -205,6 +205,10 @@ const App = () => (
             <Route path="/about/company" element={<Company />} />
             <Route path="/about/careers" element={<Careers />} />
             <Route path="/about/team" element={<Team />} />
+            {/* Top-level About Routes (duplicates for new paths) */}
+            <Route path="/company" element={<Company />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/team" element={<Team />} />
 
             {/* Blog Post Routes */}
             <Route

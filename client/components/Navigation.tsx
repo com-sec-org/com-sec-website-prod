@@ -179,19 +179,19 @@ export function Navigation() {
               <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
                   <Link
-                    to="/about/company"
+                    to="/company"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Our Company
                   </Link>
                   <Link
-                    to="/about/careers"
+                    to="/careers"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Careers
                   </Link>
                   <Link
-                    to="/about/team"
+                    to="/team"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Team
@@ -457,21 +457,21 @@ export function Navigation() {
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
                       <Link
-                        to="/about/company"
+                        to="/company"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Our Company
                       </Link>
                       <Link
-                        to="/about/careers"
+                        to="/careers"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Careers
                       </Link>
                       <Link
-                        to="/about/team"
+                        to="/team"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >

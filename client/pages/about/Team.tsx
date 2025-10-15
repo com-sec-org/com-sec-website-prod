@@ -361,7 +361,7 @@ export default function Team() {
             className="bg-gradient-to-r from-accent to-orange-600 hover:from-accent/80 hover:to-orange-500 text-white transform hover:scale-105 transition-all duration-300"
             asChild
           >
-            <Link to="/about/careers">
+            <Link to="/careers">
               View Open Positions
               <ChevronRight className="ml-2 h-5 w-5" />
             </Link>
