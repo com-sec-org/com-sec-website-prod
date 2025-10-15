@@ -413,7 +413,7 @@ export default function Iso27001Guide() {
                     </Link>
                   </Button>
                   <Button variant="outline" asChild>
-                    <Link to="/frameworks/iso27001">
+                    <Link to="/iso27001">
                       Get ISO 27001 Certified
                     </Link>
                   </Button>
