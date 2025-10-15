@@ -32,7 +32,7 @@ export default function Iso27001Guide() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Link
-            to="/resources/blogs"
+            to="/blogs"
             className="inline-flex items-center text-blue-200 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -436,21 +436,21 @@ export default function Iso27001Guide() {
                 title: "Why SOC 2 Matters—Even If You're Not a Big Company?",
                 excerpt:
                   "Discover why SOC 2 compliance is crucial for companies of all sizes",
-                link: "/resources/blog/why-soc2-matters-small-companies",
+                link: "/blog/why-soc2-matters-small-companies",
                 category: "Compliance",
               },
               {
                 title: "How to Prepare for a Compliance Audit",
                 excerpt:
                   "Essential strategies for successful compliance audits",
-                link: "/resources/blog/prepare-compliance-audit-best-practices",
+                link: "/blog/prepare-compliance-audit-best-practices",
                 category: "Audit Readiness",
               },
               {
                 title: "What is a vCISO?",
                 excerpt:
                   "Understanding the role of virtual Chief Information Security Officers",
-                link: "/resources/blog/what-is-vciso-role-cybersecurity",
+                link: "/blog/what-is-vciso-role-cybersecurity",
                 category: "Leadership",
               },
             ].map((article, index) => (
