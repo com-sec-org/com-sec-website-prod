@@ -1,5 +1,5 @@
 import "./global.css";
-
+import ComSecChatbot from "@/components/ComSecChatbot";
 import { Toaster } from "@/components/ui/toaster";
 import { createRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -320,7 +320,10 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
+    <ComSecChatbot />
   </ErrorBoundary>
+
+
 );
 
 // Ensure single root creation
