@@ -1408,3 +1408,16 @@ html {
     @apply bg-background text-foreground;
   }
 }
+@keyframes flash {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.dot-flash {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  animation: flash 1.2s infinite ease-in-out;
+}
