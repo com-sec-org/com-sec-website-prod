@@ -471,7 +471,7 @@ export default function Index() {
                 delay: 1.5,
               },
               {
-                name: "Castellum.ai",
+                name: "Castellum.AI",
                 sector: "AI Security",
                 color: "from-indigo-400 to-purple-500",
                 position: { x: 10, y: 45 },
@@ -575,7 +575,7 @@ export default function Index() {
                   "GPTZero",
                   "VhedaHealth",
                   "CloseKnit",
-                  "Castellum.ai",
+                  "Castellum.AI",
                   "CropTrak",
                   "NeuralWave",
                   "MentorPro",
