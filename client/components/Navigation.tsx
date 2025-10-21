@@ -42,7 +42,7 @@ export function Navigation() {
                 <div className="py-2">
                   <Link
                     to="/compliance-audit-readiness"
-                    className="block px-4 py-2 text-sm text-red-600 hover:text-green-600 hover:bg-accent/10 transition-colors font-semibold"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Compliance and Audit Readiness
                   </Link>
