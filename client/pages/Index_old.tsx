@@ -471,7 +471,7 @@ export default function Index() {
                 delay: 1.5,
               },
               {
-                name: "Casellum.ai",
+                name: "Castellum.ai",
                 sector: "AI Security",
                 color: "from-indigo-400 to-purple-500",
                 position: { x: 10, y: 45 },
@@ -485,7 +485,7 @@ export default function Index() {
                 delay: 2.5,
               },
               {
-                name: "NeuroWave",
+                name: "NeuralWave",
                 sector: "HealthTech",
                 color: "from-cyan-400 to-blue-500",
                 position: { x: 45, y: 30 },
@@ -575,9 +575,9 @@ export default function Index() {
                   "GPTZero",
                   "VhedaHealth",
                   "CloseKnit",
-                  "Casellum.ai",
+                  "Castellum.ai",
                   "CropTrak",
-                  "NeuroWave",
+                  "NeuralWave",
                   "MentorPro",
                 ].map((client, index) => (
                   <span
