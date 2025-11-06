@@ -5,8 +5,8 @@
 /soc-support-monitoring-services     /soc-support        301!
 /ongoing                             /                   301!
 /ongoing-security                    /                   301!
-/blog                               /blog               301!
-/approach                            /our-approach       301!
+/blog                               /blogs               301!
+/our-approach   /approach   301!
 
 
 /*  /index.html  200
