@@ -14,7 +14,7 @@
   status = 200
   to = "/.netlify/functions/api/:splat"
 
-# 🔽 Add these new redirects below 🔽
+# Redirect old Pen Test pages
 [[redirects]]
   from = "/penetration-testing-services"
   to = "/penetration-testing"
@@ -26,3 +26,9 @@
   to = "/penetration-testing"
   status = 301
   force = true
+
+# Fallback for SPA (must come last)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
