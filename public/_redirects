@@ -2,5 +2,11 @@
 /penetration-testing-1          /penetration-testing   301!
 /compliance-auditreadiness              /compliance-audit-readiness   301!
 /services/compliance-audit-readiness    /compliance-audit-readiness   301!
+/soc-support-monitoring-services     /soc-support        301!
+/ongoing                             /                   301!
+/ongoing-security                    /                   301!
+/blogs                               /blog               301!
+/approach                            /our-approach       301!
+
 
 /*  /index.html  200
