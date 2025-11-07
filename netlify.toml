@@ -14,16 +14,22 @@
   status = 200
   to = "/.netlify/functions/api/:splat"
 
-# Redirect old Pen Test pages
+# Redirect old Pen Test pages → main URL
 [[redirects]]
-  from = "/penetration-testing-services"
-  to = "/penetration-testing"
+  from = "/penetration-testing"
+  to = "/penetration-testing-services"
   status = 301
   force = true
 
 [[redirects]]
   from = "/penetration-testing-1"
-  to = "/penetration-testing"
+  to = "/penetration-testing-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/penetration-testing"
+  to = "/penetration-testing-services"
   status = 301
   force = true
 
