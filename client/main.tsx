@@ -140,7 +140,7 @@ const App = () => (
               element={<ComplianceAuditReadiness />}
             />
             <Route
-              path="/services/penetration-testing"
+              path="/services/penetration-testing-services"
               element={<PenetrationTesting />}
             />
             <Route path="/services/it-support" element={<ItSupport />} />
@@ -163,7 +163,7 @@ const App = () => (
             />
 
 <Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
-<Route path="/penetration-testing" element={<PenetrationTesting />} />
+<Route path="/penetration-testing-services" element={<PenetrationTesting />} />
 <Route path="/it-support" element={<ItSupport />} />
 <Route path="/soc-support" element={<SocSupport />} />
 <Route path="/soc2-readiness" element={<Soc2Readiness />} />

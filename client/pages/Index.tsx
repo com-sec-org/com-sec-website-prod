@@ -735,7 +735,7 @@ export default function Index() {
                   "Social Engineering",
                 ],
                 color: "from-red-500 to-pink-500",
-                href: "/penetration-testing",
+                href: "/penetration-testing-services",
               },
               {
                 icon: Lock,

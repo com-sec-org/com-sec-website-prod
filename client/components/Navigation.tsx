@@ -47,7 +47,7 @@ export function Navigation() {
                     Compliance and Audit Readiness
                   </Link>
                   <Link
-                    to="/penetration-testing"
+                    to="/penetration-testing-services"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Penetration Testing
@@ -277,7 +277,7 @@ export function Navigation() {
                         Compliance and Audit Readiness
                       </Link>
                       <Link
-                        to="/penetration-testing"
+                        to="/penetration-testing-services"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >

@@ -36,7 +36,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/penetration-testing"
+                  to="/penetration-testing-services"
                   className="hover:text-accent transition-colors"
                 >
                   Penetration Testing

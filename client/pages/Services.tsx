@@ -118,7 +118,7 @@ export default function Services() {
                     className="border-accent text-accent hover:bg-accent hover:text-white"
                     asChild
                   >
-                    <Link to="/penetration-testing">
+                    <Link to="/penetration-testing-services">
                       Get Started <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
