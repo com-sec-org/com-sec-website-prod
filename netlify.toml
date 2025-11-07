@@ -1,3 +1,6 @@
+##############################
+# 🔧 Netlify Build Settings
+##############################
 [build]
   command = "npm run build:client"
   functions = "netlify/functions"
@@ -7,14 +10,20 @@
   external_node_modules = ["express"]
   node_bundler = "esbuild"
 
-# Existing redirect for API
-[[redirects]]
-  force = true
-  from = "/api/*"
-  status = 200
-  to = "/.netlify/functions/api/:splat"
+##############################
+# 🔁 Redirects Configuration
+##############################
 
-# Redirect old Pen Test pages → main URL
+# API Requests → Netlify Functions
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+# ------------------------------------------------------
+# 🔒 Penetration Testing (main page)
+# ------------------------------------------------------
 [[redirects]]
   from = "/penetration-testing"
   to = "/penetration-testing-services"
@@ -33,7 +42,63 @@
   status = 301
   force = true
 
-# Fallback for SPA (must come last)
+# ------------------------------------------------------
+# ✅ Compliance & Audit Readiness
+# ------------------------------------------------------
+[[redirects]]
+  from = "/compliance-auditreadiness"
+  to = "/compliance-audit-readiness"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/compliance-audit-readiness"
+  to = "/compliance-audit-readiness"
+  status = 301
+  force = true
+
+# ------------------------------------------------------
+# 🧩 SOC Support & Monitoring
+# ------------------------------------------------------
+[[redirects]]
+  from = "/soc-support-monitoring-services"
+  to = "/soc-support"
+  status = 301
+  force = true
+
+# ------------------------------------------------------
+# 🔄 Ongoing Security
+# ------------------------------------------------------
+[[redirects]]
+  from = "/ongoing"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ongoing-security"
+  to = "/"
+  status = 301
+  force = true
+
+# ------------------------------------------------------
+# 📰 Blog & Approach
+# ------------------------------------------------------
+[[redirects]]
+  from = "/blog"
+  to = "/blogs"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/our-approach"
+  to = "/approach"
+  status = 301
+  force = true
+
+##############################
+# ⚙️ SPA Fallback (must be last)
+##############################
 [[redirects]]
   from = "/*"
   to = "/index.html"
