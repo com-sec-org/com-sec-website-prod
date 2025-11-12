@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -28,8 +29,34 @@ import {
 
 export default function PenetrationTesting() {
   return (
+    <>
+    {/* 🧠 SEO Metadata */}
+    <Helmet>
+      <title>Professional Penetration Testing Services | Com-Sec</title>
+      <meta
+        name="description"
+        content="Secure your systems with expert pen testing services. Identify vulnerabilities and strengthen cybersecurity defenses. Get reliable testing with Com-Sec today!"
+      />
+      <meta name="robots" content="index, follow" />
+      <meta
+        property="og:title"
+        content="Professional Penetration Testing Services | Com-Sec"
+      />
+      <meta
+        property="og:description"
+        content="Com-Sec provides expert penetration testing to identify vulnerabilities and strengthen your cybersecurity defenses with reliable testing and actionable insights."
+      />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:url"
+        content="https://com-sec.io/penetration-testing-services"
+      />
+      <meta property="og:site_name" content="Com-Sec" />
+    </Helmet>
+
     <div className="min-h-screen bg-white">
       <Navigation />
+
 
       {/* Animated Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-to-br from-red-900 via-red-800 to-red-900 text-white relative overflow-hidden">
@@ -842,5 +869,6 @@ export default function PenetrationTesting() {
         }
       `}</style>
     </div>
+    </>
   );
 }

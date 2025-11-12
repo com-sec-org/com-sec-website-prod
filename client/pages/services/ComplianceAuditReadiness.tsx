@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import { Navigation } from "@/components/Navigation";
 import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
@@ -26,9 +28,31 @@ import {
 
 export default function ComplianceAuditReadiness() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
+    <>
+     <Helmet>
+        {/* 🧠 Meta Title */}
+        <title>Cybersecurity & Compliance Audit Services | Com-Sec</title>
 
+        {/* 🧾 Meta Description */}
+        <meta
+          name="description"
+          content="Get top cybersecurity compliance, cloud security, GDPR, HITRUST, and IT audit services. Ensure readiness with continuous monitoring. Secure your business with Com-Sec today!"
+        />
+
+        {/* (Optional) Extra SEO meta tags */}
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Cybersecurity & Compliance Audit Services | Com-Sec" />
+        <meta
+          property="og:description"
+          content="Com-Sec provides top-tier compliance readiness and cybersecurity audit services across SOC 2, HIPAA, ISO 27001, GDPR, and more."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://com-sec.io/compliance-audit-readiness" />
+        <meta property="og:site_name" content="Com-Sec" />
+      </Helmet>
+
+      <div className="min-h-screen bg-white">
+        <Navigation />
       {/* Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-to-br from-indigo-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
         <div className="absolute inset-0">
@@ -493,5 +517,6 @@ export default function ComplianceAuditReadiness() {
 
       <Footer />
     </div>
+    </>
   );
 }
