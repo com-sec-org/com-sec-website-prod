@@ -97,6 +97,18 @@ export default function Contact() {
               Ready to secure your business? Let's discuss your cybersecurity
               needs and create a customized solution.
             </p>
+            <Button
+              className="bg-white text-primary hover:bg-gray-100 font-bold py-6 px-10 text-lg transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl animate-pulse"
+              asChild
+            >
+              <a
+                href="https://calendly.com/Carter-com-sec"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                📅 BOOK A MEETING
+              </a>
+            </Button>
           </div>
         </div>
       </section>
