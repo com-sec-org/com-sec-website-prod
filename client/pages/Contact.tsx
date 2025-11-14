@@ -103,7 +103,6 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-2 bg-gradient-to-r from-accent via-orange-500 to-red-500 text-white font-bold py-3 px-8 text-lg rounded-lg overflow-hidden group hover:shadow-2xl transform hover:scale-110 transition-all duration-300 shadow-xl animate-glow-pulse hover:gap-3"
             >
-              <span className="text-xl animate-bounce">📅</span>
               <span className="bg-gradient-to-r from-white via-orange-50 to-white bg-clip-text text-transparent group-hover:text-white transition-all duration-300">
                 BOOK A MEETING
               </span>
