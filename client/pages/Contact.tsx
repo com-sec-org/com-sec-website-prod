@@ -98,16 +98,21 @@ export default function Contact() {
               needs and create a customized solution.
             </p>
             <Button
-              className="bg-white text-primary hover:bg-gray-100 font-bold py-6 px-10 text-lg transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl animate-pulse"
+              className="relative bg-gradient-to-r from-accent via-orange-500 to-red-500 text-white font-bold py-3 px-8 text-lg rounded-lg overflow-hidden group hover:shadow-2xl transform hover:scale-110 transition-all duration-300 shadow-xl animate-glow-pulse"
               asChild
             >
               <a
                 href="https://calendly.com/Carter-com-sec"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="relative z-10 flex items-center gap-2 group-hover:gap-3 transition-all duration-300"
               >
-                📅 BOOK A MEETING
+                <span className="text-xl animate-bounce">📅</span>
+                <span className="bg-gradient-to-r from-white via-orange-50 to-white bg-clip-text text-transparent group-hover:text-white transition-all duration-300">
+                  BOOK A MEETING
+                </span>
               </a>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-shimmer-btn"></div>
             </Button>
           </div>
         </div>
