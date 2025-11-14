@@ -202,10 +202,10 @@ export function Navigation() {
 
             <Link
               to="/contact"
-              className={`transition-colors ${
+              className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform ${
                 isActive("/contact")
-                  ? "text-accent font-medium"
-                  : "text-foreground hover:text-accent"
+                  ? "bg-gradient-to-r from-accent to-orange-500 text-white shadow-lg hover:shadow-xl hover:scale-105"
+                  : "bg-accent/10 text-accent hover:bg-accent hover:text-white hover:shadow-lg hover:scale-105"
               }`}
             >
               Let's Talk
