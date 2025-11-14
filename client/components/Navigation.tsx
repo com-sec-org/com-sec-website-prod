@@ -208,20 +208,8 @@ export function Navigation() {
                   : "text-foreground hover:text-accent"
               }`}
             >
-              Contact Us
+              Let's Talk
             </Link>
-            <Button
-              className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-              asChild
-            >
-              <a
-                href="https://calendly.com/Carter-com-sec"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Started
-              </a>
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -493,21 +481,8 @@ export function Navigation() {
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contact Us
+                  Let's Talk
                 </Link>
-                <Button
-                  className="w-full mt-3 bg-gradient-to-r from-primary to-blue-600 transform hover:scale-105 transition-all duration-300"
-                  asChild
-                >
-                  <a
-                    href="https://calendly.com/bojan-com-sec"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Get Started
-                  </a>
-                </Button>
               </div>
             </div>
           </div>
