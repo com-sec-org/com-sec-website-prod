@@ -27,6 +27,7 @@ import {
   MessageSquare,
   Send,
   Shield,
+  ArrowRight,
 } from "lucide-react";
 
 export default function Contact() {
@@ -101,11 +102,12 @@ export default function Contact() {
               href="https://calendly.com/Carter-com-sec"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative inline-flex items-center gap-2 bg-gradient-to-r from-accent via-orange-500 to-red-500 text-white font-bold py-3 px-8 text-lg rounded-lg overflow-hidden group hover:shadow-2xl transform hover:scale-110 transition-all duration-300 shadow-xl animate-glow-pulse hover:gap-3"
+              className="relative inline-flex items-center gap-2 bg-gradient-to-r from-accent via-orange-500 to-red-500 text-white font-bold py-3 px-8 text-lg rounded-lg overflow-hidden group hover:shadow-2xl transform hover:scale-110 transition-all duration-300 shadow-xl animate-glow-pulse hover:gap-4"
             >
               <span className="bg-gradient-to-r from-white via-orange-50 to-white bg-clip-text text-transparent group-hover:text-white transition-all duration-300">
                 BOOK A MEETING
               </span>
+              <ArrowRight className="h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300 flex-shrink-0" />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-shimmer-btn"></div>
             </a>
           </div>
