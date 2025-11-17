@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 import {
   Shield,
   Globe,
@@ -220,6 +222,30 @@ export default function Gdpr() {
   ];
 
   return (
+
+    <>
+  <Helmet>
+    <title>GDPR Compliance Services | EU Data Protection & Privacy | Com-Sec</title>
+
+    <meta
+      name="description"
+      content="Achieve full GDPR compliance with Com-Sec. We help organizations implement data protection controls, manage individual rights requests, conduct DPIAs, ensure lawful processing, and avoid GDPR penalties up to €20M or 4% global turnover."
+    />
+
+    <meta
+      name="keywords"
+      content="GDPR, GDPR Compliance, EU Privacy, Data Protection, DPIA, Data Subject Rights, GDPR Assessment, GDPR Audit, GDPR Implementation, GDPR Policies, EU Data Regulations, Right to Erasure, Right to Access, Data Mapping, Privacy by Design"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/gdpr" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  </Helmet>
+
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -629,5 +655,6 @@ export default function Gdpr() {
 
       <Footer />
     </div>
+    </>
   );
 }

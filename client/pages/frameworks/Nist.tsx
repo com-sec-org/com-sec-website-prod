@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   Shield,
   Target,
@@ -226,6 +227,29 @@ export default function Nist() {
   ];
 
   return (
+
+    <>
+  <Helmet>
+    <title>NIST Cybersecurity Framework (CSF) | Risk-Based Security | Com-Sec</title>
+
+    <meta
+      name="description"
+      content="Strengthen your cybersecurity posture with the NIST Cybersecurity Framework (CSF). Com-Sec helps organizations assess, implement, and operationalize NIST CSF functions—Identify, Protect, Detect, Respond, and Recover."
+    />
+
+    <meta
+      name="keywords"
+      content="NIST, NIST CSF, NIST Cybersecurity Framework, Identify Protect Detect Respond Recover, NIST Implementation, Risk Management, NIST Compliance, Cybersecurity Framework, Risk Assessment, Security Controls, NIST Maturity Tiers, Incident Response, Cybersecurity Best Practices"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/nist" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -655,5 +679,6 @@ export default function Nist() {
 
       <Footer />
     </div>
+    </>
   );
 }

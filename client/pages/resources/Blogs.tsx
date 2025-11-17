@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
+
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -110,6 +112,20 @@ export default function Blogs() {
   };
 
   return (
+<>
+
+    <Helmet>
+  <title>Cybersecurity Blog | Com-Sec Insights</title>
+  <meta
+    name="description"
+    content="Stay updated with cybersecurity insights, SOC 2 tips, ISO 27001 guides, penetration testing updates, and compliance best practices from Com-Sec."
+  />
+  <link
+          rel="canonical"
+          href="https://com-sec.io/blogs"
+        />
+</Helmet>
+
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -985,5 +1001,6 @@ export default function Blogs() {
 
       <Footer />
     </div>
+    </>
   );
 }

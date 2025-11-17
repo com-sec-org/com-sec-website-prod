@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
+
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -97,6 +99,18 @@ export default function PhishingTest() {
   };
 
   return (
+    <>
+    <Helmet>
+      <title>Free Phishing Test | Email Security Assessment | Com-Sec</title>
+
+      <meta
+        name="description"
+        content="Run a free phishing test for your organization. Identify vulnerabilities, measure employee awareness, and receive a detailed cybersecurity risk report within 24–48 hours."
+      />
+
+      <link rel="canonical" href="https://com-sec.io/phishing" />
+    </Helmet>
+
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -789,5 +803,6 @@ export default function PhishingTest() {
 
       <Footer />
     </div>
+    </>
   );
 }

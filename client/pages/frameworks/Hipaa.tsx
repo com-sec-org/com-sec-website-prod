@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -27,6 +29,29 @@ import {
 
 export default function Hipaa() {
   return (
+    <>
+  <Helmet>
+    <title>HIPAA Compliance Services | Protect PHI & Healthcare Data | Com-Sec</title>
+
+    <meta
+      name="description"
+      content="Achieve HIPAA compliance with Com-Sec’s end-to-end guidance. We help organizations meet HIPAA Privacy, Security, Breach Notification, and Enforcement Rule requirements, including risk assessment, policies, safeguards, and continuous monitoring."
+    />
+
+    <meta
+      name="keywords"
+      content="HIPAA, HIPAA Compliance, PHI, ePHI, HIPAA Risk Assessment, HIPAA Security Rule, HIPAA Privacy Rule, Breach Notification Rule, HIPAA Omnibus Rule, Healthcare Compliance, HIPAA Policies, HIPAA Safeguards, Business Associate Agreement, HIPAA Gap Analysis, Healthcare Cybersecurity"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/hipaa" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  </Helmet>
+
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -622,5 +647,6 @@ export default function Hipaa() {
 
       <Footer />
     </div>
+    </>
   );
 }

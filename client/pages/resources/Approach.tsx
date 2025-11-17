@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -29,8 +30,18 @@ import {
 
 export default function Approach() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
+    <>
+      <Helmet>
+        <title>Our Cybersecurity Approach & Methodology | Com-Sec</title>
+        <meta
+          name="description"
+          content="Discover Com-Sec’s proven cybersecurity methodology—built on ISO 27001, NIST, and SOC 2 frameworks. Explore our 5-phase approach to risk assessment, implementation, testing, and continuous monitoring."
+        />
+        <link rel="canonical" href="https://com-sec.io/approach" />
+      </Helmet>
+
+      <div className="min-h-screen bg-white">
+        <Navigation />
 
       {/* Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-to-br from-emerald-900 via-teal-800 to-cyan-900 text-white relative overflow-hidden">
@@ -580,5 +591,6 @@ export default function Approach() {
 
       <Footer />
     </div>
+    </>
   );
 }

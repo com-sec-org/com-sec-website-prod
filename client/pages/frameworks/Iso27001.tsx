@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -33,6 +34,29 @@ export default function Iso27001() {
   const [showAllSteps, setShowAllSteps] = useState(false);
 
   return (
+
+    <>
+  <Helmet>
+    <title>ISO 27001 Compliance | ISMS Implementation & Certification | Com-Sec</title>
+
+    <meta
+      name="description"
+      content="Achieve ISO 27001 certification with Com-Sec’s proven ISMS implementation methodology. We help you establish, implement, maintain, and audit your Information Security Management System (ISMS) aligned with ISO 27001 requirements."
+    />
+
+    <meta
+      name="keywords"
+      content="ISO 27001, ISMS, Information Security Management System, ISO 27001 Certification, ISO 27001 Audit, ISO 27001 Implementation, Annex A Controls, ISO Internal Audit, ISO Stage 1 Audit, ISO Stage 2 Audit, Information Security, Risk Assessment, ISO Compliance, Security Framework"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/iso27001" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -697,5 +721,6 @@ export default function Iso27001() {
 
       <Footer />
     </div>
+    </>
   );
 }
