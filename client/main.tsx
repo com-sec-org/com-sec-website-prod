@@ -123,6 +123,25 @@ function ScrollToTop() {
   return null;
 }
 
+function CanonicalLink() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const baseUrl = window.location.origin;
+    const canonicalUrl = `${baseUrl}${location.pathname}`;
+
+    let link = document.querySelector("link[rel='canonical']");
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "canonical";
+      document.head.appendChild(link);
+    }
+    link.setAttribute("href", canonicalUrl);
+  }, [location.pathname]);
+
+  return null;
+}
+
 const App = () => (
   <ErrorBoundary>
     <QueryClientProvider client={queryClient}>
