@@ -26,6 +26,12 @@ import {
 
 export default function SocSupport() {
   return (
+
+    <>
+    <link
+          rel="canonical"
+          href="https://com-sec.io/soc-support"
+        />
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -576,5 +582,6 @@ export default function SocSupport() {
 
       <Footer />
     </div>
+    </>
   );
 }

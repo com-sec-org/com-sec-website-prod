@@ -28,7 +28,15 @@ import {
 
 export default function ItSupport() {
   return (
+
+    <>
+    <link
+          rel="canonical"
+          href="https://com-sec.io/it-support"
+        />
     <div className="min-h-screen bg-white">
+
+      
       <Navigation />
 
       {/* Hero Section */}
@@ -456,5 +464,6 @@ export default function ItSupport() {
 
       <Footer />
     </div>
+    </>
   );
 }

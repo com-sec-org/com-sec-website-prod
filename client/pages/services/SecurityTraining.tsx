@@ -25,6 +25,12 @@ import {
 
 export default function SecurityTraining() {
   return (
+
+    <>
+    <link
+          rel="canonical"
+          href="https://com-sec.io/security-training"
+        />
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -223,5 +229,6 @@ export default function SecurityTraining() {
 
       <Footer />
     </div>
+    </>
   );
 }

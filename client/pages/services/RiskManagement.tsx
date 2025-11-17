@@ -24,6 +24,14 @@ import {
 
 export default function RiskManagement() {
   return (
+
+
+    <>
+    <link
+          rel="canonical"
+          href="https://com-sec.io/risk-management"
+        />
+  
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -195,5 +203,6 @@ export default function RiskManagement() {
 
       <Footer />
     </div>
+    </>
   );
 }
