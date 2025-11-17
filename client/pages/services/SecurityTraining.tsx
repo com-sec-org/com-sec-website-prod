@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -27,10 +28,61 @@ export default function SecurityTraining() {
   return (
 
     <>
-    <link
-          rel="canonical"
-          href="https://com-sec.io/security-training"
-        />
+  <Helmet>
+  {/* Primary SEO */}
+  <title>Security Awareness Training | Phishing Simulations & Cybersecurity Training | Com-Sec</title>
+
+  <meta
+    name="description"
+    content="Strengthen your organization's security culture with phishing simulations, awareness programs, incident response drills, secure development training, compliance education, and executive briefings tailored to your team."
+  />
+
+  <meta
+    name="keywords"
+    content="security training, cybersecurity awareness training, phishing simulation, employee security training, incident response training, secure development training, compliance training, SOC 2 training, HIPAA training, security culture, awareness programs"
+  />
+
+  <link rel="canonical" href="https://com-sec.io/security-training" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Com-Sec" />
+  <meta name="publisher" content="Com-Sec" />
+  <meta charSet="utf-8" />
+  <meta name="language" content="English" />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Security Awareness Training | Phishing Simulations & Cybersecurity Programs | Com-Sec"
+  />
+  <meta
+    property="og:description"
+    content="Hands-on cybersecurity training: phishing simulations, awareness modules, role-based education, incident drills, and secure development training."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://com-sec.io/security-training" />
+  <meta property="og:site_name" content="Com-Sec" />
+  <meta
+    property="og:image"
+    content="https://com-sec.io/images/security-training-cover.png"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Security Awareness Training | Phishing Simulations & Cybersecurity Programs | Com-Sec"
+  />
+  <meta
+    name="twitter:description"
+    content="Boost your team's cybersecurity awareness with phishing simulations, training modules, compliance lessons, and incident response drills."
+  />
+  <meta
+    name="twitter:image"
+    content="https://com-sec.io/images/security-training-cover.png"
+  />
+</Helmet>
+
     <div className="min-h-screen bg-white">
       <Navigation />
 

@@ -113,18 +113,28 @@ export default function Blogs() {
 
   return (
 <>
-
-    <Helmet>
+<Helmet>
+  {/* Basic SEO */}
   <title>Cybersecurity Blog | Com-Sec Insights</title>
+
   <meta
     name="description"
-    content="Stay updated with cybersecurity insights, SOC 2 tips, ISO 27001 guides, penetration testing updates, and compliance best practices from Com-Sec."
+    content="Stay updated with cybersecurity insights, SOC 2 compliance tips, ISO 27001 guides, penetration testing updates, cloud security advice, and best practices from Com-Sec experts."
   />
-  <link
-          rel="canonical"
-          href="https://com-sec.io/blogs"
-        />
-</Helmet>
+
+  <meta
+    name="keywords"
+    content="cybersecurity blog, SOC 2 blog, ISO 27001 guides, penetration testing blog, cloud security updates, compliance best practices, Com-Sec blog, security insights"
+  />
+
+  <link rel="canonical" href="https://com-sec.io/blogs" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Com-Sec" />
+  <meta name="publisher" content="Com-Sec" />
+  <meta charSet="utf-8" />
+  <meta name="language" content="English" />
+  </Helmet>
 
     <div className="min-h-screen bg-white">
       <Navigation />

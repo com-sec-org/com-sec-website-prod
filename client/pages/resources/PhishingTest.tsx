@@ -100,16 +100,58 @@ export default function PhishingTest() {
 
   return (
     <>
-    <Helmet>
-      <title>Free Phishing Test | Email Security Assessment | Com-Sec</title>
+   <Helmet>
+  {/* Primary SEO */}
+  <title>Free Phishing Test | Email Security Assessment | Com-Sec</title>
 
-      <meta
-        name="description"
-        content="Run a free phishing test for your organization. Identify vulnerabilities, measure employee awareness, and receive a detailed cybersecurity risk report within 24–48 hours."
-      />
+  <meta
+    name="description"
+    content="Run a free phishing test for your organization. Identify vulnerabilities, measure employee awareness, and receive a detailed cybersecurity risk report within 24–48 hours."
+  />
 
-      <link rel="canonical" href="https://com-sec.io/phishing" />
-    </Helmet>
+  <meta
+    name="keywords"
+    content="free phishing test, phishing simulation, email security test, employee phishing awareness, cybersecurity assessment, phishing attack test, phishing readiness, Com-Sec phishing test, email security audit"
+  />
+
+  <link rel="canonical" href="https://com-sec.io/phishing" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Com-Sec" />
+  <meta name="publisher" content="Com-Sec" />
+  <meta charSet="utf-8" />
+  <meta name="language" content="English" />
+
+  {/* Open Graph – Social Preview */}
+  <meta property="og:title" content="Free Phishing Test | Email Security Assessment | Com-Sec" />
+  <meta
+    property="og:description"
+    content="Test how your organization responds to phishing attacks. Get an instant phishing risk score, awareness metrics, and remediation recommendations."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://com-sec.io/phishing" />
+  <meta property="og:site_name" content="Com-Sec" />
+  <meta
+    property="og:image"
+    content="https://com-sec.io/images/phishing-test-cover.png"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Free Phishing Test | Email Security Assessment | Com-Sec"
+  />
+  <meta
+    name="twitter:description"
+    content="Run a free phishing simulation and get an actionable cybersecurity report within 24–48 hours."
+  />
+  <meta
+    name="twitter:image"
+    content="https://com-sec.io/images/phishing-test-cover.png"
+  />
+</Helmet>
+
 
     <div className="min-h-screen bg-white">
       <Navigation />

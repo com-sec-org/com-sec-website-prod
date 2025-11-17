@@ -31,14 +31,57 @@ import {
 export default function Approach() {
   return (
     <>
-      <Helmet>
-        <title>Our Cybersecurity Approach & Methodology | Com-Sec</title>
-        <meta
-          name="description"
-          content="Discover Com-Sec’s proven cybersecurity methodology—built on ISO 27001, NIST, and SOC 2 frameworks. Explore our 5-phase approach to risk assessment, implementation, testing, and continuous monitoring."
-        />
-        <link rel="canonical" href="https://com-sec.io/approach" />
-      </Helmet>
+    <Helmet>
+  {/* Basic SEO */}
+  <title>Our Cybersecurity Approach & Methodology | Com-Sec</title>
+
+  <meta
+    name="description"
+    content="Discover Com-Sec’s proven cybersecurity methodology—built on ISO 27001, NIST, and SOC 2 frameworks. Explore our five-phase approach to risk assessment, implementation, testing, and continuous monitoring."
+  />
+
+  <meta
+    name="keywords"
+    content="cybersecurity methodology, SOC 2 approach, ISO 27001 process, NIST security framework, risk assessment process, cybersecurity strategy, compliance methodology, Com-Sec approach"
+  />
+
+  <link rel="canonical" href="https://com-sec.io/approach" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Com-Sec" />
+  <meta name="publisher" content="Com-Sec" />
+  <meta charSet="utf-8" />
+  <meta name="language" content="English" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Our Cybersecurity Approach & Methodology | Com-Sec" />
+  <meta
+    property="og:description"
+    content="Learn about Com-Sec’s structured cybersecurity methodology — covering risk assessment, policy development, implementation, validation, and continuous monitoring."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://com-sec.io/approach" />
+  <meta property="og:site_name" content="Com-Sec" />
+  <meta
+    property="og:image"
+    content="https://com-sec.io/images/approach-cover.png"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Our Cybersecurity Approach & Methodology | Com-Sec"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore Com-Sec’s five-phase cybersecurity methodology based on SOC 2, NIST, and ISO 27001 frameworks."
+  />
+  <meta
+    name="twitter:image"
+    content="https://com-sec.io/images/approach-cover.png"
+  />
+</Helmet>
 
       <div className="min-h-screen bg-white">
         <Navigation />

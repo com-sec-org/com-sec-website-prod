@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -28,10 +29,61 @@ export default function SocSupport() {
   return (
 
     <>
-    <link
-          rel="canonical"
-          href="https://com-sec.io/soc-support"
-        />
+    <Helmet>
+  {/* Primary SEO */}
+  <title>SOC Support Services | 24/7 Threat Monitoring & Incident Response | Com-Sec</title>
+
+  <meta
+    name="description"
+    content="Get 24/7 SOC support including threat monitoring, SIEM management, incident response, alert triage, log analysis, and continuous security operations. Strengthen your defense with expert SOC analysts from Com-Sec."
+  />
+
+  <meta
+    name="keywords"
+    content="SOC support, security operations center, threat monitoring, incident response, SIEM monitoring, log analysis, MDR services, cybersecurity monitoring, alert triage, SOC analysts, 24/7 monitoring"
+  />
+
+  <link rel="canonical" href="https://com-sec.io/soc-support" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Com-Sec" />
+  <meta name="publisher" content="Com-Sec" />
+  <meta charSet="utf-8" />
+  <meta name="language" content="English" />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="SOC Support Services | 24/7 Threat Monitoring & Incident Response | Com-Sec"
+  />
+  <meta
+    property="og:description"
+    content="Professional SOC support providing continuous threat monitoring, SIEM oversight, incident response, and cybersecurity operations for growing organizations."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://com-sec.io/soc-support" />
+  <meta property="og:site_name" content="Com-Sec" />
+  <meta
+    property="og:image"
+    content="https://com-sec.io/images/soc-support-cover.png"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="SOC Support Services | 24/7 Threat Monitoring & Incident Response | Com-Sec"
+  />
+  <meta
+    name="twitter:description"
+    content="Expert SOC support offering real-time detection, log monitoring, alert analysis, and rapid incident response."
+  />
+  <meta
+    name="twitter:image"
+    content="https://com-sec.io/images/soc-support-cover.png"
+  />
+</Helmet>
+
     <div className="min-h-screen bg-white">
       <Navigation />
 
