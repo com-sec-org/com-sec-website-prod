@@ -28,6 +28,17 @@ import {
 
 export default function CloudSecurity() {
   return (
+    <>
+     <Helmet>
+
+     <link
+          rel="canonical"
+          href="https://com-sec.io/compliance-audit-readiness"
+        />
+
+     </Helmet>
+    
+    
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -669,5 +680,6 @@ export default function CloudSecurity() {
         }
       `}</style>
     </div>
+    </>
   );
 }
