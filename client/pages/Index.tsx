@@ -206,7 +206,7 @@ export default function Index() {
                 />
               </g>
 
-              {/* <g className="animate-float animation-delay-2000">
+              <g className="animate-float animation-delay-2000">
                 <text
                   x="100"
                   y="350"
@@ -225,7 +225,7 @@ export default function Index() {
                   fill="#EF4444"
                   opacity="0.7"
                 />
-              </g> */}
+              </g>
 
               <g className="animate-float animation-delay-2500">
                 <text
@@ -432,7 +432,7 @@ export default function Index() {
                 transform: "rotateX(-15deg) rotateY(-15deg)",
               }}
             >
-              {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform hover:scale-150 transition-transform duration-500">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform hover:scale-150 transition-transform duration-500">
                 <span
                   className="text-sm font-bold bg-gradient-to-r from-orange-400 via-red-300 to-orange-600 bg-clip-text text-transparent filter drop-shadow-[0_0_15px_rgba(239,68,68,1)] animate-pulse"
                   style={{ textShadow: "0 0 25px rgba(239,68,68,1)" }}
@@ -440,7 +440,7 @@ export default function Index() {
                   HITRUST
                 </span>
                 <div className="absolute -inset-2 bg-red-500/30 rounded-full blur-sm animate-ping"></div>
-              </div> */}
+              </div>
               <div className="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 transform hover:scale-150 transition-transform duration-500">
                 <span
                   className="text-sm font-bold bg-gradient-to-r from-yellow-400 via-orange-300 to-yellow-600 bg-clip-text text-transparent filter drop-shadow-[0_0_15px_rgba(251,191,36,1)] animate-pulse animation-delay-700"
