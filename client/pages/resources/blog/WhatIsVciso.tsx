@@ -580,7 +580,7 @@ export default function WhatIsVciso() {
                 title: "How to Prepare for a Compliance Audit",
                 excerpt:
                   "Essential strategies and best practices for audit preparation.",
-                link: "/resources/blog/prepare-compliance-audit-best-practices",
+                link: "/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies",
                 category: "Audit Readiness",
               },
               {

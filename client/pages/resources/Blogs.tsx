@@ -452,7 +452,7 @@ export default function Blogs() {
                   "SOC 2 digital cybersecurity framework with security controls and data protection compliance standards",
               },
               {
-                id: "internal-vs-external-penetration-testing",
+                id: "difference-between-internal-vs-external-penetration-testing",
                 title:
                   "Difference Between Internal vs External Penetration Testing",
                 excerpt:
@@ -468,7 +468,7 @@ export default function Blogs() {
                   "Digital security hand holding cybersecurity shield with network protection and cyber defense technology",
               },
               {
-                id: "prepare-compliance-audit-best-practices",
+                id: "how-to-prepare-for-a-compliance-audit-best-practices-and-strategies",
                 title:
                   "How to Prepare for a Compliance Audit: Best Practices and Strategies",
                 excerpt:
