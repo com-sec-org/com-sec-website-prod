@@ -113,7 +113,9 @@ export default function App() {
               path="/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies"
               element={<PrepareComplianceAudit />}
             />
-
+            {/* Default */}
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/contact" element={<Contact />} />
             {/* Catch-all */}
             <Route path="*" element={<NotFound />} />
           </Routes>
