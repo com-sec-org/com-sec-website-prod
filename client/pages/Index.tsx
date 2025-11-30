@@ -633,20 +633,27 @@ export default function Index() {
             
             
             <h1 
-  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-6 drop-shadow-2xl leading-[1.5] overflow-visible pb-4 sm:pb-5 md:whitespace-nowrap md:tracking-[-0.025em] lg:tracking-[-0.02em]"
+  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 
+             2xl:text-8xl font-bold mb-6 drop-shadow-2xl leading-[1.5] 
+             overflow-visible pb-4 sm:pb-5 md:whitespace-nowrap"
 >
-  <span className="inline-block leading-[1.2] pb-1 sm:pb-1.5 md:pb-2 animate-typewriter-word animation-delay-500 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
+  <span className="glass-loop bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
     Simplifying
   </span>
-  <span className="inline-block ml-[0.15em] animate-typewriter-word animation-delay-1000 text-white">
+
+  <span className="glass-loop ml-[0.15em] text-white">
     Security
   </span>
-  <span className="inline-block ml-[0.15em] animate-confidence-reveal animation-delay-1500">
-    <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
+
+  <span className="glass-loop ml-[0.15em]">
+    <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent">
       & Compliance
     </span>
   </span>
 </h1>
+
+
+
             <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/90 max-w-4xl mx-auto animate-fade-in-delayed animation-delay-2000 opacity-0 drop-shadow-lg">
               <span className="animate-shimmer-text bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent">
                 Your trusted partner
@@ -1349,10 +1356,20 @@ export default function Index() {
             </div>
 
             {/* DRATA */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+            {/* <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">DRATA</div>
+            </div> */}
+
+            {/* DRATA */}
+            <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-colors min-h-[60px]">
+              <img
+                src="/images/logo/Drata-logo-profile.jpg"
+                alt="Drata"
+                className="h-8 w-auto object-contain"
+              />
             </div>
 
+ 
             {/* SPRINTO */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">SPRINTO</div>
