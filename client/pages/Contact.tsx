@@ -312,9 +312,9 @@ export default function Contact() {
               {/* Team Image */}
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
+                  src="/images/logo/contact us.png"
                   alt="Close-up of network equipment and circuit board with no people"
-                  className="w-full h-64 object-cover"
+                  className="w-2/3 mx-auto object-contain"
                 />
               </div>
               <Card>
