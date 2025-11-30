@@ -1356,18 +1356,18 @@ export default function Index() {
             </div>
 
             {/* DRATA */}
-            {/* <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">DRATA</div>
-            </div> */}
+            </div>
 
-            {/* DRATA */}
+            {/* DRATA
             <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-colors min-h-[60px]">
               <img
                 src="/images/logo/Drata-logo-profile.jpg"
                 alt="Drata"
                 className="h-8 w-auto object-contain"
               />
-            </div>
+            </div> */}
 
  
             {/* SPRINTO */}
