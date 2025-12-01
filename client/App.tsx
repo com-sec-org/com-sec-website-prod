@@ -213,7 +213,7 @@ export default function App() {
           <Routes>
             {/* Homepage */}
             <Route path="/" element={<Index />} />
-
+            <Route path="/contact" element={<Contact />} />
             {/* Services */}
             <Route path="/services" element={<Services />} />
             <Route path="/penetration-testing-services" element={<PenetrationTesting />} />
