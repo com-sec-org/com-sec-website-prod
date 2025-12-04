@@ -1,15 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-
+  <!-- Homepage -->
   <url>
     <loc>https://com-sec.io/</loc>
-    <lastmod>2025-10-21T20:41:06+00:00</lastmod>
   </url>
 
+  <!-- Contact -->
+  <url>
+    <loc>https://com-sec.io/contact</loc>
+  </url>
+
+  <!-- Main pages -->
+  <url>
+    <loc>https://com-sec.io/services</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/testimonials</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/company</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/careers</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/team</loc>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://com-sec.io/penetration-testing-services</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/compliance-audit-readiness</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/it-support</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/soc-support</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/soc2-readiness</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/cloud-security</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/security-training</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/risk-management</loc>
+  </url>
+
+  <!-- Frameworks -->
+  <url>
+    <loc>https://com-sec.io/soc2</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/iso27001</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/hipaa</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/hitrust</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/pci-dss</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/nist</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/gdpr</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/cmmc</loc>
+  </url>
+
+  <!-- Resources -->
+  <url>
+    <loc>https://com-sec.io/blogs</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/approach</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/phishing</loc>
+  </url>
+
+  <!-- BLOG ARTICLES -->
+  <url>
+    <loc>https://com-sec.io/blog/iso-27001-certification-guide</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/soc2-vs-iso27001-comparison</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/why-soc2-matters-small-companies</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/difference-between-internal-vs-external-penetration-testing</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/what-is-vciso-role-cybersecurity</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/managed-security-compliance-services</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/ai-ethics-healthcare</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/patient-confidentiality-ai-healthcare</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/human-side-ai-patient-safety</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/transparency-accuracy-ai-healthcare</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/cybersecurity-roundup-startups-may</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/security-compliance-health-companies</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/safeguarding-data-sharing-tech-companies</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/meet-team-jayush-chawla</loc>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/meet-team-rojin-rezaei</loc>
+  </url>
 
 </urlset>
