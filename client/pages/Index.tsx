@@ -62,7 +62,7 @@ export default function Index() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-20 sm:pt-24 pb-16 sm:pb-20 text-white min-h-screen flex items-center relative overflow-visible">
+      <section className="pt-20 sm:pt-24 pb-16 sm:pb-20 text-white min-h-screen flex items-center relative overflow-x-hidden">
         {/* Custom Compliance Frameworks Background */}
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
@@ -635,7 +635,7 @@ export default function Index() {
             <h1 
   className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 
              2xl:text-8xl font-bold mb-6 drop-shadow-2xl leading-[1.5] 
-             overflow-visible pb-4 sm:pb-5 md:whitespace-nowrap"
+             overflow-visible pb-4 sm:pb-5"
 >
   <span className="glass-loop bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
     Simplifying
