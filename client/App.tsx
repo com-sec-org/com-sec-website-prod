@@ -127,7 +127,7 @@
 //   );
 // }
 
-
+import DynamicSEO from "@/components/DynamicSEO";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -189,6 +189,7 @@ import TransparencyAccuracyAiHealthcare from "./pages/resources/blog/Transparenc
 import CybersecurityRoundupStartupsMay from "./pages/resources/blog/CybersecurityRoundupStartupsMay";
 import SecurityComplianceHealthCompanies from "./pages/resources/blog/SecurityComplianceHealthCompanies";
 import SafeguardingDataSharingTechCompanies from "./pages/resources/blog/SafeguardingDataSharingTechCompanies";
+import TwentyYearsCybersecurityJourney from "./pages/resources/blog/20YearsCybersecurityJourney";
 
 import NotFound from "./pages/NotFound";
 
@@ -208,9 +209,14 @@ export default function App() {
         <Sonner />
 
         <BrowserRouter>
+        <DynamicSEO />
           <ScrollToTop />
 
           <Routes>
+          <Route
+          path="/blog/20-years-cybersecurity-journey"
+          element={<TwentyYearsCybersecurityJourney />}
+        />
             {/* Homepage */}
             <Route path="/" element={<Index />} />
             <Route path="/contact" element={<Contact />} />
