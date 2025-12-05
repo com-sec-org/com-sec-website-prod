@@ -66,7 +66,7 @@ export function Footer() {
             <ul className="space-y-2 text-white/80">
               <li>
                 <Link
-                  to="/about"
+                  to="/company"
                   className="hover:text-accent transition-colors"
                 >
                   About Us
