@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -24,6 +25,65 @@ import {
 
 export default function RiskManagement() {
   return (
+
+
+    <>
+  <Helmet>
+  {/* Primary SEO */}
+  <title>Cybersecurity Risk Management & Governance | Risk Assessment, Threat Modeling | Com-Sec</title>
+
+  <meta
+    name="description"
+    content="Strengthen your cybersecurity program with enterprise risk management, risk assessments, threat modeling, KRI/KPI dashboards, issue tracking, and governance frameworks. Get data-driven insights and measurable risk reduction."
+  />
+
+  <meta
+    name="keywords"
+    content="cybersecurity risk management, enterprise risk management, ERM, cyber risk assessment, threat modeling, STRIDE, KRI dashboards, KPI dashboards, risk governance, issue management, risk register, cybersecurity governance, GRC services"
+  />
+
+  <link rel="canonical" href="https://com-sec.io/risk-management" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Com-Sec" />
+  <meta name="publisher" content="Com-Sec" />
+  <meta charSet="utf-8" />
+  <meta name="language" content="English" />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Cybersecurity Risk Management & Governance | Com-Sec"
+  />
+  <meta
+    property="og:description"
+    content="End-to-end risk management: assessments, threat models, KPIs, board reporting, and governance frameworks tailored to your organization."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://com-sec.io/risk-management" />
+  <meta property="og:site_name" content="Com-Sec" />
+  <meta
+    property="og:image"
+    content="https://com-sec.io/images/risk-management-cover.png"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Cybersecurity Risk Management & Governance | Com-Sec"
+  />
+  <meta
+    name="twitter:description"
+    content="Enterprise risk assessments, threat modeling, issue management, and risk dashboards designed for measurable improvement."
+  />
+  <meta
+    name="twitter:image"
+    content="https://com-sec.io/images/risk-management-cover.png"
+  />
+</Helmet>
+
+  
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -195,5 +255,6 @@ export default function RiskManagement() {
 
       <Footer />
     </div>
+    </>
   );
 }

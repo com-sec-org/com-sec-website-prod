@@ -7,7 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect, Component, ErrorInfo, ReactNode } from "react";
-import { Helmet, HelmetProvider } from "react-helmet";
+import { HelmetProvider } from "react-helmet";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -144,205 +144,189 @@ function CanonicalLink() {
 
 const App = () => (
   <ErrorBoundary>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Index />} />
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <ScrollToTop />
+            <CanonicalLink />
+            <Routes>
+              <Route path="/" element={<Index />} />
 
-            Service Routes
-            <Route path="/services" element={<Services />} />
-            <Route
-              path="/services/compliance-audit-readiness"
-              element={<ComplianceAuditReadiness />}
-            />
-            <Route
-              path="/services/penetration-testing-services"
-              element={<PenetrationTesting />}
-            />
-            <Route path="/services/it-support" element={<ItSupport />} />
-            <Route path="/services/soc-support" element={<SocSupport />} />
-            <Route
-              path="/services/soc2-readiness"
-              element={<Soc2Readiness />}
-            />
-            <Route
-              path="/services/cloud-security"
-              element={<CloudSecurity />}
-            />
-            <Route
-              path="/services/security-training"
-              element={<SecurityTraining />}
-            />
-            <Route
-              path="/services/risk-management"
-              element={<RiskManagement />}
-            />
+              {/* Service Routes */}
+              <Route path="/services" element={<Services />} />
+              <Route
+                path="/services/compliance-audit-readiness"
+                element={<ComplianceAuditReadiness />}
+              />
+              <Route
+                path="/services/penetration-testing-services"
+                element={<PenetrationTesting />}
+              />
+              <Route path="/services/it-support" element={<ItSupport />} />
+              <Route path="/services/soc-support" element={<SocSupport />} />
+              <Route
+                path="/services/soc2-readiness"
+                element={<Soc2Readiness />}
+              />
+              <Route
+                path="/services/cloud-security"
+                element={<CloudSecurity />}
+              />
+              <Route
+                path="/services/security-training"
+                element={<SecurityTraining />}
+              />
+              <Route
+                path="/services/risk-management"
+                element={<RiskManagement />}
+              />
 
-<Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
-<Route path="/penetration-testing-services" element={<PenetrationTesting />} />
-<Route path="/it-support" element={<ItSupport />} />
-<Route path="/soc-support" element={<SocSupport />} />
-<Route path="/soc2-readiness" element={<Soc2Readiness />} />
-<Route path="/cloud-security" element={<CloudSecurity />} />
-<Route path="/security-training" element={<SecurityTraining />} />
-<Route path="/risk-management" element={<RiskManagement />} />
+              <Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
+              <Route path="/penetration-testing-services" element={<PenetrationTesting />} />
+              <Route path="/it-support" element={<ItSupport />} />
+              <Route path="/soc-support" element={<SocSupport />} />
+              <Route path="/soc2-readiness" element={<Soc2Readiness />} />
+              <Route path="/cloud-security" element={<CloudSecurity />} />
+              <Route path="/security-training" element={<SecurityTraining />} />
+              <Route path="/risk-management" element={<RiskManagement />} />
 
-            {/* Framework Routes */}
-            <Route path="/frameworks/soc2" element={<Soc2Framework />} />
-            <Route path="/frameworks/iso27001" element={<Iso27001 />} />
-            <Route path="/frameworks/hipaa" element={<Hipaa />} />
-            {/* <Route path="/frameworks/hitrust" element={<Hitrust />} /> */}
-            <Route path="/frameworks/pci-dss" element={<PciDss />} />
-            <Route path="/frameworks/nist" element={<Nist />} />
-            <Route path="/frameworks/gdpr" element={<Gdpr />} />
-            <Route path="/frameworks/cmmc" element={<Cmmc />} />
-            {/* Top-level Framework Routes (duplicates for new paths) */}
-            <Route path="/soc2" element={<Soc2Framework />} />
-            <Route path="/iso27001" element={<Iso27001 />} />
-            <Route path="/hipaa" element={<Hipaa />} />
-            {/* <Route path="/hitrust" element={<Hitrust />} /> */}
-            <Route path="/pci-dss" element={<PciDss />} />
-            <Route path="/nist" element={<Nist />} />
-            <Route path="/gdpr" element={<Gdpr />} />
-            <Route path="/cmmc" element={<Cmmc />} />
+              {/* Framework Routes */}
+              <Route path="/frameworks/soc2" element={<Soc2Framework />} />
+              <Route path="/frameworks/iso27001" element={<Iso27001 />} />
+              <Route path="/frameworks/hipaa" element={<Hipaa />} />
+              {/* <Route path="/frameworks/hitrust" element={<Hitrust />} /> */}
+              <Route path="/frameworks/pci-dss" element={<PciDss />} />
+              <Route path="/frameworks/nist" element={<Nist />} />
+              <Route path="/frameworks/gdpr" element={<Gdpr />} />
+              <Route path="/frameworks/cmmc" element={<Cmmc />} />
+              {/* Top-level Framework Routes (duplicates for new paths) */}
+              <Route path="/soc2" element={<Soc2Framework />} />
+              <Route path="/iso27001" element={<Iso27001 />} />
+              <Route path="/hipaa" element={<Hipaa />} />
+              {/* <Route path="/hitrust" element={<Hitrust />} /> */}
+              <Route path="/pci-dss" element={<PciDss />} />
+              <Route path="/nist" element={<Nist />} />
+              <Route path="/gdpr" element={<Gdpr />} />
+              <Route path="/cmmc" element={<Cmmc />} />
 
-            {/* Resource Routes */}
-            <Route path="/resources/blogs" element={<Blogs />} />
-            <Route path="/resources/approach" element={<Approach />} />
-            <Route path="/resources/phishing" element={<PhishingTest />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/approach" element={<Approach />} />
-            <Route path="/phishing" element={<PhishingTest />} />
-            <Route path="/approach" element={<Approach />} />
-            <Route path="/phishing" element={<PhishingTest />} />
+              {/* Resource Routes */}
+              <Route path="/resources/blogs" element={<Blogs />} />
+              <Route path="/resources/approach" element={<Approach />} />
+              <Route path="/resources/phishing" element={<PhishingTest />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/approach" element={<Approach />} />
+              <Route path="/phishing" element={<PhishingTest />} />
+              <Route path="/approach" element={<Approach />} />
+              <Route path="/phishing" element={<PhishingTest />} />
 
-            {/* About Routes */}
-            <Route path="/about/company" element={<Company />} />
-            <Route path="/about/careers" element={<Careers />} />
-            <Route path="/about/team" element={<Team />} />
-            {/* Top-level About Routes (duplicates for new paths) */}
-            <Route path="/company" element={<Company />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/team" element={<Team />} />
+              {/* About Routes */}
+              <Route path="/about/company" element={<Company />} />
+              <Route path="/about/careers" element={<Careers />} />
+              <Route path="/about/team" element={<Team />} />
+              {/* Top-level About Routes (duplicates for new paths) */}
+              <Route path="/company" element={<Company />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/team" element={<Team />} />
 
-            {/* Blog Post Routes */}
-            <Route
-              path="/resources/blog/iso-27001-certification-guide"
-              element={<Iso27001Guide />}
-            />
-            <Route
-              path="/resources/blog/why-soc2-matters-small-companies"
-              element={<Soc2SmallCompanies />}
-            />
-            <Route
-              path="/resources/blog/meet-team-jayush-chawla"
-              element={<MeetTeamJayush />}
-            />
-            <Route
-              path="/resources/blog/meet-team-rojin-rezaei"
-              element={<MeetTeamRojin />}
-            />
-            <Route
-              path="/resources/blog/internal-vs-external-penetration-testing"
-              element={<PentestingComparison />}
-            />
-            <Route
-              path="/resources/blog/prepare-compliance-audit-best-practices"
-              element={<PrepareComplianceAudit />}
-            />
-            <Route
-              path="/resources/blog/what-is-vciso-role-cybersecurity"
-              element={<WhatIsVciso />}
-            />
-            <Route
-              path="/resources/blog/managed-security-compliance-services"
-              element={<ManagedSecurityCompliance />}
-            />
-            <Route
-              path="/resources/blog/ai-ethics-healthcare-innovation"
-              element={<AiEthicsHealthcare />}
-            />
-            <Route
-              path="/resources/blog/patient-confidentiality-ai-healthcare"
-              element={<PatientConfidentialityAi />}
-            />
-            <Route
-              path="/resources/blog/human-side-ai-patient-safety"
-              element={<HumanSideAiPatientSafety />}
-            />
-            <Route
-              path="/resources/blog/soc2-vs-iso27001-comparison"
-              element={<Soc2VsIso27001 />}
-            />
-            <Route
-              path="/resources/blog/transparency-accuracy-ai-healthcare"
-              element={<TransparencyAccuracyAiHealthcare />}
-            />
-            <Route
-              path="/resources/blog/cybersecurity-roundup-startups-may"
-              element={<CybersecurityRoundupStartupsMay />}
-            />
-            <Route
-              path="/resources/blog/security-compliance-health-companies"
-              element={<SecurityComplianceHealthCompanies />}
-            />
-            <Route
-              path="/resources/blog/safeguarding-data-sharing-tech-companies"
-              element={<SafeguardingDataSharingTechCompanies />}
-            />
-            {/* Top-level Blog Post Routes (duplicates for new paths) */}
-            <Route path="/blog/iso-27001-certification-guide" element={<Iso27001Guide />} />
-            <Route path="/blog/why-soc2-matters-small-companies" element={<Soc2SmallCompanies />} />
-            <Route path="/blog/meet-team-jayush-chawla" element={<MeetTeamJayush />} />
-            <Route path="/blog/meet-team-rojin-rezaei" element={<MeetTeamRojin />} />
-            <Route path="/blog/internal-vs-external-penetration-testing" element={<PentestingComparison />} />
-            <Route path="/blog/prepare-compliance-audit-best-practices" element={<PrepareComplianceAudit />} />
-            <Route path="/blog/what-is-vciso-role-cybersecurity" element={<WhatIsVciso />} />
-            <Route path="/blog/managed-security-compliance-services" element={<ManagedSecurityCompliance />} />
-            <Route path="/blog/ai-ethics-healthcare-innovation" element={<AiEthicsHealthcare />} />
-            <Route path="/blog/patient-confidentiality-ai-healthcare" element={<PatientConfidentialityAi />} />
-            <Route path="/blog/human-side-ai-patient-safety" element={<HumanSideAiPatientSafety />} />
-            <Route path="/blog/soc2-vs-iso27001-comparison" element={<Soc2VsIso27001 />} />
-            <Route path="/blog/transparency-accuracy-ai-healthcare" element={<TransparencyAccuracyAiHealthcare />} />
-            <Route path="/blog/cybersecurity-roundup-startups-may" element={<CybersecurityRoundupStartupsMay />} />
-            <Route path="/blog/security-compliance-health-companies" element={<SecurityComplianceHealthCompanies />} />
-            <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
-            {/* Top-level Blog Post Routes (duplicates for new paths) */}
-            <Route path="/blog/iso-27001-certification-guide" element={<Iso27001Guide />} />
-            <Route path="/blog/why-soc2-matters-small-companies" element={<Soc2SmallCompanies />} />
-            <Route path="/blog/meet-team-jayush-chawla" element={<MeetTeamJayush />} />
-            <Route path="/blog/meet-team-rojin-rezaei" element={<MeetTeamRojin />} />
-            <Route path="/blog/internal-vs-external-penetration-testing" element={<PentestingComparison />} />
-            <Route path="/blog/prepare-compliance-audit-best-practices" element={<PrepareComplianceAudit />} />
-            <Route path="/blog/what-is-vciso-role-cybersecurity" element={<WhatIsVciso />} />
-            <Route path="/blog/managed-security-compliance-services" element={<ManagedSecurityCompliance />} />
-            <Route path="/blog/ai-ethics-healthcare-innovation" element={<AiEthicsHealthcare />} />
-            <Route path="/blog/patient-confidentiality-ai-healthcare" element={<PatientConfidentialityAi />} />
-            <Route path="/blog/human-side-ai-patient-safety" element={<HumanSideAiPatientSafety />} />
-            <Route path="/blog/soc2-vs-iso27001-comparison" element={<Soc2VsIso27001 />} />
-            <Route path="/blog/transparency-accuracy-ai-healthcare" element={<TransparencyAccuracyAiHealthcare />} />
-            <Route path="/blog/cybersecurity-roundup-startups-may" element={<CybersecurityRoundupStartupsMay />} />
-            <Route path="/blog/security-compliance-health-companies" element={<SecurityComplianceHealthCompanies />} />
-            <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
-            <Route path="/about" element={<About />} />
+              {/* Blog Post Routes */}
+              <Route
+                path="/resources/blog/iso-27001-certification-guide"
+                element={<Iso27001Guide />}
+              />
+              <Route
+                path="/resources/blog/why-soc2-matters-small-companies"
+                element={<Soc2SmallCompanies />}
+              />
+              <Route
+                path="/resources/blog/meet-team-jayush-chawla"
+                element={<MeetTeamJayush />}
+              />
+              <Route
+                path="/resources/blog/meet-team-rojin-rezaei"
+                element={<MeetTeamRojin />}
+              />
+              <Route
+                path="/resources/blog/internal-vs-external-penetration-testing"
+                element={<PentestingComparison />}
+              />
+              <Route
+                path="/resources/blog/prepare-compliance-audit-best-practices"
+                element={<PrepareComplianceAudit />}
+              />
+              <Route
+                path="/resources/blog/what-is-vciso-role-cybersecurity"
+                element={<WhatIsVciso />}
+              />
+              <Route
+                path="/resources/blog/managed-security-compliance-services"
+                element={<ManagedSecurityCompliance />}
+              />
+              <Route
+                path="/resources/blog/ai-ethics-healthcare-innovation"
+                element={<AiEthicsHealthcare />}
+              />
+              <Route
+                path="/resources/blog/patient-confidentiality-ai-healthcare"
+                element={<PatientConfidentialityAi />}
+              />
+              <Route
+                path="/resources/blog/human-side-ai-patient-safety"
+                element={<HumanSideAiPatientSafety />}
+              />
+              <Route
+                path="/resources/blog/soc2-vs-iso27001-comparison"
+                element={<Soc2VsIso27001 />}
+              />
+              <Route
+                path="/resources/blog/transparency-accuracy-ai-healthcare"
+                element={<TransparencyAccuracyAiHealthcare />}
+              />
+              <Route
+                path="/resources/blog/cybersecurity-roundup-startups-may"
+                element={<CybersecurityRoundupStartupsMay />}
+              />
+              <Route
+                path="/resources/blog/security-compliance-health-companies"
+                element={<SecurityComplianceHealthCompanies />}
+              />
+              <Route
+                path="/resources/blog/safeguarding-data-sharing-tech-companies"
+                element={<SafeguardingDataSharingTechCompanies />}
+              />
+              {/* Top-level Blog Post Routes (duplicates for new paths) */}
+              <Route path="/blog/iso-27001-certification-guide" element={<Iso27001Guide />} />
+              <Route path="/blog/why-soc2-matters-small-companies" element={<Soc2SmallCompanies />} />
+              <Route path="/blog/meet-team-jayush-chawla" element={<MeetTeamJayush />} />
+              <Route path="/blog/meet-team-rojin-rezaei" element={<MeetTeamRojin />} />
+              <Route path="/blog/internal-vs-external-penetration-testing" element={<PentestingComparison />} />
+              <Route path="/blog/prepare-compliance-audit-best-practices" element={<PrepareComplianceAudit />} />
+              <Route path="/blog/what-is-vciso-role-cybersecurity" element={<WhatIsVciso />} />
+              <Route path="/blog/managed-security-compliance-services" element={<ManagedSecurityCompliance />} />
+              <Route path="/blog/ai-ethics-healthcare-innovation" element={<AiEthicsHealthcare />} />
+              <Route path="/blog/patient-confidentiality-ai-healthcare" element={<PatientConfidentialityAi />} />
+              <Route path="/blog/human-side-ai-patient-safety" element={<HumanSideAiPatientSafety />} />
+              <Route path="/blog/soc2-vs-iso27001-comparison" element={<Soc2VsIso27001 />} />
+              <Route path="/blog/transparency-accuracy-ai-healthcare" element={<TransparencyAccuracyAiHealthcare />} />
+              <Route path="/blog/cybersecurity-roundup-startups-may" element={<CybersecurityRoundupStartupsMay />} />
+              <Route path="/blog/security-compliance-health-companies" element={<SecurityComplianceHealthCompanies />} />
+              <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
+              <Route path="/about" element={<About />} />
 
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/contact" element={<Contact />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/contact" element={<Contact />} />
 
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
     <ComSecChatbot />
   </ErrorBoundary>
-
-
 );
 
 // Ensure single root creation

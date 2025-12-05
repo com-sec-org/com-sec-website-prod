@@ -434,7 +434,7 @@ export default function MeetTeamRojin() {
                 title: "Internal vs External Penetration Testing",
                 excerpt:
                   "Understanding the differences between testing approaches",
-                link: "/blog/internal-vs-external-penetration-testing",
+                link: "/blog/difference-between-internal-vs-external-penetration-testing",
                 category: "Penetration Testing",
                 emoji: "🔍",
               },

@@ -37,6 +37,11 @@ export default function PenetrationTesting() {
         name="description"
         content="Secure your systems with expert pen testing services. Identify vulnerabilities and strengthen cybersecurity defenses. Get reliable testing with Com-Sec today!"
       />
+
+<link
+          rel="canonical"
+          href="https://com-sec.io/penetration-testing-services"
+        />
       <meta name="robots" content="index, follow" />
       <meta
         property="og:title"

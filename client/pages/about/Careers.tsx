@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -138,6 +139,28 @@ export default function Careers() {
   ];
 
   return (
+    <>
+  <Helmet>
+    <title>Careers at Com-Sec | Cybersecurity Jobs | Remote Security Roles</title>
+
+    <meta
+      name="description"
+      content="Join Com-Sec and help build security programs for innovative startups in AI, fintech, crypto, and healthtech. Explore remote roles in IT security, compliance, penetration testing, and more."
+    />
+
+    <meta
+      name="keywords"
+      content="cybersecurity careers, security jobs, penetration tester jobs, compliance analyst jobs, remote security roles, SOC 2 analyst, HIPAA compliance jobs, IT security careers, Com-Sec careers, cybersecurity hiring"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/careers" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  </Helmet>
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Navigation />
 
@@ -470,5 +493,6 @@ export default function Careers() {
 
       <Footer />
     </div>
+    </>
   );
 }

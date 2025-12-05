@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 import {
   Shield,
   Target,
@@ -208,6 +210,29 @@ export default function Cmmc() {
   ];
 
   return (
+
+    <>
+  <Helmet>
+    <title>CMMC Compliance | Cybersecurity Maturity Model Certification | Com-Sec</title>
+
+    <meta
+      name="description"
+      content="Achieve CMMC compliance for DoD contracts. Our experts help you prepare for CMMC Levels 1–3 with gap analysis, SSP development, control implementation, and formal assessment readiness."
+    />
+
+    <meta
+      name="keywords"
+      content="CMMC, CMMC Compliance, Cybersecurity Maturity Model Certification, DoD Compliance, CUI Protection, CMMC Level 2, CMMC Level 1, Federal Contract Information, CMMC Assessment, CMMC Consultant, Controlled Unclassified Information"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/cmmc" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -632,5 +657,6 @@ export default function Cmmc() {
 
       <Footer />
     </div>
+    </>
   );
 }

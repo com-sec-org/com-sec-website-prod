@@ -1461,3 +1461,25 @@ html {
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-in-out;
 }
+
+/* Smooth word-by-word animation */
+@keyframes smoothFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.smooth-word {
+  opacity: 0;
+  animation: smoothFadeUp 0.9s ease-out forwards;
+}
+
+.smooth-delay-1 { animation-delay: 0.3s; }
+.smooth-delay-2 { animation-delay: 0.6s; }
+.smooth-delay-3 { animation-delay: 0.9s; }
+

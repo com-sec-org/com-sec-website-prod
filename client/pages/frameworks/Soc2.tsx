@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -25,6 +26,28 @@ import {
 
 export default function Soc2() {
   return (
+    <>
+  <Helmet>
+    <title>SOC 2 Compliance | Security, Trust, & Audit Readiness | Com-Sec</title>
+
+    <meta
+      name="description"
+      content="Achieve SOC 2 Type I and Type II compliance with Com-Sec. We help organizations implement controls, prepare evidence, manage audits, and meet Trust Service Criteria for enterprise customers."
+    />
+
+    <meta
+      name="keywords"
+      content="SOC 2, SOC 2 Compliance, SOC 2 Type I, SOC 2 Type II, Trust Service Criteria, Security Audit, Compliance Framework, Data Security, AICPA SOC 2, SOC 2 Readiness, SOC 2 Consultant"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/soc2" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -431,5 +454,6 @@ export default function Soc2() {
 
       <Footer />
     </div>
+    </>
   );
 }

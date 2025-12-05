@@ -443,7 +443,7 @@ export default function Iso27001Guide() {
                 title: "How to Prepare for a Compliance Audit",
                 excerpt:
                   "Essential strategies for successful compliance audits",
-                link: "/blog/prepare-compliance-audit-best-practices",
+                link: "/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies",
                 category: "Audit Readiness",
               },
               {

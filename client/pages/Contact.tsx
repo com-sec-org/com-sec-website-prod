@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -75,6 +76,35 @@ export default function Contact() {
   };
 
   return (
+    <>
+  <Helmet>
+    <title>Contact Com-Sec | Speak With Our Cybersecurity & Compliance Experts</title>
+
+    <meta
+      name="description"
+      content="Contact Com-Sec for SOC 2 readiness, penetration testing, cloud security, HIPAA compliance, vendor risk, and cybersecurity advisory services. Get expert help within 24 hours."
+    />
+
+    <meta
+      name="keywords"
+      content="contact com-sec, cybersecurity contact, SOC 2 help, penetration testing quote, cybersecurity consulting, risk assessment consultation, compliance services contact, cloud security support, GRC consulting"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/contact" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+
+    <meta property="og:title" content="Contact Com-Sec | Cybersecurity & Compliance Experts" />
+    <meta property="og:description" content="Reach out to Com-Sec for SOC 2 readiness, penetration testing, cloud security, and compliance advisory services. Our team responds within 24 hours." />
+    <meta property="og:url" content="https://com-sec.io/contact" />
+    <meta property="og:type" content="website" />
+  </Helmet>
+
+    
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -282,9 +312,9 @@ export default function Contact() {
               {/* Team Image */}
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
+                  src="/images/logo/contact us.png"
                   alt="Close-up of network equipment and circuit board with no people"
-                  className="w-full h-64 object-cover"
+                  className="w-2/3 mx-auto object-contain"
                 />
               </div>
               <Card>
@@ -447,5 +477,6 @@ export default function Contact() {
 
       <Footer />
     </div>
+    </>
   );
 }

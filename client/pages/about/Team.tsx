@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Helmet } from "react-helmet";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -153,6 +154,35 @@ export default function Team() {
   ];
 
   return (
+    <>
+  <Helmet>
+  <title>Meet the Com-Sec Team | Cybersecurity & Compliance Experts</title>
+
+  <meta
+    name="description"
+    content="Meet the security and compliance experts behind Com-Sec. Our team specializes in SOC 2, ISO 27001, HIPAA, cloud security, penetration testing, and risk management for startups and enterprises."
+  />
+
+  <meta
+    name="keywords"
+    content="Com-Sec team, cybersecurity experts, SOC2 consultants, security analysts, compliance specialists, penetration testers, ISO 27001 experts, HIPAA consultants, GRC professionals"
+  />
+
+  <link rel="canonical" href="https://com-sec.io/team" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Com-Sec" />
+  <meta name="publisher" content="Com-Sec" />
+  <meta charSet="utf-8" />
+  <meta name="language" content="English" />
+
+  <meta property="og:title" content="Meet the Com-Sec Team | Cybersecurity Experts" />
+  <meta property="og:description" content="Get to know the cybersecurity and compliance professionals powering Com-Sec’s security programs." />
+  <meta property="og:url" content="https://com-sec.io/team" />
+  <meta property="og:type" content="website" />
+</Helmet>
+
+
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -371,5 +401,6 @@ export default function Team() {
 
       <Footer />
     </div>
+    </>
   );
 }

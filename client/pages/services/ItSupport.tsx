@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -28,7 +29,62 @@ import {
 
 export default function ItSupport() {
   return (
+<>
+    <Helmet>
+    {/* Primary SEO */}
+    <title>IT Support Services | Managed IT & Helpdesk Support | Com-Sec</title>
+  
+    <meta
+      name="description"
+      content="Get reliable IT support services including helpdesk support, endpoint management, troubleshooting, access issues, system configuration, and security-focused IT assistance. Fast, expert IT support for growing teams."
+    />
+  
+    <meta
+      name="keywords"
+      content="IT support, managed IT services, helpdesk support, endpoint support, IT troubleshooting, remote IT support, technical support services, Com-Sec IT support, device setup, access issues, user onboarding IT"
+    />
+  
+    <link rel="canonical" href="https://com-sec.io/it-support" />
+  
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  
+    {/* Open Graph */}
+    <meta property="og:title" content="IT Support Services | Managed IT & Helpdesk Support | Com-Sec" />
+    <meta
+      property="og:description"
+      content="Fast and reliable IT support for your organization — helpdesk, device support, account access, troubleshooting, and secure IT operations."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://com-sec.io/it-support" />
+    <meta property="og:site_name" content="Com-Sec" />
+    <meta
+      property="og:image"
+      content="https://com-sec.io/images/it-support-cover.png"
+    />
+  
+    {/* Twitter Card */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="IT Support Services | Managed IT & Helpdesk Support | Com-Sec"
+    />
+    <meta
+      name="twitter:description"
+      content="Expert IT support including troubleshooting, endpoint management, access issues, and secure helpdesk support for your growing team."
+    />
+    <meta
+      name="twitter:image"
+      content="https://com-sec.io/images/it-support-cover.png"
+    />
+  </Helmet>
+  
     <div className="min-h-screen bg-white">
+
+      
       <Navigation />
 
       {/* Hero Section */}
@@ -456,5 +512,6 @@ export default function ItSupport() {
 
       <Footer />
     </div>
+    </>
   );
 }

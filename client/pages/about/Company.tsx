@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -25,6 +26,31 @@ import {
 
 export default function Company() {
   return (
+    <>
+    <Helmet>
+      <title>About Com-Sec | Cybersecurity & Compliance Experts | SOC 2, ISO 27001, HIPAA</title>
+  
+      <meta
+        name="description"
+        content="Learn about Com-Sec, a cybersecurity & compliance firm helping startups and enterprises achieve SOC 2, ISO 27001, HIPAA, GDPR, and cloud security readiness. Trusted experts in risk management, penetration testing, and compliance automation."
+      />
+  
+      <meta
+        name="keywords"
+        content="about com-sec, com-sec company, cybersecurity company, SOC 2 consultants, ISO 27001 experts, compliance automation, cybersecurity firm, risk management company, penetration testing company"
+      />
+  
+      <link rel="canonical" href="https://com-sec.io/company" />
+  
+      <meta name="robots" content="index, follow" />
+      <meta name="author" content="Com-Sec" />
+  
+      <meta property="og:title" content="About Com-Sec | Cybersecurity & Compliance Experts" />
+      <meta property="og:description" content="Com-Sec helps high-growth startups build secure, compliant environments across SOC 2, HIPAA, ISO 27001, and cloud security." />
+      <meta property="og:url" content="https://com-sec.io/company" />
+      <meta property="og:type" content="website" />
+    </Helmet>
+
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Navigation />
 
@@ -526,5 +552,6 @@ export default function Company() {
 
       <Footer />
     </div>
+    </>
   );
 }

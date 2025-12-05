@@ -25,6 +25,12 @@ import {
 
 export default function Soc2Readiness() {
   return (
+    <>
+    <link
+          rel="canonical"
+          href="https://com-sec.io/soc2-readiness"
+        />
+
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -572,5 +578,6 @@ export default function Soc2Readiness() {
         }
       `}</style>
     </div>
+    </>
   );
 }

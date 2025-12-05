@@ -39,6 +39,11 @@ export default function ComplianceAuditReadiness() {
           content="Get top cybersecurity compliance, cloud security, GDPR, HITRUST, and IT audit services. Ensure readiness with continuous monitoring. Secure your business with Com-Sec today!"
         />
 
+<link
+          rel="canonical"
+          href="https://com-sec.io/compliance-audit-readiness"
+        />
+
         {/* (Optional) Extra SEO meta tags */}
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Cybersecurity & Compliance Audit Services | Com-Sec" />

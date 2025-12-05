@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
+
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -110,6 +112,30 @@ export default function Blogs() {
   };
 
   return (
+<>
+<Helmet>
+  {/* Basic SEO */}
+  <title>Cybersecurity Blog | Com-Sec Insights</title>
+
+  <meta
+    name="description"
+    content="Stay updated with cybersecurity insights, SOC 2 compliance tips, ISO 27001 guides, penetration testing updates, cloud security advice, and best practices from Com-Sec experts."
+  />
+
+  <meta
+    name="keywords"
+    content="cybersecurity blog, SOC 2 blog, ISO 27001 guides, penetration testing blog, cloud security updates, compliance best practices, Com-Sec blog, security insights"
+  />
+
+  <link rel="canonical" href="https://com-sec.io/blogs" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Com-Sec" />
+  <meta name="publisher" content="Com-Sec" />
+  <meta charSet="utf-8" />
+  <meta name="language" content="English" />
+  </Helmet>
+
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -426,7 +452,7 @@ export default function Blogs() {
                   "SOC 2 digital cybersecurity framework with security controls and data protection compliance standards",
               },
               {
-                id: "internal-vs-external-penetration-testing",
+                id: "difference-between-internal-vs-external-penetration-testing",
                 title:
                   "Difference Between Internal vs External Penetration Testing",
                 excerpt:
@@ -442,7 +468,7 @@ export default function Blogs() {
                   "Digital security hand holding cybersecurity shield with network protection and cyber defense technology",
               },
               {
-                id: "prepare-compliance-audit-best-practices",
+                id: "how-to-prepare-for-a-compliance-audit-best-practices-and-strategies",
                 title:
                   "How to Prepare for a Compliance Audit: Best Practices and Strategies",
                 excerpt:
@@ -985,5 +1011,6 @@ export default function Blogs() {
 
       <Footer />
     </div>
+    </>
   );
 }

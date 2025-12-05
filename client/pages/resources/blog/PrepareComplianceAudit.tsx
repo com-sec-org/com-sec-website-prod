@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,20 @@ import {
 
 export default function PrepareComplianceAudit() {
   return (
+    <>
+    <Helmet>
+  <title>How to Prepare for a Compliance Audit: Best Practices and Strategies</title>
+  <meta
+    name="description"
+    content="Learn the essential best practices and strategies to prepare your organization for a successful compliance audit. Includes documentation tips, planning steps, and expert insights."
+  />
+  <link
+    rel="canonical"
+    href="https://com-sec.io/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies"
+  />
+</Helmet>
+
+ 
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -588,5 +603,7 @@ export default function PrepareComplianceAudit() {
 
       <Footer />
     </div>
+    </>
+    
   );
 }

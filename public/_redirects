@@ -1,13 +1,24 @@
-/penetration-testing            /penetration-testing-services   301!
-/penetration-testing-1          /penetration-testing-services   301!
-/services/penetration-testing   /penetration-testing-services   301!
-/compliance-auditreadiness              /compliance-audit-readiness   301!
-/services/compliance-audit-readiness    /compliance-audit-readiness   301!
-/soc-support-monitoring-services     /soc-support        301!
-/ongoing                             /                   301!
-/ongoing-security                    /                   301!
-/blog                               /blogs               301!
-/our-approach   /approach   301!
+# --------------------------
+# Legacy Redirects
+# --------------------------
 
+/penetration-testing                 /penetration-testing-services   301
+/penetration-testing-1               /penetration-testing-services   301
+/services/penetration-testing        /penetration-testing-services   301
 
-/*  /index.html  200
+/compliance-auditreadiness           /compliance-audit-readiness     301
+/services/compliance-audit-readiness /compliance-audit-readiness     301
+
+/soc-support-monitoring-services     /soc-support                    301
+
+/ongoing                             /                               301
+/ongoing-security                    /                               301
+
+/blog                                /blogs                          301
+/our-approach                        /approach                       301
+
+# --------------------------
+# SPA fallback
+# Must be LAST
+# --------------------------
+/*                                   /index.html                     200

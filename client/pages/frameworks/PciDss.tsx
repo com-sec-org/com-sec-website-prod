@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   Shield,
   CreditCard,
@@ -123,6 +124,29 @@ export default function PciDss() {
   ];
 
   return (
+
+    <>
+  <Helmet>
+    <title>PCI DSS Compliance | Payment Security | Cardholder Data Protection | Com-Sec</title>
+
+    <meta
+      name="description"
+      content="Achieve PCI DSS Level 1–4 compliance with Com-Sec. We help organizations secure payment environments, implement required controls, perform gap analysis, prepare for QSA assessments, and protect cardholder data."
+    />
+
+    <meta
+      name="keywords"
+      content="PCI DSS, PCI Compliance, Cardholder Data Security, QSA Assessment, Payment Processing Security, PCI Levels, PCI DSS Requirements, Payment Card Industry, Data Encryption, Card Data Protection, PCI DSS Consultant"
+    />
+
+    <link rel="canonical" href="https://com-sec.io/pci-dss" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Com-Sec" />
+    <meta name="publisher" content="Com-Sec" />
+    <meta charSet="utf-8" />
+    <meta name="language" content="English" />
+  </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -461,5 +485,6 @@ export default function PciDss() {
 
       <Footer />
     </div>
+    </>
   );
 }
