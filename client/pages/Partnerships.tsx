@@ -67,9 +67,9 @@ const partners: Record<string, Partner[]> = {
   ],
   complianceTools: [
     {
-      name: "OneLeet",
-      description: "Compliance automation and management platform",
-      website: "https://oneleet.com/",
+      name: "Drata",
+      description: "Trust and compliance automation platform",
+      website: "https://drata.com/",
       category: "complianceTools",
     },
     {
@@ -79,21 +79,21 @@ const partners: Record<string, Partner[]> = {
       category: "complianceTools",
     },
     {
-      name: "Thoropass",
-      description: "Compliance automation and audit readiness",
-      website: "https://thoropass.com/",
-      category: "complianceTools",
-    },
-    {
-      name: "Drata",
-      description: "Trust and compliance automation platform",
-      website: "https://drata.com/",
-      category: "complianceTools",
-    },
-    {
       name: "Sprinto",
       description: "Compliance and audit management software",
       website: "https://sprinto.com/",
+      category: "complianceTools",
+    },
+    {
+      name: "OneLeet",
+      description: "Compliance automation and management platform",
+      website: "https://oneleet.com/",
+      category: "complianceTools",
+    },
+    {
+      name: "Thoropass",
+      description: "Compliance automation and audit readiness",
+      website: "https://thoropass.com/",
       category: "complianceTools",
     },
     {
