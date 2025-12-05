@@ -143,14 +143,13 @@ function CanonicalLink() {
 
 const App = () => (
   <ErrorBoundary>
-    <HelmetProvider>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <ScrollToTop />
-            <CanonicalLink />
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToTop />
+          <CanonicalLink />
             <Routes>
               <Route path="/" element={<Index />} />
 
@@ -321,9 +320,8 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
-        </TooltipProvider>
-      </QueryClientProvider>
-    </HelmetProvider>
+      </TooltipProvider>
+    </QueryClientProvider>
     <ComSecChatbot />
   </ErrorBoundary>
 );
