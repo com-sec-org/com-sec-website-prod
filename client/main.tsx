@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
+import Partnerships from "./pages/Partnerships";
 
 // Service Pages
 import Soc2Readiness from "./pages/services/Soc2Readiness";
