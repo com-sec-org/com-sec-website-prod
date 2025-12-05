@@ -196,6 +196,12 @@ export function Navigation() {
                   >
                     Team
                   </Link>
+                  <Link
+                    to="/partnerships"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    Partnerships
+                  </Link>
                 </div>
               </div>
             </div>
