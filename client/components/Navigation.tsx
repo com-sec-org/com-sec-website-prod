@@ -196,6 +196,12 @@ export function Navigation() {
                   >
                     Team
                   </Link>
+                  <Link
+                    to="/partnerships"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    Partnerships
+                  </Link>
                 </div>
               </div>
             </div>
@@ -464,6 +470,13 @@ export function Navigation() {
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Team
+                      </Link>
+                      <Link
+                        to="/partnerships"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Partnerships
                       </Link>
                     </div>
                   </div>
