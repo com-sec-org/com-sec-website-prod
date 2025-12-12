@@ -123,9 +123,9 @@ const partners: Record<string, Partner[]> = {
   ],
   itConsultants: [
     {
-      name: "Tech Sphere Global",
-      description: "Technology consulting and IT solutions",
-      website: "#",
+      name: "TechSphere Global",
+      description: "Fractional IT Leadership and IT Services Specialized in Life Sciences and Biotechnology",
+      website: "https://www.techsphereglobal.io/",
       category: "itConsultants",
     },
   ],
