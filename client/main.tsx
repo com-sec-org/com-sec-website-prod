@@ -28,7 +28,7 @@ import RiskManagement from "./pages/services/RiskManagement";
 import Soc2Framework from "./pages/frameworks/Soc2";
 import Iso27001 from "./pages/frameworks/Iso27001";
 import Hipaa from "./pages/frameworks/Hipaa";
-// import Hitrust from "./pages/frameworks/Hitrust";
+import Hitrust from "./pages/frameworks/Hitrust";
 import PciDss from "./pages/frameworks/PciDss";
 import Nist from "./pages/frameworks/Nist";
 import Gdpr from "./pages/frameworks/Gdpr";
@@ -196,7 +196,7 @@ const App = () => (
               <Route path="/frameworks/soc2" element={<Soc2Framework />} />
               <Route path="/frameworks/iso27001" element={<Iso27001 />} />
               <Route path="/frameworks/hipaa" element={<Hipaa />} />
-              {/* <Route path="/frameworks/hitrust" element={<Hitrust />} /> */}
+              <Route path="/frameworks/hitrust" element={<Hitrust />} />
               <Route path="/frameworks/pci-dss" element={<PciDss />} />
               <Route path="/frameworks/nist" element={<Nist />} />
               <Route path="/frameworks/gdpr" element={<Gdpr />} />
@@ -205,7 +205,7 @@ const App = () => (
               <Route path="/soc2" element={<Soc2Framework />} />
               <Route path="/iso27001" element={<Iso27001 />} />
               <Route path="/hipaa" element={<Hipaa />} />
-              {/* <Route path="/hitrust" element={<Hitrust />} /> */}
+              <Route path="/hitrust" element={<Hitrust />} />
               <Route path="/pci-dss" element={<PciDss />} />
               <Route path="/nist" element={<Nist />} />
               <Route path="/gdpr" element={<Gdpr />} />
