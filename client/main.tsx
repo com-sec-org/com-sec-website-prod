@@ -248,6 +248,14 @@ const App = () => (
                 element={<MeetTeamRojin />}
               />
               <Route
+                path="/resources/blog/difference-between-internal-vs-external-penetration-testing"
+                element={<PentestingComparison />}
+              />
+              <Route
+                path="/resources/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies"
+                element={<PrepareComplianceAudit />}
+              />
+              <Route
                 path="/resources/blog/internal-vs-external-penetration-testing"
                 element={<PentestingComparison />}
               />
@@ -300,6 +308,8 @@ const App = () => (
               <Route path="/blog/why-soc2-matters-small-companies" element={<Soc2SmallCompanies />} />
               <Route path="/blog/meet-team-jayush-chawla" element={<MeetTeamJayush />} />
               <Route path="/blog/meet-team-rojin-rezaei" element={<MeetTeamRojin />} />
+              <Route path="/blog/difference-between-internal-vs-external-penetration-testing" element={<PentestingComparison />} />
+              <Route path="/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies" element={<PrepareComplianceAudit />} />
               <Route path="/blog/internal-vs-external-penetration-testing" element={<PentestingComparison />} />
               <Route path="/blog/prepare-compliance-audit-best-practices" element={<PrepareComplianceAudit />} />
               <Route path="/blog/what-is-vciso-role-cybersecurity" element={<WhatIsVciso />} />
