@@ -61,6 +61,7 @@ import TransparencyAccuracyAiHealthcare from "./pages/resources/blog/Transparenc
 import CybersecurityRoundupStartupsMay from "./pages/resources/blog/CybersecurityRoundupStartupsMay";
 import SecurityComplianceHealthCompanies from "./pages/resources/blog/SecurityComplianceHealthCompanies";
 import SafeguardingDataSharingTechCompanies from "./pages/resources/blog/SafeguardingDataSharingTechCompanies";
+import ContinuousMonitoringSecurityCompliance from "./pages/resources/blog/ContinuousMonitoringForSecurityAndCompliance";
 
 import NotFound from "./pages/NotFound";
 
@@ -303,6 +304,7 @@ const App = () => (
                 path="/resources/blog/safeguarding-data-sharing-tech-companies"
                 element={<SafeguardingDataSharingTechCompanies />}
               />
+              <Route path="/blog/continuous-monitoring-security-compliance" element={<ContinuousMonitoringSecurityCompliance />}/>
               {/* Top-level Blog Post Routes (duplicates for new paths) */}
               <Route path="/blog/iso-27001-certification-guide" element={<Iso27001Guide />} />
               <Route path="/blog/why-soc2-matters-small-companies" element={<Soc2SmallCompanies />} />
@@ -322,6 +324,7 @@ const App = () => (
               <Route path="/blog/cybersecurity-roundup-startups-may" element={<CybersecurityRoundupStartupsMay />} />
               <Route path="/blog/security-compliance-health-companies" element={<SecurityComplianceHealthCompanies />} />
               <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
+              <Route path="/blog/continuous-monitoring-security-compliance" element={<ContinuousMonitoringSecurityCompliance />}/>
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
