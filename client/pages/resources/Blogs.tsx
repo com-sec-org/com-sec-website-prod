@@ -437,6 +437,21 @@ export default function Blogs() {
                   "ISO 27001 vs SOC2 comparison showing two security shields on a balance scale with compliance frameworks",
               },
               {
+                  id: "continuous-monitoring-security-compliance",
+                  title: "Continuous Monitoring for Security and Compliance: A Complete Guide (2026)",
+                  excerpt:
+                    "Learn how continuous monitoring strengthens security posture, supports audit readiness, and reduces risk through real time visibility and automated evidence collection.",
+                  date: "Jan 8, 2026",
+                  readTime: "8 min read",
+                  author: "Com-Sec Team",
+                  category: "Security Monitoring",
+                  categoryColor: "bg-blue-100 text-blue-800",
+                  featured: false,
+                  image: "/images/blog-images/Cont-mon-sec-and-comp.png",
+                  imageAlt:
+                    "Continuous monitoring and compliance security background image",
+                },
+              {
                 id: "why-soc2-matters-small-companies",
                 title: "Why SOC 2 Matters—Even If You're Not a Big Company?",
                 excerpt:
