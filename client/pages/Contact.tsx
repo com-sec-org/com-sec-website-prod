@@ -129,7 +129,7 @@ export default function Contact() {
               needs and create a customized solution.
             </p>
             <a
-              href="https://calendly.com/brendan-com-sec/30min?month=2025-12"
+              href="https://calendly.com/parag-com-sec/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-2 bg-gradient-to-r from-accent via-orange-500 to-red-500 text-white font-bold py-3 px-8 text-lg rounded-lg overflow-hidden group hover:shadow-2xl transform hover:scale-110 transition-all duration-300 shadow-xl animate-glow-pulse hover:gap-4"

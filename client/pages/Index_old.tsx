@@ -389,7 +389,7 @@ export default function Index() {
               asChild
             >
               <a
-                href="https://calendly.com/brendan-com-sec/30min?month=2025-12"
+                href="https://calendly.com/parag-com-sec/30min"
                 target="_blank"
                 rel="noopener noreferrer"
               >
