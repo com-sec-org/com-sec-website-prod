@@ -437,6 +437,21 @@ export default function Blogs() {
                   "ISO 27001 vs SOC2 comparison showing two security shields on a balance scale with compliance frameworks",
               },
               {
+                id: "the-role-of-ai-in-penetration-testing-hype-vs-reality",
+                title: "The Role of AI in Penetration Testing: Hype vs Reality 2026",
+                excerpt:
+                  "Explore how AI is transforming penetration testing in 2026: separating marketing hype from real-world impact. Covers AI-driven pen testing tools, continuous testing, ROI, trending strategies, and what’s realistic today.",
+                date: "Jan 18, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Team",
+                category: "Penetration Testing",
+                categoryColor: "bg-purple-100 text-purple-800",
+                featured: false,
+                image: "/images/blog-images/AIPentest-hype-vs-reality.jpg",
+                imageAlt:
+                  "The role of AI in penetration testing showing AI themed cybersecurity background and hype vs reality concept",
+              },
+              {
                 id: "web-application-penetration-testing-checklist-2025-edition",
                 title: "Web Application Penetration Testing Checklist [2026]",
                 excerpt:
