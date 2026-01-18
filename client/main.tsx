@@ -62,6 +62,7 @@ import CybersecurityRoundupStartupsMay from "./pages/resources/blog/Cybersecurit
 import SecurityComplianceHealthCompanies from "./pages/resources/blog/SecurityComplianceHealthCompanies";
 import SafeguardingDataSharingTechCompanies from "./pages/resources/blog/SafeguardingDataSharingTechCompanies";
 import ContinuousMonitoringSecurityCompliance from "./pages/resources/blog/ContinuousMonitoringForSecurityAndCompliance";
+import WebAppPenTestChecklist2026 from "./pages/resources/blog/WebAppPenTestChecklist2026";
 
 import NotFound from "./pages/NotFound";
 
@@ -325,6 +326,7 @@ const App = () => (
               <Route path="/blog/security-compliance-health-companies" element={<SecurityComplianceHealthCompanies />} />
               <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
               <Route path="/blog/continuous-monitoring-security-compliance" element={<ContinuousMonitoringSecurityCompliance />}/>
+              <Route path="/blog/web-application-penetration-testing-checklist-2025-edition" element={<WebAppPenTestChecklist2026 />}/>
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
