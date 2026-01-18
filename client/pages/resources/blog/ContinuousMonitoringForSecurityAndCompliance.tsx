@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet";
 import {
   ArrowLeft,
   Calendar,
@@ -71,6 +72,12 @@ export default function ContinuousMonitoringSecurityCompliance2026() {
   }
 
   return (
+    <>
+    <Helmet> 
+        <title>Continuous Monitoring for Security & Compliance | 2026 Guide</title> 
+        <meta name="description" content="Continuous monitoring for security and compliance in 2026 with real-time security monitoring, continuous compliance monitoring, audit readiness, risk management, and regulatory compliance." />
+        <link rel="canonical" href="https://com-sec.io/blog/continuous-monitoring-security-compliance" /> 
+    </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />
 
@@ -771,5 +778,6 @@ export default function ContinuousMonitoringSecurityCompliance2026() {
 
       <Footer />
     </div>
+    </>
   )
 }
