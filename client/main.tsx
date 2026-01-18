@@ -65,6 +65,7 @@ import ContinuousMonitoringSecurityCompliance from "./pages/resources/blog/Conti
 import WebAppPenTestChecklist2026 from "./pages/resources/blog/WebAppPenTestChecklist2026";
 
 import NotFound from "./pages/NotFound";
+import AiPenTestingHypeVsReality2026 from "./pages/resources/blog/AiPenTestingHypeVsReality2026";
 
 const queryClient = new QueryClient();
 
@@ -327,6 +328,7 @@ const App = () => (
               <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
               <Route path="/blog/continuous-monitoring-security-compliance" element={<ContinuousMonitoringSecurityCompliance />}/>
               <Route path="/blog/web-application-penetration-testing-checklist-2025-edition" element={<WebAppPenTestChecklist2026 />}/>
+              <Route path="/blog/the-role-of-ai-in-penetration-testing-hype-vs-reality" element={<AiPenTestingHypeVsReality2026 />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
