@@ -437,6 +437,21 @@ export default function Blogs() {
                   "ISO 27001 vs SOC2 comparison showing two security shields on a balance scale with compliance frameworks",
               },
               {
+                id: "web-application-penetration-testing-checklist-2025-edition",
+                title: "Web Application Penetration Testing Checklist [2026]",
+                excerpt:
+                  "Explore the ultimate 2026 web application penetration testing checklist. Learn how to test for broken authentication, IDOR, API security, session hijacking, and more.",
+                date: "January 18, 2026",
+                readTime: "12 min read",
+                author: "Com-Sec Team",
+                category: "Penetration Testing",
+                categoryColor: "bg-purple-100 text-purple-800",
+                image: "/images/blog-images/flat-background-safer-internet-day.webp",
+                imageAlt:
+                  "Web application penetration testing checklist for 2026 covering authentication, IDOR, API security, and session management",
+                link: "/blog/web-application-penetration-testing-checklist-2025-edition",
+              },
+              {
                   id: "continuous-monitoring-security-compliance",
                   title: "Continuous Monitoring for Security and Compliance: A Complete Guide (2026)",
                   excerpt:
