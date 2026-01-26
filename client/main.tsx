@@ -66,6 +66,8 @@ import WebAppPenTestChecklist2026 from "./pages/resources/blog/WebAppPenTestChec
 
 import NotFound from "./pages/NotFound";
 import AiPenTestingHypeVsReality2026 from "./pages/resources/blog/AiPenTestingHypeVsReality2026";
+import GlobalCyberReg2026 from "./pages/resources/blog/GlobalCyberReg2026";
+import WhatIsCyberThreatIntelligence from "./pages/resources/blog/WhatIsCyberThreatIntelligence";
 
 const queryClient = new QueryClient();
 
@@ -329,6 +331,8 @@ const App = () => (
               <Route path="/blog/continuous-monitoring-security-compliance" element={<ContinuousMonitoringSecurityCompliance />}/>
               <Route path="/blog/web-application-penetration-testing-checklist-2025-edition" element={<WebAppPenTestChecklist2026 />}/>
               <Route path="/blog/the-role-of-ai-in-penetration-testing-hype-vs-reality" element={<AiPenTestingHypeVsReality2026 />} />
+              <Route path="/blog/global-cybersecurity-regulations-in-2025-how-to-prepare-your-business" element={<GlobalCyberReg2026 />} />
+              <Route path="/blog/what-is-cyber-threat-intelligence-amp-why-it-matters" element={<WhatIsCyberThreatIntelligence />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
