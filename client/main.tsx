@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { useEffect, Component, ErrorInfo, ReactNode } from "react";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
@@ -68,6 +68,20 @@ import NotFound from "./pages/NotFound";
 import AiPenTestingHypeVsReality2026 from "./pages/resources/blog/AiPenTestingHypeVsReality2026";
 import GlobalCyberReg2026 from "./pages/resources/blog/GlobalCyberReg2026";
 import WhatIsCyberThreatIntelligence from "./pages/resources/blog/WhatIsCyberThreatIntelligence";
+import WhatAreManagedSecurityComplianceServicesAndWhyAreTheyEssential from "./pages/resources/blog/WhatAreManagedSecurityComplianceServicesAndWhyAreTheyEssential";
+import TransparencyAccuracyAccountabilityAiHealthcare from "./pages/resources/blog/TransparencyAccuracyAccountabilityAiHealthcare";
+import Iso27001CertificationGuideRedirect from "./pages/resources/blog/Iso27001CertificationGuideRedirect";
+import HowAiIsChangingItSecurityOperations2026 from "./pages/resources/blog/HowAiIsChangingItSecurityOperations2026";
+import TwentyYearsOfCybersecurity2026 from "./pages/resources/blog/TwentyYearsOfCybersecurity2026";
+import AiHealthPatientPrivacyConfidentiality2026 from "./pages/resources/blog/AiHealthPatientPrivacyConfidentiality2026";
+import ComSecTrustedPartnerSoc2 from "./pages/resources/blog/ComSecTrustedPartnerSoc2";
+import DifferentTypesOfComplianceAudits2026 from "./pages/resources/blog/DifferentTypesOfComplianceAudits2026";
+import HitrustVsHipaaComparison from "./pages/resources/blog/HitrustVsHipaaComparison";
+import HowAiAndAnalyticsImproveSecurityOperations from "./pages/resources/blog/HowAiAndAnalyticsImproveSecurityOperations";
+import ComplianceVsSecurity2026 from "./pages/resources/blog/ComplianceVsSecurity2026";
+import CybersecurityRoundupStartups2026 from "./pages/resources/blog/CybersecurityRoundupStartups2026";
+import Soc2HitrustSimultaneousAudits2026 from "./pages/resources/blog/Soc2HitrustSimultaneousAudits2026";
+import VitalImportanceHealthSecurity2026 from "./pages/resources/blog/VitalImportanceHealthSecurity2026";
 
 const queryClient = new QueryClient();
 
@@ -333,6 +347,22 @@ const App = () => (
               <Route path="/blog/the-role-of-ai-in-penetration-testing-hype-vs-reality" element={<AiPenTestingHypeVsReality2026 />} />
               <Route path="/blog/global-cybersecurity-regulations-in-2025-how-to-prepare-your-business" element={<GlobalCyberReg2026 />} />
               <Route path="/blog/what-is-cyber-threat-intelligence-amp-why-it-matters" element={<WhatIsCyberThreatIntelligence />} />
+              <Route path="/blog/what-are-managed-security-compliance-services-and-why-are-they-essential" element={<WhatAreManagedSecurityComplianceServicesAndWhyAreTheyEssential />}/>
+              <Route path="/blog/importance-of-transparency-accuracy-and-accountability" element={<TransparencyAccuracyAccountabilityAiHealthcare />}/>
+              <Route path="/blog/iso-27001-certification-guide-what-it-is-why-it-matters-and-how-to-get-compliant" element={<Iso27001CertificationGuideRedirect />}/>
+              <Route path="/blog/how-ai-is-changing-it-security-operations-in-2025" element={<HowAiIsChangingItSecurityOperations2026 />}/>
+              <Route path="/blog/20-years-of-cybersecurity-a-journey-through-the-digital-age" element={<TwentyYearsOfCybersecurity2026 />} />
+              <Route path="/blog/ai-health-companies-protect-patient-privacy-confidentiality-2026" element={<AiHealthPatientPrivacyConfidentiality2026 />}/>
+              <Route path="/blog/ske1x11svuoro4joua1zfh7xvsupjr" element={ <Navigate to="/blog/ai-health-companies-protect-patient-privacy-confidentiality-2026" replace/>}/>
+              <Route path="/blog/com-sec-your-trusted-partner-in-achieving-soc2-compliance" element={<ComSecTrustedPartnerSoc2 />} />
+              <Route path="/blog/different-types-of-compliance-audits-complete-guide-for-2025" element={<DifferentTypesOfComplianceAudits2026 />} />
+              <Route path="/blog/hitrust-vs-hipaa-which-is-right-for-my-organization" element={<HitrustVsHipaaComparison />} />
+              <Route path="/blog/how-ai-and-analytics-improve-ongoing-security-operations" element={<HowAiAndAnalyticsImproveSecurityOperations />} />
+              <Route path="/blog/compliance-vs-security-key-differences-why-both-matter-2026" element={<ComplianceVsSecurity2026 />} />
+              <Route path="/blog/the-beginners-guide-to-meditation-ynfs2" element={<Navigate to="/blog/compliance-vs-security-key-differences-why-both-matter-2026" replace />} />
+              <Route path="/blog/cybersecurity-roundup-key-trends-and-threats-for-startups-in-may" element={<CybersecurityRoundupStartups2026 />} />
+              <Route path="/blog/the-pros-and-cons-of-undergoing-soc-2-type-ii-and-hitrust-audits-simultaneously" element={<Soc2HitrustSimultaneousAudits2026 />} />
+              <Route path="/blog/the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data" element={<VitalImportanceHealthSecurity2026 />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
