@@ -38,7 +38,7 @@ export default function Blogs() {
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
-      setVisibleArticles(20);
+      setVisibleArticles(30);
       const q = searchQuery.trim().toLowerCase().replace(/\s|-/g, "");
       setTimeout(() => {
         const items = Array.from(
@@ -91,7 +91,7 @@ export default function Blogs() {
     if (e.key === "Enter") {
       e.preventDefault();
       if (searchQuery.trim()) {
-        setVisibleArticles(20);
+        setVisibleArticles(30);
       }
     }
   };
@@ -100,7 +100,7 @@ export default function Blogs() {
     const newVisibleCount = visibleArticles + 6;
     setVisibleArticles(newVisibleCount);
     // Hide Load More button if we've shown all articles
-    if (newVisibleCount >= 20) {
+    if (newVisibleCount >= 30) {
       // Total number of articles
       setShowLoadMore(false);
     }
@@ -435,6 +435,199 @@ export default function Blogs() {
                   "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fe3d3be5db7df4ab28a3c74177c6ad19d?format=webp&width=800",
                 imageAlt:
                   "ISO 27001 vs SOC2 comparison showing two security shields on a balance scale with compliance frameworks",
+              },
+              {
+                id: "the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data",
+                title: "Healthcare Cybersecurity & HIPAA Compliance | Protect Patient Data 2026",
+                excerpt: "Learn how health companies can safeguard patient data in 2026 with robust healthcare cybersecurity, HIPAA compliance, risk management, and secure cloud solutions.",
+                date: "February 11, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Team",
+                category: "Healthcare Security",
+                categoryColor: "bg-teal-100 text-teal-800",
+                image: "/images/blog-images/healthcare-security-compliance.png",
+                imageAlt: "Healthcare professionals analyzing digital patient security",
+                link: "/blog/the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data"
+              },
+              {
+                id: "the-pros-and-cons-of-undergoing-soc-2-type-ii-and-hitrust-audits-simultaneously",
+                title: "SOC 2 Type II and HITRUST Audits: Pros, Cons & 2026 Compliance Guide",
+                excerpt: "Explore the pros and cons of undergoing SOC 2 Type II and HITRUST audits simultaneously. Learn how 2026 compliance trends and modern tools can streamline your certification.",
+                date: "February 11, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Compliance Team",
+                category: "Audit Strategy",
+                categoryColor: "bg-violet-100 text-violet-800",
+                image: "/images/blog-images/soc2-hitrust-pros-cons.jpg",
+                imageAlt: "Pros and Cons checklist for simultaneous compliance audits",
+                link: "/blog/the-pros-and-cons-of-undergoing-soc-2-type-ii-and-hitrust-audits-simultaneously"
+              },
+              {
+                id: "cybersecurity-roundup-key-trends-and-threats-for-startups-in-may",
+                title: "Cybersecurity for Startups 2026: Top Threats, Cloud Risks & AI Attacks",
+                excerpt: "Learn how startups can protect against the top cybersecurity threats in 2026. Stay secure from cloud misconfigurations, ransomware, AI-driven attacks, and compliance risks.",
+                date: "February 10, 2026",
+                readTime: "8 min read",
+                author: "Com-Sec Team",
+                category: "Industry Trends",
+                categoryColor: "bg-indigo-100 text-indigo-800",
+                image: "/images/blog-images/cybersecurity-roundup-startups-2026.jpg",
+                imageAlt: "Futuristic digital shield protecting a startup network",
+                link: "/blog/cybersecurity-roundup-key-trends-and-threats-for-startups-in-may"
+              },
+              {
+                id: "compliance-vs-security-key-differences-why-both-matter-2026",
+                title: "Compliance vs Security: Key Differences & Why Both Matter in 2026",
+                excerpt: "Learn the difference between compliance and security in 2026. Explore key concepts, overlap, and best practices to reduce risk and meet regulations.",
+                date: "February 9, 2026",
+                readTime: "6 min read",
+                author: "Com-Sec Team",
+                category: "Cybersecurity Strategy",
+                categoryColor: "bg-indigo-100 text-indigo-800",
+                image: "/images/blog-images/compliance-vs-security.jpg",
+                imageAlt: "Shield and checklist icon representing compliance versus security",
+                link: "/blog/compliance-vs-security-key-differences-why-both-matter-2026"
+              },
+              {
+                id: "how-ai-and-analytics-improve-ongoing-security-operations",
+                title: "How AI and Analytics Improve Ongoing Security Operations?",
+                excerpt: "Discover how AI and analytics transform ongoing security operations with faster threat detection, automated response, and predictive insights.",
+                date: "February 8, 2026",
+                readTime: "8 min read",
+                author: "Com-Sec Team",
+                category: "Security Operations",
+                categoryColor: "bg-blue-100 text-blue-800",
+                image: "/images/blog-images/ai-analytics-security-ops.jpg",
+                imageAlt: "AI powered robot analyzing security data dashboards",
+                link: "/blog/how-ai-and-analytics-improve-ongoing-security-operations"
+              },
+              {
+                id: "hitrust-vs-hipaa-which-is-right-for-my-organization",
+                title: "HITRUST vs HIPAA: Key Difference, Benefits & Compliance Guide",
+                excerpt: "Compare HITRUST certification and HIPAA compliance to understand key differences, benefits, and requirements. Learn how to achieve healthcare data security and prepare for audits.",
+                date: "February 7, 2026",
+                readTime: "8 min read",
+                author: "Com-Sec Team",
+                category: "Healthcare Compliance",
+                categoryColor: "bg-teal-100 text-teal-800",
+                image: "/images/blog-images/hitrust-vs-hipaa.jpg",
+                imageAlt: "Comparison chart of HITRUST versus HIPAA compliance",
+                link: "/blog/hitrust-vs-hipaa-which-is-right-for-my-organization"
+              },
+              {
+                id: "different-types-of-compliance-audits-complete-guide-for-2025",
+                title: "Different Types of Compliance Audits? Complete Guide for 2026",
+                excerpt: "Explore the different types of compliance audits in 2026 including SOC 2, ISO 27001, HIPAA, and PCI-DSS. Learn their purpose and who needs them.",
+                date: "February 7, 2026",
+                readTime: "10 min read",
+                author: "Com-Sec Team",
+                category: "Audit Readiness",
+                categoryColor: "bg-indigo-100 text-indigo-800",
+                image: "/images/blog-images/different-types-of-compliance-audits.jpg",
+                imageAlt: "Various compliance audit framework logos including SOC2, ISO, and HIPAA",
+                link: "/blog/different-types-of-compliance-audits-complete-guide-for-2025"
+              },
+              {
+                id: "com-sec-your-trusted-partner-in-achieving-soc2-compliance",
+                title: "Com-Sec: Your Trusted Partner in Achieving SOC2 Compliance",
+                excerpt: "Learn what SOC 2 is, why it matters, and how Com-Sec's expert team helps you navigate compliance with tailored, cost-effective solutions.",
+                date: "February 6, 2026",
+                readTime: "5 min read",
+                author: "Com-Sec Team",
+                category: "Company",
+                categoryColor: "bg-blue-100 text-blue-800",
+                image: "/images/blog-images/comsec-soc2-partner.png",
+                imageAlt: "Handshake with shield icon representing trusted security partnership",
+                link: "/blog/com-sec-your-trusted-partner-in-achieving-soc2-compliance"
+              },
+              {
+                id: "ai-health-companies-protect-patient-privacy-confidentiality-2026",
+                title: "How AI Health Companies Protect Patient Privacy and Confidentiality in 2026",
+                excerpt: "Learn how AI Health companies ensure patient confidentiality and healthcare data privacy using HIPAA compliance, encryption, and AI governance.",
+                date: "February 6, 2026",
+                readTime: "6 min read",
+                author: "Com-Sec Healthcare Team",
+                category: "Healthcare AI",
+                categoryColor: "bg-teal-100 text-teal-800",
+                image: "/images/blog-images/patient-confidentiality-ai-healthcare-2026.jpg",
+                imageAlt: "Digital shield protecting medical records with AI network background",
+                link: "/blog/ai-health-companies-protect-patient-privacy-confidentiality-2026"
+              },
+              {
+                id: "20-years-of-cybersecurity-a-journey-through-the-digital-age",
+                title: "20 Years of Cybersecurity: A Journey Through the Digital Age",
+                excerpt:
+                  "A look back at how threats evolved from early malware to modern identity, cloud, and AI-driven attacks—and what organizations should prioritize next.",
+                date: "February 5, 2026",
+                readTime: "4 min read",
+                author: "Com-Sec Security Team",
+                category: "Cybersecurity",
+                categoryColor: "bg-slate-100 text-slate-900",
+                image: "/images/blog-images/20-years-of-cybersecurity.png",
+                imageAlt:
+                  "Cybersecurity evolution timeline showing ransomware, cloud security, and zero trust",
+              },
+
+              {
+                id: "how-ai-is-changing-it-security-operations-in-2025",
+                title: "How AI Is Changing IT Security Operations in 2026?",
+                excerpt:
+                  "Discover how AI is revolutionizing IT security operations in 2026. From threat detection and cloud security to identity management and proactive defenses, learn how AI-powered solutions help organizations stay secure against evolving cyber threats.",
+                date: "February 4, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Security Team",
+                category: "Security Operations",
+                categoryColor: "bg-indigo-100 text-indigo-800",
+                featured: false,
+                image: "/images/blog-images/how-ai-is-changing-it-security-operations-2025.jpg",
+                imageAlt:
+                  "AI-powered IT security operations dashboard with analytics, alerts, and security shields",
+              },
+
+              {
+                  id: "iso-27001-certification-guide-what-it-is-why-it-matters-and-how-to-get-compliant",
+                  title: "ISO 27001 Certification Guide: What It Is & How to Get Certified?",
+                  excerpt:
+                    "Get ISO 27001 certified with expert help. Learn what ISO 27001 certification requirements, why it matters for your business, and how to implement it successfully. Get expert guidance from Com-Sec—from gap analysis to full compliance.",
+                  date: "February 3, 2026",
+                  readTime: "12 min read",
+                  author: "Com-Sec Team",
+                  category: "Compliance",
+                  categoryColor: "bg-blue-100 text-blue-800",
+                  image: "/images/blog-images/ISO-27001-Certification-Information-Security.png",
+                  imageAlt: "ISO 27001 certification badge",
+                },
+
+              {
+                id: "importance-of-transparency-accuracy-and-accountability",
+                title: "Transparency, Accuracy & Accountability in AI: Ethical Healthcare Solutions",
+                excerpt:
+                  "Discover how AI Health companies deliver ethical AI healthcare solutions with transparency, accuracy, and accountability, while integrating cybersecurity compliance services and Zero Trust security to protect patient data.",
+                date: "February 2, 2026",
+                readTime: "5 min read",
+                author: "Com-Sec Team",
+                category: "Healthcare",
+                categoryColor: "bg-teal-100 text-teal-800",
+                featured: false,
+                image: "/images/blog-images/transparency-accuracy.png",
+                imageAlt:
+                  "Healthcare professionals discussing AI systems with a focus on transparency and accuracy",
+              },
+
+              {
+                id: "what-are-managed-security-compliance-services-and-why-are-they-essential",
+                title: "What Are Managed Security Compliance Services and Why Are They Essential?",
+                excerpt:
+                  "We specialize in providing expert security and compliance solutions that keep your business safe from cyber threats. Reach out to us today and let us help you secure your future.",
+                date: "January 31, 2026",
+                readTime: "6 min read",
+                author: "Com-Sec Security Team",
+                category: "Managed Services",
+                categoryColor: "bg-indigo-100 text-indigo-800",
+                featured: false,
+                image: "/images/blog-images/managed-security-compliance-services.png",
+                imageAlt:
+                  "Managed security compliance services concept showing cybersecurity protection and compliance support",
               },
               {
                 id: "what-is-cyber-threat-intelligence-amp-why-it-matters",
@@ -1059,7 +1252,7 @@ export default function Blogs() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <p className="text-sm text-gray-500 mt-3">
-                  Showing {visibleArticles} of 20 articles
+                  Showing {visibleArticles} of 30 articles
                 </p>
               </div>
             ) : (
@@ -1074,7 +1267,7 @@ export default function Blogs() {
                   <ChevronRight className="ml-2 h-4 w-4 rotate-90" />
                 </Button>
                 <p className="text-sm text-gray-500 mt-3">
-                  Showing all 20 articles - Click to show less
+                  Showing all 30 articles - Click to show less
                 </p>
               </div>
             )}
