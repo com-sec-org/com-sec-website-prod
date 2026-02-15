@@ -403,23 +403,6 @@ export default function Blogs() {
           <div id="blog-results" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                id: "iso-27001-certification-guide",
-                title:
-                  "ISO 27001 Certification Guide: What It Is, Why It Matters, and How to Get Compliant?",
-                excerpt:
-                  "Complete guide to ISO 27001 certification process, requirements, and implementation strategies for your organization.",
-                date: "July 4, 2025",
-                readTime: "7 min read",
-                author: "Com-Sec Team",
-                category: "Compliance",
-                categoryColor: "bg-blue-100 text-blue-800",
-                featured: true,
-                image:
-                  "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff2076f6992bf4635a3fa3a1ead352428?format=webp&width=800",
-                imageAlt:
-                  "ISO certification quality management and compliance assessment with audit checklist and evaluation process",
-              },
-              {
                 id: "soc2-vs-iso27001-comparison",
                 title:
                   "SOC 2 vs ISO 27001: Which Is Right for Your Organization?",
@@ -764,38 +747,6 @@ export default function Blogs() {
                   "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F1e54bc2a36d74a828c3f64cc81d896f2?format=webp&width=800",
                 imageAlt:
                   "Cybersecurity team collaboration with security professionals working together on digital protection strategies",
-              },
-              {
-                id: "managed-security-compliance-services",
-                title:
-                  "What Are Managed Security Compliance Services and Why Are They Essential?",
-                excerpt:
-                  "Explore managed security compliance services and their critical role in maintaining robust cybersecurity.",
-                date: "November 20, 2024",
-                readTime: "6 min read",
-                author: "Com-Sec Team",
-                category: "Managed Services",
-                categoryColor: "bg-indigo-100 text-indigo-800",
-                image:
-                  "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F052c4f1cb2704e56bd3384655c519d93?format=webp&width=800",
-                imageAlt:
-                  "Partnership handshake with security shield representing trusted managed security services and collaboration",
-              },
-              {
-                id: "patient-confidentiality-ai-healthcare",
-                title:
-                  "Best Practices for Maintaining Patient Confidentiality in AI-Driven Healthcare",
-                excerpt:
-                  "Essential guidelines for protecting patient data privacy in AI-powered healthcare applications and systems.",
-                date: "October 24, 2024",
-                readTime: "6 min read",
-                author: "Com-Sec Healthcare Team",
-                category: "Healthcare",
-                categoryColor: "bg-teal-100 text-teal-800",
-                image:
-                  "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fa84fa3274fb24a74a19cdd336e023ea6?format=webp&width=800",
-                imageAlt:
-                  "Healthcare professionals collaborating in medical consultation with patient confidentiality and data privacy",
               },
               {
                 id: "transparency-accuracy-ai-healthcare",

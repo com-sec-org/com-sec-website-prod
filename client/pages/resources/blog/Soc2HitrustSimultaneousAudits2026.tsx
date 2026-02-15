@@ -121,15 +121,6 @@ export default function Soc2HitrustSimultaneousAudits2026() {
         <article className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
-              
-              {/* Image Section */}
-              <div className="mb-10 rounded-xl overflow-hidden shadow-lg border border-gray-100 flex justify-center">
-                <img 
-                  src="/images/blog-images/soc2-hitrust-pros-cons.png" 
-                  alt="Pros and Cons checklist illustration for simultaneous audits"
-                  className="w-full h-auto max-w-lg object-contain"
-                />
-              </div>
 
               {/* Introduction */}
               <section className="mb-12">
