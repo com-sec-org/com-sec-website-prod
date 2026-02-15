@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Helmet } from "react-helmet";
 
 import { Link } from "react-router-dom";
@@ -408,16 +408,63 @@ export default function Blogs() {
                   "SOC 2 vs ISO 27001: Which Is Right for Your Organization?",
                 excerpt:
                   "A comprehensive comparison of SOC 2 and ISO 27001 frameworks to help you choose the right compliance path for your organization's security and business needs.",
-                date: "July 15, 2025",
+                date: "February 15, 2026",
                 readTime: "8 min read",
                 author: "Com-Sec Compliance Team",
                 category: "Compliance",
                 categoryColor: "bg-blue-100 text-blue-800",
                 featured: true,
                 image:
-                  "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fe3d3be5db7df4ab28a3c74177c6ad19d?format=webp&width=800",
+                  "/images/blog-images/soc2-vs-iso.jpg",
                 imageAlt:
                   "ISO 27001 vs SOC2 comparison showing two security shields on a balance scale with compliance frameworks",
+              },
+              {
+                id: "cloud-penetration-testing-how-to-secure-aws-azure-and-gcp-workloads-in-2025",
+                title: "Cloud Penetration Testing: How to Secure AWS, Azure, and GCP Workloads in 2026",
+                excerpt:
+                  "Learn how cloud penetration testing helps secure AWS, Azure, and GCP workloads by identifying misconfigurations, reducing risk, and supporting SOC 2 and ISO 27001 compliance in 2026.",
+                date: "February 15, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Compliance Team",
+                category: "Cloud Security",
+                categoryColor: "bg-blue-100 text-blue-800",
+                featured: false,
+                image:
+                  "/images/blog-images/Cloud-penetration-testing.jpg",
+                imageAlt:
+                  "Cloud penetration testing concept showing AWS, Azure, and GCP platforms protected by cybersecurity shields",
+              },
+              {
+                id: "understanding-the-differences-between-a-vcco-vs-vciso",
+                title: "vCISO vs vCCO: Key Differences & Roles Businesses Need in 2026",
+                excerpt:
+                  "Learn the key differences between a vCISO and vCCO, their responsibilities, and how businesses can manage cybersecurity and compliance effectively in 2026.",
+                date: "February 13, 2026",
+                readTime: "6 min read",
+                author: "Com-Sec Compliance Team",
+                category: "Leadership",
+                categoryColor: "bg-purple-100 text-purple-800",
+                featured: false,
+                image:
+                  "/images/blog-images/Understanding-the-Differences-between-a-vCCO-vs-vCISO.jpg",
+                imageAlt:
+                  "Virtual CISO and Virtual CCO leadership concept with cybersecurity and compliance icons",
+              },
+              {
+                id: "why-soc-2-matterseven-if-youre-not-a-big-company",
+                title: "Why SOC 2 Matters—Even If You're Not a Big Company?",
+                excerpt:
+                  "Discover why SOC 2 compliance is crucial for companies of all sizes and how it can accelerate your business growth.",
+                date: "February 12, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Team",
+                category: "Compliance",
+                categoryColor: "bg-blue-100 text-blue-800",
+                image:
+                  "/images/blog-images/why-soc2-matters.jpg",
+                imageAlt:
+                  "SOC 2 digital cybersecurity framework with security controls and data protection compliance standards",
               },
               {
                 id: "the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data",
@@ -685,21 +732,7 @@ export default function Blogs() {
                   imageAlt:
                     "Continuous monitoring and compliance security background image",
                 },
-              {
-                id: "why-soc2-matters-small-companies",
-                title: "Why SOC 2 Matters—Even If You're Not a Big Company?",
-                excerpt:
-                  "Discover why SOC 2 compliance is crucial for companies of all sizes and how it can accelerate your business growth.",
-                date: "June 25, 2025",
-                readTime: "5 min read",
-                author: "Com-Sec Team",
-                category: "Compliance",
-                categoryColor: "bg-blue-100 text-blue-800",
-                image:
-                  "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F435813f714f2455f99686b757f5ce534?format=webp&width=800",
-                imageAlt:
-                  "SOC 2 digital cybersecurity framework with security controls and data protection compliance standards",
-              },
+              
               {
                 id: "difference-between-internal-vs-external-penetration-testing",
                 title:

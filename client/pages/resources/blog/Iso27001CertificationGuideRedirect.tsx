@@ -146,11 +146,11 @@ export default function Iso27001CertificationGuideRedirect() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
               <section className="mb-12">
-                <div className="mt-8 mb-10">
+                <div className="mt-8 mb-10 flex justify-center">
                   <img
                     src="/images/blog-images/ISO-27001-Certification-Information-Security.png"
                     alt="ISO 27001 Certification - Information Security"
-                    className="w-full rounded-xl border border-gray-200 shadow-sm"
+                    className="w-full max-w-md rounded-xl border border-gray-200 shadow-sm"
                   />
                 </div>
               </section>
