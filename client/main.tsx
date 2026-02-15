@@ -82,6 +82,8 @@ import ComplianceVsSecurity2026 from "./pages/resources/blog/ComplianceVsSecurit
 import CybersecurityRoundupStartups2026 from "./pages/resources/blog/CybersecurityRoundupStartups2026";
 import Soc2HitrustSimultaneousAudits2026 from "./pages/resources/blog/Soc2HitrustSimultaneousAudits2026";
 import VitalImportanceHealthSecurity2026 from "./pages/resources/blog/VitalImportanceHealthSecurity2026";
+import UnderstandingDifferencesVccoVciso from "./pages/resources/blog/UnderstandingDifferencesVccoVciso";
+import CloudPenetrationTestingAwsAzureGcp2026 from "./pages/resources/blog/CloudPenetrationTestingAwsAzureGcp2026";
 
 const queryClient = new QueryClient();
 
@@ -250,8 +252,16 @@ const App = () => (
               <Route path="/team" element={<Team />} />
 
               {/* Top-level Blog Post Routes (duplicates for new paths) */}
-              <Route path="/blog/iso-27001-certification-guide" element={<Iso27001Guide />} />
-              <Route path="/blog/why-soc2-matters-small-companies" element={<Soc2SmallCompanies />} />
+              <Route
+                path="/blog/iso-27001-certification-guide"
+                element={
+                  <Navigate
+                    to="/blog/iso-27001-certification-guide-what-it-is-why-it-matters-and-how-to-get-compliant"
+                    replace
+                  />
+                }
+              />
+              <Route path="/blog/why-soc-2-matterseven-if-youre-not-a-big-company" element={<Soc2SmallCompanies />} />
               <Route path="/blog/meet-team-jayush-chawla" element={<MeetTeamJayush />} />
               <Route path="/blog/meet-team-rojin-rezaei" element={<MeetTeamRojin />} />
               <Route path="/blog/difference-between-internal-vs-external-penetration-testing" element={<PentestingComparison />} />
@@ -263,7 +273,16 @@ const App = () => (
               <Route path="/blog/ai-ethics-healthcare-innovation" element={<AiEthicsHealthcare />} />
               <Route path="/blog/patient-confidentiality-ai-healthcare" element={<PatientConfidentialityAi />} />
               <Route path="/blog/human-side-ai-patient-safety" element={<HumanSideAiPatientSafety />} />
-              <Route path="/blog/soc2-vs-iso27001-comparison" element={<Soc2VsIso27001 />} />
+              <Route
+                path="/blog/soc2-vs-iso27001-comparison"
+                element={
+                  <Navigate
+                    to="/blog/soc-2-vs-iso-27001-which-is-right-for-you"
+                    replace
+                  />
+                }
+              />
+              <Route path="/blog/soc-2-vs-iso-27001-which-is-right-for-you" element={<Soc2VsIso27001 />} />
               <Route path="/blog/transparency-accuracy-ai-healthcare" element={<TransparencyAccuracyAiHealthcare />} />
               <Route path="/blog/cybersecurity-roundup-startups-may" element={<CybersecurityRoundupStartupsMay />} />
               <Route path="/blog/security-compliance-health-companies" element={<SecurityComplianceHealthCompanies />} />
@@ -289,6 +308,8 @@ const App = () => (
               <Route path="/blog/cybersecurity-roundup-key-trends-and-threats-for-startups-in-may" element={<CybersecurityRoundupStartups2026 />} />
               <Route path="/blog/the-pros-and-cons-of-undergoing-soc-2-type-ii-and-hitrust-audits-simultaneously" element={<Soc2HitrustSimultaneousAudits2026 />} />
               <Route path="/blog/the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data" element={<VitalImportanceHealthSecurity2026 />} />
+              <Route path="/blog/understanding-the-differences-between-a-vcco-vs-vciso" element={<UnderstandingDifferencesVccoVciso />}/>
+              <Route path="/blog/cloud-penetration-testing-how-to-secure-aws-azure-and-gcp-workloads-in-2025" element={<CloudPenetrationTestingAwsAzureGcp2026 />}/>
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
