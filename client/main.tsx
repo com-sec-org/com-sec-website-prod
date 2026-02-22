@@ -84,6 +84,8 @@ import Soc2HitrustSimultaneousAudits2026 from "./pages/resources/blog/Soc2Hitrus
 import VitalImportanceHealthSecurity2026 from "./pages/resources/blog/VitalImportanceHealthSecurity2026";
 import UnderstandingDifferencesVccoVciso from "./pages/resources/blog/UnderstandingDifferencesVccoVciso";
 import CloudPenetrationTestingAwsAzureGcp2026 from "./pages/resources/blog/CloudPenetrationTestingAwsAzureGcp2026";
+import LatestFtcGuidelinesSmbs2026 from "./pages/resources/blog/LatestFtcGuidelinesSmbs2026";
+import HowToEngageAVciso2026 from "./pages/resources/blog/HowToEngageAVciso2026";
 
 const queryClient = new QueryClient();
 
@@ -310,6 +312,8 @@ const App = () => (
               <Route path="/blog/the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data" element={<VitalImportanceHealthSecurity2026 />} />
               <Route path="/blog/understanding-the-differences-between-a-vcco-vs-vciso" element={<UnderstandingDifferencesVccoVciso />}/>
               <Route path="/blog/cloud-penetration-testing-how-to-secure-aws-azure-and-gcp-workloads-in-2025" element={<CloudPenetrationTestingAwsAzureGcp2026 />}/>
+              <Route path="/blog/what-the-latest-ftc-guidelines-mean-for-smbs-in-2026" element={<LatestFtcGuidelinesSmbs2026 />}/>
+              <Route path="/blog/the-order-of-operations-for-engaging-a-vciso-a-step-by-step-guide" element={<HowToEngageAVciso2026 />}/>
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
