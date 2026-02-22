@@ -419,6 +419,22 @@ export default function Blogs() {
                 imageAlt:
                   "ISO 27001 vs SOC2 comparison showing two security shields on a balance scale with compliance frameworks",
               },
+
+              {
+                id: "what-the-latest-ftc-guidelines-mean-for-smbs-in-2026",
+                title: "What the Latest FTC Guidelines Mean for SMBs in 2026?",
+                excerpt:
+                  "Discover how the new FTC guidelines in 2026 impact SMBs. Learn essential tips on cybersecurity, compliance audits, data privacy, and risk management to keep your business secure and FTC-compliant.",
+                date: "February 16, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Compliance Team",
+                category: "Compliance",
+                categoryColor: "bg-indigo-100 text-indigo-800",
+                featured: false,
+                image: "/images/blog-images/ftc-guidelines-smbs-2026.png",
+                imageAlt:
+                  "FTC compliance and cybersecurity concept for small and medium businesses in 2026",
+              },
               {
                 id: "cloud-penetration-testing-how-to-secure-aws-azure-and-gcp-workloads-in-2025",
                 title: "Cloud Penetration Testing: How to Secure AWS, Azure, and GCP Workloads in 2026",
@@ -465,6 +481,21 @@ export default function Blogs() {
                   "/images/blog-images/why-soc2-matters.jpg",
                 imageAlt:
                   "SOC 2 digital cybersecurity framework with security controls and data protection compliance standards",
+              },
+              {
+                id: "the-order-of-operations-for-engaging-a-vciso-a-step-by-step-guide",
+                title: "How to Engage a vCISO in 2026: Step-by-Step Guide for Startups & SMBs",
+                excerpt:
+                  "A practical order of operations to evaluate providers, define scope of work, and start a vCISO engagement that improves security and compliance without hiring a full-time CISO.",
+                 date: "February 12, 2026",
+                readTime: "6 min read",
+                author: "Com-Sec Team",
+                category: "Security Leadership",
+                categoryColor: "bg-blue-100 text-blue-800",
+                featured: false,
+                image: "/images/blog-images/how-to-engage-a-vciso-2026.jpg",
+                imageAlt:
+                  "Security leadership and vCISO advisory concept with shield and strategy icons",
               },
               {
                 id: "the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data",
