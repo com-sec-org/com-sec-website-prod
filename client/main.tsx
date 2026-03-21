@@ -86,6 +86,8 @@ import UnderstandingDifferencesVccoVciso from "./pages/resources/blog/Understand
 import CloudPenetrationTestingAwsAzureGcp2026 from "./pages/resources/blog/CloudPenetrationTestingAwsAzureGcp2026";
 import LatestFtcGuidelinesSmbs2026 from "./pages/resources/blog/LatestFtcGuidelinesSmbs2026";
 import HowToEngageAVciso2026 from "./pages/resources/blog/HowToEngageAVciso2026";
+import Top10OnlineSafetyTips from "./pages/resources/blog/Top10OnlineSafetyTips";
+import AutomatedVsManualPenetrationTesting2026 from "./pages/resources/blog/AutomatedVsManualPenetrationTesting2026";
 
 const queryClient = new QueryClient();
 
@@ -275,6 +277,7 @@ const App = () => (
               <Route path="/blog/ai-ethics-healthcare-innovation" element={<AiEthicsHealthcare />} />
               <Route path="/blog/patient-confidentiality-ai-healthcare" element={<PatientConfidentialityAi />} />
               <Route path="/blog/human-side-ai-patient-safety" element={<HumanSideAiPatientSafety />} />
+              <Route path="/blog/2mqs32s8vm5h4kgpi5b5i42vbpvi7x" element={<Navigate to="/blog/human-side-ai-patient-safety" replace />} />
               <Route
                 path="/blog/soc2-vs-iso27001-comparison"
                 element={
@@ -289,6 +292,7 @@ const App = () => (
               <Route path="/blog/cybersecurity-roundup-startups-may" element={<CybersecurityRoundupStartupsMay />} />
               <Route path="/blog/security-compliance-health-companies" element={<SecurityComplianceHealthCompanies />} />
               <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
+              <Route path="/blog/safeguarding-data-sharing-mitigating-cybersecurity-risks-for-tech-companies-with-com-sec" element={<Navigate to="/blog/safeguarding-data-sharing-tech-companies" replace />} />
               <Route path="/blog/continuous-monitoring-security-compliance" element={<ContinuousMonitoringSecurityCompliance />}/>
               <Route path="/blog/web-application-penetration-testing-checklist-2025-edition" element={<WebAppPenTestChecklist2026 />}/>
               <Route path="/blog/the-role-of-ai-in-penetration-testing-hype-vs-reality" element={<AiPenTestingHypeVsReality2026 />} />
@@ -314,6 +318,9 @@ const App = () => (
               <Route path="/blog/cloud-penetration-testing-how-to-secure-aws-azure-and-gcp-workloads-in-2025" element={<CloudPenetrationTestingAwsAzureGcp2026 />}/>
               <Route path="/blog/what-the-latest-ftc-guidelines-mean-for-smbs-in-2026" element={<LatestFtcGuidelinesSmbs2026 />}/>
               <Route path="/blog/the-order-of-operations-for-engaging-a-vciso-a-step-by-step-guide" element={<HowToEngageAVciso2026 />}/>
+              <Route path="/blog/top-10-online-safety-tips" element={<Top10OnlineSafetyTips />} />
+              <Route path="/blog/automated-vs-manual-penetration-testing-2026" element={<AutomatedVsManualPenetrationTesting2026 />} />
+              <Route path="/blog/how-to-take-an-effective-mental-health-day-d73ep" element={<Navigate to="/blog/automated-vs-manual-penetration-testing-2026" replace />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
