@@ -403,6 +403,21 @@ export default function Blogs() {
           <div id="blog-results" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                id: "automated-vs-manual-penetration-testing-2026",
+                title: "Automated vs Manual Penetration Testing: What Businesses Need in 2026",
+                excerpt:
+                  "Learn the key differences between automated and manual penetration testing in 2026, including pros, cons, costs, and which approach best protects businesses.",
+                date: "March 21, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Team",
+                category: "Penetration Testing",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/automated-vs-manual-penetration-testing-2026.png",
+                imageAlt:
+                  "Automated vs manual penetration testing comparison showing security tools and expert testers analyzing vulnerabilities",
+              },
+              {
                 id: "soc2-vs-iso27001-comparison",
                 title:
                   "SOC 2 vs ISO 27001: Which Is Right for Your Organization?",
@@ -466,6 +481,22 @@ export default function Blogs() {
                   "/images/blog-images/Understanding-the-Differences-between-a-vCCO-vs-vCISO.jpg",
                 imageAlt:
                   "Virtual CISO and Virtual CCO leadership concept with cybersecurity and compliance icons",
+              },
+                {
+                id: "safeguarding-data-sharing-tech-companies",
+                title:
+                  "Safeguarding Data Sharing: Mitigating Cybersecurity Risks for Tech Companies with Com-Sec",
+                excerpt:
+                  "How tech companies can secure data sharing processes and mitigate cybersecurity risks effectively.",
+                date: "February 12, 2026",
+                readTime: "6 min read",
+                author: "Com-Sec Tech Team",
+                category: "Data Security",
+                categoryColor: "bg-cyan-100 text-cyan-800",
+                image:
+                  "https://images.pexels.com/photos/12220471/pexels-photo-12220471.jpeg",
+                imageAlt:
+                  "Close-up of a vintage typewriter with a paper marked 'National Security', symbolizing confidentiality",
               },
               {
                 id: "why-soc-2-matterseven-if-youre-not-a-big-company",
@@ -968,22 +999,6 @@ export default function Blogs() {
                   "https://images.pexels.com/photos/32866728/pexels-photo-32866728.jpeg",
                 imageAlt:
                   "Group of colleagues collaborating in a modern office setting, engaging in a discussion around a laptop",
-              },
-              {
-                id: "safeguarding-data-sharing-tech-companies",
-                title:
-                  "Safeguarding Data Sharing: Mitigating Cybersecurity Risks for Tech Companies with Com-Sec",
-                excerpt:
-                  "How tech companies can secure data sharing processes and mitigate cybersecurity risks effectively.",
-                date: "October 4, 2022",
-                readTime: "6 min read",
-                author: "Com-Sec Tech Team",
-                category: "Data Security",
-                categoryColor: "bg-cyan-100 text-cyan-800",
-                image:
-                  "https://images.pexels.com/photos/12220471/pexels-photo-12220471.jpeg",
-                imageAlt:
-                  "Close-up of a vintage typewriter with a paper marked 'National Security', symbolizing confidentiality",
               },
               {
                 id: "security-compliance-health-companies",
