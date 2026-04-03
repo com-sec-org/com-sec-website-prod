@@ -403,6 +403,21 @@ export default function Blogs() {
           <div id="blog-results" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                id: "automated-vs-manual-penetration-testing-2026",
+                title: "Automated vs Manual Penetration Testing: What Businesses Need in 2026",
+                excerpt:
+                  "Learn the key differences between automated and manual penetration testing in 2026, including pros, cons, costs, and which approach best protects businesses.",
+                date: "March 21, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Team",
+                category: "Penetration Testing",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/automated-vs-manual-penetration-testing-2026.png",
+                imageAlt:
+                  "Automated vs manual penetration testing comparison showing security tools and expert testers analyzing vulnerabilities",
+              },
+              {
                 id: "soc2-vs-iso27001-comparison",
                 title:
                   "SOC 2 vs ISO 27001: Which Is Right for Your Organization?",
@@ -418,6 +433,22 @@ export default function Blogs() {
                   "/images/blog-images/soc2-vs-iso.jpg",
                 imageAlt:
                   "ISO 27001 vs SOC2 comparison showing two security shields on a balance scale with compliance frameworks",
+              },
+
+              {
+                id: "what-the-latest-ftc-guidelines-mean-for-smbs-in-2026",
+                title: "What the Latest FTC Guidelines Mean for SMBs in 2026?",
+                excerpt:
+                  "Discover how the new FTC guidelines in 2026 impact SMBs. Learn essential tips on cybersecurity, compliance audits, data privacy, and risk management to keep your business secure and FTC-compliant.",
+                date: "February 16, 2026",
+                readTime: "7 min read",
+                author: "Com-Sec Compliance Team",
+                category: "Compliance",
+                categoryColor: "bg-indigo-100 text-indigo-800",
+                featured: false,
+                image: "/images/blog-images/ftc-guidelines-smbs-2026.png",
+                imageAlt:
+                  "FTC compliance and cybersecurity concept for small and medium businesses in 2026",
               },
               {
                 id: "cloud-penetration-testing-how-to-secure-aws-azure-and-gcp-workloads-in-2025",
@@ -451,6 +482,22 @@ export default function Blogs() {
                 imageAlt:
                   "Virtual CISO and Virtual CCO leadership concept with cybersecurity and compliance icons",
               },
+                {
+                id: "safeguarding-data-sharing-tech-companies",
+                title:
+                  "Safeguarding Data Sharing: Mitigating Cybersecurity Risks for Tech Companies with Com-Sec",
+                excerpt:
+                  "How tech companies can secure data sharing processes and mitigate cybersecurity risks effectively.",
+                date: "February 12, 2026",
+                readTime: "6 min read",
+                author: "Com-Sec Tech Team",
+                category: "Data Security",
+                categoryColor: "bg-cyan-100 text-cyan-800",
+                image:
+                  "https://images.pexels.com/photos/12220471/pexels-photo-12220471.jpeg",
+                imageAlt:
+                  "Close-up of a vintage typewriter with a paper marked 'National Security', symbolizing confidentiality",
+              },
               {
                 id: "why-soc-2-matterseven-if-youre-not-a-big-company",
                 title: "Why SOC 2 Matters—Even If You're Not a Big Company?",
@@ -465,6 +512,21 @@ export default function Blogs() {
                   "/images/blog-images/why-soc2-matters.jpg",
                 imageAlt:
                   "SOC 2 digital cybersecurity framework with security controls and data protection compliance standards",
+              },
+              {
+                id: "the-order-of-operations-for-engaging-a-vciso-a-step-by-step-guide",
+                title: "How to Engage a vCISO in 2026: Step-by-Step Guide for Startups & SMBs",
+                excerpt:
+                  "A practical order of operations to evaluate providers, define scope of work, and start a vCISO engagement that improves security and compliance without hiring a full-time CISO.",
+                 date: "February 12, 2026",
+                readTime: "6 min read",
+                author: "Com-Sec Team",
+                category: "Security Leadership",
+                categoryColor: "bg-blue-100 text-blue-800",
+                featured: false,
+                image: "/images/blog-images/how-to-engage-a-vciso-2026.jpg",
+                imageAlt:
+                  "Security leadership and vCISO advisory concept with shield and strategy icons",
               },
               {
                 id: "the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data",
@@ -937,22 +999,6 @@ export default function Blogs() {
                   "https://images.pexels.com/photos/32866728/pexels-photo-32866728.jpeg",
                 imageAlt:
                   "Group of colleagues collaborating in a modern office setting, engaging in a discussion around a laptop",
-              },
-              {
-                id: "safeguarding-data-sharing-tech-companies",
-                title:
-                  "Safeguarding Data Sharing: Mitigating Cybersecurity Risks for Tech Companies with Com-Sec",
-                excerpt:
-                  "How tech companies can secure data sharing processes and mitigate cybersecurity risks effectively.",
-                date: "October 4, 2022",
-                readTime: "6 min read",
-                author: "Com-Sec Tech Team",
-                category: "Data Security",
-                categoryColor: "bg-cyan-100 text-cyan-800",
-                image:
-                  "https://images.pexels.com/photos/12220471/pexels-photo-12220471.jpeg",
-                imageAlt:
-                  "Close-up of a vintage typewriter with a paper marked 'National Security', symbolizing confidentiality",
               },
               {
                 id: "security-compliance-health-companies",
