@@ -366,7 +366,7 @@ export default function SocSupport() {
               },
               {
                 name: "SOC Professional",
-                price: "Starting at $8,000/month",
+                price: "Starting at $7,500/month",
                 description: "Comprehensive SOC services for enterprises",
                 features: [
                   "Advanced threat hunting",

@@ -665,7 +665,7 @@ export default function Iso27001() {
               },
               {
                 name: "Full Audit Support",
-                price: "$12,000",
+                price: "$8,500",
               },
               {
                 name: "Continued ISO 27001 Support",

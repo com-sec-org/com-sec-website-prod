@@ -148,8 +148,8 @@ function CanonicalLink() {
   const location = useLocation();
 
   useEffect(() => {
-    const baseUrl = window.location.origin;
-    const canonicalUrl = `${baseUrl}${location.pathname}`;
+    const SITE_URL = "https://com-sec.io";
+    const canonicalUrl = `${SITE_URL}${location.pathname}`;
 
     let link = document.querySelector("link[rel='canonical']");
     if (!link) {
