@@ -4,141 +4,291 @@
   <!-- Homepage -->
   <url>
     <loc>https://com-sec.io/</loc>
+    <priority>1.0</priority>
   </url>
 
-  <!-- Contact -->
+  <!-- Main Pages -->
   <url>
     <loc>https://com-sec.io/contact</loc>
-  </url>
-
-  <!-- Main pages -->
-  <url>
-    <loc>https://com-sec.io/services</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/testimonials</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/company</loc>
+    <loc>https://com-sec.io/about</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/careers</loc>
-  </url>
-  <url>
-    <loc>https://com-sec.io/team</loc>
+    <loc>https://com-sec.io/partnerships</loc>
+    <priority>0.8</priority>
   </url>
 
   <!-- Services -->
   <url>
+    <loc>https://com-sec.io/services</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://com-sec.io/penetration-testing-services</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/compliance-audit-readiness</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/it-support</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/soc-support</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/soc2-readiness</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/cloud-security</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/security-training</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/risk-management</loc>
+    <priority>0.8</priority>
   </url>
 
   <!-- Frameworks -->
   <url>
     <loc>https://com-sec.io/soc2</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/iso27001</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/hipaa</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/hitrust</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/pci-dss</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/nist</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/gdpr</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/cmmc</loc>
+    <priority>0.8</priority>
   </url>
 
   <!-- Resources -->
   <url>
     <loc>https://com-sec.io/blogs</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/approach</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://com-sec.io/phishing</loc>
+    <priority>0.8</priority>
   </url>
 
-  <!-- BLOG ARTICLES -->
+  <!-- About -->
   <url>
-    <loc>https://com-sec.io/blog/iso-27001-certification-guide</loc>
+    <loc>https://com-sec.io/company</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/soc2-vs-iso27001-comparison</loc>
+    <loc>https://com-sec.io/careers</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/why-soc2-matters-small-companies</loc>
+    <loc>https://com-sec.io/team</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://com-sec.io/blog/agentic-ai-governance-lifecycle-management-healthcare-2026</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/difference-between-internal-vs-external-penetration-testing</loc>
+    <loc>https://com-sec.io/blog/automated-vs-manual-penetration-testing-2026</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies</loc>
+    <loc>https://com-sec.io/blog/top-10-online-safety-tips</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/what-is-vciso-role-cybersecurity</loc>
+    <loc>https://com-sec.io/blog/the-order-of-operations-for-engaging-a-vciso-a-step-by-step-guide</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/managed-security-compliance-services</loc>
+    <loc>https://com-sec.io/blog/what-the-latest-ftc-guidelines-mean-for-smbs-in-2026</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/ai-ethics-healthcare</loc>
+    <loc>https://com-sec.io/blog/cloud-penetration-testing-how-to-secure-aws-azure-and-gcp-workloads-in-2025</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/patient-confidentiality-ai-healthcare</loc>
+    <loc>https://com-sec.io/blog/understanding-the-differences-between-a-vcco-vs-vciso</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/human-side-ai-patient-safety</loc>
+    <loc>https://com-sec.io/blog/the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/transparency-accuracy-ai-healthcare</loc>
+    <loc>https://com-sec.io/blog/the-pros-and-cons-of-undergoing-soc-2-type-ii-and-hitrust-audits-simultaneously</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/cybersecurity-roundup-startups-may</loc>
+    <loc>https://com-sec.io/blog/cybersecurity-roundup-key-trends-and-threats-for-startups-in-may</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/security-compliance-health-companies</loc>
+    <loc>https://com-sec.io/blog/compliance-vs-security-key-differences-why-both-matter-2026</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/how-ai-and-analytics-improve-ongoing-security-operations</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/hitrust-vs-hipaa-which-is-right-for-my-organization</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/different-types-of-compliance-audits-complete-guide-for-2025</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/com-sec-your-trusted-partner-in-achieving-soc2-compliance</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/ai-health-companies-protect-patient-privacy-confidentiality-2026</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/20-years-of-cybersecurity-a-journey-through-the-digital-age</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/how-ai-is-changing-it-security-operations-in-2025</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/iso-27001-certification-guide-what-it-is-why-it-matters-and-how-to-get-compliant</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/importance-of-transparency-accuracy-and-accountability</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/what-are-managed-security-compliance-services-and-why-are-they-essential</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/what-is-cyber-threat-intelligence-amp-why-it-matters</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/global-cybersecurity-regulations-in-2025-how-to-prepare-your-business</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/the-role-of-ai-in-penetration-testing-hype-vs-reality</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/web-application-penetration-testing-checklist-2025-edition</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/continuous-monitoring-security-compliance</loc>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://com-sec.io/blog/safeguarding-data-sharing-tech-companies</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://com-sec.io/blog/meet-team-jayush-chawla</loc>
+    <loc>https://com-sec.io/blog/security-compliance-health-companies</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/cybersecurity-roundup-startups-may</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/transparency-accuracy-ai-healthcare</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/soc-2-vs-iso-27001-which-is-right-for-you</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/human-side-ai-patient-safety</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/patient-confidentiality-ai-healthcare</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/ai-ethics-healthcare-innovation</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/managed-security-compliance-services</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/what-is-vciso-role-cybersecurity</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/difference-between-internal-vs-external-penetration-testing</loc>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://com-sec.io/blog/meet-team-rojin-rezaei</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/meet-team-jayush-chawla</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/why-soc-2-matterseven-if-youre-not-a-big-company</loc>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
