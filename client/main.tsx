@@ -218,15 +218,15 @@ const App = () => (
               <Route path="/security-training" element={<SecurityTraining />} />
               <Route path="/risk-management" element={<RiskManagement />} />
 
-              {/* Framework Routes */}
-              <Route path="/frameworks/soc2" element={<Soc2Framework />} />
-              <Route path="/frameworks/iso27001" element={<Iso27001 />} />
-              <Route path="/frameworks/hipaa" element={<Hipaa />} />
-              <Route path="/frameworks/hitrust" element={<Hitrust />} />
-              <Route path="/frameworks/pci-dss" element={<PciDss />} />
-              <Route path="/frameworks/nist" element={<Nist />} />
-              <Route path="/frameworks/gdpr" element={<Gdpr />} />
-              <Route path="/frameworks/cmmc" element={<Cmmc />} />
+              {/* Framework Routes — redirect /frameworks/* to canonical top-level URLs */}
+              <Route path="/frameworks/soc2" element={<Navigate to="/soc2" replace />} />
+              <Route path="/frameworks/iso27001" element={<Navigate to="/iso27001" replace />} />
+              <Route path="/frameworks/hipaa" element={<Navigate to="/hipaa" replace />} />
+              <Route path="/frameworks/hitrust" element={<Navigate to="/hitrust" replace />} />
+              <Route path="/frameworks/pci-dss" element={<Navigate to="/pci-dss" replace />} />
+              <Route path="/frameworks/nist" element={<Navigate to="/nist" replace />} />
+              <Route path="/frameworks/gdpr" element={<Navigate to="/gdpr" replace />} />
+              <Route path="/frameworks/cmmc" element={<Navigate to="/cmmc" replace />} />
               {/* Top-level Framework Routes (duplicates for new paths) */}
               <Route path="/soc2" element={<Soc2Framework />} />
               <Route path="/iso27001" element={<Iso27001 />} />
@@ -238,7 +238,6 @@ const App = () => (
               <Route path="/cmmc" element={<Cmmc />} />
 
               {/* Resource Routes */}
-              <Route path="/resources/blogs" element={<Blogs />} />
               <Route path="/resources/approach" element={<Approach />} />
               <Route path="/resources/phishing" element={<PhishingTest />} />
               <Route path="/blogs" element={<Blogs />} />
@@ -278,7 +277,6 @@ const App = () => (
               <Route path="/blog/ai-ethics-healthcare-innovation" element={<AiEthicsHealthcare />} />
               <Route path="/blog/patient-confidentiality-ai-healthcare" element={<PatientConfidentialityAi />} />
               <Route path="/blog/human-side-ai-patient-safety" element={<HumanSideAiPatientSafety />} />
-              <Route path="/blog/2mqs32s8vm5h4kgpi5b5i42vbpvi7x" element={<Navigate to="/blog/human-side-ai-patient-safety" replace />} />
               <Route
                 path="/blog/soc2-vs-iso27001-comparison"
                 element={
@@ -328,6 +326,36 @@ const App = () => (
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/partnerships" element={<Partnerships />} />
+
+              {/* ── 404 Fixes: high-traffic URLs → correct pages ── */}
+              <Route path="/blog/what-is-a-vciso-understanding-the-role-and-how-it-supports-your-cybersecurity-goals" element={<Navigate to="/blog/what-is-vciso-role-cybersecurity" replace />} />
+              <Route path="/blog/top-10-easy-online-safety-tips" element={<Navigate to="/blog/top-10-online-safety-tips" replace />} />
+              <Route path="/blog/exercises-to-calm-your-anxious-thoughts-sfwzf" element={<Navigate to="/blog/soc-2-vs-iso-27001-which-is-right-for-you" replace />} />
+              <Route path="/blog/meet-the-team-om-jadhav" element={<Navigate to="/blog/what-is-cyber-threat-intelligence-amp-why-it-matters" replace />} />
+              <Route path="/terms-of-use" element={<Navigate to="/" replace />} />
+              <Route path="/team-2" element={<Navigate to="/team" replace />} />
+              <Route path="/blog/meet-the-team-christian-manalaysay" element={<Navigate to="/blog/difference-between-internal-vs-external-penetration-testing" replace />} />
+              <Route path="/blog/meet-the-team-rojin-razaei" element={<Navigate to="/blog/web-application-penetration-testing-checklist-2025-edition" replace />} />
+              <Route path="/blog/how-changing-your-morning-routine-3ebxy" element={<Navigate to="/blog/safeguarding-data-sharing-tech-companies" replace />} />
+              <Route path="/blog/2mqs32s8vm5h4kgpi5b5i42vbpvi7x" element={<Navigate to="/blog/global-cybersecurity-regulations-in-2025-how-to-prepare-your-business" replace />} />
+              <Route path="/blog/n1wzdwe2eyn1sndkk8g2i7cb4ddska" element={<Navigate to="/blog/different-types-of-compliance-audits-complete-guide-for-2025" replace />} />
+              <Route path="/blog/meet-the-team-jayush-chawla" element={<Navigate to="/blog/what-is-vciso-role-cybersecurity" replace />} />
+              <Route path="/blog/meet-the-team-morgan-kovacs" element={<Navigate to="/blog/the-role-of-ai-in-penetration-testing-hype-vs-reality" replace />} />
+              <Route path="/blog/meet-the-team-farbod-fakhrai" element={<Navigate to="/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies" replace />} />
+              <Route path="/blog/ai-ethics-healthcare" element={<Navigate to="/blog/ai-health-companies-protect-patient-privacy-confidentiality-2026" replace />} />
+              <Route path="/blog/compliance-vs-security-whats-the-deal" element={<Navigate to="/blog/compliance-vs-security-key-differences-why-both-matter-2026" replace />} />
+              <Route path="/resources/blogs" element={<Navigate to="/blogs" replace />} />
+              {/* ── 404 Fixes: dead pages → home ── */}
+              <Route path="/blog/patient-confidentiality-ai-healthcare" element={<Navigate to="/" replace />} />
+              <Route path="/blog/ai-and-ethics-in-healthcare-innovation" element={<Navigate to="/" replace />} />
+              <Route path="/blog/developing-policies-and-procedures-that-are-actually-followed-how-a-vciso-can-help" element={<Navigate to="/" replace />} />
+              <Route path="/blog/what-can-a-fractional-chief-compliance-officer-help-with" element={<Navigate to="/" replace />} />
+              <Route path="/blog/best-practices-for-maintaining-patient-confidentiality-in-ai-driven-healthcare" element={<Navigate to="/" replace />} />
+              <Route path="/blog/the-human-side-of-ai-prioritizing-patient-safety-in-healthcare-innovation" element={<Navigate to="/" replace />} />
+              <Route path="/blog/understanding-the-distinction-between-automated-and-manual-penetration-testing" element={<Navigate to="/" replace />} />
+              <Route path="/blog/comsec-trusted-partner-soc2" element={<Navigate to="/" replace />} />
+              <Route path="/blog/20-years-cybersecurity-journey" element={<Navigate to="/" replace />} />
+              <Route path="/blog/why-soc2-matters-small-companies" element={<Navigate to="/" replace />} />
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
