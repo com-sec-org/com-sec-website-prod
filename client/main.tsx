@@ -88,6 +88,7 @@ import LatestFtcGuidelinesSmbs2026 from "./pages/resources/blog/LatestFtcGuideli
 import HowToEngageAVciso2026 from "./pages/resources/blog/HowToEngageAVciso2026";
 import Top10OnlineSafetyTips from "./pages/resources/blog/Top10OnlineSafetyTips";
 import AutomatedVsManualPenetrationTesting2026 from "./pages/resources/blog/AutomatedVsManualPenetrationTesting2026";
+import AgenticAiGovernanceHealthcare2026 from "./pages/resources/blog/AgenticAiGovernanceHealthcare2026";
 
 const queryClient = new QueryClient();
 
@@ -320,6 +321,7 @@ const App = () => (
               <Route path="/blog/the-order-of-operations-for-engaging-a-vciso-a-step-by-step-guide" element={<HowToEngageAVciso2026 />}/>
               <Route path="/blog/top-10-online-safety-tips" element={<Top10OnlineSafetyTips />} />
               <Route path="/blog/automated-vs-manual-penetration-testing-2026" element={<AutomatedVsManualPenetrationTesting2026 />} />
+              <Route path="/blog/agentic-ai-governance-lifecycle-management-healthcare-2026" element={<AgenticAiGovernanceHealthcare2026 />} />
               <Route path="/blog/how-to-take-an-effective-mental-health-day-d73ep" element={<Navigate to="/blog/automated-vs-manual-penetration-testing-2026" replace />} />
               <Route path="/about" element={<About />} />
 
