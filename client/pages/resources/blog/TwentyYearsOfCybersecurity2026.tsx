@@ -295,7 +295,7 @@ export default function TwentyYearsOfCybersecurity2026() {
                   The past two decades of cybersecurity evolution have shown one thing clearly: cybersecurity is no longer just a technical issue. It is a collective responsibility shared by organizations, employees, and technology partners.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                  As we observe Cybersecurity Awareness Month, organizations should focus on building a strong security culture through security awareness training, implementing Zero Trust security models, and partnering with experts that deliver <Link to="/services/compliance-audit-readiness" className="text-blue-700 font-semibold hover:underline">cybersecurity compliance services</Link> and <Link to="/services/soc-support" className="text-blue-700 font-semibold hover:underline">managed cybersecurity services</Link> to create a safer, more resilient digital world.
+                  As we observe Cybersecurity Awareness Month, organizations should focus on building a strong security culture through security awareness training, implementing Zero Trust security models, and partnering with experts that deliver <Link to="/services/compliance-audit-readiness" className="text-blue-700 font-semibold hover:underline">cybersecurity compliance services</Link> and <Link to="/soc-support" className="text-blue-700 font-semibold hover:underline">managed cybersecurity services</Link> to create a safer, more resilient digital world.
                 </p>
                 <p className="text-xl font-bold text-center text-indigo-700 mt-8">
                   Happy Cybersecurity Awareness Month! 🔐
@@ -326,7 +326,7 @@ export default function TwentyYearsOfCybersecurity2026() {
                       className="border-white text-white bg-transparent hover:bg-white hover:text-blue-900"
                     >
                       <Link
-                        to="/services/penetration-testing-services"
+                        to="/penetration-testing-services"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-blue-900"

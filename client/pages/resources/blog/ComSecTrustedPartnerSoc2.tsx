@@ -249,7 +249,7 @@ export default function ComSecTrustedPartnerSoc2() {
                       className="border-white text-white bg-transparent hover:bg-white hover:text-blue-900"
                     >
                       <Link
-                        to="/services/soc2-readiness"
+                        to="/soc2-readiness"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-blue-900"

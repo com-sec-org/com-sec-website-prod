@@ -19,7 +19,7 @@ export default function AutomatedVsManualPenetrationTesting2026() {
     {
       title: "Cloud Security Best Practices for 2024",
       excerpt: "Essential strategies to protect your organization's data in the cloud.",
-      link: "/services/cloud-security",
+      link: "/cloud-security",
       category: "Cloud Security",
       emoji: "☁️",
     },
@@ -331,7 +331,7 @@ export default function AutomatedVsManualPenetrationTesting2026() {
                   Modern organizations benefit most from a hybrid penetration testing approach that
                   combines automation and human expertise.{" "}
                   <Link
-                    to="/services/penetration-testing-services"
+                    to="/penetration-testing-services"
                     className="text-indigo-700 font-semibold hover:underline"
                   >
                     Automated penetration testing
@@ -346,7 +346,7 @@ export default function AutomatedVsManualPenetrationTesting2026() {
                   </Link>
                   , we leverage both{" "}
                   <Link
-                    to="/services/penetration-testing-services"
+                    to="/penetration-testing-services"
                     className="text-indigo-700 font-semibold hover:underline"
                   >
                     automated and manual penetration testing
@@ -365,7 +365,7 @@ export default function AutomatedVsManualPenetrationTesting2026() {
                   In today's complex threat landscape, relying on a single penetration testing
                   method is no longer sufficient.{" "}
                   <Link
-                    to="/services/penetration-testing-services"
+                    to="/penetration-testing-services"
                     className="text-indigo-700 font-semibold hover:underline"
                   >
                     Automated penetration testing
@@ -404,7 +404,7 @@ export default function AutomatedVsManualPenetrationTesting2026() {
                           <ArrowRight className="h-4 w-4" />
                         </button>
                       </Link>
-                      <Link to="/services/penetration-testing-services">
+                      <Link to="/penetration-testing-services">
                         <button className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition">
                           Explore Penetration Testing Services
                         </button>

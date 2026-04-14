@@ -25,7 +25,7 @@ export default function CybersecurityRoundupStartups2026() {
     {
       title: "Cloud Security Best Practices for 2024",
       excerpt: "Essential strategies to protect your organization's data in the cloud.",
-      link: "/services/cloud-security",
+      link: "/cloud-security",
       category: "Cloud Security",
       emoji: "☁️",
     },
@@ -142,7 +142,7 @@ export default function CybersecurityRoundupStartups2026() {
                 <div className="pl-6 border-l-4 border-indigo-500">
                   <h3 className="font-bold text-gray-900 mb-2">Actionable Advice:</h3>
                   <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                    <li>Regularly audit and remediate <Link to="/services/cloud-security" className="text-indigo-700 font-medium hover:underline">cloud configurations</Link>.</li>
+                    <li>Regularly audit and remediate <Link to="/cloud-security" className="text-indigo-700 font-medium hover:underline">cloud configurations</Link>.</li>
                     <li>Implement strict access controls and encryption for sensitive data.</li>
                     <li>Use cloud-native security tools and automated monitoring for continuous posture assessment.</li>
                     <li>Consider Infrastructure as Code (IaC) scanning to catch misconfigurations before deployment.</li>
@@ -243,7 +243,7 @@ export default function CybersecurityRoundupStartups2026() {
                   <ul className="list-disc pl-6 space-y-2 text-gray-700">
                     <li>Invest in training and upskilling current staff.</li>
                     <li>Partner with cybersecurity bootcamps and academic programs.</li>
-                    <li>Outsource critical security functions to reputable firms like <Link to="/services/it-support" className="text-indigo-700 font-medium hover:underline">Com-Sec</Link>.</li>
+                    <li>Outsource critical security functions to reputable firms like <Link to="/it-support" className="text-indigo-700 font-medium hover:underline">Com-Sec</Link>.</li>
                   </ul>
                 </div>
               </section>
@@ -279,7 +279,7 @@ export default function CybersecurityRoundupStartups2026() {
                 <div className="pl-6 border-l-4 border-indigo-500">
                   <h3 className="font-bold text-gray-900 mb-2">Actionable Advice:</h3>
                   <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                    <li>Conduct continuous <Link to="/services/security-training" className="text-indigo-700 font-medium hover:underline">security training</Link>, including AI-driven attack simulations.</li>
+                    <li>Conduct continuous <Link to="/security-training" className="text-indigo-700 font-medium hover:underline">security training</Link>, including AI-driven attack simulations.</li>
                     <li>Test employee readiness through simulated phishing campaigns.</li>
                     <li>Foster a culture of security awareness and accountability throughout your startup.</li>
                   </ul>
@@ -323,7 +323,7 @@ export default function CybersecurityRoundupStartups2026() {
                       className="border-white text-white bg-transparent hover:bg-white hover:text-indigo-900"
                     >
                       <Link
-                        to="/services/it-support"
+                        to="/it-support"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-indigo-900"

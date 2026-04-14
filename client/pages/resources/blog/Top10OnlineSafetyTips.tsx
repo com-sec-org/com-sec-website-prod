@@ -291,7 +291,7 @@ export default function Top10OnlineSafetyTips() {
                     asChild
                     className="border-white text-white bg-transparent hover:bg-white hover:text-indigo-900"
                   >
-                    <Link to="/services/security-training">
+                    <Link to="/security-training">
                       Explore Security Training Services
                     </Link>
                   </Button>

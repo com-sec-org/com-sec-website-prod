@@ -617,7 +617,7 @@ export default function WhatIsCyberThreatIntelligence() {
                       className="border-white text-white bg-transparent hover:bg-white hover:text-emerald-700"
                     >
                       <Link
-                        to="/services/soc-support-monitoring"
+                        to="/soc-support-monitoring"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-emerald-700"
