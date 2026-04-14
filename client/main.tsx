@@ -179,6 +179,7 @@ const App = () => (
               {/* Service Routes */}
               <Route path="/services" element={<Services />} />
               <Route path="/services/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
+              <Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
               <Route path="/services/penetration-testing-services" element={<Navigate to="/penetration-testing-services" replace />} />
               <Route path="/services/it-support" element={<Navigate to="/it-support" replace />} />
               <Route path="/services/soc-support" element={<Navigate to="/soc-support" replace />} />
