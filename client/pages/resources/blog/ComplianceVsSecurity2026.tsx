@@ -164,7 +164,7 @@ export default function ComplianceVsSecurity2026() {
                       Risk Management
                     </h3>
                     <p className="text-gray-700 text-lg">
-                      Compliance and security both rely on identifying, assessing, and mitigating risks. Security teams focus on cyber threats and vulnerabilities, while compliance teams assess regulatory and operational risks—but both contribute to a stronger <Link to="/services/risk-management" className="text-indigo-700 font-medium hover:underline">risk management</Link> posture.
+                      Compliance and security both rely on identifying, assessing, and mitigating risks. Security teams focus on cyber threats and vulnerabilities, while compliance teams assess regulatory and operational risks—but both contribute to a stronger <Link to="/risk-management" className="text-indigo-700 font-medium hover:underline">risk management</Link> posture.
                     </p>
                   </div>
 
@@ -204,7 +204,7 @@ export default function ComplianceVsSecurity2026() {
                     <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <strong className="text-gray-900 text-lg">Training and Awareness:</strong>
-                      <p className="text-gray-700">Regular <Link to="/services/security-training" className="text-indigo-700 font-medium hover:underline">cybersecurity awareness training</Link> helps employees understand their responsibilities and reduces human error—a common cause of security incidents.</p>
+                      <p className="text-gray-700">Regular <Link to="/security-training" className="text-indigo-700 font-medium hover:underline">cybersecurity awareness training</Link> helps employees understand their responsibilities and reduces human error—a common cause of security incidents.</p>
                     </div>
                   </li>
                 </ul>
@@ -239,7 +239,7 @@ export default function ComplianceVsSecurity2026() {
                       <li>Focuses on defending against real-world cyber threats like malware and phishing.</li>
                       <li>Deep focus on protecting IT systems, networks, and data.</li>
                       <li>Primary goal is to prevent, detect, and respond to breaches.</li>
-                      <li>Uses tools like SIEM, IDS, and <Link to="/services/penetration-testing-services" className="text-indigo-700 font-medium hover:underline">penetration testing</Link>.</li>
+                      <li>Uses tools like SIEM, IDS, and <Link to="/penetration-testing-services" className="text-indigo-700 font-medium hover:underline">penetration testing</Link>.</li>
                     </ul>
                   </div>
                 </div>
@@ -254,7 +254,7 @@ export default function ComplianceVsSecurity2026() {
                   In 2026, compliance and security can no longer operate in silos. Compliance without security may result in passed audits but increased breach risk, while security without compliance can lead to regulatory penalties and lost customer trust.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                  At <Link to="/" className="text-indigo-700 font-medium hover:underline">Com-Sec</Link>, we help organizations align <Link to="/services/it-support" className="text-indigo-700 font-medium hover:underline">cybersecurity services</Link> with compliance requirements, ensuring they are both protected and audit-ready.
+                  At <Link to="/" className="text-indigo-700 font-medium hover:underline">Com-Sec</Link>, we help organizations align <Link to="/it-support" className="text-indigo-700 font-medium hover:underline">cybersecurity services</Link> with compliance requirements, ensuring they are both protected and audit-ready.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   By combining security operations, compliance frameworks, and continuous monitoring, businesses can reduce risk, meet regulatory expectations, and scale with confidence in an evolving threat landscape.

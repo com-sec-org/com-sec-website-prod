@@ -132,7 +132,7 @@ export default function HowAiAndAnalyticsImproveSecurityOperations() {
               {/* Introduction */}
               <section className="mb-12">
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  This blog explores how AI and analytics transform <Link to="/services/soc-support" className="text-indigo-700 font-medium hover:underline">ongoing security operations</Link>, improve efficiency, and reduce risk.
+                  This blog explores how AI and analytics transform <Link to="/soc-support" className="text-indigo-700 font-medium hover:underline">ongoing security operations</Link>, improve efficiency, and reduce risk.
                 </p>
               </section>
 
@@ -274,7 +274,7 @@ export default function HowAiAndAnalyticsImproveSecurityOperations() {
                   Conclusion
                 </h2>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                  AI and analytics are fundamentally reshaping <Link to="/services/soc-support" className="text-indigo-700 font-medium hover:underline">ongoing security operations</Link>, enabling organizations to transition from reactive to proactive cybersecurity strategies. By harnessing these technologies, businesses can detect threats faster, automate repetitive security tasks, and prevent data breaches before they occur.
+                  AI and analytics are fundamentally reshaping <Link to="/soc-support" className="text-indigo-700 font-medium hover:underline">ongoing security operations</Link>, enabling organizations to transition from reactive to proactive cybersecurity strategies. By harnessing these technologies, businesses can detect threats faster, automate repetitive security tasks, and prevent data breaches before they occur.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   With <Link to="/" className="text-indigo-700 font-medium hover:underline">Com-Sec’s</Link> expertise in ongoing security operations, organizations can implement AI-driven analytics solutions effectively, ensuring their security operations are intelligent, adaptive, and resilient against evolving cyber threats.
@@ -305,7 +305,7 @@ export default function HowAiAndAnalyticsImproveSecurityOperations() {
                       className="border-white text-white bg-transparent hover:bg-white hover:text-blue-900"
                     >
                       <Link
-                        to="/services/soc-support"
+                        to="/soc-support"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-blue-900"

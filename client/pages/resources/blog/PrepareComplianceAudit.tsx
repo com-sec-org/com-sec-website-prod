@@ -21,7 +21,7 @@ export default function PrepareComplianceAudit() {
     {
       title: "Cloud Security Best Practices for 2024",
       excerpt: "Essential strategies to protect your organization's data in the cloud.",
-      link: "/services/cloud-security",
+      link: "/cloud-security",
       category: "Cloud Security",
       emoji: "☁️",
     },

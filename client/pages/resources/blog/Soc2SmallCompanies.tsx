@@ -448,7 +448,7 @@ export default function Soc2SmallCompanies() {
                   {" "}
                   <Link
                       target="_blank"
-                      to="/services/penetration-testing-services"
+                      to="/penetration-testing-services"
                       className="text-indigo-700 font-medium hover:underline"
                   >
                     penetration testing services
@@ -477,7 +477,7 @@ export default function Soc2SmallCompanies() {
       From readiness assessments to ongoing security validation through{" "}
       <Link
         target="_blank"
-        to="/services/penetration-testing-services"
+        to="/penetration-testing-services"
         className="text-white font-semibold hover:underline"
       >
         penetration testing services

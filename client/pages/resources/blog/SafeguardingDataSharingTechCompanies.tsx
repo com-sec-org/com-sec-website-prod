@@ -37,7 +37,7 @@ export default function SafeguardingDataSharingTechCompanies() {
     {
       title: "Cloud Security Best Practices",
       excerpt: "Essential strategies to protect your organization's data in cloud environments.",
-      link: "/services/cloud-security",
+      link: "/cloud-security",
       category: "Cloud Security",
       emoji: "☁️",
     },
@@ -330,7 +330,7 @@ export default function SafeguardingDataSharingTechCompanies() {
                       className="border-white text-white bg-transparent hover:bg-white hover:text-indigo-900"
                     >
                       <Link
-                        to="/services/security-training"
+                        to="/security-training"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-indigo-900"

@@ -31,7 +31,7 @@ export default function VitalImportanceHealthSecurity2026() {
     {
       title: "Cloud Security Best Practices for 2024",
       excerpt: "Essential strategies to protect your organization's data in the cloud.",
-      link: "/services/cloud-security",
+      link: "/cloud-security",
       category: "Cloud Security",
       emoji: "☁️",
     },
@@ -177,7 +177,7 @@ export default function VitalImportanceHealthSecurity2026() {
                 </p>
                 <div className="bg-teal-50 border-l-4 border-teal-600 p-4 rounded-r-md">
                    <p className="text-teal-900">
-                     <strong>Learn more:</strong> Explore Com-Sec’s <Link to="/services/soc2-readiness" className="text-teal-700 font-bold hover:underline">SOC 2 Compliance Services</Link> for healthcare organizations.
+                     <strong>Learn more:</strong> Explore Com-Sec’s <Link to="/soc2-readiness" className="text-teal-700 font-bold hover:underline">SOC 2 Compliance Services</Link> for healthcare organizations.
                    </p>
                 </div>
               </section>
@@ -196,7 +196,7 @@ export default function VitalImportanceHealthSecurity2026() {
                 </p>
                 <div className="bg-teal-50 border-l-4 border-teal-600 p-4 rounded-r-md">
                    <p className="text-teal-900">
-                     <strong>Explore:</strong> Our <Link to="/services/cloud-security" className="text-teal-700 font-bold hover:underline">Cloud Security Solutions</Link> protect sensitive patient data in cloud-based EHR systems.
+                     <strong>Explore:</strong> Our <Link to="/cloud-security" className="text-teal-700 font-bold hover:underline">Cloud Security Solutions</Link> protect sensitive patient data in cloud-based EHR systems.
                    </p>
                 </div>
               </section>
@@ -223,7 +223,7 @@ export default function VitalImportanceHealthSecurity2026() {
                 </p>
                 <div className="bg-teal-50 border-l-4 border-teal-600 p-4 rounded-r-md">
                    <p className="text-teal-900">
-                     <strong>Consider:</strong> Com-Sec’s <Link to="/services/penetration-testing-services" className="text-teal-700 font-bold hover:underline">Penetration Testing Services</Link> to identify vulnerabilities before attackers do.
+                     <strong>Consider:</strong> Com-Sec’s <Link to="/penetration-testing-services" className="text-teal-700 font-bold hover:underline">Penetration Testing Services</Link> to identify vulnerabilities before attackers do.
                    </p>
                 </div>
               </section>
@@ -248,7 +248,7 @@ export default function VitalImportanceHealthSecurity2026() {
                   Protecting patient data is the cornerstone of modern healthcare. By implementing robust healthcare cybersecurity measures, staying compliant with <Link to="/frameworks/hipaa" className="text-teal-700 font-medium hover:underline">HIPAA</Link> and other data privacy regulations, and fostering a culture of security awareness, health companies can prevent breaches, maintain patient trust, and avoid costly penalties.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Partner with <Link to="/" className="text-teal-700 font-medium hover:underline">Com-Sec</Link> for comprehensive solutions—from <Link to="/frameworks/soc2" className="text-teal-700 font-medium hover:underline">SOC 2 compliance</Link> and <Link to="/services/penetration-testing-services" className="text-teal-700 font-medium hover:underline">penetration testing</Link> to <Link to="/services/cloud-security" className="text-teal-700 font-medium hover:underline">cloud security</Link> and continuous monitoring—to secure your organization and ensure uninterrupted, safe patient care.
+                  Partner with <Link to="/" className="text-teal-700 font-medium hover:underline">Com-Sec</Link> for comprehensive solutions—from <Link to="/frameworks/soc2" className="text-teal-700 font-medium hover:underline">SOC 2 compliance</Link> and <Link to="/penetration-testing-services" className="text-teal-700 font-medium hover:underline">penetration testing</Link> to <Link to="/cloud-security" className="text-teal-700 font-medium hover:underline">cloud security</Link> and continuous monitoring—to secure your organization and ensure uninterrupted, safe patient care.
                 </p>
               </section>
 

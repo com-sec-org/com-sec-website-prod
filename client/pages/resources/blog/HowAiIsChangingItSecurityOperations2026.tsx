@@ -32,7 +32,7 @@ export default function HowAiIsChangingItSecurityOperations2026() {
     {
       title: "Cloud Security Best Practices for 2024",
       excerpt: "Essential strategies to protect your organization's data in the cloud.",
-      link: "/services/cloud-security", // Linking to service page as related content
+      link: "/cloud-security", // Linking to service page as related content
       category: "Cloud Security",
       emoji: "☁️",
     },
@@ -161,7 +161,7 @@ export default function HowAiIsChangingItSecurityOperations2026() {
                   The rise of advanced persistent threats (APTs), AI-powered malware, and supply chain attacks makes traditional security approaches insufficient. Organizations now face a growing complexity in defending digital assets, forcing them to adopt next-generation solutions.
                 </p>
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  Artificial Intelligence (AI) has emerged as a game-changer, enhancing <Link to="/services/it-support" className="text-indigo-700 font-medium hover:underline">IT security operations</Link> by enabling faster threat detection, automating response workflows, and predicting future vulnerabilities.
+                  Artificial Intelligence (AI) has emerged as a game-changer, enhancing <Link to="/it-support" className="text-indigo-700 font-medium hover:underline">IT security operations</Link> by enabling faster threat detection, automating response workflows, and predicting future vulnerabilities.
                 </p>
               </section>
 
@@ -194,7 +194,7 @@ export default function HowAiIsChangingItSecurityOperations2026() {
                     Cloud Security
                   </h3>
                   <p className="text-gray-700 text-lg mb-4">
-                    <Link to="/services/cloud-security" className="text-indigo-700 font-medium hover:underline">Cloud infrastructure</Link> is increasingly targeted by cyber attackers. AI-powered security solutions monitor cloud resources continuously, analyzing access patterns and system configurations. Automated security policy enforcement helps ensure compliance with industry standards like <Link to="/frameworks/iso27001" className="text-indigo-700 font-medium hover:underline">ISO 27001</Link> and <Link to="/frameworks/gdpr" className="text-indigo-700 font-medium hover:underline">GDPR</Link>.
+                    <Link to="/cloud-security" className="text-indigo-700 font-medium hover:underline">Cloud infrastructure</Link> is increasingly targeted by cyber attackers. AI-powered security solutions monitor cloud resources continuously, analyzing access patterns and system configurations. Automated security policy enforcement helps ensure compliance with industry standards like <Link to="/frameworks/iso27001" className="text-indigo-700 font-medium hover:underline">ISO 27001</Link> and <Link to="/frameworks/gdpr" className="text-indigo-700 font-medium hover:underline">GDPR</Link>.
                   </p>
                   <div className="bg-gray-50 border-l-4 border-indigo-500 p-4 mb-4">
                     <p className="text-gray-700 italic">
@@ -290,7 +290,7 @@ export default function HowAiIsChangingItSecurityOperations2026() {
                   AI is no longer optional but essential for modern IT security operations. By automating routine tasks, improving detection accuracy, and enabling proactive defenses, AI empowers organizations to keep pace with evolving cyber threats.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Forward-thinking enterprises must embrace AI-powered <Link to="/services/it-support" className="text-indigo-700 font-medium hover:underline">IT support</Link> and security operations to stay protected and competitive in 2026 and beyond.
+                  Forward-thinking enterprises must embrace AI-powered <Link to="/it-support" className="text-indigo-700 font-medium hover:underline">IT support</Link> and security operations to stay protected and competitive in 2026 and beyond.
                 </p>
               </section>
 
@@ -349,7 +349,7 @@ export default function HowAiIsChangingItSecurityOperations2026() {
                       className="border-white text-white bg-transparent hover:bg-white hover:text-indigo-900"
                     >
                       <Link
-                        to="/services/it-support"
+                        to="/it-support"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-indigo-900"

@@ -112,7 +112,7 @@ export const SEO_CONFIG = {
       "Get complete SOC 2 readiness support, audit preparation, control implementation, risk assessment, and gap remediation.",
     canonical: "/soc2-readiness",
     keywords: ["soc 2 readiness", "soc 2 audit", "soc 2 consulting"],
-    image: `${BASE_URL}/images/services/soc2-readiness.webp`,
+    image: `${BASE_URL}/images/soc2-readiness.webp`,
     faq: buildFAQ([
       {
         question: "How long does SOC 2 readiness take?",
@@ -142,7 +142,7 @@ export const SEO_CONFIG = {
       "Cloud security assessments, IAM hardening, CIS benchmarks, architecture review, and remediation across AWS, Azure, and GCP.",
     canonical: "/cloud-security",
     keywords: ["cloud security", "aws security", "azure security"],
-    image: `${BASE_URL}/images/services/cloud-security.webp`,
+    image: `${BASE_URL}/images/cloud-security.webp`,
   }),
 
   "/compliance-audit-readiness": buildPageSEO({
@@ -159,7 +159,7 @@ export const SEO_CONFIG = {
     description:
       "Get IT and security operational support including device management, encryption, access reviews, and IT onboarding/offboarding.",
     canonical: "/it-support",
-    image: `${BASE_URL}/images/services/it-support.webp`,
+    image: `${BASE_URL}/images/it-support.webp`,
   }),
 
   "/soc-support": buildPageSEO({
@@ -168,7 +168,7 @@ export const SEO_CONFIG = {
     description:
       "We help companies run their SOC programs with continuous monitoring, evidence management, and compliance automation.",
     canonical: "/soc-support",
-    image: `${BASE_URL}/images/services/soc-support.webp`,
+    image: `${BASE_URL}/images/soc-support.webp`,
   }),
 
   "/security-training": buildPageSEO({
@@ -177,7 +177,7 @@ export const SEO_CONFIG = {
     description:
       "Security awareness training including phishing simulations, best practices, and compliance-focused educational content.",
     canonical: "/security-training",
-    image: `${BASE_URL}/images/services/security-training.webp`,
+    image: `${BASE_URL}/images/security-training.webp`,
   }),
 
   "/risk-management": buildPageSEO({
@@ -186,7 +186,7 @@ export const SEO_CONFIG = {
     description:
       "Perform security risk assessments, identify threats, evaluate impact, and implement mitigation strategies.",
     canonical: "/risk-management",
-    image: `${BASE_URL}/images/services/risk-management.webp`,
+    image: `${BASE_URL}/images/risk-management.webp`,
   }),
 
   // ----------------------------------------

@@ -23,7 +23,7 @@ export default function CloudPenetrationTestingAwsAzureGcp2026() {
     {
       title: "Cloud Security Best Practices for 2024",
       excerpt: "Essential strategies to protect your organization's data in the cloud.",
-      link: "/services/cloud-security",
+      link: "/cloud-security",
       category: "Cloud Security",
       emoji: "☁️",
     },
@@ -294,7 +294,7 @@ export default function CloudPenetrationTestingAwsAzureGcp2026() {
                 <p className="text-gray-700 leading-relaxed text-lg mb-8">
                   <Link
     target="_blank"
-      to="/services/penetration-testing-services"
+      to="/penetration-testing-services"
       className="text-indigo-700 font-semibold hover:underline"
     >
       Cloud Pen Testing
@@ -416,7 +416,7 @@ export default function CloudPenetrationTestingAwsAzureGcp2026() {
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
                   <Link
     target="_blank"
-      to="/services/penetration-testing-services"
+      to="/penetration-testing-services"
       className="text-indigo-700 font-semibold hover:underline"
     >
       Cloud Penetration Testing
@@ -492,7 +492,7 @@ export default function CloudPenetrationTestingAwsAzureGcp2026() {
     for{" "}
     <Link
     target="_blank"
-      to="/services/penetration-testing-services"
+      to="/penetration-testing-services"
       className="text-indigo-700 font-semibold hover:underline"
     >
       Cloud Penetration Testing Services
@@ -560,7 +560,7 @@ export default function CloudPenetrationTestingAwsAzureGcp2026() {
       From readiness assessments to ongoing security validation through{" "}
       <Link
         target="_blank"
-        to="/services/penetration-testing-services"
+        to="/penetration-testing-services"
         className="text-white font-semibold hover:underline"
       >
         penetration testing services
