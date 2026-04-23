@@ -80,6 +80,17 @@ export function Navigation() {
               </div>
             </div>
 
+            <Link
+              to="/pricing"
+              className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+                isActive("/pricing")
+                  ? "text-accent border-b-2 border-accent"
+                  : "text-foreground hover:text-accent"
+              }`}
+            >
+              Pricing
+            </Link>
+
             {/* Resources Dropdown */}
             <div className="relative group">
               <button className="flex items-center text-foreground hover:text-accent transition-colors">
@@ -243,6 +254,21 @@ export function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-white border-t max-h-[70vh] overflow-y-auto">
             <div className="flex flex-col pt-2">
+              {/* Pricing Link */}
+              <div className="border-b border-gray-100">
+                <Link
+                  to="/pricing"
+                  className={`block px-4 py-3 text-sm font-medium transition-colors ${
+                    isActive("/pricing")
+                      ? "text-accent bg-accent/10"
+                      : "text-gray-900 hover:text-accent hover:bg-gray-50"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Pricing
+                </Link>
+              </div>
+
               {/* Services Section */}
               <div className="border-b border-gray-100">
                 <button

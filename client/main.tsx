@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-route
 import { useEffect, Component, ErrorInfo, ReactNode } from "react";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
+import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
@@ -176,8 +177,9 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
 
-              {/* Service Routes */}
+              {/* Service & Pricing Routes */}
               <Route path="/services" element={<Services />} />
+              <Route path="/pricing" element={<Pricing />} />
               <Route path="/services/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
               <Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
               <Route path="/services/penetration-testing-services" element={<Navigate to="/penetration-testing-services" replace />} />
