@@ -82,10 +82,10 @@ export function Navigation() {
 
             <Link
               to="/pricing"
-              className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+              className={`text-foreground hover:text-accent transition-colors ${
                 isActive("/pricing")
                   ? "text-accent border-b-2 border-accent"
-                  : "text-foreground hover:text-accent"
+                  : ""
               }`}
             >
               Pricing
