@@ -28,9 +28,15 @@ const pricingData = [
     name: "vCISO (Remote Chief Information Security Officer)",
     category: "Executive Security Leadership",
     type: "Monthly",
-    low: "$8,000",
-    high: "$12,000",
-    typical: "$10,000",
+    low: "$2,000",
+    typical: "$7,000",
+    high: "$3,000",
+    lowLabel: "Foundation",
+    typicalLabel: "Professional",
+    highLabel: "Enterprise",
+    lowDesc: "Initial CISO guidance and strategic planning",
+    typicalDesc: "Full-time fractional CISO with complete program oversight",
+    highDesc: "Extended enterprise CISO coverage with board reporting",
     description:
       "Fractional Chief Information Security Officer engagement. Com-Sec embeds a senior security leader who owns the client's security program, policy, risk, and day-to-day escalation.",
     icon: Shield,
@@ -41,37 +47,33 @@ const pricingData = [
       "Policy development and review",
       "Board-level reporting",
     ],
-    featured: true,
   },
   {
     id: 2,
-    name: "SOC 2 Type II Readiness & Cert",
-    category: "Compliance",
-    type: "One-time (monthly breakdown)",
-    low: "$4,000",
-    high: "$9,000",
-    typical: "$7,000",
+    name: "SOC 2 Type I & II",
+    category: "Compliance & Frameworks",
+    type: "One-time",
+    startingPrice: "$4,000",
     description:
-      "Readiness assessment, SOC 2 Type II testing and evidence collection, evidence packaging, and validated assessor coordination.",
+      "Comprehensive SOC 2 Type I and Type II certification support including readiness assessment, testing, evidence collection, and validated assessor coordination.",
     icon: Award,
     benefits: [
-      "Gap analysis and remediation",
-      "Policy development",
-      "Evidence collection",
-      "Audit preparation",
+      "Readiness assessment & gap analysis",
+      "SOC 2 Type I support",
+      "SOC 2 Type II testing",
+      "Full evidence collection",
       "Assessor coordination",
     ],
+    simplePrice: true,
   },
   {
     id: 3,
     name: "ISO 27001 Certification",
-    category: "Compliance / Frameworks",
-    type: "One-time (monthly breakdown)",
-    low: "$4,500",
-    high: "$9,500",
-    typical: "$7,500",
+    category: "Compliance & Frameworks",
+    type: "One-time",
+    startingPrice: "$4,000",
     description:
-      "ISMS build out and certification support. ISO 27001 certification support, initial audit, management Stage 1 & 2 audits with assessor coordination.",
+      "ISMS build out and ISO 27001 certification support with initial audit, management Stage 1 & 2 audits and assessor coordination.",
     icon: Target,
     benefits: [
       "ISMS development",
@@ -80,17 +82,16 @@ const pricingData = [
       "Documentation assistance",
       "Compliance mapping",
     ],
+    simplePrice: true,
   },
   {
     id: 4,
     name: "HITRUST Certification",
-    category: "Compliance / Frameworks",
-    type: "Engagement-based",
-    low: "$8,000",
-    high: "$15,000",
-    typical: "$10,000",
+    category: "Compliance & Frameworks",
+    type: "One-time",
+    startingPrice: "$8,000",
     description:
-      "HITRUST assessment execution and remediation. Engagement-based model with Stage 1 & 2 audits for healthcare compliance.",
+      "HITRUST assessment execution and remediation with Stage 1 & 2 audits for healthcare compliance organizations.",
     icon: Zap,
     benefits: [
       "Assessment execution",
@@ -99,93 +100,16 @@ const pricingData = [
       "Healthcare compliance",
       "Assessor coordination",
     ],
+    simplePrice: true,
   },
   {
     id: 5,
-    name: "HIPAA Compliance",
-    category: "Compliance / Frameworks",
-    type: "Engagement-based",
-    low: "$5,000",
-    high: "$12,000",
-    typical: "$8,500",
-    description:
-      "HIPAA security and privacy compliance assessment, implementation guidance, and audit support for healthcare organizations.",
-    icon: Shield,
-    benefits: [
-      "Security assessment",
-      "Privacy compliance review",
-      "Risk analysis",
-      "Implementation guidance",
-      "Audit readiness support",
-    ],
-  },
-  {
-    id: 6,
-    name: "PCI-DSS Compliance",
-    category: "Compliance / Frameworks",
-    type: "Engagement-based",
-    low: "$6,000",
-    high: "$13,000",
-    typical: "$9,500",
-    description:
-      "PCI-DSS compliance assessment and remediation for payment card industry organizations and merchants.",
-    icon: Target,
-    benefits: [
-      "Gap analysis",
-      "Control implementation",
-      "Technical assessment",
-      "Documentation support",
-      "Validator coordination",
-    ],
-  },
-  {
-    id: 7,
-    name: "NIST 800-53 / CMMC",
-    category: "Compliance / Frameworks",
-    type: "Engagement-based",
-    low: "$7,000",
-    high: "$14,000",
-    typical: "$10,500",
-    description:
-      "NIST 800-53 and CMMC compliance for defense contractors and government agencies requiring federal compliance.",
-    icon: Award,
-    benefits: [
-      "Security controls mapping",
-      "Implementation support",
-      "Assessment readiness",
-      "CMMC Level guidance",
-      "Documentation assistance",
-    ],
-  },
-  {
-    id: 8,
-    name: "GDPR Compliance",
-    category: "Compliance / Frameworks",
-    type: "Engagement-based",
-    low: "$5,500",
-    high: "$12,000",
-    typical: "$8,750",
-    description:
-      "GDPR compliance assessment and implementation for organizations handling EU resident data.",
-    icon: Target,
-    benefits: [
-      "Data inventory assessment",
-      "Privacy impact analysis",
-      "Controls implementation",
-      "DPA coordination",
-      "Ongoing compliance support",
-    ],
-  },
-  {
-    id: 9,
     name: "Internal Audit / Security Risk Assessment",
-    category: "Compliance-Based",
+    category: "Extra Add-Ons",
     type: "Engagement-based",
-    low: "$3,500",
-    high: "$5,500",
-    typical: "$4,000",
+    startingPrice: "$3,500",
     description:
-      "Independent internal audit or security risk assessment. Delivers comprehensive technical assessment and evidence collection.",
+      "Independent internal audit or security risk assessment with comprehensive technical assessment and evidence collection.",
     icon: Users,
     benefits: [
       "Technical assessment",
@@ -194,17 +118,16 @@ const pricingData = [
       "Detailed reporting",
       "Risk prioritization",
     ],
+    simplePrice: true,
   },
   {
-    id: 10,
+    id: 6,
     name: "Penetration Testing",
-    category: "Offensive Security",
+    category: "Extra Add-Ons",
     type: "Per-test",
-    low: "$3,500",
-    high: "$4,500",
-    typical: "$4,000",
+    startingPrice: "$3,500",
     description:
-      "Manual + automated penetration testing across web, APIs, cloud, and internal networks. Includes remediation guides.",
+      "Manual + automated penetration testing across web, APIs, cloud, and internal networks with remediation guides.",
     icon: Rocket,
     benefits: [
       "Manual penetration testing",
@@ -213,36 +136,16 @@ const pricingData = [
       "Remediation roadmap",
       "Evidence documentation",
     ],
+    simplePrice: true,
   },
   {
-    id: 11,
-    name: "GRC Platform — Resale + Implementation",
-    category: "Platform",
-    type: "Annual",
-    low: "$4,000",
-    high: "$6,000",
-    typical: "$5,000",
-    description:
-      "Reseller of GRC/compliance automation platforms with white-glove implementation and training.",
-    icon: TrendingUp,
-    benefits: [
-      "Platform integration",
-      "Implementation support",
-      "Training and onboarding",
-      "Ongoing optimization",
-      "White-glove service",
-    ],
-  },
-  {
-    id: 12,
+    id: 7,
     name: "Managed IT Support",
-    category: "Managed Services",
+    category: "Extra Add-Ons",
     type: "Monthly",
-    low: "$2,000",
-    high: "$5,000",
-    typical: "$3,500",
+    startingPrice: "$2,000",
     description:
-      "Outsourced IT helpdesk and endpoint operations: user onboarding, SSO, endpoint compliance, and role management.",
+      "Outsourced IT helpdesk and endpoint operations including user onboarding, SSO, endpoint compliance, and role management.",
     icon: Zap,
     benefits: [
       "24/7 helpdesk support",
@@ -251,15 +154,32 @@ const pricingData = [
       "Access control",
       "Compliance monitoring",
     ],
+    simplePrice: true,
   },
   {
-    id: 13,
+    id: 8,
+    name: "Compliance & Audit Readiness",
+    category: "Compliance & Frameworks",
+    type: "Engagement-based",
+    startingPrice: "$4,000",
+    description:
+      "Comprehensive compliance support for GDPR, HIPAA, PCI-DSS, NIST 800-53, and other regulatory frameworks with assessment and implementation support.",
+    icon: Award,
+    benefits: [
+      "Framework assessment",
+      "Gap analysis",
+      "Implementation guidance",
+      "Control mapping",
+      "Audit preparation",
+    ],
+    simplePrice: true,
+  },
+  {
+    id: 9,
     name: "Security Awareness / Phishing Training",
     category: "Training",
     type: "Custom",
-    low: "$1,000",
-    high: "$3,000",
-    typical: "$2,000",
+    startingPrice: "$1,000",
     description:
       "Security awareness program with annual training curriculum, role-based modules, and simulated phishing campaigns.",
     icon: Target,
@@ -270,6 +190,7 @@ const pricingData = [
       "Compliance evidence",
       "Security newsletters",
     ],
+    simplePrice: true,
   },
 ];
 
@@ -295,12 +216,14 @@ export default function Pricing() {
               engagement models tailored to your organization's needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white pricing-cta-button"
-              >
-                Schedule Consultation <ChevronRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to="/contact">
+                <Button
+                  size="lg"
+                  className="bg-slate-700 hover:bg-orange-500 text-white pricing-cta-button transition-colors"
+                >
+                  Get Started <ChevronRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button
                 size="lg"
                 variant="outline"
@@ -338,17 +261,8 @@ export default function Pricing() {
                   }}
                 >
                   <Card
-                    className={`pricing-card h-full relative overflow-hidden group border-0 ${
-                      service.featured
-                        ? "pricing-card-featured"
-                        : ""
-                    }`}
+                    className="pricing-card h-full relative overflow-hidden group border-0"
                   >
-                    {service.featured && (
-                      <div className="pricing-featured-badge">
-                        <span>⭐ Most Popular</span>
-                      </div>
-                    )}
 
                     <div className="pricing-card-glow"></div>
 
@@ -371,37 +285,66 @@ export default function Pricing() {
 
                     {/* Pricing Section */}
                     <div className="px-6 pb-6">
-                      <div className="pricing-tier-display mb-6 p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                        <div className="text-sm text-slate-400 mb-2">
-                          Pricing Type
+                      {service.simplePrice ? (
+                        <div className="pricing-tier-display mb-6 p-4 bg-slate-800/50 rounded-lg border border-slate-700">
+                          <div className="text-sm text-slate-400 mb-2">
+                            Starting Price ({service.type})
+                          </div>
+                          <p className="text-3xl font-bold text-orange-400">
+                            {service.startingPrice}
+                          </p>
+                          <p className="text-xs text-slate-400 mt-2">
+                            Custom pricing available based on scope
+                          </p>
                         </div>
-                        <p className="font-semibold text-white mb-4">
-                          {service.type}
-                        </p>
+                      ) : (
+                        <div className="pricing-tier-display mb-6 p-4 bg-slate-800/50 rounded-lg border border-slate-700">
+                          <div className="text-sm text-slate-400 mb-2">
+                            Pricing Type
+                          </div>
+                          <p className="font-semibold text-white mb-4">
+                            {service.type}
+                          </p>
 
-                        <div className="grid grid-cols-3 gap-4">
-                          <div>
-                            <p className="text-xs text-slate-500">Low</p>
-                            <p className="text-lg font-bold text-white">
-                              {service.low}
-                            </p>
-                          </div>
-                          <div className="border-l border-r border-slate-700">
-                            <p className="text-xs text-slate-500">
-                              Typical
-                            </p>
-                            <p className="text-lg font-bold text-orange-400">
-                              {service.typical}
-                            </p>
-                          </div>
-                          <div>
-                            <p className="text-xs text-slate-500">High</p>
-                            <p className="text-lg font-bold text-white">
-                              {service.high}
-                            </p>
+                          <div className="grid grid-cols-3 gap-4">
+                            <div>
+                              <p className="text-xs text-slate-500">{service.lowLabel || 'Low'}</p>
+                              <p className="text-lg font-bold text-white">
+                                {service.low}
+                              </p>
+                              {service.lowDesc && (
+                                <p className="text-xs text-slate-400 mt-1">
+                                  {service.lowDesc}
+                                </p>
+                              )}
+                            </div>
+                            <div className="border-l border-r border-slate-700">
+                              <p className="text-xs text-slate-500">
+                                {service.typicalLabel || 'Typical'}
+                              </p>
+                              <p className="text-lg font-bold text-orange-400">
+                                {service.typical}
+                              </p>
+                              {service.typicalDesc && (
+                                <p className="text-xs text-slate-400 mt-1">
+                                  {service.typicalDesc}
+                                </p>
+                              )}
+                            </div>
+                            <div>
+                              <p className="text-xs text-slate-500">{service.highLabel || 'High'}</p>
+                              <p className="text-lg font-bold text-white">
+                                {service.high}
+                              </p>
+                              {service.highDesc && (
+                                <p className="text-xs text-slate-400 mt-1">
+                                  {service.highDesc}
+                                </p>
+                              )}
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      )}
 
                       {/* Benefits */}
                       <div className="mb-6">
@@ -421,22 +364,81 @@ export default function Pricing() {
                       </div>
 
                       {/* CTA Button */}
-                      <Button
-                        className={`w-full pricing-cta-btn ${
-                          service.featured
-                            ? "bg-orange-500 hover:bg-orange-600 text-white"
-                            : "bg-slate-700 hover:bg-slate-600 text-white border-orange-400/30"
-                        }`}
-                        variant={service.featured ? "default" : "outline"}
-                      >
-                        Get Started
-                        <ChevronRight className="ml-2 h-4 w-4" />
-                      </Button>
+                      <Link to="/contact">
+                        <Button
+                          className="w-full bg-slate-700 hover:bg-orange-500 text-white transition-colors pricing-cta-btn"
+                          variant="default"
+                        >
+                          Get Started
+                          <ChevronRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      </Link>
                     </div>
                   </Card>
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-20 bg-slate-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              How We Create Your Security Program
+            </h2>
+            <p className="text-lg text-slate-300">
+              Our proven process ensures comprehensive, tailored security solutions for your organization
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              {
+                number: "01",
+                title: "Discovery & Assessment",
+                description: "We conduct a thorough assessment of your current security posture, identify gaps, and understand your specific compliance requirements and business objectives.",
+                icon: "🔍",
+              },
+              {
+                number: "02",
+                title: "Strategy Development",
+                description: "Based on our findings, we develop a customized security strategy and roadmap aligned with your risk tolerance, budget, and regulatory requirements.",
+                icon: "📋",
+              },
+              {
+                number: "03",
+                title: "Implementation & Support",
+                description: "Our experts implement security controls, policies, and procedures while providing hands-on training and support to your team throughout the process.",
+                icon: "⚙️",
+              },
+              {
+                number: "04",
+                title: "Audit & Validation",
+                description: "We prepare and support you through assessments and audits, ensure compliance validation, and establish ongoing monitoring and improvement processes.",
+                icon: "✓",
+              },
+            ].map((step, index) => (
+              <div key={index} className="relative">
+                <div className="bg-slate-800 border border-slate-700 rounded-lg p-6 h-full hover:border-orange-400/50 transition-colors">
+                  <div className="text-4xl font-bold text-orange-400 mb-4">
+                    {step.number}
+                  </div>
+                  <div className="text-2xl mb-4">{step.icon}</div>
+                  <h3 className="text-lg font-semibold text-white mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-300 text-sm">
+                    {step.description}
+                  </p>
+                </div>
+                {index < 3 && (
+                  <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-orange-400 to-transparent"></div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -489,13 +491,15 @@ export default function Pricing() {
             Let's discuss which security solutions are right for your business
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white"
-            >
-              Schedule Free Consultation
-              <ChevronRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/contact">
+              <Button
+                size="lg"
+                className="bg-slate-700 hover:bg-orange-500 text-white transition-colors"
+              >
+                Schedule Free Consultation
+                <ChevronRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"

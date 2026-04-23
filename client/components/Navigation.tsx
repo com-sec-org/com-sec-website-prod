@@ -84,7 +84,7 @@ export function Navigation() {
               to="/pricing"
               className={`text-foreground hover:text-accent transition-colors ${
                 isActive("/pricing")
-                  ? "text-accent border-b-2 border-accent"
+                  ? "text-accent"
                   : ""
               }`}
             >
