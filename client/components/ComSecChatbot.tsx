@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FiSend } from "react-icons/fi";
 import { MessageSquare, X } from "lucide-react";
 
-const API_URL = "https://comsec-chatbot-backend.onrender.com/chat"; // ✅ Deployed FastAPI backend
+const API_URL = "/api/chat"; // ✅ Local Express backend endpoint
 
 export default function ComSecChatbot() {
   const [isOpen, setIsOpen] = useState(false);

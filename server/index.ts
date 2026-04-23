@@ -5,6 +5,7 @@ import { handleDemo } from "./routes/demo";
 import phishingTestRoutes from "./routes/phishing-test";
 import submitPhishingTestRoutes from "./routes/submitPhishingTest";
 import { submitContactForm } from "./routes/contact";
+import { handleChatbot } from "./routes/chatbot";
 
 // ✅ Load environment variables from .env
 dotenv.config();
@@ -33,6 +34,9 @@ export function createServer() {
 
   // Contact form route
   app.post("/api/contact", submitContactForm);
+
+  // Chatbot route
+  app.post("/api/chat", handleChatbot);
 
   return app;
 }
