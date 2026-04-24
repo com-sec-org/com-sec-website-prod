@@ -28,15 +28,7 @@ const pricingData = [
     name: "vCISO (Remote Chief Information Security Officer)",
     category: "Executive Security Leadership",
     type: "Monthly",
-    low: "$2,000",
-    typical: "$7,000",
-    high: "$3,000",
-    lowLabel: "Foundation",
-    typicalLabel: "Professional",
-    highLabel: "Enterprise",
-    lowDesc: "Initial CISO guidance and strategic planning",
-    typicalDesc: "Full-time fractional CISO with complete program oversight",
-    highDesc: "Extended enterprise CISO coverage with board reporting",
+    startingPrice: "$2,500",
     description:
       "Fractional Chief Information Security Officer engagement. Com-Sec embeds a senior security leader who owns the client's security program, policy, risk, and day-to-day escalation.",
     icon: Shield,
@@ -46,149 +38,6 @@ const pricingData = [
       "Risk management oversight",
       "Policy development and review",
       "Board-level reporting",
-    ],
-  },
-  {
-    id: 2,
-    name: "SOC 2 Type I & II",
-    category: "Compliance & Frameworks",
-    type: "One-time",
-    startingPrice: "$4,000",
-    description:
-      "Comprehensive SOC 2 Type I and Type II certification support including readiness assessment, testing, evidence collection, and validated assessor coordination.",
-    icon: Award,
-    benefits: [
-      "Readiness assessment & gap analysis",
-      "SOC 2 Type I support",
-      "SOC 2 Type II testing",
-      "Full evidence collection",
-      "Assessor coordination",
-    ],
-    simplePrice: true,
-  },
-  {
-    id: 3,
-    name: "ISO 27001 Certification",
-    category: "Compliance & Frameworks",
-    type: "One-time",
-    startingPrice: "$4,000",
-    description:
-      "ISMS build out and ISO 27001 certification support with initial audit, management Stage 1 & 2 audits and assessor coordination.",
-    icon: Target,
-    benefits: [
-      "ISMS development",
-      "Initial audit support",
-      "Stage 1 & 2 coordination",
-      "Documentation assistance",
-      "Compliance mapping",
-    ],
-    simplePrice: true,
-  },
-  {
-    id: 4,
-    name: "HITRUST Certification",
-    category: "Compliance & Frameworks",
-    type: "One-time",
-    startingPrice: "$8,000",
-    description:
-      "HITRUST assessment execution and remediation with Stage 1 & 2 audits for healthcare compliance organizations.",
-    icon: Zap,
-    benefits: [
-      "Assessment execution",
-      "Remediation planning",
-      "Stage 1 & 2 support",
-      "Healthcare compliance",
-      "Assessor coordination",
-    ],
-    simplePrice: true,
-  },
-  {
-    id: 5,
-    name: "Internal Audit / Security Risk Assessment",
-    category: "Extra Add-Ons",
-    type: "Engagement-based",
-    startingPrice: "$3,500",
-    description:
-      "Independent internal audit or security risk assessment with comprehensive technical assessment and evidence collection.",
-    icon: Users,
-    benefits: [
-      "Technical assessment",
-      "Independent evaluation",
-      "Evidence packaging",
-      "Detailed reporting",
-      "Risk prioritization",
-    ],
-    simplePrice: true,
-  },
-  {
-    id: 6,
-    name: "Penetration Testing",
-    category: "Extra Add-Ons",
-    type: "Per-test",
-    startingPrice: "$3,500",
-    description:
-      "Manual + automated penetration testing across web, APIs, cloud, and internal networks with remediation guides.",
-    icon: Rocket,
-    benefits: [
-      "Manual penetration testing",
-      "Automated scanning",
-      "Multi-vector assessment",
-      "Remediation roadmap",
-      "Evidence documentation",
-    ],
-    simplePrice: true,
-  },
-  {
-    id: 7,
-    name: "Managed IT Support",
-    category: "Extra Add-Ons",
-    type: "Monthly",
-    startingPrice: "$2,000",
-    description:
-      "Outsourced IT helpdesk and endpoint operations including user onboarding, SSO, endpoint compliance, and role management.",
-    icon: Zap,
-    benefits: [
-      "24/7 helpdesk support",
-      "Endpoint management",
-      "User onboarding",
-      "Access control",
-      "Compliance monitoring",
-    ],
-    simplePrice: true,
-  },
-  {
-    id: 8,
-    name: "Compliance & Audit Readiness",
-    category: "Compliance & Frameworks",
-    type: "Engagement-based",
-    startingPrice: "$4,000",
-    description:
-      "Comprehensive compliance support for GDPR, HIPAA, PCI-DSS, NIST 800-53, and other regulatory frameworks with assessment and implementation support.",
-    icon: Award,
-    benefits: [
-      "Framework assessment",
-      "Gap analysis",
-      "Implementation guidance",
-      "Control mapping",
-      "Audit preparation",
-    ],
-    simplePrice: true,
-  },
-  {
-    id: 9,
-    name: "Security Awareness / Phishing Training",
-    category: "Training",
-    type: "Custom",
-    startingPrice: "$1,000",
-    description:
-      "Security awareness program with annual training curriculum, role-based modules, and simulated phishing campaigns.",
-    icon: Target,
-    benefits: [
-      "Annual training curriculum",
-      "Role-based modules",
-      "Simulated phishing",
-      "Compliance evidence",
-      "Security newsletters",
     ],
     simplePrice: true,
   },
@@ -224,13 +73,6 @@ export default function Pricing() {
                   Get Started <ChevronRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10"
-              >
-                Compare Plans
-              </Button>
             </div>
           </div>
         </div>
@@ -256,9 +98,6 @@ export default function Pricing() {
                 <div
                   key={service.id}
                   className="pricing-card-wrapper"
-                  style={{
-                    animationDelay: `${index * 50}ms`,
-                  }}
                 >
                   <Card
                     className="pricing-card h-full relative overflow-hidden group border-0"
@@ -500,13 +339,6 @@ export default function Pricing() {
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white/10"
-            >
-              View Services
-            </Button>
           </div>
         </div>
       </section>

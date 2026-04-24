@@ -322,6 +322,11 @@
   transition: all 0.3s ease;
   background: rgba(30, 41, 59, 0.6) !important;
   border-color: #334155 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .pricing-tier-display:hover {
@@ -331,7 +336,6 @@
 }
 
 .pricing-tier-display .text-orange-400 {
-  animation: pricing-price-pulse 2s ease-in-out infinite;
   font-weight: 700;
 }
 
