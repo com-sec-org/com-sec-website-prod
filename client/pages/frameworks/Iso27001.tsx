@@ -657,33 +657,88 @@ export default function Iso27001() {
             <p className="text-xl text-muted-foreground">Clear, outcome-focused pricing for your ISO 27001 journey</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Internal Audit",
-                price: "$3,500",
-              },
-              {
-                name: "Full Audit Support",
-                price: "$8,500",
-              },
-              {
-                name: "Continued ISO 27001 Support",
-                price: "Custom Pricing",
-              },
-            ].map((plan, index) => (
-              <Card key={index} className="relative hover:shadow-xl transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-primary">{plan.name}</CardTitle>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">{plan.price}</div>
-                </CardHeader>
-                <CardContent>
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-500 hover:to-purple-600" asChild>
-                    <Link to="/contact">Get Started</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <Card className="relative hover:shadow-xl transition-all duration-300 border-2">
+              <CardHeader>
+                <CardTitle className="text-2xl text-primary">ISO 27001 Certification</CardTitle>
+                <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="text-sm text-muted-foreground mb-2">Starting Price</div>
+                  <div className="text-4xl font-bold text-blue-600">$4,000</div>
+                  <p className="text-xs text-muted-foreground mt-2">Custom pricing available based on scope</p>
+                </div>
+                <CardDescription className="mt-4">
+                  ISMS build out and ISO 27001 certification support with initial audit, management Stage 1 & 2 audits and assessor coordination.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">ISMS development</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Initial audit support</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Stage 1 & 2 coordination</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Documentation assistance</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Compliance mapping</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-500 hover:to-purple-600" asChild>
+                  <Link to="/contact">Get Started</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="relative hover:shadow-xl transition-all duration-300 border-2">
+              <CardHeader>
+                <CardTitle className="text-2xl text-primary">Internal Audit</CardTitle>
+                <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="text-sm text-muted-foreground mb-2">Starting Price</div>
+                  <div className="text-4xl font-bold text-blue-600">$3,500</div>
+                  <p className="text-xs text-muted-foreground mt-2">Custom pricing available based on scope</p>
+                </div>
+                <CardDescription className="mt-4">
+                  Independent internal audit or security risk assessment with comprehensive technical assessment and evidence collection.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Technical assessment</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Independent evaluation</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Evidence packaging</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Detailed reporting</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Risk prioritization</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-500 hover:to-purple-600" asChild>
+                  <Link to="/contact">Get Started</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

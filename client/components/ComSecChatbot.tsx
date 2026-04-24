@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FiSend } from "react-icons/fi";
 import { MessageSquare, X } from "lucide-react";
 
-const API_URL = "https://comsec-chatbot-backend.onrender.com/chat"; // ✅ Deployed FastAPI backend
+const API_URL = "/api/chat"; // ✅ Local Express backend endpoint
 
 export default function ComSecChatbot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ export default function ComSecChatbot() {
     {
       role: "bot",
       content:
-        "👋 Hi there! I'm <b>Com-Sec’s AI Assistant</b>. How can I help you today?<br/><br/>You can ask about our services, SOC 2, HIPAA, or compliance automation.",
+        "👋 Hi there! I'm <b>Com-Sec's AI Assistant</b>. How can I help you today?<br/><br/>You can ask about our services, SOC 2, HIPAA, or compliance automation.",
     },
   ]);
   const [input, setInput] = useState("");
@@ -39,15 +39,20 @@ export default function ComSecChatbot() {
         body: JSON.stringify({ message: input }),
       });
 
+      if (!res.ok) {
+        throw new Error(`Server error: ${res.status}`);
+      }
+
       const data = await res.json();
       setMessages((prev) => [
         ...prev,
-        { role: "bot", content: data.reply || "⚠️ Sorry, I couldn’t process that." },
+        { role: "bot", content: data.reply || "⚠️ Sorry, I couldn't process that." },
       ]);
     } catch (err) {
+      console.error("Fetch error:", err);
       setMessages((prev) => [
         ...prev,
-        { role: "bot", content: "❌ Something went wrong. Please try again later." },
+        { role: "bot", content: "❌ Connection error. Please try again later." },
       ]);
     } finally {
       setLoading(false);

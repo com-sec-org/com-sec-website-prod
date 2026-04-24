@@ -318,41 +318,46 @@ export default function Soc2() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
-            {[
-              {
-                name: "Continued SOC 2 Support",
-                price: "Custom pricing",
-                description:
-                  "We become your compliance team—owning ongoing evidence collection, control monitoring, auditor coordination, and security questionnaires.",
-                features: [
-                  "Quarterly risk and control reviews",
-                  "Evidence automation and upkeep",
-                  "Security questionnaire responses",
-                  "Executive reporting and metrics",
-                ],
-              },
-            ].map((plan, index) => (
-              <Card key={index} className="relative hover:shadow-xl transition-all duration-300 border-2">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-primary">{plan.name}</CardTitle>
-                  <div className="text-3xl font-bold text-accent mb-2">{plan.price}</div>
-                  <CardDescription>{plan.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 mb-6">
-                    {plan.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-3">
-                        <CheckCircle className="h-4 w-4 text-green-500" />
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="w-full bg-accent hover:bg-accent/90" asChild>
-                    <Link to="/contact">Get Started</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="relative hover:shadow-xl transition-all duration-300 border-2">
+              <CardHeader>
+                <CardTitle className="text-2xl text-primary">SOC 2 Type I & II</CardTitle>
+                <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="text-sm text-muted-foreground mb-2">Starting Price</div>
+                  <div className="text-4xl font-bold text-accent">$4,000</div>
+                  <p className="text-xs text-muted-foreground mt-2">Custom pricing available based on scope</p>
+                </div>
+                <CardDescription className="mt-4">
+                  Comprehensive SOC 2 Type I and Type II certification support including readiness assessment, testing, evidence collection, and validated assessor coordination.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Readiness assessment & gap analysis</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">SOC 2 Type I support</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">SOC 2 Type II testing</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Full evidence collection</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-sm">Assessor coordination</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-accent hover:bg-accent/90" asChild>
+                  <Link to="/contact">Get Started</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
