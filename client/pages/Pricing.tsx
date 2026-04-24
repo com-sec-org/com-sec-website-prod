@@ -244,12 +244,12 @@ export default function Pricing() {
                   className="pricing-card-wrapper"
                 >
                   <Card
-                    className="pricing-card h-full relative overflow-hidden group border-0"
+                    className="pricing-card h-full relative overflow-hidden group border-0 flex flex-col"
                   >
 
                     <div className="pricing-card-glow"></div>
 
-                    <CardHeader className="pb-4">
+                    <CardHeader className="pb-4 flex-grow">
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <p className="text-sm font-semibold text-orange-400 mb-2">
