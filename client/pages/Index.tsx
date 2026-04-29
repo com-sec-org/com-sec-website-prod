@@ -624,9 +624,9 @@ export default function Index() {
               <div className="inline-flex items-center bg-orange-500/10 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 text-orange-300 font-medium text-xs sm:text-sm border border-orange-400/30 hover:scale-105 transition-transform duration-300">
                 <Shield className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 animate-magical-sparkle flex-shrink-0" />
                 <span className="hidden sm:inline">
-                  SOC 2 • HITRUST • ISO 27001/42001 • GDPR • PCI-DSS • NIST
+                  SOC 2 • HITRUST • ISO 27001/42001 • GDPR • PCI-DSS • NIST • HIPAA
                 </span>
-                <span className="sm:hidden">SOC 2 • HITRUST • ISO 27001 • GDPR</span>
+                <span className="sm:hidden">SOC 2 • HITRUST • ISO 27001 • GDPR • HIPAA</span>
               </div>
             </div>
 
