@@ -293,14 +293,14 @@ export default function PenetrationTesting() {
                 key={index}
                 className={`group hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-slide-up animation-delay-${
                   (index + 1) * 100
-                } ${service.bgColor} border-t-4 border-t-orange-500 hover:border-t-orange-600 relative`}
+                } ${service.bgColor} border-t-4 border-t-orange-500 hover:border-t-orange-600 relative h-full flex flex-col`}
               >
                 {service.badge && (
                   <div className="absolute top-3 right-3 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     {service.badge}
                   </div>
                 )}
-                <CardHeader>
+                <CardHeader className="flex-1">
                   <service.icon
                     className={`h-12 w-12 mb-4 ${service.color} group-hover:scale-110 transition-transform duration-300`}
                   />
