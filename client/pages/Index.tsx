@@ -1348,36 +1348,36 @@ export default function Index() {
             {/* Vanta */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <img
-                src="https://assets-global.website-files.com/628f1a70ab0f8c4f8e1f4e5e/62fa19e4d5c0e4001f8e4e5e_vanta-logo.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F51011c42ef4446e7a0f23364ce72375b?format=webp&width=800&height=1200"
                 alt="Vanta"
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
 
             {/* DRATA */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <img
-                src="https://www.drata.com/drata-logo.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff58b2ec062d2440fb2a112b3bf9433f7?format=webp&width=800&height=1200"
                 alt="DRATA"
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
 
             {/* Prescient */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <img
-                src="https://prescient.io/logo.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fae6043776593495cbf1a3432528e588b?format=webp&width=800&height=1200"
                 alt="PRESCIENT"
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
 
             {/* Assurance Lab */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <img
-                src="https://assurancelab.io/assurance-lab-logo.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd2bdd9c43b1742a0b1408bafb13fdc4f?format=webp&width=800&height=1200"
                 alt="Assurance Lab"
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
           </div>
