@@ -1344,12 +1344,7 @@ export default function Index() {
           </div>
 
           {/* Partner Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
-            {/* A-LIGN */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">A-LIGN</div>
-            </div>
-
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
             {/* Vanta */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Vanta</div>
@@ -1360,54 +1355,14 @@ export default function Index() {
               <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">DRATA</div>
             </div>
 
-            {/* DRATA
-            <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-colors min-h-[60px]">
-              <img
-                src="/images/logo/Drata-logo-profile.jpg"
-                alt="Drata"
-                className="h-8 w-auto object-contain"
-              />
-            </div> */}
-
- 
-            {/* SPRINTO */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">SPRINTO</div>
-            </div>
-
-            {/* Assurance Lab */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Assurance Lab</div>
-            </div>
-
-            {/* Scrut */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Scrut</div>
-            </div>
-
             {/* Prescient */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">PRESCIENT</div>
             </div>
 
-            {/* MJD Advisors */}
+            {/* Assurance Lab */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">MJD Advisors</div>
-            </div>
-
-            {/* Socurely */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Socurely</div>
-            </div>
-
-            {/* oneleet */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">oneleet</div>
-            </div>
-
-            {/* Wiz */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Wiz</div>
+              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Assurance Lab</div>
             </div>
           </div>
 
