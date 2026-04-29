@@ -25,12 +25,12 @@ import "../styles/pricing.css";
 const pricingData = [
   {
     id: 1,
-    name: "vCISO (Remote Chief Information Security Officer)",
+    name: "vCISO + IT (Remote Chief Information Security Officer)",
     category: "Executive Security Leadership",
     type: "Monthly",
     startingPrice: "$2,500",
     description:
-      "Fractional Chief Information Security Officer engagement. Com-Sec embeds a senior security leader who owns the client's security program, policy, risk, and day-to-day escalation.",
+      "Fractional Chief Information Security Officer engagement plus 10 hours of IT support. Com-Sec embeds a senior security leader who owns the client's security program, policy, risk, and day-to-day escalation.",
     icon: Shield,
     benefits: [
       "Fractional CISO coverage",
@@ -38,8 +38,10 @@ const pricingData = [
       "Risk management oversight",
       "Policy development and review",
       "Board-level reporting",
+      "10 hours of IT support included",
     ],
     simplePrice: true,
+    badge: "MOST RECOMMENDED",
   },
   {
     id: 2,
@@ -255,7 +257,12 @@ export default function Pricing() {
 
                     <div className="pricing-card-glow"></div>
 
-                    <CardHeader className="pb-4 flex-grow">
+                    <CardHeader className="pb-4 flex-grow relative">
+                      {service.badge && (
+                        <div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                          {service.badge}
+                        </div>
+                      )}
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <p className="text-sm font-semibold text-orange-400 mb-2">
