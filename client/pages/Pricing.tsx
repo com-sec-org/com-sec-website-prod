@@ -25,12 +25,12 @@ import "../styles/pricing.css";
 const pricingData = [
   {
     id: 1,
-    name: "vCISO (Remote Chief Information Security Officer)",
+    name: "vCISO + IT (Remote Chief Information Security Officer)",
     category: "Executive Security Leadership",
     type: "Monthly",
     startingPrice: "$2,500",
     description:
-      "Fractional Chief Information Security Officer engagement. Com-Sec embeds a senior security leader who owns the client's security program, policy, risk, and day-to-day escalation.",
+      "Fractional Chief Information Security Officer engagement plus 10 hours of IT support. Com-Sec embeds a senior security leader who owns the client's security program, policy, risk, and day-to-day escalation.",
     icon: Shield,
     benefits: [
       "Fractional CISO coverage",
@@ -38,8 +38,10 @@ const pricingData = [
       "Risk management oversight",
       "Policy development and review",
       "Board-level reporting",
+      "10 hours of IT support included",
     ],
     simplePrice: true,
+    badge: "MOST RECOMMENDED",
   },
   {
     id: 2,
@@ -58,6 +60,7 @@ const pricingData = [
       "Assessor coordination",
     ],
     simplePrice: true,
+    href: "/soc2",
   },
   {
     id: 3,
@@ -76,6 +79,7 @@ const pricingData = [
       "Compliance mapping",
     ],
     simplePrice: true,
+    href: "/iso27001",
   },
   {
     id: 4,
@@ -94,6 +98,7 @@ const pricingData = [
       "Assessor coordination",
     ],
     simplePrice: true,
+    href: "/hitrust",
   },
   {
     id: 5,
@@ -118,18 +123,20 @@ const pricingData = [
     name: "Penetration Testing",
     category: "Extra Add-Ons",
     type: "Per-test",
-    startingPrice: "$3,500",
+    startingPrice: "$2,500",
     description:
-      "Manual + automated penetration testing across web, APIs, cloud, and internal networks with remediation guides.",
+      "Cloud penetration testing starting at $2,500. We also offer web application, network infrastructure, and mobile testing at higher price points. Manual + automated testing with remediation guides.",
     icon: Rocket,
     benefits: [
-      "Manual penetration testing",
-      "Automated scanning",
-      "Multi-vector assessment",
+      "Cloud penetration testing (Starting at $2,500)",
+      "Manual + automated scanning",
+      "AWS, Azure, GCP coverage",
+      "Configuration & IAM review",
       "Remediation roadmap",
       "Evidence documentation",
     ],
     simplePrice: true,
+    href: "/penetration-testing-services",
   },
   {
     id: 7,
@@ -138,16 +145,18 @@ const pricingData = [
     type: "Monthly",
     startingPrice: "$2,000",
     description:
-      "Outsourced IT helpdesk and endpoint operations including user onboarding, SSO, endpoint compliance, and role management.",
+      "Outsourced IT helpdesk and endpoint operations with 25-30 hours of support per month. Includes user onboarding, SSO, endpoint compliance, and role management.",
     icon: Zap,
     benefits: [
-      "24/7 helpdesk support",
+      "25-30 hours of monthly support",
+      "24/7 helpdesk access",
       "Endpoint management",
-      "User onboarding",
-      "Access control",
+      "User onboarding & access control",
       "Compliance monitoring",
+      "SSO implementation",
     ],
     simplePrice: true,
+    href: "/it-support",
   },
   {
     id: 8,
@@ -184,6 +193,7 @@ const pricingData = [
       "Security newsletters",
     ],
     simplePrice: true,
+    href: "/security-training",
   },
 ];
 
@@ -249,7 +259,12 @@ export default function Pricing() {
 
                     <div className="pricing-card-glow"></div>
 
-                    <CardHeader className="pb-4 flex-grow">
+                    <CardHeader className="pb-4 flex-grow relative">
+                      {service.badge && (
+                        <div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                          {service.badge}
+                        </div>
+                      )}
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <p className="text-sm font-semibold text-orange-400 mb-2">
@@ -347,12 +362,12 @@ export default function Pricing() {
                       </div>
 
                       {/* CTA Button */}
-                      <Link to="/contact">
+                      <Link to={service.href || "/contact"}>
                         <Button
                           className="w-full bg-slate-700 hover:bg-orange-500 text-white transition-colors pricing-cta-btn"
                           variant="default"
                         >
-                          Get Started
+                          {service.href ? "Learn More" : "Get Started"}
                           <ChevronRight className="ml-2 h-4 w-4" />
                         </Button>
                       </Link>

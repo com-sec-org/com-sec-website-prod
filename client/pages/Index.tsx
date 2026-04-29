@@ -406,7 +406,7 @@ export default function Index() {
                   className="text-sm font-bold bg-gradient-to-r from-cyan-400 via-blue-300 to-cyan-600 bg-clip-text text-transparent filter drop-shadow-[0_0_15px_rgba(6,182,212,1)] animate-pulse animation-delay-1500"
                   style={{ textShadow: "0 0 25px rgba(6,182,212,1)" }}
                 >
-                  ISO
+                  ISO 27001/42001
                 </span>
                 <div className="absolute -inset-2 bg-cyan-500/30 rounded-full blur-sm animate-ping animation-delay-1500"></div>
               </div>
@@ -461,12 +461,12 @@ export default function Index() {
               </div>
               <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 transform hover:scale-150 transition-transform duration-500">
                 <span
-                  className="text-sm font-bold bg-gradient-to-r from-teal-400 via-cyan-300 to-teal-600 bg-clip-text text-transparent filter drop-shadow-[0_0_15px_rgba(20,184,166,1)] animate-pulse animation-delay-2100"
-                  style={{ textShadow: "0 0 25px rgba(20,184,166,1)" }}
+                  className="text-sm font-bold bg-gradient-to-r from-green-400 via-emerald-300 to-green-600 bg-clip-text text-transparent filter drop-shadow-[0_0_15px_rgba(34,197,94,1)] animate-pulse animation-delay-2100"
+                  style={{ textShadow: "0 0 25px rgba(34,197,94,1)" }}
                 >
-                  CMMC
+                  HIPAA
                 </span>
-                <div className="absolute -inset-2 bg-teal-500/30 rounded-full blur-sm animate-ping animation-delay-2100"></div>
+                <div className="absolute -inset-2 bg-green-500/30 rounded-full blur-sm animate-ping animation-delay-2100"></div>
               </div>
             </div>
           </div>
@@ -624,9 +624,9 @@ export default function Index() {
               <div className="inline-flex items-center bg-orange-500/10 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 text-orange-300 font-medium text-xs sm:text-sm border border-orange-400/30 hover:scale-105 transition-transform duration-300">
                 <Shield className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 animate-magical-sparkle flex-shrink-0" />
                 <span className="hidden sm:inline">
-                  SOC 2 • HIPAA • ISO 27001 • GDPR • PCI-DSS • NIST
+                  SOC 2 • HITRUST • ISO 27001/42001 • GDPR • PCI-DSS • NIST • HIPAA
                 </span>
-                <span className="sm:hidden">SOC 2 • HIPAA • ISO 27001</span>
+                <span className="sm:hidden">SOC 2 • HITRUST • ISO 27001 • GDPR • HIPAA</span>
               </div>
             </div>
 
@@ -1344,70 +1344,41 @@ export default function Index() {
           </div>
 
           {/* Partner Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
-            {/* A-LIGN */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">A-LIGN</div>
-            </div>
-
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
             {/* Vanta */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Vanta</div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F51011c42ef4446e7a0f23364ce72375b?format=webp&width=800&height=1200"
+                alt="Vanta"
+                className="h-12 w-auto object-contain"
+              />
             </div>
 
             {/* DRATA */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">DRATA</div>
-            </div>
-
-            {/* DRATA
-            <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-colors min-h-[60px]">
               <img
-                src="/images/logo/Drata-logo-profile.jpg"
-                alt="Drata"
-                className="h-8 w-auto object-contain"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff58b2ec062d2440fb2a112b3bf9433f7?format=webp&width=800&height=1200"
+                alt="DRATA"
+                className="h-12 w-auto object-contain"
               />
-            </div> */}
-
- 
-            {/* SPRINTO */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">SPRINTO</div>
-            </div>
-
-            {/* Assurance Lab */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Assurance Lab</div>
-            </div>
-
-            {/* Scrut */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Scrut</div>
             </div>
 
             {/* Prescient */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">PRESCIENT</div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fae6043776593495cbf1a3432528e588b?format=webp&width=800&height=1200"
+                alt="PRESCIENT"
+                className="h-12 w-auto object-contain"
+              />
             </div>
 
-            {/* MJD Advisors */}
+            {/* Assurance Lab */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">MJD Advisors</div>
-            </div>
-
-            {/* Socurely */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Socurely</div>
-            </div>
-
-            {/* oneleet */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">oneleet</div>
-            </div>
-
-            {/* Wiz */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Wiz</div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd2bdd9c43b1742a0b1408bafb13fdc4f?format=webp&width=800&height=1200"
+                alt="Assurance Lab"
+                className="h-12 w-auto object-contain"
+              />
             </div>
           </div>
 

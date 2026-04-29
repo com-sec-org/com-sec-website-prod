@@ -241,6 +241,94 @@ export default function PenetrationTesting() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Penetration Testing Pricing
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Customizable pricing based on scope, complexity, and testing approach
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Web Application",
+                description: "OWASP Top 10, APIs, auth flows, RBAC, session management, input validation, business logic testing.",
+                icon: Monitor,
+                price: "$3,500",
+                color: "text-green-600",
+                bgColor: "bg-green-50 hover:bg-green-100",
+                badge: "POPULAR",
+              },
+              {
+                title: "Cloud Infrastructure",
+                description: "Review of configurations, IAM controls, network segmentation, exposed services, and privilege escalation paths across AWS, Azure, and GCP.",
+                icon: Globe,
+                price: "$2,500",
+                color: "text-blue-600",
+                bgColor: "bg-blue-50 hover:bg-blue-100",
+              },
+              {
+                title: "Network Infrastructure",
+                description: "Internal/external network testing, firewall & VPN review, port/service enumeration AD exploitation, lateral movement, etc.",
+                icon: Wifi,
+                price: "$2,500",
+                color: "text-purple-600",
+                bgColor: "bg-purple-50 hover:bg-purple-100",
+              },
+              {
+                title: "Mobile Application",
+                description: "iOS/Android binary analysis, local storage review, API layer testing, cert pinning, runtime manipulation.",
+                icon: Shield,
+                price: "$6,500",
+                color: "text-red-600",
+                bgColor: "bg-red-50 hover:bg-red-100",
+              },
+            ].map((service, index) => (
+              <Card
+                key={index}
+                className={`group hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-slide-up animation-delay-${
+                  (index + 1) * 100
+                } ${service.bgColor} border-t-4 border-t-orange-500 hover:border-t-orange-600 relative h-full flex flex-col`}
+              >
+                {service.badge && (
+                  <div className="absolute top-3 right-3 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    {service.badge}
+                  </div>
+                )}
+                <CardHeader className="flex-1">
+                  <service.icon
+                    className={`h-12 w-12 mb-4 ${service.color} group-hover:scale-110 transition-transform duration-300`}
+                  />
+                  <CardTitle className="text-xl group-hover:text-orange-600 transition-colors">
+                    {service.title}
+                  </CardTitle>
+                  <CardDescription className="text-base leading-relaxed mt-2">
+                    {service.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-2xl font-bold text-orange-600">
+                    FROM <br />
+                    <span className="text-3xl">{service.price}</span>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="mt-12 p-8 bg-white rounded-xl border-2 border-orange-200">
+            <p className="text-center text-gray-600 text-lg">
+              <span className="font-semibold text-primary">Custom pricing available</span> based on scope, engagement duration, and specific testing requirements. Contact us for a detailed quote.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Methodology Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-red-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -324,110 +412,82 @@ export default function PenetrationTesting() {
         </div>
       </section>
 
-      {/* Process Timeline */}
+      {/* Engagement Timeline */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Penetration Testing Process
+              Engagement Timeline (3 to 6 Weeks)
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Our systematic approach ensures thorough testing and actionable
-              results
+              Typical engagement duration varies based on scope and testing requirements
             </p>
           </div>
 
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-red-200"></div>
-
-            <div className="space-y-12">
-              {[
-                {
-                  phase: "Planning & Reconnaissance",
-                  description:
-                    "Define scope, gather intelligence, and understand target systems",
-                  icon: Target,
-                  duration: "2-3 days",
-                },
-                {
-                  phase: "Scanning & Enumeration",
-                  description:
-                    "Identify live systems, open ports, services, and potential entry points",
-                  icon: Search,
-                  duration: "3-5 days",
-                },
-                {
-                  phase: "Vulnerability Assessment",
-                  description:
-                    "Analyze identified vulnerabilities and assess their exploitability",
-                  icon: AlertTriangle,
-                  duration: "2-4 days",
-                },
-                {
-                  phase: "Exploitation",
-                  description:
-                    "Safely exploit vulnerabilities to demonstrate real-world impact",
-                  icon: Zap,
-                  duration: "3-7 days",
-                },
-                {
-                  phase: "Post-Exploitation",
-                  description:
-                    "Assess data access, privilege escalation, and lateral movement capabilities",
-                  icon: Eye,
-                  duration: "2-3 days",
-                },
-                {
-                  phase: "Reporting",
-                  description:
-                    "Comprehensive report with findings, risks, and remediation recommendations",
-                  icon: Shield,
-                  duration: "2-3 days",
-                },
-              ].map((phase, index) => (
-                <div
-                  key={index}
-                  className={`flex items-center ${
-                    index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                  } animate-slide-in-${
-                    index % 2 === 0 ? "left" : "right"
-                  } animation-delay-${index * 100}`}
-                >
-                  <div className="flex-1 px-8">
-                    <Card
-                      className={`hover:shadow-lg transition-all duration-300 transform hover:scale-105 ${
-                        index % 2 === 0 ? "mr-8" : "ml-8"
-                      }`}
-                    >
-                      <CardContent className="p-6">
-                        <div className="flex items-start gap-4">
-                          <phase.icon className="h-8 w-8 text-red-600 flex-shrink-0 mt-1" />
-                          <div>
-                            <h3 className="text-xl font-bold text-primary mb-2">
-                              {phase.phase}
-                            </h3>
-                            <p className="text-muted-foreground mb-2">
-                              {phase.description}
-                            </p>
-                            <div className="text-sm text-red-600 font-medium">
-                              Duration: {phase.duration}
-                            </div>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                phase: "Week 1",
+                title: "Scope, Recon, Scanning",
+                description:
+                  "Map attack surface using passive and active methods",
+                icon: Search,
+                color: "text-blue-600",
+                bgColor: "bg-blue-50",
+              },
+              {
+                phase: "Week 2-4",
+                title: "Vuln ID & Exploitation",
+                description:
+                  "Exploit vulnerabilities, escalate privileges, assess risk",
+                icon: Zap,
+                color: "text-red-600",
+                bgColor: "bg-red-50",
+              },
+              {
+                phase: "Week 5-6",
+                title: "Reporting & Remediation",
+                description:
+                  "Detailed findings with fix guidance and retest",
+                icon: Shield,
+                color: "text-green-600",
+                bgColor: "bg-green-50",
+              },
+            ].map((phase, index) => (
+              <Card
+                key={index}
+                className={`hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-slide-up animation-delay-${
+                  (index + 1) * 100
+                } ${phase.bgColor} border-t-4 border-t-orange-500`}
+              >
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-4 mb-4">
+                    <phase.icon className={`h-8 w-8 ${phase.color} flex-shrink-0`} />
+                    <div>
+                      <div className="text-sm font-bold text-orange-600 mb-1">
+                        {phase.phase}
+                      </div>
+                      <h3 className="text-2xl font-bold text-primary">
+                        {phase.title}
+                      </h3>
+                    </div>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {phase.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
 
-                  {/* Timeline dot */}
-                  <div className="relative z-10">
-                    <div className="w-6 h-6 bg-red-600 rounded-full border-4 border-white shadow-lg"></div>
-                  </div>
-
-                  <div className="flex-1"></div>
-                </div>
-              ))}
-            </div>
+          <div className="mt-12 p-8 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-200">
+            <h3 className="text-lg font-semibold text-primary mb-4">Ready?</h3>
+            <p className="text-gray-700 mb-4">
+              Retesting & Validation
+            </p>
+            <p className="text-gray-600">
+              Pricing scoped on expected hours, endpoints, assets, roles, and complexity. Customizable per engagement.
+            </p>
           </div>
         </div>
       </section>
@@ -439,56 +499,61 @@ export default function PenetrationTesting() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               What You'll Receive
             </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Comprehensive deliverables to understand and remediate identified vulnerabilities
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="text-2xl text-red-600 mb-4">
-                  📊 Executive Summary Report
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    High-level security posture assessment
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    Business risk analysis and impact
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    Strategic recommendations for C-level
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="text-2xl text-red-600 mb-4">
-                  🔧 Technical Report
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    Detailed vulnerability findings
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    Step-by-step exploitation proof
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    Specific remediation guidance
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Comprehensive Security Report",
+                icon: "📋",
+                description: "Complete technical findings with detailed vulnerability descriptions",
+              },
+              {
+                title: "Remediation Recommendations",
+                icon: "🔧",
+                description: "Specific step-by-step guidance for fixing each identified vulnerability",
+              },
+              {
+                title: "Risk Assessment (CVSS Scoring)",
+                icon: "⚠️",
+                description: "Vulnerability severity ratings using CVSS framework for prioritization",
+              },
+              {
+                title: "Post Remediation Retesting",
+                icon: "✓",
+                description: "Follow-up testing to verify successful remediation of vulnerabilities",
+              },
+              {
+                title: "Executive Summary",
+                icon: "📊",
+                description: "High-level overview of findings for leadership and C-suite stakeholders",
+              },
+              {
+                title: "Attestation Letter",
+                icon: "✅",
+                description: "Official documentation confirming completion of penetration testing engagement",
+              },
+            ].map((item, index) => (
+              <Card
+                key={index}
+                className={`hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-slide-up animation-delay-${
+                  (index + 1) * 100
+                } bg-white hover:bg-red-50 border-l-4 border-l-red-500 hover:border-l-red-600`}
+              >
+                <CardContent className="p-8">
+                  <div className="text-4xl mb-4">{item.icon}</div>
+                  <h3 className="text-xl font-bold text-primary mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

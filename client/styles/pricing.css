@@ -55,7 +55,7 @@
 }
 
 .pricing-hero {
-  animation: pricing-hero-glow 4s ease-in-out infinite;
+  /* Static - no animation */
 }
 
 .pricing-hero-animation {
@@ -65,12 +65,10 @@
     rgba(251, 146, 60, 0.05) 50%,
     rgba(255, 255, 255, 0.05) 100%
   );
-  background-size: 200% 200%;
-  animation: pricing-hero-animation 6s ease infinite;
 }
 
 .pricing-hero-title {
-  animation: pricing-hero-title-float 3s ease-in-out infinite;
+  /* Static - no animation */
 }
 
 .pricing-hero-subtitle {
