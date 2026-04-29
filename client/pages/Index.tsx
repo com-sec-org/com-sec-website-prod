@@ -354,7 +354,7 @@ export default function Index() {
         </div>
 
         {/* ULTRA CRAZY Orbital Framework Pattern with 3D Effects */}
-        <div className="absolute inset-0 z-5 pointer-events-none">
+        <div className="absolute inset-0 z-5 pointer-events-none hidden">
           {/* Left Side INSANE Orbital Pattern */}
           <div className="absolute left-8 top-1/2 -translate-y-1/2 w-32 h-32 opacity-80">
             {/* 3D Holographic Ring */}
