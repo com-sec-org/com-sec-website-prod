@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -58,6 +59,7 @@ const pricingData = [
       "Assessor coordination",
     ],
     simplePrice: true,
+    href: "/soc2",
   },
   {
     id: 3,
@@ -76,6 +78,7 @@ const pricingData = [
       "Compliance mapping",
     ],
     simplePrice: true,
+    href: "/iso27001",
   },
   {
     id: 4,
@@ -94,6 +97,7 @@ const pricingData = [
       "Assessor coordination",
     ],
     simplePrice: true,
+    href: "/hitrust",
   },
   {
     id: 5,
@@ -130,6 +134,7 @@ const pricingData = [
       "Evidence documentation",
     ],
     simplePrice: true,
+    href: "/penetration-testing-services",
   },
   {
     id: 7,
@@ -148,6 +153,7 @@ const pricingData = [
       "Compliance monitoring",
     ],
     simplePrice: true,
+    href: "/it-support",
   },
   {
     id: 8,
@@ -184,6 +190,7 @@ const pricingData = [
       "Security newsletters",
     ],
     simplePrice: true,
+    href: "/security-training",
   },
 ];
 
@@ -238,13 +245,15 @@ export default function Pricing() {
           <div className="pricing-grid">
             {pricingData.map((service, index) => {
               const IconComponent = service.icon;
+              const CardWrapper = service.href ? Link : 'div';
               return (
-                <div
+                <CardWrapper
                   key={service.id}
+                  to={service.href}
                   className="pricing-card-wrapper"
                 >
                   <Card
-                    className="pricing-card h-full relative overflow-hidden group border-0 flex flex-col"
+                    className="pricing-card h-full relative overflow-hidden group border-0 flex flex-col cursor-pointer hover:shadow-xl transition-shadow"
                   >
 
                     <div className="pricing-card-glow"></div>
@@ -347,18 +356,18 @@ export default function Pricing() {
                       </div>
 
                       {/* CTA Button */}
-                      <Link to="/contact">
+                      <Link to={service.href || "/contact"}>
                         <Button
                           className="w-full bg-slate-700 hover:bg-orange-500 text-white transition-colors pricing-cta-btn"
                           variant="default"
                         >
-                          Get Started
+                          {service.href ? "Learn More" : "Get Started"}
                           <ChevronRight className="ml-2 h-4 w-4" />
                         </Button>
                       </Link>
                     </div>
                   </Card>
-                </div>
+                </CardWrapper>
               );
             })}
           </div>
