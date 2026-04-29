@@ -1347,22 +1347,38 @@ export default function Index() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
             {/* Vanta */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Vanta</div>
+              <img
+                src="https://assets-global.website-files.com/628f1a70ab0f8c4f8e1f4e5e/62fa19e4d5c0e4001f8e4e5e_vanta-logo.svg"
+                alt="Vanta"
+                className="h-10 w-auto object-contain"
+              />
             </div>
 
             {/* DRATA */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">DRATA</div>
+              <img
+                src="https://www.drata.com/drata-logo.svg"
+                alt="DRATA"
+                className="h-10 w-auto object-contain"
+              />
             </div>
 
             {/* Prescient */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">PRESCIENT</div>
+              <img
+                src="https://prescient.io/logo.svg"
+                alt="PRESCIENT"
+                className="h-10 w-auto object-contain"
+              />
             </div>
 
             {/* Assurance Lab */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
-              <div className="text-center text-gray-800 text-lg sm:text-xl font-semibold">Assurance Lab</div>
+              <img
+                src="https://assurancelab.io/assurance-lab-logo.svg"
+                alt="Assurance Lab"
+                className="h-10 w-auto object-contain"
+              />
             </div>
           </div>
 
