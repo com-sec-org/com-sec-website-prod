@@ -459,6 +459,15 @@ export default function Index() {
                 </span>
                 <div className="absolute -inset-2 bg-indigo-500/30 rounded-full blur-sm animate-ping animation-delay-1400"></div>
               </div>
+              <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 transform hover:scale-150 transition-transform duration-500">
+                <span
+                  className="text-sm font-bold bg-gradient-to-r from-green-400 via-emerald-300 to-green-600 bg-clip-text text-transparent filter drop-shadow-[0_0_15px_rgba(34,197,94,1)] animate-pulse animation-delay-2100"
+                  style={{ textShadow: "0 0 25px rgba(34,197,94,1)" }}
+                >
+                  HIPAA
+                </span>
+                <div className="absolute -inset-2 bg-green-500/30 rounded-full blur-sm animate-ping animation-delay-2100"></div>
+              </div>
             </div>
           </div>
 
