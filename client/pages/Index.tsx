@@ -1375,7 +1375,7 @@ export default function Index() {
             {/* Sensiba */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fa8d7f3c4e5b2a9d1c6f3e8b5a2c9d6f3?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F2b1a1cea90024ad6a92208b79d4a0bf0?format=webp&width=800&height=1200"
                 alt="Sensiba"
                 className="h-12 w-auto object-contain"
               />
@@ -1384,7 +1384,7 @@ export default function Index() {
             {/* Kertos */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fb7e4d2c1f6a9c3e8b1d5f9a3c6e2b8d4?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F3bcdc27a2b6b492a85d93650685c156a?format=webp&width=800&height=1200"
                 alt="Kertos"
                 className="h-12 w-auto object-contain"
               />
