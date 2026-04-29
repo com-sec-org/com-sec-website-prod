@@ -244,15 +244,13 @@ export default function Pricing() {
           <div className="pricing-grid">
             {pricingData.map((service, index) => {
               const IconComponent = service.icon;
-              const CardWrapper = service.href ? Link : 'div';
               return (
-                <CardWrapper
+                <div
                   key={service.id}
-                  to={service.href}
                   className="pricing-card-wrapper"
                 >
                   <Card
-                    className="pricing-card h-full relative overflow-hidden group border-0 flex flex-col cursor-pointer hover:shadow-xl transition-shadow"
+                    className="pricing-card h-full relative overflow-hidden group border-0 flex flex-col"
                   >
 
                     <div className="pricing-card-glow"></div>
@@ -366,7 +364,7 @@ export default function Pricing() {
                       </Link>
                     </div>
                   </Card>
-                </CardWrapper>
+                </div>
               );
             })}
           </div>
