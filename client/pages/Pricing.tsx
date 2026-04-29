@@ -125,13 +125,13 @@ const pricingData = [
     type: "Per-test",
     startingPrice: "$2,500",
     description:
-      "Comprehensive penetration testing covering cloud, web, network, and mobile applications. Manual + automated testing with remediation guides.",
+      "Cloud penetration testing starting at $2,500. We also offer web application, network infrastructure, and mobile testing at higher price points. Manual + automated testing with remediation guides.",
     icon: Rocket,
     benefits: [
-      "Cloud penetration testing",
-      "Web application testing",
-      "Network infrastructure testing",
-      "Mobile application testing",
+      "Cloud penetration testing (Starting at $2,500)",
+      "Manual + automated scanning",
+      "AWS, Azure, GCP coverage",
+      "Configuration & IAM review",
       "Remediation roadmap",
       "Evidence documentation",
     ],
