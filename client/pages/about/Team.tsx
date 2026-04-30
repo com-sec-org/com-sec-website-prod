@@ -278,7 +278,7 @@ export default function Team() {
                             member.name === "Banu Priya"
                               ? "object-cover object-top"
                               : member.name === "Samuel Soto"
-                                ? "object-cover object-center scale-150 -translate-y-4"
+                                ? "object-cover object-top"
                                 : "object-cover object-center"
                           }`}
                         />
