@@ -78,7 +78,7 @@ export default function Team() {
       role: "Security & Compliance Manager",
       image: "/images/team/Manoj.png",
       description:
-        "Manoj is a Security Analyst at Com-Sec, focused on threat monitoring, incident response, and security compliance. He works with tools like CrowdStrike, AWS, and Jira to investigate alerts, assess risks, and streamline security operations. His contributions enhance the organization's security posture and support audit readiness across cloud and on-prem environments.",
+        "Manoj is a Security & Compliance Manager at Com-Sec, leading comprehensive compliance and security frameworks including SOC 2, HIPAA, ISO 27001, and NIST. He oversees internal audits, ensures regulatory alignment, and drives continuous compliance excellence across the organization. Manoj's strategic approach strengthens security posture and maintains audit readiness.",
       expertise: [
         "CrowdStrike",
         "AWS Security",
@@ -117,7 +117,7 @@ export default function Team() {
       role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
       description:
-        "Security Analyst at Com-Sec with expertise in vulnerability assessment, threat analysis, and security monitoring. Parag specializes in identifying security gaps and implementing robust protection measures to safeguard client environments and ensure compliance readiness.",
+        "Parag is a Security & Compliance Manager at Com-Sec, leading organizational compliance initiatives and security frameworks. He manages internal audits, ensures adherence to regulatory requirements like SOC 2, HIPAA, and ISO 27001, and drives continuous improvement in security and compliance posture. Parag's strategic leadership ensures audit excellence and organizational resilience.",
       expertise: [
         "Threat Analysis",
         "Vulnerability Assessment",
