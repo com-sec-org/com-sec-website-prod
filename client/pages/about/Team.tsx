@@ -151,6 +151,19 @@ export default function Team() {
         "Data Analytics",
       ],
     },
+    {
+      name: "Shamanth Hedge",
+      role: "Security Analyst",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F65b03672c099425f8390d8397f0bc904?format=webp&width=800&height=1200",
+      description:
+        "Shamanth is a Security Analyst at Com-Sec with expertise in security assessments, threat detection, and vulnerability management. He specializes in conducting comprehensive security evaluations, identifying potential risks, and implementing effective mitigation strategies. Shamanth's analytical approach and technical expertise help strengthen organizational security postures and ensure comprehensive protection against emerging threats.",
+      expertise: [
+        "Security Assessments",
+        "Threat Detection",
+        "Vulnerability Management",
+        "Risk Mitigation",
+      ],
+    },
   ];
 
   return (
