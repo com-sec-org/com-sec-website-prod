@@ -75,10 +75,10 @@ export default function Team() {
     },
     {
       name: "Manoj Kumar",
-      role: "Security Analyst",
+      role: "Security & Compliance Manager",
       image: "/images/team/Manoj.png",
       description:
-        "Manoj is a Security Analyst at Com-Sec, focused on threat monitoring, incident response, and security compliance. He works with tools like CrowdStrike, AWS, and Jira to investigate alerts, assess risks, and streamline security operations. His contributions enhance the organization's security posture and support audit readiness across cloud and on-prem environments.",
+        "Manoj is a Security & Compliance Manager at Com-Sec, leading comprehensive compliance and security frameworks including SOC 2, HIPAA, ISO 27001, and NIST. He oversees internal audits, ensures regulatory alignment, and drives continuous compliance excellence across the organization. Manoj's strategic approach strengthens security posture and maintains audit readiness.",
       expertise: [
         "CrowdStrike",
         "AWS Security",
@@ -102,7 +102,7 @@ export default function Team() {
     {
       name: "Samuel Soto",
       role: "Security Analyst",
-      image: "/images/team/Samuel.jpg",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fedc62bbb75074a7d85c61c1b616b6911?format=webp&width=800&height=1200",
       description:
         "Samuel is a Security Analyst at Com-Sec with expertise in continuous security monitoring and rapid incident response. He specializes in analyzing security logs, detecting anomalies, and coordinating response efforts to minimize impact. Samuel's proactive monitoring approach and analytical mindset ensure early threat detection and swift resolution of security incidents.",
       expertise: [
@@ -114,10 +114,10 @@ export default function Team() {
     },
     {
       name: "Parag Khankari",
-      role: "Security Analyst",
+      role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
       description:
-        "Security Analyst at Com-Sec with expertise in vulnerability assessment, threat analysis, and security monitoring. Parag specializes in identifying security gaps and implementing robust protection measures to safeguard client environments and ensure compliance readiness.",
+        "Parag is a Security & Compliance Manager at Com-Sec, leading organizational compliance initiatives and security frameworks. He manages internal audits, ensures adherence to regulatory requirements like SOC 2, HIPAA, and ISO 27001, and drives continuous improvement in security and compliance posture. Parag's strategic leadership ensures audit excellence and organizational resilience.",
       expertise: [
         "Threat Analysis",
         "Vulnerability Assessment",
@@ -149,6 +149,19 @@ export default function Team() {
         "Power BI",
         "Compliance Reporting",
         "Data Analytics",
+      ],
+    },
+    {
+      name: "Shamanth Hedge",
+      role: "Security Analyst",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F65b03672c099425f8390d8397f0bc904?format=webp&width=800&height=1200",
+      description:
+        "Shamanth is a Security Analyst at Com-Sec with expertise in security assessments, threat detection, and vulnerability management. He specializes in conducting comprehensive security evaluations, identifying potential risks, and implementing effective mitigation strategies. Shamanth's analytical approach and technical expertise help strengthen organizational security postures and ensure comprehensive protection against emerging threats.",
+      expertise: [
+        "Security Assessments",
+        "Threat Detection",
+        "Vulnerability Management",
+        "Risk Mitigation",
       ],
     },
   ];
@@ -278,7 +291,7 @@ export default function Team() {
                             member.name === "Banu Priya"
                               ? "object-cover object-top"
                               : member.name === "Samuel Soto"
-                                ? "object-cover object-center scale-150 -translate-y-4"
+                                ? "object-cover object-top"
                                 : "object-cover object-center"
                           }`}
                         />

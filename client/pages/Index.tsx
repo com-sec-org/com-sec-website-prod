@@ -1344,7 +1344,7 @@ export default function Index() {
           </div>
 
           {/* Partner Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
             {/* Vanta */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <img
@@ -1372,11 +1372,20 @@ export default function Index() {
               />
             </div>
 
-            {/* Assurance Lab */}
+            {/* Sensiba */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd2bdd9c43b1742a0b1408bafb13fdc4f?format=webp&width=800&height=1200"
-                alt="Assurance Lab"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F2b1a1cea90024ad6a92208b79d4a0bf0?format=webp&width=800&height=1200"
+                alt="Sensiba"
+                className="h-12 w-auto object-contain"
+              />
+            </div>
+
+            {/* Kertos */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg hover:bg-white/95 transition-colors min-h-[84px]">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F3bcdc27a2b6b492a85d93650685c156a?format=webp&width=800&height=1200"
+                alt="Kertos"
                 className="h-12 w-auto object-contain"
               />
             </div>

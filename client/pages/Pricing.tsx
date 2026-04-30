@@ -41,7 +41,7 @@ const pricingData = [
       "10 hours of IT support included",
     ],
     simplePrice: true,
-    badge: "MOST RECOMMENDED",
+    badge: "MOST POPULAR",
   },
   {
     id: 2,
@@ -261,7 +261,7 @@ export default function Pricing() {
 
                     <CardHeader className="pb-4 flex-grow relative">
                       {service.badge && (
-                        <div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        <div className="absolute top-2 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                           {service.badge}
                         </div>
                       )}
