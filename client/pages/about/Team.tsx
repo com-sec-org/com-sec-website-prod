@@ -102,7 +102,7 @@ export default function Team() {
     {
       name: "Samuel Soto",
       role: "Security Analyst",
-      image: "/images/team/Samuel.jpg",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fedc62bbb75074a7d85c61c1b616b6911?format=webp&width=800&height=1200",
       description:
         "Samuel is a Security Analyst at Com-Sec with expertise in continuous security monitoring and rapid incident response. He specializes in analyzing security logs, detecting anomalies, and coordinating response efforts to minimize impact. Samuel's proactive monitoring approach and analytical mindset ensure early threat detection and swift resolution of security incidents.",
       expertise: [
