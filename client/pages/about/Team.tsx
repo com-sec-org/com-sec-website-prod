@@ -75,7 +75,7 @@ export default function Team() {
     },
     {
       name: "Manoj Kumar",
-      role: "Security Analyst",
+      role: "Security & Compliance Manager",
       image: "/images/team/Manoj.png",
       description:
         "Manoj is a Security Analyst at Com-Sec, focused on threat monitoring, incident response, and security compliance. He works with tools like CrowdStrike, AWS, and Jira to investigate alerts, assess risks, and streamline security operations. His contributions enhance the organization's security posture and support audit readiness across cloud and on-prem environments.",
@@ -114,7 +114,7 @@ export default function Team() {
     },
     {
       name: "Parag Khankari",
-      role: "Security Analyst",
+      role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
       description:
         "Security Analyst at Com-Sec with expertise in vulnerability assessment, threat analysis, and security monitoring. Parag specializes in identifying security gaps and implementing robust protection measures to safeguard client environments and ensure compliance readiness.",
