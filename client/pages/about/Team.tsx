@@ -76,7 +76,7 @@ export default function Team() {
     {
       name: "Manoj Kumar",
       role: "Director of Client Service",
-      image: "/images/team/Manoj.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
       description:
         "Manoj is the Director of Client Service at Com-Sec, leading client-focused initiatives and ensuring exceptional service delivery. He oversees client relationships, manages comprehensive compliance and security frameworks including SOC 2, HIPAA, ISO 27001, and NIST, and drives continuous excellence. Manoj's customer-centric approach strengthens client relationships and ensures measurable success.",
       expertise: [
@@ -89,7 +89,7 @@ export default function Team() {
     {
       name: "Banu Priya",
       role: "Security & Compliance Manager",
-      image: "/images/team/Banu.jpg",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fc37523b82ac94584b7e6a509ac7eb695?format=webp&width=800&height=1200",
       description:
         "Banu is a Security & Compliance Manager at Com-Sec, specializing in comprehensive compliance management and security frameworks. She conducts thorough security evaluations, manages compliance initiatives, and implements effective security strategies. Banu's analytical skills and attention to detail help strengthen organizational security postures and ensure continuous compliance excellence.",
       expertise: [
@@ -128,7 +128,7 @@ export default function Team() {
     {
       name: "Raj Dayakar",
       role: "Security Analyst",
-      image: "/images/team/Raj.jpg",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F4ca37786738c44d7b3e42c41f7f08e4c?format=webp&width=800&height=1200",
       description:
         "Raj is a Security Analyst at Com-Sec, specializing in IT support, compliance, and cybersecurity. He identifies and remediates vulnerabilities in websites and systems, ensuring robust security measures. Raj's proactive approach keeps the infrastructure secure and compliant with industry standards.",
       expertise: [
