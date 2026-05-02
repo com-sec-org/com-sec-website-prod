@@ -25,6 +25,7 @@ import SocSupport from "./pages/services/SocSupport";
 import SecurityTraining from "./pages/services/SecurityTraining";
 import RiskManagement from "./pages/services/RiskManagement";
 
+
 // Framework Pages
 import Soc2Framework from "./pages/frameworks/Soc2";
 import Iso27001 from "./pages/frameworks/Iso27001";
@@ -86,6 +87,9 @@ import HowToEngageAVciso2026 from "./pages/resources/blog/HowToEngageAVciso2026"
 import Top10OnlineSafetyTips from "./pages/resources/blog/Top10OnlineSafetyTips";
 import AutomatedVsManualPenetrationTesting2026 from "./pages/resources/blog/AutomatedVsManualPenetrationTesting2026";
 import AgenticAiGovernanceHealthcare2026 from "./pages/resources/blog/AgenticAiGovernanceHealthcare2026";
+import Soc2AuditChecklistGuide2026 from "./pages/resources/blog/Soc2auditchecklistguide2026";
+import Soc2PreparationGuide2026 from "./pages/resources/blog/Soc2preparationguide2026";
+
 
 const queryClient = new QueryClient();
 
@@ -254,6 +258,7 @@ const App = () => (
               <Route path="/blog/ai-ethics-healthcare-innovation" element={<AiEthicsHealthcare />} />
               <Route path="/blog/patient-confidentiality-ai-healthcare" element={<Navigate to="/" replace />} />
               <Route path="/blog/human-side-ai-patient-safety" element={<HumanSideAiPatientSafety />} />
+              <Route path="/blog/how-to-prepare-for-soc2-2026" element={<Soc2PreparationGuide2026 />} />
               <Route
                 path="/blog/soc2-vs-iso27001-comparison"
                 element={
@@ -295,6 +300,7 @@ const App = () => (
               <Route path="/blog/what-the-latest-ftc-guidelines-mean-for-smbs-in-2026" element={<LatestFtcGuidelinesSmbs2026 />}/>
               <Route path="/blog/the-order-of-operations-for-engaging-a-vciso-a-step-by-step-guide" element={<HowToEngageAVciso2026 />}/>
               <Route path="/blog/top-10-online-safety-tips" element={<Top10OnlineSafetyTips />} />
+              <Route path="/blog/soc2-audit-checklist-2026" element={<Soc2AuditChecklistGuide2026 />} />
               <Route path="/blog/automated-vs-manual-penetration-testing-2026" element={<AutomatedVsManualPenetrationTesting2026 />} />
               <Route path="/blog/agentic-ai-governance-lifecycle-management-healthcare-2026" element={<AgenticAiGovernanceHealthcare2026 />} />
               <Route path="/blog/how-to-take-an-effective-mental-health-day-d73ep" element={<Navigate to="/blog/automated-vs-manual-penetration-testing-2026" replace />} />
