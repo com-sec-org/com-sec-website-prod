@@ -31,6 +31,50 @@ import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
               {
+                id: "how-to-prepare-for-soc2-2026",
+                title: "How to Prepare for SOC 2 in 2026",
+                excerpt: "SOC 2 preparation for SaaS and tech companies made simple. Covers readiness assessment, controls, evidence collection, and the full audit process.",
+                date: "May 2, 2026",
+                readTime: "8 min read",
+                author: "Com-Sec Team",
+                category: "Compliance",
+                categoryColor: "bg-blue-100 text-blue-800",
+                featured: false,
+                image: "/images/blog-images/How-to-prepare-for-SOC2-Banner.png",
+                imageAlt: "How to Prepare for SOC 2 Step-by-Step Guide for 2026",
+                link: "/blog/how-to-prepare-for-soc2-2026",
+              },
+              {
+                id: "soc2-audit-checklist-2026",
+                title: "SOC 2 Audit Checklist & Report Templates for 2026: Complete Guide",
+                excerpt: "SOC 2 audit checklist covering controls, documentation, and report templates. A practical guide to help your team prepare for SOC 2 compliance and audits in 2026.",
+                date: "May 1, 2026",
+                readTime: "8 min read",
+                author: "Com-Sec Team",
+                category: "Compliance",
+                categoryColor: "bg-blue-100 text-blue-800",
+                featured: false,
+                image: "/images/blog-images/soc2-audit-checklist-guide-2026.png",
+                imageAlt: "SOC 2 Audit Checklist and Report Templates Complete Guide for 2026",
+                link: "/blog/soc2-audit-checklist-2026",
+              },
+              {
+                id: "what-is-vciso-role-cybersecurity",
+                title:
+                  "What is a vCISO? Understanding the Role and How It Supports Your Cybersecurity Goals",
+                excerpt:
+                  "Learn about virtual Chief Information Security Officers and how they can strengthen your cybersecurity posture.",
+                date: "April 30, 2026",
+                readTime: "4 min read",
+                author: "Com-Sec Leadership",
+                category: "Leadership",
+                categoryColor: "bg-purple-100 text-purple-800",
+                image:
+                  "images/blog-images/what-is-vciso-banner.jpg",
+                imageAlt:
+                  "Cybersecurity team collaboration with security professionals working together on digital protection strategies",
+              },
+              {
                 id: "agentic-ai-governance-lifecycle-management-healthcare-2026",
                 title: "Agentic AI Governance and Lifecycle Management in Healthcare: A 2026 Strategy Guide",
                 excerpt:
@@ -39,8 +83,8 @@ const allArticles = [
                 readTime: "8 min read",
                 author: "Com-Sec Team",
                 category: "Healthcare AI",
+                featured: false,
                 categoryColor: "bg-teal-100 text-teal-800",
-                featured: true,
                 image: "/images/blog-images/agentic-ai-governance-healthcare-2026.png",
                 imageAlt: "Agentic AI governance lifecycle management strategy infographic for US healthcare 2026",
                 link: "/blog/agentic-ai-governance-lifecycle-management-healthcare-2026",
@@ -71,7 +115,7 @@ const allArticles = [
                 author: "Com-Sec Compliance Team",
                 category: "Compliance",
                 categoryColor: "bg-blue-100 text-blue-800",
-                featured: true,
+                featured: false,
                 image:
                   "/images/blog-images/soc2-vs-iso.jpg",
                 imageAlt:
@@ -469,22 +513,6 @@ const allArticles = [
                   "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F4e7f1a40243f4106ac290d96836f3226?format=webp&width=800",
                 imageAlt:
                   "Compliance puzzle pieces with team collaboration showing regulatory framework integration and audit preparation",
-              },
-              {
-                id: "what-is-vciso-role-cybersecurity",
-                title:
-                  "What is a vCISO? Understanding the Role and How It Supports Your Cybersecurity Goals",
-                excerpt:
-                  "Learn about virtual Chief Information Security Officers and how they can strengthen your cybersecurity posture.",
-                date: "November 20, 2024",
-                readTime: "4 min read",
-                author: "Com-Sec Leadership",
-                category: "Leadership",
-                categoryColor: "bg-purple-100 text-purple-800",
-                image:
-                  "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F1e54bc2a36d74a828c3f64cc81d896f2?format=webp&width=800",
-                imageAlt:
-                  "Cybersecurity team collaboration with security professionals working together on digital protection strategies",
               },
               {
                 id: "transparency-accuracy-ai-healthcare",
