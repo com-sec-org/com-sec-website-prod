@@ -1350,12 +1350,12 @@ export default function Index() {
               href="https://www.vanta.com/partners/find-a-partner?title=Com-Sec"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 hover:brightness-125 group"
+              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group"
             >
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F51011c42ef4446e7a0f23364ce72375b?format=webp&width=800&height=1200"
                 alt="Vanta"
-                className="h-14 sm:h-16 w-auto object-contain filter brightness-0 invert group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] transition-all duration-500"
+                className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
               />
             </a>
 
@@ -1364,12 +1364,12 @@ export default function Index() {
               href="https://drata.com/partners/channel/directory/com-sec"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 hover:brightness-125 group"
+              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group"
             >
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff58b2ec062d2440fb2a112b3bf9433f7?format=webp&width=800&height=1200"
                 alt="DRATA"
-                className="h-14 sm:h-16 w-auto object-contain filter brightness-0 invert group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] transition-all duration-500"
+                className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
               />
             </a>
 
@@ -1378,12 +1378,12 @@ export default function Index() {
               href="https://prescientsecurity.com/company/partners"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 hover:brightness-125 group"
+              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group"
             >
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fae6043776593495cbf1a3432528e588b?format=webp&width=800&height=1200"
                 alt="PRESCIENT"
-                className="h-14 sm:h-16 w-auto object-contain filter brightness-0 invert group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] transition-all duration-500"
+                className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
               />
             </a>
 
@@ -1392,12 +1392,12 @@ export default function Index() {
               href="https://partners.sensiba.com/com-sec"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 hover:brightness-125 group"
+              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group"
             >
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F2b1a1cea90024ad6a92208b79d4a0bf0?format=webp&width=800&height=1200"
                 alt="Sensiba"
-                className="h-14 sm:h-16 w-auto object-contain filter brightness-0 invert group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] transition-all duration-500"
+                className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
               />
             </a>
 
@@ -1406,12 +1406,12 @@ export default function Index() {
               href="https://www.kertos.io/en/partner-werden"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 hover:brightness-125 group"
+              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group"
             >
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F3bcdc27a2b6b492a85d93650685c156a?format=webp&width=800&height=1200"
                 alt="Kertos"
-                className="h-14 sm:h-16 w-auto object-contain filter brightness-0 invert group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] transition-all duration-500"
+                className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
               />
             </a>
           </div>
