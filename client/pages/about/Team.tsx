@@ -10,10 +10,10 @@ export default function Team() {
   const teamMembers = [
     {
       name: "Farbod Fakhrai",
-      role: "Security & Compliance Advisor",
+      role: "Founder & CEO",
       image: "/images/team/farbs1.jpg",
       description:
-        "Farbod is a Security & Compliance Advisor who guides organizations in building resilient security programs and achieving regulatory assurance. He specializes in risk management, control design, and audit readiness across SOC 2, ISO 27001, HIPAA, and PCI DSS, aligning security investments with business goals. Known for trusted client partnerships and pragmatic execution, he helps teams mature their posture, streamline compliance, and deliver measurable outcomes.",
+        "Farbod is the Founder & CEO of Com-Sec, leading the vision for building a more secure and compliant world. With deep expertise in cybersecurity strategy and organizational leadership, he guides Com-Sec in delivering innovative security solutions and helping organizations achieve regulatory assurance. His strategic leadership and industry insights drive the company's mission to empower businesses with resilient security programs.",
       expertise: [
         "Strategic Leadership",
         "Business Development",
@@ -62,10 +62,10 @@ export default function Team() {
     },
     {
       name: "Christopher Cole",
-      role: "Security & Compliance Engineer",
+      role: "Security Analyst",
       image: "/images/team/Christopher.png",
       description:
-        "Christopher is a dedicated Security and Compliance Engineer with a strong focus on IT support and compliance management. He helps clients achieve compliance frameworks through best practices, threat detection, mitigation, and device management, ensuring robust protection and readiness for evolving security challenges.",
+        "Christopher is a dedicated Security Analyst with a strong focus on IT support and compliance management. He helps clients achieve compliance frameworks through best practices, threat detection, mitigation, and device management, ensuring robust protection and readiness for evolving security challenges.",
       expertise: [
         "IT Support",
         "Compliance Management",
@@ -75,10 +75,10 @@ export default function Team() {
     },
     {
       name: "Manoj Kumar",
-      role: "Security & Compliance Manager",
-      image: "/images/team/Manoj.png",
+      role: "Director of Client Service",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
       description:
-        "Manoj is a Security & Compliance Manager at Com-Sec, leading comprehensive compliance and security frameworks including SOC 2, HIPAA, ISO 27001, and NIST. He oversees internal audits, ensures regulatory alignment, and drives continuous compliance excellence across the organization. Manoj's strategic approach strengthens security posture and maintains audit readiness.",
+        "Manoj is the Director of Client Service at Com-Sec, leading client-focused initiatives and ensuring exceptional service delivery. He oversees client relationships, manages comprehensive compliance and security frameworks including SOC 2, HIPAA, ISO 27001, and NIST, and drives continuous excellence. Manoj's customer-centric approach strengthens client relationships and ensures measurable success.",
       expertise: [
         "CrowdStrike",
         "AWS Security",
@@ -88,10 +88,10 @@ export default function Team() {
     },
     {
       name: "Banu Priya",
-      role: "Security Analyst",
-      image: "/images/team/Banu.jpg",
+      role: "Security & Compliance Manager",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fc37523b82ac94584b7e6a509ac7eb695?format=webp&width=800&height=1200",
       description:
-        "Banu is a Security Analyst at Com-Sec, specializing in comprehensive security assessments and vulnerability management. She conducts thorough security evaluations, identifies potential threats, and implements effective mitigation strategies. Banu's analytical skills and attention to detail help strengthen organizational security postures and ensure robust defense mechanisms.",
+        "Banu is a Security & Compliance Manager at Com-Sec, specializing in comprehensive compliance management and security frameworks. She conducts thorough security evaluations, manages compliance initiatives, and implements effective security strategies. Banu's analytical skills and attention to detail help strengthen organizational security postures and ensure continuous compliance excellence.",
       expertise: [
         "Security Assessments",
         "Vulnerability Management",
@@ -128,7 +128,7 @@ export default function Team() {
     {
       name: "Raj Dayakar",
       role: "Security Analyst",
-      image: "/images/team/Raj.jpg",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F4ca37786738c44d7b3e42c41f7f08e4c?format=webp&width=800&height=1200",
       description:
         "Raj is a Security Analyst at Com-Sec, specializing in IT support, compliance, and cybersecurity. He identifies and remediates vulnerabilities in websites and systems, ensuring robust security measures. Raj's proactive approach keeps the infrastructure secure and compliant with industry standards.",
       expertise: [
@@ -140,10 +140,10 @@ export default function Team() {
     },
     {
       name: "Roshani Chitre",
-      role: "Data Analyst",
+      role: "Security & Compliance Analyst",
       image: "/images/team/Roshni.png",
       description:
-        "Roshani is a Data Analyst at Com-Sec, specializing in compliance reporting and operational analytics. She leverages tools like SQL, Python, Power BI, and Jira to automate reports, visualize incident trends, and extract insights from large datasets. Her work supports audit readiness and enhances decision-making across the information security team.",
+        "Roshani is a Security & Compliance Analyst at Com-Sec, specializing in compliance analytics and security operations. She leverages tools like SQL, Python, Power BI, and Jira to automate reports, visualize security trends, and extract insights from security data. Her work supports audit readiness and enhances decision-making across the information security team.",
       expertise: [
         "SQL & Python",
         "Power BI",
@@ -153,15 +153,67 @@ export default function Team() {
     },
     {
       name: "Shamanth Hedge",
-      role: "Security Analyst",
+      role: "Security & Compliance Analyst",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F65b03672c099425f8390d8397f0bc904?format=webp&width=800&height=1200",
       description:
-        "Shamanth is a Security Analyst at Com-Sec with expertise in security assessments, threat detection, and vulnerability management. He specializes in conducting comprehensive security evaluations, identifying potential risks, and implementing effective mitigation strategies. Shamanth's analytical approach and technical expertise help strengthen organizational security postures and ensure comprehensive protection against emerging threats.",
+        "Shamanth is a Security & Compliance Analyst at Com-Sec with expertise in compliance management and security assessments. He specializes in conducting comprehensive security evaluations, supporting compliance initiatives, and implementing effective security strategies. Shamanth's analytical approach and technical expertise help organizations strengthen their security postures and maintain compliance excellence.",
       expertise: [
         "Security Assessments",
         "Threat Detection",
         "Vulnerability Management",
         "Risk Mitigation",
+      ],
+    },
+    {
+      name: "Bojan Segaric",
+      role: "Chief of Staff",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff441d98ddc554cc98a28e0fca487e498?format=webp&width=800&height=1200",
+      description:
+        "Bojan is the Chief of Staff at Com-Sec, overseeing organizational operations and strategic initiatives. He ensures seamless coordination across teams and drives operational excellence. Bojan's leadership and organizational expertise help streamline processes and support Com-Sec's mission to deliver exceptional security and compliance solutions.",
+      expertise: [
+        "Operations Management",
+        "Strategic Planning",
+        "Team Coordination",
+        "Process Optimization",
+      ],
+    },
+    {
+      name: "Fernando Garcia",
+      role: "Senior Engineer",
+      image: "/images/team/fernando.jpg",
+      description:
+        "Fernando is a Senior Engineer at Com-Sec, providing advanced technical solutions and engineering support to clients. With extensive experience in security infrastructure and system design, he helps organizations build robust and secure technical environments. Fernando's expertise ensures clients have access to cutting-edge engineering solutions for their security needs.",
+      expertise: [
+        "System Architecture",
+        "Security Infrastructure",
+        "Technical Design",
+        "Engineering Solutions",
+      ],
+    },
+    {
+      name: "Ryan Chen",
+      role: "Director of Partnerships",
+      image: "/images/team/ryan.jpg",
+      description:
+        "Ryan is the Director of Partnerships at Com-Sec, leading strategic partnerships and business development initiatives. He builds and nurtures key relationships with clients and partners to expand Com-Sec's reach and impact. Ryan's relationship-building skills and business acumen drive growth and create mutually beneficial partnerships.",
+      expertise: [
+        "Business Development",
+        "Partnership Strategy",
+        "Client Relations",
+        "Market Expansion",
+      ],
+    },
+    {
+      name: "Safaras Patel",
+      role: "Pen Test Engineer",
+      image: "/images/team/safaras.jpg",
+      description:
+        "Safaras is a Pen Test Engineer at Com-Sec, specializing in penetration testing and vulnerability assessment. He conducts thorough security assessments to identify vulnerabilities and help clients strengthen their defensive posture. Safaras's technical expertise and methodical approach ensure comprehensive security testing and actionable findings.",
+      expertise: [
+        "Penetration Testing",
+        "Vulnerability Assessment",
+        "Security Testing",
+        "Exploitation Techniques",
       ],
     },
   ];
@@ -265,7 +317,7 @@ export default function Team() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {[...teamMembers].sort((a, b) => a.name.localeCompare(b.name)).map((member, index) => (
+            {[...teamMembers].filter((member) => !['Fernando Garcia', 'Ryan Chen', 'Safaras Patel'].includes(member.name)).sort((a, b) => a.name.localeCompare(b.name)).map((member, index) => (
               <Card
                 key={index}
                 className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-scale-in animation-delay-${(index + 1) * 100} opacity-0 bg-white border-0 shadow-lg overflow-hidden`}
