@@ -167,7 +167,7 @@ export default function Team() {
     {
       name: "Bojan Segaric",
       role: "Chief of Staff",
-      image: "/images/team/bojan.jpg",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff441d98ddc554cc98a28e0fca487e498?format=webp&width=800&height=1200",
       description:
         "Bojan is the Chief of Staff at Com-Sec, overseeing organizational operations and strategic initiatives. He ensures seamless coordination across teams and drives operational excellence. Bojan's leadership and organizational expertise help streamline processes and support Com-Sec's mission to deliver exceptional security and compliance solutions.",
       expertise: [
@@ -317,7 +317,7 @@ export default function Team() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {[...teamMembers].sort((a, b) => a.name.localeCompare(b.name)).map((member, index) => (
+            {[...teamMembers].filter((member) => !['Fernando Garcia', 'Ryan Chen', 'Safaras Patel'].includes(member.name)).sort((a, b) => a.name.localeCompare(b.name)).map((member, index) => (
               <Card
                 key={index}
                 className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-scale-in animation-delay-${(index + 1) * 100} opacity-0 bg-white border-0 shadow-lg overflow-hidden`}
