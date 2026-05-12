@@ -79,9 +79,8 @@ export default function CaryHealthFirstClientStory() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              CaryHealth Was Our First Client. Their Exit Is a Milestone for Us
-              Too.
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
+              CaryHealth was our first client. Their exit is a milestone for us too.
             </h1>
 
             <p className="text-xl text-emerald-100 mb-8 leading-relaxed">
@@ -113,6 +112,16 @@ export default function CaryHealthFirstClientStory() {
         {/* ARTICLE */}
         <article className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            {/* Cover image */}
+            <div className="mb-12 flex justify-center">
+              <img
+                src="/images/blog-images/Cary-Health-First-Client-Cover.jpeg"
+                alt="CaryHealth — Com-Sec's first client"
+                className="rounded-xl shadow-md max-w-2xl w-full h-auto"
+              />
+            </div>
+
             <div className="prose prose-lg max-w-none">
 
               <section className="mb-10">
@@ -159,13 +168,13 @@ export default function CaryHealthFirstClientStory() {
               </section>
 
               {/* Mid-article image */}
-              <div className="my-12 bg-slate-50 rounded-xl overflow-hidden shadow-md flex flex-col items-center">
+              <div className="my-12 flex flex-col items-center">
                 <img
                   src="/images/blog-images/Cary-Health-First-Client-Content.jpeg"
                   alt="Com-Sec team working alongside CaryHealth in their early days"
-                  className="w-full h-auto block"
+                  className="rounded-xl shadow-md max-w-lg w-full h-auto"
                 />
-                <p className="text-sm text-gray-500 italic py-4 px-6 text-center">
+                <p className="text-sm text-gray-500 italic mt-3 text-center">
                   The early days — building Com-Sec alongside CaryHealth's team.
                 </p>
               </div>
