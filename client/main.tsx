@@ -61,6 +61,7 @@ import CybersecurityRoundupStartupsMay from "./pages/resources/blog/Cybersecurit
 import SafeguardingDataSharingTechCompanies from "./pages/resources/blog/SafeguardingDataSharingTechCompanies";
 import ContinuousMonitoringSecurityCompliance from "./pages/resources/blog/ContinuousMonitoringForSecurityAndCompliance";
 import WebAppPenTestChecklist2026 from "./pages/resources/blog/WebAppPenTestChecklist2026";
+import CaryHealthFirstClientStory from "./pages/resources/blog/CaryHealthFirstClientStory.tsx";
 
 import NotFound from "./pages/NotFound";
 import AiPenTestingHypeVsReality2026 from "./pages/resources/blog/AiPenTestingHypeVsReality2026";
@@ -271,6 +272,7 @@ const App = () => (
               <Route path="/blog/soc-2-vs-iso-27001-which-is-right-for-you" element={<Soc2VsIso27001 />} />
               <Route path="/blog/transparency-accuracy-ai-healthcare" element={<Navigate to="/blog/importance-of-transparency-accuracy-and-accountability" replace />} />
               <Route path="/blog/cybersecurity-roundup-startups-may" element={<CybersecurityRoundupStartupsMay />} />
+              <Route path="/blog/caryhealth-first-client-story" element={<CaryHealthFirstClientStory />} />
               <Route path="/blog/security-compliance-health-companies" element={<Navigate to="/blog/the-vital-importance-of-security-and-compliance-for-health-companies-safeguarding-patient-data" replace />} />
               <Route path="/blog/safeguarding-data-sharing-tech-companies" element={<SafeguardingDataSharingTechCompanies />} />
               <Route path="/blog/safeguarding-data-sharing-mitigating-cybersecurity-risks-for-tech-companies-with-com-sec" element={<Navigate to="/blog/safeguarding-data-sharing-tech-companies" replace />} />

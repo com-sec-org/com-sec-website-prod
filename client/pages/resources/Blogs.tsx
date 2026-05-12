@@ -31,6 +31,21 @@ import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
               {
+                id: "caryhealth-first-client-story",
+                title: "CaryHealth Was Our First Client. Their Exit Is a Milestone for Us Too.",
+                excerpt:
+                  "CaryHealth was Com-Sec's first client before we were even a real company. This is the story of how two teams grew alongside each other — and what their acquisition means for us.",
+                date: "May 12, 2026",
+                readTime: "5 min read",
+                author: "Com-Sec Team",
+                category: "Founder Story",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/Cary-Health-First-Client-Cover.jpeg",
+                imageAlt: "CaryHealth and Com-Sec healthcare cybersecurity journey",
+                link: "/blog/caryhealth-first-client-story",
+              },
+              {
                 id: "how-to-prepare-for-soc2-2026",
                 title: "How to Prepare for SOC 2 in 2026",
                 excerpt: "SOC 2 preparation for SaaS and tech companies made simple. Covers readiness assessment, controls, evidence collection, and the full audit process.",
@@ -1254,7 +1269,7 @@ export default function Blogs() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent group-hover:from-black/40 transition-all duration-500"></div>
 
                       {/* Floating Category Badge */}
-                      <div className="absolute top-4 left-4">
+                      <div className="absolute top-4 right-4">
                         <span
                           className={`px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm border border-white/20 category-pulse ${article.categoryColor} bg-opacity-90`}
                         >
