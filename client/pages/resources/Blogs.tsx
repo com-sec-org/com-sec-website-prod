@@ -34,7 +34,7 @@ const allArticles = [
                 id: "caryhealth-first-client-story",
                 title: "CaryHealth Was Our First Client. Their Exit Is a Milestone for Us Too.",
                 excerpt:
-                  "CaryHealth was Com-Sec's first client before we were even a real company. This is the story of how two teams grew alongside each other — and what their acquisition means for us.",
+                  "CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.",
                 date: "May 12, 2026",
                 readTime: "5 min read",
                 author: "Com-Sec Team",
