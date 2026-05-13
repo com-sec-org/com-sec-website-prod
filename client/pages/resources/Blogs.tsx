@@ -32,19 +32,35 @@ import { ToastAction } from "@/components/ui/toast";
 const allArticles = [
               {
                 id: "caryhealth-first-client-story",
-                title: "CaryHealth Was Our First Client. Their Exit Is a Milestone for Us Too.",
+                title: "CaryHealth was our first client. Their exit is a milestone for Us too.",
                 excerpt:
                   "CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.",
                 date: "May 12, 2026",
                 readTime: "5 min read",
                 author: "Com-Sec Team",
-                category: "Founder Story",
+          
                 categoryColor: "bg-sky-100 text-sky-800",
-                featured: false,
+                featured: true,
                 image: "/images/blog-images/Cary-Health-First-Client-Cover.jpeg",
                 imageAlt: "CaryHealth and Com-Sec healthcare cybersecurity journey",
                 link: "/blog/caryhealth-first-client-story",
               },
+              {
+                id: "mythos-changed-the-game-part-1",
+                title: "Mythos changed the game. Here's what to do about it.",
+                excerpt:
+                  "Anthropic built an AI model that finds and exploits vulnerabilities faster than any human researcher. Here's what it actually is, what it means for your business, and why founders need to pay attention now. Part 1 of our Mythos series.",
+                date: "May 13, 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "AI & Cybersecurity",
+                categoryColor: "bg-violet-100 text-violet-800",
+                featured: false,
+                image: "/images/blog-images/mythos-part-1.png",
+                imageAlt: "Mythos AI cybersecurity — what it is and what to do about it",
+                link: "/blog/mythos-changed-the-game-part-1",
+              },
+              
               {
                 id: "how-to-prepare-for-soc2-2026",
                 title: "How to Prepare for SOC 2 in 2026",
