@@ -186,9 +186,10 @@ const App = () => (
               {/* Service & Pricing Routes */}
               <Route path="/services" element={<Services />} />
               <Route path="/pricing" element={<Pricing />} />
-              <Route path="/services/compliance-audit-service" element={<Navigate to="/compliance-audit-readiness" replace />} />
-              <Route path="/services/compliance-audit-readiness" element={<Navigate to="/compliance-audit-readiness" replace />} />
-              <Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
+              <Route path="/services/compliance-audit-service" element={<Navigate to="/compliance-audit-service" replace />} />
+              <Route path="/services/compliance-audit-readiness" element={<Navigate to="/compliance-audit-service" replace />} />
+              <Route path="/compliance-audit-readiness" element={<Navigate to="/compliance-audit-service" replace />} />
+              <Route path="/compliance-audit-service" element={<ComplianceAuditReadiness />} />
               <Route path="/services/penetration-testing-services" element={<Navigate to="/penetration-testing-services" replace />} />
               <Route path="/services/it-support" element={<Navigate to="/it-support" replace />} />
               <Route path="/services/soc-support" element={<Navigate to="/soc-support" replace />} />
