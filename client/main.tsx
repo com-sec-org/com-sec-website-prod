@@ -90,6 +90,7 @@ import AutomatedVsManualPenetrationTesting2026 from "./pages/resources/blog/Auto
 import AgenticAiGovernanceHealthcare2026 from "./pages/resources/blog/AgenticAiGovernanceHealthcare2026";
 import Soc2AuditChecklistGuide2026 from "./pages/resources/blog/Soc2auditchecklistguide2026";
 import Soc2PreparationGuide2026 from "./pages/resources/blog/Soc2preparationguide2026";
+import MythosHealthcareCybersecurityPart1 from "./pages/resources/blog/MythosHealthcareCybersecurityPart1";
 
 
 const queryClient = new QueryClient();
@@ -185,7 +186,8 @@ const App = () => (
               {/* Service & Pricing Routes */}
               <Route path="/services" element={<Services />} />
               <Route path="/pricing" element={<Pricing />} />
-              <Route path="/services/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
+              <Route path="/services/compliance-audit-service" element={<Navigate to="/compliance-audit-readiness" replace />} />
+              <Route path="/services/compliance-audit-readiness" element={<Navigate to="/compliance-audit-readiness" replace />} />
               <Route path="/compliance-audit-readiness" element={<ComplianceAuditReadiness />} />
               <Route path="/services/penetration-testing-services" element={<Navigate to="/penetration-testing-services" replace />} />
               <Route path="/services/it-support" element={<Navigate to="/it-support" replace />} />
@@ -306,6 +308,7 @@ const App = () => (
               <Route path="/blog/automated-vs-manual-penetration-testing-2026" element={<AutomatedVsManualPenetrationTesting2026 />} />
               <Route path="/blog/agentic-ai-governance-lifecycle-management-healthcare-2026" element={<AgenticAiGovernanceHealthcare2026 />} />
               <Route path="/blog/how-to-take-an-effective-mental-health-day-d73ep" element={<Navigate to="/blog/automated-vs-manual-penetration-testing-2026" replace />} />
+              <Route path="/blog/mythos-changed-the-game-part-1" element={<MythosHealthcareCybersecurityPart1 />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

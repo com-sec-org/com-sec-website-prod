@@ -80,7 +80,7 @@ export default function CaryHealthFirstClientStory() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              CaryHealth was our first client. Their exit is a milestone for us too.
+              CaryHealth was client #1. Their exit means everything to us.
             </h1>
 
             <p className="text-xl text-emerald-100 mb-8 leading-relaxed">
@@ -170,7 +170,7 @@ export default function CaryHealthFirstClientStory() {
               {/* Mid-article image */}
               <div className="my-12 flex flex-col items-center">
                 <img
-                  src="/images/blog-images/Cary-Health-First-Client-Content.jpeg"
+                  src="/images/blog-images/Cary-Health-First-Client-Content.jpg"
                   alt="Com-Sec team working alongside CaryHealth in their early days"
                   className="rounded-xl shadow-md max-w-lg w-full h-auto"
                 />
