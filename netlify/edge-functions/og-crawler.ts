@@ -1,5 +1,3 @@
-import { Request, Response, NextFunction } from "express";
-
 const CRAWLER_UA =
   /facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|WhatsApp|Discordbot|Applebot|Pinterest|redditbot|rogerbot|embedly|Googlebot-Image/i;
 
@@ -29,7 +27,7 @@ const OG_ROUTES: Record<string, OgData> = {
   },
 };
 
-function escape(str: string) {
+function esc(str: string): string {
   return str.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 }
 
@@ -38,35 +36,35 @@ function buildOgHtml(og: OgData): string {
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>${escape(og.title)}</title>
-  <meta name="description" content="${escape(og.description)}" />
-  <meta property="og:title" content="${escape(og.title)}" />
-  <meta property="og:description" content="${escape(og.description)}" />
-  <meta property="og:image" content="${escape(og.image)}" />
-  <meta property="og:url" content="${escape(og.url)}" />
+  <title>${esc(og.title)}</title>
+  <meta name="description" content="${esc(og.description)}" />
+  <meta property="og:title" content="${esc(og.title)}" />
+  <meta property="og:description" content="${esc(og.description)}" />
+  <meta property="og:image" content="${esc(og.image)}" />
+  <meta property="og:url" content="${esc(og.url)}" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Com-Sec" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="${escape(og.title)}" />
-  <meta name="twitter:description" content="${escape(og.description)}" />
-  <meta name="twitter:image" content="${escape(og.image)}" />
+  <meta name="twitter:title" content="${esc(og.title)}" />
+  <meta name="twitter:description" content="${esc(og.description)}" />
+  <meta name="twitter:image" content="${esc(og.image)}" />
 </head>
 <body></body>
 </html>`;
 }
 
-export function ogCrawlerMiddleware(
-  req: Request,
-  res: Response,
-  next: NextFunction
-) {
-  const ua = req.headers["user-agent"] ?? "";
-  const og = OG_ROUTES[req.path];
+export default async function handler(request: Request, context: { next: () => Promise<Response> }) {
+  const url = new URL(request.url);
+  const ua = request.headers.get("user-agent") ?? "";
+  const og = OG_ROUTES[url.pathname];
 
   if (og && CRAWLER_UA.test(ua)) {
-    res.setHeader("Content-Type", "text/html; charset=utf-8");
-    return res.send(buildOgHtml(og));
+    return new Response(buildOgHtml(og), {
+      headers: { "content-type": "text/html; charset=utf-8" },
+    });
   }
 
-  next();
+  return context.next();
 }
+
+export const config = { path: "/blog/*" };

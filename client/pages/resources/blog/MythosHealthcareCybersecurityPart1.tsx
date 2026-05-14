@@ -268,7 +268,7 @@ export default function MythosHealthcareCybersecurityPart1() {
 
               {/* Part 2 teaser */}
               <section className="mb-10">
-                <Link to="/blog/mythos-patching-window-collapsed" className="block group">
+                <Link to="/blog/mythos-changed-the-game-part-2" className="block group">
                   <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
                     <div className="text-3xl mt-1">→</div>
                     <div>

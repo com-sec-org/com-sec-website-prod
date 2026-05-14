@@ -75,7 +75,7 @@ export default function MythosHealthcareCybersecurityPart2() {
 
         <link
           rel="canonical"
-          href="https://com-sec.io/blog/mythos-patching-window-collapsed"
+          href="https://com-sec.io/blog/mythos-changed-the-game-part-2"
         />
 
         <meta
