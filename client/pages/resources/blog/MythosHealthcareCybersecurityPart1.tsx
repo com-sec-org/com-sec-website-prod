@@ -90,7 +90,7 @@ export default function MythosHealthcareCybersecurityPart1() {
 
         <meta
           property="og:image"
-          content="https://com-sec.io/images/blog/mythos-part-1.png"
+          content="https://com-sec.io/images/blog-images/mythos-part-1.png"
         />
 
         <meta
@@ -116,7 +116,7 @@ export default function MythosHealthcareCybersecurityPart1() {
 
         <meta
           name="twitter:image"
-          content="https://com-sec.io/images/blog/mythos-part-1.png"
+          content="https://com-sec.io/images/blog-images/mythos-part-1.png"
         />
       </Helmet>
 

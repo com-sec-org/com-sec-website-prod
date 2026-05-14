@@ -90,12 +90,12 @@ export default function MythosHealthcareCybersecurityPart2() {
 
         <meta
           property="og:image"
-          content="https://com-sec.io/images/blog/mythos-patching-window-collapsed.png"
+          content="https://com-sec.io/images/blog-images/mythos-patching-window-collapsed.png"
         />
 
         <meta
           property="og:url"
-          content="https://com-sec.io/blog/mythos-patching-window-collapsed"
+          content="https://com-sec.io/blog/mythos-changed-the-game-part-2"
         />
 
         <meta property="og:type" content="article" />
@@ -106,7 +106,7 @@ export default function MythosHealthcareCybersecurityPart2() {
 
         <meta
           name="twitter:title"
-          content="Mythos Changed the Game. Here's What to Do About It. — Part 2"
+          content="Mythos Changed the Game. Here's What to Do About It."
         />
 
         <meta
@@ -116,7 +116,7 @@ export default function MythosHealthcareCybersecurityPart2() {
 
         <meta
           name="twitter:image"
-          content="https://com-sec.io/images/blog/mythos-patching-window-collapsed.png"
+          content="https://com-sec.io/images/blog-images/mythos-patching-window-collapsed.png"
         />
       </Helmet>
 
