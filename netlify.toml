@@ -97,6 +97,13 @@
   force = true
 
 ##############################
+# 🤖 Edge Functions
+##############################
+[[edge_functions]]
+  function = "og-crawler"
+  path = "/blog/*"
+
+##############################
 # ⚙️ SPA Fallback (must be last)
 ##############################
 [[redirects]]
