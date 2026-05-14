@@ -55,7 +55,7 @@ const allArticles = [
                 author: "Farbod Fakhrai",
                 category: "AI & Cybersecurity",
                 categoryColor: "bg-violet-100 text-violet-800",
-                featured: true,
+                featured: false,
                 image: "/images/blog-images/mythos-part-1.png",
                 imageAlt: "Mythos AI cybersecurity — what it is and what to do about it",
                 link: "/blog/mythos-changed-the-game-part-1",
