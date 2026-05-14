@@ -91,6 +91,7 @@ import AgenticAiGovernanceHealthcare2026 from "./pages/resources/blog/AgenticAiG
 import Soc2AuditChecklistGuide2026 from "./pages/resources/blog/Soc2auditchecklistguide2026";
 import Soc2PreparationGuide2026 from "./pages/resources/blog/Soc2preparationguide2026";
 import MythosHealthcareCybersecurityPart1 from "./pages/resources/blog/MythosHealthcareCybersecurityPart1";
+import MythosHealthcareCybersecurityPart2 from "./pages/resources/blog/MythosHealthcareCybersecurityPart2.tsx";
 
 
 const queryClient = new QueryClient();
@@ -310,6 +311,7 @@ const App = () => (
               <Route path="/blog/agentic-ai-governance-lifecycle-management-healthcare-2026" element={<AgenticAiGovernanceHealthcare2026 />} />
               <Route path="/blog/how-to-take-an-effective-mental-health-day-d73ep" element={<Navigate to="/blog/automated-vs-manual-penetration-testing-2026" replace />} />
               <Route path="/blog/mythos-changed-the-game-part-1" element={<MythosHealthcareCybersecurityPart1 />} />
+              <Route path="/blog/mythos-changed-the-game-part-2" element={<MythosHealthcareCybersecurityPart2 />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

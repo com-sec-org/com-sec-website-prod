@@ -53,6 +53,47 @@ export default function MythosHealthcareCybersecurityPart1() {
           rel="canonical"
           href="https://com-sec.io/blog/mythos-changed-the-game-part-1"
         />
+
+        <meta
+          property="og:title"
+          content="Mythos Changed the Game. Here's What to Do About It. — Part 1"
+        />
+
+        <meta
+          property="og:description"
+          content="Part 1: What Mythos actually is (and isn't). Anthropic's Claude Mythos changed the cybersecurity landscape — here's what it means for startups and founders."
+        />
+
+        <meta
+          property="og:image"
+          content="https://com-sec.io/images/blog/mythos-part-1.png"
+        />
+
+        <meta
+          property="og:url"
+          content="https://com-sec.io/blog/mythos-changed-the-game-part-1"
+        />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:site_name" content="Com-Sec" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Mythos Changed the Game. Here's What to Do About It. — Part 1"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Part 1: What Mythos actually is (and isn't). Anthropic's Claude Mythos changed the cybersecurity landscape — here's what it means for startups and founders."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://com-sec.io/images/blog/mythos-part-1.png"
+        />
       </Helmet>
 
       <div className="min-h-screen bg-white">
@@ -200,15 +241,18 @@ export default function MythosHealthcareCybersecurityPart1() {
 
               {/* Part 2 teaser */}
               <section className="mb-10">
-                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
-                  <div className="text-3xl mt-1">→</div>
-                  <div>
-                    <p className="text-sm font-semibold text-violet-300 uppercase tracking-wide mb-2">Up next in the series</p>
-                    <p className="text-lg text-slate-100 leading-relaxed">
-                      In Part 2, we'll get into the specific operational change that hits hardest: the patching window just collapsed.
-                    </p>
+                <Link to="/blog/mythos-patching-window-collapsed" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
+                    <div className="text-3xl mt-1">→</div>
+                    <div>
+                      <p className="text-sm font-semibold text-violet-300 uppercase tracking-wide mb-2">Up next in the series</p>
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 2, we'll get into the specific operational change that hits hardest: the patching window just collapsed.
+                      </p>
+                      <p className="text-sm text-violet-300 mt-3 group-hover:underline">Read Part 2 →</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </section>
 
               {/* Author */}
