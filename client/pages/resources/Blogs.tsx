@@ -47,7 +47,7 @@ const allArticles = [
               },
               {
                 id: "mythos-changed-the-game-part-2",
-                title: "Mythos Changed the Game. Here's What to Do About It. ",
+                title: "Mythos changed the game. Here's what to do about it. ",
                 excerpt:
                   "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
                 date: "May 14, 2026",
