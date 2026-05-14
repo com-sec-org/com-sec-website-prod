@@ -1,6 +1,7 @@
 import path from "path";
 import { createServer } from "./index";
 import * as express from "express";
+import { ogCrawlerMiddleware } from "./routes/og-crawler";
 
 const app = createServer();
 const port = process.env.PORT || 3000;
@@ -8,6 +9,9 @@ const port = process.env.PORT || 3000;
 // In production, serve the built SPA files
 const __dirname = import.meta.dirname;
 const distPath = path.join(__dirname, "../spa");
+
+// Return lightweight OG-tag HTML to social media crawlers before serving static files
+app.use(ogCrawlerMiddleware);
 
 // Serve static files
 app.use(express.static(distPath));
