@@ -125,7 +125,7 @@ export default function MythosHealthcareCybersecurityPart1() {
               {/* Intro */}
               <section className="mb-10">
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  If you run a startup or growth-stage company, you've probably seen the headlines about Anthropic's Claude Mythos model. Most of the coverage has been breathless. Some of it is useful. Here's what actually matters for your business.
+                  If you've been following AI lately, you've probably seen the headlines around Anthropic's Claude Mythos model. Whether you lead a startup, a healthcare organization, or a growth-stage company navigating compliance, the noise around this has been hard to ignore. A lot of the coverage has been hype. Some of it is useful. But very little of it has been aimed at the people actually responsible for keeping systems secure and businesses running. Here's what actually matters from a business, security, and operational perspective.
                 </p>
               </section>
 
