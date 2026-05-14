@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import { useState } from "react";
 import {
   Calendar,
   Clock,
@@ -9,9 +10,32 @@ import {
   ArrowLeft,
   Share2,
   ArrowRight,
+  Check,
 } from "lucide-react";
 
 export default function MythosHealthcareCybersecurityPart2() {
+  const [copied, setCopied] = useState(false);
+
+  const handleShare = async () => {
+    const shareData = {
+      title: "Mythos Changed the Game. Here's What to Do About It. — Part 2",
+      text: "Part 2: The Patching Window Just Collapsed. AI-driven vulnerability discovery is shrinking patch windows — here's what to do about it.",
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch {
+        // user cancelled — do nothing
+      }
+    } else {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
   const relatedArticles = [
     {
       title: "Security & Compliance Challenges for Healthcare Companies",
@@ -143,9 +167,12 @@ export default function MythosHealthcareCybersecurityPart2() {
                 <span>Farbod Fakhrai</span>
               </div>
 
-              <button className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-colors">
-                <Share2 className="h-4 w-4" />
-                <span>Share</span>
+              <button
+                onClick={handleShare}
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+              >
+                {copied ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
+                <span>{copied ? "Copied!" : "Share"}</span>
               </button>
             </div>
           </div>
