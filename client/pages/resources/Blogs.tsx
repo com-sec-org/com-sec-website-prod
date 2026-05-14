@@ -31,38 +31,23 @@ import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
               {
-                id: "caryhealth-first-client-story",
-                title: "CaryHealth was our first client. Their exit is a milestone for Us too.",
-                excerpt:
-                  "CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.",
-                date: "May 12, 2026",
-                readTime: "5 min read",
-                author: "Com-Sec Team",
-          
-                categoryColor: "bg-sky-100 text-sky-800",
-                featured: true,
-                image: "/images/blog-images/Cary-Health-First-Client-Cover.jpeg",
-                imageAlt: "CaryHealth and Com-Sec healthcare cybersecurity journey",
-                link: "/blog/caryhealth-first-client-story",
-              },
-              {
                 id: "mythos-changed-the-game-part-2",
-                title: "Mythos changed the game. Here's what to do about it. ",
+                title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",
                 excerpt:
-                  "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
+                "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
                 date: "May 14, 2026",
                 readTime: "6 min read",
                 author: "Farbod Fakhrai",
                 category: "AI & Cybersecurity",
                 categoryColor: "bg-sky-100 text-sky-800",
-                featured: false,
+                featured: true,
                 image: "/images/blog-images/mythos-patching-window-collapsed.png",
                 imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
                 link: "/blog/mythos-changed-the-game-part-2",
               },
               {
                 id: "mythos-changed-the-game-part-1",
-                title: "Mythos changed the game. Here's what to do about it.",
+                title: "Mythos Changed the Game - Part 1: What It Is and Why It Matters",
                 excerpt:
                   "Anthropic built an AI model that finds and exploits vulnerabilities faster than any human researcher. Here's what it actually is, what it means for your business, and why founders need to pay attention now. Part 1 of our Mythos series.",
                 date: "May 13, 2026",
@@ -74,6 +59,21 @@ const allArticles = [
                 image: "/images/blog-images/mythos-part-1.png",
                 imageAlt: "Mythos AI cybersecurity — what it is and what to do about it",
                 link: "/blog/mythos-changed-the-game-part-1",
+              },
+              
+              {
+                id: "caryhealth-first-client-story",
+                title: "CaryHealth was our first client. Their exit is a milestone for Us too.",
+                excerpt:
+                  "CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.",
+                date: "May 12, 2026",
+                readTime: "5 min read",
+                author: "Com-Sec Team",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/Cary-Health-First-Client-Cover.jpeg",
+                imageAlt: "CaryHealth and Com-Sec healthcare cybersecurity journey",
+                link: "/blog/caryhealth-first-client-story",
               },
               
               

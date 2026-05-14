@@ -14,14 +14,14 @@ interface OgData {
 
 const OG_ROUTES: Record<string, OgData> = {
   "/blog/mythos-changed-the-game-part-1": {
-    title: "Mythos Changed the Game. Here's What to Do About It. — Part 1",
+    title: "Mythos Changed the Game. Here's What to Do About It. - Part 1",
     description:
       "Part 1: What Mythos actually is (and isn't). Anthropic's Claude Mythos changed the cybersecurity landscape — here's what it means for startups and founders.",
     image: `${BASE_URL}/images/blog-images/mythos-part-1.png`,
     url: `${BASE_URL}/blog/mythos-changed-the-game-part-1`,
   },
   "/blog/mythos-changed-the-game-part-2": {
-    title: "Mythos Changed the Game. Here's What to Do About It. — Part 2",
+    title: "Mythos Changed the Game. Here's What to Do About It. - Part 2",
     description:
       "Part 2: The Patching Window Just Collapsed. AI-driven vulnerability discovery is shrinking patch windows — here's what to do about it.",
     image: `${BASE_URL}/images/blog-images/mythos-patching-window-collapsed.png`,
