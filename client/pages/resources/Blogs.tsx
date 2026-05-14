@@ -46,6 +46,21 @@ const allArticles = [
                 link: "/blog/caryhealth-first-client-story",
               },
               {
+                id: "mythos-changed-the-game-part-2",
+                title: "Mythos changed the game. Here's what to do about it. ",
+                excerpt:
+                  "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
+                date: "May 14, 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "AI & Cybersecurity",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/mythos-patching-window-collapsed.png",
+                imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
+                link: "/blog/mythos-changed-the-game-part-2",
+              },
+              {
                 id: "mythos-changed-the-game-part-1",
                 title: "Mythos changed the game. Here's what to do about it.",
                 excerpt:
@@ -60,6 +75,7 @@ const allArticles = [
                 imageAlt: "Mythos AI cybersecurity — what it is and what to do about it",
                 link: "/blog/mythos-changed-the-game-part-1",
               },
+              
               
               {
                 id: "how-to-prepare-for-soc2-2026",
