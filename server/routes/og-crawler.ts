@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from "express";
 
 // Social media crawlers — receive OG-tag-only HTML (no body content needed)
 const SOCIAL_CRAWLER_UA =
-  /facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|WhatsApp|Discordbot|Applebot|Pinterest|redditbot|rogerbot|embedly|Googlebot-Image/i;
+  /facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|WhatsApp|Discordbot|Applebot|Pinterest|redditbot|rogerbot|embedly|Googlebot-Image|PostInspector|Iframely|SocialPreview|prerender/i;
 
 // Google's main crawler — receives full semantic HTML so content gets indexed
 const GOOGLE_CRAWLER_UA = /Googlebot(?!-Image)/i;
@@ -14,6 +14,8 @@ interface OgData {
   description: string;
   image: string;
   url: string;
+  author?: string;
+  publishedTime?: string;
 }
 
 interface GooglePageData extends OgData {
@@ -30,6 +32,8 @@ const OG_ROUTES: Record<string, OgData> = {
       "Com-Sec was weeks away from being Delve's lead vCISO partner for HITRUST clients. Then things started feeling off. Here's what we saw, what happened next, and the lessons for anyone vetting a compliance partner.",
     image: `${BASE_URL}/images/blog-images/delve-compliance-scandal.png`,
     url: `${BASE_URL}/blog/we-almost-partnered-with-delve`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-05-15T00:00:00Z",
   },
   "/blog/mythos-changed-the-game-part-1": {
     title: "Mythos Changed the Game. Here's What to Do About It. - Part 1",
@@ -206,6 +210,8 @@ function buildOgHtml(og: OgData): string {
   <meta property="og:site_name" content="Com-Sec" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="627" />
+  ${og.author ? `<meta property="article:author" content="${escape(og.author)}" />` : ""}
+  ${og.publishedTime ? `<meta property="article:published_time" content="${escape(og.publishedTime)}" />` : ""}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${escape(og.title)}" />
   <meta name="twitter:description" content="${escape(og.description)}" />
@@ -245,18 +251,23 @@ export function ogCrawlerMiddleware(
   next: NextFunction
 ) {
   const ua = req.headers["user-agent"] ?? "";
-  res.setHeader("Content-Type", "text/html; charset=utf-8");
 
   // Google's main crawler gets full semantic HTML for proper content indexing
   if (GOOGLE_CRAWLER_UA.test(ua)) {
     const page = GOOGLE_ROUTES[req.path];
-    if (page) return res.send(buildGoogleHtml(page));
+    if (page) {
+      res.setHeader("Content-Type", "text/html; charset=utf-8");
+      return res.send(buildGoogleHtml(page));
+    }
   }
 
   // Social media crawlers get lightweight OG-tag HTML
   if (SOCIAL_CRAWLER_UA.test(ua)) {
     const og = OG_ROUTES[req.path];
-    if (og) return res.send(buildOgHtml(og));
+    if (og) {
+      res.setHeader("Content-Type", "text/html; charset=utf-8");
+      return res.send(buildOgHtml(og));
+    }
   }
 
   next();
