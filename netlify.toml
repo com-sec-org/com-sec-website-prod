@@ -103,6 +103,10 @@
   function = "og-crawler"
   path = "/blog/*"
 
+[[edge_functions]]
+  function = "og-crawler"
+  path = "/compliance-audit-readiness"
+
 ##############################
 # ⚙️ SPA Fallback (must be last)
 ##############################
