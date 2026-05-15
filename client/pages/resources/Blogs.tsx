@@ -30,21 +30,21 @@ import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
-              {
-                id: "mythos-changed-the-game-part-2",
-                title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",
-                excerpt:
-                "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
-                date: "May 14, 2026",
-                readTime: "6 min read",
-                author: "Farbod Fakhrai",
-                category: "AI & Cybersecurity",
-                categoryColor: "bg-sky-100 text-sky-800",
-                featured: true,
-                image: "/images/blog-images/mythos-patching-window-collapsed.png",
-                imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
-                link: "/blog/mythos-changed-the-game-part-2",
-              },
+              // {
+              //   id: "mythos-changed-the-game-part-2",
+              //   title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",
+              //   excerpt:
+              //   "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
+              //   date: "May 14, 2026",
+              //   readTime: "6 min read",
+              //   author: "Farbod Fakhrai",
+              //   category: "AI & Cybersecurity",
+              //   categoryColor: "bg-sky-100 text-sky-800",
+              //   featured: true,
+              //   image: "/images/blog-images/mythos-patching-window-collapsed.png",
+              //   imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
+              //   link: "/blog/mythos-changed-the-game-part-2",
+              // },
               {
                 id: "mythos-changed-the-game-part-1",
                 title: "Mythos Changed the Game - Part 1: What It Is and Why It Matters",
@@ -55,7 +55,7 @@ const allArticles = [
                 author: "Farbod Fakhrai",
                 category: "AI & Cybersecurity",
                 categoryColor: "bg-violet-100 text-violet-800",
-                featured: false,
+                featured: true,
                 image: "/images/blog-images/mythos-part-1.png",
                 imageAlt: "Mythos AI cybersecurity — what it is and what to do about it",
                 link: "/blog/mythos-changed-the-game-part-1",
