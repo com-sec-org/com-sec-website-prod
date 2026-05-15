@@ -103,7 +103,7 @@ export function Navigation() {
                     to="/blogs"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
-                    Blogs
+                    Blog
                   </Link>
                   <Link
                     to="/approach"

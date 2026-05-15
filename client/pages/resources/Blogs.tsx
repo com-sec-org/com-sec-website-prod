@@ -30,21 +30,21 @@ import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
-              {
-                id: "mythos-changed-the-game-part-2",
-                title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",
-                excerpt:
-                "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
-                date: "May 14, 2026",
-                readTime: "6 min read",
-                author: "Farbod Fakhrai",
-                category: "AI & Cybersecurity",
-                categoryColor: "bg-sky-100 text-sky-800",
-                featured: true,
-                image: "/images/blog-images/mythos-patching-window-collapsed.png",
-                imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
-                link: "/blog/mythos-changed-the-game-part-2",
-              },
+              // {
+              //   id: "mythos-changed-the-game-part-2",
+              //   title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",
+              //   excerpt:
+              //   "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
+              //   date: "May 14, 2026",
+              //   readTime: "6 min read",
+              //   author: "Farbod Fakhrai",
+              //   category: "AI & Cybersecurity",
+              //   categoryColor: "bg-sky-100 text-sky-800",
+              //   featured: true,
+              //   image: "/images/blog-images/mythos-patching-window-collapsed.png",
+              //   imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
+              //   link: "/blog/mythos-changed-the-game-part-2",
+              // },
               {
                 id: "mythos-changed-the-game-part-1",
                 title: "Mythos Changed the Game - Part 1: What It Is and Why It Matters",
@@ -55,26 +55,25 @@ const allArticles = [
                 author: "Farbod Fakhrai",
                 category: "AI & Cybersecurity",
                 categoryColor: "bg-violet-100 text-violet-800",
-                featured: false,
                 image: "/images/blog-images/mythos-part-1.png",
                 imageAlt: "Mythos AI cybersecurity — what it is and what to do about it",
                 link: "/blog/mythos-changed-the-game-part-1",
               },
               
-              {
-                id: "caryhealth-first-client-story",
-                title: "CaryHealth was our first client. Their exit is a milestone for Us too.",
-                excerpt:
-                  "CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.",
-                date: "May 12, 2026",
-                readTime: "5 min read",
-                author: "Com-Sec Team",
-                categoryColor: "bg-sky-100 text-sky-800",
-                featured: false,
-                image: "/images/blog-images/Cary-Health-First-Client-Cover.jpeg",
-                imageAlt: "CaryHealth and Com-Sec healthcare cybersecurity journey",
-                link: "/blog/caryhealth-first-client-story",
-              },
+              // {
+              //   id: "caryhealth-first-client-story",
+              //   title: "CaryHealth was our first client. Their exit is a milestone for Us too.",
+              //   excerpt:
+              //     "CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.",
+              //   date: "May 12, 2026",
+              //   readTime: "5 min read",
+              //   author: "Com-Sec Team",
+              //   categoryColor: "bg-sky-100 text-sky-800",
+              //   featured: false,
+              //   image: "/images/blog-images/Cary-Health-First-Client-Cover.jpeg",
+              //   imageAlt: "CaryHealth and Com-Sec healthcare cybersecurity journey",
+              //   link: "/blog/caryhealth-first-client-story",
+              // },
               
               
               {
@@ -1096,36 +1095,32 @@ export default function Blogs() {
             </h2>
           </div>
 
-          <Link to="/blog/iso-27001-certification-guide">
+          <Link to="/blog/caryhealth-first-client-story">
             <Card className="hover:shadow-2xl transition-all duration-500 border-0 shadow-xl overflow-hidden group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-700 p-8 lg:p-12 text-white">
+                <div className="bg-gradient-to-br from-emerald-700 to-teal-800 p-8 lg:p-12 text-white">
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="bg-blue-400/20 text-blue-200 px-3 py-1 rounded-full text-sm font-medium animate-pulse">
+                    <span className="bg-emerald-400/20 text-emerald-200 px-3 py-1 rounded-full text-sm font-medium animate-pulse">
                       Featured
                     </span>
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm">
-                      Compliance
+                      🎉 Founder Story
                     </span>
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-bold mb-4 leading-tight group-hover:text-blue-200 transition-colors">
-                    ISO 27001 Certification Guide: What It Is, Why It Matters,
-                    and How to Get Compliant?
+                  <h3 className="text-2xl lg:text-3xl font-bold mb-4 leading-tight group-hover:text-emerald-200 transition-colors">
+                    CaryHealth was our first client. Their exit is a milestone for us too.
                   </h3>
                   <p className="text-white/90 mb-6 text-lg leading-relaxed">
-                    Complete guide to ISO 27001 certification process,
-                    requirements, and implementation strategies for your
-                    organization. Learn everything you need to know to achieve
-                    compliance.
+                    CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.
                   </p>
                   <div className="flex items-center gap-4 text-white/80 mb-6">
                     <div className="flex items-center gap-2">
                       <Calendar className="h-4 w-4" />
-                      <span className="text-sm">July 4, 2025</span>
+                      <span className="text-sm">May 12, 2026</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="h-4 w-4" />
-                      <span className="text-sm">12 min read</span>
+                      <span className="text-sm">5 min read</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <User className="h-4 w-4" />
@@ -1134,34 +1129,18 @@ export default function Blogs() {
                   </div>
                   <Button
                     variant="outline"
-                    className="border-white bg-white/10 text-white hover:bg-white hover:text-blue-600 group-hover:scale-105 transition-transform backdrop-blur-sm font-semibold"
+                    className="border-white bg-white/10 text-white hover:bg-white hover:text-emerald-700 group-hover:scale-105 transition-transform backdrop-blur-sm font-semibold"
                   >
                     Read Full Article
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>
-                <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 p-8 lg:p-12 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0">
-                    <img
-                      src="https://images.pexels.com/photos/4238516/pexels-photo-4238516.jpeg"
-                      alt="A man reading a coronavirus case count article on a computer screen indoors"
-                      className="w-full h-full object-cover opacity-40"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-100/80 to-gray-200/80"></div>
-                  </div>
-                  <div className="w-full max-w-sm relative z-10">
-                    <div className="bg-white rounded-lg p-6 shadow-lg transform group-hover:scale-105 transition-transform">
-                      <Shield className="h-16 w-16 text-blue-600 mx-auto mb-4 animate-pulse" />
-                      <div className="text-center">
-                        <div className="text-3xl font-bold text-gray-800 mb-2">
-                          ISO 27001
-                        </div>
-                        <div className="text-gray-600">
-                          Information Security Management
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="relative overflow-hidden">
+                  <img
+                    src="/images/blog-images/Cary-Health-First-Client-Cover.jpeg"
+                    alt="CaryHealth and Com-Sec healthcare cybersecurity journey"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
               </div>
             </Card>

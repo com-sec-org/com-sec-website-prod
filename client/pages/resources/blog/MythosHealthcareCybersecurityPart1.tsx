@@ -268,7 +268,7 @@ export default function MythosHealthcareCybersecurityPart1() {
 
               {/* Part 2 teaser */}
               <section className="mb-10">
-                <Link to="/blog/mythos-changed-the-game-part-2" className="block group">
+                {/* <Link to="/" className="block group"> */}
                   <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
                     <div className="text-3xl mt-1">→</div>
                     <div>
@@ -276,10 +276,10 @@ export default function MythosHealthcareCybersecurityPart1() {
                       <p className="text-lg text-slate-100 leading-relaxed">
                         In Part 2, we'll get into the specific operational change that hits hardest: the patching window just collapsed.
                       </p>
-                      <p className="text-sm text-violet-300 mt-3 group-hover:underline">Read Part 2 →</p>
+                      {/* <p className="text-sm text-violet-300 mt-3 group-hover:underline">Read Part 2 →</p> */}
                     </div>
                   </div>
-                </Link>
+                {/* </Link> */}
               </section>
 
               {/* Author */}
