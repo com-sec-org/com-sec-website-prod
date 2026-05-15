@@ -80,7 +80,7 @@ export default function CaryHealthFirstClientStory() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              CaryHealth was client #1. Their exit means everything to us.
+              CaryHealth was our first client. Their exit is a milestone for us too.
             </h1>
 
             <p className="text-xl text-emerald-100 mb-8 leading-relaxed">
