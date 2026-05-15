@@ -30,6 +30,20 @@ import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
+              {
+                id: "we-almost-partnered-with-delve",
+                title: "We Almost Partnered With Delve. Here's What Stopped Us.",
+                excerpt:
+                  "Com-Sec was weeks away from being Delve's lead vCISO partner for HITRUST clients. Then things started feeling off. Here's what we saw, what happened next, and what it means for how you vet compliance partners.",
+                date: "May 15, 2026",
+                readTime: "7 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance & Cybersecurity",
+                categoryColor: "bg-red-100 text-red-800",
+                image: "/images/blog-images/delve-compliance-scandal.png",
+                imageAlt: "Delve compliance scandal — fake compliance as a service",
+                link: "/blog/we-almost-partnered-with-delve",
+              },
               // {
               //   id: "mythos-changed-the-game-part-2",
               //   title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",

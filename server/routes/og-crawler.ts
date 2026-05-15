@@ -13,6 +13,13 @@ interface OgData {
 }
 
 const OG_ROUTES: Record<string, OgData> = {
+  "/blog/we-almost-partnered-with-delve": {
+    title: "We Almost Partnered With Delve. Here's What Stopped Us.",
+    description:
+      "Com-Sec was weeks away from being Delve's lead vCISO partner for HITRUST clients. Then things started feeling off. Here's what we saw, what happened next, and the lessons for anyone vetting a compliance partner.",
+    image: `${BASE_URL}/images/blog-images/delve-compliance-scandal.png`,
+    url: `${BASE_URL}/blog/we-almost-partnered-with-delve`,
+  },
   "/blog/mythos-changed-the-game-part-1": {
     title: "Mythos Changed the Game. Here's What to Do About It. - Part 1",
     description:
@@ -46,6 +53,8 @@ function buildOgHtml(og: OgData): string {
   <meta property="og:url" content="${escape(og.url)}" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Com-Sec" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${escape(og.title)}" />
   <meta name="twitter:description" content="${escape(og.description)}" />

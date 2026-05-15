@@ -92,6 +92,7 @@ import Soc2AuditChecklistGuide2026 from "./pages/resources/blog/Soc2auditcheckli
 import Soc2PreparationGuide2026 from "./pages/resources/blog/Soc2preparationguide2026";
 import MythosHealthcareCybersecurityPart1 from "./pages/resources/blog/MythosHealthcareCybersecurityPart1";
 import MythosHealthcareCybersecurityPart2 from "./pages/resources/blog/MythosHealthcareCybersecurityPart2.tsx";
+import DelvePartnershipBlog from "./pages/resources/blog/DelvePartnershipBlog";
 
 
 const queryClient = new QueryClient();
@@ -228,7 +229,7 @@ const App = () => (
               {/* Resource Routes */}
               <Route path="/resources/approach" element={<Approach />} />
               <Route path="/resources/phishing" element={<PhishingTest />} />
-              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/blog" element={<Blogs />} />
               <Route path="/approach" element={<Approach />} />
               <Route path="/phishing" element={<PhishingTest />} />
 
@@ -312,6 +313,7 @@ const App = () => (
               <Route path="/blog/how-to-take-an-effective-mental-health-day-d73ep" element={<Navigate to="/blog/automated-vs-manual-penetration-testing-2026" replace />} />
               <Route path="/blog/mythos-changed-the-game-part-1" element={<MythosHealthcareCybersecurityPart1 />} />
               {/* <Route path="/blog/mythos-changed-the-game-part-2" element={<MythosHealthcareCybersecurityPart2 />} /> */}
+              <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
@@ -336,7 +338,8 @@ const App = () => (
               <Route path="/blog/meet-the-team-farbod-fakhrai" element={<Navigate to="/blog/how-to-prepare-for-a-compliance-audit-best-practices-and-strategies" replace />} />
               <Route path="/blog/ai-ethics-healthcare" element={<Navigate to="/blog/ai-health-companies-protect-patient-privacy-confidentiality-2026" replace />} />
               <Route path="/blog/compliance-vs-security-whats-the-deal" element={<Navigate to="/blog/compliance-vs-security-key-differences-why-both-matter-2026" replace />} />
-              <Route path="/resources/blogs" element={<Navigate to="/blogs" replace />} />
+              <Route path="/blogs" element={<Navigate to="/blog" replace />} />
+              <Route path="/resources/blogs" element={<Navigate to="/blog" replace />} />
               {/* ── 404 Fixes: dead pages → home ── */}
               <Route path="/blog/ai-and-ethics-in-healthcare-innovation" element={<Navigate to="/" replace />} />
               <Route path="/blog/developing-policies-and-procedures-that-are-actually-followed-how-a-vciso-can-help" element={<Navigate to="/" replace />} />
