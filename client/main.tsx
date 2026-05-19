@@ -312,7 +312,7 @@ const App = () => (
               <Route path="/blog/agentic-ai-governance-lifecycle-management-healthcare-2026" element={<AgenticAiGovernanceHealthcare2026 />} />
               <Route path="/blog/how-to-take-an-effective-mental-health-day-d73ep" element={<Navigate to="/blog/automated-vs-manual-penetration-testing-2026" replace />} />
               <Route path="/blog/mythos-changed-the-game-part-1" element={<MythosHealthcareCybersecurityPart1 />} />
-              {/* <Route path="/blog/mythos-changed-the-game-part-2" element={<MythosHealthcareCybersecurityPart2 />} /> */}
+              <Route path="/blog/mythos-changed-the-game-part-2" element={<MythosHealthcareCybersecurityPart2 />} />
               <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
               <Route path="/about" element={<About />} />
 
