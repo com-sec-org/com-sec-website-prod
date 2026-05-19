@@ -31,6 +31,21 @@ import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
               {
+                id: "mythos-changed-the-game-part-2",
+                title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",
+                excerpt:
+                "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
+                date: "May 14, 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "AI & Cybersecurity",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: true,
+                image: "/images/blog-images/mythos-patching-window-collapsed.png",
+                imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
+                link: "/blog/mythos-changed-the-game-part-2",
+              },
+              {
                 id: "we-almost-partnered-with-delve",
                 title: "We Almost Partnered With Delve. Here's What Stopped Us.",
                 excerpt:
@@ -44,21 +59,6 @@ const allArticles = [
                 imageAlt: "Delve compliance scandal — fake compliance as a service",
                 link: "/blog/we-almost-partnered-with-delve",
               },
-              // {
-              //   id: "mythos-changed-the-game-part-2",
-              //   title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",
-              //   excerpt:
-              //   "The patching window just collapsed. AI-driven vulnerability discovery is shrinking the time between disclosure and weaponization to hours. Here's what startups need to do now. Part 2 of our Mythos series.",
-              //   date: "May 14, 2026",
-              //   readTime: "6 min read",
-              //   author: "Farbod Fakhrai",
-              //   category: "AI & Cybersecurity",
-              //   categoryColor: "bg-sky-100 text-sky-800",
-              //   featured: true,
-              //   image: "/images/blog-images/mythos-patching-window-collapsed.png",
-              //   imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
-              //   link: "/blog/mythos-changed-the-game-part-2",
-              // },
               {
                 id: "mythos-changed-the-game-part-1",
                 title: "Mythos Changed the Game - Part 1: What It Is and Why It Matters",
