@@ -35,8 +35,8 @@ const oneTimeEngagements = [
       "Technical and operational security assessment services designed to identify vulnerabilities, validate controls, and improve organizational security posture.",
     icon: Search,
     highlights: [
-      "Penetration Testing - $3,500",
-      "Internal Audit - $3,500",
+      "Penetration Testing",
+      "Internal Audit",
     ],
     benefits: [
       "Web & cloud penetration testing",
@@ -63,6 +63,7 @@ const oneTimeEngagements = [
       "SOC 2 Type II",
       "ISO 27001",
       "GDPR",
+      "HIPAA",
       "NIST",
       "HITRUST",
     ],
@@ -86,6 +87,11 @@ const oneTimeEngagements = [
     description:
       "Complete SOC 2 Type II engagement including readiness, evidence collection, GRC platform support, auditor coordination, and compliance management from kickoff to final report.",
     icon: Award,
+    highlights: [
+      "GRC Platform Support (Drata, Vanta, Ceel)",
+      "Auditor Coordination",
+      "Audit Readiness",
+    ],
     benefits: [
       "GRC platform support",
       "Auditor coordination",
@@ -116,6 +122,11 @@ const ongoingSupportServices = [
     description:
       "Virtual Chief Information Security Officer services including security strategy, risk management, and compliance oversight.",
     icon: Shield,
+    highlights: [
+      "Security Strategy",
+      "Risk Management",
+      "Compliance Oversight",
+    ],
     benefits: [
       "Security strategy development",
       "Risk management oversight",
@@ -136,6 +147,11 @@ const ongoingSupportServices = [
     description:
       "Combined virtual security leadership and IT operations management for comprehensive security and infrastructure oversight.",
     icon: Users,
+    highlights: [
+      "Fractional CISO Coverage",
+      "IT Operations Management",
+      "Endpoint Management",
+    ],
     benefits: [
       "Fractional CISO coverage",
       "IT helpdesk support",
@@ -156,6 +172,11 @@ const ongoingSupportServices = [
     description:
       "Managed Security Service Provider with 24/7 Security Operations Center monitoring and threat response capabilities.",
     icon: Rocket,
+    highlights: [
+      "24/7 SOC Monitoring",
+      "Threat Detection & Response",
+      "Security Incident Management",
+    ],
     benefits: [
       "24/7 SOC monitoring",
       "Threat detection and response",
