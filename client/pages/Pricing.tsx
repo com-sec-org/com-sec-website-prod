@@ -34,6 +34,10 @@ const oneTimeEngagements = [
     description:
       "Technical and operational security assessment services designed to identify vulnerabilities, validate controls, and improve organizational security posture.",
     icon: Search,
+    highlights: [
+      "Penetration Testing - $3,500",
+      "Internal Audit - $3,500",
+    ],
     benefits: [
       "Web & cloud penetration testing",
       "Internal compliance audits",
@@ -54,6 +58,14 @@ const oneTimeEngagements = [
     description:
       "Comprehensive compliance and audit readiness support for major frameworks and certifications.",
     icon: Award,
+    frameworks: [
+      "SOC 2 Type I",
+      "SOC 2 Type II",
+      "ISO 27001",
+      "GDPR",
+      "NIST",
+      "HITRUST",
+    ],
     benefits: [
       "Gap assessments",
       "Policy & documentation support",
@@ -257,6 +269,33 @@ export default function Pricing() {
                             {service.pricingDisplay?.subtext || "Custom pricing available based on scope"}
                           </p>
                         </div>
+
+                        {/* Highlights Section - Services/Frameworks */}
+                        {service.highlights && (
+                          <div className="mb-6">
+                            <p className="text-xs font-semibold text-orange-400 mb-3 uppercase tracking-wider">Highlighted Services</p>
+                            <div className="flex flex-wrap gap-2">
+                              {service.highlights.map((highlight, idx) => (
+                                <span key={idx} className="px-3 py-1 bg-orange-500/20 text-orange-300 text-xs rounded-full font-semibold border border-orange-500/30">
+                                  {highlight}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {service.frameworks && (
+                          <div className="mb-6">
+                            <p className="text-xs font-semibold text-orange-400 mb-3 uppercase tracking-wider">Frameworks Covered</p>
+                            <div className="flex flex-wrap gap-2">
+                              {service.frameworks.map((framework, idx) => (
+                                <span key={idx} className="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full font-semibold border border-blue-500/30">
+                                  {framework}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
 
                         {/* Benefits */}
                         <div className="mb-6">
