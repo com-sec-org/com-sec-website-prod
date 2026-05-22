@@ -31,6 +31,21 @@ import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
               {
+                id: "mythos-compliance-alone-wont-save-you-part-3",
+                title: "Mythos Changed the Game - Part 3: Compliance Alone Won't Save You",
+                excerpt:
+                  "Your SOC 2 report won't protect you from an AI that exploits zero-days in hours. Why compliance frameworks are a foundation, not a finish line — and what to do about the gap. Part 3 of our Mythos series.",
+                date: "May 15, 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "AI & Cybersecurity",
+                categoryColor: "bg-rose-100 text-rose-800",
+                featured: false,
+                image: "/images/blog-images/mythos-compliance-alone-wont-save-you.png",
+                imageAlt: "Mythos compliance alone won't save you — AI-driven cybersecurity threats",
+                link: "/blog/mythos-compliance-alone-wont-save-you-part-3",
+              },
+              {
                 id: "mythos-changed-the-game-part-2",
                 title: "Mythos Changed the Game - Part 2: What Startups Need to Do Now",
                 excerpt:
@@ -40,7 +55,7 @@ const allArticles = [
                 author: "Farbod Fakhrai",
                 category: "AI & Cybersecurity",
                 categoryColor: "bg-sky-100 text-sky-800",
-                featured: true,
+                featured: false,
                 image: "/images/blog-images/mythos-patching-window-collapsed.png",
                 imageAlt: "Mythos AI cybersecurity — the patching window just collapsed",
                 link: "/blog/mythos-changed-the-game-part-2",
