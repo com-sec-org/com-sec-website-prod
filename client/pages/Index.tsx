@@ -1414,6 +1414,20 @@ export default function Index() {
                 className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
               />
             </a>
+
+            {/* Ceel */}
+            <a
+              href="https://www.ceel.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F4e8c9f5d6a7e8b9f0c1d2e3f4a5b6c7d?format=webp&width=800&height=1200"
+                alt="Ceel"
+                className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
+              />
+            </a>
           </div>
 
           {/* Call to Action */}
