@@ -44,6 +44,17 @@ const OG_ROUTES: Record<string, OgData> = {
       "Part 2: The Patching Window Just Collapsed. AI-driven vulnerability discovery is shrinking patch windows — here's what to do about it.",
     image: `${BASE_URL}/images/blog-images/mythos-patching-window-collapsed.png`,
     url: `${BASE_URL}/blog/mythos-changed-the-game-part-2`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-05-14T00:00:00Z",
+  },
+  "/blog/mythos-compliance-alone-wont-save-you-part-3": {
+    title: "Mythos Changed the Game. Here's What to Do About It. — Part 3",
+    description:
+      "Part 3: Compliance Alone Won't Save You. Your SOC 2 report won't protect you from an AI that exploits zero-days in hours. Here's what the gap looks like — and what to do about it.",
+    image: `${BASE_URL}/images/blog-images/mythos-compliance-alone-wont-save-you.png`,
+    url: `${BASE_URL}/blog/mythos-compliance-alone-wont-save-you-part-3`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-05-15T00:00:00Z",
   },
 };
 
