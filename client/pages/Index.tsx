@@ -695,153 +695,294 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Core Services Section */}
+      {/* Pricing Section */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-            <div className="inline-flex items-center bg-primary/10 rounded-full px-4 sm:px-6 py-2 text-primary font-medium text-xs sm:text-sm mb-6 sm:mb-8">
-              <Shield className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-              Comprehensive Security Solutions
+          {/* SECTION 1: One-Time Engagements */}
+          <div className="mb-16 sm:mb-20 lg:mb-24">
+            <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+              <div className="inline-flex items-center bg-primary/10 rounded-full px-4 sm:px-6 py-2 text-primary font-medium text-xs sm:text-sm mb-6 sm:mb-8">
+                <Shield className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
+                One-Time Engagements
+              </div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 px-2">
+                One-Time Compliance{" "}
+                <span className="bg-gradient-to-r from-accent to-orange-500 bg-clip-text text-transparent">
+                  & Security Engagements
+                </span>
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+                Fixed-cost project engagements for compliance readiness, certifications, and security assessments.
+              </p>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 px-2">
-              Your Complete{" "}
-              <span className="bg-gradient-to-r from-accent to-orange-500 bg-clip-text text-transparent">
-                Cybersecurity Partner
-              </span>
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-              From compliance audits to penetration testing, we provide
-              end-to-end cybersecurity services to protect your business and
-              build stakeholder confidence.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {[
-              {
-                icon: Shield,
-                title: "SOC 2 Compliance",
-                description:
-                  "Achieve SOC 2 Type II certification with our expert guidance and proven methodologies.",
-                features: [
-                  "Gap Analysis",
-                  "Control Implementation",
-                  "Audit Preparation",
-                ],
-                color: "from-blue-500 to-cyan-500",
-                href: "/soc2-readiness",
-              },
-              {
-                icon: Search,
-                title: "Penetration Testing",
-                description:
-                  "Comprehensive security testing to identify vulnerabilities before attackers do.",
-                features: [
-                  "Network Testing",
-                  "Web App Testing",
-                  "Social Engineering",
-                ],
-                color: "from-red-500 to-pink-500",
-                href: "/penetration-testing-services",
-              },
-              {
-                icon: Lock,
-                title: "Cloud Security",
-                description:
-                  "Secure your cloud infrastructure with best practices and continuous monitoring.",
-                features: ["AWS Security", "Azure Security", "GCP Security"],
-                color: "from-green-500 to-emerald-500",
-                href: "/cloud-security",
-              },
-              {
-                icon: FileCheck,
-                title: "Compliance Audits",
-                description:
-                  "Comprehensive audits for HIPAA, ISO 27001, and other regulatory frameworks.",
-                features: ["HIPAA Compliance", "ISO 27001", "GDPR Compliance"],
-                color: "from-purple-500 to-violet-500",
-                href: "/compliance-audit-readiness",
-              },
-              {
-                icon: Users,
-                title: "Security Training",
-                description:
-                  "Build a security-aware workforce with customized training programs.",
-                features: [
-                  "Phishing Simulation",
-                  "Security Awareness",
-                  "Incident Response",
-                ],
-                color: "from-orange-500 to-amber-500",
-                href: "/security-training",
-              },
-              {
-                icon: CheckCircle,
-                title: "Risk Management",
-                description:
-                  "Identify, assess, and mitigate cybersecurity risks across your organization.",
-                features: [
-                  "Risk Assessment",
-                  "Threat Modeling",
-                  "Control Testing",
-                ],
-                color: "from-teal-500 to-cyan-500",
-                href: "/risk-management",
-              },
-            ].map((service, index) => (
-              <Link to={service.href ?? "/services"} key={index} className="block h-full no-underline" title={`Learn more about ${service.title}`}>
-              <Card
-                className="group relative overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] h-full"
-              >
-                <div className={`pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity`}>
-                  <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-10`}></div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+              {/* Card 1: Compliance & Framework Audit Readiness */}
+              <Card className="group relative overflow-hidden border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 h-full flex flex-col">
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-10"></div>
                 </div>
                 <CardHeader className="p-4 sm:p-6">
                   <div className="flex items-center justify-between mb-3 sm:mb-4">
-                    <div
-                      className={`p-2 sm:p-3 rounded-xl bg-gradient-to-br ${service.color} shadow-lg transform transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110`}
-                    >
-                      <service.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg transform transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110">
+                      <FileCheck className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                     </div>
                   </div>
-                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300 transform group-hover:translate-x-0.5">
-                    {service.title}
+                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    Compliance & Framework Audit Readiness
                   </CardTitle>
+                  <div className="mt-3 sm:mt-4">
+                    <p className="text-2xl sm:text-3xl font-bold text-accent">Starting at $6,000</p>
+                  </div>
                 </CardHeader>
 
-                <CardContent className="p-4 sm:p-6 pt-0">
+                <CardContent className="p-4 sm:p-6 pt-0 flex-1 flex flex-col">
                   <CardDescription className="text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
-                    {service.description}
+                    Comprehensive compliance and audit readiness support for major frameworks and certifications.
                   </CardDescription>
-                  <div className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center">
-                        <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-green-500 mr-2 flex-shrink-0" />
-                        <span className="text-xs sm:text-sm text-muted-foreground">
-                          {feature}
+
+                  <div className="mb-6 sm:mb-8">
+                    <p className="text-xs sm:text-sm font-semibold text-primary mb-3 uppercase tracking-wider">Frameworks Covered</p>
+                    <div className="flex flex-wrap gap-2">
+                      {["SOC 2 Type I", "SOC 2 Type II", "ISO 27001", "HITRUST", "HIPAA", "GDPR"].map((framework, idx) => (
+                        <span key={idx} className="px-3 py-1 bg-blue-100 text-blue-700 text-xs sm:text-sm rounded-full font-semibold">
+                          {framework}
                         </span>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
-                  <div className="mt-4 text-sm font-semibold text-accent opacity-0 group-hover:opacity-100 transition-opacity group-hover:translate-x-0.5">Learn more →</div>
+
+                  <div className="mb-6 sm:mb-8">
+                    <p className="text-xs sm:text-sm font-semibold text-primary mb-3 uppercase tracking-wider">What's Included</p>
+                    <div className="space-y-2">
+                      {["Gap assessments", "Policy & documentation support", "Control implementation guidance", "Evidence readiness", "Audit preparation", "Compliance roadmap"].map((item, idx) => (
+                        <div key={idx} className="flex items-center">
+                          <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-green-500 mr-2 flex-shrink-0" />
+                          <span className="text-xs sm:text-sm text-muted-foreground">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <Button className="w-full mt-auto bg-accent hover:bg-orange-600 text-white font-semibold">
+                    Get Started
+                  </Button>
                 </CardContent>
               </Card>
-            </Link>
-            ))}
+
+              {/* Card 2: Security Assessments */}
+              <Card className="group relative overflow-hidden border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 h-full flex flex-col">
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-pink-500 opacity-10"></div>
+                </div>
+                <CardHeader className="p-4 sm:p-6">
+                  <div className="flex items-center justify-between mb-3 sm:mb-4">
+                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-br from-red-500 to-pink-500 shadow-lg transform transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110">
+                      <Search className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                    </div>
+                  </div>
+                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    Security Assessments
+                  </CardTitle>
+                  <div className="mt-3 sm:mt-4">
+                    <p className="text-2xl sm:text-3xl font-bold text-accent">Starting at $4,000</p>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="p-4 sm:p-6 pt-0 flex-1 flex flex-col">
+                  <CardDescription className="text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                    Technical and operational security assessment services designed to identify vulnerabilities, validate controls, and improve organizational security posture.
+                  </CardDescription>
+
+                  <div className="mb-6 sm:mb-8">
+                    <p className="text-xs sm:text-sm font-semibold text-primary mb-3 uppercase tracking-wider">Services Highlighted</p>
+                    <div className="flex flex-wrap gap-2">
+                      {["Penetration Testing", "Internal Audit", "Security Risk Assessment"].map((service, idx) => (
+                        <span key={idx} className="px-3 py-1 bg-red-100 text-red-700 text-xs sm:text-sm rounded-full font-semibold">
+                          {service}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="mb-6 sm:mb-8">
+                    <p className="text-xs sm:text-sm font-semibold text-primary mb-3 uppercase tracking-wider">What's Included</p>
+                    <div className="space-y-2">
+                      {["Web & cloud penetration testing", "Internal compliance audits", "Risk analysis", "Remediation recommendations", "Technical reporting", "Evidence validation"].map((item, idx) => (
+                        <div key={idx} className="flex items-center">
+                          <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-green-500 mr-2 flex-shrink-0" />
+                          <span className="text-xs sm:text-sm text-muted-foreground">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <Button className="w-full mt-auto bg-accent hover:bg-orange-600 text-white font-semibold">
+                    Learn More
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Card 3: Full SOC 2 Audit Package - Most Popular */}
+              <Card className="group relative overflow-hidden border-2 border-accent shadow-2xl hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 h-full flex flex-col lg:col-span-1 sm:col-span-2 lg:col-span-1">
+                <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold uppercase">
+                  Most Popular
+                </div>
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-amber-500 opacity-10"></div>
+                </div>
+                <CardHeader className="p-4 sm:p-6">
+                  <div className="flex items-center justify-between mb-3 sm:mb-4">
+                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-br from-orange-500 to-amber-500 shadow-lg transform transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110">
+                      <Star className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                    </div>
+                  </div>
+                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    Full SOC 2 Audit Package
+                  </CardTitle>
+                  <div className="mt-3 sm:mt-4">
+                    <p className="text-2xl sm:text-3xl font-bold text-accent">Starting at $18,500</p>
+                    <p className="text-xs sm:text-sm font-semibold text-accent mt-1">All-Inclusive</p>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="p-4 sm:p-6 pt-0 flex-1 flex flex-col">
+                  <CardDescription className="text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                    Complete SOC 2 Type II engagement including readiness, evidence collection, GRC platform support, auditor coordination, and compliance management from kickoff to final report.
+                  </CardDescription>
+
+                  <div className="mb-6 sm:mb-8">
+                    <p className="text-xs sm:text-sm font-semibold text-primary mb-3 uppercase tracking-wider">What's Included</p>
+                    <div className="space-y-2">
+                      {["GRC platform support", "Auditor coordination", "Policy implementation", "Evidence monitoring", "Observation support", "Compliance management"].map((item, idx) => (
+                        <div key={idx} className="flex items-center">
+                          <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-green-500 mr-2 flex-shrink-0" />
+                          <span className="text-xs sm:text-sm text-muted-foreground">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <Button className="w-full mt-auto bg-accent hover:bg-orange-600 text-white font-semibold">
+                    Book a Consultation
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
 
-          <div className="text-center mt-8 sm:mt-12 lg:mt-16">
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-accent text-accent hover:bg-accent hover:text-white text-sm sm:text-base px-6 sm:px-8"
-              asChild
-            >
-              <Link to="/services">
-                View Our Services
-                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-              </Link>
-            </Button>
+          {/* Section Divider */}
+          <div className="py-8 sm:py-12 lg:py-16 border-t-2 border-gray-200"></div>
+
+          {/* SECTION 2: Ongoing Support Services */}
+          <div>
+            <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+              <div className="inline-flex items-center bg-accent/10 rounded-full px-4 sm:px-6 py-2 text-accent font-medium text-xs sm:text-sm mb-6 sm:mb-8">
+                <Users className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
+                Ongoing Support Services
+              </div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 px-2">
+                Ongoing Security{" "}
+                <span className="bg-gradient-to-r from-accent to-orange-500 bg-clip-text text-transparent">
+                  & IT Support
+                </span>
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+                Continuous monthly security, compliance, and managed IT support services.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+              {/* Card 1: vCISO Support */}
+              <Card className="group relative overflow-hidden border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 h-full flex flex-col">
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-violet-500 opacity-10"></div>
+                </div>
+                <CardHeader className="p-4 sm:p-6">
+                  <div className="flex items-center justify-between mb-3 sm:mb-4">
+                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-br from-purple-500 to-violet-500 shadow-lg transform transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110">
+                      <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                    </div>
+                  </div>
+                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    vCISO Support
+                  </CardTitle>
+                  <div className="mt-3 sm:mt-4">
+                    <p className="text-2xl sm:text-3xl font-bold text-accent">$2,500<span className="text-lg sm:text-xl">/month</span></p>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="p-4 sm:p-6 pt-0 flex-1 flex flex-col">
+                  <CardDescription className="text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                    Virtual Chief Information Security Officer services including security strategy, risk management, and compliance oversight.
+                  </CardDescription>
+
+                  <Button className="w-full mt-auto bg-accent hover:bg-orange-600 text-white font-semibold">
+                    Learn More
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Card 2: vCISO + IT Management */}
+              <Card className="group relative overflow-hidden border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 h-full flex flex-col">
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-cyan-500 opacity-10"></div>
+                </div>
+                <CardHeader className="p-4 sm:p-6">
+                  <div className="flex items-center justify-between mb-3 sm:mb-4">
+                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-500 shadow-lg transform transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110">
+                      <Users className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                    </div>
+                  </div>
+                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    vCISO + IT Management
+                  </CardTitle>
+                  <div className="mt-3 sm:mt-4">
+                    <p className="text-2xl sm:text-3xl font-bold text-accent">$4,500<span className="text-lg sm:text-xl">/month</span></p>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="p-4 sm:p-6 pt-0 flex-1 flex flex-col">
+                  <CardDescription className="text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                    Combined virtual security leadership and IT operations management for comprehensive security and infrastructure oversight.
+                  </CardDescription>
+
+                  <Button className="w-full mt-auto bg-accent hover:bg-orange-600 text-white font-semibold">
+                    Learn More
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Card 3: MSSP + SOC Support */}
+              <Card className="group relative overflow-hidden border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 h-full flex flex-col">
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-500 opacity-10"></div>
+                </div>
+                <CardHeader className="p-4 sm:p-6">
+                  <div className="flex items-center justify-between mb-3 sm:mb-4">
+                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 shadow-lg transform transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110">
+                      <Lock className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                    </div>
+                  </div>
+                  <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    MSSP + SOC Support
+                  </CardTitle>
+                  <div className="mt-3 sm:mt-4">
+                    <p className="text-2xl sm:text-3xl font-bold text-accent">$6,500<span className="text-lg sm:text-xl">/month</span></p>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="p-4 sm:p-6 pt-0 flex-1 flex flex-col">
+                  <CardDescription className="text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                    Managed Security Service Provider with 24/7 Security Operations Center monitoring and threat response capabilities.
+                  </CardDescription>
+
+                  <Button className="w-full mt-auto bg-accent hover:bg-orange-600 text-white font-semibold">
+                    Learn More
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
