@@ -92,6 +92,7 @@ import Soc2AuditChecklistGuide2026 from "./pages/resources/blog/Soc2auditcheckli
 import Soc2PreparationGuide2026 from "./pages/resources/blog/Soc2preparationguide2026";
 import MythosHealthcareCybersecurityPart1 from "./pages/resources/blog/MythosHealthcareCybersecurityPart1";
 import MythosHealthcareCybersecurityPart2 from "./pages/resources/blog/MythosHealthcareCybersecurityPart2.tsx";
+import MythosComplianceAloneWontSaveYouPart3 from "./pages/resources/blog/MythosComplianceAloneWontSaveYouPart3.tsx";
 import DelvePartnershipBlog from "./pages/resources/blog/DelvePartnershipBlog";
 
 
@@ -313,6 +314,7 @@ const App = () => (
               <Route path="/blog/how-to-take-an-effective-mental-health-day-d73ep" element={<Navigate to="/blog/automated-vs-manual-penetration-testing-2026" replace />} />
               <Route path="/blog/mythos-changed-the-game-part-1" element={<MythosHealthcareCybersecurityPart1 />} />
               <Route path="/blog/mythos-changed-the-game-part-2" element={<MythosHealthcareCybersecurityPart2 />} />
+              <Route path="/blog/mythos-compliance-alone-wont-save-you-part-3" element={<MythosComplianceAloneWontSaveYouPart3 />} />
               <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
               <Route path="/about" element={<About />} />
 
