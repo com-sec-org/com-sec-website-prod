@@ -48,18 +48,25 @@ const pricingData = [
     name: "SOC 2 Type I & II",
     category: "Compliance & Frameworks",
     type: "One-time",
-    startingPrice: "$4,000",
+    startingPrice: "Under $20K",
     description:
-      "Comprehensive SOC 2 Type I and Type II certification support including readiness assessment, testing, evidence collection, and validated assessor coordination.",
+      "End-to-end SOC 2 Type II support with most startups completing within 4–6 months. Predictable all-inclusive pricing eliminates scope creep and audit complexity. Our comprehensive approach bundles everything from initial readiness assessment through successful auditor coordination.",
     icon: Award,
     benefits: [
       "Readiness assessment & gap analysis",
-      "SOC 2 Type I support",
-      "SOC 2 Type II testing",
-      "Full evidence collection",
-      "Assessor coordination",
+      "Policy & control implementation",
+      "Evidence collection & monitoring",
+      "SOC 2 Type II observation support",
+      "Auditor coordination",
+      "GRC platform support (Drata, Vanta, or Ceel)",
     ],
     simplePrice: true,
+    pricingDisplay: {
+      headline: "Typical All-Inclusive Pricing",
+      price: "Under $20K",
+      subtext: "Includes GRC platform, auditor coordination, and readiness support.",
+    },
+    buttonText: "Book a Consultation",
     href: "/soc2",
   },
   {
@@ -286,13 +293,13 @@ export default function Pricing() {
                       {service.simplePrice ? (
                         <div className="pricing-tier-display mb-6 p-4 bg-slate-800/50 rounded-lg border border-slate-700">
                           <div className="text-sm text-slate-400 mb-2">
-                            Starting Price ({service.type})
+                            {service.pricingDisplay?.headline || `Starting Price (${service.type})`}
                           </div>
                           <p className="text-3xl font-bold text-orange-400">
-                            {service.startingPrice}
+                            {service.pricingDisplay?.price || service.startingPrice}
                           </p>
                           <p className="text-xs text-slate-400 mt-2">
-                            Custom pricing available based on scope
+                            {service.pricingDisplay?.subtext || "Custom pricing available based on scope"}
                           </p>
                         </div>
                       ) : (
@@ -367,7 +374,7 @@ export default function Pricing() {
                           className="w-full bg-slate-700 hover:bg-orange-500 text-white transition-colors pricing-cta-btn"
                           variant="default"
                         >
-                          {service.href ? "Learn More" : "Get Started"}
+                          {service.buttonText || (service.href ? "Learn More" : "Get Started")}
                           <ChevronRight className="ml-2 h-4 w-4" />
                         </Button>
                       </Link>
