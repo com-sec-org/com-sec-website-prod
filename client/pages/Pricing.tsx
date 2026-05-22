@@ -126,6 +126,7 @@ const ongoingSupportServices = [
       "Security Strategy",
       "Risk Management",
       "Compliance Oversight",
+      "Policy Governance",
     ],
     benefits: [
       "Security strategy development",
@@ -148,9 +149,10 @@ const ongoingSupportServices = [
       "Combined virtual security leadership and IT operations management for comprehensive security and infrastructure oversight.",
     icon: Users,
     highlights: [
-      "Fractional CISO Coverage",
-      "IT Operations Management",
       "Endpoint Management",
+      "IT Operations",
+      "User Access Management",
+      "Compliance Monitoring",
     ],
     benefits: [
       "Fractional CISO coverage",
@@ -174,8 +176,9 @@ const ongoingSupportServices = [
     icon: Rocket,
     highlights: [
       "24/7 SOC Monitoring",
-      "Threat Detection & Response",
-      "Security Incident Management",
+      "Threat Detection",
+      "Incident Response",
+      "Vulnerability Management",
     ],
     benefits: [
       "24/7 SOC monitoring",
@@ -411,6 +414,20 @@ export default function Pricing() {
                             Per month
                           </p>
                         </div>
+
+                        {/* Highlights Section - Services */}
+                        {service.highlights && (
+                          <div className="mb-6">
+                            <p className="text-xs font-semibold text-orange-400 mb-3 uppercase tracking-wider">Highlighted Services</p>
+                            <div className="flex flex-wrap gap-2">
+                              {service.highlights.map((highlight, idx) => (
+                                <span key={idx} className="px-3 py-1 bg-orange-500/20 text-orange-300 text-xs rounded-full font-semibold border border-orange-500/30">
+                                  {highlight}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
 
                         {/* Benefits */}
                         <div className="mb-6">
