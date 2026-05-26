@@ -35,19 +35,6 @@ export default function Team() {
       ],
     },
     {
-      name: "Jayush Chawla",
-      role: "Penetration Testing Manager",
-      image: "/images/team/Jayush.png",
-      description:
-        "Jayush oversees all penetration testing at Com-Sec. He uses a mix of manual and automated testing, code reviews, threat modeling, and application assessments to find and fix security vulnerabilities, strengthening our clients' defenses. Jayush's thorough testing approach helps clients identify risks before they become problems.",
-      expertise: [
-        "Manual Testing",
-        "Automated Testing",
-        "Code Reviews",
-        "Threat Modeling",
-      ],
-    },
-    {
       name: "Christian Manalaysay",
       role: "Security & Compliance Manager",
       image: "/images/team/Christian.png",
@@ -58,19 +45,6 @@ export default function Team() {
         "Regulatory Compliance",
         "Audit Readiness",
         "Security Governance",
-      ],
-    },
-    {
-      name: "Christopher Cole",
-      role: "Security Analyst",
-      image: "/images/team/Christopher.png",
-      description:
-        "Christopher is a dedicated Security Analyst with a strong focus on IT support and compliance management. He helps clients achieve compliance frameworks through best practices, threat detection, mitigation, and device management, ensuring robust protection and readiness for evolving security challenges.",
-      expertise: [
-        "IT Support",
-        "Compliance Management",
-        "Threat Detection",
-        "Device Management",
       ],
     },
     {
@@ -100,19 +74,6 @@ export default function Team() {
       ],
     },
     {
-      name: "Samuel Soto",
-      role: "Security Analyst",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fedc62bbb75074a7d85c61c1b616b6911?format=webp&width=800&height=1200",
-      description:
-        "Samuel is a Security Analyst at Com-Sec with expertise in continuous security monitoring and rapid incident response. He specializes in analyzing security logs, detecting anomalies, and coordinating response efforts to minimize impact. Samuel's proactive monitoring approach and analytical mindset ensure early threat detection and swift resolution of security incidents.",
-      expertise: [
-        "Security Monitoring",
-        "Incident Response",
-        "Log Analysis",
-        "Threat Detection",
-      ],
-    },
-    {
       name: "Parag Khankari",
       role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
@@ -123,45 +84,6 @@ export default function Team() {
         "Vulnerability Assessment",
         "Security Monitoring",
         "Compliance Management",
-      ],
-    },
-    {
-      name: "Raj Dayakar",
-      role: "Security Analyst",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F4ca37786738c44d7b3e42c41f7f08e4c?format=webp&width=800&height=1200",
-      description:
-        "Raj is a Security Analyst at Com-Sec, specializing in IT support, compliance, and cybersecurity. He identifies and remediates vulnerabilities in websites and systems, ensuring robust security measures. Raj's proactive approach keeps the infrastructure secure and compliant with industry standards.",
-      expertise: [
-        "IT Support",
-        "Vulnerability Management",
-        "Compliance",
-        "Infrastructure Security",
-      ],
-    },
-    {
-      name: "Roshani Chitre",
-      role: "Security & Compliance Analyst",
-      image: "/images/team/Roshni.png",
-      description:
-        "Roshani is a Security & Compliance Analyst at Com-Sec, specializing in compliance analytics and security operations. She leverages tools like SQL, Python, Power BI, and Jira to automate reports, visualize security trends, and extract insights from security data. Her work supports audit readiness and enhances decision-making across the information security team.",
-      expertise: [
-        "SQL & Python",
-        "Power BI",
-        "Compliance Reporting",
-        "Data Analytics",
-      ],
-    },
-    {
-      name: "Shamanth Hedge",
-      role: "Security & Compliance Analyst",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F65b03672c099425f8390d8397f0bc904?format=webp&width=800&height=1200",
-      description:
-        "Shamanth is a Security & Compliance Analyst at Com-Sec with expertise in compliance management and security assessments. He specializes in conducting comprehensive security evaluations, supporting compliance initiatives, and implementing effective security strategies. Shamanth's analytical approach and technical expertise help organizations strengthen their security postures and maintain compliance excellence.",
-      expertise: [
-        "Security Assessments",
-        "Threat Detection",
-        "Vulnerability Management",
-        "Risk Mitigation",
       ],
     },
     {
