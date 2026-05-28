@@ -103,6 +103,7 @@ const oneTimeEngagements = [
     ],
     simplePrice: true,
     badge: "BEST VALUE",
+    badgeSubtext: "based on scope",
     pricingDisplay: {
       headline: "All-Inclusive",
       price: "$18,500",
@@ -262,8 +263,13 @@ export default function Pricing() {
 
                       <CardHeader className="pb-4 flex-grow relative">
                         {service.badge && (
-                          <div className="absolute top-2 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                            {service.badge}
+                          <div className="absolute top-2 right-4 flex flex-col items-end gap-1">
+                            <div className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                              {service.badge}
+                            </div>
+                            {service.badgeSubtext && (
+                              <p className="text-xs text-orange-400 font-semibold">{service.badgeSubtext}</p>
+                            )}
                           </div>
                         )}
                         <div className="flex items-start justify-between mb-4">
@@ -388,8 +394,13 @@ export default function Pricing() {
 
                       <CardHeader className="pb-4 flex-grow relative">
                         {service.badge && (
-                          <div className="absolute top-2 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                            {service.badge}
+                          <div className="absolute top-2 right-4 flex flex-col items-end gap-1">
+                            <div className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                              {service.badge}
+                            </div>
+                            {service.badgeSubtext && (
+                              <p className="text-xs text-orange-400 font-semibold">{service.badgeSubtext}</p>
+                            )}
                           </div>
                         )}
                         <div className="flex items-start justify-between mb-4">
