@@ -103,7 +103,6 @@ const oneTimeEngagements = [
     ],
     simplePrice: true,
     badge: "BEST VALUE",
-    badgeSubtext: "based on scope",
     pricingDisplay: {
       headline: "All-Inclusive",
       price: "$18,500",
@@ -297,9 +296,11 @@ export default function Pricing() {
                           <p className="text-3xl font-bold text-orange-400">
                             {service.pricingDisplay?.price || service.startingPrice}
                           </p>
-                          <p className="text-xs text-slate-400 mt-2">
-                            {service.pricingDisplay?.subtext || "Custom pricing available based on scope"}
-                          </p>
+                          {service.pricingDisplay?.subtext && (
+                            <p className="text-xs text-slate-400 mt-2">
+                              {service.pricingDisplay.subtext}
+                            </p>
+                          )}
                         </div>
 
                         {/* Highlights Section - Services/Frameworks */}
