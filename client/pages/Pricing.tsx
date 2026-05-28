@@ -103,7 +103,6 @@ const oneTimeEngagements = [
     ],
     simplePrice: true,
     badge: "BEST VALUE",
-    badgeSubtext: "based on scope",
     pricingDisplay: {
       headline: "All-Inclusive",
       price: "$18,500",
