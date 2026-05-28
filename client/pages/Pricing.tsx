@@ -106,7 +106,7 @@ const oneTimeEngagements = [
     pricingDisplay: {
       headline: "All-Inclusive",
       price: "$18,500",
-      subtext: "Complete SOC 2 Type II engagement",
+      subtext: "Best value based on scope",
     },
     buttonText: "Book a Consultation",
   },
