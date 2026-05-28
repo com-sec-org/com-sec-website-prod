@@ -76,6 +76,7 @@ const oneTimeEngagements = [
       "Compliance roadmap",
     ],
     simplePrice: true,
+    badge: "MOST POPULAR",
     buttonText: "Get Started",
   },
   {
@@ -101,7 +102,7 @@ const oneTimeEngagements = [
       "Compliance management",
     ],
     simplePrice: true,
-    badge: "MOST POPULAR",
+    badge: "BEST VALUE",
     pricingDisplay: {
       headline: "All-Inclusive",
       price: "$18,500",
