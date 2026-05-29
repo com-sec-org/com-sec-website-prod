@@ -22,6 +22,15 @@ interface GooglePageData extends OgData {
 // ─── Social media OG routes ───────────────────────────────────────────────────
 
 const OG_ROUTES: Record<string, OgData> = {
+  "/blog/rippling-entered-compliance-market": {
+    title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
+    description:
+      "Rippling launched its Automated Compliance module in 2026. With 25,000 customers who match the exact profile of companies buying SOC 2 today, the market math is significant — and the disruption to Drata and Vanta is real.",
+    image: `${BASE_URL}/images/blog-images/rippling-compliance-market.png`,
+    url: `${BASE_URL}/blog/rippling-entered-compliance-market`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-05-29T00:00:00Z",
+  },
   "/blog/we-almost-partnered-with-delve": {
     title: "We Almost Partnered With Delve. Here's What Stopped Us.",
     description:
