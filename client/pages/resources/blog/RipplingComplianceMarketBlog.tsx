@@ -421,7 +421,7 @@ export default function RipplingComplianceMarketBlog() {
                   >
                     Com-Sec
                   </a>
-                  , a cybersecurity and compliance consulting firm supporting startups and growth-stage companies. [com-sec.com]
+                  , a cybersecurity and compliance consulting firm supporting startups and growth-stage companies.
                 </p>
 
               </section>
