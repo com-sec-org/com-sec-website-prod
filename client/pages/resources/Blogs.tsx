@@ -31,6 +31,21 @@ import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
               {
+                id: "rippling-entered-compliance-market",
+                title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
+                excerpt:
+                  "Rippling launched its Automated Compliance module in 2026. With 25,000 customers who match the exact profile of companies buying SOC 2 today, the market math is significant — and the disruption is real.",
+                date: "May 29, 2026",
+                readTime: "10 min read",
+                author: "Farbod Fakhrai",
+                category: "Market Analysis",
+                categoryColor: "bg-orange-100 text-orange-800",
+                featured: false,
+                image: "/images/blog-images/rippling-compliance-market.png",
+                imageAlt: "Rippling compliance market analysis — Vanta, Drata, and Rippling customer overlap",
+                link: "/blog/rippling-entered-compliance-market",
+              },
+              {
                 id: "mythos-compliance-alone-wont-save-you-part-3",
                 title: "Mythos Changed the Game - Part 3: Compliance Alone Won't Save You",
                 excerpt:

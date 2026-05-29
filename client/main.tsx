@@ -94,7 +94,7 @@ import MythosHealthcareCybersecurityPart1 from "./pages/resources/blog/MythosHea
 import MythosHealthcareCybersecurityPart2 from "./pages/resources/blog/MythosHealthcareCybersecurityPart2.tsx";
 import MythosComplianceAloneWontSaveYouPart3 from "./pages/resources/blog/MythosComplianceAloneWontSaveYouPart3.tsx";
 import DelvePartnershipBlog from "./pages/resources/blog/DelvePartnershipBlog";
-
+import RipplingComplianceMarket from "./pages/resources/blog/RipplingComplianceMarketBlog.tsx";
 
 const queryClient = new QueryClient();
 
@@ -315,6 +315,7 @@ const App = () => (
               <Route path="/blog/mythos-changed-the-game-part-1" element={<MythosHealthcareCybersecurityPart1 />} />
               <Route path="/blog/mythos-changed-the-game-part-2" element={<MythosHealthcareCybersecurityPart2 />} />
               <Route path="/blog/mythos-compliance-alone-wont-save-you-part-3" element={<MythosComplianceAloneWontSaveYouPart3 />} />
+              <Route path="/blog/rippling-entered-compliance-market" element={<RipplingComplianceMarket />} />
               <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
               <Route path="/about" element={<About />} />
 
