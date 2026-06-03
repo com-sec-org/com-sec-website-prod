@@ -6,6 +6,7 @@ import phishingTestRoutes from "./routes/phishing-test";
 import submitPhishingTestRoutes from "./routes/submitPhishingTest";
 import { submitContactForm } from "./routes/contact";
 import { handleChatbot } from "./routes/chatbot";
+import { generateSitemap } from "./routes/seo-routes";
 
 // ✅ Load environment variables from .env
 dotenv.config();
@@ -37,6 +38,12 @@ export function createServer() {
 
   // Chatbot route
   app.post("/api/chat", handleChatbot);
+
+  // Dynamic sitemap — auto-includes every route in seo-routes.ts
+  app.get("/sitemap.xml", (_req, res) => {
+    res.setHeader("Content-Type", "application/xml; charset=utf-8");
+    res.send(generateSitemap());
+  });
 
   return app;
 }

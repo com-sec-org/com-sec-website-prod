@@ -39,51 +39,42 @@ export default function DynamicSEO() {
       }
     : null;
 
-    return null; // 👈 FIX
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+
+      {keywords?.length > 0 && (
+        <meta name="keywords" content={keywords.join(", ")} />
+      )}
+
+      <link rel="canonical" href={canonical} />
+
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={canonical} />
+      {image && <meta property="og:image" content={image} />}
+      <meta property="og:type" content={isArticle ? "article" : "website"} />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      {image && <meta name="twitter:image" content={image} />}
+
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+      </script>
+
+      {faq && (
+        <script type="application/ld+json">{JSON.stringify(faq)}</script>
+      )}
+
+      {isArticle && (
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+      )}
+    </Helmet>
+  );
 }
-    // <Helmet>
-    //   {/* Title */}
-    //   <title>{title}</title>
-
-    //   {/* Meta Description */}
-    //   <meta name="description" content={description} />
-
-    //   {/* Keywords */}
-    //   {keywords?.length > 0 && (
-    //     <meta name="keywords" content={keywords.join(", ")} />
-    //   )}
-
-    //   {/* Canonical */}
-    //   <link rel="canonical" href={canonical} />
-
-    //   {/* OpenGraph */}
-    //   <meta property="og:title" content={title} />
-    //   <meta property="og:description" content={description} />
-    //   <meta property="og:url" content={canonical} />
-    //   <meta property="og:image" content={image} />
-    //   <meta property="og:type" content={isArticle ? "article" : "website"} />
-
-    //   {/* Twitter */}
-    //   <meta name="twitter:card" content="summary_large_image" />
-    //   <meta name="twitter:title" content={title} />
-    //   <meta name="twitter:description" content={description} />
-    //   <meta name="twitter:image" content={image} />
-
-    //   {/* Breadcrumb Schema */}
-    //   <script type="application/ld+json">
-    //     {JSON.stringify(breadcrumbSchema)}
-    //   </script>
-
-    //   {/* FAQ Schema */}
-    //   {faq && (
-    //     <script type="application/ld+json">{JSON.stringify(faq)}</script>
-    //   )}
-
-    //   {/* Article Schema */}
-    //   {isArticle && (
-    //     <script type="application/ld+json">
-    //       {JSON.stringify(articleSchema)}
-    //     </script>
-    //   )}
-    // </Helmet>
 

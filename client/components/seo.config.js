@@ -460,6 +460,24 @@ export const SEO_CONFIG = {
     type: "article",
   }),
 
+  "/blog/meet-team-jayush-chawla": buildPageSEO({
+    title: "Meet the Team: Jayush Chawla | Com-Sec",
+    description:
+      "Get to know Jayush Chawla, a key member of the Com-Sec cybersecurity and compliance team.",
+    canonical: "/blog/meet-team-jayush-chawla",
+    image: `${BASE_URL}/images/blog/meet-team-jayush.webp`,
+    type: "article",
+  }),
+
+  "/blog/meet-team-rojin-rezaei": buildPageSEO({
+    title: "Meet the Team: Rojin Rezaei | Com-Sec",
+    description:
+      "Get to know Rojin Rezaei, a key member of the Com-Sec cybersecurity and compliance team.",
+    canonical: "/blog/meet-team-rojin-rezaei",
+    image: `${BASE_URL}/images/blog/meet-team-rojin.webp`,
+    type: "article",
+  }),
+
   "/blog/20-years-cybersecurity-journey": buildPageSEO({
     title:
       "20 Years of Cybersecurity: Evolution, Milestones & Key Lessons | Com-Sec",
