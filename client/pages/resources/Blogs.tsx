@@ -30,21 +30,21 @@ import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
-              {
-                id: "rippling-entered-compliance-market",
-                title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
-                excerpt:
-                  "Rippling launched its Automated Compliance module in 2026. With 25,000 customers who match the exact profile of companies buying SOC 2 today, the market math is significant — and the disruption is real.",
-                date: "May 29, 2026",
-                readTime: "10 min read",
-                author: "Farbod Fakhrai",
-                category: "Market Analysis",
-                categoryColor: "bg-orange-100 text-orange-800",
-                featured: false,
-                image: "/images/blog-images/rippling-compliance-market.png",
-                imageAlt: "Rippling compliance market analysis — Vanta, Drata, and Rippling customer overlap",
-                link: "/blog/rippling-entered-compliance-market",
-              },
+              // {
+              //   id: "rippling-entered-compliance-market",
+              //   title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
+              //   excerpt:
+              //     "Rippling launched its Automated Compliance module in 2026. With 25,000 customers who match the exact profile of companies buying SOC 2 today, the market math is significant — and the disruption is real.",
+              //   date: "May 29, 2026",
+              //   readTime: "10 min read",
+              //   author: "Farbod Fakhrai",
+              //   category: "Market Analysis",
+              //   categoryColor: "bg-orange-100 text-orange-800",
+              //   featured: false,
+              //   image: "/images/blog-images/rippling-compliance-market.png",
+              //   imageAlt: "Rippling compliance market analysis — Vanta, Drata, and Rippling customer overlap",
+              //   link: "/blog/rippling-entered-compliance-market",
+              // },
               {
                 id: "mythos-compliance-alone-wont-save-you-part-3",
                 title: "Mythos Changed the Game - Part 3: Compliance Alone Won't Save You",
@@ -103,21 +103,21 @@ const allArticles = [
                 imageAlt: "Mythos AI cybersecurity — what it is and what to do about it",
                 link: "/blog/mythos-changed-the-game-part-1",
               },
-              
-              // {
-              //   id: "caryhealth-first-client-story",
-              //   title: "CaryHealth was our first client. Their exit is a milestone for Us too.",
-              //   excerpt:
-              //     "CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.",
-              //   date: "May 12, 2026",
-              //   readTime: "5 min read",
-              //   author: "Com-Sec Team",
-              //   categoryColor: "bg-sky-100 text-sky-800",
-              //   featured: false,
-              //   image: "/images/blog-images/Cary-Health-First-Client-Cover.jpeg",
-              //   imageAlt: "CaryHealth and Com-Sec healthcare cybersecurity journey",
-              //   link: "/blog/caryhealth-first-client-story",
-              // },
+              {
+                id: "caryhealth-first-client-story",
+                title: "CaryHealth was our first client. Their exit is a milestone for us too.",
+                excerpt:
+                  "CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.",
+                date: "May 12, 2026",
+                readTime: "5 min read",
+                author: "Com-Sec Team",
+                category: "Founder Story",
+                categoryColor: "bg-emerald-100 text-emerald-800",
+                featured: false,
+                image: "/images/blog-images/Cary-Health-First-Client-Cover.jpeg",
+                imageAlt: "CaryHealth and Com-Sec healthcare cybersecurity journey",
+                link: "/blog/caryhealth-first-client-story",
+              },
               
               
               {
@@ -1139,41 +1139,41 @@ export default function Blogs() {
             </h2>
           </div>
 
-          <Link to="/blog/caryhealth-first-client-story">
+          <Link to="/blog/rippling-entered-compliance-market">
             <Card className="hover:shadow-2xl transition-all duration-500 border-0 shadow-xl overflow-hidden group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div className="bg-gradient-to-br from-emerald-700 to-teal-800 p-8 lg:p-12 text-white">
+                <div className="bg-gradient-to-br from-orange-600 to-amber-700 p-8 lg:p-12 text-white">
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="bg-emerald-400/20 text-emerald-200 px-3 py-1 rounded-full text-sm font-medium animate-pulse">
+                    <span className="bg-orange-400/20 text-orange-200 px-3 py-1 rounded-full text-sm font-medium animate-pulse">
                       Featured
                     </span>
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm">
-                      🎉 Founder Story
+                      📊 Market Analysis
                     </span>
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-bold mb-4 leading-tight group-hover:text-emerald-200 transition-colors">
-                    CaryHealth was our first client. Their exit is a milestone for us too.
+                  <h3 className="text-2xl lg:text-3xl font-bold mb-4 leading-tight group-hover:text-orange-200 transition-colors">
+                    Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.
                   </h3>
                   <p className="text-white/90 mb-6 text-lg leading-relaxed">
-                    CaryHealth was Com-Sec's first client long before the company officially existed. This story reflects how both teams grew together through healthcare compliance, security challenges, and years of building in a difficult industry.
+                    Rippling launched its Automated Compliance module in 2026. With 25,000 customers who match the exact profile of companies buying SOC 2 today, the market math is significant — and the disruption is real.
                   </p>
                   <div className="flex items-center gap-4 text-white/80 mb-6">
                     <div className="flex items-center gap-2">
                       <Calendar className="h-4 w-4" />
-                      <span className="text-sm">May 12, 2026</span>
+                      <span className="text-sm">May 29, 2026</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="h-4 w-4" />
-                      <span className="text-sm">5 min read</span>
+                      <span className="text-sm">10 min read</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <User className="h-4 w-4" />
-                      <span className="text-sm">Com-Sec Team</span>
+                      <span className="text-sm">Farbod Fakhrai</span>
                     </div>
                   </div>
                   <Button
                     variant="outline"
-                    className="border-white bg-white/10 text-white hover:bg-white hover:text-emerald-700 group-hover:scale-105 transition-transform backdrop-blur-sm font-semibold"
+                    className="border-white bg-white/10 text-white hover:bg-white hover:text-orange-700 group-hover:scale-105 transition-transform backdrop-blur-sm font-semibold"
                   >
                     Read Full Article
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -1181,8 +1181,8 @@ export default function Blogs() {
                 </div>
                 <div className="relative overflow-hidden">
                   <img
-                    src="/images/blog-images/Cary-Health-First-Client-Cover.jpeg"
-                    alt="CaryHealth and Com-Sec healthcare cybersecurity journey"
+                    src="/images/blog-images/rippling-compliance-market-banner.png"
+                    alt="Rippling compliance market analysis — Vanta, Drata, and Rippling customer overlap"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
