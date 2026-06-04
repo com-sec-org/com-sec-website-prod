@@ -65,6 +65,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-05-15T00:00:00Z",
   },
+  "/blog/mythos-changed-the-game-part-4": {
+    title: "Mythos Changed the Game. Here's What to Do About It. — Part 4",
+    description:
+      "Part 4: The Basics Still Matter More Than the Headlines. AI-powered attacks exploit weak security posture. The most effective response is locking down fundamentals: asset management, access controls, patching, and logging.",
+    image: `${BASE_URL}/images/blog-images/mythos-changed-the-game-part-4.png`,
+    url: `${BASE_URL}/blog/mythos-changed-the-game-part-4`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-06-04T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

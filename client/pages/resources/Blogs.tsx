@@ -46,6 +46,21 @@ const allArticles = [
               //   link: "/blog/rippling-entered-compliance-market",
               // },
               {
+                id: "mythos-changed-the-game-part-4",
+                title: "Mythos Changed the Game - Part 4: The Basics Still Matter More Than the Headlines",
+                excerpt:
+                  "AI-powered attacks exploit weak security posture. The most effective response isn't a new tool — it's locking down the fundamentals: asset management, access controls, patching, and logging. Part 4 of our Mythos series.",
+                date: "June 4, 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "AI & Cybersecurity",
+                categoryColor: "bg-emerald-100 text-emerald-800",
+                featured: false,
+                image: "/images/blog-images/mythos-changed-the-game-part-4.png",
+                imageAlt: "Mythos changed the game part 4 - the basics still matter more than the headlines",
+                link: "/blog/mythos-changed-the-game-part-4",
+              },
+              {
                 id: "mythos-compliance-alone-wont-save-you-part-3",
                 title: "Mythos Changed the Game - Part 3: Compliance Alone Won't Save You",
                 excerpt:
