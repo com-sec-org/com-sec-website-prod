@@ -352,23 +352,27 @@ export default function MythosComplianceAloneWontSaveYouPart3() {
               {/* PART 4 */}
               <section className="mb-10">
 
-                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
+                <Link to="/blog/mythos-changed-the-game-part-4" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
 
-                  <div className="text-3xl mt-1">→</div>
+                    <div className="text-3xl mt-1">→</div>
 
-                  <div>
+                    <div>
 
-                    <p className="text-sm font-semibold text-rose-300 uppercase tracking-wide mb-2">
-                      Up next in the series
-                    </p>
+                      <p className="text-sm font-semibold text-rose-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
 
-                    <p className="text-lg text-slate-100 leading-relaxed">
-                      In Part 4, we'll talk about the stuff that actually protects you, and why the basics still matter more than the headlines.
-                    </p>
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 4, we'll talk about the stuff that actually protects you, and why the basics still matter more than the headlines.
+                      </p>
+
+                      <p className="text-sm text-rose-300 mt-3 group-hover:underline">Read Part 4 →</p>
+
+                    </div>
 
                   </div>
-
-                </div>
+                </Link>
 
               </section>
 
