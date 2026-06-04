@@ -93,6 +93,7 @@ import Soc2PreparationGuide2026 from "./pages/resources/blog/Soc2preparationguid
 import MythosHealthcareCybersecurityPart1 from "./pages/resources/blog/MythosHealthcareCybersecurityPart1";
 import MythosHealthcareCybersecurityPart2 from "./pages/resources/blog/MythosHealthcareCybersecurityPart2.tsx";
 import MythosComplianceAloneWontSaveYouPart3 from "./pages/resources/blog/MythosComplianceAloneWontSaveYouPart3.tsx";
+import MythosChangedTheGamePart4 from "./pages/resources/blog/MythosChangedTheGamePart4.tsx";
 import DelvePartnershipBlog from "./pages/resources/blog/DelvePartnershipBlog";
 import RipplingComplianceMarket from "./pages/resources/blog/RipplingComplianceMarketBlog.tsx";
 
@@ -315,6 +316,7 @@ const App = () => (
               <Route path="/blog/mythos-changed-the-game-part-1" element={<MythosHealthcareCybersecurityPart1 />} />
               <Route path="/blog/mythos-changed-the-game-part-2" element={<MythosHealthcareCybersecurityPart2 />} />
               <Route path="/blog/mythos-compliance-alone-wont-save-you-part-3" element={<MythosComplianceAloneWontSaveYouPart3 />} />
+              <Route path="/blog/mythos-changed-the-game-part-4" element={<MythosChangedTheGamePart4 />} />
               <Route path="/blog/rippling-entered-compliance-market" element={<RipplingComplianceMarket />} />
               <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
               <Route path="/about" element={<About />} />
