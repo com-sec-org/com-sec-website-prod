@@ -46,6 +46,21 @@ const allArticles = [
               //   link: "/blog/rippling-entered-compliance-market",
               // },
               {
+                id: "mythos-changed-the-game-part-5",
+                title: "Mythos Changed the Game - Part 5: What a Mythos-Ready Security Program Looks Like",
+                excerpt:
+                  "The final chapter: a practical, actionable security program for startups and growth-stage companies. Asset visibility, accelerated patching, threat modeling, incident response, AI governance, and security leadership — without the Fortune 500 overhead.",
+                date: "June 5, 2026",
+                readTime: "8 min read",
+                author: "Farbod Fakhrai",
+                category: "AI & Cybersecurity",
+                categoryColor: "bg-amber-100 text-amber-800",
+                featured: false,
+                image: "/images/blog-images/mythos-changed-the-game-part-5.png",
+                imageAlt: "Mythos changed the game part 5 - what a mythos-ready security program looks like",
+                link: "/blog/mythos-changed-the-game-part-5",
+              },
+              {
                 id: "mythos-changed-the-game-part-4",
                 title: "Mythos Changed the Game - Part 4: The Basics Still Matter More Than the Headlines",
                 excerpt:

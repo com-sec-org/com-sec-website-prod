@@ -333,23 +333,27 @@ export default function MythosChangedTheGamePart4() {
               {/* PART 5 */}
               <section className="mb-10">
 
-                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
+                <Link to="/blog/mythos-changed-the-game-part-5" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
 
-                  <div className="text-3xl mt-1">→</div>
+                    <div className="text-3xl mt-1">→</div>
 
-                  <div>
+                    <div>
 
-                    <p className="text-sm font-semibold text-emerald-300 uppercase tracking-wide mb-2">
-                      Up next in the series
-                    </p>
+                      <p className="text-sm font-semibold text-emerald-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
 
-                    <p className="text-lg text-slate-100 leading-relaxed">
-                      In Part 5, we'll put it all together: what a Mythos-ready security program actually looks like for a startup or growth-stage company.
-                    </p>
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 5, we'll put it all together: what a Mythos-ready security program actually looks like for a startup or growth-stage company.
+                      </p>
+
+                      <p className="text-sm text-emerald-300 mt-3 group-hover:underline">Read Part 5 →</p>
+
+                    </div>
 
                   </div>
-
-                </div>
+                </Link>
 
               </section>
 
