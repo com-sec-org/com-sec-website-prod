@@ -200,7 +200,7 @@ export default function MythosChangedTheGamePart5() {
               <img
                 src="/images/blog-images/mythos-changed-the-game-part-5.png"
                 alt="Mythos changed the game part 5 - what a mythos-ready security program looks like"
-                className="rounded-xl shadow-md max-w-xl w-full h-auto"
+                className="rounded-xl shadow-md max-w-lg w-full h-auto"
               />
             </div>
 
