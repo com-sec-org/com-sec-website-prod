@@ -74,6 +74,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-06-04T00:00:00Z",
   },
+  "/blog/mythos-changed-the-game-part-5": {
+    title: "Mythos Changed the Game. Here's What to Do About It. — Part 5",
+    description:
+      "Part 5: What a Mythos-Ready Security Program Looks Like. A practical, actionable security program for startups and growth-stage companies — asset visibility, accelerated patching, threat modeling, incident response, and AI governance.",
+    image: `${BASE_URL}/images/blog-images/mythos-changed-the-game-part-5.png`,
+    url: `${BASE_URL}/blog/mythos-changed-the-game-part-5`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-06-05T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
