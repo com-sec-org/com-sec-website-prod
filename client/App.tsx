@@ -245,6 +245,7 @@ export default function App() {
             <Route path="/cmmc" element={<Cmmc />} />
 
             {/* Resources */}
+            <Route path="/blog" element={<Blogs />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/approach" element={<Approach />} />
             <Route path="/phishing" element={<PhishingTest />} />
