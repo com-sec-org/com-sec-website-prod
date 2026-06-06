@@ -217,11 +217,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
   },
 
   // Resources
-  "/blogs": {
+  "/blog": {
     title: "Cybersecurity & Compliance Blog | SOC 2, ISO 27001, Pen Tests & More | Com-Sec",
     description:
       "Expert insights on SOC 2, ISO 27001, penetration testing, cloud security, AI security, and cybersecurity trends.",
-    canonical: `${BASE_URL}/blogs`,
+    canonical: `${BASE_URL}/blog`,
     image: `${BASE_URL}/images/resources/blogs.webp`,
   },
   "/approach": {

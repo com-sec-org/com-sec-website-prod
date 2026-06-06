@@ -82,17 +82,26 @@
   force = true
 
 # ------------------------------------------------------
-# 📰 Blog & Approach
+# 📰 Approach (Redirect)
 # ------------------------------------------------------
 [[redirects]]
-  from = "/blog"
-  to = "/blogs"
+  from = "/our-approach"
+  to = "/approach"
+  status = 301
+  force = true
+
+# ------------------------------------------------------
+# 📰 Blog redirects
+# ------------------------------------------------------
+[[redirects]]
+  from = "/blogs"
+  to = "/blog"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/our-approach"
-  to = "/approach"
+  from = "/resources/blogs"
+  to = "/blog"
   status = 301
   force = true
 

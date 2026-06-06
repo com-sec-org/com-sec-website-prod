@@ -263,12 +263,12 @@ export const SEO_CONFIG = {
   // ----------------------------------------
   // RESOURCES
   // ----------------------------------------
-  "/blogs": buildPageSEO({
+  "/blog": buildPageSEO({
     title:
       "Cybersecurity & Compliance Blog | SOC 2, ISO 27001, Pen Tests & More | Com-Sec",
     description:
       "Expert insights on SOC 2, ISO 27001, penetration testing, cloud security, AI security, and cybersecurity trends.",
-    canonical: "/blogs",
+    canonical: "/blog",
     image: `${BASE_URL}/images/resources/blogs.webp`,
   }),
 

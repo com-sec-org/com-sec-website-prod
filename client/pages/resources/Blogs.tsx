@@ -1065,7 +1065,7 @@ export default function Blogs() {
     content="cybersecurity blog, SOC 2 blog, ISO 27001 guides, penetration testing blog, cloud security updates, compliance best practices, Com-Sec blog, security insights"
   />
 
-  <link rel="canonical" href="https://com-sec.io/blogs" />
+  <link rel="canonical" href="https://com-sec.io/blog" />
 
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Com-Sec" />
