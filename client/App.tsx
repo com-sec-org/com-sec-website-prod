@@ -190,6 +190,7 @@ import CybersecurityRoundupStartupsMay from "./pages/resources/blog/Cybersecurit
 import SecurityComplianceHealthCompanies from "./pages/resources/blog/SecurityComplianceHealthCompanies";
 import SafeguardingDataSharingTechCompanies from "./pages/resources/blog/SafeguardingDataSharingTechCompanies";
 import TwentyYearsCybersecurityJourney from "./pages/resources/blog/20YearsCybersecurityJourney";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 import NotFound from "./pages/NotFound";
 
@@ -277,6 +278,9 @@ export default function App() {
 
             <Route path="/blog/meet-team-jayush-chawla" element={<MeetTeamJayush />} />
             <Route path="/blog/meet-team-rojin-rezaei" element={<MeetTeamRojin />} />
+
+            {/* Privacy Policy */}
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
