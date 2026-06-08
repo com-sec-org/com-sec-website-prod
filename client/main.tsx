@@ -97,6 +97,7 @@ import MythosChangedTheGamePart4 from "./pages/resources/blog/MythosChangedTheGa
 import MythosChangedTheGamePart5 from "./pages/resources/blog/MythosChangedTheGamePart_5.tsx";
 import DelvePartnershipBlog from "./pages/resources/blog/DelvePartnershipBlog";
 import RipplingComplianceMarket from "./pages/resources/blog/RipplingComplianceMarketBlog.tsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -357,6 +358,8 @@ const App = () => (
               <Route path="/blog/comsec-trusted-partner-soc2" element={<Navigate to="/" replace />} />
               <Route path="/blog/20-years-cybersecurity-journey" element={<Navigate to="/" replace />} />
               <Route path="/blog/why-soc2-matters-small-companies" element={<Navigate to="/" replace />} />
+
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
