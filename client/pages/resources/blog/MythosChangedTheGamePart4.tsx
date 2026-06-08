@@ -225,7 +225,7 @@ export default function MythosChangedTheGamePart4() {
               {/* SECTION */}
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The fundamentals that matter most
                 </h2>
 
@@ -262,7 +262,7 @@ export default function MythosChangedTheGamePart4() {
               {/* SECTION */}
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Why startups skip this stuff
                 </h2>
 
@@ -287,7 +287,7 @@ export default function MythosChangedTheGamePart4() {
               {/* SECTION */}
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The trap to avoid
                 </h2>
 
@@ -310,7 +310,7 @@ export default function MythosChangedTheGamePart4() {
 
                 <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-8">
 
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
                     Where AI helps on defense
                   </h2>
 

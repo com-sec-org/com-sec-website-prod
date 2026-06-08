@@ -223,7 +223,7 @@ export default function MythosComplianceAloneWontSaveYouPart3() {
               {/* SECTION */}
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Compliance is a foundation, not a finish line
                 </h2>
 
@@ -248,7 +248,7 @@ export default function MythosComplianceAloneWontSaveYouPart3() {
               {/* SECTION */}
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Where the gap shows up
                 </h2>
 
@@ -281,7 +281,7 @@ export default function MythosComplianceAloneWontSaveYouPart3() {
               {/* SECTION */}
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   What compliance gets right
                 </h2>
 
@@ -302,7 +302,7 @@ export default function MythosComplianceAloneWontSaveYouPart3() {
               {/* SECTION */}
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   What to do about it
                 </h2>
 
@@ -333,7 +333,7 @@ export default function MythosComplianceAloneWontSaveYouPart3() {
 
                 <div className="bg-gradient-to-r from-rose-50 to-red-50 border border-rose-200 rounded-xl p-8">
 
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
                     The shift
                   </h2>
 

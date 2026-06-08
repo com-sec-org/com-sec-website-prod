@@ -228,7 +228,7 @@ export default function RipplingComplianceMarketBlog() {
 
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The numbers
                 </h2>
 
@@ -267,7 +267,7 @@ export default function RipplingComplianceMarketBlog() {
 
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The pricing picture
                 </h2>
 
@@ -311,7 +311,7 @@ export default function RipplingComplianceMarketBlog() {
 
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Why this matters for the market
                 </h2>
 
@@ -331,7 +331,7 @@ export default function RipplingComplianceMarketBlog() {
 
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   What Rippling's offering actually includes
                 </h2>
 
@@ -355,7 +355,7 @@ export default function RipplingComplianceMarketBlog() {
 
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The open questions
                 </h2>
 
@@ -379,7 +379,7 @@ export default function RipplingComplianceMarketBlog() {
 
               <section className="mb-10">
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The bottom line
                 </h2>
 
