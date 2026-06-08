@@ -98,6 +98,7 @@ import MythosChangedTheGamePart5 from "./pages/resources/blog/MythosChangedTheGa
 import DelvePartnershipBlog from "./pages/resources/blog/DelvePartnershipBlog";
 import RipplingComplianceMarket from "./pages/resources/blog/RipplingComplianceMarketBlog.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 
 const queryClient = new QueryClient();
 
@@ -334,7 +335,6 @@ const App = () => (
               <Route path="/blog/exercises-to-calm-your-anxious-thoughts-sfwzf" element={<Navigate to="/blog/soc-2-vs-iso-27001-which-is-right-for-you" replace />} />
               <Route path="/blog/meet-the-team-om-jadhav" element={<Navigate to="/blog/what-is-cyber-threat-intelligence-amp-why-it-matters" replace />} />
               <Route path="/subprocessor" element={<Navigate to="/" replace />} />
-              <Route path="/terms-of-use" element={<Navigate to="/" replace />} />
               <Route path="/team-2" element={<Navigate to="/team" replace />} />
               <Route path="/blog/meet-the-team-christian-manalaysay" element={<Navigate to="/blog/difference-between-internal-vs-external-penetration-testing" replace />} />
               <Route path="/blog/meet-the-team-rojin-razaei" element={<Navigate to="/blog/web-application-penetration-testing-checklist-2025-edition" replace />} />
@@ -360,6 +360,7 @@ const App = () => (
               <Route path="/blog/why-soc2-matters-small-companies" element={<Navigate to="/" replace />} />
 
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-use" element={<TermsOfUse />} />
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
