@@ -224,7 +224,7 @@ export default function DelvePartnershipBlog() {
 
               {/* The opportunity looked great */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The opportunity looked great
                 </h2>
 
@@ -241,7 +241,7 @@ export default function DelvePartnershipBlog() {
 
               {/* Then things started feeling off */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Then things started feeling off
                 </h2>
 
@@ -258,7 +258,7 @@ export default function DelvePartnershipBlog() {
 
               {/* The next month, it all came out */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The next month, it all came out
                 </h2>
 
@@ -279,7 +279,7 @@ export default function DelvePartnershipBlog() {
 
               {/* The lesson */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   The lesson
                 </h2>
 
@@ -308,7 +308,7 @@ export default function DelvePartnershipBlog() {
               <section className="mb-10">
                 <div className="bg-gradient-to-r from-red-50 to-rose-50 border border-red-200 rounded-xl p-8">
 
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
                     The bigger picture
                   </h2>
 

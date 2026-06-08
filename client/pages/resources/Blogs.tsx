@@ -45,6 +45,20 @@ const allArticles = [
               //   imageAlt: "Rippling compliance market analysis — Vanta, Drata, and Rippling customer overlap",
               //   link: "/blog/rippling-entered-compliance-market",
               // },
+               {
+                id: "soc-2-compliance-services-california",
+                title: "SOC 2 Compliance Services in California: What Founders Need to Know",
+                excerpt: "A practical guide to SOC 2 compliance services in California, including specialized providers, controls, and audit readiness for startups and high-growth companies.",
+                date: "June 6, 2026",
+                readTime: "8 min read",
+                author: "Com-Sec Team",
+                category: "Compliance",
+                categoryColor: "bg-blue-100 text-blue-800",
+                featured: false,
+                image: "/images/blog-images/soc-2-compliance-services-california.png",
+                imageAlt: "SOC 2 compliance services in California for startups and tech companies",
+                link: "/blog/soc-2-compliance-services-california",
+              },
               {
                 id: "mythos-changed-the-game-part-5",
                 title: "Mythos Changed the Game - Part 5: What a Mythos-Ready Security Program Looks Like",
@@ -164,6 +178,7 @@ const allArticles = [
                 imageAlt: "How to Prepare for SOC 2 Step-by-Step Guide for 2026",
                 link: "/blog/how-to-prepare-for-soc2-2026",
               },
+             
               {
                 id: "soc2-audit-checklist-2026",
                 title: "SOC 2 Audit Checklist & Report Templates for 2026: Complete Guide",

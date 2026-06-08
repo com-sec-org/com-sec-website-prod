@@ -199,7 +199,7 @@ export default function MythosHealthcareCybersecurityPart1() {
 
               {/* The short version */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">The short version</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     Anthropic built an AI model that can find and exploit software vulnerabilities faster and better than almost any human security researcher. It found thousands of previously unknown zero-day vulnerabilities across every major operating system and web browser, including bugs that had existed for over two decades without anyone catching them.
@@ -212,7 +212,7 @@ export default function MythosHealthcareCybersecurityPart1() {
 
               {/* What this means in plain terms */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">What this means in plain terms</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">What this means in plain terms</h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     AI can now do what used to take elite security researchers months of manual work. It can find vulnerabilities, chain them together, and build working exploits — autonomously, at scale. That capability exists today. It's not theoretical.
@@ -229,7 +229,7 @@ export default function MythosHealthcareCybersecurityPart1() {
               {/* What this is NOT */}
               <section className="mb-10">
                 <div className="bg-indigo-50 border-l-4 border-indigo-500 p-8 rounded-r-lg">
-                  <h2 className="text-2xl font-bold text-indigo-900 mb-4 italic">What this is NOT</h2>
+                  <h2 className="text-2xl font-bold text-indigo-900 mb-4">What this is NOT</h2>
                   <div className="space-y-4">
                     <p className="text-indigo-900 leading-relaxed text-lg">
                       It's not the end of the world. It's not a reason to panic. And it's not something only Fortune 500 companies need to think about.
@@ -243,7 +243,7 @@ export default function MythosHealthcareCybersecurityPart1() {
 
               {/* Why founders should care */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">Why founders should care</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Why founders should care</h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     You're probably not running OpenBSD or maintaining a web browser. But you are running software built on the same foundations that Mythos is tearing apart. Your cloud provider, your OS, your browser, your open-source dependencies: all of it is in scope.
@@ -257,7 +257,7 @@ export default function MythosHealthcareCybersecurityPart1() {
               {/* The bottom line */}
               <section className="mb-10">
                 <div className="bg-gradient-to-r from-violet-50 to-indigo-50 border border-violet-200 rounded-xl p-8">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">The bottom line</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">The bottom line</h2>
                   <div className="space-y-4">
                     <p className="text-gray-800 leading-relaxed text-lg">
                       Mythos is real. The capabilities it represents are proliferating. The companies that treat this as a wake-up call and tighten their security posture now will be in a much better position than the ones that wait for the next headline.

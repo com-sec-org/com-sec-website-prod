@@ -207,7 +207,7 @@ export default function MythosHealthcareCybersecurityPart2() {
 
               {/* The old model is broken */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">The old model is broken</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">The old model is broken</h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     Here's how vulnerability management has worked for most organizations:
@@ -241,7 +241,7 @@ export default function MythosHealthcareCybersecurityPart2() {
 
               {/* What this looks like in practice */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">What this looks like in practice</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">What this looks like in practice</h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     The Cloud Security Alliance is already warning that security teams should prepare for multiple high-severity incidents in the same week. That's not a hypothetical. When AI can discover and weaponize vulnerabilities across your entire software stack simultaneously, the old model of triaging one CVE at a time doesn't hold.
@@ -267,7 +267,7 @@ export default function MythosHealthcareCybersecurityPart2() {
 
               {/* What to do now */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">What to do now</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">What to do now</h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     You don't need to overhaul everything overnight. But you do need to tighten up.
@@ -294,7 +294,7 @@ export default function MythosHealthcareCybersecurityPart2() {
               {/* The uncomfortable truth */}
               <section className="mb-10">
                 <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-xl p-8">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">The uncomfortable truth</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">The uncomfortable truth</h2>
                   <div className="space-y-4">
                     <p className="text-gray-800 leading-relaxed text-lg">
                       Patching has always been unglamorous work. It's not the kind of thing that gets a line item in a board deck. But in a world where AI can find and exploit your vulnerabilities before your next sprint planning meeting, patching speed is a business-critical capability.

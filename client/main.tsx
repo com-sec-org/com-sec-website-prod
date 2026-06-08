@@ -99,6 +99,7 @@ import DelvePartnershipBlog from "./pages/resources/blog/DelvePartnershipBlog";
 import RipplingComplianceMarket from "./pages/resources/blog/RipplingComplianceMarketBlog.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
+import Soc2ComplianceServicesCalifornia from "./pages/resources/blog/Soc2ComplianceServicesCalifornia";
 
 const queryClient = new QueryClient();
 
@@ -323,6 +324,7 @@ const App = () => (
               <Route path="/blog/mythos-changed-the-game-part-5" element={<MythosChangedTheGamePart5 />} />
               <Route path="/blog/rippling-entered-compliance-market" element={<RipplingComplianceMarket />} />
               <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
+              <Route path="/blog/soc-2-compliance-services-california" element={<Soc2ComplianceServicesCalifornia />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

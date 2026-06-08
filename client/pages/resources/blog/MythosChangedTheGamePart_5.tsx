@@ -223,7 +223,7 @@ export default function MythosChangedTheGamePart5() {
 
               {/* 1. Asset visibility */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   1. Asset visibility
                 </h2>
                 <div className="space-y-5">
@@ -238,7 +238,7 @@ export default function MythosChangedTheGamePart5() {
 
               {/* 2. Accelerated patching */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   2. Accelerated patching
                 </h2>
                 <div className="space-y-5">
@@ -253,7 +253,7 @@ export default function MythosChangedTheGamePart5() {
 
               {/* 3. Threat modeling */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   3. Threat modeling
                 </h2>
                 <div className="space-y-5">
@@ -276,7 +276,7 @@ export default function MythosChangedTheGamePart5() {
 
               {/* 4. Incident response */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   4. Incident response for the new pace
                 </h2>
                 <div className="space-y-5">
@@ -297,7 +297,7 @@ export default function MythosChangedTheGamePart5() {
 
               {/* 5. AI governance */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   5. AI governance
                 </h2>
                 <div className="space-y-5">
@@ -315,7 +315,7 @@ export default function MythosChangedTheGamePart5() {
 
               {/* 6. Vendor and supply chain */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   6. Vendor and supply chain diligence
                 </h2>
                 <div className="space-y-5">
@@ -330,7 +330,7 @@ export default function MythosChangedTheGamePart5() {
 
               {/* 7. Security leadership */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   7. Security leadership
                 </h2>
                 <div className="space-y-5">
@@ -345,7 +345,7 @@ export default function MythosChangedTheGamePart5() {
 
               {/* What this costs */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   What this costs
                 </h2>
                 <div className="space-y-5">
@@ -363,7 +363,7 @@ export default function MythosChangedTheGamePart5() {
 
                 <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-8">
 
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
                     The bottom line
                   </h2>
 
