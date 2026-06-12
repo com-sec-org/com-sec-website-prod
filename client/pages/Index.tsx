@@ -1216,7 +1216,7 @@ export default function Index() {
               rel="noopener noreferrer"
               className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group animate-float animation-delay-300"
             >
-              <div className="bg-white px-3 py-2">
+              <div className="bg-white px-3 py-2 group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500">
                 <img
                   src="https://drata.com/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F8245869222a5472eb60b3801c6f43179%252F248d7a3c2b5d4dff8405469fdb43d6a3&w=256&q=75"
                   alt="DRATA"
