@@ -1194,7 +1194,7 @@ export default function Index() {
           </div>
 
           {/* Partner Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16">
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16">
             {/* Vanta */}
             <a
               href="https://www.vanta.com/partners/find-a-partner?title=Com-Sec"
@@ -1216,11 +1216,13 @@ export default function Index() {
               rel="noopener noreferrer"
               className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group animate-float animation-delay-300"
             >
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff58b2ec062d2440fb2a112b3bf9433f7?format=webp&width=800&height=1200"
-                alt="DRATA"
-                className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
-              />
+              <div className="bg-white px-3 py-2">
+                <img
+                  src="https://drata.com/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F8245869222a5472eb60b3801c6f43179%252F248d7a3c2b5d4dff8405469fdb43d6a3&w=256&q=75"
+                  alt="DRATA"
+                  className="h-5 sm:h-6 w-auto object-contain transition-all duration-500"
+                />
+              </div>
             </a>
 
             {/* Prescient */}
@@ -1273,7 +1275,7 @@ export default function Index() {
               className="flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 group animate-float animation-delay-1200"
             >
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F064c8018fedc428c8773f27306b7224b?format=webp&width=800&height=1200"
+                src="https://cdn.prod.website-files.com/68d6375d490a38c9a540526d/68e89aa4ecae26885b76dc26_ceel-logo.svg"
                 alt="Ceel"
                 className="h-14 sm:h-16 w-auto object-contain group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition-all duration-500"
               />
