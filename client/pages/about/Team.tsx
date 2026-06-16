@@ -56,8 +56,8 @@ export default function Team() {
       expertise: [
         "Drata",
         "Vanta",
-        "SOC 2 Compliance",
-        "ISO 27001",
+        "CrowdStrike",
+        "Doer",
       ],
     },
     {
@@ -80,10 +80,11 @@ export default function Team() {
       description:
         "Parag is an Information Security Analyst at Com-Sec, focusing on comprehensive security and compliance assessments across complex IT environments. With deep expertise in Drata and Vanta, he implements and manages SOC 2, ISO 27001, and HIPAA compliance frameworks while conducting thorough security evaluations. Parag's attention to detail and technical acumen help organizations strengthen their security controls and achieve continuous regulatory compliance.",
       expertise: [
-        "Drata",
-        "Vanta",
-        "HIPAA Compliance",
-        "Security Assessments",
+        "SOC 2",
+        "ISO 27001",
+        "Entra ID",
+        "Defender",
+        "Sentinel",
       ],
     },
     {
