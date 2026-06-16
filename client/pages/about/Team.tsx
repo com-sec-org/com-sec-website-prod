@@ -79,7 +79,7 @@ export default function Team() {
       role: "Information Security Analyst",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag Khankari is an Information Security Analyst with experience supporting cybersecurity, risk management, audit readiness, and compliance initiatives across client and internal environments.\n\nHe works on security risk assessments, vulnerability assessments, penetration testing support, cloud and vendor security reviews, access control reviews, incident response documentation, and security monitoring activities. His work helps organizations protect the confidentiality, integrity, and availability of information systems and data.\n\nParag also supports audit and compliance initiatives across frameworks including SOC 2, HITRUST, ISO 27001, HIPAA, and related security standards by assisting with control reviews, evidence collection, policy documentation, risk assessments, and audit preparation.\n\nWith a background in Computer Science and Information Systems, Parag combines technical security knowledge with analytical, documentation, and stakeholder communication skills to help organizations strengthen their security posture and maintain audit readiness.",
+        "Parag Khankari is an Information Security Analyst with experience in cybersecurity risk assessments, vulnerability assessments, audit readiness, access control reviews, incident response support, and security monitoring. He supports organizations across SOC 2, HITRUST, ISO 27001, and HIPAA by reviewing controls, collecting evidence, documenting risks, and helping maintain a strong security posture.",
       expertise: [
         "Threat Analysis",
         "Vulnerability Assessment",
