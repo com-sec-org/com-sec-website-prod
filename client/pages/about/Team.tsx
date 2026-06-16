@@ -49,15 +49,15 @@ export default function Team() {
     },
     {
       name: "Manoj Kumar",
-      role: "Director of Client Service",
+      role: "Senior Security Analyst",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
       description:
-        "Manoj is the Director of Client Service at Com-Sec, leading client-focused initiatives and ensuring exceptional service delivery. He oversees client relationships, manages comprehensive compliance and security frameworks including SOC 2, HIPAA, ISO 27001, and NIST, and drives continuous excellence. Manoj's customer-centric approach strengthens client relationships and ensures measurable success.",
+        "Manoj is a Senior Security Analyst at Com-Sec, specializing in advanced security assessments and compliance automation across enterprise environments. With extensive expertise in Drata and Vanta platforms, he streamlines SOC 2, ISO 27001, and HIPAA compliance workflows while strengthening IT security posture. Manoj's analytical depth and technical knowledge enable organizations to build resilient security programs and maintain continuous compliance excellence.",
       expertise: [
-        "CrowdStrike",
-        "AWS Security",
-        "Incident Response",
-        "Risk Assessment",
+        "Drata",
+        "Vanta",
+        "SOC 2 Compliance",
+        "ISO 27001",
       ],
     },
     {
@@ -75,15 +75,15 @@ export default function Team() {
     },
     {
       name: "Parag Khankari",
-      role: "Security & Compliance Manager",
+      role: "Information Security Analyst",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag is a Security & Compliance Manager at Com-Sec, leading organizational compliance initiatives and security frameworks. He manages internal audits, ensures adherence to regulatory requirements like SOC 2, HIPAA, and ISO 27001, and drives continuous improvement in security and compliance posture. Parag's strategic leadership ensures audit excellence and organizational resilience.",
+        "Parag is an Information Security Analyst at Com-Sec, focusing on comprehensive security and compliance assessments across complex IT environments. With deep expertise in Drata and Vanta, he implements and manages SOC 2, ISO 27001, and HIPAA compliance frameworks while conducting thorough security evaluations. Parag's attention to detail and technical acumen help organizations strengthen their security controls and achieve continuous regulatory compliance.",
       expertise: [
-        "Threat Analysis",
-        "Vulnerability Assessment",
-        "Security Monitoring",
-        "Compliance Management",
+        "Drata",
+        "Vanta",
+        "HIPAA Compliance",
+        "Security Assessments",
       ],
     },
     {
