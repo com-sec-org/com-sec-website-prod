@@ -54,8 +54,6 @@ export default function Team() {
       description:
         "Manoj is a Senior Security Analyst at Com-Sec, specializing in advanced security assessments and compliance automation across enterprise environments. With extensive expertise in Drata and Vanta platforms, he streamlines SOC 2, ISO 27001, and HIPAA compliance workflows while strengthening IT security posture. Manoj's analytical depth and technical knowledge enable organizations to build resilient security programs and maintain continuous compliance excellence.",
       expertise: [
-        "Drata",
-        "Vanta",
         "CrowdStrike",
         "Doer",
       ],
