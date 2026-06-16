@@ -1,3 +1,4 @@
+import React from "react";
 import { Navigation } from "@/components/Navigation";
 import { Helmet } from "react-helmet";
 import { Footer } from "@/components/Footer";
@@ -7,6 +8,8 @@ import { Shield, Users, Award, Star, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Team() {
+  const [expandedMember, setExpandedMember] = React.useState<string | null>(null);
+
   const teamMembers = [
     {
       name: "Farbod Fakhrai",
@@ -76,13 +79,23 @@ export default function Team() {
       role: "Information Security Analyst",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag is an Information Security Analyst at Com-Sec, focusing on comprehensive security and compliance assessments across complex IT environments. With deep expertise in Drata and Vanta, he implements and manages SOC 2, ISO 27001, and HIPAA compliance frameworks while conducting thorough security evaluations. Parag's attention to detail and technical acumen help organizations strengthen their security controls and achieve continuous regulatory compliance.",
+        "Parag Khankari is an Information Security Analyst with experience supporting cybersecurity, risk management, audit readiness, and compliance initiatives across client and internal environments.\n\nHe works on security risk assessments, vulnerability assessments, penetration testing support, cloud and vendor security reviews, access control reviews, incident response documentation, and security monitoring activities. His work helps organizations protect the confidentiality, integrity, and availability of information systems and data.\n\nParag also supports audit and compliance initiatives across frameworks including SOC 2, HITRUST, ISO 27001, HIPAA, and related security standards by assisting with control reviews, evidence collection, policy documentation, risk assessments, and audit preparation.\n\nWith a background in Computer Science and Information Systems, Parag combines technical security knowledge with analytical, documentation, and stakeholder communication skills to help organizations strengthen their security posture and maintain audit readiness.",
       expertise: [
+        "Threat Analysis",
+        "Vulnerability Assessment",
+        "Risk Assessment",
+        "Penetration Testing Support",
+        "Access Control Review",
+        "Security Monitoring",
+        "Incident Response",
+        "Cloud Security Review",
+        "Vendor Security Review",
         "SOC 2",
         "ISO 27001",
-        "Entra ID",
-        "Defender",
-        "Sentinel",
+        "HITRUST",
+        "HIPAA",
+        "Audit Readiness",
+        "Security Documentation",
       ],
     },
     {
@@ -292,18 +305,32 @@ export default function Team() {
 
                     {/* Expertise Tags */}
                     <div className="flex flex-wrap gap-2 justify-center">
-                      {member.expertise.slice(0, 2).map((skill, idx) => (
-                        <span
-                          key={idx}
-                          className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
-                        >
-                          {skill}
-                        </span>
-                      ))}
+                      {expandedMember === member.name
+                        ? member.expertise.map((skill, idx) => (
+                            <span
+                              key={idx}
+                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                            >
+                              {skill}
+                            </span>
+                          ))
+                        : member.expertise.slice(0, 2).map((skill, idx) => (
+                            <span
+                              key={idx}
+                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                            >
+                              {skill}
+                            </span>
+                          ))}
                       {member.expertise.length > 2 && (
-                        <span className="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-medium">
-                          +{member.expertise.length - 2} more
-                        </span>
+                        <button
+                          onClick={() => setExpandedMember(expandedMember === member.name ? null : member.name)}
+                          className="px-2 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors rounded-full text-xs font-medium cursor-pointer"
+                        >
+                          {expandedMember === member.name
+                            ? "- less"
+                            : `+${member.expertise.length - 2} more`}
+                        </button>
                       )}
                     </div>
                   </CardContent>
