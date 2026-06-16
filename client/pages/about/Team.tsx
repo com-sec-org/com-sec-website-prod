@@ -1,3 +1,4 @@
+import React from "react";
 import { Navigation } from "@/components/Navigation";
 import { Helmet } from "react-helmet";
 import { Footer } from "@/components/Footer";
@@ -7,6 +8,8 @@ import { Shield, Users, Award, Star, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Team() {
+  const [expandedMember, setExpandedMember] = React.useState<string | null>(null);
+
   const teamMembers = [
     {
       name: "Farbod Fakhrai",
@@ -52,10 +55,23 @@ export default function Team() {
       role: "Senior Security Analyst",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
       description:
-        "Manoj is a Senior Security Analyst at Com-Sec, specializing in advanced security assessments and compliance automation across enterprise environments. With extensive expertise in Drata and Vanta platforms, he streamlines SOC 2, ISO 27001, and HIPAA compliance workflows while strengthening IT security posture. Manoj's analytical depth and technical knowledge enable organizations to build resilient security programs and maintain continuous compliance excellence.",
+        "Manoj Kumar Pellur Santhosh Kumar is a Senior Security Analyst with experience leading security, IT security, and compliance programs across client environments. He specializes in endpoint security, identity and access management, cloud security controls, vulnerability management, risk assessments, audit readiness, and compliance frameworks including SOC 2, ISO 27001, HIPAA, HITRUST, and CMS-regulated requirements.",
       expertise: [
-        "CrowdStrike",
-        "Sentinel",
+        "Enterprise Security",
+        "Endpoint Security",
+        "Identity & Access Management",
+        "Cloud Security",
+        "Vulnerability Management",
+        "Threat Detection",
+        "Risk Assessment",
+        "Risk Treatment Planning",
+        "SOC 2",
+        "ISO 27001",
+        "HIPAA",
+        "HITRUST",
+        "CMS Compliance",
+        "Audit Readiness",
+        "Third-Party Risk Management",
       ],
     },
     {
@@ -76,13 +92,23 @@ export default function Team() {
       role: "Information Security Analyst",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag is an Information Security Analyst at Com-Sec, focusing on comprehensive security and compliance assessments across complex IT environments. With deep expertise in Drata and Vanta, he implements and manages SOC 2, ISO 27001, and HIPAA compliance frameworks while conducting thorough security evaluations. Parag's attention to detail and technical acumen help organizations strengthen their security controls and achieve continuous regulatory compliance.",
+        "Parag Khankari is an Information Security Analyst with experience in cybersecurity risk assessments, vulnerability assessments, audit readiness, access control reviews, incident response support, and security monitoring. He supports organizations across SOC 2, HITRUST, ISO 27001, and HIPAA by reviewing controls, collecting evidence, documenting risks, and helping maintain a strong security posture.",
       expertise: [
+        "Threat Analysis",
+        "Vulnerability Assessment",
+        "Risk Assessment",
+        "Penetration Testing Support",
+        "Access Control Review",
+        "Security Monitoring",
+        "Incident Response",
+        "Cloud Security Review",
+        "Vendor Security Review",
         "SOC 2",
         "ISO 27001",
-        "Entra ID",
-        "Defender",
-        "Sentinel",
+        "HITRUST",
+        "HIPAA",
+        "Audit Readiness",
+        "Security Documentation",
       ],
     },
     {
@@ -292,18 +318,32 @@ export default function Team() {
 
                     {/* Expertise Tags */}
                     <div className="flex flex-wrap gap-2 justify-center">
-                      {member.expertise.slice(0, 2).map((skill, idx) => (
-                        <span
-                          key={idx}
-                          className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
-                        >
-                          {skill}
-                        </span>
-                      ))}
+                      {expandedMember === member.name
+                        ? member.expertise.map((skill, idx) => (
+                            <span
+                              key={idx}
+                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                            >
+                              {skill}
+                            </span>
+                          ))
+                        : member.expertise.slice(0, 2).map((skill, idx) => (
+                            <span
+                              key={idx}
+                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                            >
+                              {skill}
+                            </span>
+                          ))}
                       {member.expertise.length > 2 && (
-                        <span className="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-medium">
-                          +{member.expertise.length - 2} more
-                        </span>
+                        <button
+                          onClick={() => setExpandedMember(expandedMember === member.name ? null : member.name)}
+                          className="px-2 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors rounded-full text-xs font-medium cursor-pointer"
+                        >
+                          {expandedMember === member.name
+                            ? "- less"
+                            : `+${member.expertise.length - 2} more`}
+                        </button>
                       )}
                     </div>
                   </CardContent>
