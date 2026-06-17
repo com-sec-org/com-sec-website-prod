@@ -60,6 +60,21 @@ const allArticles = [
               //   link: "/blog/soc-2-compliance-services-california",
               // },
               {
+                id: "implementing-ai-governance-model-part-1",
+                title: "Implementing an AI Governance Model — Part 1",
+                excerpt:
+                  "Part 1: Start With the Inventory. You Can't Govern What You Don't Know About. Learn how to run an AI tool inventory, check your systems, and build your AI register.",
+                date: "June 2026",
+                readTime: "5 min read",
+                author: "Com-Sec",
+                category: "AI Governance",
+                categoryColor: "bg-indigo-100 text-indigo-800",
+                featured: false,
+                image: "/images/blog-images/implementing-an-ai-governance-model-part-1.png",
+                imageAlt: "Implementing an AI Governance Model Part 1 - Start With the Inventory",
+                link: "/blog/implementing-an-ai-governance-model-part-1",
+              },
+              {
                 id: "mythos-changed-the-game-part-5",
                 title: "Mythos Changed the Game - Part 5: What a Mythos-Ready Security Program Looks Like",
                 excerpt:
