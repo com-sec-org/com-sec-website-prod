@@ -76,6 +76,24 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-06-05T00:00:00Z",
   },
+  "/blog/openai-launched-daybreak": {
+    title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
+    description:
+      "A month after Anthropic locked Mythos behind Project Glasswing, OpenAI launched Daybreak — a publicly available AI-powered cybersecurity platform. Here's what it means for startups and mid-market companies.",
+    image: `${BASE_URL}/images/blog-images/openai-launched-daybreak.png`,
+    url: `${BASE_URL}/blog/openai-launched-daybreak`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-06-18T00:00:00Z",
+  },
+  "/blog/implementing-an-ai-governance-model-part-1": {
+    title: "Implementing an AI Governance Model — Part 1",
+    description:
+      "Part 1: Start With the Inventory. You can't govern what you don't know about. Learn how to run an AI tool inventory, check your systems, and build the AI register that auditors and enterprise buyers will ask for.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-1.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-1`,
+    author: "Com-Sec",
+    publishedTime: "2026-06-17T00:00:00Z",
+  },
   "/blog/rippling-entered-compliance-market": {
     title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
     description:
