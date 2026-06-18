@@ -101,6 +101,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import Soc2ComplianceServicesCalifornia from "./pages/resources/blog/Soc2ComplianceServicesCalifornia";
 import AiGovernanceModelPart1 from "./pages/resources/blog/AiGovernanceModelPart1";
+import OpenAiLaunchedDaybreak from "./pages/resources/blog/OpenAiLaunchedDaybreak";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -326,6 +327,7 @@ const App = () => (
               <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
               <Route path="/blog/soc-2-compliance-services-california" element={<Soc2ComplianceServicesCalifornia />} />
               <Route path="/blog/implementing-an-ai-governance-model-part-1" element={<AiGovernanceModelPart1 />} />
+              <Route path="/blog/openai-launched-daybreak" element={<OpenAiLaunchedDaybreak />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

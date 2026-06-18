@@ -169,12 +169,10 @@ export default function AiGovernanceModelPart1() {
                 <Clock className="h-4 w-4" />
                 <span>5 min read</span>
               </div>
-
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
                 <span>Com-Sec</span>
               </div>
-
               <button
                 onClick={handleShare}
                 className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
@@ -186,7 +184,6 @@ export default function AiGovernanceModelPart1() {
                 )}
                 <span>{copied ? "Copied!" : "Share"}</span>
               </button>
-
             </div>
           </div>
         </section>
@@ -421,7 +418,6 @@ export default function AiGovernanceModelPart1() {
                 >
                   Schedule a Consultation →
                 </Link>
-
                 <Link
                   to="/services"
                   className="border border-white/40 text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-sky-900 transition"

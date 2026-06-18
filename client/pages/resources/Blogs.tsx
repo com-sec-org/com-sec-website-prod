@@ -60,6 +60,21 @@ const allArticles = [
               //   link: "/blog/soc-2-compliance-services-california",
               // },
               {
+                id: "openai-launched-daybreak",
+                title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
+                excerpt:
+                  "A month after Anthropic locked Mythos behind Project Glasswing, OpenAI launched Daybreak — a publicly available AI-powered cybersecurity platform. Here's what it means for startups and mid-market companies.",
+                date: "June 18, 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "AI & Cybersecurity",
+                categoryColor: "bg-violet-100 text-violet-800",
+                featured: false,
+                image: "/images/blog-images/openai-launched-daybreak.png",
+                imageAlt: "OpenAI launched Daybreak - what it means for your company",
+                link: "/blog/openai-launched-daybreak",
+              },
+              {
                 id: "implementing-an-ai-governance-model-part-1",
                 title: "Implementing an AI Governance Model — Part 1: Start With the Inventory",
                 excerpt:

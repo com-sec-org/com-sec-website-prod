@@ -76,6 +76,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-06-05T00:00:00Z",
   },
+  "/blog/openai-launched-daybreak": {
+    title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
+    description:
+      "A month after Anthropic locked Mythos behind Project Glasswing, OpenAI launched Daybreak — a publicly available AI-powered cybersecurity platform. Here's what it means for startups and mid-market companies.",
+    image: `${BASE_URL}/images/blog-images/openai-launched-daybreak.png`,
+    url: `${BASE_URL}/blog/openai-launched-daybreak`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-06-18T00:00:00Z",
+  },
   "/blog/implementing-an-ai-governance-model-part-1": {
     title: "Implementing an AI Governance Model — Part 1",
     description:
