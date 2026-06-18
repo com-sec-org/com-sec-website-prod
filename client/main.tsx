@@ -100,12 +100,8 @@ import RipplingComplianceMarket from "./pages/resources/blog/RipplingComplianceM
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import Soc2ComplianceServicesCalifornia from "./pages/resources/blog/Soc2ComplianceServicesCalifornia";
-<<<<<<< Updated upstream
-
-=======
 import AiGovernanceModelPart1 from "./pages/resources/blog/AiGovernanceModelPart1";
 import OpenAiLaunchedDaybreak from "./pages/resources/blog/OpenAiLaunchedDaybreak";
->>>>>>> Stashed changes
 const queryClient = new QueryClient();
 
 interface Props {
@@ -330,11 +326,8 @@ const App = () => (
               <Route path="/blog/rippling-entered-compliance-market" element={<RipplingComplianceMarket />} />
               <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
               <Route path="/blog/soc-2-compliance-services-california" element={<Soc2ComplianceServicesCalifornia />} />
-<<<<<<< Updated upstream
-=======
               <Route path="/blog/implementing-an-ai-governance-model-part-1" element={<AiGovernanceModelPart1 />} />
               <Route path="/blog/openai-launched-daybreak" element={<OpenAiLaunchedDaybreak />} />
->>>>>>> Stashed changes
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

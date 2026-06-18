@@ -60,8 +60,6 @@ const allArticles = [
               //   link: "/blog/soc-2-compliance-services-california",
               // },
               {
-<<<<<<< Updated upstream
-=======
                 id: "openai-launched-daybreak",
                 title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
                 excerpt:
@@ -92,7 +90,6 @@ const allArticles = [
                 link: "/blog/implementing-an-ai-governance-model-part-1",
               },
               {
->>>>>>> Stashed changes
                 id: "mythos-changed-the-game-part-5",
                 title: "Mythos Changed the Game - Part 5: What a Mythos-Ready Security Program Looks Like",
                 excerpt:
