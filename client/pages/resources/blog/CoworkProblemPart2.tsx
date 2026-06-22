@@ -67,12 +67,12 @@ export default function CoworkProblemPart2() {
     <>
       <Helmet>
         <title>
-          The Cowork Problem — When AI Gets Admin Access to Your Infrastructure
+          Rolling Out AI the Right Way — Part 2
         </title>
 
         <meta
           name="description"
-          content="Part 2: Anthropic's Cowork is one of the most powerful AI tools available today — and one of the most risky if deployed without thinking through the implications. Here's what security and compliance teams need to know."
+          content="Part 2: The Cowork Problem — When AI Gets Admin Access to Your Infrastructure. A 5-part playbook for companies that can't afford to get it wrong."
         />
 
         <link
@@ -153,11 +153,11 @@ export default function CoworkProblemPart2() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              The Cowork Problem — When AI Gets Admin Access to Your Infrastructure
+              Rolling Out AI the Right Way: A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
             </h1>
 
             <p className="text-xl text-rose-100 mb-8 leading-relaxed">
-              Anthropic's Cowork is one of the most powerful AI tools available today. It's genuinely useful. It's also genuinely risky if you deploy it without thinking through the implications.
+              Part 2: The Cowork Problem — When AI Gets Admin Access to Your Infrastructure.
             </p>
 
             <div className="flex flex-wrap items-center gap-6 text-rose-200">
