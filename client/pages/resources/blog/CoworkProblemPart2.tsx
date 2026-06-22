@@ -18,8 +18,8 @@ export default function CoworkProblemPart2() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
-      text: "Part 2: When AI Gets Admin Access to Your Infrastructure. What Anthropic's Cowork means for your security posture.",
+      title: "Rolling Out AI the Right Way — Part 2",
+      text: "Part 2: The Cowork Problem — When AI Gets Admin Access to Your Infrastructure. A 5-part playbook for companies that can't afford to get it wrong.",
       url: window.location.href,
     };
 
