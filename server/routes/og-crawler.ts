@@ -76,6 +76,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-06-05T00:00:00Z",
   },
+  "/blog/the-cowork-problem-when-ai-gets-admin-access": {
+    title: "The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
+    description:
+      "Part 2: Anthropic's Cowork is one of the most powerful AI tools available today — and one of the most risky if deployed without thinking through the implications. Here's what security and compliance teams need to know.",
+    image: `${BASE_URL}/images/blog-images/the-cowork-problem-when-ai-gets-admin-access.png`,
+    url: `${BASE_URL}/blog/the-cowork-problem-when-ai-gets-admin-access`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-06-22T00:00:00Z",
+  },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:

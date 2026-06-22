@@ -353,23 +353,27 @@ export default function AiGovernanceModelPart1() {
               {/* PART 2 */}
               <section className="mb-10">
 
-                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
+                <Link to="/blog/the-cowork-problem-when-ai-gets-admin-access" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
 
-                  <div className="text-3xl mt-1">→</div>
+                    <div className="text-3xl mt-1">→</div>
 
-                  <div>
+                    <div>
 
-                    <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
-                      Up next in the series
-                    </p>
+                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
 
-                    <p className="text-lg text-slate-100 leading-relaxed">
-                      In Part 2, we'll build the policy framework on top of this inventory.
-                    </p>
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 2, we look at one of the riskiest tools in the AI stack right now: Anthropic's Cowork, and what it means when an AI agent gets admin access to your infrastructure.
+                      </p>
+
+                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Part 2 →</p>
+
+                    </div>
 
                   </div>
-
-                </div>
+                </Link>
 
               </section>
 

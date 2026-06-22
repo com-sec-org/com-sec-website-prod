@@ -68,7 +68,7 @@ const allArticles = [
                 readTime: "6 min read",
                 author: "Farbod Fakhrai",
                 category: "AI Governance",
-                categoryColor: "bg-sky-100 text-sky-800",
+                categoryColor: "bg-rose-100 text-rose-800",
                 featured: false,
                 image: "/images/blog-images/the-cowork-problem-when-ai-gets-admin-access.png",
                 imageAlt: "The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
