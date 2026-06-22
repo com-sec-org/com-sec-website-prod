@@ -102,6 +102,7 @@ import TermsOfUse from "./pages/TermsOfUse";
 import Soc2ComplianceServicesCalifornia from "./pages/resources/blog/Soc2ComplianceServicesCalifornia";
 import AiGovernanceModelPart1 from "./pages/resources/blog/AiGovernanceModelPart1";
 import OpenAiLaunchedDaybreak from "./pages/resources/blog/OpenAiLaunchedDaybreak";
+import RollingOutAiRightWayPart1 from "./pages/resources/blog/RollingOutAiRightWayPart1";
 import CoworkProblemPart2 from "./pages/resources/blog/CoworkProblemPart2";
 const queryClient = new QueryClient();
 
@@ -329,6 +330,7 @@ const App = () => (
               <Route path="/blog/soc-2-compliance-services-california" element={<Soc2ComplianceServicesCalifornia />} />
               <Route path="/blog/implementing-an-ai-governance-model-part-1" element={<AiGovernanceModelPart1 />} />
               <Route path="/blog/openai-launched-daybreak" element={<OpenAiLaunchedDaybreak />} />
+              <Route path="/blog/rolling-out-ai-the-right-way-part-1" element={<RollingOutAiRightWayPart1 />} />
               <Route path="/blog/the-cowork-problem-when-ai-gets-admin-access" element={<CoworkProblemPart2 />} />
               <Route path="/about" element={<About />} />
 
