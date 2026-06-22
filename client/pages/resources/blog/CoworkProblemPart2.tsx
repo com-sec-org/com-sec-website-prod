@@ -82,12 +82,12 @@ export default function CoworkProblemPart2() {
 
         <meta
           property="og:title"
-          content="The Cowork Problem — When AI Gets Admin Access to Your Infrastructure"
+          content="Rolling Out AI the Right Way — Part 2"
         />
 
         <meta
           property="og:description"
-          content="Part 2: When AI Gets Admin Access to Your Infrastructure. What Anthropic's Cowork means for your security posture."
+          content="Part 2: The Cowork Problem — When AI Gets Admin Access to Your Infrastructure."
         />
 
         <meta
