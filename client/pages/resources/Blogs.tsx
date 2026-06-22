@@ -64,7 +64,7 @@ const allArticles = [
                 title: "The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
                 excerpt:
                   "Anthropic's Cowork is one of the most powerful AI tools available today — and one of the most risky if deployed without thinking through the implications. Here's what security and compliance teams need to know.",
-                date: "June 2026",
+                date: "June 22, 2026",
                 readTime: "6 min read",
                 author: "Farbod Fakhrai",
                 category: "AI Governance",
