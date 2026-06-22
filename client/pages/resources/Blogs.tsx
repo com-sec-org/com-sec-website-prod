@@ -60,6 +60,21 @@ const allArticles = [
               //   link: "/blog/soc-2-compliance-services-california",
               // },
               {
+                id: "the-cowork-problem-when-ai-gets-admin-access",
+                title: "The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
+                excerpt:
+                  "Anthropic's Cowork is one of the most powerful AI tools available today — and one of the most risky if deployed without thinking through the implications. Here's what security and compliance teams need to know.",
+                date: "June 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "AI Governance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/the-cowork-problem-when-ai-gets-admin-access.png",
+                imageAlt: "The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
+                link: "/blog/the-cowork-problem-when-ai-gets-admin-access",
+              },
+              {
                 id: "openai-launched-daybreak",
                 title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
                 excerpt:
