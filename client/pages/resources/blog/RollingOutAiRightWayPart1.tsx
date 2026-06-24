@@ -18,7 +18,7 @@ export default function RollingOutAiRightWayPart1() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "Rolling Out AI the Right Way — Part 1",
+      title: "Rolling Out AI the Right Way: Part 1",
       text: "Part 1: AI Governance Isn't Optional Anymore. A 5-part playbook for companies that can't afford to get it wrong.",
       url: window.location.href,
     };
@@ -67,7 +67,7 @@ export default function RollingOutAiRightWayPart1() {
     <>
       <Helmet>
         <title>
-          Rolling Out AI the Right Way — Part 1: AI Governance Isn't Optional Anymore
+          Rolling Out AI the Right Way: Part 1: AI Governance Isn't Optional Anymore
         </title>
 
         <meta
@@ -82,7 +82,7 @@ export default function RollingOutAiRightWayPart1() {
 
         <meta
           property="og:title"
-          content="Rolling Out AI the Right Way — Part 1: AI Governance Isn't Optional Anymore"
+          content="Rolling Out AI the Right Way: Part 1: AI Governance Isn't Optional Anymore"
         />
 
         <meta
@@ -103,13 +103,15 @@ export default function RollingOutAiRightWayPart1() {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
+        <meta property="article:author" content="Com-Sec" />
+        <meta property="article:published_time" content="2026-06-22T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
-          content="Rolling Out AI the Right Way — Part 1: AI Governance Isn't Optional Anymore"
+          content="Rolling Out AI the Right Way: Part 1: AI Governance Isn't Optional Anymore"
         />
 
         <meta
@@ -148,7 +150,9 @@ export default function RollingOutAiRightWayPart1() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              Rolling Out AI the Right Way: A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
+              Rolling Out AI the Right Way:
+              <br />
+              A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
             </h1>
 
             <p className="text-xl text-sky-100 mb-8 leading-relaxed">
@@ -158,7 +162,7 @@ export default function RollingOutAiRightWayPart1() {
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>June 2026</span>
+                <span>June 22, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
@@ -166,7 +170,7 @@ export default function RollingOutAiRightWayPart1() {
               </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
-                <span>Com-Sec</span>
+                <span>Farbod Fakhrai</span>
               </div>
               <button
                 onClick={handleShare}
@@ -262,19 +266,49 @@ export default function RollingOutAiRightWayPart1() {
                 </div>
               </section>
 
-              {/* PART 2 TEASER */}
+              {/* PART 2 */}
               <section className="mb-10">
-                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
-                  <div className="text-3xl mt-1">→</div>
-                  <div>
-                    <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
-                      Up next in the series
-                    </p>
-                    <p className="text-lg text-slate-100 leading-relaxed">
-                      In Part 2, we'll get into the specific risks of tools like Cowork and what companies need to understand before enabling agentic AI on employee machines.
-                    </p>
+
+                <Link to="/blog/the-cowork-problem-when-ai-gets-admin-access" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
+
+                    <div className="text-3xl mt-1">→</div>
+
+                    <div>
+
+                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
+
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 2, we look at one of the riskiest tools in the AI stack right now: Anthropic's Cowork, and what it means when an AI agent gets admin access to your infrastructure.
+                      </p>
+
+                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Part 2 →</p>
+
+                    </div>
+
                   </div>
-                </div>
+                </Link>
+
+              </section>
+
+              {/* AUTHOR */}
+              <section className="mb-12 border-t border-gray-200 pt-8">
+
+                <p className="text-gray-600 text-base italic">
+                  This article is part of Com-Sec's AI Governance series for startups and growth-stage companies. Learn more at{" "}
+                  <a
+                    href="https://com-sec.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-700 font-semibold hover:underline"
+                  >
+                    com-sec.io
+                  </a>
+                  .
+                </p>
+
               </section>
 
             </div>

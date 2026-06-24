@@ -61,7 +61,7 @@ const allArticles = [
               // },
               {
                 id: "the-cowork-problem-when-ai-gets-admin-access",
-                title: "Rolling Out AI the Right Way  — Part 2: The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
+                title: "Rolling Out AI the Right Way: Part 2: The Cowork Problem",
                 excerpt: "Anthropic's Cowork is one of the most powerful AI tools available today — and one of the most risky if deployed without thinking through the implications. Here's what security and compliance teams need to know.",
                 date: "June 24, 2026",
                 readTime: "6 min read",
@@ -75,12 +75,12 @@ const allArticles = [
               },
               {
                 id: "rolling-out-ai-the-right-way-part-1",
-                title: "Rolling Out AI the Right Way — Part 1: AI Governance Isn't Optional Anymore",
+                title: "Rolling Out AI the Right Way: Part 1: AI Governance Isn't Optional Anymore",
                 excerpt:
                   "Part 1 of a 5-part playbook for companies that can't afford to get AI wrong. AI governance isn't optional anymore — enterprise buyers, regulators, and auditors are all paying attention.",
                 date: "June 22, 2026",
                 readTime: "5 min read",
-                author: "Com-Sec",
+                author: "Farbod Fakhrai",
                 category: "AI Governance",
                 categoryColor: "bg-sky-100 text-sky-800",
                 featured: false,

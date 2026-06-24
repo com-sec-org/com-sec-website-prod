@@ -18,7 +18,7 @@ export default function CoworkProblemPart2() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "Rolling Out AI the Right Way — Part 2",
+      title: "Rolling Out AI the Right Way: Part 2",
       text: "Part 2: The Cowork Problem — When AI Gets Admin Access to Your Infrastructure. A 5-part playbook for companies that can't afford to get it wrong.",
       url: window.location.href,
     };
@@ -67,7 +67,7 @@ export default function CoworkProblemPart2() {
     <>
       <Helmet>
         <title>
-          Rolling Out AI the Right Way — Part 2
+          Rolling Out AI the Right Way: Part 2
         </title>
 
         <meta
@@ -82,7 +82,7 @@ export default function CoworkProblemPart2() {
 
         <meta
           property="og:title"
-          content="Rolling Out AI the Right Way — Part 2"
+          content="Rolling Out AI the Right Way: Part 2"
         />
 
         <meta
@@ -153,7 +153,9 @@ export default function CoworkProblemPart2() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              Rolling Out AI the Right Way: A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
+              Rolling Out AI the Right Way:
+              <br />
+              A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
             </h1>
 
             <p className="text-xl text-rose-100 mb-8 leading-relaxed">
@@ -164,7 +166,7 @@ export default function CoworkProblemPart2() {
 
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>June 22, 2026</span>
+                <span>June 24, 2026</span>
               </div>
 
               <div className="flex items-center gap-2">
