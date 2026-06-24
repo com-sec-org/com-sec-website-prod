@@ -13,13 +13,13 @@ import {
   Check,
 } from "lucide-react";
 
-export default function AiGovernanceModelPart1() {
+export default function RollingOutAiRightWayPart1() {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
     const shareData = {
-      title: "Implementing an AI Governance Model — Part 1",
-      text: "Part 1: Start With the Inventory. You Can't Govern What You Don't Know About.",
+      title: "Rolling Out AI the Right Way: Part 1",
+      text: "Part 1: AI Governance Isn't Optional Anymore. A 5-part playbook for companies that can't afford to get it wrong.",
       url: window.location.href,
     };
 
@@ -38,88 +38,90 @@ export default function AiGovernanceModelPart1() {
 
   const relatedArticles = [
     {
-      title: "What Are Managed Security & Compliance Services and Why Are They Essential?",
+      title: "Implementing an AI Governance Model — Part 1",
       excerpt:
-        "Understand how managed security and compliance services help organizations reduce risk and stay audit-ready.",
-      link: "/blog/what-are-managed-security-compliance-services-and-why-are-they-essential",
-      category: "Compliance",
-      emoji: "🛡️",
+        "Part 1: Start With the Inventory. You can't govern what you don't know about. Learn how to run an AI tool inventory, check your systems, and build your AI register.",
+      link: "/blog/implementing-an-ai-governance-model-part-1",
+      category: "AI Governance",
+      emoji: "📋",
     },
     {
-      title: "What Is a vCISO? Understanding the Role and Benefits",
+      title: "The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
       excerpt:
-        "Learn how vCISO services help organizations strengthen cybersecurity leadership.",
-      link: "/blog/what-is-vciso-role-cybersecurity",
-      category: "Cybersecurity Leadership",
-      emoji: "🧭",
+        "Part 2: What Anthropic's Cowork means for your security posture and what compliance teams need to know before enabling agentic AI.",
+      link: "/blog/the-cowork-problem-when-ai-gets-admin-access",
+      category: "AI Governance",
+      emoji: "⚠️",
     },
     {
-      title: "How AI Is Changing IT Security Operations",
+      title: "Agentic AI Governance & Lifecycle Management in Healthcare",
       excerpt:
-        "Explore how artificial intelligence is reshaping the way organizations detect, monitor, and respond to threats.",
-      link: "/blog/how-ai-is-changing-it-security-operations-in-2025",
-      category: "AI & Security",
-      emoji: "🤖",
+        "How healthcare organizations can govern agentic AI systems responsibly while maintaining compliance.",
+      link: "/blog/agentic-ai-governance-lifecycle-management-healthcare-2026",
+      category: "AI & Compliance",
+      emoji: "🏥",
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Implementing an AI Governance Model — Part 1</title>
+        <title>
+          Rolling Out AI the Right Way: Part 1: AI Governance Isn't Optional Anymore
+        </title>
 
         <meta
           name="description"
-          content="Part 1: Start With the Inventory. You can't govern what you don't know about. Learn how to run an AI tool inventory, check your systems, and build your AI register."
+          content="Part 1 of a 5-part playbook for companies that can't afford to get AI wrong. AI governance isn't optional anymore — enterprise buyers, regulators, and auditors are all paying attention."
         />
 
         <link
           rel="canonical"
-          href="https://com-sec.io/blog/implementing-an-ai-governance-model-part-1"
+          href="https://com-sec.io/blog/rolling-out-ai-the-right-way-part-1"
         />
 
         <meta
           property="og:title"
-          content="Implementing an AI Governance Model — Part 1"
+          content="Rolling Out AI the Right Way: Part 1: AI Governance Isn't Optional Anymore"
         />
 
         <meta
           property="og:description"
-          content="Part 1: Start With the Inventory. You Can't Govern What You Don't Know About."
+          content="Part 1 of a 5-part playbook for companies that can't afford to get AI wrong. AI governance isn't optional anymore."
         />
 
         <meta
           property="og:image"
-          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-1.png"
+          content="https://com-sec.io/images/blog-images/rolling-out-ai-the-right-way-part-1.png"
         />
 
         <meta
           property="og:url"
-          content="https://com-sec.io/blog/implementing-an-ai-governance-model-part-1"
+          content="https://com-sec.io/blog/rolling-out-ai-the-right-way-part-1"
         />
 
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="Com-Sec" />
-        <meta property="article:published_time" content="2026-06-17T00:00:00Z" />
+        <meta property="article:published_time" content="2026-06-22T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
-          content="Implementing an AI Governance Model — Part 1"
+          content="Rolling Out AI the Right Way: Part 1: AI Governance Isn't Optional Anymore"
         />
 
         <meta
           name="twitter:description"
-          content="Part 1: Start With the Inventory. You Can't Govern What You Don't Know About."
+          content="Part 1 of a 5-part playbook for companies that can't afford to get AI wrong."
         />
 
         <meta
           name="twitter:image"
-          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-1.png"
+          content="https://com-sec.io/images/blog-images/rolling-out-ai-the-right-way-part-1.png"
         />
       </Helmet>
 
@@ -139,39 +141,36 @@ export default function AiGovernanceModelPart1() {
             </Link>
 
             <div className="flex items-center gap-4 mb-6 flex-wrap">
-
               <span className="bg-sky-500/20 text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
                 AI Governance
               </span>
-
               <span className="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-bold border border-white/25">
-                Part 1 of Series
+                Part 1 of 5
               </span>
-
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              Implementing an AI Governance Model
+              Rolling Out AI the Right Way:
+              <br />
+              A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
             </h1>
 
             <p className="text-xl text-sky-100 mb-8 leading-relaxed">
-              Part 1: Start With the Inventory. You Can't Govern What You Don't Know About.
+              Part 1: AI Governance Isn't Optional Anymore
             </p>
 
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
-
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>June 17, 2026</span>
+                <span>June 22, 2026</span>
               </div>
-
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
                 <span>5 min read</span>
               </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
-                <span>Com-Sec</span>
+                <span>Farbod Fakhrai</span>
               </div>
               <button
                 onClick={handleShare}
@@ -195,8 +194,8 @@ export default function AiGovernanceModelPart1() {
             {/* COVER IMAGE */}
             <div className="mb-12 flex justify-center">
               <img
-                src="/images/blog-images/implementing-an-ai-governance-model-part-1.png"
-                alt="Implementing an AI Governance Model Part 1 - Start With the Inventory"
+                src="/images/blog-images/rolling-out-ai-the-right-way-part-1.png"
+                alt="Rolling Out AI the Right Way Part 1 - AI Governance Isn't Optional Anymore"
                 className="rounded-xl shadow-md max-w-xl w-full h-auto"
               />
             </div>
@@ -206,148 +205,65 @@ export default function AiGovernanceModelPart1() {
               {/* INTRO */}
               <section className="mb-10">
                 <div className="space-y-5">
-
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Every AI governance framework starts in the same place: figuring out what your company is actually using.
+                    Every company is using AI. The question is whether they're doing it with any structure or just hoping nobody asks.
                   </p>
-
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    This sounds simple. It's not. At most companies, AI adoption has been bottom-up and ungoverned. Individual employees signed up for tools. Engineers plugged in API keys. Teams built internal tools on top of models. Nobody tracked any of it.
+                    For the last two years, most startups and mid-market companies have been in experimentation mode. Employees sign up for ChatGPT or Claude with personal accounts, paste customer data into prompts, and use AI-generated outputs without review. Engineering teams plug in API keys and start building. Nobody inventories what's being used, where data is going, or what the risks are.
                   </p>
-
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Before you write a policy, before you evaluate risk, before you talk to your auditor, you need to know what's in your environment.
+                    That was understandable when AI tools were new and the regulatory landscape was unclear. It's not anymore.
                   </p>
-
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Enterprise buyers are asking about AI governance in security questionnaires. Healthcare organizations want to know how you handle AI risk before they'll sign a BAA. The EU AI Act is in effect. ISO 42001 exists specifically to address AI management systems. SOC 2 auditors are starting to ask about AI use in their walkthroughs. And if you're in health tech, fintech, or any regulated industry, your customers and partners are paying attention.
+                  </p>
                 </div>
               </section>
 
-              {/* HOW TO RUN THE INVENTORY */}
+              {/* WHAT AI GOVERNANCE ACTUALLY MEANS */}
               <section className="mb-10">
-
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  How to run the inventory
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  What AI governance actually means
                 </h2>
-
                 <div className="space-y-5">
-
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Send a company-wide survey. Keep it short. Three questions: What AI tools do you use for work? What do you use them for? What data do you put into them?
+                    It's not a 50-page policy that nobody reads. At its core, AI governance for a startup or growth-stage company means:
                   </p>
 
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    You'll be surprised. Marketing is using ChatGPT to draft customer emails. Engineering is using Claude Code to write and debug production code. Customer success is pasting support tickets into AI tools to draft responses. Sales is using AI to research prospects. Product is running analytics queries through AI. Some of these tools have enterprise agreements. Most don't.
-                  </p>
-
-                </div>
-
-              </section>
-
-              {/* CHECK YOUR SYSTEMS */}
-              <section className="mb-10">
-
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Check your systems
-                </h2>
-
-                <div className="space-y-5">
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Surveys catch what people remember. Systems catch everything else.
-                  </p>
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Review your SSO/SAML logs for AI-related applications. Check expense reports and credit card statements for AI subscriptions. Look at browser extensions across your fleet. Review API keys in your codebase and CI/CD pipeline. Check your cloud provider marketplace for AI services that have been enabled.
-                  </p>
-
-                </div>
-
-              </section>
-
-              {/* BUILD THE REGISTER */}
-              <section className="mb-10">
-
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Build the register
-                </h2>
-
-                <div className="space-y-5">
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    For every AI tool you find, document:
-                  </p>
-
-                  <ul className="list-disc pl-6 space-y-3 text-gray-700 text-lg">
-                    <li>Tool name and provider.</li>
-                    <li>Who's using it and which team.</li>
-                    <li>What plan or tier (free, pro, enterprise, API).</li>
-                    <li>What data goes into it — customer data, PHI, PII, source code, internal docs, or public info only.</li>
-                    <li>Whether there's a signed agreement (BAA, DPA, enterprise contract).</li>
-                    <li>Whether data is used for model training.</li>
-                    <li>Retention policy.</li>
-                    <li>Whether the tool has agentic capabilities — can it take actions, access files, execute code.</li>
-                  </ul>
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    This register is the foundation of everything that follows. It's also the first thing an auditor or enterprise customer will ask for when they want to understand your AI governance posture.
-                  </p>
-
-                </div>
-
-              </section>
-
-              {/* WHAT YOU'LL PROBABLY FIND */}
-              <section className="mb-10">
-
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  What you'll probably find
-                </h2>
-
-                <div className="space-y-5">
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    <b>More tools than anyone expected.</b> Most companies discover 3 to 5x more AI tools in use than leadership knew about.
-                  </p>
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    <b>Data flowing somewhere it shouldn't.</b> PHI or PII going into consumer-grade tools without BAAs. Engineers using agentic tools with admin access to production.
-                  </p>
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    <b>No consistency in plans or tiers.</b> Half the team on free accounts, some on personal pro plans, a few with enterprise agreements — often for the same tool.
-                  </p>
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    That's normal. The point of the inventory isn't to punish anyone. It's to get a clear picture so you can make informed decisions about what to approve, what to restrict, and what to shut down.
-                  </p>
-
-                </div>
-
-              </section>
-
-              {/* SUMMARY */}
-              <section className="mb-10">
-
-                <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-xl p-8">
-
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    Why this matters now
-                  </h2>
-
-                  <div className="space-y-4">
-
-                    <p className="text-gray-800 leading-relaxed text-lg">
-                      Enterprise buyers, compliance frameworks like ISO 42001, and regulators are all starting to ask pointed questions about AI use. The companies that can produce a clean, accurate AI inventory when asked — from a customer security review, an audit, or a board meeting — are the ones that build trust faster.
-                    </p>
-
-                    <p className="text-gray-800 leading-relaxed text-lg">
-                      The inventory is the first step. Everything else — policy, risk classification, vendor review — builds on top of it.
-                    </p>
-
+                  <div className="space-y-3">
+                    {[
+                      "You know what AI tools your company uses and who's using them.",
+                      "You've defined acceptable use boundaries.",
+                      "You control what data goes into AI systems.",
+                      "You have human oversight for any AI outputs that affect customers or business decisions.",
+                      "You've documented your approach clearly enough to answer questions from customers, auditors, and regulators.",
+                    ].map((item, index) => (
+                      <div
+                        key={index}
+                        className="flex items-start gap-3 bg-sky-50 border-l-4 border-sky-500 rounded-r-lg px-4 py-3"
+                      >
+                        <span className="text-sky-600 font-bold mt-0.5">{index + 1}.</span>
+                        <p className="text-gray-800 text-lg">{item}</p>
+                      </div>
+                    ))}
                   </div>
 
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    That's it. You can build on top of that, but if you can't do those five things, you don't have governance. You have hope.
+                  </p>
                 </div>
+              </section>
 
+              {/* WHY THIS MATTERS NOW */}
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  Why this matters now
+                </h2>
+                <div className="space-y-5">
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    The compliance landscape is moving fast. ISO 42001 certification is becoming a differentiator. Customers in healthcare and financial services are adding AI-specific questions to their vendor assessments. And the Delve scandal showed what happens when the compliance industry prioritizes speed over substance. The same risk exists with AI: if companies adopt AI tools without understanding the data handling, retention, and privacy implications, they're creating exposure they may not discover until a customer audit or a breach forces the question.
+                  </p>
+                </div>
               </section>
 
               {/* PART 2 */}
@@ -401,21 +317,15 @@ export default function AiGovernanceModelPart1() {
 
         {/* CTA */}
         <section className="pb-16">
-
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
             <div className="bg-gradient-to-br from-sky-900 via-blue-800 to-slate-900 rounded-xl px-8 py-10 text-white text-center shadow-lg">
-
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
                 Need help building your AI governance program?
               </h3>
-
               <p className="text-sky-200 text-lg mb-6 max-w-xl mx-auto leading-relaxed">
                 Com-Sec helps startups and growth-stage companies inventory AI usage, build governance frameworks, and prepare for audits and enterprise security reviews.
               </p>
-
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-
                 <Link
                   to="/contact"
                   className="bg-white text-sky-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
@@ -428,57 +338,40 @@ export default function AiGovernanceModelPart1() {
                 >
                   Explore Our Services
                 </Link>
-
               </div>
-
             </div>
-
           </div>
-
         </section>
 
         {/* RELATED ARTICLES */}
         <section className="py-16 bg-gray-50">
-
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
               Related Articles
             </h2>
-
             <div className="grid md:grid-cols-3 gap-8">
               {relatedArticles.map((article, index) => (
                 <Link key={index} to={article.link} className="group">
-
                   <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow transform hover:scale-105 h-full flex flex-col">
-
                     <div className="text-4xl mb-4">{article.emoji}</div>
-
                     <span className="text-xs font-medium text-sky-700 bg-sky-50 px-2 py-1 rounded-full w-fit">
                       {article.category}
                     </span>
-
                     <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2 group-hover:text-sky-700 transition-colors">
                       {article.title}
                     </h3>
-
                     <p className="text-gray-600 text-sm flex-grow">
                       {article.excerpt}
                     </p>
-
                     <div className="mt-4 flex items-center text-sky-700 text-sm font-medium">
                       Read More
                       <ArrowRight className="ml-1 h-3 w-3 group-hover:translate-x-1 transition-transform" />
                     </div>
-
                   </div>
-
                 </Link>
               ))}
             </div>
-
           </div>
-
         </section>
 
         <Footer />
