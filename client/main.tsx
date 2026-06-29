@@ -104,6 +104,7 @@ import AiGovernanceModelPart1 from "./pages/resources/blog/AiGovernanceModelPart
 import OpenAiLaunchedDaybreak from "./pages/resources/blog/OpenAiLaunchedDaybreak";
 import RollingOutAiRightWayPart1 from "./pages/resources/blog/RollingOutAiRightWayPart1";
 import CoworkProblemPart2 from "./pages/resources/blog/CoworkProblemPart2";
+import RollingOutAiRightWayPart3 from "./pages/resources/blog/RollingOutAiRightWayPart3";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -332,6 +333,7 @@ const App = () => (
               <Route path="/blog/openai-launched-daybreak" element={<OpenAiLaunchedDaybreak />} />
               <Route path="/blog/rolling-out-ai-the-right-way-part-1" element={<RollingOutAiRightWayPart1 />} />
               <Route path="/blog/the-cowork-problem-when-ai-gets-admin-access" element={<CoworkProblemPart2 />} />
+              <Route path="/blog/rolling-out-ai-the-right-way-part-3" element={<RollingOutAiRightWayPart3 />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
