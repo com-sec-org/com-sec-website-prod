@@ -346,26 +346,30 @@ export default function CoworkProblemPart2() {
 
               </section>
 
-              {/* PART 3 TEASER */}
+              {/* PART 3 */}
               <section className="mb-10">
 
-                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
+                <Link to="/blog/rolling-out-ai-the-right-way-part-3" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
 
-                  <div className="text-3xl mt-1">→</div>
+                    <div className="text-3xl mt-1">→</div>
 
-                  <div>
+                    <div>
 
-                    <p className="text-sm font-semibold text-rose-300 uppercase tracking-wide mb-2">
-                      Up next in the series
-                    </p>
+                      <p className="text-sm font-semibold text-rose-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
 
-                    <p className="text-lg text-slate-100 leading-relaxed">
-                      In Part 3, we'll dig into the data layer: BAAs, zero data retention, and what companies actually need to understand about where their data goes when they use AI.
-                    </p>
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 3, we dig into the data layer: BAAs, zero data retention, and what companies actually need to understand about where their data goes when they use AI.
+                      </p>
+
+                      <p className="text-sm text-rose-300 mt-3 group-hover:underline">Read Part 3 →</p>
+
+                    </div>
 
                   </div>
-
-                </div>
+                </Link>
 
               </section>
 
