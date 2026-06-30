@@ -103,6 +103,8 @@ export default function RollingOutAiRightWayPart3() {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
+        <meta property="article:author" content="Com-Sec" />
+        <meta property="article:published_time" content="2026-06-30T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
@@ -148,7 +150,7 @@ export default function RollingOutAiRightWayPart3() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              Rolling Out AI the Right Way: A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
+              Rolling Out AI the Right Way: <br/> A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
             </h1>
 
             <p className="text-xl text-sky-100 mb-8 leading-relaxed">

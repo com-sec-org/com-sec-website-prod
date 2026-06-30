@@ -83,6 +83,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-06-05T00:00:00Z",
   },
+  "/blog/rolling-out-ai-the-right-way-part-1": {
+    title: "Rolling Out AI the Right Way: Part 1: AI Governance Isn't Optional Anymore",
+    description:
+      "Part 1 of a 5-part playbook for companies that can't afford to get AI wrong. AI governance isn't optional anymore — enterprise buyers, regulators, and auditors are all paying attention.",
+    image: `${BASE_URL}/images/blog-images/rolling-out-ai-the-right-way-part-1.png`,
+    url: `${BASE_URL}/blog/rolling-out-ai-the-right-way-part-1`,
+    author: "Com-Sec",
+    publishedTime: "2026-06-22T00:00:00Z",
+  },
   "/blog/the-cowork-problem-when-ai-gets-admin-access": {
     title: "The Cowork Problem — When AI Gets Admin Access to Your Infrastructure",
     description:
@@ -91,6 +100,15 @@ const OG_ROUTES: Record<string, OgData> = {
     url: `${BASE_URL}/blog/the-cowork-problem-when-ai-gets-admin-access`,
     author: "Farbod Fakhrai",
     publishedTime: "2026-06-22T00:00:00Z",
+  },
+  "/blog/rolling-out-ai-the-right-way-part-3": {
+    title: "Rolling Out AI the Right Way: Part 3: BAAs, Zero Data Retention, and the Data Layer You Need to Understand",
+    description:
+      "Part 3: Can you use Claude and still be HIPAA compliant? The answer depends entirely on how you use it and which product surface you're on. Here's what health tech companies need to know about BAAs, ZDR, and the data layer.",
+    image: `${BASE_URL}/images/blog-images/rolling-out-ai-the-right-way-part-3.png`,
+    url: `${BASE_URL}/blog/rolling-out-ai-the-right-way-part-3`,
+    author: "Com-Sec",
+    publishedTime: "2026-06-30T00:00:00Z",
   },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
