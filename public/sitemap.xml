@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
   <url>
+    <loc>https://com-sec.io/blog/rolling-out-ai-the-right-way-part-3</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://com-sec.io/blog/the-cowork-problem-when-ai-gets-admin-access</loc>
     <priority>0.7</priority>
   </url>
