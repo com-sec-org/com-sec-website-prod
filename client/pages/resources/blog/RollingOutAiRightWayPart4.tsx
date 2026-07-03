@@ -103,6 +103,8 @@ export default function RollingOutAiRightWayPart4() {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
+        <meta property="article:author" content="Farbod Fakhrai" />
+        <meta property="article:published_time" content="2026-07-02T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />

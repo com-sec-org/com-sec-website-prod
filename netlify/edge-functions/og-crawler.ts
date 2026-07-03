@@ -110,6 +110,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Com-Sec",
     publishedTime: "2026-06-30T00:00:00Z",
   },
+  "/blog/rolling-out-ai-the-right-way-part-4": {
+    title: "Rolling Out AI the Right Way: Part 4: The AI Rollout Playbook",
+    description:
+      "Part 4: You've understood the governance need and the risks. Now let's build the actual program. A practical 5-step playbook for rolling out AI at a company that takes security and compliance seriously.",
+    image: `${BASE_URL}/images/blog-images/rolling-out-ai-the-right-way-part-4.png`,
+    url: `${BASE_URL}/blog/rolling-out-ai-the-right-way-part-4`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-02T00:00:00Z",
+  },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:

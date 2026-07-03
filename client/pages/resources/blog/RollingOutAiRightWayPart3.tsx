@@ -327,19 +327,31 @@ export default function RollingOutAiRightWayPart3() {
                 </div>
               </section>
 
-              {/* PART 4 TEASER */}
+              {/* PART 4 */}
               <section className="mb-10">
-                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
-                  <div className="text-3xl mt-1">→</div>
-                  <div>
-                    <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
-                      Up next in the series
-                    </p>
-                    <p className="text-lg text-slate-100 leading-relaxed">
-                      In Part 4, we'll build the actual rollout playbook.
-                    </p>
+
+                <Link to="/blog/rolling-out-ai-the-right-way-part-4" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
+
+                    <div className="text-3xl mt-1">→</div>
+
+                    <div>
+
+                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
+
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 4, we build the actual rollout playbook — a practical 5-step program for rolling out AI at a company that takes security and compliance seriously.
+                      </p>
+
+                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Part 4 →</p>
+
+                    </div>
+
                   </div>
-                </div>
+                </Link>
+
               </section>
 
             </div>
