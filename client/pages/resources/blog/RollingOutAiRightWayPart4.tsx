@@ -13,13 +13,13 @@ import {
   Check,
 } from "lucide-react";
 
-export default function RollingOutAiRightWayPart3() {
+export default function RollingOutAiRightWayPart4() {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
     const shareData = {
-      title: "Rolling Out AI the Right Way — Part 3",
-      text: "Part 3: BAAs, Zero Data Retention, and the Data Layer You Need to Understand.",
+      title: "Rolling Out AI the Right Way — Part 4",
+      text: "Part 4: The AI Rollout Playbook. A practical playbook for rolling out AI at a company that takes security and compliance seriously.",
       url: window.location.href,
     };
 
@@ -54,12 +54,12 @@ export default function RollingOutAiRightWayPart3() {
       emoji: "⚠️",
     },
     {
-      title: "Agentic AI Governance & Lifecycle Management in Healthcare",
+      title: "Rolling Out AI the Right Way — Part 3",
       excerpt:
-        "How healthcare organizations can govern agentic AI systems responsibly while maintaining compliance.",
-      link: "/blog/agentic-ai-governance-lifecycle-management-healthcare-2026",
-      category: "AI & Compliance",
-      emoji: "🏥",
+        "Part 3: BAAs, Zero Data Retention, and the Data Layer You Need to Understand.",
+      link: "/blog/rolling-out-ai-the-right-way-part-3",
+      category: "AI Governance",
+      emoji: "🔐",
     },
   ];
 
@@ -67,61 +67,61 @@ export default function RollingOutAiRightWayPart3() {
     <>
       <Helmet>
         <title>
-          Rolling Out AI the Right Way — Part 3: BAAs, Zero Data Retention, and the Data Layer You Need to Understand
+          Rolling Out AI the Right Way — Part 4: The AI Rollout Playbook
         </title>
 
         <meta
           name="description"
-          content="Part 3: The most common question from health tech founders about AI — can we use Claude and still be HIPAA compliant? The answer depends entirely on how you use it and which product surface you're on."
+          content="Part 4: The AI Rollout Playbook. A practical 5-step playbook for rolling out AI at a company that takes security and compliance seriously — from inventory to monitoring."
         />
 
         <link
           rel="canonical"
-          href="https://com-sec.io/blog/rolling-out-ai-the-right-way-part-3"
+          href="https://com-sec.io/blog/rolling-out-ai-the-right-way-part-4"
         />
 
         <meta
           property="og:title"
-          content="Rolling Out AI the Right Way — Part 3: BAAs, Zero Data Retention, and the Data Layer You Need to Understand"
+          content="Rolling Out AI the Right Way — Part 4: The AI Rollout Playbook"
         />
 
         <meta
           property="og:description"
-          content="Part 3: BAAs, Zero Data Retention, and the Data Layer You Need to Understand. What health tech companies need to know about HIPAA compliance and AI tools."
+          content="Part 4: A practical 5-step playbook for rolling out AI at a company that takes security and compliance seriously."
         />
 
         <meta
           property="og:image"
-          content="https://com-sec.io/images/blog-images/rolling-out-ai-the-right-way-part-3.png"
+          content="https://com-sec.io/images/blog-images/rolling-out-ai-the-right-way-part-4.png"
         />
 
         <meta
           property="og:url"
-          content="https://com-sec.io/blog/rolling-out-ai-the-right-way-part-3"
+          content="https://com-sec.io/blog/rolling-out-ai-the-right-way-part-4"
         />
 
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
-        <meta property="article:author" content="Com-Sec" />
-        <meta property="article:published_time" content="2026-06-30T00:00:00Z" />
+        <meta property="article:author" content="Farbod Fakhrai" />
+        <meta property="article:published_time" content="2026-07-02T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
-          content="Rolling Out AI the Right Way — Part 3: BAAs, Zero Data Retention, and the Data Layer You Need to Understand"
+          content="Rolling Out AI the Right Way — Part 4: The AI Rollout Playbook"
         />
 
         <meta
           name="twitter:description"
-          content="Part 3: What health tech companies need to know about HIPAA compliance and AI tools."
+          content="Part 4: A practical 5-step playbook for rolling out AI at a company that takes security and compliance seriously."
         />
 
         <meta
           name="twitter:image"
-          content="https://com-sec.io/images/blog-images/rolling-out-ai-the-right-way-part-3.png"
+          content="https://com-sec.io/images/blog-images/rolling-out-ai-the-right-way-part-4.png"
         />
       </Helmet>
 
@@ -145,16 +145,16 @@ export default function RollingOutAiRightWayPart3() {
                 AI Governance
               </span>
               <span className="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-bold border border-white/25">
-                Part 3 of 5
+                Part 4 of 5
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              Rolling Out AI the Right Way: <br/> A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
+              Rolling Out AI the Right Way: A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
             </h1>
 
             <p className="text-xl text-sky-100 mb-8 leading-relaxed">
-              Part 3: BAAs, Zero Data Retention, and the Data Layer You Need to Understand
+              Part 4: The AI Rollout Playbook
             </p>
 
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
@@ -164,7 +164,7 @@ export default function RollingOutAiRightWayPart3() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
-                <span>6 min read</span>
+                <span>7 min read</span>
               </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
@@ -192,8 +192,8 @@ export default function RollingOutAiRightWayPart3() {
             {/* COVER IMAGE */}
             <div className="mb-12 flex justify-center">
               <img
-                src="/images/blog-images/rolling-out-ai-the-right-way-part-3.png"
-                alt="Rolling Out AI the Right Way Part 3 - BAAs, Zero Data Retention, and the Data Layer"
+                src="/images/blog-images/rolling-out-ai-the-right-way-part-4.png"
+                alt="Rolling Out AI the Right Way Part 4 - The AI Rollout Playbook"
                 className="rounded-xl shadow-md max-w-xl w-full h-auto"
               />
             </div>
@@ -204,154 +204,131 @@ export default function RollingOutAiRightWayPart3() {
               <section className="mb-10">
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    The most common question I get from health tech founders about AI: "Can we use Claude and still be HIPAA compliant?"
-                  </p>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    The answer is: it depends entirely on how you use it and which product surface you're on. And the details matter more than most companies realize.
+                    You've understood the governance need, the risks of agentic tools, and the data handling landscape. Now let's build the actual program. This is a practical playbook for rolling out AI at a company that takes security and compliance seriously.
                   </p>
                 </div>
               </section>
 
-              {/* THE BAA LANDSCAPE */}
+              {/* STEP 1 */}
               <section className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  The BAA landscape
+                  Step 1: Inventory what's already in use
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Anthropic offers a Business Associate Agreement for its HIPAA-eligible services. But not everything with the Claude name on it is covered.
+                    Before you write a single policy, find out what your team is already using. In most companies, AI adoption has been bottom-up. Individual employees have signed up for tools, connected APIs, and started building without formal approval. You can't govern what you don't know about.
                   </p>
-
-                  {/* COVERED */}
-                  <div className="bg-green-50 border border-green-200 rounded-xl p-6">
-                    <h3 className="text-lg font-bold text-green-800 mb-3">
-                      ✅ What's covered under the BAA (as of May 2026):
-                    </h3>
-                    <ul className="space-y-2 text-gray-700 text-lg">
-                      <li>The Claude Messages API</li>
-                      <li>Claude Enterprise (with HIPAA mode enabled by an admin)</li>
-                      <li>Claude Code CLI (only with ZDR enabled on a qualified account)</li>
-                    </ul>
-                  </div>
-
-                  {/* NOT COVERED */}
-                  <div className="bg-red-50 border border-red-200 rounded-xl p-6">
-                    <h3 className="text-lg font-bold text-red-800 mb-3">
-                      ❌ What's NOT covered:
-                    </h3>
-                    <ul className="space-y-2 text-gray-700 text-lg">
-                      <li>Claude Free, Pro, Max, or Team plans</li>
-                      <li>Cowork</li>
-                      <li>Claude in Chrome</li>
-                      <li>Claude in Excel</li>
-                      <li>Features currently in beta</li>
-                      <li>Web search functionality</li>
-                      <li>Batch API, Files API, and several other API features</li>
-                    </ul>
-                  </div>
-
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    If your company signed a BAA and assumed it covered everything your team uses, go check. The coverage gaps are significant, and Anthropic updates them regularly.
+                    Survey your team. Check expense reports for AI subscriptions. Review browser extensions and installed applications. Look at API keys in your environment. Check SSO/SAML logs for shadow SaaS.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Build a simple inventory: tool name, who's using it, what data goes into it, what plan/tier, and whether it's covered under any compliance framework.
                   </p>
                 </div>
               </section>
 
-              {/* ZERO DATA RETENTION */}
+              {/* STEP 2 */}
               <section className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  Zero data retention
+                  Step 2: Define acceptable use
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    ZDR is a separate arrangement where Anthropic does not store your inputs or outputs after the API response is returned, except where needed for legal compliance or abuse prevention. This is available for qualified Enterprise API and Claude Code customers.
+                    Write an AI acceptable use policy. Keep it short and enforceable. Cover:
                   </p>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Key points companies miss about ZDR:
-                  </p>
-
                   <div className="space-y-4">
                     <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg"><b>It's not automatic.</b> You have to request it through Anthropic's sales team, and they review eligibility.</p>
+                      <p className="text-gray-800 text-lg"><b>Approved tools and tiers.</b> Specify which AI tools are sanctioned and at what plan level. "Claude Enterprise with HIPAA mode" is very different from "Claude Pro on a personal account."</p>
                     </div>
                     <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg"><b>It's enabled per-organization.</b> If you create a new organization under the same account, ZDR doesn't carry over. You need to enable it separately.</p>
+                      <p className="text-gray-800 text-lg"><b>Data classification.</b> Define what data can and cannot be entered into AI tools. Customer data, PHI, PII, source code, credentials, internal financials: draw clear lines.</p>
                     </div>
                     <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg"><b>It doesn't cover everything.</b> Even with ZDR enabled, certain features are automatically disabled: Batch API, Files API, Skills API, code execution, programmatic tool calling, and MCP connectors.</p>
+                      <p className="text-gray-800 text-lg"><b>Human oversight requirements.</b> Any AI-generated output that affects a customer, goes into a product, or is used for a business decision needs human review before it's final.</p>
                     </div>
                     <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg"><b>Anthropic still retains User Safety classifier results</b> under ZDR to enforce their usage policy.</p>
+                      <p className="text-gray-800 text-lg"><b>Agentic tool restrictions.</b> For tools like Cowork and Claude Code, define who can use them, on what machines, and in what mode. "Ask before acting" should be the default for any employee with privileged access.</p>
                     </div>
                   </div>
+                </div>
+              </section>
 
+              {/* STEP 3 */}
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  Step 3: Configure for compliance
+                </h2>
+                <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    For healthcare companies, this means your architecture decisions matter. If you need HIPAA coverage, you're either going through Anthropic's Enterprise path with the BAA and appropriate configurations, or you're running Claude through AWS Bedrock or Google Vertex AI under those platforms' compliance frameworks. Each path has tradeoffs.
+                    If you're in a regulated industry, get the technical configuration right before you roll out:
+                  </p>
+                  <div className="space-y-4">
+                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
+                      <p className="text-gray-800 text-lg"><b>Sign the right agreements.</b> BAA, DPA, ZDR: whatever your regulatory requirements demand, get the paperwork done before your team starts using the tools.</p>
+                    </div>
+                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
+                      <p className="text-gray-800 text-lg"><b>Enable the right controls.</b> If you're on Claude Enterprise, enable HIPAA mode in admin settings before anyone processes PHI. If you're using the API, confirm ZDR is active on your organization.</p>
+                    </div>
+                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
+                      <p className="text-gray-800 text-lg"><b>Block what shouldn't be used.</b> If certain features aren't covered under your BAA (web search, Cowork, beta features), disable them at the admin level or add them to your blocklist.</p>
+                    </div>
+                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
+                      <p className="text-gray-800 text-lg"><b>Choose your deployment path.</b> Direct Anthropic API with ZDR, or through a cloud provider (Bedrock, Vertex, Azure) under the cloud's compliance framework. Make a deliberate decision, don't let it happen by default.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* STEP 4 */}
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  Step 4: Train your team
+                </h2>
+                <div className="space-y-5">
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Most AI risk comes from well-intentioned employees who don't understand the boundaries. A 30-minute training session covering acceptable use, data handling rules, and the specific risks of agentic tools will prevent the majority of incidents.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Key points to cover: what data never goes into AI tools, how to use Cowork safely (if approved), the difference between consumer and enterprise AI products, and what to do if they're unsure whether a use case is approved.
                   </p>
                 </div>
               </section>
 
-              {/* THIRD PARTY PLATFORM */}
+              {/* STEP 5 */}
               <section className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  The third-party platform option
+                  Step 5: Monitor and review
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Running Claude through AWS Bedrock is often the cleanest compliance path for regulated companies. Bedrock was added to AWS's HIPAA Eligible Services in February 2026. Under this model, Anthropic doesn't see your prompts or completions. The data stays in your AWS VPC, under your AWS BAA. You don't need a separate Anthropic BAA.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    The same applies to Google Vertex AI and Microsoft Azure AI Foundry. If your company already has a cloud provider BAA and compliance framework in place, running Claude through that provider may be simpler than navigating Anthropic's direct compliance path.
-                  </p>
-                </div>
-              </section>
-
-              {/* PRACTICAL TAKEAWAY */}
-              <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  The practical takeaway
-                </h2>
-                <div className="space-y-5">
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Before you enable any AI tool at your company, answer these questions:
+                    AI governance isn't a one-time setup. Review quarterly:
                   </p>
                   <ul className="list-disc pl-6 space-y-3 text-gray-700 text-lg">
-                    <li>Where does data go when it enters this tool?</li>
-                    <li>How long is it retained?</li>
-                    <li>Is this product surface covered under your BAA?</li>
-                    <li>Is data used for model training?</li>
-                    <li>Who at your company has verified this in writing, not just read a marketing page?</li>
+                    <li>Is the tool inventory still accurate?</li>
+                    <li>Are there new AI tools in use that haven't been evaluated?</li>
+                    <li>Are acceptable use policies being followed?</li>
+                    <li>Have any incidents or near-misses occurred?</li>
+                    <li>Have the vendors updated their data handling, BAA coverage, or feature eligibility?</li>
                   </ul>
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    If you can't answer those questions for every AI tool your team uses, you have a governance gap.
+                    Assign ownership. Someone at your company needs to own AI governance. This can be your vCISO, your security lead, or your compliance manager. It doesn't need to be a full-time job, but it needs to be someone's responsibility.
                   </p>
                 </div>
               </section>
 
-              {/* PART 4 */}
+              {/* PART 5 TEASER */}
               <section className="mb-10">
-
-                <Link to="/blog/rolling-out-ai-the-right-way-part-4" className="block group">
-                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
-
-                    <div className="text-3xl mt-1">→</div>
-
-                    <div>
-
-                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
-                        Up next in the series
-                      </p>
-
-                      <p className="text-lg text-slate-100 leading-relaxed">
-                        In Part 4, we build the actual rollout playbook — a practical 5-step program for rolling out AI at a company that takes security and compliance seriously.
-                      </p>
-
-                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Part 4 →</p>
-
-                    </div>
-
+                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
+                  <div className="text-3xl mt-1">→</div>
+                  <div>
+                    <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                      Up next in the series
+                    </p>
+                    <p className="text-lg text-slate-100 leading-relaxed">
+                      In Part 5, we'll bring it all together with a maturity model and the common mistakes to avoid.
+                    </p>
                   </div>
-                </Link>
-
+                </div>
               </section>
 
             </div>
@@ -363,10 +340,10 @@ export default function RollingOutAiRightWayPart3() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-br from-sky-900 via-blue-800 to-slate-900 rounded-xl px-8 py-10 text-white text-center shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Not sure if your AI usage is HIPAA compliant?
+                Ready to build your AI rollout program?
               </h3>
               <p className="text-sky-200 text-lg mb-6 max-w-xl mx-auto leading-relaxed">
-                Com-Sec helps health tech and regulated companies navigate AI compliance — from BAA coverage gaps to ZDR configurations and architecture decisions.
+                Com-Sec helps startups and growth-stage companies build practical AI governance programs — from inventory to acceptable use policies, compliance configuration, and ongoing monitoring.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link
