@@ -82,7 +82,7 @@ const OG_ROUTES: Record<string, OgData> = {
       "Part 1 of a 5-part playbook for companies that can't afford to get AI wrong. AI governance isn't optional anymore — enterprise buyers, regulators, and auditors are all paying attention.",
     image: `${BASE_URL}/images/blog-images/rolling-out-ai-the-right-way-part-1.png`,
     url: `${BASE_URL}/blog/rolling-out-ai-the-right-way-part-1`,
-    author: "Com-Sec",
+    author: "Farbod Fakhrai",
     publishedTime: "2026-06-22T00:00:00Z",
   },
   "/blog/the-cowork-problem-when-ai-gets-admin-access": {
@@ -100,8 +100,17 @@ const OG_ROUTES: Record<string, OgData> = {
       "Part 3: Can you use Claude and still be HIPAA compliant? The answer depends entirely on how you use it and which product surface you're on. Here's what health tech companies need to know about BAAs, ZDR, and the data layer.",
     image: `${BASE_URL}/images/blog-images/rolling-out-ai-the-right-way-part-3.png`,
     url: `${BASE_URL}/blog/rolling-out-ai-the-right-way-part-3`,
-    author: "Com-Sec",
+    author: "Farbod Fakhrai",
     publishedTime: "2026-06-30T00:00:00Z",
+  },
+  "/blog/your-soc-2-auditor-matters-more-than-your-grc-platform": {
+    title: "Your SOC 2 Auditor Matters More Than Your GRC Platform",
+    description:
+      "Every founder asks 'Drata or Vanta?' first. Wrong question. The GRC platform is a tool — the auditor is what determines whether your controls hold up and your report is worth the paper it's printed on.",
+    image: `${BASE_URL}/images/blog-images/your-soc-2-auditor-matters-more-than-your-grc-platform.png`,
+    url: `${BASE_URL}/blog/your-soc-2-auditor-matters-more-than-your-grc-platform`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-06T00:00:00Z",
   },
   "/blog/rolling-out-ai-the-right-way-part-4": {
     title: "Rolling Out AI the Right Way: Part 4: The AI Rollout Playbook",

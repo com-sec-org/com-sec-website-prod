@@ -103,7 +103,7 @@ export default function RollingOutAiRightWayPart3() {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
-        <meta property="article:author" content="Com-Sec" />
+        <meta property="article:author" content="Farbod Fakhrai" />
         <meta property="article:published_time" content="2026-06-30T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -168,7 +168,7 @@ export default function RollingOutAiRightWayPart3() {
               </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
-                <span>Com-Sec</span>
+                <span>Farbod Fakhrai</span>
               </div>
               <button
                 onClick={handleShare}

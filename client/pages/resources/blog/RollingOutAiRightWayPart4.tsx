@@ -168,7 +168,7 @@ export default function RollingOutAiRightWayPart4() {
               </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
-                <span>Com-Sec</span>
+                <span>Farbod Fakhrai</span>
               </div>
               <button
                 onClick={handleShare}
