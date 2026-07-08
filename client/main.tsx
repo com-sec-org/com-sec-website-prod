@@ -107,6 +107,7 @@ import CoworkProblemPart2 from "./pages/resources/blog/CoworkProblemPart2";
 import RollingOutAiRightWayPart3 from "./pages/resources/blog/RollingOutAiRightWayPart3";
 import RollingOutAiRightWayPart4 from "./pages/resources/blog/RollingOutAiRightWayPart4";
 import YourSoc2AuditorMattersMoreThanYourGrcPlatform from "./pages/resources/blog/YourSoc2AuditorMattersMoreThanYourGrcPlatform";
+import Soc2IsSimplerThanYouThink from "./pages/resources/blog/Soc2IsSimplerThanYouThink";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -338,6 +339,7 @@ const App = () => (
               <Route path="/blog/rolling-out-ai-the-right-way-part-3" element={<RollingOutAiRightWayPart3 />} />
               <Route path="/blog/rolling-out-ai-the-right-way-part-4" element={<RollingOutAiRightWayPart4 />} />
               <Route path="/blog/your-soc-2-auditor-matters-more-than-your-grc-platform" element={<YourSoc2AuditorMattersMoreThanYourGrcPlatform />} />
+              <Route path="/blog/soc-2-is-simpler-than-you-think" element={<Soc2IsSimplerThanYouThink />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
