@@ -121,6 +121,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-02T00:00:00Z",
   },
+  "/blog/soc-2-is-simpler-than-you-think": {
+    title: "SOC 2 Is Simpler Than You Think",
+    description:
+      "SOC 2 isn't a certification or a pass/fail test. It's an independent auditor verifying that what you told your customers about your security is true.",
+    image: `${BASE_URL}/images/blog-images/soc-2-is-simpler-than-you-think.png`,
+    url: `${BASE_URL}/blog/soc-2-is-simpler-than-you-think`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-08T00:00:00Z",
+  },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:
