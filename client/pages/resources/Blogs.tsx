@@ -159,6 +159,7 @@ const allArticles = [
                 imageAlt: "OpenAI launched Daybreak - what it means for your company",
                 link: "/blog/openai-launched-daybreak",
               },
+              /* Hidden 2026-07-08, restore on 2026-07-15
               {
                 id: "implementing-an-ai-governance-model-part-1",
                 title: "Implementing an AI Governance Model — Part 1: Start With the Inventory",
@@ -174,6 +175,7 @@ const allArticles = [
                 imageAlt: "Implementing an AI Governance Model Part 1 - Start With the Inventory",
                 link: "/blog/implementing-an-ai-governance-model-part-1",
               },
+              */
               {
                 id: "mythos-changed-the-game-part-5",
                 title: "Mythos Changed the Game - Part 5: What a Mythos-Ready Security Program Looks Like",

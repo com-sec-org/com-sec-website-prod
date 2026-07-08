@@ -149,10 +149,14 @@ export default function Soc2IsSimplerThanYouThink() {
               SOC 2 Is Simpler Than You Think
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              Things I've Learned Running a Cybersecurity Firm
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>July 2026</span>
+                <span>July 8, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
