@@ -130,6 +130,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-08T00:00:00Z",
   },
+  "/blog/rolling-out-ai-the-right-way-part-5": {
+    title: "Rolling Out AI the Right Way: Part 5: Common Mistakes and the Path Forward",
+    description:
+      "Part 5: Common Mistakes and the Path Forward. The mistakes companies most often make when rolling out AI — and how to avoid them — plus what a realistic governance program actually looks like.",
+    image: `${BASE_URL}/images/blog-images/rolling-out-ai-the-right-way-part-5.png`,
+    url: `${BASE_URL}/blog/rolling-out-ai-the-right-way-part-5`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-09T00:00:00Z",
+  },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:
