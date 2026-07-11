@@ -67,7 +67,7 @@ const allArticles = [
                 readTime: "6 min read",
                 author: "Farbod Fakhrai",
                 category: "AI Governance",
-                categoryColor: "sky",
+                categoryColor: "bg-sky-100 text-sky-800",
                 featured: false,
                 image: "/images/blog-images/rolling-out-ai-the-right-way-part-5.png",
                 imageAlt: "Rolling Out AI the Right Way Part 5 - Common Mistakes and the Path Forward",

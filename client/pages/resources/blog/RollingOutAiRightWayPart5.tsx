@@ -308,22 +308,24 @@ export default function RollingOutAiRightWayPart5() {
         </article>
 
         {/* AUTHOR */}
-              <section className="mb-12 border-t border-gray-200 pt-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <section className="mb-12 border-t border-gray-200 pt-8">
 
-                <p className="text-gray-600 text-base italic">
-                  This article is part of Com-Sec's AI Governance series for startups and growth-stage companies. Learn more at{" "}
-                  <a
-                    href="https://com-sec.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sky-700 font-semibold hover:underline"
-                  >
-                    com-sec.io
-                  </a>
-                  .
-                </p>
+            <p className="text-gray-600 text-base italic">
+              This article is part of Com-Sec's AI Governance series for startups and growth-stage companies. Learn more at{" "}
+              <a
+                href="https://com-sec.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sky-700 font-semibold hover:underline"
+              >
+                com-sec.io
+              </a>
+              .
+            </p>
 
-              </section>
+          </section>
+        </div>
 
         {/* CTA */}
         <section className="pb-16">
