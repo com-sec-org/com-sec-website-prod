@@ -127,6 +127,18 @@
 
   <!-- Blog Articles -->
   <url>
+    <loc>https://com-sec.io/blog/soc-2-is-simpler-than-you-think</loc>
+    <priority>0.7</priority>
+  </url> 
+  <url>
+    <loc>https://com-sec.io/blog/your-soc-2-auditor-matters-more-than-your-grc-platform</loc>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://com-sec.io/blog/rolling-out-ai-the-right-way-part-4</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://com-sec.io/blog/rolling-out-ai-the-right-way-part-3</loc>
     <priority>0.7</priority>
   </url>
