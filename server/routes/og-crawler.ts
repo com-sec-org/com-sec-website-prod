@@ -112,6 +112,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-06T00:00:00Z",
   },
+  "/blog/the-security-questionnaire-is-a-sales-tool-not-a-compliance-exercise": {
+    title: "The Security Questionnaire Is a Sales Tool, Not a Compliance Exercise",
+    description:
+      "Post 2: Things I've Learned Running a Cybersecurity Firm. A well-answered security questionnaire builds trust, differentiates you from competitors, and shortens the sales cycle by removing security as a blocker.",
+    image: `${BASE_URL}/images/blog-images/the-security-questionnaire-is-a-sales-tool-not-a-compliance-exercise.png`,
+    url: `${BASE_URL}/blog/the-security-questionnaire-is-a-sales-tool-not-a-compliance-exercise`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-13T00:00:00Z",
+  },
   "/blog/rolling-out-ai-the-right-way-part-4": {
     title: "Rolling Out AI the Right Way: Part 4: The AI Rollout Playbook",
     description:
