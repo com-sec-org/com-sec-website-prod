@@ -296,6 +296,33 @@ export default function YourSoc2AuditorMattersMoreThanYourGrcPlatform() {
                 </div>
               </section>
 
+              {/* POST 2 */}
+              <section className="mb-10">
+
+                <Link to="/blog/the-security-questionnaire-is-a-sales-tool-not-a-compliance-exercise" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
+
+                    <div className="text-3xl mt-1">→</div>
+
+                    <div>
+
+                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
+
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Post 2, we look at security questionnaires: why the companies that treat them as a sales asset close deals faster than the ones that treat them as a compliance burden.
+                      </p>
+
+                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Post 2 →</p>
+
+                    </div>
+
+                  </div>
+                </Link>
+
+              </section>
+
             </div>
           </div>
         </article>
