@@ -127,6 +127,14 @@
 
   <!-- Blog Articles -->
   <url>
+    <loc>https://com-sec.io/blog/the-security-questionnaire-is-a-sales-tool-not-a-compliance-exercise</loc>
+    <priority>0.7</priority>
+  </url> 
+  <url>
+    <loc>https://com-sec.io/blog/rolling-out-ai-the-right-way-part-5</loc>
+    <priority>0.7</priority>
+  </url> 
+  <url>
     <loc>https://com-sec.io/blog/soc-2-is-simpler-than-you-think</loc>
     <priority>0.7</priority>
   </url> 
