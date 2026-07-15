@@ -110,6 +110,7 @@ import YourSoc2AuditorMattersMoreThanYourGrcPlatform from "./pages/resources/blo
 import Soc2IsSimplerThanYouThink from "./pages/resources/blog/Soc2IsSimplerThanYouThink";
 import RollingOutAiRightWayPart5 from "./pages/resources/blog/RollingOutAiRightWayPart5";
 import TheSecurityQuestionnaireIsASalesTool from "./pages/resources/blog/TheSecurityQuestionnaireIsASalesTool";
+import PentagonSuspendedCmmcPhase2 from "./pages/resources/blog/PentagonSuspendedCmmcPhase2";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -345,6 +346,7 @@ const App = () => (
               <Route path="/blog/soc-2-is-simpler-than-you-think" element={<Soc2IsSimplerThanYouThink />} />
               <Route path="/blog/rolling-out-ai-the-right-way-part-5" element={<RollingOutAiRightWayPart5 />} />
               <Route path="/blog/the-security-questionnaire-is-a-sales-tool-not-a-compliance-exercise" element={<TheSecurityQuestionnaireIsASalesTool />} />
+              <Route path="/blog/pentagon-suspended-cmmc-phase-2" element={<PentagonSuspendedCmmcPhase2 />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
