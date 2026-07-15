@@ -22,6 +22,15 @@ interface GooglePageData extends OgData {
 // ─── Social media OG routes ───────────────────────────────────────────────────
 
 const OG_ROUTES: Record<string, OgData> = {
+  "/blog/pentagon-suspended-cmmc-phase-2": {
+    title: "The Pentagon Just Suspended CMMC Phase 2 — Here's What It Means and What Doesn't Change",
+    description:
+      "DoD has suspended CMMC Phase 2 third-party certification requirements. Here's what changed, what didn't, and what defense contractors should do now.",
+    image: `${BASE_URL}/images/blog-images/pentagon-suspended-cmmc-phase-2.png`,
+    url: `${BASE_URL}/blog/pentagon-suspended-cmmc-phase-2`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-15T00:00:00Z",
+  },
   "/blog/rippling-entered-compliance-market": {
     title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
     description:

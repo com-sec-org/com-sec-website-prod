@@ -104,7 +104,7 @@ export default function PentagonSuspendedCmmcPhase2() {
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="Farbod Fakhrai" />
-        <meta property="article:published_time" content="2026-07-14T00:00:00Z" />
+        <meta property="article:published_time" content="2026-07-15T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
@@ -156,7 +156,7 @@ export default function PentagonSuspendedCmmcPhase2() {
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>July 2026</span>
+                <span>July 15, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
