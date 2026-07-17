@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -200,6 +201,15 @@ const pricingData = [...oneTimeEngagements, ...ongoingSupportServices];
 export default function Pricing() {
   return (
     <div className="min-h-screen bg-slate-950">
+      <Helmet>
+        <title>Cybersecurity & Compliance Pricing | Com-Sec</title>
+        <meta
+          name="description"
+          content="Transparent pricing for security assessments, SOC 2 audit packages, vCISO support, and MSSP/SOC monitoring, from one-time engagements starting at $4,000 to ongoing monthly plans."
+        />
+        <link rel="canonical" href="https://com-sec.io/pricing" />
+      </Helmet>
+
       <Navigation />
 
       {/* Hero Section */}

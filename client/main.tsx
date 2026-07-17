@@ -335,8 +335,8 @@ const App = () => (
               <Route path="/blog/rippling-entered-compliance-market" element={<RipplingComplianceMarket />} />
               <Route path="/blog/we-almost-partnered-with-delve" element={<DelvePartnershipBlog />} />
               <Route path="/blog/soc-2-compliance-services-california" element={<Soc2ComplianceServicesCalifornia />} />
-              {/* Hidden 2026-07-08, restore on 2026-07-15 */}
-              {/* <Route path="/blog/implementing-an-ai-governance-model-part-1" element={<AiGovernanceModelPart1 />} /> */}
+              
+              <Route path="/blog/implementing-an-ai-governance-model-part-1" element={<AiGovernanceModelPart1 />} />
               <Route path="/blog/openai-launched-daybreak" element={<OpenAiLaunchedDaybreak />} />
               <Route path="/blog/rolling-out-ai-the-right-way-part-1" element={<RollingOutAiRightWayPart1 />} />
               <Route path="/blog/the-cowork-problem-when-ai-gets-admin-access" element={<CoworkProblemPart2 />} />

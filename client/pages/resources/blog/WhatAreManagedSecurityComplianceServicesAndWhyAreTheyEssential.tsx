@@ -10,7 +10,7 @@ export default function WhatAreManagedSecurityComplianceServicesAndWhyAreTheyEss
   const meta = {
     title: "What Are Managed Security Compliance Services and Why Are They Essential?",
     description:
-      "We specialize in providing expert security and compliance solutions that keep your business safe from cyber threats. Reach out to us today and let us help you secure your future.",
+      "How managed security and compliance services can improve readiness, reduce workload, and support frameworks like SOC 2, ISO 27001, and HIPAA.",
     canonical:
       "https://com-sec.io/blog/what-are-managed-security-compliance-services-and-why-are-they-essential",
   };

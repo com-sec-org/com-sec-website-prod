@@ -108,13 +108,8 @@
 ##############################
 # 🤖 Edge Functions
 ##############################
-[[edge_functions]]
-  function = "og-crawler"
-  path = "/blog/*"
-
-[[edge_functions]]
-  function = "og-crawler"
-  path = "/compliance-audit-readiness"
+# og-crawler declares its own path/excludedPath via `export const config`
+# in netlify/edge-functions/og-crawler.ts — no [[edge_functions]] block needed here.
 
 ##############################
 # ⚙️ SPA Fallback (must be last)
