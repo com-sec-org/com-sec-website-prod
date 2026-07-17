@@ -1,3 +1,5 @@
+import { SEO_ROUTES, type PageSEO } from "../../server/routes/seo-routes.ts";
+
 const SOCIAL_CRAWLER_UA =
   /facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|WhatsApp|Discordbot|Applebot|Pinterest|redditbot|rogerbot|embedly|Googlebot-Image|PostInspector|Iframely|SocialPreview|prerender/i;
 
@@ -376,6 +378,36 @@ ${page.bodyHtml}
 </html>`;
 }
 
+// ─── Per-route <title>/meta rewriting ─────────────────────────────────────────
+// index.html is a single static file served for every route (SPA fallback), so
+// without this every page would inherit the homepage's hardcoded title/description.
+// This rewrites those tags to match the requested route using SEO_ROUTES, so the
+// very first HTML byte (what crawlers, curl, and social scrapers see) is correct —
+// not just the client-side react-helmet update that only real browsers benefit from.
+
+function rewriteMetaTags(html: string, seo: PageSEO): string {
+  html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(seo.title)}</title>`);
+
+  html = html.replace(
+    /<meta\s+name="description"[\s\S]*?\/>/,
+    `<meta name="description" content="${esc(seo.description)}" />`,
+  );
+
+  if (/<link\s+rel="canonical"/.test(html)) {
+    html = html.replace(
+      /<link\s+rel="canonical"[\s\S]*?\/>/,
+      `<link rel="canonical" href="${esc(seo.canonical)}" />`,
+    );
+  } else {
+    html = html.replace(
+      "</title>",
+      `</title>\n    <link rel="canonical" href="${esc(seo.canonical)}" />`,
+    );
+  }
+
+  return html;
+}
+
 // ─── Handler ──────────────────────────────────────────────────────────────────
 
 export default async function handler(request: Request, context: { next: () => Promise<Response> }) {
@@ -400,7 +432,46 @@ export default async function handler(request: Request, context: { next: () => P
     }
   }
 
+  const seo = SEO_ROUTES[url.pathname];
+  if (seo) {
+    const response = await context.next();
+    const contentType = response.headers.get("content-type") ?? "";
+    if (contentType.includes("text/html")) {
+      const html = await response.text();
+      const headers = new Headers(response.headers);
+      headers.delete("content-length");
+      return new Response(rewriteMetaTags(html, seo), {
+        status: response.status,
+        headers,
+      });
+    }
+    return response;
+  }
+
   return context.next();
 }
 
-export const config = { path: ["/blog/*", "/compliance-audit-readiness"] };
+export const config = {
+  path: "/*",
+  excludedPath: [
+    "/api/*",
+    "/.netlify/*",
+    "/assets/*",
+    "/images/*",
+    "/*.js",
+    "/*.css",
+    "/*.map",
+    "/*.json",
+    "/*.xml",
+    "/*.txt",
+    "/*.ico",
+    "/*.png",
+    "/*.jpg",
+    "/*.jpeg",
+    "/*.webp",
+    "/*.svg",
+    "/*.woff",
+    "/*.woff2",
+    "/*.ttf",
+  ],
+};
