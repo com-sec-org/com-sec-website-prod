@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -7,6 +8,15 @@ import { Shield, Award, Users, Target, ChevronRight } from "lucide-react";
 export default function About() {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>About Com-Sec | Our Story, Mission & Track Record</title>
+        <meta
+          name="description"
+          content="Founded in 2009, Com-Sec has helped 200+ companies achieve their cybersecurity and compliance goals, from first-time SOC 2 audits to enterprise-wide security programs."
+        />
+        <link rel="canonical" href="https://com-sec.io/about" />
+      </Helmet>
+
       <Navigation />
 
       {/* Hero Section */}

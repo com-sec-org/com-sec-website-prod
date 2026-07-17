@@ -41,7 +41,7 @@ export default function ComplianceAuditReadiness() {
 
 <link
           rel="canonical"
-          href="https://com-sec.io/compliance-audit-readiness"
+          href="https://com-sec.io/compliance-audit-service"
         />
 
         {/* (Optional) Extra SEO meta tags */}
@@ -52,7 +52,7 @@ export default function ComplianceAuditReadiness() {
           content="Com-Sec provides top-tier compliance readiness and cybersecurity audit services across SOC 2, HIPAA, ISO 27001, GDPR, and more."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://com-sec.io/compliance-audit-readiness" />
+        <meta property="og:url" content="https://com-sec.io/compliance-audit-service" />
         <meta property="og:site_name" content="Com-Sec" />
       </Helmet>
 
