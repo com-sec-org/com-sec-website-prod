@@ -127,6 +127,14 @@
 
   <!-- Blog Articles -->
   <url>
+    <loc>https://com-sec.io/blog/implementing-an-ai-governance-model-part-1</loc>
+    <priority>0.7</priority>
+  </url> 
+  <url>
+    <loc>https://com-sec.io/blog/pentagon-suspended-cmmc-phase-2</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://com-sec.io/blog/the-security-questionnaire-is-a-sales-tool-not-a-compliance-exercise</loc>
     <priority>0.7</priority>
   </url> 
