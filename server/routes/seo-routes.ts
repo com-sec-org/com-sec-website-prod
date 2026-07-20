@@ -652,6 +652,13 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-1`,
     image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-1.png`,
   },
+  "/blog/implementing-an-ai-governance-model-part-2": {
+    title: "Implementing an AI Governance Model — Part 2: Writing an AI Policy That People Actually Follow",
+    description:
+      "Part 2: Most AI policies are too vague to enforce or too long to read. A practical, four-section structure for an AI acceptable use policy your team will actually follow.",
+    canonical: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-2`,
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-2.png`,
+  },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:

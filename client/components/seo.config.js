@@ -794,6 +794,16 @@ export const SEO_CONFIG = {
     type: "article",
   }),
 
+  "/blog/implementing-an-ai-governance-model-part-2": buildPageSEO({
+    title:
+      "Implementing an AI Governance Model — Part 2: Writing an AI Policy That People Actually Follow",
+    description:
+      "Part 2: Most AI policies are too vague to enforce or too long to read. A practical, four-section structure for an AI acceptable use policy your team will actually follow.",
+    canonical: "/blog/implementing-an-ai-governance-model-part-2",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-2.png`,
+    type: "article",
+  }),
+
   "/blog/openai-launched-daybreak": buildPageSEO({
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:
