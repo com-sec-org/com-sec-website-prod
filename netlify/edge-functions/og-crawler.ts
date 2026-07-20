@@ -184,6 +184,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Com-Sec",
     publishedTime: "2026-06-17T00:00:00Z",
   },
+  "/blog/implementing-an-ai-governance-model-part-2": {
+    title: "Implementing an AI Governance Model — Part 2: Writing an AI Policy That People Actually Follow",
+    description:
+      "Part 2: Most AI policies are too vague to enforce or too long to read. A practical, four-section structure for an AI acceptable use policy your team will actually follow.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-2.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-2`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-20T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
