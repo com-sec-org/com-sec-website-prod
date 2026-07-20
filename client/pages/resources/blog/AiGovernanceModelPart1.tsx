@@ -38,20 +38,20 @@ export default function AiGovernanceModelPart1() {
 
   const relatedArticles = [
     {
+      title: "Implementing an AI Governance Model — Part 2",
+      excerpt:
+        "Writing an AI Policy That People Actually Follow — a practical, four-section structure your team will actually use.",
+      link: "/blog/implementing-an-ai-governance-model-part-2",
+      category: "AI Governance",
+      emoji: "📋",
+    },
+    {
       title: "What Are Managed Security & Compliance Services and Why Are They Essential?",
       excerpt:
         "Understand how managed security and compliance services help organizations reduce risk and stay audit-ready.",
       link: "/blog/what-are-managed-security-compliance-services-and-why-are-they-essential",
       category: "Compliance",
       emoji: "🛡️",
-    },
-    {
-      title: "What Is a vCISO? Understanding the Role and Benefits",
-      excerpt:
-        "Learn how vCISO services help organizations strengthen cybersecurity leadership.",
-      link: "/blog/what-is-vciso-role-cybersecurity",
-      category: "Cybersecurity Leadership",
-      emoji: "🧭",
     },
     {
       title: "How AI Is Changing IT Security Operations",
@@ -347,6 +347,33 @@ export default function AiGovernanceModelPart1() {
                   </div>
 
                 </div>
+
+              </section>
+
+              {/* PART 2 */}
+              <section className="mb-10">
+
+                <Link to="/blog/implementing-an-ai-governance-model-part-2" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
+
+                    <div className="text-3xl mt-1">→</div>
+
+                    <div>
+
+                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
+
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 2, we write an AI acceptable use policy your team will actually follow.
+                      </p>
+
+                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Part 2 →</p>
+
+                    </div>
+
+                  </div>
+                </Link>
 
               </section>
 

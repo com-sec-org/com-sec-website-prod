@@ -6,8 +6,9 @@
 /penetration-testing-1               /penetration-testing-services   301
 /services/penetration-testing        /penetration-testing-services   301
 
-/compliance-auditreadiness           /compliance-audit-readiness     301
-/services/compliance-audit-readiness /compliance-audit-readiness     301
+/compliance-auditreadiness           /compliance-audit-service     301
+/services/compliance-audit-readiness /compliance-audit-service     301
+/compliance-audit-readiness          /compliance-audit-service     301
 
 /soc-support-monitoring-services     /soc-support                    301
 

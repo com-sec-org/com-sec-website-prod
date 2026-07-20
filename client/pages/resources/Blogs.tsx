@@ -60,6 +60,20 @@ const allArticles = [
               //   link: "/blog/soc-2-compliance-services-california",
               // },
               {
+                id: "implementing-an-ai-governance-model-part-2",
+                title: "Implementing an AI Governance Model: Part 2: Writing an AI Policy That People Actually Follow",
+                excerpt: "Most AI policies are either too vague to enforce or too long to read. A practical, four-section structure for a policy your team will actually use.",
+                date: "July 20, 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "AI Governance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/implementing-an-ai-governance-model-part-2.png",
+                imageAlt: "Implementing an AI Governance Model Part 2 - Writing an AI Policy That People Actually Follow",
+                link: "/blog/implementing-an-ai-governance-model-part-2",
+              },
+              {
                 id: "implementing-an-ai-governance-model-part-1",
                 title: "Implementing an AI Governance Model — Part 1: Start With the Inventory",
                 excerpt:
