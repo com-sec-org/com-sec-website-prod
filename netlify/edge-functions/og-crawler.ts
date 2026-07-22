@@ -193,6 +193,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-20T00:00:00Z",
   },
+  "/blog/what-founders-get-wrong-about-hiring-their-first-security-person": {
+    title: "What Founders Get Wrong About Hiring Their First Security Person",
+    description:
+      "The instinct to hire a security person is right. The execution is usually wrong. Three common mistakes, and the case for going fractional first.",
+    image: `${BASE_URL}/images/blog-images/what-founders-get-wrong-about-hiring-their-first-security-person.png`,
+    url: `${BASE_URL}/blog/what-founders-get-wrong-about-hiring-their-first-security-person`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-22T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

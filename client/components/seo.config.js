@@ -804,6 +804,15 @@ export const SEO_CONFIG = {
     type: "article",
   }),
 
+  "/blog/what-founders-get-wrong-about-hiring-their-first-security-person": buildPageSEO({
+    title: "What Founders Get Wrong About Hiring Their First Security Person",
+    description:
+      "The instinct to hire a security person is right. The execution is usually wrong. Three common mistakes, and the case for going fractional first.",
+    canonical: "/blog/what-founders-get-wrong-about-hiring-their-first-security-person",
+    image: `${BASE_URL}/images/blog-images/what-founders-get-wrong-about-hiring-their-first-security-person.png`,
+    type: "article",
+  }),
+
   "/blog/openai-launched-daybreak": buildPageSEO({
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:

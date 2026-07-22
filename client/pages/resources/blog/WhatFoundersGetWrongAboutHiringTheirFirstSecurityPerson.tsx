@@ -148,6 +148,10 @@ export default function WhatFoundersGetWrongAboutHiringTheirFirstSecurityPerson(
               What Founders Get Wrong About Hiring Their First Security Person
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              The instinct to hire a security person is right. The execution is usually wrong.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
