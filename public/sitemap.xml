@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
   <url>
+    <loc>https://com-sec.io/blog/implementing-an-ai-governance-model-part-2</loc>
+    <priority>0.7</priority>
+  </url> 
+  <url>
     <loc>https://com-sec.io/blog/implementing-an-ai-governance-model-part-1</loc>
     <priority>0.7</priority>
   </url> 

@@ -659,6 +659,13 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-2`,
     image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-2.png`,
   },
+  "/blog/what-founders-get-wrong-about-hiring-their-first-security-person": {
+    title: "What Founders Get Wrong About Hiring Their First Security Person",
+    description:
+      "The instinct to hire a security person is right. The execution is usually wrong. Three common mistakes, and the case for going fractional first.",
+    canonical: `${BASE_URL}/blog/what-founders-get-wrong-about-hiring-their-first-security-person`,
+    image: `${BASE_URL}/images/blog-images/what-founders-get-wrong-about-hiring-their-first-security-person.png`,
+  },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:
