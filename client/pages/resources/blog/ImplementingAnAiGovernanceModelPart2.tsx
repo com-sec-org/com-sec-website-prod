@@ -294,17 +294,20 @@ export default function ImplementingAnAiGovernanceModelPart2() {
 
               {/* PART 3 TEASER */}
               <section className="mb-10">
-                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
-                  <div className="text-3xl mt-1">→</div>
-                  <div>
-                    <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
-                      Up next in the series
-                    </p>
-                    <p className="text-lg text-slate-100 leading-relaxed">
-                      In Part 3, we'll set up the technical controls that enforce what the policy says.
-                    </p>
+                <Link to="/blog/implementing-an-ai-governance-model-part-3" className="block group">
+                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
+                    <div className="text-3xl mt-1">→</div>
+                    <div>
+                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                        Up next in the series
+                      </p>
+                      <p className="text-lg text-slate-100 leading-relaxed">
+                        In Part 3, we'll set up the technical controls that enforce what the policy says.
+                      </p>
+                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Part 3 →</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </section>
 
             </div>

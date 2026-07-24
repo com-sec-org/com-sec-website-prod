@@ -175,6 +175,24 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Com-Sec",
     publishedTime: "2026-06-17T00:00:00Z",
   },
+  "/blog/implementing-an-ai-governance-model-part-2": {
+    title: "Implementing an AI Governance Model — Part 2: Writing an AI Policy That People Actually Follow",
+    description:
+      "Part 2: Most AI policies are too vague to enforce or too long to read. A practical, four-section structure for an AI acceptable use policy your team will actually follow.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-2.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-2`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-20T00:00:00Z",
+  },
+  "/blog/implementing-an-ai-governance-model-part-3": {
+    title: "Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable",
+    description:
+      "Part 3: A policy without technical controls is a suggestion. How to enforce your AI policy through identity and access, MDM, network and DLP, platform configuration, and logging.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-3.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-3`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-24T00:00:00Z",
+  },
   "/blog/rippling-entered-compliance-market": {
     title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
     description:
