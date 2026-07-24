@@ -193,6 +193,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-20T00:00:00Z",
   },
+  "/blog/implementing-an-ai-governance-model-part-3": {
+    title: "Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable",
+    description:
+      "Part 3: A policy without technical controls is a suggestion. How to enforce your AI policy through identity and access, MDM, network and DLP, platform configuration, and logging.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-3.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-3`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-24T00:00:00Z",
+  },
   "/blog/what-founders-get-wrong-about-hiring-their-first-security-person": {
     title: "What Founders Get Wrong About Hiring Their First Security Person",
     description:

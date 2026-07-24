@@ -113,6 +113,7 @@ import TheSecurityQuestionnaireIsASalesTool from "./pages/resources/blog/TheSecu
 import PentagonSuspendedCmmcPhase2 from "./pages/resources/blog/PentagonSuspendedCmmcPhase2";
 import ImplementingAnAiGovernanceModelPart2 from "./pages/resources/blog/ImplementingAnAiGovernanceModelPart2";
 import WhatFoundersGetWrongAboutHiringTheirFirstSecurityPerson from "./pages/resources/blog/WhatFoundersGetWrongAboutHiringTheirFirstSecurityPerson";
+import ImplementingAnAiGovernanceModelPart3 from "./pages/resources/blog/ImplementingAnAiGovernanceModelPart3";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -351,6 +352,7 @@ const App = () => (
               <Route path="/blog/pentagon-suspended-cmmc-phase-2" element={<PentagonSuspendedCmmcPhase2 />} />
               <Route path="/blog/implementing-an-ai-governance-model-part-2" element={<ImplementingAnAiGovernanceModelPart2 />} />
               <Route path="/blog/what-founders-get-wrong-about-hiring-their-first-security-person" element={<WhatFoundersGetWrongAboutHiringTheirFirstSecurityPerson />} />
+              <Route path="/blog/implementing-an-ai-governance-model-part-3" element={<ImplementingAnAiGovernanceModelPart3 />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

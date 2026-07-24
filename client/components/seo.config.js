@@ -804,6 +804,16 @@ export const SEO_CONFIG = {
     type: "article",
   }),
 
+  "/blog/implementing-an-ai-governance-model-part-3": buildPageSEO({
+    title:
+      "Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable",
+    description:
+      "Part 3: A policy without technical controls is a suggestion. How to enforce your AI policy through identity and access, MDM, network and DLP, platform configuration, and logging.",
+    canonical: "/blog/implementing-an-ai-governance-model-part-3",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-3.png`,
+    type: "article",
+  }),
+
   "/blog/what-founders-get-wrong-about-hiring-their-first-security-person": buildPageSEO({
     title: "What Founders Get Wrong About Hiring Their First Security Person",
     description:
