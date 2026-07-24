@@ -209,7 +209,7 @@ export default function ImplementingAnAiGovernanceModelPart3() {
 
               {/* IDENTITY AND ACCESS */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Identity and access
                 </h2>
                 <div className="space-y-5">
@@ -224,7 +224,7 @@ export default function ImplementingAnAiGovernanceModelPart3() {
 
               {/* MDM */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   MDM and device controls
                 </h2>
                 <div className="space-y-5">
@@ -239,7 +239,7 @@ export default function ImplementingAnAiGovernanceModelPart3() {
 
               {/* NETWORK AND DLP */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Network and DLP
                 </h2>
                 <div className="space-y-5">
@@ -254,7 +254,7 @@ export default function ImplementingAnAiGovernanceModelPart3() {
 
               {/* PLATFORM CONFIGURATION */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Platform configuration
                 </h2>
                 <div className="space-y-5">
@@ -277,7 +277,7 @@ export default function ImplementingAnAiGovernanceModelPart3() {
 
               {/* LOGGING AND MONITORING */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Logging and monitoring
                 </h2>
                 <div className="space-y-5">
