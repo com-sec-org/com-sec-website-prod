@@ -202,6 +202,16 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-24T00:00:00Z",
   },
+  "/blog/aiuc-1-the-compliance-framework-nobodys-heard-of": {
+    title:
+      "AIUC-1: The Compliance Framework Nobody's Heard of That's About to Matter a Lot",
+    description:
+      "AIUC-1 is the first certifiable security standard built specifically for AI agents. Within the next 12 months, enterprise buyers are going to start asking about it — here's what it covers and why existing frameworks fall short.",
+    image: `${BASE_URL}/images/blog-images/aiuc-1-the-compliance-framework-nobodys-heard-of.png`,
+    url: `${BASE_URL}/blog/aiuc-1-the-compliance-framework-nobodys-heard-of`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-27T00:00:00Z",
+  },
   "/blog/what-founders-get-wrong-about-hiring-their-first-security-person": {
     title: "What Founders Get Wrong About Hiring Their First Security Person",
     description:
