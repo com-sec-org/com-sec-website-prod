@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
   <url>
+    <loc>https://com-sec.io/blog/aiuc-1-the-compliance-framework-nobodys-heard-of</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://com-sec.io/blog/implementing-an-ai-governance-model-part-3</loc>
     <priority>0.7</priority>
   </url>
