@@ -38,19 +38,6 @@ export default function Team() {
       ],
     },
     {
-      name: "Christian Manalaysay",
-      role: "Security & Compliance Manager",
-      image: "/images/team/Christian.png",
-      description:
-        "Christian manages Com-Sec’s security and compliance initiatives, ensuring alignment with leading frameworks such as SOC 2, HIPAA, and ISO 27001. He specializes in strengthening organizational security posture, driving audit readiness, and ensuring clients achieve continuous compliance excellence.",
-      expertise: [
-        "Risk Management",
-        "Regulatory Compliance",
-        "Audit Readiness",
-        "Security Governance",
-      ],
-    },
-    {
       name: "Manoj Kumar",
       role: "Senior Security Analyst",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
