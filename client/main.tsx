@@ -23,6 +23,8 @@ import ItSupport from "./pages/services/ItSupport";
 import SocSupport from "./pages/services/SocSupport";
 import SecurityTraining from "./pages/services/SecurityTraining";
 import RiskManagement from "./pages/services/RiskManagement";
+import CertificationsAudits from "./pages/services/CertificationsAudits";
+import GrcPlatforms from "./pages/services/GrcPlatforms";
 
 
 // Framework Pages
@@ -225,6 +227,8 @@ const App = () => (
               <Route path="/cloud-security" element={<CloudSecurity />} />
               <Route path="/security-training" element={<SecurityTraining />} />
               <Route path="/risk-management" element={<RiskManagement />} />
+              <Route path="/certifications-audits" element={<CertificationsAudits />} />
+              <Route path="/grc-platforms" element={<GrcPlatforms />} />
 
               {/* Framework Routes — redirect /frameworks/* to canonical top-level URLs */}
               <Route path="/frameworks/soc2" element={<Navigate to="/soc2" replace />} />
