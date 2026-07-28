@@ -338,9 +338,9 @@ export default function Contact() {
                     <Phone className="h-5 w-5 text-accent mr-3 flex-shrink-0" />
                     <div>
                       <div className="font-medium">Phone</div>
-                      <div className="text-muted-foreground">
-                        857-832-1623
-                      </div>
+                      <a href="tel:+1(240)888-1324" className="text-muted-foreground hover:text-accent transition-colors">
+                        +1 (240) 888-1324
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -438,7 +438,9 @@ export default function Contact() {
                 <p className="text-muted-foreground mb-4">
                   Speak directly with our security experts
                 </p>
-                <Button variant="outline">+1 (857) 832-1623</Button>
+                <Button variant="outline" asChild>
+                  <a href="tel:+1(240)888-1324">+1 (240) 888-1324</a>
+                </Button>
               </CardContent>
             </Card>
 
