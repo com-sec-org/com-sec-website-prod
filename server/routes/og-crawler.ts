@@ -193,6 +193,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-24T00:00:00Z",
   },
+  "/blog/implementing-an-ai-governance-model-part-4": {
+    title: "Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk",
+    description:
+      "Part 4: Vendor AI Governance and Third-Party Risk. Your AI governance program doesn't stop at the tools your employees use directly — it extends to every vendor in your stack that uses AI.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-4.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-4`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-29T00:00:00Z",
+  },
   "/blog/aiuc-1-the-compliance-framework-nobodys-heard-of": {
     title:
       "AIUC-1: The Compliance Framework Nobody's Heard of That's About to Matter a Lot",
