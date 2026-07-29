@@ -13,13 +13,13 @@ import {
   Check,
 } from "lucide-react";
 
-export default function ImplementingAnAiGovernanceModelPart3() {
+export default function ImplementingAiGovernanceModelPart4() {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
     const shareData = {
-      title: "Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable",
-      text: "Part 3: A policy without technical controls is a suggestion. Here's how to make it real — identity, MDM, network, platform configuration, and logging.",
+      title: "Implementing an AI Governance Model — Part 4",
+      text: "Part 4: Vendor AI Governance and Third-Party Risk. Your AI governance program doesn't stop at the tools your employees use directly.",
       url: window.location.href,
     };
 
@@ -38,28 +38,28 @@ export default function ImplementingAnAiGovernanceModelPart3() {
 
   const relatedArticles = [
     {
-      title: "Implementing an AI Governance Model — Part 2",
+      title: "Implementing an AI Governance Model — Part 1",
       excerpt:
-        "Most AI policies are too vague to enforce or too long to read. A practical, four-section structure for a policy your team will actually use.",
-      link: "/blog/implementing-an-ai-governance-model-part-2",
+        "Part 1: Start With the Inventory. You can't govern what you don't know about. How to run an AI tool inventory, check your systems, and build your AI register.",
+      link: "/blog/implementing-an-ai-governance-model-part-1",
       category: "AI Governance",
       emoji: "📋",
     },
     {
-      title: "Rolling Out AI the Right Way — Part 4",
+      title: "Implementing an AI Governance Model — Part 2: Writing an AI Policy That People Actually Follow",
       excerpt:
-        "A practical 5-step playbook for rolling out AI at a company that takes security and compliance seriously.",
-      link: "/blog/rolling-out-ai-the-right-way-part-4",
+        "Part 2: Most AI policies are too vague to enforce or too long to read. A practical, four-section structure for an AI acceptable use policy your team will actually follow.",
+      link: "/blog/implementing-an-ai-governance-model-part-2",
       category: "AI Governance",
-      emoji: "🛠️",
+      emoji: "📝",
     },
     {
-      title: "Rolling Out AI the Right Way — Part 3",
+      title: "Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable",
       excerpt:
-        "BAAs, Zero Data Retention, and the Data Layer You Need to Understand.",
-      link: "/blog/rolling-out-ai-the-right-way-part-3",
+        "Part 3: A policy without technical controls is a suggestion. How to enforce your AI policy through identity and access, MDM, network and DLP, platform configuration, and logging.",
+      link: "/blog/implementing-an-ai-governance-model-part-3",
       category: "AI Governance",
-      emoji: "🔐",
+      emoji: "🔧",
     },
   ];
 
@@ -67,59 +67,61 @@ export default function ImplementingAnAiGovernanceModelPart3() {
     <>
       <Helmet>
         <title>
-          Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable
+          Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk
         </title>
 
         <meta
           name="description"
-          content="Part 3: A policy without technical controls is a suggestion. How to enforce your AI policy through identity and access, MDM, network and DLP, platform configuration, and logging."
+          content="Part 4: Vendor AI Governance and Third-Party Risk. Your AI governance program doesn't stop at the tools your employees use directly — it extends to every vendor in your stack that uses AI."
         />
 
         <link
           rel="canonical"
-          href="https://com-sec.io/blog/implementing-an-ai-governance-model-part-3"
+          href="https://com-sec.io/blog/implementing-an-ai-governance-model-part-4"
         />
 
         <meta
           property="og:title"
-          content="Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable"
+          content="Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk"
         />
 
         <meta
           property="og:description"
-          content="A policy without technical controls is a suggestion. Here's how to make it real."
+          content="Your AI governance program doesn't stop at the tools your employees use directly. It extends to every vendor in your stack that uses AI."
         />
 
         <meta
           property="og:image"
-          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-3.png"
+          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-4.png"
         />
 
         <meta
           property="og:url"
-          content="https://com-sec.io/blog/implementing-an-ai-governance-model-part-3"
+          content="https://com-sec.io/blog/implementing-an-ai-governance-model-part-4"
         />
 
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
+        <meta property="article:author" content="Farbod Fakhrai" />
+        <meta property="article:published_time" content="2026-07-29T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
-          content="Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable"
+          content="Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk"
         />
 
         <meta
           name="twitter:description"
-          content="A policy without technical controls is a suggestion. Here's how to make it real."
+          content="Your AI governance program doesn't stop at the tools your employees use directly. It extends to every vendor in your stack that uses AI."
         />
 
         <meta
           name="twitter:image"
-          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-3.png"
+          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-4.png"
         />
       </Helmet>
 
@@ -143,16 +145,16 @@ export default function ImplementingAnAiGovernanceModelPart3() {
                 AI Governance
               </span>
               <span className="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-bold border border-white/25">
-                Part 3 of 5
+                Part 4 of 5
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              Implementing an AI Governance Model: A 5-Part Guide for Companies That Use AI
+              Implementing an AI Governance Model
             </h1>
 
             <p className="text-xl text-sky-100 mb-8 leading-relaxed">
-              Part 3: Technical Controls That Make Your Policy Enforceable
+              Part 4: Vendor AI Governance and Third-Party Risk
             </p>
 
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
@@ -162,11 +164,11 @@ export default function ImplementingAnAiGovernanceModelPart3() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
-                <span>7 min read</span>
+                <span>5 min read</span>
               </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
-                <span>Com-Sec</span>
+                <span>Farbod Fakhrai</span>
               </div>
               <button
                 onClick={handleShare}
@@ -190,8 +192,8 @@ export default function ImplementingAnAiGovernanceModelPart3() {
             {/* COVER IMAGE */}
             <div className="mb-12 flex justify-center">
               <img
-                src="/images/blog-images/implementing-an-ai-governance-model-part-3.png"
-                alt="Implementing an AI Governance Model Part 3 - Technical Controls That Make Your Policy Enforceable"
+                src="/images/blog-images/implementing-an-ai-governance-model-part-4.png"
+                alt="Implementing an AI Governance Model Part 4 - Vendor AI Governance and Third-Party Risk"
                 className="rounded-xl shadow-md max-w-xl w-full h-auto"
               />
             </div>
@@ -202,128 +204,119 @@ export default function ImplementingAnAiGovernanceModelPart3() {
               <section className="mb-10">
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    A policy without technical controls is a suggestion. Here's how to make it real.
+                    Your AI governance program doesn't stop at the tools your employees use directly. It extends to every vendor in your stack that uses AI.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    This is the part most companies skip. It's also the part that auditors and enterprise customers are starting to ask about.
                   </p>
                 </div>
               </section>
 
-              {/* IDENTITY AND ACCESS */}
+              {/* VENDORS ARE USING AI TOO */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Identity and access
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  Your vendors are using AI too
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    If you're using AI tools at the enterprise tier, provision them through your identity provider. SSO/SAML for every AI tool that supports it. This gives you a single point of control for who has access, and a single point of revocation when someone leaves or changes roles.
+                    Your customer support platform probably added an AI feature last quarter. Your CRM has AI-powered insights. Your code review tool uses AI to suggest changes. Your marketing platform generates content with AI. Your analytics tool summarizes data with AI.
                   </p>
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    For API-based AI usage, manage keys through a secrets manager. No API keys in source code. No shared keys across teams. Rotate keys on a schedule and when team members leave.
+                    Each one of those AI features processes your data. Some of them process your customers' data. And most companies have no idea what's happening under the hood.
                   </p>
                 </div>
               </section>
 
-              {/* MDM */}
+              {/* QUESTIONS TO ASK */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  MDM and device controls
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  The questions to ask
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    If you've decided that agentic tools like Cowork shouldn't run on machines with production access, enforce that through your MDM. Create device groups: machines with Cowork enabled and machines with production/admin access. Keep them separate.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Use Cowork's built-in app blocklist to prevent it from accessing specific applications (cloud consoles, infrastructure tools, sensitive internal apps). This is a configuration, not a request. Set it at the admin level.
-                  </p>
-                </div>
-              </section>
-
-              {/* NETWORK AND DLP */}
-              <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Network and DLP
-                </h2>
-                <div className="space-y-5">
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    If your environment supports it, use DNS filtering or a CASB to block unauthorized AI tools at the network level. If marketing signs up for a new AI writing tool that's not on the approved list, the block happens before data ever leaves your network.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    For companies handling PHI or sensitive data, consider a DLP solution that can inspect outbound traffic to AI APIs and flag or block transmissions containing sensitive patterns (SSNs, MRNs, credit card numbers). This isn't foolproof, but it adds a layer.
-                  </p>
-                </div>
-              </section>
-
-              {/* PLATFORM CONFIGURATION */}
-              <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Platform configuration
-                </h2>
-                <div className="space-y-5">
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    For each approved AI tool, configure the enterprise settings correctly before anyone starts using it:
+                    For every vendor that handles your data, add these to your vendor assessment:
                   </p>
                   <div className="space-y-4">
                     <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg"><b>Claude Enterprise:</b> enable HIPAA mode in admin settings if you're processing PHI. Confirm ZDR is active if required. Disable features not covered under your BAA (web search, beta features).</p>
+                      <p className="text-gray-800 text-lg">Does your product use AI or machine learning? If so, for what functions?</p>
                     </div>
                     <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg"><b>Cloud AI services (Bedrock, Vertex):</b> ensure the AI services are included in your cloud BAA. Configure VPC endpoints so data doesn't traverse the public internet. Enable logging for all AI API calls.</p>
+                      <p className="text-gray-800 text-lg">Is our data used to train AI models? Can we opt out?</p>
                     </div>
                     <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg"><b>GRC platform:</b> add your AI tools to your vendor register. Map AI-related controls in your compliance framework. Set up evidence collection for AI governance controls.</p>
+                      <p className="text-gray-800 text-lg">Where is AI processing performed — same infrastructure as the rest of the product, or a third-party AI provider?</p>
+                    </div>
+                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
+                      <p className="text-gray-800 text-lg">If you use a third-party AI provider (OpenAI, Anthropic, Google), is our data covered under your agreement with them?</p>
+                    </div>
+                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
+                      <p className="text-gray-800 text-lg">What's the data retention policy for AI-processed data specifically?</p>
+                    </div>
+                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
+                      <p className="text-gray-800 text-lg">Do you have an AI governance policy or framework? Have you assessed your AI features against relevant regulations (EU AI Act, state AI laws, sector-specific requirements)?</p>
                     </div>
                   </div>
                 </div>
               </section>
 
-              {/* LOGGING AND MONITORING */}
+              {/* HEALTHCARE */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Logging and monitoring
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  For healthcare companies
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Log every AI API call your company makes. At minimum: timestamp, user, model, input token count (not the input itself if it contains sensitive data), and output token count. This gives you an audit trail without storing the actual prompts and completions.
+                    If your vendor processes PHI and uses AI, the stakes are higher. The BAA needs to cover AI-specific data flows. If the vendor sends your PHI to a third-party AI provider for processing, that provider is a subcontractor under HIPAA and needs their own BAA in the chain.
                   </p>
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    If your AI platform supports it, enable admin audit logs. Claude Enterprise provides organization-level logging. Use it.
+                    Ask explicitly: does PHI enter any AI model, API, or processing pipeline? If yes, is that covered under our BAA? Is the AI provider a listed subcontractor?
                   </p>
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Set up alerts for anomalies: unusual volume from a single user, API calls outside business hours, calls to models that aren't on your approved list.
+                    Most vendors haven't thought through this yet. That doesn't mean you can ignore it. It means you need to push them.
                   </p>
                 </div>
               </section>
 
-              {/* THE PRINCIPLE */}
+              {/* SUPPLY CHAIN */}
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  AI in your supply chain
+                </h2>
+                <div className="space-y-5">
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    If you build a product that uses AI, your customers will ask you the same questions. Having clear, documented answers positions you ahead of competitors who haven't done this work.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Build a one-page AI disclosure document: what AI your product uses, what data it processes, how you govern it, and what controls are in place. Share it proactively with enterprise customers. This is becoming a sales differentiator, especially in healthcare.
+                  </p>
+                </div>
+              </section>
+
+              {/* VENDOR REGISTER */}
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  Updating your vendor register
+                </h2>
+                <div className="space-y-5">
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Add an AI column to your vendor register. For each vendor, flag whether they use AI, whether your data is involved, and whether you've assessed the AI-specific risk. Prioritize vendors that handle sensitive data or PHI. Review annually or when the vendor announces new AI features — which is basically quarterly at this point.
+                  </p>
+                </div>
+              </section>
+
+              {/* PART 5 TEASER */}
               <section className="mb-10">
                 <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
                   <div className="text-3xl mt-1">→</div>
                   <div>
                     <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
-                      The principle
+                      Up next in the series
                     </p>
                     <p className="text-lg text-slate-100 leading-relaxed">
-                      Every rule in your policy should have a corresponding technical control. "Don't put PHI into consumer AI tools" should be backed by SSO provisioning that only gives access to the enterprise tier, plus network controls that block the consumer domains. "Agentic tools can't access production systems" should be backed by device segmentation and app blocklists. Policy tells people what to do. Controls make sure it happens.
+                      In Part 5, we'll cover ongoing governance: how to keep the program running and evolving as AI changes.
                     </p>
                   </div>
                 </div>
-              </section>
-
-              {/* PART 4 TEASER */}
-              <section className="mb-10">
-                <Link to="/blog/implementing-an-ai-governance-model-part-4" className="block group">
-                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
-                    <div className="text-3xl mt-1">→</div>
-                    <div>
-                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
-                        Up next in the series
-                      </p>
-                      <p className="text-lg text-slate-100 leading-relaxed">
-                        In Part 4, we'll cover the vendor and third-party side of AI governance.
-                      </p>
-                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Part 4 →</p>
-                    </div>
-                  </div>
-                </Link>
               </section>
 
             </div>
@@ -335,10 +328,10 @@ export default function ImplementingAnAiGovernanceModelPart3() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-br from-sky-900 via-blue-800 to-slate-900 rounded-xl px-8 py-10 text-white text-center shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Need help enforcing your AI policy?
+                Need help assessing AI risk across your vendor stack?
               </h3>
               <p className="text-sky-200 text-lg mb-6 max-w-xl mx-auto leading-relaxed">
-                Com-Sec helps startups and growth-stage companies configure the identity, device, network, and logging controls that turn an AI policy from a document into a real program.
+                Com-Sec helps startups and growth-stage companies build vendor risk assessments, AI disclosure documents, and governance programs that hold up to auditors and enterprise customers.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link

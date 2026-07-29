@@ -666,6 +666,13 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-3`,
     image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-3.png`,
   },
+  "/blog/implementing-an-ai-governance-model-part-4": {
+    title: "Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk",
+    description:
+      "Part 4: Vendor AI Governance and Third-Party Risk. Your AI governance program doesn't stop at the tools your employees use directly — it extends to every vendor in your stack that uses AI.",
+    canonical: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-4`,
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-4.png`,
+  },
   "/blog/what-founders-get-wrong-about-hiring-their-first-security-person": {
     title: "What Founders Get Wrong About Hiring Their First Security Person",
     description:
