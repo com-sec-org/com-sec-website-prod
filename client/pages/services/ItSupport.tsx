@@ -80,6 +80,58 @@ export default function ItSupport() {
       name="twitter:image"
       content="https://com-sec.io/images/it-support-cover.png"
     />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
+        url: "https://com-sec.io",
+        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+      })}
+    </script>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://com-sec.io/it-support#service",
+        name: "Managed IT Support Services",
+        serviceType: "Managed IT Support & Infrastructure Services",
+        description:
+          "Com-Sec provides managed IT support services to help businesses maintain secure, reliable, and high-performing IT environments. Our services include 24/7 help desk support, network management, server administration, data backup and disaster recovery, cloud infrastructure management, and security management.",
+        category: "Managed IT Services",
+        url: "https://com-sec.io/it-support",
+        provider: {
+          "@id": "https://com-sec.io/#organization",
+        },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Worldwide",
+        },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: "Businesses",
+        },
+        offers: {
+          "@type": "Offer",
+          availability: "https://schema.org/InStock",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Managed IT Support Services",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "24/7 Help Desk Support" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Network Management" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Server Administration" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Data Backup & Disaster Recovery" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cloud Infrastructure Management" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Security Management" } },
+          ],
+        },
+      })}
+    </script>
   </Helmet>
   
     <div className="min-h-screen bg-white">

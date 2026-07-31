@@ -673,6 +673,13 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-4`,
     image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-4.png`,
   },
+  "/blog/implementing-an-ai-governance-model-part-5": {
+    title: "Implementing an AI Governance Model — Part 5: Keeping It Running: Ongoing AI Governance Operations",
+    description:
+      "Part 5: Keeping It Running. Building an AI governance program takes a few weeks — keeping it running is the actual work. Here's how to operationalize it so it doesn't decay.",
+    canonical: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-5`,
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-5.png`,
+  },
   "/blog/what-founders-get-wrong-about-hiring-their-first-security-person": {
     title: "What Founders Get Wrong About Hiring Their First Security Person",
     description:

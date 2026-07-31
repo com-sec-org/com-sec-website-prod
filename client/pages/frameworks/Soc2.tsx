@@ -47,6 +47,60 @@ export default function Soc2() {
     <meta name="publisher" content="Com-Sec" />
     <meta charSet="utf-8" />
     <meta name="language" content="English" />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
+        url: "https://com-sec.io",
+        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+      })}
+    </script>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://com-sec.io/soc2#service",
+        name: "SOC 2 Compliance Services",
+        serviceType: "SOC 2 Compliance Consulting & Audit Readiness Services",
+        description:
+          "Com-Sec helps organizations achieve SOC 2 Type I and Type II compliance through readiness assessments, gap analysis, control implementation, evidence collection, audit preparation, and assessor coordination. Our services support organizations in meeting the AICPA Trust Services Criteria and strengthening customer trust.",
+        category: "Cybersecurity Compliance Services",
+        url: "https://com-sec.io/soc2",
+        provider: {
+          "@id": "https://com-sec.io/#organization",
+        },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Worldwide",
+        },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: "Businesses",
+        },
+        offers: {
+          "@type": "Offer",
+          price: "4000",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "SOC 2 Compliance Services",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "SOC 2 Readiness Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "SOC 2 Gap Analysis" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "SOC 2 Type I Compliance Support" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "SOC 2 Type II Compliance Support" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Evidence Collection & Documentation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "SOC 2 Audit & Assessor Coordination" } },
+          ],
+        },
+      })}
+    </script>
   </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />

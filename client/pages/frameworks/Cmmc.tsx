@@ -232,6 +232,61 @@ export default function Cmmc() {
     <meta name="publisher" content="Com-Sec" />
     <meta charSet="utf-8" />
     <meta name="language" content="English" />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
+        url: "https://com-sec.io",
+        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+      })}
+    </script>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://com-sec.io/cmmc#service",
+        name: "CMMC Compliance Services",
+        serviceType:
+          "CMMC Compliance Consulting, Readiness Assessment & Certification Support Services",
+        description:
+          "Com-Sec helps defense contractors achieve Cybersecurity Maturity Model Certification (CMMC) compliance through readiness assessments, gap analysis, NIST SP 800-171 implementation, System Security Plan (SSP) development, security control implementation, assessment preparation, and certification support.",
+        url: "https://com-sec.io/cmmc",
+        provider: {
+          "@id": "https://com-sec.io/#organization",
+        },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Worldwide",
+        },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Defense Contractors, Government Contractors, Organizations Handling Controlled Unclassified Information (CUI)",
+        },
+        offers: {
+          "@type": "Offer",
+          availability: "https://schema.org/InStock",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "CMMC Compliance Services",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "CMMC Readiness Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "CMMC Gap Analysis" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "CMMC Scope Definition & CUI Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "NIST SP 800-171 Implementation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "System Security Plan (SSP) Development" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Security Control Implementation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Assessment Readiness & Evidence Preparation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "CMMC Certification Support" } },
+          ],
+        },
+      })}
+    </script>
   </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />

@@ -13,13 +13,13 @@ import {
   Check,
 } from "lucide-react";
 
-export default function ImplementingAiGovernanceModelPart4() {
+export default function ImplementingAiGovernanceModelPart5() {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
     const shareData = {
-      title: "Implementing an AI Governance Model — Part 4",
-      text: "Part 4: Vendor AI Governance and Third-Party Risk. Your AI governance program doesn't stop at the tools your employees use directly.",
+      title: "Implementing an AI Governance Model — Part 5",
+      text: "Part 5: Keeping It Running: Ongoing AI Governance Operations. How to operationalize your AI governance program so it doesn't decay.",
       url: window.location.href,
     };
 
@@ -46,14 +46,6 @@ export default function ImplementingAiGovernanceModelPart4() {
       emoji: "📋",
     },
     {
-      title: "Implementing an AI Governance Model — Part 2: Writing an AI Policy That People Actually Follow",
-      excerpt:
-        "Part 2: Most AI policies are too vague to enforce or too long to read. A practical, four-section structure for an AI acceptable use policy your team will actually follow.",
-      link: "/blog/implementing-an-ai-governance-model-part-2",
-      category: "AI Governance",
-      emoji: "📝",
-    },
-    {
       title: "Implementing an AI Governance Model — Part 3: Technical Controls That Make Your Policy Enforceable",
       excerpt:
         "Part 3: A policy without technical controls is a suggestion. How to enforce your AI policy through identity and access, MDM, network and DLP, platform configuration, and logging.",
@@ -61,67 +53,94 @@ export default function ImplementingAiGovernanceModelPart4() {
       category: "AI Governance",
       emoji: "🔧",
     },
+    {
+      title: "Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk",
+      excerpt:
+        "Part 4: Your AI governance program doesn't stop at the tools your employees use directly. It extends to every vendor in your stack that uses AI.",
+      link: "/blog/implementing-an-ai-governance-model-part-4",
+      category: "AI Governance",
+      emoji: "🤝",
+    },
+  ];
+
+  const reviewItems = [
+    {
+      title: "Tool inventory",
+      body: "Has anything been added? Are there new AI tools in use that haven't been evaluated? Has any approved tool changed its data handling, BAA coverage, or capabilities? Run a quick resurvey or check your SSO logs.",
+    },
+    {
+      title: "Policy currency",
+      body: "Does the acceptable use policy still reflect reality? Are the approved tools and tiers still accurate? Have any new regulations or customer requirements emerged that require policy updates?",
+    },
+    {
+      title: "Incident review",
+      body: "Were there any AI-related incidents, near-misses, or policy violations? What happened, what was the root cause, and what changed as a result?",
+    },
+    {
+      title: "Vendor AI changes",
+      body: "Have any of your vendors introduced new AI features or changed how they process your data with AI? This is increasingly common and often announced in changelog updates that nobody reads.",
+    },
   ];
 
   return (
     <>
       <Helmet>
         <title>
-          Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk
+          Implementing an AI Governance Model — Part 5: Keeping It Running: Ongoing AI Governance Operations
         </title>
 
         <meta
           name="description"
-          content="Part 4: Vendor AI Governance and Third-Party Risk. Your AI governance program doesn't stop at the tools your employees use directly — it extends to every vendor in your stack that uses AI."
+          content="Part 5: Keeping It Running. Building an AI governance program takes a few weeks — keeping it running is the actual work. Here's how to operationalize it so it doesn't decay."
         />
 
         <link
           rel="canonical"
-          href="https://com-sec.io/blog/implementing-an-ai-governance-model-part-4"
+          href="https://com-sec.io/blog/implementing-an-ai-governance-model-part-5"
         />
 
         <meta
           property="og:title"
-          content="Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk"
+          content="Implementing an AI Governance Model — Part 5: Keeping It Running: Ongoing AI Governance Operations"
         />
 
         <meta
           property="og:description"
-          content="Your AI governance program doesn't stop at the tools your employees use directly. It extends to every vendor in your stack that uses AI."
+          content="Building an AI governance program takes a few weeks. Keeping it running is the actual work. Here's how to operationalize it so it doesn't decay."
         />
 
         <meta
           property="og:image"
-          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-4.png"
+          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-5.png"
         />
 
         <meta
           property="og:url"
-          content="https://com-sec.io/blog/implementing-an-ai-governance-model-part-4"
+          content="https://com-sec.io/blog/implementing-an-ai-governance-model-part-5"
         />
 
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="Farbod Fakhrai" />
-        <meta property="article:published_time" content="2026-07-29T00:00:00Z" />
+        <meta property="article:published_time" content="2026-08-01T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
-          content="Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk"
+          content="Implementing an AI Governance Model — Part 5: Keeping It Running"
         />
 
         <meta
           name="twitter:description"
-          content="Your AI governance program doesn't stop at the tools your employees use directly. It extends to every vendor in your stack that uses AI."
+          content="Building an AI governance program takes a few weeks. Keeping it running is the actual work. Here's how to operationalize it so it doesn't decay."
         />
 
         <meta
           name="twitter:image"
-          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-4.png"
+          content="https://com-sec.io/images/blog-images/implementing-an-ai-governance-model-part-5.png"
         />
       </Helmet>
 
@@ -145,7 +164,7 @@ export default function ImplementingAiGovernanceModelPart4() {
                 AI Governance
               </span>
               <span className="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-bold border border-white/25">
-                Part 4 of 5
+                Part 5 of 5
               </span>
             </div>
 
@@ -154,17 +173,17 @@ export default function ImplementingAiGovernanceModelPart4() {
             </h1>
 
             <p className="text-xl text-sky-100 mb-8 leading-relaxed">
-              Part 4: Vendor AI Governance and Third-Party Risk
+              Part 5: Keeping It Running: Ongoing AI Governance Operations
             </p>
 
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>July 2026</span>
+                <span>August 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
-                <span>5 min read</span>
+                <span>6 min read</span>
               </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
@@ -192,8 +211,8 @@ export default function ImplementingAiGovernanceModelPart4() {
             {/* COVER IMAGE */}
             <div className="mb-12 flex justify-center">
               <img
-                src="/images/blog-images/implementing-an-ai-governance-model-part-4.png"
-                alt="Implementing an AI Governance Model Part 4 - Vendor AI Governance and Third-Party Risk"
+                src="/images/blog-images/implementing-an-ai-governance-model-part-5.png"
+                alt="Implementing an AI Governance Model Part 5 - Keeping It Running: Ongoing AI Governance Operations"
                 className="rounded-xl shadow-md max-w-xl w-full h-auto"
               />
             </div>
@@ -204,122 +223,126 @@ export default function ImplementingAiGovernanceModelPart4() {
               <section className="mb-10">
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Your AI governance program doesn't stop at the tools your employees use directly. It extends to every vendor in your stack that uses AI.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    This is the part most companies skip. It's also the part that auditors and enterprise customers are starting to ask about.
+                    Building an AI governance program takes a few weeks. Keeping it running is the actual work. Here's how to operationalize it so it doesn't decay.
                   </p>
                 </div>
               </section>
 
-              {/* VENDORS ARE USING AI TOO */}
+              {/* QUARTERLY REVIEW */}
               <section className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  Your vendors are using AI too
+                  Quarterly review cycle
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Your customer support platform probably added an AI feature last quarter. Your CRM has AI-powered insights. Your code review tool uses AI to suggest changes. Your marketing platform generates content with AI. Your analytics tool summarizes data with AI.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Each one of those AI features processes your data. Some of them process your customers' data. And most companies have no idea what's happening under the hood.
-                  </p>
-                </div>
-              </section>
-
-              {/* QUESTIONS TO ASK */}
-              <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  The questions to ask
-                </h2>
-                <div className="space-y-5">
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    For every vendor that handles your data, add these to your vendor assessment:
+                    Every quarter, review four things:
                   </p>
                   <div className="space-y-4">
-                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg">Does your product use AI or machine learning? If so, for what functions?</p>
-                    </div>
-                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg">Is our data used to train AI models? Can we opt out?</p>
-                    </div>
-                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg">Where is AI processing performed — same infrastructure as the rest of the product, or a third-party AI provider?</p>
-                    </div>
-                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg">If you use a third-party AI provider (OpenAI, Anthropic, Google), is our data covered under your agreement with them?</p>
-                    </div>
-                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg">What's the data retention policy for AI-processed data specifically?</p>
-                    </div>
-                    <div className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4">
-                      <p className="text-gray-800 text-lg">Do you have an AI governance policy or framework? Have you assessed your AI features against relevant regulations (EU AI Act, state AI laws, sector-specific requirements)?</p>
-                    </div>
+                    {reviewItems.map((item, index) => (
+                      <div
+                        key={index}
+                        className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4"
+                      >
+                        <p className="text-gray-800 text-lg">
+                          <b>{item.title}.</b> {item.body}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </section>
 
-              {/* HEALTHCARE */}
+              {/* OWNERSHIP */}
               <section className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  For healthcare companies
+                  Assign ownership
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    If your vendor processes PHI and uses AI, the stakes are higher. The BAA needs to cover AI-specific data flows. If the vendor sends your PHI to a third-party AI provider for processing, that provider is a subcontractor under HIPAA and needs their own BAA in the chain.
+                    Someone owns this program. A vCISO, a security lead, a compliance manager. Whoever it is, they need time allocated to AI governance specifically. It's not a full-time job, but it's a real responsibility that requires 2 to 4 hours per week: processing tool approval requests, monitoring for shadow AI, coordinating with vendors, and keeping the inventory and policy current.
                   </p>
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Ask explicitly: does PHI enter any AI model, API, or processing pipeline? If yes, is that covered under our BAA? Is the AI provider a listed subcontractor?
-                  </p>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Most vendors haven't thought through this yet. That doesn't mean you can ignore it. It means you need to push them.
+                    If nobody owns it, entropy takes over and within 6 months your inventory is outdated, your policy doesn't reflect what people are actually using, and your enterprise customers get answers to AI governance questions that don't hold up.
                   </p>
                 </div>
               </section>
 
-              {/* SUPPLY CHAIN */}
+              {/* TRAINING CADENCE */}
               <section className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  AI in your supply chain
+                  Training cadence
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    If you build a product that uses AI, your customers will ask you the same questions. Having clear, documented answers positions you ahead of competitors who haven't done this work.
+                    Initial training during rollout. Refresher during onboarding for new hires. Annual refresher for the full company. Ad hoc updates when something significant changes: a new tool approved, new restrictions, a policy update, a regulatory change.
                   </p>
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Build a one-page AI disclosure document: what AI your product uses, what data it processes, how you govern it, and what controls are in place. Share it proactively with enterprise customers. This is becoming a sales differentiator, especially in healthcare.
+                    Keep it short. 15 to 30 minutes. Focus on what changed and why. People tune out long training sessions.
                   </p>
                 </div>
               </section>
 
-              {/* VENDOR REGISTER */}
+              {/* AUDITS */}
               <section className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
-                  Updating your vendor register
+                  Preparing for audits
                 </h2>
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Add an AI column to your vendor register. For each vendor, flag whether they use AI, whether your data is involved, and whether you've assessed the AI-specific risk. Prioritize vendors that handle sensitive data or PHI. Review annually or when the vendor announces new AI features — which is basically quarterly at this point.
+                    SOC 2 auditors are asking about AI. ISO 27001 auditors are asking about AI. HITRUST assessors are asking about AI. Enterprise customers are adding AI-specific sections to security questionnaires.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Have your evidence ready: AI tool inventory, acceptable use policy, data classification for AI, training records, vendor AI assessments, incident logs, and quarterly review documentation. If you've been running the program as described in this series, you already have all of it.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    For companies pursuing ISO 42001 (the AI management system standard), the governance program we've described maps directly to the standard's requirements. You're not starting from zero.
                   </p>
                 </div>
               </section>
 
-              {/* PART 5 TEASER */}
+              {/* REGULATION */}
               <section className="mb-10">
-                <Link to="/blog/implementing-an-ai-governance-model-part-5" className="block group">
-                  <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4 hover:bg-slate-800 transition-colors">
-                    <div className="text-3xl mt-1">→</div>
-                    <div>
-                      <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
-                        Up next in the series
-                      </p>
-                      <p className="text-lg text-slate-100 leading-relaxed">
-                        In Part 5, we'll cover ongoing governance: how to keep the program running and evolving as AI changes.
-                      </p>
-                      <p className="text-sm text-sky-300 mt-3 group-hover:underline">Read Part 5 →</p>
-                    </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  Preparing for regulation
+                </h2>
+                <div className="space-y-5">
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    The EU AI Act is in effect. State-level AI laws are proliferating in the US. Sector-specific AI guidance is coming from HHS, the FDA, financial regulators, and others. The regulatory landscape is moving fast and it's moving toward more oversight, not less.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    The companies that have a documented, operational AI governance program will adapt to new requirements incrementally. The ones that don't will face expensive, rushed compliance projects when a regulation hits or a customer demands it.
+                  </p>
+                </div>
+              </section>
+
+              {/* BOTTOM LINE */}
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
+                  The bottom line
+                </h2>
+                <div className="space-y-5">
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    AI governance is not a project with an end date. It's an operational practice, like vulnerability management or access reviews. Build it once, run it continuously, and improve it as the technology and regulatory landscape evolve.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    The companies that build this muscle now will be in a fundamentally stronger position than the ones that wait.
+                  </p>
+                </div>
+              </section>
+
+              {/* SERIES COMPLETE */}
+              <section className="mb-10">
+                <div className="bg-slate-900 rounded-xl p-8 text-white flex items-start gap-4">
+                  <div className="text-3xl mt-1">✓</div>
+                  <div>
+                    <p className="text-sm font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                      Series complete
+                    </p>
+                    <p className="text-lg text-slate-100 leading-relaxed">
+                      That wraps up the 5-part series on implementing an AI governance model. Catch up on any part you missed below, or reach out if you're ready to put this into practice.
+                    </p>
                   </div>
-                </Link>
+                </div>
               </section>
 
             </div>
@@ -331,10 +354,10 @@ export default function ImplementingAiGovernanceModelPart4() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-br from-sky-900 via-blue-800 to-slate-900 rounded-xl px-8 py-10 text-white text-center shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Need help assessing AI risk across your vendor stack?
+                Ready to build an AI governance program that runs itself?
               </h3>
               <p className="text-sky-200 text-lg mb-6 max-w-xl mx-auto leading-relaxed">
-                Com-Sec helps startups and growth-stage companies build vendor risk assessments, AI disclosure documents, and governance programs that hold up to auditors and enterprise customers.
+                Com-Sec helps startups and growth-stage companies stand up AI governance programs and keep them operational — inventory, policy, technical controls, vendor risk, and quarterly reviews.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link

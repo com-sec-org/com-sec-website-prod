@@ -81,6 +81,58 @@ export default function RiskManagement() {
     name="twitter:image"
     content="https://com-sec.io/images/risk-management-cover.png"
   />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://com-sec.io/#organization",
+      name: "Com-Sec",
+      url: "https://com-sec.io",
+      logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+    })}
+  </script>
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://com-sec.io/risk-management#service",
+      name: "Cybersecurity Risk Management & Governance Services",
+      serviceType: "Enterprise Cybersecurity Risk Management Services",
+      description:
+        "Com-Sec provides cybersecurity risk management and governance services to help organizations identify, assess, and mitigate cyber risks. Our services include risk assessments, threat modeling, control testing, issue and exception management, KRI/KPI dashboards, and governance programs that improve cybersecurity resilience and support informed business decisions.",
+      category: "Cybersecurity Risk Management Services",
+      url: "https://com-sec.io/risk-management",
+      provider: {
+        "@id": "https://com-sec.io/#organization",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Worldwide",
+      },
+      audience: {
+        "@type": "BusinessAudience",
+        audienceType: "Businesses",
+      },
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Cybersecurity Risk Management Services",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cybersecurity Risk Assessment" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Threat Modeling" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Control Testing" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Issue & Exception Management" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "KRI & KPI Dashboards" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cybersecurity Program Governance" } },
+        ],
+      },
+    })}
+  </script>
 </Helmet>
 
   

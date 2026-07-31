@@ -146,6 +146,60 @@ export default function PciDss() {
     <meta name="publisher" content="Com-Sec" />
     <meta charSet="utf-8" />
     <meta name="language" content="English" />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
+        url: "https://com-sec.io",
+        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+      })}
+    </script>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://com-sec.io/pci-dss#service",
+        name: "PCI DSS Compliance Services",
+        serviceType:
+          "PCI DSS Compliance Consulting, Gap Analysis & Audit Readiness Services",
+        description:
+          "Com-Sec helps organizations achieve PCI DSS compliance through PCI DSS gap analysis, security assessments, remediation planning, policy implementation, vulnerability management, penetration testing coordination, Self-Assessment Questionnaire (SAQ) support, QSA audit readiness, and ongoing compliance consulting to protect payment card data.",
+        url: "https://com-sec.io/pci-dss",
+        provider: {
+          "@id": "https://com-sec.io/#organization",
+        },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Worldwide",
+        },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: "Businesses",
+        },
+        offers: {
+          "@type": "Offer",
+          price: "4000",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "PCI DSS Compliance Services",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "PCI DSS Gap Analysis" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "PCI DSS Readiness Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "PCI DSS Security Control Implementation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "PCI DSS Remediation Planning" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "PCI DSS Self-Assessment Questionnaire (SAQ) Support" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "PCI DSS QSA Audit Readiness" } },
+          ],
+        },
+      })}
+    </script>
   </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />

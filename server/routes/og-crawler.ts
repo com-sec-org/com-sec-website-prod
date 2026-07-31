@@ -202,6 +202,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-29T00:00:00Z",
   },
+  "/blog/implementing-an-ai-governance-model-part-5": {
+    title: "Implementing an AI Governance Model — Part 5: Keeping It Running: Ongoing AI Governance Operations",
+    description:
+      "Part 5: Keeping It Running. Building an AI governance program takes a few weeks — keeping it running is the actual work. Here's how to operationalize it so it doesn't decay.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-5.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-5`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-01T00:00:00Z",
+  },
   "/blog/aiuc-1-the-compliance-framework-nobodys-heard-of": {
     title:
       "AIUC-1: The Compliance Framework Nobody's Heard of That's About to Matter a Lot",

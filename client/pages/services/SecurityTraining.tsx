@@ -81,6 +81,58 @@ export default function SecurityTraining() {
     name="twitter:image"
     content="https://com-sec.io/images/security-training-cover.png"
   />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://com-sec.io/#organization",
+      name: "Com-Sec",
+      url: "https://com-sec.io",
+      logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+    })}
+  </script>
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://com-sec.io/security-training#service",
+      name: "Security Awareness Training Programs",
+      serviceType: "Cybersecurity Awareness & Security Training Services",
+      description:
+        "Com-Sec provides security awareness training programs to help organizations build a security-first culture through phishing simulations, role-based awareness training, incident response drills, secure development education, compliance awareness programs, and executive cybersecurity briefings.",
+      category: "Cybersecurity Training Services",
+      url: "https://com-sec.io/security-training",
+      provider: {
+        "@id": "https://com-sec.io/#organization",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Worldwide",
+      },
+      audience: {
+        "@type": "BusinessAudience",
+        audienceType: "Businesses",
+      },
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Security Awareness Training Programs",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Phishing Simulation Training" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Security Awareness Training" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Incident Response Drills" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Secure Development Training" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Compliance Awareness Training" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Executive Cybersecurity Briefings" } },
+        ],
+      },
+    })}
+  </script>
 </Helmet>
 
     <div className="min-h-screen bg-white">

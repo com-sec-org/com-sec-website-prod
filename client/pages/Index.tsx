@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -59,6 +60,35 @@ export default function Index() {
     (groupMap[focus] ? groupMap[focus].includes(id) : false);
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://com-sec.io/#organization",
+            name: "Com-Sec",
+            url: "https://com-sec.io/",
+            logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+            description:
+              "Com-Sec delivers expert cybersecurity services including SOC 2 compliance, penetration testing, cloud security, and compliance audits, supporting frameworks like ISO 27001, HIPAA, and GDPR.",
+            foundingDate: "2020",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Washington",
+              addressRegion: "DC",
+              postalCode: "20001",
+              addressCountry: "US",
+            },
+            sameAs: ["https://www.linkedin.com/company/com-sec"],
+            contactPoint: {
+              "@type": "ContactPoint",
+              email: "team@com-sec.io",
+              telephone: "857-832-1623",
+              contactType: "customer service",
+            },
+          })}
+        </script>
+      </Helmet>
       <Navigation />
 
       {/* Hero Section */}

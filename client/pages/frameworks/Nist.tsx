@@ -249,6 +249,60 @@ export default function Nist() {
     <meta name="publisher" content="Com-Sec" />
     <meta charSet="utf-8" />
     <meta name="language" content="English" />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
+        url: "https://com-sec.io",
+        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+      })}
+    </script>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://com-sec.io/nist#service",
+        name: "NIST Cybersecurity Framework (CSF) Implementation Services",
+        serviceType:
+          "NIST Cybersecurity Framework Assessment, Implementation & Risk Management Services",
+        description:
+          "Com-Sec helps organizations implement the NIST Cybersecurity Framework (CSF) through cybersecurity assessments, gap analysis, risk management, framework implementation, security control development, continuous monitoring, and cybersecurity maturity improvement based on the NIST Identify, Protect, Detect, Respond, and Recover functions.",
+        url: "https://com-sec.io/nist",
+        provider: {
+          "@id": "https://com-sec.io/#organization",
+        },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Worldwide",
+        },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: "Businesses",
+        },
+        offers: {
+          "@type": "Offer",
+          price: "3500",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "NIST Cybersecurity Framework Services",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "NIST Cybersecurity Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "NIST Gap Analysis" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "NIST Framework Implementation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cybersecurity Risk Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Security Controls Implementation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cybersecurity Maturity & Continuous Monitoring" } },
+          ],
+        },
+      })}
+    </script>
   </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />
