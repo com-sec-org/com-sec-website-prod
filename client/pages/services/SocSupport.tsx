@@ -82,6 +82,59 @@ export default function SocSupport() {
     name="twitter:image"
     content="https://com-sec.io/images/soc-support-cover.png"
   />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://com-sec.io/#organization",
+      name: "Com-Sec",
+      url: "https://com-sec.io",
+      logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+    })}
+  </script>
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://com-sec.io/soc-support#service",
+      name: "24/7 SOC Support Services",
+      serviceType: "Managed Security Operations Center (SOC) Services",
+      description:
+        "Com-Sec provides 24/7 Security Operations Center (SOC) support services to help organizations continuously monitor, detect, investigate, and respond to cybersecurity threats. Our managed SOC services include SIEM monitoring, threat detection, incident response, vulnerability management, security analytics, and threat intelligence.",
+      category: "Managed Security Services",
+      url: "https://com-sec.io/soc-support",
+      provider: {
+        "@id": "https://com-sec.io/#organization",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Worldwide",
+      },
+      audience: {
+        "@type": "BusinessAudience",
+        audienceType: "Businesses",
+      },
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "SOC Support Services",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "24/7 Security Monitoring" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Threat Detection & Analysis" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Incident Response" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "SIEM Monitoring & Management" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Threat Intelligence" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Vulnerability Management" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Security Analytics & Reporting" } },
+        ],
+      },
+    })}
+  </script>
 </Helmet>
 
     <div className="min-h-screen bg-white">

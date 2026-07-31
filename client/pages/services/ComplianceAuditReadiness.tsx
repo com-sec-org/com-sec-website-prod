@@ -54,6 +54,59 @@ export default function ComplianceAuditReadiness() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://com-sec.io/compliance-audit-service" />
         <meta property="og:site_name" content="Com-Sec" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://com-sec.io/#organization",
+            name: "Com-Sec",
+            url: "https://com-sec.io",
+            logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://com-sec.io/compliance-audit-service#service",
+            serviceType: "Compliance Audit Service",
+            name: "Cybersecurity & Compliance Audit Services",
+            description:
+              "Com-Sec provides cybersecurity and compliance audit services to help organizations assess security controls, identify compliance gaps, prepare for audits, and achieve compliance with SOC 2, ISO 27001, HIPAA, PCI DSS, GDPR, NIST, HITRUST, and CMMC.",
+            provider: {
+              "@id": "https://com-sec.io/#organization",
+            },
+            areaServed: {
+              "@type": "Place",
+              name: "Worldwide",
+            },
+            audience: {
+              "@type": "BusinessAudience",
+              audienceType: "Businesses",
+            },
+            url: "https://com-sec.io/compliance-audit-service",
+            offers: {
+              "@type": "Offer",
+              availability: "https://schema.org/InStock",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Compliance Audit Services",
+              itemListElement: [
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "SOC 2 Compliance Audit" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HIPAA Compliance Audit" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "ISO 27001/42001 Compliance" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "PCI DSS Compliance" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "GDPR Compliance Audit" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "NIST Cybersecurity Framework" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HITRUST Certification Support" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "CMMC Compliance" } },
+              ],
+            },
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-white">

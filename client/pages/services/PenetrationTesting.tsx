@@ -57,6 +57,59 @@ export default function PenetrationTesting() {
         content="https://com-sec.io/penetration-testing-services"
       />
       <meta property="og:site_name" content="Com-Sec" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://com-sec.io/#organization",
+          name: "Com-Sec",
+          url: "https://com-sec.io",
+          logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://com-sec.io/penetration-testing-services#service",
+          name: "Professional Penetration Testing Services",
+          serviceType: "Cybersecurity Penetration Testing",
+          description:
+            "Com-Sec provides professional penetration testing services to identify security vulnerabilities across network infrastructure, web applications, wireless environments, client-side applications, physical security, and social engineering attack vectors. Our ethical hackers deliver actionable remediation guidance to strengthen your organization's cybersecurity posture.",
+          url: "https://com-sec.io/penetration-testing-services",
+          provider: {
+            "@id": "https://com-sec.io/#organization",
+          },
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Worldwide",
+          },
+          audience: {
+            "@type": "BusinessAudience",
+            audienceType: "Businesses",
+          },
+          offers: {
+            "@type": "Offer",
+            availability: "https://schema.org/InStock",
+          },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Penetration Testing Services",
+            itemListElement: [
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Network Penetration Testing" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Web Application Penetration Testing" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Wireless Security Testing" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Engineering Testing" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Physical Security Testing" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Client-Side Security Testing" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cloud Infrastructure Penetration Testing" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mobile Application Penetration Testing" } },
+            ],
+          },
+        })}
+      </script>
     </Helmet>
 
     <div className="min-h-screen bg-white">

@@ -50,6 +50,63 @@ export default function Hipaa() {
     <meta name="publisher" content="Com-Sec" />
     <meta charSet="utf-8" />
     <meta name="language" content="English" />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
+        url: "https://com-sec.io",
+        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+      })}
+    </script>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://com-sec.io/hipaa#service",
+        name: "HIPAA Compliance Services",
+        serviceType: "HIPAA Compliance Consulting & Implementation",
+        description:
+          "Com-Sec provides HIPAA compliance consulting, HIPAA risk assessments, gap analysis, policy development, security safeguards implementation, workforce training, audit readiness, and ongoing compliance support for healthcare organizations and business associates.",
+        url: "https://com-sec.io/hipaa",
+        provider: {
+          "@id": "https://com-sec.io/#organization",
+        },
+        areaServed: {
+          "@type": "Place",
+          name: "Worldwide",
+        },
+        audience: {
+          "@type": "Audience",
+          audienceType:
+            "Healthcare Providers, Hospitals, Clinics, Health Plans, Healthcare Clearinghouses, Business Associates",
+        },
+        offers: {
+          "@type": "Offer",
+          name: "HIPAA Compliance Assessment",
+          price: "4000",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: "https://com-sec.io/hipaa",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "HIPAA Compliance Services",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "HIPAA Risk Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "HIPAA Gap Analysis" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "HIPAA Policy & Procedure Development" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "HIPAA Security Safeguards Implementation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "HIPAA Workforce Training" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "HIPAA Audit Readiness" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ongoing HIPAA Compliance Support" } },
+          ],
+        },
+      })}
+    </script>
   </Helmet>
 
     <div className="min-h-screen bg-white">

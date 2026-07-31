@@ -56,6 +56,71 @@ export default function Iso27001() {
     <meta name="publisher" content="Com-Sec" />
     <meta charSet="utf-8" />
     <meta name="language" content="English" />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
+        url: "https://com-sec.io",
+        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+      })}
+    </script>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://com-sec.io/iso27001#service",
+        name: "ISO 27001 Compliance & Certification Services",
+        serviceType: "ISO 27001 Implementation, Internal Audit & Certification Support",
+        description:
+          "Com-Sec helps organizations achieve ISO 27001 certification through Information Security Management System (ISMS) implementation, risk assessments, internal audits, documentation support, certification readiness, and Stage 1 & Stage 2 audit coordination.",
+        category: "ISO 27001 Compliance Services",
+        url: "https://com-sec.io/iso27001",
+        provider: {
+          "@id": "https://com-sec.io/#organization",
+        },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Worldwide",
+        },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: "Businesses",
+        },
+        offers: [
+          {
+            "@type": "Offer",
+            name: "ISO 27001 Certification Support",
+            price: "4000",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+          },
+          {
+            "@type": "Offer",
+            name: "ISO 27001 Internal Audit",
+            price: "3500",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+          },
+        ],
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "ISO 27001 Services",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "ISMS Development" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gap Analysis" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Risk Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Internal Audit" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Stage 1 & Stage 2 Audit Support" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Documentation Assistance" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Certification Readiness" } },
+          ],
+        },
+      })}
+    </script>
   </Helmet>
     <div className="min-h-screen bg-white">
       <Navigation />

@@ -244,6 +244,62 @@ export default function Gdpr() {
     <meta name="publisher" content="Com-Sec" />
     <meta charSet="utf-8" />
     <meta name="language" content="English" />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
+        url: "https://com-sec.io",
+        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+      })}
+    </script>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://com-sec.io/gdpr#service",
+        name: "GDPR Compliance Services",
+        serviceType:
+          "GDPR Compliance Consulting, Assessment & Data Protection Implementation Services",
+        description:
+          "Com-Sec helps organizations achieve GDPR compliance through data discovery, privacy assessments, data mapping, DPIAs, policy development, privacy by design implementation, security controls, staff training, and ongoing compliance support. Our GDPR services help organizations protect personal data, comply with EU data protection regulations, and reduce regulatory risk.",
+        url: "https://com-sec.io/gdpr",
+        provider: {
+          "@id": "https://com-sec.io/#organization",
+        },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Worldwide",
+        },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: "Businesses",
+        },
+        offers: {
+          "@type": "Offer",
+          price: "4000",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "GDPR Compliance Services",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "GDPR Readiness Assessment" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Data Discovery & Mapping" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "GDPR Gap Analysis" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Data Protection Impact Assessment (DPIA)" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Privacy Policy & GDPR Documentation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Privacy by Design Implementation" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Data Subject Rights Management" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "GDPR Staff Training & Awareness" } },
+          ],
+        },
+      })}
+    </script>
   </Helmet>
 
     <div className="min-h-screen bg-white">

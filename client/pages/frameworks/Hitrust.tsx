@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -27,7 +28,77 @@ import {
 
 export default function Hitrust() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://com-sec.io/#organization",
+            name: "Com-Sec",
+            url: "https://com-sec.io",
+            logo: "https://com-sec.io/images/logo/com-sec_logo.png",
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://com-sec.io/hitrust#service",
+            name: "HITRUST Certification Consulting Services",
+            alternateName: "HITRUST CSF Assessment Services",
+            description:
+              "Com-Sec provides HITRUST consulting services including HITRUST readiness assessments, gap assessments, remediation support, e1, i1 and r2 assessments, and certification guidance to help healthcare organizations achieve HITRUST CSF compliance.",
+            url: "https://com-sec.io/hitrust",
+            serviceType: "HITRUST Certification Consulting",
+            category: "Cybersecurity Compliance",
+            provider: {
+              "@id": "https://com-sec.io/#organization",
+            },
+            areaServed: {
+              "@type": "Place",
+              name: "Worldwide",
+            },
+            audience: {
+              "@type": "BusinessAudience",
+              audienceType: [
+                "Healthcare Organizations",
+                "Hospitals",
+                "Healthcare SaaS Providers",
+                "HealthTech Companies",
+                "Medical Device Companies",
+                "Cloud Service Providers",
+              ],
+            },
+            offers: {
+              "@type": "Offer",
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                price: "4000",
+                priceCurrency: "USD",
+              },
+              availability: "https://schema.org/InStock",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "HITRUST Services",
+              itemListElement: [
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HITRUST Readiness Assessment" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HITRUST Gap Assessment" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HITRUST Remediation Support" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HITRUST e1 Assessment" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HITRUST i1 Assessment" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HITRUST r2 Assessment" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "HITRUST Certification Consulting" } },
+              ],
+            },
+            termsOfService: "https://com-sec.io/terms",
+            mainEntityOfPage: "https://com-sec.io/hitrust",
+          })}
+        </script>
+      </Helmet>
+      <div className="min-h-screen bg-white">
       <Navigation />
 
       {/* Hero Section */}
@@ -605,6 +676,7 @@ export default function Hitrust() {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </>
   );
 }
