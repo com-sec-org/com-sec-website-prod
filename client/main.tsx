@@ -115,6 +115,7 @@ import WhatFoundersGetWrongAboutHiringTheirFirstSecurityPerson from "./pages/res
 import ImplementingAnAiGovernanceModelPart3 from "./pages/resources/blog/ImplementingAnAiGovernanceModelPart3";
 import Aiuc1TheComplianceFrameworkNobodysHeardOf from "./pages/resources/blog/Aiuc1TheComplianceFrameworkNobodysHeardOf";
 import ImplementingAiGovernanceModelPart4 from "./pages/resources/blog/ImplementingAiGovernanceModelPart4";
+import ImplementingAiGovernanceModelPart5 from "./pages/resources/blog/ImplementingAiGovernanceModelPart5";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -356,6 +357,7 @@ const App = () => (
               <Route path="/blog/implementing-an-ai-governance-model-part-3" element={<ImplementingAnAiGovernanceModelPart3 />} />
               <Route path="/blog/aiuc-1-the-compliance-framework-nobodys-heard-of" element={<Aiuc1TheComplianceFrameworkNobodysHeardOf />} />
               <Route path="/blog/implementing-an-ai-governance-model-part-4" element={<ImplementingAiGovernanceModelPart4 />} />
+              <Route path="/blog/implementing-an-ai-governance-model-part-5" element={<ImplementingAiGovernanceModelPart5 />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
