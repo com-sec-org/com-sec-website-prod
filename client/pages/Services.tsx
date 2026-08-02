@@ -45,7 +45,7 @@ export default function Services() {
       {/* Services Grid Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="group hover:shadow-lg transition-shadow border-2 hover:border-accent/20">
               <CardHeader className="text-center h-full">
                 <Shield className="h-16 w-16 text-accent mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
@@ -193,34 +193,6 @@ export default function Services() {
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-accent mr-2" />
                       Employee training programs
-                    </li>
-                  </ul>
-                </div>
-              </CardHeader>
-            </Card>
-
-            <Card className="group hover:shadow-lg transition-shadow border-2 hover:border-accent/20">
-              <CardHeader className="text-center">
-                <Users className="h-16 w-16 text-accent mb-4 mx-auto" />
-                <CardTitle className="text-xl mb-3">Risk Management</CardTitle>
-                <CardDescription className="text-base">
-                  Identify, assess, and mitigate security risks across your
-                  entire organization with comprehensive risk management
-                  frameworks.
-                </CardDescription>
-                <div className="pt-4">
-                  <ul className="text-left space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Risk assessments
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Threat modeling
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Incident response planning
                     </li>
                   </ul>
                 </div>

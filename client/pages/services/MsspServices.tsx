@@ -103,7 +103,7 @@ export default function MsspServices() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* SOC Support */}
               <Card className="hover:shadow-xl transition-all duration-300 border-2">
                 <CardHeader>
@@ -210,6 +210,43 @@ export default function MsspServices() {
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                       <span>Security-focused IT operations</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Risk Management */}
+              <Card className="hover:shadow-xl transition-all duration-300 border-2">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-primary mb-4 flex items-center">
+                    <TrendingUp className="h-8 w-8 mr-3 text-emerald-600" />
+                    Risk Management
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-6">
+                    Comprehensive risk assessment and management services to identify, analyze, and mitigate security risks.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Risk assessments and analysis</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Threat modeling and analysis</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Vulnerability management</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Risk monitoring and tracking</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Incident response planning</span>
                     </li>
                   </ul>
                 </CardContent>

@@ -22,7 +22,7 @@ import ComplianceAuditReadiness from "./pages/services/ComplianceAuditReadiness"
 import ItSupport from "./pages/services/ItSupport";
 import SocSupport from "./pages/services/SocSupport";
 import SecurityTraining from "./pages/services/SecurityTraining";
-import RiskManagement from "./pages/services/RiskManagement";
+// import RiskManagement from "./pages/services/RiskManagement";
 import CertificationsAudits from "./pages/services/CertificationsAudits";
 import GrcPlatforms from "./pages/services/GrcPlatforms";
 import MsspServices from "./pages/services/MsspServices";
@@ -46,7 +46,7 @@ import PhishingTest from "./pages/resources/PhishingTest";
 // About Pages
 import Company from "./pages/about/Company";
 import Careers from "./pages/about/Careers";
-import Team from "./pages/about/Team";
+// import Team from "./pages/about/Team";
 
 // Blog Pages
 import Iso27001Guide from "./pages/resources/blog/Iso27001Guide";
@@ -227,7 +227,7 @@ const App = () => (
               <Route path="/soc2-readiness" element={<Soc2Readiness />} />
               <Route path="/cloud-security" element={<CloudSecurity />} />
               <Route path="/security-training" element={<SecurityTraining />} />
-              <Route path="/risk-management" element={<RiskManagement />} />
+              {/* <Route path="/risk-management" element={<RiskManagement />} /> */}
               <Route path="/certifications-audits" element={<CertificationsAudits />} />
               <Route path="/grc-platforms" element={<GrcPlatforms />} />
               <Route path="/mssp-services" element={<MsspServices />} />
@@ -261,11 +261,11 @@ const App = () => (
               {/* About Routes */}
               <Route path="/about/company" element={<Navigate to="/company" replace />} />
               <Route path="/about/careers" element={<Careers />} />
-              <Route path="/about/team" element={<Team />} />
+              {/* <Route path="/about/team" element={<Team />} /> */}
               {/* Top-level About Routes (duplicates for new paths) */}
               <Route path="/company" element={<Company />} />
               <Route path="/careers" element={<Careers />} />
-              <Route path="/team" element={<Team />} />
+              {/* <Route path="/team" element={<Team />} /> */}
 
               {/* Top-level Blog Post Routes (duplicates for new paths) */}
               <Route
