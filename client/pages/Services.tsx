@@ -19,6 +19,7 @@ import {
   Award,
   BarChart3,
   AlertTriangle,
+  Briefcase,
 } from "lucide-react";
 
 export default function Services() {
@@ -45,7 +46,7 @@ export default function Services() {
       {/* Services Grid Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="group hover:shadow-lg transition-shadow border-2 hover:border-accent/20">
               <CardHeader className="text-center h-full">
                 <Shield className="h-16 w-16 text-accent mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
@@ -341,6 +342,46 @@ export default function Services() {
                     asChild
                   >
                     <Link to="/mssp-services">
+                      Learn More <ChevronRight className="ml-1 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow border-2 hover:border-accent/20">
+              <CardHeader className="text-center h-full">
+                <Briefcase className="h-16 w-16 text-accent mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
+                <CardTitle className="text-xl mb-3 group-hover:text-accent transition-colors">
+                  vCISO Services
+                </CardTitle>
+                <CardDescription className="text-base">
+                  Strategic security leadership and executive guidance. Get enterprise-grade CISO expertise without the full-time cost.
+                </CardDescription>
+                <div className="pt-4">
+                  <ul className="text-left space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
+                      Security strategy guidance
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
+                      Executive leadership
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
+                      Risk & compliance oversight
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-4">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="border-accent text-accent hover:bg-accent hover:text-white"
+                    asChild
+                  >
+                    <Link to="/vciso-services">
                       Learn More <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>

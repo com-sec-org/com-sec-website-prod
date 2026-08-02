@@ -26,6 +26,7 @@ import SecurityTraining from "./pages/services/SecurityTraining";
 import CertificationsAudits from "./pages/services/CertificationsAudits";
 import GrcPlatforms from "./pages/services/GrcPlatforms";
 import MsspServices from "./pages/services/MsspServices";
+import VcisoServices from "./pages/services/VcisoServices";
 
 
 // Framework Pages
@@ -231,6 +232,7 @@ const App = () => (
               <Route path="/certifications-audits" element={<CertificationsAudits />} />
               <Route path="/grc-platforms" element={<GrcPlatforms />} />
               <Route path="/mssp-services" element={<MsspServices />} />
+              <Route path="/vciso-services" element={<VcisoServices />} />
 
               {/* Framework Routes — redirect /frameworks/* to canonical top-level URLs */}
               <Route path="/frameworks/soc2" element={<Navigate to="/soc2" replace />} />
