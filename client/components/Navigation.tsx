@@ -88,6 +88,12 @@ export function Navigation() {
                   >
                     GRC Platforms
                   </Link>
+                  <Link
+                    to="/mssp-services"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    MSSP Services
+                  </Link>
                 </div>
               </div>
             </div>
@@ -356,6 +362,13 @@ export function Navigation() {
                         onClick={() => setIsMenuOpen(false)}
                       >
                         GRC Platforms
+                      </Link>
+                      <Link
+                        to="/mssp-services"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        MSSP Services
                       </Link>
                     </div>
                   </div>

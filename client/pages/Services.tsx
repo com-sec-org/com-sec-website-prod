@@ -18,6 +18,7 @@ import {
   ChevronRight,
   Award,
   BarChart3,
+  AlertTriangle,
 } from "lucide-react";
 
 export default function Services() {
@@ -328,6 +329,46 @@ export default function Services() {
                     asChild
                   >
                     <Link to="/grc-platforms">
+                      Learn More <ChevronRight className="ml-1 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow border-2 hover:border-accent/20">
+              <CardHeader className="text-center h-full">
+                <AlertTriangle className="h-16 w-16 text-accent mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
+                <CardTitle className="text-xl mb-3 group-hover:text-accent transition-colors">
+                  MSSP Services
+                </CardTitle>
+                <CardDescription className="text-base">
+                  Comprehensive managed security services including 24/7 SOC support, security training, and IT support for continuous protection.
+                </CardDescription>
+                <div className="pt-4">
+                  <ul className="text-left space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
+                      24/7 SOC monitoring
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
+                      Security training programs
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
+                      Managed IT support
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-4">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="border-accent text-accent hover:bg-accent hover:text-white"
+                    asChild
+                  >
+                    <Link to="/mssp-services">
                       Learn More <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
