@@ -73,7 +73,7 @@ export default function VcisoServices() {
               </h1>
 
               <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-                Enterprise-grade security leadership for organizations that need a CISO but not a full-time executive. Strategic guidance aligned with your business objectives.
+                Get the security expertise of a Fortune 500 CISO—without the $300K salary. We bring 15+ years of enterprise security leadership, strategic direction, and hands-on execution to strengthen your security posture and drive business growth.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
