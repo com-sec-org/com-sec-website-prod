@@ -267,6 +267,34 @@ export default function GrcPlatforms() {
                     "Audit-ready reporting",
                   ],
                 },
+                {
+                  name: "Screenata",
+                  description: "An AI-powered compliance officer that scans your infrastructure, writes policies grounded in real systems, and operates continuously across Slack, email, terminal, and PRs to automate evidence collection and compliance operations.",
+                  capabilities: [
+                    "Infrastructure scanning and analysis",
+                    "AI-generated policy creation from real systems",
+                    "Automated evidence collection and signing",
+                    "Continuous control monitoring at 6 AM",
+                    "Claim-to-artifact traceability",
+                    "Slack and email reporting",
+                    "GitHub and terminal integration",
+                    "Multi-framework support (SOC 2, HIPAA, more)",
+                  ],
+                },
+                {
+                  name: "OneLeet",
+                  description: "A security-first compliance automation platform that combines continuous monitoring with in-house pentesting expertise, code security scanning, and dedicated vCISO guidance for real-world security implementation alongside compliance.",
+                  capabilities: [
+                    "Automated evidence collection and monitoring",
+                    "OSCE-certified penetration testing",
+                    "Code security scanning and vulnerability detection",
+                    "Attack surface management",
+                    "Dark web monitoring",
+                    "Dedicated vCISO support",
+                    "Control workflow management and task tracking",
+                    "Integration with AWS, Azure, GCP, GitHub, Slack",
+                  ],
+                },
               ].map((platform) => (
                 <Card
                   key={platform.name}
