@@ -123,7 +123,7 @@ export default function VcisoServices() {
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span>vCISO provides strategic guidance at 20-30% of the cost</span>
+                      <span className="font-semibold">vCISO services start at $150/hr—a fraction of full-time cost</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -286,18 +286,21 @@ export default function VcisoServices() {
                 {
                   title: "Strategic Advisory",
                   hours: "8-16 hours/month",
+                  pricing: "$1,200-$2,400/month",
                   description: "Guidance on security initiatives and strategic decisions.",
                   ideal: "Organizations with mature security teams needing executive perspective.",
                 },
                 {
                   title: "Fractional CISO",
                   hours: "20-40 hours/month",
+                  pricing: "$3,000-$6,000/month",
                   description: "Part-time CISO role covering strategy, oversight, and governance.",
                   ideal: "Mid-size organizations building security programs.",
                 },
                 {
                   title: "Interim/Transition CISO",
                   hours: "40+ hours/month",
+                  pricing: "$6,000+/month",
                   description: "Full-time temporary CISO coverage during transitions or crises.",
                   ideal: "Organizations in transition, interim leadership, or crisis mode.",
                 },
@@ -309,6 +312,9 @@ export default function VcisoServices() {
                     </CardTitle>
                     <div className="text-emerald-600 font-semibold text-sm mt-2">
                       {model.hours}
+                    </div>
+                    <div className="text-accent font-bold text-lg mt-1">
+                      {model.pricing}
                     </div>
                   </CardHeader>
                   <CardContent className="flex-grow">
