@@ -70,11 +70,35 @@ export function Navigation() {
                   >
                     Security Training
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/risk-management"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Risk Management
+                  </Link> */}
+                  <Link
+                    to="/certifications-audits"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    Certifications & Audits
+                  </Link>
+                  <Link
+                    to="/grc-platforms"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    GRC Platforms
+                  </Link>
+                  <Link
+                    to="/mssp-services"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    MSSP Services
+                  </Link>
+                  <Link
+                    to="/vciso-services"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    vCISO Services
                   </Link>
                 </div>
               </div>
@@ -201,12 +225,12 @@ export function Navigation() {
                   >
                     Careers
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/team"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Team
-                  </Link>
+                  </Link> */}
                   <Link
                     to="/partnerships"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
@@ -324,12 +348,40 @@ export function Navigation() {
                       >
                         Security Training
                       </Link>
-                      <Link
+                      {/* <Link
                         to="/risk-management"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Risk Management
+                      </Link> */}
+                      <Link
+                        to="/certifications-audits"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Certifications & Audits
+                      </Link>
+                      <Link
+                        to="/grc-platforms"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        GRC Platforms
+                      </Link>
+                      <Link
+                        to="/mssp-services"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        MSSP Services
+                      </Link>
+                      <Link
+                        to="/vciso-services"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        vCISO Services
                       </Link>
                     </div>
                   </div>
@@ -490,13 +542,13 @@ export function Navigation() {
                       >
                         Careers
                       </Link>
-                      <Link
+                      {/* <Link
                         to="/team"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Team
-                      </Link>
+                      </Link> */}
                       <Link
                         to="/partnerships"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
