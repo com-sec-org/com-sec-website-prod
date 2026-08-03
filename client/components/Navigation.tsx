@@ -38,9 +38,42 @@ export function Navigation() {
                 Services
                 <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
+                  {/* NEW 5-BUCKET SERVICES */}
                   <Link
+                    to="/fractional-security-leadership"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                  >
+                    Fractional Security Leadership
+                  </Link>
+                  <Link
+                    to="/managed-security-services"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                  >
+                    Managed Security Services (MSSP)
+                  </Link>
+                  <Link
+                    to="/compliance-privacy-grc"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                  >
+                    Compliance, Privacy & GRC
+                  </Link>
+                  <Link
+                    to="/assessments-audits-offensive-security"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                  >
+                    Assessments, Audits & Offensive Security
+                  </Link>
+                  <Link
+                    to="/incident-response-resilience"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                  >
+                    Incident Response & Resilience
+                  </Link>
+
+                  {/* OLD SERVICES (COMMENTED OUT) */}
+                  {/* <Link
                     to="/compliance-audit-readiness"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
@@ -70,12 +103,6 @@ export function Navigation() {
                   >
                     Security Training
                   </Link>
-                  {/* <Link
-                    to="/risk-management"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Risk Management
-                  </Link> */}
                   <Link
                     to="/certifications-audits"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
@@ -99,7 +126,7 @@ export function Navigation() {
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     vCISO Services
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
