@@ -15,18 +15,26 @@ import Contact from "./pages/Contact";
 import Partnerships from "./pages/Partnerships";
 
 // Service Pages
-import Soc2Readiness from "./pages/services/Soc2Readiness";
-import PenetrationTesting from "./pages/services/PenetrationTesting";
-import CloudSecurity from "./pages/services/CloudSecurity";
-import ComplianceAuditReadiness from "./pages/services/ComplianceAuditReadiness";
-import ItSupport from "./pages/services/ItSupport";
-import SocSupport from "./pages/services/SocSupport";
-import SecurityTraining from "./pages/services/SecurityTraining";
+// NEW 5-BUCKET SERVICES
+import FractionalSecurityLeadership from "./pages/services/FractionalSecurityLeadership";
+import ManagedSecurityServices from "./pages/services/ManagedSecurityServices";
+import CompliancePrivacyGRC from "./pages/services/CompliancePrivacyGRC";
+import AssessmentsAuditsOffensiveSecurity from "./pages/services/AssessmentsAuditsOffensiveSecurity";
+import IncidentResponseResilience from "./pages/services/IncidentResponseResilience";
+
+// OLD SERVICES (COMMENTED OUT)
+// import Soc2Readiness from "./pages/services/Soc2Readiness";
+// import PenetrationTesting from "./pages/services/PenetrationTesting";
+// import CloudSecurity from "./pages/services/CloudSecurity";
+// import ComplianceAuditReadiness from "./pages/services/ComplianceAuditReadiness";
+// import ItSupport from "./pages/services/ItSupport";
+// import SocSupport from "./pages/services/SocSupport";
+// import SecurityTraining from "./pages/services/SecurityTraining";
 // import RiskManagement from "./pages/services/RiskManagement";
-import CertificationsAudits from "./pages/services/CertificationsAudits";
-import GrcPlatforms from "./pages/services/GrcPlatforms";
-import MsspServices from "./pages/services/MsspServices";
-import VcisoServices from "./pages/services/VcisoServices";
+// import CertificationsAudits from "./pages/services/CertificationsAudits";
+// import GrcPlatforms from "./pages/services/GrcPlatforms";
+// import MsspServices from "./pages/services/MsspServices";
+// import VcisoServices from "./pages/services/VcisoServices";
 
 
 // Framework Pages
@@ -213,11 +221,20 @@ const App = () => (
               {/* Service & Pricing Routes */}
               <Route path="/services" element={<Services />} />
               <Route path="/pricing" element={<Pricing />} />
-              <Route path="/services/compliance-audit-service" element={<Navigate to="/compliance-audit-service" replace />} />
+
+              {/* NEW 5-BUCKET SERVICES */}
+              <Route path="/fractional-security-leadership" element={<FractionalSecurityLeadership />} />
+              <Route path="/managed-security-services" element={<ManagedSecurityServices />} />
+              <Route path="/compliance-privacy-grc" element={<CompliancePrivacyGRC />} />
+              <Route path="/assessments-audits-offensive-security" element={<AssessmentsAuditsOffensiveSecurity />} />
+              <Route path="/incident-response-resilience" element={<IncidentResponseResilience />} />
+
+              {/* OLD SERVICES ROUTES (COMMENTED OUT) */}
+              {/* <Route path="/services/compliance-audit-service" element={<Navigate to="/compliance-audit-service" replace />} />
               <Route path="/services/compliance-audit-readiness" element={<Navigate to="/compliance-audit-service" replace />} />
               <Route path="/compliance-audit-readiness" element={<Navigate to="/compliance-audit-service" replace />} />
-              <Route path="/compliance-audit-service" element={<ComplianceAuditReadiness />} />
-              <Route path="/services/penetration-testing-services" element={<Navigate to="/penetration-testing-services" replace />} />
+              <Route path="/compliance-audit-service" element={<ComplianceAuditReadiness />} /> */}
+              {/* <Route path="/services/penetration-testing-services" element={<Navigate to="/penetration-testing-services" replace />} />
               <Route path="/services/it-support" element={<Navigate to="/it-support" replace />} />
               <Route path="/services/soc-support" element={<Navigate to="/soc-support" replace />} />
               <Route path="/services/soc2-readiness" element={<Navigate to="/soc2-readiness" replace />} />
@@ -230,11 +247,10 @@ const App = () => (
               <Route path="/soc2-readiness" element={<Soc2Readiness />} />
               <Route path="/cloud-security" element={<CloudSecurity />} />
               <Route path="/security-training" element={<SecurityTraining />} />
-              {/* <Route path="/risk-management" element={<RiskManagement />} /> */}
               <Route path="/certifications-audits" element={<CertificationsAudits />} />
               <Route path="/grc-platforms" element={<GrcPlatforms />} />
               <Route path="/mssp-services" element={<MsspServices />} />
-              <Route path="/vciso-services" element={<VcisoServices />} />
+              <Route path="/vciso-services" element={<VcisoServices />} /> */}
 
               {/* Framework Routes — redirect /frameworks/* to canonical top-level URLs */}
               <Route path="/frameworks/soc2" element={<Navigate to="/soc2" replace />} />
