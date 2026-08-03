@@ -43,31 +43,31 @@ export function Navigation() {
                   {/* NEW 5-BUCKET SERVICES */}
                   <Link
                     to="/fractional-security-leadership"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Fractional Security Leadership
                   </Link>
                   <Link
                     to="/managed-security-services"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Managed Security Services (MSSP)
                   </Link>
                   <Link
                     to="/compliance-privacy-grc"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Compliance, Privacy & GRC
                   </Link>
                   <Link
                     to="/assessments-audits-offensive-security"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Assessments, Audits & Offensive Security
                   </Link>
                   <Link
                     to="/incident-response-resilience"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     Incident Response & Resilience
                   </Link>
