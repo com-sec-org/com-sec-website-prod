@@ -211,6 +211,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-08-01T00:00:00Z",
   },
+  "/blog/how-to-choose-a-soc-2-auditor": {
+    title: "How to Choose a SOC 2 Auditor Without Overpaying or Getting Burned",
+    description:
+      "A founder gets two SOC 2 audit quotes — one is $30,000, the other $12,000, same scope. Here's how to tell a legitimate low-cost auditor from one cutting corners.",
+    image: `${BASE_URL}/images/blog-images/how-to-choose-a-soc-2-auditor.png`,
+    url: `${BASE_URL}/blog/how-to-choose-a-soc-2-auditor`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-03T00:00:00Z",
+  },
   "/blog/aiuc-1-the-compliance-framework-nobodys-heard-of": {
     title:
       "AIUC-1: The Compliance Framework Nobody's Heard of That's About to Matter a Lot",
