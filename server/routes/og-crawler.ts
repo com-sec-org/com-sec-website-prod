@@ -211,6 +211,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-08-01T00:00:00Z",
   },
+  "/blog/expanding-to-the-eu-what-you-need-to-get-right": {
+    title: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
+    description:
+      "GDPR, the EU AI Act, NIS2, data residency, and ISO 27001 — the practical compliance checklist for US companies expanding into the EU market.",
+    image: `${BASE_URL}/images/blog-images/expanding-to-the-eu-what-you-need-to-get-right.png`,
+    url: `${BASE_URL}/blog/expanding-to-the-eu-what-you-need-to-get-right`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-06T00:00:00Z",
+  },
   "/blog/how-to-choose-a-soc-2-auditor": {
     title: "How to Choose a SOC 2 Auditor Without Overpaying or Getting Burned",
     description:

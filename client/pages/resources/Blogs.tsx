@@ -30,6 +30,20 @@ import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
+              {
+                id: "expanding-to-the-eu-what-you-need-to-get-right",
+                title: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
+                excerpt: "GDPR, the EU AI Act, NIS2, data residency, and ISO 27001 — the practical compliance checklist for US companies expanding into the EU market.",
+                date: "August 06 2026",
+                readTime: "9 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: true,
+                image: "/images/blog-images/expanding-to-the-eu-what-you-need-to-get-right.png",
+                imageAlt: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
+                link: "/blog/expanding-to-the-eu-what-you-need-to-get-right",
+              },
               //  {
               //   id: "soc-2-compliance-services-california",
               //   title: "SOC 2 Compliance Services in California: What Founders Need to Know",
@@ -1645,15 +1659,6 @@ export default function Blogs() {
                           {article.category}
                         </span>
                       </div>
-
-                      {/* Featured Badge */}
-                      {article.featured && (
-                        <div className="absolute top-4 right-4">
-                          <span className="px-2 py-1 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-full text-xs font-bold animate-pulse shadow-lg">
-                            Featured ⭐
-                          </span>
-                        </div>
-                      )}
 
                       {/* Reading Time with Glow Effect */}
                       <div className="absolute bottom-4 right-4 flex items-center gap-2 bg-black/40 backdrop-blur-sm rounded-full px-3 py-1">

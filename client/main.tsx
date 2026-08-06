@@ -130,6 +130,7 @@ import Aiuc1TheComplianceFrameworkNobodysHeardOf from "./pages/resources/blog/Ai
 import ImplementingAiGovernanceModelPart4 from "./pages/resources/blog/ImplementingAiGovernanceModelPart4";
 import ImplementingAiGovernanceModelPart5 from "./pages/resources/blog/ImplementingAiGovernanceModelPart5";
 import WhenTheCeoSaysNo from "./pages/resources/blog/WhenTheCeoSaysNo";
+import ExpandingToTheEu from "./pages/resources/blog/ExpandingToTheEu";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -386,6 +387,7 @@ const App = () => (
               <Route path="/blog/implementing-an-ai-governance-model-part-4" element={<ImplementingAiGovernanceModelPart4 />} />
               <Route path="/blog/implementing-an-ai-governance-model-part-5" element={<ImplementingAiGovernanceModelPart5 />} />
               <Route path="/blog/when-the-ceo-says-no-to-your-security-recommendation" element={<WhenTheCeoSaysNo />} />
+              <Route path="/blog/expanding-to-the-eu-what-you-need-to-get-right" element={<ExpandingToTheEu />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
