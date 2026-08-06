@@ -10,6 +10,7 @@ import {
   ArrowLeft,
   Share2,
   Check,
+  CheckCircle,
 } from "lucide-react";
 
 export default function ExpandingToTheEu() {
@@ -383,16 +384,14 @@ export default function ExpandingToTheEu() {
                   <p className="text-gray-700 leading-relaxed text-lg">
                     Before you start operating in the EU:
                   </p>
-                  <div className="space-y-4">
+                  <ul className="space-y-3 bg-gray-50 border border-gray-200 rounded-lg p-6">
                     {checklistItems.map((item, index) => (
-                      <div
-                        key={index}
-                        className="bg-sky-50 border-l-4 border-sky-500 rounded-r-lg p-4"
-                      >
-                        <p className="text-gray-800 text-lg">{item}</p>
-                      </div>
+                      <li key={index} className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700 text-lg">{item}</span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </section>
 
