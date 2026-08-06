@@ -419,7 +419,7 @@ export default function ExpandingToTheEu() {
                     className="text-sky-700 font-semibold hover:underline"
                   >
                     Com-Sec
-                  </a>, a cybersecurity and compliance consulting firm supporting startups and growth-stage companies. [com-sec.com]
+                  </a>, a cybersecurity and compliance consulting firm supporting startups and growth-stage companies.
                 </p>
               </section>
             </div>
