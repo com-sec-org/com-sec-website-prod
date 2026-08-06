@@ -687,6 +687,27 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/what-founders-get-wrong-about-hiring-their-first-security-person`,
     image: `${BASE_URL}/images/blog-images/what-founders-get-wrong-about-hiring-their-first-security-person.png`,
   },
+  "/blog/how-to-choose-a-soc-2-auditor": {
+    title: "How to Choose a SOC 2 Auditor Without Overpaying or Getting Burned",
+    description:
+      "A founder gets two SOC 2 audit quotes — one is $30,000, the other $12,000, same scope. Here's how to tell a legitimate low-cost auditor from one cutting corners.",
+    canonical: `${BASE_URL}/blog/how-to-choose-a-soc-2-auditor`,
+    image: `${BASE_URL}/images/blog-images/how-to-choose-a-soc-2-auditor.png`,
+  },
+  "/blog/when-the-ceo-says-no-to-your-security-recommendation": {
+    title: "When the CEO Says No to Your Security Recommendation",
+    description:
+      "The role of security, compliance, and legal is to advise, not to decide. Here's how to tell the difference between risk acceptance and negligence.",
+    canonical: `${BASE_URL}/blog/when-the-ceo-says-no-to-your-security-recommendation`,
+    image: `${BASE_URL}/images/blog-images/when-the-ceo-says-no-to-your-security-recommendation.png`,
+  },
+  "/blog/expanding-to-the-eu-what-you-need-to-get-right": {
+    title: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
+    description:
+      "GDPR, the EU AI Act, NIS2, data residency, and ISO 27001 — the practical compliance checklist for US companies expanding into the EU market.",
+    canonical: `${BASE_URL}/blog/expanding-to-the-eu-what-you-need-to-get-right`,
+    image: `${BASE_URL}/images/blog-images/expanding-to-the-eu-what-you-need-to-get-right.png`,
+  },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:

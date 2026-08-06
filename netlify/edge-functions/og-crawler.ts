@@ -221,6 +221,51 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-07-22T00:00:00Z",
   },
+  "/blog/how-to-choose-a-soc-2-auditor": {
+    title: "How to Choose a SOC 2 Auditor Without Overpaying or Getting Burned",
+    description:
+      "A founder gets two SOC 2 audit quotes — one is $30,000, the other $12,000, same scope. Here's how to tell a legitimate low-cost auditor from one cutting corners.",
+    image: `${BASE_URL}/images/blog-images/how-to-choose-a-soc-2-auditor.png`,
+    url: `${BASE_URL}/blog/how-to-choose-a-soc-2-auditor`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-03T00:00:00Z",
+  },
+  "/blog/implementing-an-ai-governance-model-part-4": {
+    title: "Implementing an AI Governance Model — Part 4: Vendor AI Governance and Third-Party Risk",
+    description:
+      "Part 4: Vendor AI Governance and Third-Party Risk. Your AI governance program doesn't stop at the tools your employees use directly — it extends to every vendor in your stack that uses AI.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-4.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-4`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-07-29T00:00:00Z",
+  },
+  "/blog/implementing-an-ai-governance-model-part-5": {
+    title: "Implementing an AI Governance Model — Part 5: Keeping It Running: Ongoing AI Governance Operations",
+    description:
+      "Part 5: Keeping It Running. Building an AI governance program takes a few weeks — keeping it running is the actual work. Here's how to operationalize it so it doesn't decay.",
+    image: `${BASE_URL}/images/blog-images/implementing-an-ai-governance-model-part-5.png`,
+    url: `${BASE_URL}/blog/implementing-an-ai-governance-model-part-5`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-01T00:00:00Z",
+  },
+  "/blog/when-the-ceo-says-no-to-your-security-recommendation": {
+    title: "When the CEO Says No to Your Security Recommendation",
+    description:
+      "The role of security, compliance, and legal is to advise, not to decide. Here's how to tell the difference between risk acceptance and negligence.",
+    image: `${BASE_URL}/images/blog-images/when-the-ceo-says-no-to-your-security-recommendation.png`,
+    url: `${BASE_URL}/blog/when-the-ceo-says-no-to-your-security-recommendation`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-05T00:00:00Z",
+  },
+  "/blog/expanding-to-the-eu-what-you-need-to-get-right": {
+    title: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
+    description:
+      "GDPR, the EU AI Act, NIS2, data residency, and ISO 27001 — the practical compliance checklist for US companies expanding into the EU market.",
+    image: `${BASE_URL}/images/blog-images/expanding-to-the-eu-what-you-need-to-get-right.png`,
+    url: `${BASE_URL}/blog/expanding-to-the-eu-what-you-need-to-get-right`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-06T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

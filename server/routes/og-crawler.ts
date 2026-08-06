@@ -211,6 +211,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-08-01T00:00:00Z",
   },
+  "/blog/when-the-ceo-says-no-to-your-security-recommendation": {
+    title: "When the CEO Says No to Your Security Recommendation",
+    description:
+      "The role of security, compliance, and legal is to advise, not to decide. Here's how to tell the difference between risk acceptance and negligence.",
+    image: `${BASE_URL}/images/blog-images/when-the-ceo-says-no-to-your-security-recommendation.png`,
+    url: `${BASE_URL}/blog/when-the-ceo-says-no-to-your-security-recommendation`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-05T00:00:00Z",
+  },
   "/blog/expanding-to-the-eu-what-you-need-to-get-right": {
     title: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
     description:
