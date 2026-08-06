@@ -131,6 +131,7 @@ import ImplementingAiGovernanceModelPart4 from "./pages/resources/blog/Implement
 import ImplementingAiGovernanceModelPart5 from "./pages/resources/blog/ImplementingAiGovernanceModelPart5";
 import WhenTheCeoSaysNo from "./pages/resources/blog/WhenTheCeoSaysNo";
 import ExpandingToTheEu from "./pages/resources/blog/ExpandingToTheEu";
+import ThinkYoureTooSmallForSecurity from "./pages/resources/blog/ThinkYoureTooSmallForSecurity";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -388,6 +389,7 @@ const App = () => (
               <Route path="/blog/implementing-an-ai-governance-model-part-5" element={<ImplementingAiGovernanceModelPart5 />} />
               <Route path="/blog/when-the-ceo-says-no-to-your-security-recommendation" element={<WhenTheCeoSaysNo />} />
               <Route path="/blog/expanding-to-the-eu-what-you-need-to-get-right" element={<ExpandingToTheEu />} />
+              <Route path="/blog/think-youre-too-small-for-security-think-again" element={<ThinkYoureTooSmallForSecurity />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
