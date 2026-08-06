@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/think-youre-too-small-for-security-think-again</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/expanding-to-the-eu-what-you-need-to-get-right</loc>
     <priority>0.7</priority>
   </url>

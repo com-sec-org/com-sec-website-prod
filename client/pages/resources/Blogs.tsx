@@ -30,19 +30,6 @@ import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
-              {
-                id: "expanding-to-the-eu-what-you-need-to-get-right",
-                title: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
-                excerpt: "GDPR, the EU AI Act, NIS2, data residency, and ISO 27001 — the practical compliance checklist for US companies expanding into the EU market.",
-                date: "August 06 2026",
-                readTime: "9 min read",
-                author: "Farbod Fakhrai",
-                category: "Compliance",
-                categoryColor: "bg-sky-100 text-sky-800",
-                image: "/images/blog-images/expanding-to-the-eu-what-you-need-to-get-right.png",
-                imageAlt: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
-                link: "/blog/expanding-to-the-eu-what-you-need-to-get-right",
-              },
               //  {
               //   id: "soc-2-compliance-services-california",
               //   title: "SOC 2 Compliance Services in California: What Founders Need to Know",
@@ -57,6 +44,33 @@ const allArticles = [
               //   imageAlt: "SOC 2 compliance services in California for startups and tech companies",
               //   link: "/blog/soc-2-compliance-services-california",
               // },
+              {
+                id: "think-youre-too-small-for-security-think-again",
+                title: "Think You're Too Small for Security? Think Again.",
+                excerpt: "Wealth management firms, family offices, VC funds, law firms, and medical practices don't need a compliance certification. Here's what they actually need to protect the sensitive data they hold.",
+                date: "August 06 2026",
+                readTime: "10 min read",
+                author: "Farbod Fakhrai",
+                category: "Security",
+                categoryColor: "sky",
+                featured: false,
+                image: "/images/blog-images/think-youre-too-small-for-security-think-again.png",
+                imageAlt: "Think You're Too Small for Security? Think Again.",
+                link: "/blog/think-youre-too-small-for-security-think-again",
+              },
+              {
+                id: "expanding-to-the-eu-what-you-need-to-get-right",
+                title: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
+                excerpt: "GDPR, the EU AI Act, NIS2, data residency, and ISO 27001 — the practical compliance checklist for US companies expanding into the EU market.",
+                date: "August 06 2026",
+                readTime: "9 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                image: "/images/blog-images/expanding-to-the-eu-what-you-need-to-get-right.png",
+                imageAlt: "Expanding to the EU? Here's What You Need to Get Right Before You Start.",
+                link: "/blog/expanding-to-the-eu-what-you-need-to-get-right",
+              },
               {
                 id: "when-the-ceo-says-no-to-your-security-recommendation",
                 title: "When the CEO Says No to Your Security Recommendation",
