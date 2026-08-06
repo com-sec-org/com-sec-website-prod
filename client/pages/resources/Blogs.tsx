@@ -30,21 +30,6 @@ import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
 const allArticles = [
-              // {
-              //   id: "rippling-entered-compliance-market",
-              //   title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
-              //   excerpt:
-              //     "Rippling launched its Automated Compliance module in 2026. With 25,000 customers who match the exact profile of companies buying SOC 2 today, the market math is significant — and the disruption is real.",
-              //   date: "May 29, 2026",
-              //   readTime: "10 min read",
-              //   author: "Farbod Fakhrai",
-              //   category: "Market Analysis",
-              //   categoryColor: "bg-orange-100 text-orange-800",
-              //   featured: false,
-              //   image: "/images/blog-images/rippling-compliance-market.png",
-              //   imageAlt: "Rippling compliance market analysis — Vanta, Drata, and Rippling customer overlap",
-              //   link: "/blog/rippling-entered-compliance-market",
-              // },
               //  {
               //   id: "soc-2-compliance-services-california",
               //   title: "SOC 2 Compliance Services in California: What Founders Need to Know",
@@ -68,7 +53,7 @@ const allArticles = [
                 author: "Farbod Fakhrai",
                 category: "vCISO Insights",
                 categoryColor: "sky",
-                featured: false,
+                featured: true,
                 image: "/images/blog-images/when-the-ceo-says-no-to-your-security-recommendation.png",
                 imageAlt: "When the CEO Says No to Your Security Recommendation",
                 link: "/blog/when-the-ceo-says-no-to-your-security-recommendation",
@@ -82,7 +67,7 @@ const allArticles = [
                 author: "Farbod Fakhrai",
                 category: "Compliance",
                 categoryColor: "bg-sky-100 text-sky-800",
-                featured: false,
+                featured: true,
                 image: "/images/blog-images/how-to-choose-a-soc-2-auditor.png",
                 imageAlt: "How to Choose a SOC 2 Auditor Without Overpaying or Getting Burned",
                 link: "/blog/how-to-choose-a-soc-2-auditor",
@@ -357,6 +342,21 @@ const allArticles = [
                 image: "/images/blog-images/mythos-changed-the-game-part-4.png",
                 imageAlt: "Mythos changed the game part 4 - the basics still matter more than the headlines",
                 link: "/blog/mythos-changed-the-game-part-4",
+              },
+              {
+                id: "rippling-entered-compliance-market",
+                title: "Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.",
+                excerpt:
+                  "Rippling launched its Automated Compliance module in 2026. With 25,000 customers who match the exact profile of companies buying SOC 2 today, the market math is significant — and the disruption is real.",
+                date: "May 29, 2026",
+                readTime: "10 min read",
+                author: "Farbod Fakhrai",
+                category: "Market Analysis",
+                categoryColor: "bg-orange-100 text-orange-800",
+                featured: false,
+                image: "/images/blog-images/rippling-compliance-market.png",
+                imageAlt: "Rippling compliance market analysis — Vanta, Drata, and Rippling customer overlap",
+                link: "/blog/rippling-entered-compliance-market",
               },
               {
                 id: "mythos-compliance-alone-wont-save-you-part-3",
@@ -1453,28 +1453,28 @@ export default function Blogs() {
             </h2>
           </div>
 
-          <Link to="/blog/rippling-entered-compliance-market">
+          <Link to="/blog/how-to-choose-a-soc-2-auditor">
             <Card className="hover:shadow-2xl transition-all duration-500 border-0 shadow-xl overflow-hidden group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div className="bg-gradient-to-br from-orange-600 to-amber-700 p-8 lg:p-12 text-white">
+                <div className="bg-gradient-to-br from-sky-900 via-blue-800 to-slate-900 p-8 lg:p-12 text-white">
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="bg-orange-400/20 text-orange-200 px-3 py-1 rounded-full text-sm font-medium animate-pulse">
+                    <span className="bg-sky-400/20 text-sky-200 px-3 py-1 rounded-full text-sm font-medium animate-pulse">
                       Featured
                     </span>
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm">
-                      📊 Market Analysis
+                      🛡️ Compliance
                     </span>
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-bold mb-4 leading-tight group-hover:text-orange-200 transition-colors">
-                    Rippling Just Entered the Compliance Market. Here's Why the Numbers Matter.
+                  <h3 className="text-2xl lg:text-3xl font-bold mb-4 leading-tight group-hover:text-sky-200 transition-colors">
+                    How to Choose a SOC 2 Auditor Without Overpaying or Getting Burned
                   </h3>
                   <p className="text-white/90 mb-6 text-lg leading-relaxed">
-                    Rippling launched its Automated Compliance module in 2026. With 25,000 customers who match the exact profile of companies buying SOC 2 today, the market math is significant — and the disruption is real.
+                    A founder gets two SOC 2 audit quotes. One is $30,000 and the other is $12,000. Here's how to tell a legitimate low-cost auditor from one cutting corners.
                   </p>
                   <div className="flex items-center gap-4 text-white/80 mb-6">
                     <div className="flex items-center gap-2">
                       <Calendar className="h-4 w-4" />
-                      <span className="text-sm">May 29, 2026</span>
+                      <span className="text-sm">August 03 2026</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="h-4 w-4" />
@@ -1487,7 +1487,7 @@ export default function Blogs() {
                   </div>
                   <Button
                     variant="outline"
-                    className="border-white bg-white/10 text-white hover:bg-white hover:text-orange-700 group-hover:scale-105 transition-transform backdrop-blur-sm font-semibold"
+                    className="border-white bg-white/10 text-white hover:bg-white hover:text-sky-900 group-hover:scale-105 transition-transform backdrop-blur-sm font-semibold"
                   >
                     Read Full Article
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -1495,9 +1495,9 @@ export default function Blogs() {
                 </div>
                 <div className="relative overflow-hidden">
                   <img
-                    src="/images/blog-images/rippling-compliance-market-banner.png"
-                    alt="Rippling compliance market analysis — Vanta, Drata, and Rippling customer overlap"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="/images/blog-images/how-to-choose-a-soc-2-auditor.png"
+                    alt="How to Choose a SOC 2 Auditor Without Overpaying or Getting Burned"
+                    className="w-full h-full object-cover object-left group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>

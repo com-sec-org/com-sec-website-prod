@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/when-the-ceo-says-no-to-your-security-recommendation</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/what-founders-get-wrong-about-hiring-their-first-security-person</loc>
     <priority>0.7</priority>
   </url>
@@ -208,6 +212,10 @@
   </url>
   <url>
     <loc>https://com-sec.io/blog/mythos-changed-the-game-part-4</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/rippling-entered-compliance-market</loc>
     <priority>0.7</priority>
   </url>
   <url>
