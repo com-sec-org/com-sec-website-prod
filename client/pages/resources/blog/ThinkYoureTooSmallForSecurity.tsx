@@ -231,7 +231,7 @@ export default function ThinkYoureTooSmallForSecurity() {
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
                   Why small firms are attractive targets
                 </h2>
                 <div className="space-y-5">
@@ -248,7 +248,7 @@ export default function ThinkYoureTooSmallForSecurity() {
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
                   The problem with "we're too small for this"
                 </h2>
                 <div className="space-y-5">
@@ -265,7 +265,7 @@ export default function ThinkYoureTooSmallForSecurity() {
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
                   What you actually need
                 </h2>
                 <div className="space-y-5">
@@ -292,7 +292,7 @@ export default function ThinkYoureTooSmallForSecurity() {
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
                   Wire fraud deserves its own section
                 </h2>
                 <div className="space-y-5">
@@ -312,7 +312,7 @@ export default function ThinkYoureTooSmallForSecurity() {
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
                   Cyber insurance
                 </h2>
                 <div className="space-y-5">
@@ -326,7 +326,7 @@ export default function ThinkYoureTooSmallForSecurity() {
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
                   The regulatory angle
                 </h2>
                 <div className="space-y-5">
@@ -363,7 +363,7 @@ export default function ThinkYoureTooSmallForSecurity() {
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
                   What this costs
                 </h2>
                 <div className="space-y-5">
@@ -385,7 +385,7 @@ export default function ThinkYoureTooSmallForSecurity() {
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 italic">
                   The bottom line
                 </h2>
                 <div className="space-y-5">

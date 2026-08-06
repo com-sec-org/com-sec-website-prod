@@ -708,6 +708,13 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/expanding-to-the-eu-what-you-need-to-get-right`,
     image: `${BASE_URL}/images/blog-images/expanding-to-the-eu-what-you-need-to-get-right.png`,
   },
+  "/blog/think-youre-too-small-for-security-think-again": {
+    title: "Think You're Too Small for Security? Think Again.",
+    description:
+      "Wealth management firms, family offices, VC funds, law firms, and medical practices don't need a compliance certification. Here's what they actually need to protect the sensitive data they hold.",
+    canonical: `${BASE_URL}/blog/think-youre-too-small-for-security-think-again`,
+    image: `${BASE_URL}/images/blog-images/think-youre-too-small-for-security-think-again.png`,
+  },
   "/blog/openai-launched-daybreak": {
     title: "OpenAI Launched Daybreak. Here's What It Means for Your Company.",
     description:

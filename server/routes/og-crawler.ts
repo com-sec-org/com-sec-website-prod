@@ -229,6 +229,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-08-06T00:00:00Z",
   },
+  "/blog/think-youre-too-small-for-security-think-again": {
+    title: "Think You're Too Small for Security? Think Again.",
+    description:
+      "Wealth management firms, family offices, VC funds, law firms, and medical practices don't need a compliance certification. Here's what they actually need to protect the sensitive data they hold.",
+    image: `${BASE_URL}/images/blog-images/think-youre-too-small-for-security-think-again.png`,
+    url: `${BASE_URL}/blog/think-youre-too-small-for-security-think-again`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-08-07T00:00:00Z",
+  },
   "/blog/how-to-choose-a-soc-2-auditor": {
     title: "How to Choose a SOC 2 Auditor Without Overpaying or Getting Burned",
     description:
