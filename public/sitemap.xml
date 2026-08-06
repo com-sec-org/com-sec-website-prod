@@ -126,6 +126,18 @@
   </url>
 
   <!-- Blog Articles -->
+    <url>
+    <loc>https://com-sec.io/blog/when-the-ceo-says-no-to-your-security-recommendation</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://com-sec.io/blog/what-founders-get-wrong-about-hiring-their-first-security-person</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/how-to-choose-a-soc-2-auditor</loc>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://com-sec.io/blog/aiuc-1-the-compliance-framework-nobodys-heard-of</loc>
     <priority>0.7</priority>
@@ -200,6 +212,10 @@
   </url>
   <url>
     <loc>https://com-sec.io/blog/mythos-changed-the-game-part-4</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/blog/rippling-entered-compliance-market</loc>
     <priority>0.7</priority>
   </url>
   <url>
