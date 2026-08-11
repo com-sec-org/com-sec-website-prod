@@ -96,7 +96,7 @@ export default function Top10OnlineSafetyTips() {
             <div className="flex flex-wrap items-center gap-6 text-sky-100">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>2026</span>
+                <span>October 6, 2023</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

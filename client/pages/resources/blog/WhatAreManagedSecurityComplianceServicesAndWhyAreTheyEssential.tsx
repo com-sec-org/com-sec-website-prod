@@ -50,7 +50,6 @@ export default function WhatAreManagedSecurityComplianceServicesAndWhyAreTheyEss
       "What Are Managed Security Compliance Services and Why Are They Essential?",
     intro:
       "Did you know that over half of small businesses fail within just six months after a cyberattack? In today’s digital world, businesses rely on computers to store crucial information and run daily operations—but this also makes them vulnerable to cyber threats. At Com-Sec, we understand that safeguarding your business data and ensuring compliance with strict regulations are top priorities. Our managed security compliance services provide the expertise and support you need to protect your data, maintain regulatory standards, and keep your business running smoothly.",
-    year: "2026",
     readTime: "6 min read",
     author: "Com-Sec Security Team",
     gradientClass: "bg-gradient-to-br from-indigo-700 via-blue-600 to-cyan-600",
@@ -112,7 +111,7 @@ export default function WhatAreManagedSecurityComplianceServicesAndWhyAreTheyEss
             >
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>{hero.year}</span>
+                <span>January 31, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

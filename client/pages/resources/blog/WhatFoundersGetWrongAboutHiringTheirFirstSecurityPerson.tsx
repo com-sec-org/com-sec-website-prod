@@ -155,7 +155,7 @@ export default function WhatFoundersGetWrongAboutHiringTheirFirstSecurityPerson(
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>July 2026</span>
+                <span>July 22, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
