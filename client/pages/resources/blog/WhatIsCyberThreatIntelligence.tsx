@@ -49,7 +49,6 @@ export default function WhatIsCyberThreatIntelligence() {
     heading: "What is Cyber Threat Intelligence & Why It Matters?",
     intro:
       "In today’s digital world, cyber threats are growing more advanced and frequent. From ransomware and phishing attacks to state-sponsored cyber-espionage, businesses of all sizes face constant risks. Cyber Threat Intelligence (CTI) has emerged as a crucial weapon in modern cybersecurity, helping organizations predict, detect, and respond to threats before they cause damage.",
-    year: "2025",
     readTime: "10 min read",
     author: "Com-Sec Security Team",
     gradientClass: "bg-gradient-to-br from-indigo-700 via-blue-600 to-cyan-600",
@@ -186,7 +185,7 @@ export default function WhatIsCyberThreatIntelligence() {
             >
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>{hero.year}</span>
+                <span>January 25, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

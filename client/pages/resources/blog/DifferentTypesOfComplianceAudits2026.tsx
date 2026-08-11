@@ -145,7 +145,7 @@ export default function DifferentTypesOfComplianceAudits2026() {
             <div className="flex flex-wrap items-center gap-6 text-indigo-100">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>October 2025</span>
+                <span>February 7, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

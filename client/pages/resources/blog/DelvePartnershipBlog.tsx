@@ -166,7 +166,7 @@ export default function DelvePartnershipBlog() {
             <div className="flex flex-wrap items-center gap-6 text-red-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>May 2026</span>
+                <span>May 15, 2026</span>
               </div>
 
               <div className="flex items-center gap-2">

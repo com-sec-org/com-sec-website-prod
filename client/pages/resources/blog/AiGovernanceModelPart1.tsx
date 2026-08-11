@@ -162,7 +162,7 @@ export default function AiGovernanceModelPart1() {
 
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>June 17, 2026</span>
+                <span>July 17, 2026</span>
               </div>
 
               <div className="flex items-center gap-2">

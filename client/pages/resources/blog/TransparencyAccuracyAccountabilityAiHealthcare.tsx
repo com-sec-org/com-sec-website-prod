@@ -48,7 +48,6 @@ export default function TransparencyAccuracyAccountabilityAiHealthcare() {
     heading: "Transparency, Accuracy, and Accountability in AI: Key to Ethical Healthcare Solutions",
     intro:
       "AI is transforming healthcare at an unprecedented pace, offering faster diagnostics, personalized treatment, and predictive analytics. But with this innovation comes the responsibility to ensure AI is ethical, accurate, and secure. AI Health companies must focus on transparency, accuracy, accountability, and cybersecurity compliance to build trust with patients, providers, and stakeholders.",
-    year: "2026",
     readTime: "5 min read",
     author: "Com-Sec Team",
     gradientClass: "bg-gradient-to-br from-teal-700 via-cyan-600 to-blue-600",
@@ -101,7 +100,7 @@ export default function TransparencyAccuracyAccountabilityAiHealthcare() {
             <div className={`flex flex-wrap items-center gap-6 ${hero.heroMetaTint}`}>
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>{hero.year}</span>
+                <span>February 2, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

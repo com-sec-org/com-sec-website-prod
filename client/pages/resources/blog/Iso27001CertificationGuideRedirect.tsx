@@ -41,7 +41,6 @@ export default function Iso27001CertificationGuideRedirect() {
       "ISO 27001 Certification Guide: What It Is, Why It Matters, and How to Get Compliant",
     intro:
       "A complete guide to understanding, implementing, and maintaining ISO 27001 certification for your business.",
-    year: "2025",
     readTime: "12 min read",
     author: "Com-Sec Team",
     gradientClass: "bg-gradient-to-br from-blue-800 via-indigo-700 to-cyan-700",
@@ -123,7 +122,7 @@ export default function Iso27001CertificationGuideRedirect() {
             >
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>{hero.year}</span>
+                <span>February 3, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

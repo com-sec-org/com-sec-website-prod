@@ -173,7 +173,7 @@ export default function RipplingComplianceMarketBlog() {
 
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>May 2026</span>
+                <span>May 29, 2026</span>
               </div>
 
               <div className="flex items-center gap-2">

@@ -45,7 +45,6 @@ export default function GlobalCybersecurityRegulations2026() {
       "Global Cybersecurity Regulations in 2026: How to Prepare Your Business",
     intro:
       "In today’s digital-first world, cybersecurity compliance is no longer optional—it’s a business survival requirement. With rising threats, stricter laws, and global regulatory updates, 2026 marks a turning point for organizations that manage sensitive data.",
-    year: "2026",
     readTime: "8 min read",
     author: "Com-Sec Security Team",
     gradientClass: "bg-gradient-to-br from-indigo-700 via-blue-600 to-cyan-600",
@@ -128,7 +127,7 @@ export default function GlobalCybersecurityRegulations2026() {
             >
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>{hero.year}</span>
+                <span>January 25, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

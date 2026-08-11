@@ -111,7 +111,7 @@ export default function ContinuousMonitoringSecurityCompliance2026() {
           <div className="flex items-center gap-6 text-white/80 mb-8">
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4" />
-              <span>January 2026</span>
+              <span>January 8, 2026</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="h-4 w-4" />
