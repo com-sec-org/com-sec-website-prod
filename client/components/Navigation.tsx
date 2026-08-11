@@ -72,8 +72,7 @@ export function Navigation() {
                     Incident Response & Resilience
                   </Link>
 
-                  {/* OLD SERVICES (COMMENTED OUT) */}
-                  {/* <Link
+                  <Link
                     to="/compliance-audit-readiness"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
@@ -86,47 +85,17 @@ export function Navigation() {
                     Penetration Testing
                   </Link>
                   <Link
-                    to="/it-support"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    IT Support
-                  </Link>
-                  <Link
-                    to="/soc-support"
+                    to="/soc-support-monitoring-services"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
                     SOC Support
                   </Link>
                   <Link
-                    to="/security-training"
+                    to="/soc2-readiness"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
-                    Security Training
+                    SOC 2 Readiness
                   </Link>
-                  <Link
-                    to="/certifications-audits"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Certifications & Audits
-                  </Link>
-                  <Link
-                    to="/grc-platforms"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    GRC Platforms
-                  </Link>
-                  <Link
-                    to="/mssp-services"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    MSSP Services
-                  </Link>
-                  <Link
-                    to="/vciso-services"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    vCISO Services
-                  </Link> */}
                 </div>
               </div>
             </div>
@@ -362,11 +331,18 @@ export function Navigation() {
                         IT Support
                       </Link>
                       <Link
-                        to="/soc-support"
+                        to="/soc-support-monitoring-services"
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         SOC Support
+                      </Link>
+                      <Link
+                        to="/soc2-readiness"
+                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        SOC 2 Readiness
                       </Link>
                       <Link
                         to="/security-training"

@@ -22,19 +22,11 @@ import CompliancePrivacyGRC from "./pages/services/CompliancePrivacyGRC";
 import AssessmentsAuditsOffensiveSecurity from "./pages/services/AssessmentsAuditsOffensiveSecurity";
 import IncidentResponseResilience from "./pages/services/IncidentResponseResilience";
 
-// OLD SERVICES (COMMENTED OUT)
-// import Soc2Readiness from "./pages/services/Soc2Readiness";
-// import PenetrationTesting from "./pages/services/PenetrationTesting";
-// import CloudSecurity from "./pages/services/CloudSecurity";
-// import ComplianceAuditReadiness from "./pages/services/ComplianceAuditReadiness";
-// import ItSupport from "./pages/services/ItSupport";
-// import SocSupport from "./pages/services/SocSupport";
-// import SecurityTraining from "./pages/services/SecurityTraining";
-// import RiskManagement from "./pages/services/RiskManagement";
-// import CertificationsAudits from "./pages/services/CertificationsAudits";
-// import GrcPlatforms from "./pages/services/GrcPlatforms";
-// import MsspServices from "./pages/services/MsspServices";
-// import VcisoServices from "./pages/services/VcisoServices";
+// OLD SERVICES
+import Soc2Readiness from "./pages/services/Soc2Readiness";
+import PenetrationTesting from "./pages/services/PenetrationTesting";
+import ComplianceAuditReadiness from "./pages/services/ComplianceAuditReadiness";
+import SocSupport from "./pages/services/SocSupport";
 
 
 // Framework Pages
@@ -234,28 +226,18 @@ const App = () => (
               <Route path="/assessments-audits-offensive-security" element={<AssessmentsAuditsOffensiveSecurity />} />
               <Route path="/incident-response-resilience" element={<IncidentResponseResilience />} />
 
-              {/* OLD SERVICES ROUTES (COMMENTED OUT) */}
-              {/* <Route path="/services/compliance-audit-service" element={<Navigate to="/compliance-audit-service" replace />} />
+              {/* RESTORED LEGACY SERVICE ROUTES */}
+              <Route path="/services/compliance-audit-service" element={<Navigate to="/compliance-audit-service" replace />} />
               <Route path="/services/compliance-audit-readiness" element={<Navigate to="/compliance-audit-service" replace />} />
               <Route path="/compliance-audit-readiness" element={<Navigate to="/compliance-audit-service" replace />} />
-              <Route path="/compliance-audit-service" element={<ComplianceAuditReadiness />} /> */}
-              {/* <Route path="/services/penetration-testing-services" element={<Navigate to="/penetration-testing-services" replace />} />
-              <Route path="/services/it-support" element={<Navigate to="/it-support" replace />} />
+              <Route path="/compliance-audit-service" element={<ComplianceAuditReadiness />} />
+              <Route path="/services/penetration-testing-services" element={<Navigate to="/penetration-testing-services" replace />} />
               <Route path="/services/soc-support" element={<Navigate to="/soc-support" replace />} />
+              <Route path="/soc-support-monitoring-services" element={<Navigate to="/soc-support" replace />} />
               <Route path="/services/soc2-readiness" element={<Navigate to="/soc2-readiness" replace />} />
-              <Route path="/services/cloud-security" element={<Navigate to="/cloud-security" replace />} />
-              <Route path="/services/security-training" element={<Navigate to="/security-training" replace />} />
-              <Route path="/services/risk-management" element={<Navigate to="/risk-management" replace />} />
               <Route path="/penetration-testing-services" element={<PenetrationTesting />} />
-              <Route path="/it-support" element={<ItSupport />} />
               <Route path="/soc-support" element={<SocSupport />} />
               <Route path="/soc2-readiness" element={<Soc2Readiness />} />
-              <Route path="/cloud-security" element={<CloudSecurity />} />
-              <Route path="/security-training" element={<SecurityTraining />} />
-              <Route path="/certifications-audits" element={<CertificationsAudits />} />
-              <Route path="/grc-platforms" element={<GrcPlatforms />} />
-              <Route path="/mssp-services" element={<MsspServices />} />
-              <Route path="/vciso-services" element={<VcisoServices />} /> */}
 
               {/* Framework Routes — redirect /frameworks/* to canonical top-level URLs */}
               <Route path="/frameworks/soc2" element={<Navigate to="/soc2" replace />} />
