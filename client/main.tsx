@@ -125,6 +125,7 @@ import WhenTheCeoSaysNo from "./pages/resources/blog/WhenTheCeoSaysNo";
 import ExpandingToTheEu from "./pages/resources/blog/ExpandingToTheEu";
 import ThinkYoureTooSmallForSecurity from "./pages/resources/blog/ThinkYoureTooSmallForSecurity";
 import InternalAuditsWhenYouNeedOne from "./pages/resources/blog/InternalAuditsWhenYouNeedOne";
+import FirstThingWeLookAtInANewClient from "./pages/resources/blog/FirstThingWeLookAtInANewClient";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -374,6 +375,7 @@ const App = () => (
               <Route path="/blog/expanding-to-the-eu-what-you-need-to-get-right" element={<ExpandingToTheEu />} />
               <Route path="/blog/think-youre-too-small-for-security-think-again" element={<ThinkYoureTooSmallForSecurity />} />
               <Route path="/blog/internal-audits-when-you-need-one-what-to-expect" element={<InternalAuditsWhenYouNeedOne />} />
+              <Route path="/blog/first-thing-we-check-in-a-new-clients-environment" element={<FirstThingWeLookAtInANewClient />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
