@@ -48,7 +48,7 @@ const allArticles = [
                 id: "first-thing-we-check-in-a-new-clients-environment",
                 title: "One of the First Things We Look at In a New Client's Environment",
                 excerpt: "Not the firewall. Not the SIEM. The offboarding process tells us more about a company's security posture in 10 minutes than any questionnaire ever could — and it's the number one source of SOC 2 exceptions.",
-                date: "August 15 2026",
+                date: "August 14 2026",
                 readTime: "9 min read",
                 author: "Farbod Fakhrai",
                 category: "Security",
