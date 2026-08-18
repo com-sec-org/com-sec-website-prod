@@ -126,6 +126,7 @@ import ExpandingToTheEu from "./pages/resources/blog/ExpandingToTheEu";
 import ThinkYoureTooSmallForSecurity from "./pages/resources/blog/ThinkYoureTooSmallForSecurity";
 import InternalAuditsWhenYouNeedOne from "./pages/resources/blog/InternalAuditsWhenYouNeedOne";
 import FirstThingWeLookAtInANewClient from "./pages/resources/blog/FirstThingWeLookAtInANewClient";
+import WeUseAwsSoWereSecure from "./pages/resources/blog/WeUseAwsSoWereSecure";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -376,6 +377,7 @@ const App = () => (
               <Route path="/blog/think-youre-too-small-for-security-think-again" element={<ThinkYoureTooSmallForSecurity />} />
               <Route path="/blog/internal-audits-when-you-need-one-what-to-expect" element={<InternalAuditsWhenYouNeedOne />} />
               <Route path="/blog/first-thing-we-check-in-a-new-clients-environment" element={<FirstThingWeLookAtInANewClient />} />
+              <Route path="/blog/we-use-aws-so-were-secure-no-youre-not" element={<WeUseAwsSoWereSecure />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

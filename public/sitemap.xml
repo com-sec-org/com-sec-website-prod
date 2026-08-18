@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/we-use-aws-so-were-secure-no-youre-not</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/first-thing-we-check-in-a-new-clients-environment</loc>
     <priority>0.7</priority>
   </url>
