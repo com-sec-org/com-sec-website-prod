@@ -66,6 +66,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/soc-support-monitoring"
+  to = "/soc-support"
+  status = 301
+  force = true
+
 # ------------------------------------------------------
 # 🔄 Ongoing Security
 # ------------------------------------------------------
