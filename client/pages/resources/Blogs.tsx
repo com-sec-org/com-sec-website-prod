@@ -48,7 +48,7 @@ const allArticles = [
                 id: "stop-calling-employees-the-weakest-link",
                 title: "Stop Calling Employees the Weakest Link",
                 excerpt: "If an employee clicks a phishing link and an attacker gets full access to your environment, that's not an employee problem. That's an architecture problem.",
-                date: "August 2026",
+                date: "August 19 2026",
                 readTime: "9 min read",
                 author: "Farbod Fakhrai",
                 category: "Security",
