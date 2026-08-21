@@ -128,6 +128,7 @@ import InternalAuditsWhenYouNeedOne from "./pages/resources/blog/InternalAuditsW
 import FirstThingWeLookAtInANewClient from "./pages/resources/blog/FirstThingWeLookAtInANewClient";
 import WeUseAwsSoWereSecure from "./pages/resources/blog/WeUseAwsSoWereSecure";
 import StopCallingEmployeesTheWeakestLink from "./pages/resources/blog/StopCallingEmployeesTheWeakestLink";
+import TheQuestionIAskEveryFounder from "./pages/resources/blog/TheQuestionIAskEveryFounder";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -380,6 +381,7 @@ const App = () => (
               <Route path="/blog/first-thing-we-check-in-a-new-clients-environment" element={<FirstThingWeLookAtInANewClient />} />
               <Route path="/blog/we-use-aws-so-were-secure-no-youre-not" element={<WeUseAwsSoWereSecure />} />
               <Route path="/blog/stop-calling-employees-the-weakest-link" element={<StopCallingEmployeesTheWeakestLink />} />
+              <Route path="/blog/the-question-i-ask-every-founder-in-our-first-meeting" element={<TheQuestionIAskEveryFounder />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
