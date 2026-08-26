@@ -48,7 +48,7 @@ const allArticles = [
                 id: "your-msp-is-not-your-security-team",
                 title: "Your MSP Is Not Your Security Team",
                 excerpt: "The confusion between IT operations and security operations is one of the most expensive misunderstandings in small business cybersecurity — and it shows up at the worst possible time.",
-                date: "August 2026",
+                date: "August 24 2026",
                 readTime: "9 min read",
                 author: "Farbod Fakhrai",
                 category: "Security",
