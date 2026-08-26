@@ -181,6 +181,12 @@ export default function WeUseAwsSoWereSecure() {
               "We Use AWS So We're Secure." No, You're Not.
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              The shared responsibility model, the misconfigurations we find
+              over and over, and what it actually takes to secure your side
+              of the cloud.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />

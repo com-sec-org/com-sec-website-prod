@@ -193,6 +193,11 @@ export default function InternalAuditsWhenYouNeedOne() {
               Clean One Doesn't Mean You're in the Clear
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              What ISO 27001, SOC 2, and HITRUST actually require, and why
+              passing your own audit isn't the same as passing the real one.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
