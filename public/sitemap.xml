@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/the-question-i-ask-every-founder-in-our-first-meeting</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/stop-calling-employees-the-weakest-link</loc>
     <priority>0.7</priority>
   </url>
