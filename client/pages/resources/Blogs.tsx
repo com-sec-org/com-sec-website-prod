@@ -48,7 +48,7 @@ const allArticles = [
                 id: "the-question-i-ask-every-founder-in-our-first-meeting",
                 title: "The Question I Ask Every Founder in Our First Meeting",
                 excerpt: "If your laptop got stolen right now, what would an attacker have access to? It takes 10 seconds and tells me more about a founder's security posture than 30 minutes on their tech stack.",
-                date: "August 21 2026",
+                date: "August 2026",
                 readTime: "10 min read",
                 author: "Farbod Fakhrai",
                 category: "Security",

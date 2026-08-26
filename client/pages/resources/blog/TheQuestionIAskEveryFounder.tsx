@@ -196,16 +196,10 @@ export default function TheQuestionIAskEveryFounder() {
               The Question I Ask Every Founder in Our First Meeting
             </h1>
 
-            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
-              Why a stolen laptop question reveals more about a founder's
-              security posture than any audit of their tech stack, and how
-              to fix what it exposes in about an hour.
-            </p>
-
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>August 21, 2026</span>
+                <span>August 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
