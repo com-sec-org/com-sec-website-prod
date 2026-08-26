@@ -164,6 +164,11 @@ export default function FirstThingWeLookAtInANewClient() {
               Environment
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              Why offboarding, not the firewall, is the fastest way to tell
+              how disciplined a company's security program really is.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />

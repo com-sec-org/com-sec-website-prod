@@ -180,6 +180,12 @@ export default function StopCallingEmployeesTheWeakestLink() {
               Stop Calling Employees the Weakest Link
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              Why a phishing click should never be the difference between a
+              non-event and a breach, and the controls that make sure it
+              isn't.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />

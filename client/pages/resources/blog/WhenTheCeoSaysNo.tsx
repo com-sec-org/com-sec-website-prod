@@ -161,6 +161,12 @@ export default function WhenTheCeoSaysNo() {
               When the CEO Says No to Your Security Recommendation
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              Why a rejected recommendation isn't a failure of your security
+              program, and how to make sure risk acceptance never turns into
+              negligence.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
