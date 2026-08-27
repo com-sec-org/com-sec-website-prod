@@ -2,7 +2,7 @@
 # 🔧 Netlify Build Settings
 ##############################
 [build]
-  command = "npm run build:client"
+  command = "vite build"
   functions = "netlify/functions"
   publish = "dist/spa"
 
