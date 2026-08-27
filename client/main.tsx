@@ -129,6 +129,7 @@ import FirstThingWeLookAtInANewClient from "./pages/resources/blog/FirstThingWeL
 import WeUseAwsSoWereSecure from "./pages/resources/blog/WeUseAwsSoWereSecure";
 import StopCallingEmployeesTheWeakestLink from "./pages/resources/blog/StopCallingEmployeesTheWeakestLink";
 import YourMspIsNotYourSecurityTeam from "./pages/resources/blog/YourMspIsNotYourSecurityTeam";
+import BeforeYouBuyAnotherSecurityTool from "./pages/resources/blog/BeforeYouBuyAnotherSecurityTool";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -382,6 +383,7 @@ const App = () => (
               <Route path="/blog/we-use-aws-so-were-secure-no-youre-not" element={<WeUseAwsSoWereSecure />} />
               <Route path="/blog/stop-calling-employees-the-weakest-link" element={<StopCallingEmployeesTheWeakestLink />} />
               <Route path="/blog/your-msp-is-not-your-security-team" element={<YourMspIsNotYourSecurityTeam />} />
+              <Route path="/blog/before-you-buy-another-security-tool-ask-this-one-question" element={<BeforeYouBuyAnotherSecurityTool />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
