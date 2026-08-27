@@ -165,10 +165,16 @@ export default function BeforeYouBuyAnotherSecurityTool() {
               Before You Buy Another Security Tool, Ask This One Question
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              Why the tool-buying pattern happens, how to audit what you
+              already own, and the one question to ask before you spend
+              another dollar on security tooling.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>August 2026</span>
+                <span>August 26, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
