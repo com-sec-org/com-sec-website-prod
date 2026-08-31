@@ -131,6 +131,7 @@ import StopCallingEmployeesTheWeakestLink from "./pages/resources/blog/StopCalli
 import YourMspIsNotYourSecurityTeam from "./pages/resources/blog/YourMspIsNotYourSecurityTeam";
 import BeforeYouBuyAnotherSecurityTool from "./pages/resources/blog/BeforeYouBuyAnotherSecurityTool";
 import YourFirstCallAfterASecurityIncident from "./pages/resources/blog/YourFirstCallAfterASecurityIncident";
+import WhatAVcisoActuallyDoesDayToDay from "./pages/resources/blog/WhatAVcisoActuallyDoesDayToDay";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -386,6 +387,7 @@ const App = () => (
               <Route path="/blog/your-msp-is-not-your-security-team" element={<YourMspIsNotYourSecurityTeam />} />
               <Route path="/blog/before-you-buy-another-security-tool-ask-this-one-question" element={<BeforeYouBuyAnotherSecurityTool />} />
               <Route path="/blog/your-first-call-after-a-security-incident-shouldnt-be-to-it" element={<YourFirstCallAfterASecurityIncident />} />
+              <Route path="/blog/what-a-vciso-actually-does-day-to-day" element={<WhatAVcisoActuallyDoesDayToDay />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
