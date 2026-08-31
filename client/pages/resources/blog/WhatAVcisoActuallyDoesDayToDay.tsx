@@ -181,10 +181,16 @@ export default function WhatAVcisoActuallyDoesDayToDay() {
               What a vCISO Actually Does Day to Day
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              What the role should actually look like week to week, what it
+              isn't, and how to evaluate whether the vCISO you're paying for
+              is doing the job.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>August 2026</span>
+                <span>August 31, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
