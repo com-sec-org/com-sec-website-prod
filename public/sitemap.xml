@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/your-first-call-after-a-security-incident-shouldnt-be-to-it</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/before-you-buy-another-security-tool-ask-this-one-question</loc>
     <priority>0.7</priority>
   </url>

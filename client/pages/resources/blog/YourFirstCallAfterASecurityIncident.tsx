@@ -185,10 +185,16 @@ export default function YourFirstCallAfterASecurityIncident() {
               Your First Call After a Security Incident Shouldn't Be to IT
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              Why the order of your first three calls after an incident
+              matters more than most companies realize, and how to get it
+              right before you ever need to.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>August 2026</span>
+                <span>August 28, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

@@ -48,7 +48,7 @@ const allArticles = [
                 id: "your-first-call-after-a-security-incident-shouldnt-be-to-it",
                 title: "Your First Call After a Security Incident Shouldn't Be to IT",
                 excerpt: "The order of your first three calls matters more than most companies realize. Getting it right can save you tens of thousands of dollars and significantly improve the outcome.",
-                date: "August 2026",
+                date: "August 28 2026",
                 readTime: "9 min read",
                 author: "Farbod Fakhrai",
                 category: "Security",
