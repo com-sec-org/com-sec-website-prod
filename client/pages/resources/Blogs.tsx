@@ -48,7 +48,7 @@ const allArticles = [
                 id: "it-security-and-compliance-under-one-roof-why-it-matters",
                 title: "IT, Security, and Compliance Under One Roof: Why It Matters",
                 excerpt: "Three vendors, three invoices, three sets of meetings, and none of them talking to each other. This is the default model and it's broken.",
-                date: "September 2026",
+                date: "September 03 2026",
                 readTime: "7 min read",
                 author: "Farbod Fakhrai",
                 category: "Security",

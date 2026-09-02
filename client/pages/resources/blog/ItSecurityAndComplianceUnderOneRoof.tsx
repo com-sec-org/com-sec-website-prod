@@ -134,10 +134,16 @@ export default function ItSecurityAndComplianceUnderOneRoof() {
               IT, Security, and Compliance Under One Roof: Why It Matters
             </h1>
 
+            <p className="text-xl text-sky-100 mb-8 leading-relaxed">
+              Why gaps form at the seams of the three-vendor model, and what
+              a unified IT, security, and compliance team looks like
+              instead.
+            </p>
+
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>September 2026</span>
+                <span>September 3, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
