@@ -48,7 +48,7 @@ const allArticles = [
                 id: "you-got-your-soc-2-then-you-stopped",
                 title: "You Got Your SOC 2. Then You Stopped. Now the Next Audit Is 90 Days Away.",
                 excerpt: "Getting SOC 2 is the hard part. Keeping it is the discipline. Why compliance programs go dormant after the first audit, what the auditor finds when they do, and how to break the cycle.",
-                date: "September 2026",
+                date: "September 03 2026",
                 readTime: "10 min read",
                 author: "Farbod Fakhrai",
                 category: "Compliance",

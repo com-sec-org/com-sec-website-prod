@@ -127,6 +127,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/you-got-your-soc-2-then-you-stopped</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/it-security-and-compliance-under-one-roof-why-it-matters</loc>
     <priority>0.7</priority>
   </url>
