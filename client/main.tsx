@@ -135,6 +135,7 @@ import WhatAVcisoActuallyDoesDayToDay from "./pages/resources/blog/WhatAVcisoAct
 import ItSecurityAndComplianceUnderOneRoof from "./pages/resources/blog/ItSecurityAndComplianceUnderOneRoof";
 import YouGotYourSoc2ThenYouStopped from "./pages/resources/blog/YouGotYourSoc2ThenYouStopped";
 import YourSecurityPoliciesShouldntSoundLikeEveryoneElses from "./pages/resources/blog/YourSecurityPoliciesShouldntSoundLikeEveryoneElses";
+import HowToRollOutMfaAndSso from "./pages/resources/blog/HowToRollOutMfaAndSso";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -394,6 +395,7 @@ const App = () => (
               <Route path="/blog/it-security-and-compliance-under-one-roof-why-it-matters" element={<ItSecurityAndComplianceUnderOneRoof />} />
               <Route path="/blog/you-got-your-soc-2-then-you-stopped" element={<YouGotYourSoc2ThenYouStopped />} />
               <Route path="/blog/your-security-policies-shouldnt-sound-like-everyone-elses" element={<YourSecurityPoliciesShouldntSoundLikeEveryoneElses />} />
+              <Route path="/blog/how-to-roll-out-mfa-and-sso-without-losing-your-mind" element={<HowToRollOutMfaAndSso />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
