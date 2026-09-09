@@ -48,7 +48,7 @@ const allArticles = [
                 id: "your-security-policies-shouldnt-sound-like-everyone-elses",
                 title: "Your Security Policies Shouldn't Sound Like Everyone Else's",
                 excerpt: "Template policies describe a generic company. Your auditor is evaluating your company. If the policy doesn't match reality, it fails at both jobs.",
-                date: "September 2026",
+                date: "September 08 2026",
                 readTime: "11 min read",
                 author: "Farbod Fakhrai",
                 category: "Compliance",
