@@ -164,6 +164,36 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/risk-management`,
     image: `${BASE_URL}/images/risk-management.webp`,
   },
+  "/fractional-security-leadership": {
+    title: "Fractional Security Leadership | vCISO & Security Strategy | Com-Sec",
+    description:
+      "Fractional CISO and security leadership services including security strategy, governance, and risk management. Enterprise-grade security leadership at a fraction of the cost.",
+    canonical: `${BASE_URL}/fractional-security-leadership`,
+  },
+  "/managed-security-services": {
+    title: "Managed Security Services (MSSP) | 24/7 SOC Monitoring | Com-Sec",
+    description:
+      "24/7 Managed Security Services with SOC monitoring, threat detection, incident response, and endpoint management. Enterprise security operations outsourced.",
+    canonical: `${BASE_URL}/managed-security-services`,
+  },
+  "/compliance-privacy-grc": {
+    title: "Compliance, Privacy & GRC Services | Com-Sec",
+    description:
+      "Comprehensive compliance, privacy, and GRC services covering SOC 2, ISO 27001, HIPAA, GDPR, HITRUST, and AI governance. Expert guidance for regulatory frameworks.",
+    canonical: `${BASE_URL}/compliance-privacy-grc`,
+  },
+  "/assessments-audits-offensive-security": {
+    title: "Security Assessments & Penetration Testing | Com-Sec",
+    description:
+      "Comprehensive security assessments, penetration testing, vulnerability assessments, and cloud security testing. Identify vulnerabilities before attackers do.",
+    canonical: `${BASE_URL}/assessments-audits-offensive-security`,
+  },
+  "/incident-response-resilience": {
+    title: "Incident Response & Business Resilience | Com-Sec",
+    description:
+      "Incident response planning, active incident response, digital forensics, business continuity, and disaster recovery planning to keep your organization running.",
+    canonical: `${BASE_URL}/incident-response-resilience`,
+  },
 
   // Frameworks
   "/soc2": {

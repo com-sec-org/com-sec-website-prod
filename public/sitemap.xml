@@ -62,6 +62,26 @@
     <loc>https://com-sec.io/risk-management</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://com-sec.io/fractional-security-leadership</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/managed-security-services</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/compliance-privacy-grc</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/assessments-audits-offensive-security</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://com-sec.io/incident-response-resilience</loc>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Frameworks -->
   <url>
