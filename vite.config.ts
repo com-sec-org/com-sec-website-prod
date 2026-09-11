@@ -1,3 +1,4 @@
+import { rssPlugin } from "./scripts/rss-plugin";
 import { defineConfig, Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -14,7 +15,7 @@ export default defineConfig(({ mode }) => ({
     outDir: "dist/spa",
     target: "chrome76",
   },
-  plugins: [react(), expressPlugin(), seoPlugin()],
+  plugins: [react(), rssPlugin(), expressPlugin(), seoPlugin()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
