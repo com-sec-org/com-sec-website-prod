@@ -7,12 +7,24 @@ export interface FeedPost {
   category?: string;
   categories?: string[];
   published?: boolean;
+  image?: string;
 }
 
 export function escapeXml(value: string): string {
   return value.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\uFFFE\uFFFF]/g, "")
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+}
+
+function imageTags(image?: string): string[] {
+  if (!image) return [];
+  const url = new URL(image, "https://com-sec.io/");
+  if (url.protocol !== "https:") throw new Error("RSS image must use HTTPS: " + image);
+  const escaped = escapeXml(image.startsWith("https://") ? image : url.href);
+  return [
+    '      <media:content url="' + escaped + '" medium="image" />',
+    '      <media:thumbnail url="' + escaped + '" />',
+  ];
 }
 
 // Existing display dates have no time zone. Interpret them consistently as UTC dates.
@@ -38,7 +50,7 @@ export function generateRss(posts: readonly FeedPost[], canonicalPaths: Readonly
   const tag = (name: string, value: string) => "      <" + name + ">" + escapeXml(value) + "</" + name + ">";
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">',
+    '<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">',
     '  <channel>',
     '    <title>Com-Sec Blog</title>',
     '    <link>https://com-sec.io/blog</link>',
@@ -51,6 +63,7 @@ export function generateRss(posts: readonly FeedPost[], canonicalPaths: Readonly
       tag("description", post.excerpt), tag("pubDate", date.toUTCString()),
       ...(post.author ? [tag("dc:creator", post.author)] : []),
       ...[...new Set([...(post.categories ?? []), ...(post.category ? [post.category] : [])])].map(category => tag("category", category)),
+      ...imageTags(post.image),
       '    </item>'
     ].join("\n")),
     '  </channel>', '</rss>', ''

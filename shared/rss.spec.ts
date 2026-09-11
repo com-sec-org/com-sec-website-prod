@@ -74,3 +74,29 @@ it("follows redirect chains and deduplicates canonical destinations, excluding i
   expect(xml).toContain('<guid isPermaLink="true">https://com-sec.io/blog/example</guid>');
   expect(xml).not.toContain("https://com-sec.io/blog/alias");
 });
+
+describe("RSS images", () => {
+  it.each([
+    ["/images/blog.png", "https://com-sec.io/images/blog.png"],
+    ["images/blog.png", "https://com-sec.io/images/blog.png"],
+    ["https://cdn.example.com/blog.png", "https://cdn.example.com/blog.png"],
+    ["https://cdn.example.com/image?format=webp&width=800", "https://cdn.example.com/image?format=webp&amp;width=800"],
+  ])("normalizes and escapes %s in both media elements", (image, expected) => {
+    const xml = generateRss([{ ...post, image }], paths, now);
+    expect(xml).toContain('xmlns:media="http://search.yahoo.com/mrss/"');
+    expect(xml).toContain('<media:content url="' + expected + '" medium="image" />');
+    expect(xml).toContain('<media:thumbnail url="' + expected + '" />');
+  });
+  it("rejects non-HTTPS images and omits absent images", () => {
+    expect(() => generateRss([{ ...post, image: "http://example.com/image.png" }], paths, now)).toThrow("HTTPS");
+    expect(generateRss([post], paths, now)).not.toContain("<media:content");
+  });
+  it("adds images to all 80 repository items without changing other RSS content", () => {
+    const routes = canonicalBlogPaths(fs.readFileSync("client/main.tsx", "utf8"));
+    const xml = generateRss(allArticles, routes, now);
+    expect(xml.match(/<media:content url="https:\/\//g)).toHaveLength(80);
+    expect(xml.match(/<media:thumbnail url="https:\/\//g)).toHaveLength(80);
+    const withoutImages = generateRss(allArticles.map(p => ({ ...p, image: undefined })), routes, now);
+    expect(xml.replace(/^.*<media:(?:content|thumbnail) .*\n/gm, "")).toBe(withoutImages);
+  });
+});
