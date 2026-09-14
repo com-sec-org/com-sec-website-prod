@@ -275,6 +275,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-08-07T00:00:00Z",
   },
+  "/blog/what-247-security-monitoring-actually-looks-like-for-a-small-company": {
+    title: "What 24/7 Security Monitoring Actually Looks Like for a Small Company",
+    description:
+      "Most startups answer “yes” to the 24/7 monitoring question on a security questionnaire and mean “we have a tool that generates alerts.” The three-layer model that provides genuine 24/7 coverage without building an internal SOC.",
+    image: `${BASE_URL}/images/blog-images/what-247-security-monitoring-actually-looks-like-for-a-small-company.png`,
+    url: `${BASE_URL}/blog/what-247-security-monitoring-actually-looks-like-for-a-small-company`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-09-10T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

@@ -815,4 +815,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/pentagon-suspended-cmmc-phase-2`,
     image: `${BASE_URL}/images/blog-images/pentagon-suspended-cmmc-phase-2.png`,
   },
+  "/blog/what-247-security-monitoring-actually-looks-like-for-a-small-company": {
+    title: "What 24/7 Security Monitoring Actually Looks Like for a Small Company",
+    description:
+      "Most startups answer “yes” to the 24/7 monitoring question on a security questionnaire and mean “we have a tool that generates alerts.” The three-layer model that provides genuine 24/7 coverage without building an internal SOC.",
+    canonical: `${BASE_URL}/blog/what-247-security-monitoring-actually-looks-like-for-a-small-company`,
+    image: `${BASE_URL}/images/blog-images/what-247-security-monitoring-actually-looks-like-for-a-small-company.png`,
+  },
 };
