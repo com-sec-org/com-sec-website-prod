@@ -1,6 +1,20 @@
 // Shared listing metadata. Preserve order and display values for the blog UI.
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
+              {
+                id: "hitrust-certification-e1-i1-r2-explained",
+                title: "HITRUST Certification: e1, i1, and r2 Explained",
+                excerpt: "HITRUST is the gold standard for healthcare security certification. Here's the plain English breakdown of the three tiers and which one you actually need.",
+                date: "September 14 2026",
+                readTime: "8 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance",
+                categoryColor: "sky",
+                featured: false,
+                image: "/images/blog-images/hitrust-certification-e1-i1-r2-explained.png",
+                imageAlt: "HITRUST Certification: e1, i1, and r2 Explained",
+                link: "/blog/hitrust-certification-e1-i1-r2-explained",
+              },
               //  {
               //   id: "soc-2-compliance-services-california",
               //   title: "SOC 2 Compliance Services in California: What Founders Need to Know",
@@ -15,20 +29,6 @@ export const allArticles = [
               //   imageAlt: "SOC 2 compliance services in California for startups and tech companies",
               //   link: "/blog/soc-2-compliance-services-california",
               // },
-              {
-                id: "hitrust-certification-e1-i1-r2-explained",
-                title: "HITRUST Certification: e1, i1, and r2 Explained",
-                excerpt: "HITRUST is the gold standard for healthcare security certification. Here's the plain English breakdown of the three tiers and which one you actually need.",
-                date: "September 10 2026",
-                readTime: "8 min read",
-                author: "Farbod Fakhrai",
-                category: "Compliance",
-                categoryColor: "sky",
-                featured: false,
-                image: "/images/blog-images/hitrust-certification-e1-i1-r2-explained.png",
-                imageAlt: "HITRUST Certification: e1, i1, and r2 Explained",
-                link: "/blog/hitrust-certification-e1-i1-r2-explained",
-              },
               {
                 id: "what-247-security-monitoring-actually-looks-like-for-a-small-company",
                 title: "What 24/7 Security Monitoring Actually Looks Like for a Small Company",

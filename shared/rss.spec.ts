@@ -5,7 +5,7 @@ import { allArticles } from "./blog-posts";
 import { canonicalBlogPaths } from "../scripts/rss-plugin";
 
 const post: FeedPost = { id: "example", title: 'A & <B> "test"', excerpt: "It's useful & safe", date: "September 09 2026", author: "A & B", category: "Security" };
-const now = new Date("2026-09-11T00:00:00Z");
+const now = new Date("2026-09-14T00:00:00Z");
 const paths = new Map([["/blog/example", "/blog/example"], ["/blog/older", "/blog/older"]]);
 describe("RSS", () => {
   it("escapes metadata and includes canonical URLs, GUID, author and categories", () => {

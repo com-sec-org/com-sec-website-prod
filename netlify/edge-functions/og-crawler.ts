@@ -291,7 +291,7 @@ const OG_ROUTES: Record<string, OgData> = {
     image: `${BASE_URL}/images/blog-images/hitrust-certification-e1-i1-r2-explained.png`,
     url: `${BASE_URL}/blog/hitrust-certification-e1-i1-r2-explained`,
     author: "Farbod Fakhrai",
-    publishedTime: "2026-09-10T00:00:00Z",
+    publishedTime: "2026-09-14T00:00:00Z",
   },
 };
 

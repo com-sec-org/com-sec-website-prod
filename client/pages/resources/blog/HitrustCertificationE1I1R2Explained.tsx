@@ -123,7 +123,7 @@ export default function HitrustCertificationE1I1R2Explained() {
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="Farbod Fakhrai" />
-        <meta property="article:published_time" content="2026-09-10T00:00:00Z" />
+        <meta property="article:published_time" content="2026-09-14T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
@@ -176,7 +176,7 @@ export default function HitrustCertificationE1I1R2Explained() {
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>September 10, 2026</span>
+                <span>September 14, 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
