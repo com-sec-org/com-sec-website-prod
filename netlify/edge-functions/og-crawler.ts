@@ -284,6 +284,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-09-10T00:00:00Z",
   },
+  "/blog/hitrust-certification-e1-i1-r2-explained": {
+    title: "HITRUST Certification: e1, i1, and r2 Explained",
+    description:
+      "HITRUST is the gold standard for healthcare security certification, but it's confusing to navigate. The plain English breakdown of e1, i1, and r2, and how to know which one you need.",
+    image: `${BASE_URL}/images/blog-images/hitrust-certification-e1-i1-r2-explained.png`,
+    url: `${BASE_URL}/blog/hitrust-certification-e1-i1-r2-explained`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-09-10T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

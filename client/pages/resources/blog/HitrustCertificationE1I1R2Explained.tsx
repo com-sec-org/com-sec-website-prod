@@ -42,7 +42,7 @@ export default function HitrustCertificationE1I1R2Explained() {
     },
     {
       title: "HITRUST i1 (Implemented, 1-year)",
-      body: "The middle tier. 182 control requirements covering a broader set of security, privacy, and risk management practices \u2014 controls that are not just defined but implemented and operating. Assessment type: validated assessment with real testing, not just document review. Cost: typically $30,000 to $60,000 including assessor fees. Timeline: 4 to 6 months from readiness to certification. This is the sweet spot for most health tech companies selling into mid-market health systems and payers.",
+      body: "The middle tier. 182 control requirements covering a broader set of security, privacy, and risk management practices — controls that are not just defined but implemented and operating. Assessment type: validated assessment with real testing, not just document review. Cost: typically $30,000 to $60,000 including assessor fees. Timeline: 4 to 6 months from readiness to certification. This is the sweet spot for most health tech companies selling into mid-market health systems and payers.",
     },
     {
       title: "HITRUST r2 (Risk-based, 2-year)",
@@ -402,15 +402,15 @@ export default function HitrustCertificationE1I1R2Explained() {
               </h3>
               <p className="text-sky-200 text-lg mb-6 max-w-xl mx-auto leading-relaxed">
                 Com-Sec manages HITRUST readiness and certification end to
-                end \u2014 gap assessment, remediation, evidence, and assessor
-                coordination \u2014 at whichever tier your customers require.
+                end — gap assessment, remediation, evidence, and assessor
+                coordination — at whichever tier your customers require.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link
                   to="/contact"
                   className="bg-white text-sky-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
                 >
-                  Schedule a Consultation \u2192
+                  Schedule a Consultation →
                 </Link>
                 <Link
                   to="/services"

@@ -147,6 +147,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/hitrust-certification-e1-i1-r2-explained</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/what-247-security-monitoring-actually-looks-like-for-a-small-company</loc>
     <priority>0.7</priority>
   </url>
