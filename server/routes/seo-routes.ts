@@ -822,4 +822,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/what-247-security-monitoring-actually-looks-like-for-a-small-company`,
     image: `${BASE_URL}/images/blog-images/what-247-security-monitoring-actually-looks-like-for-a-small-company.png`,
   },
+  "/blog/hitrust-certification-e1-i1-r2-explained": {
+    title: "HITRUST Certification: e1, i1, and r2 Explained",
+    description:
+      "HITRUST is the gold standard for healthcare security certification, but it's confusing to navigate. The plain English breakdown of e1, i1, and r2, and how to know which one you need.",
+    canonical: `${BASE_URL}/blog/hitrust-certification-e1-i1-r2-explained`,
+    image: `${BASE_URL}/images/blog-images/hitrust-certification-e1-i1-r2-explained.png`,
+  },
 };
