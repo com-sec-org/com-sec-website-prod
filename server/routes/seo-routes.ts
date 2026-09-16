@@ -829,4 +829,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/hitrust-certification-e1-i1-r2-explained`,
     image: `${BASE_URL}/images/blog-images/hitrust-certification-e1-i1-r2-explained.png`,
   },
+  "/blog/introducing-our-security-vulnerability-research-program": {
+    title: "Introducing Our Security Vulnerability Research Program",
+    description:
+      "Continuous external threat hunting from vetted researchers, included in every vCISO and managed security engagement. How the program works, why we built it, and what it does and doesn't replace.",
+    canonical: `${BASE_URL}/blog/introducing-our-security-vulnerability-research-program`,
+    image: `${BASE_URL}/images/blog-images/introducing-our-security-vulnerability-research-program.png`,
+  },
 };
