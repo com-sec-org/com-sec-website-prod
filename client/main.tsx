@@ -138,6 +138,7 @@ import YourSecurityPoliciesShouldntSoundLikeEveryoneElses from "./pages/resource
 import HowToRollOutMfaAndSso from "./pages/resources/blog/HowToRollOutMfaAndSso";
 import What247SecurityMonitoringActuallyLooksLike from "./pages/resources/blog/What247SecurityMonitoringActuallyLooksLike";
 import HitrustCertificationE1I1R2Explained from "./pages/resources/blog/HitrustCertificationE1I1R2Explained";
+import IntroducingOurSecurityVulnerabilityResearchProgram from "./pages/resources/blog/IntroducingOurSecurityVulnerabilityResearchProgram";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -400,6 +401,7 @@ const App = () => (
               <Route path="/blog/how-to-roll-out-mfa-and-sso-without-losing-your-mind" element={<HowToRollOutMfaAndSso />} />
               <Route path="/blog/what-247-security-monitoring-actually-looks-like-for-a-small-company" element={<What247SecurityMonitoringActuallyLooksLike />} />
               <Route path="/blog/hitrust-certification-e1-i1-r2-explained" element={<HitrustCertificationE1I1R2Explained />} />
+              <Route path="/blog/introducing-our-security-vulnerability-research-program" element={<IntroducingOurSecurityVulnerabilityResearchProgram />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

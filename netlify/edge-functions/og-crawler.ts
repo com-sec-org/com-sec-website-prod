@@ -293,6 +293,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-09-14T00:00:00Z",
   },
+  "/blog/introducing-our-security-vulnerability-research-program": {
+    title: "Introducing Our Security Vulnerability Research Program",
+    description:
+      "Continuous external threat hunting from vetted researchers, included in every vCISO and managed security engagement. How the program works, why we built it, and what it does and doesn't replace.",
+    image: `${BASE_URL}/images/blog-images/introducing-our-security-vulnerability-research-program.png`,
+    url: `${BASE_URL}/blog/introducing-our-security-vulnerability-research-program`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-09-15T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
