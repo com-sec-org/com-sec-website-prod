@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "introducing-our-security-vulnerability-research-program",
+                title: "Introducing Our Security Vulnerability Research Program",
+                excerpt: "Continuous external threat hunting from vetted researchers, included in every vCISO and managed security engagement. You only pay when something real is found.",
+                date: "September 15 2026",
+                readTime: "11 min read",
+                author: "Farbod Fakhrai",
+                category: "Security",
+                categoryColor: "sky",
+                featured: false,
+                image: "/images/blog-images/introducing-our-security-vulnerability-research-program.png",
+                imageAlt: "Introducing Our Security Vulnerability Research Program",
+                link: "/blog/introducing-our-security-vulnerability-research-program",
+              },
+              {
                 id: "hitrust-certification-e1-i1-r2-explained",
                 title: "HITRUST Certification: e1, i1, and r2 Explained",
                 excerpt: "HITRUST is the gold standard for healthcare security certification. Here's the plain English breakdown of the three tiers and which one you actually need.",
