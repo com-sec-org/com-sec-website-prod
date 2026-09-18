@@ -139,6 +139,7 @@ import HowToRollOutMfaAndSso from "./pages/resources/blog/HowToRollOutMfaAndSso"
 import What247SecurityMonitoringActuallyLooksLike from "./pages/resources/blog/What247SecurityMonitoringActuallyLooksLike";
 import HitrustCertificationE1I1R2Explained from "./pages/resources/blog/HitrustCertificationE1I1R2Explained";
 import IntroducingOurSecurityVulnerabilityResearchProgram from "./pages/resources/blog/IntroducingOurSecurityVulnerabilityResearchProgram";
+import HowFractionalCisoBuildsStrategy from "./pages/resources/blog/HowFractionalCisoBuildsStrategy";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -402,6 +403,7 @@ const App = () => (
               <Route path="/blog/what-247-security-monitoring-actually-looks-like-for-a-small-company" element={<What247SecurityMonitoringActuallyLooksLike />} />
               <Route path="/blog/hitrust-certification-e1-i1-r2-explained" element={<HitrustCertificationE1I1R2Explained />} />
               <Route path="/blog/introducing-our-security-vulnerability-research-program" element={<IntroducingOurSecurityVulnerabilityResearchProgram />} />
+              <Route path="/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy" element={<HowFractionalCisoBuildsStrategy />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

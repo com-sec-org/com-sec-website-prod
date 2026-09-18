@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy",
+                title: "How a Fractional CISO Builds a Strong Cybersecurity Strategy",
+                excerpt: "What building a cybersecurity strategy actually looks like in practice - from the first two weeks understanding the business through the risk assessment, roadmap, and ongoing execution.",
+                date: "September 18, 2026",
+                readTime: "8 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Leadership",
+                categoryColor: "sky",
+                featured: false,
+                image: "/images/blog-images/How a Fractional CISO Builds a Strong Cybersecurity Strategy.png",
+                imageAlt: "How a Fractional CISO Builds a Strong Cybersecurity Strategy",
+                link: "/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy",
+              },
+              {
                 id: "introducing-our-security-vulnerability-research-program",
                 title: "Introducing Our Security Vulnerability Research Program",
                 excerpt: "Continuous external threat hunting from vetted researchers, included in every vCISO and managed security engagement. You only pay when something real is found.",

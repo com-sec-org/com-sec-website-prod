@@ -35,7 +35,7 @@ export default function Blogs() {
   const { toast } = useToast();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchFocused, setSearchFocused] = useState(false);
-  const [visibleArticles, setVisibleArticles] = useState(9);
+  const [visibleArticles, setVisibleArticles] = useState(30);
   const [showLoadMore, setShowLoadMore] = useState(true);
 
   const handleSearch = () => {
