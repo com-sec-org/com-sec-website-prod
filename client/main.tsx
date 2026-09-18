@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { useEffect, Component, ErrorInfo, ReactNode } from "react";
 import Index from "./pages/Index";
+import CaseStudies from "./pages/CaseStudies";
 import Services from "./pages/Services";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
@@ -228,6 +229,7 @@ const App = () => (
           <CanonicalLink />
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/case-studies" element={<CaseStudies />} />
 
               {/* Service & Pricing Routes */}
               <Route path="/services" element={<Services />} />

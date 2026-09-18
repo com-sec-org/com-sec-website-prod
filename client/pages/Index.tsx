@@ -22,21 +22,9 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function Index() {
   const [focus, setFocus] = useState<string>("all");
-  const [caseStudyCategory, setCaseStudyCategory] = useState("Energy");
-
-  const caseStudyCategories = [
-    "HealthTech",
-    "AI SaaS",
-    "FinTech",
-    "Energy",
-    "EdTech",
-    "Services",
-    "Ag",
-  ];
 
   const mapMarkers = [
     { id: "north-america", label: "North America", top: 30, left: 24 },
@@ -1102,6 +1090,7 @@ export default function Index() {
         </div>
       </section>
 
+      {false && (
       <section id="case-studies" className="bg-slate-50 py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -1267,6 +1256,7 @@ export default function Index() {
           )}
         </div>
       </section>
+      )}
 
       {/* Global Presence Map (hidden) */}
       <section className="hidden py-16 sm:py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">

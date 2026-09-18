@@ -111,6 +111,27 @@ export function Navigation() {
               Pricing
             </Link>
 
+            {/* Case Studies Dropdown */}
+            <div className="relative group">
+              <button className="flex items-center text-foreground hover:text-accent transition-colors">
+                Case Studies
+                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-48 rounded-lg border bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-2">
+                  {['HealthTech', 'AI SaaS', 'FinTech', 'Energy', 'EdTech', 'Services', 'Ag'].map((category) => (
+                    <Link
+                      key={category}
+                      to={`/case-studies?category=${encodeURIComponent(category)}`}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                    >
+                      {category}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             {/* Resources Dropdown */}
             <div className="relative group">
               <button className="flex items-center text-foreground hover:text-accent transition-colors">
@@ -287,6 +308,33 @@ export function Navigation() {
                 >
                   Pricing
                 </Link>
+              </div>
+
+              {/* Case Studies Section */}
+              <div className="border-b border-gray-100">
+                <button
+                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  onClick={() => setExpandedSection(expandedSection === "case-studies" ? null : "case-studies")}
+                >
+                  <span className="text-sm font-medium text-gray-900">Case Studies</span>
+                  <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "case-studies" ? "rotate-180" : ""}`} />
+                </button>
+                {expandedSection === "case-studies" && (
+                  <div className="px-4 pb-3 bg-gray-50">
+                    <div className="flex flex-col space-y-1">
+                      {['HealthTech', 'AI SaaS', 'FinTech', 'Energy', 'EdTech', 'Services', 'Ag'].map((category) => (
+                        <Link
+                          key={category}
+                          to={`/case-studies?category=${encodeURIComponent(category)}`}
+                          className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {category}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Services Section */}
