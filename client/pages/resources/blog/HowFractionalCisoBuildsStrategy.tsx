@@ -102,7 +102,7 @@ export default function HowFractionalCisoBuildsStrategy() {
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="Farbod Fakhrai" />
-        <meta property="article:published_time" content="2026-07-20T00:00:00Z" />
+        <meta property="article:published_time" content="2026-09-18T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
@@ -155,7 +155,7 @@ export default function HowFractionalCisoBuildsStrategy() {
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>July 20, 2026</span>
+                <span>September 18, 2026</span>
               </div>
 
               <div className="flex items-center gap-2">
@@ -188,7 +188,7 @@ export default function HowFractionalCisoBuildsStrategy() {
             {/* COVER IMAGE */}
             <div className="mb-12 flex justify-center">
               <img
-                src="/images/blog-images/How a Fractional CISO Builds a Strong Cybersecurity Strategy.png"
+                src="/images/blog-images/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy.png"
                 alt="How a Fractional CISO Builds a Strong Cybersecurity Strategy"
                 className="rounded-xl shadow-md max-w-xl w-full h-auto"
               />

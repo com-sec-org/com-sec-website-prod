@@ -836,4 +836,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/introducing-our-security-vulnerability-research-program`,
     image: `${BASE_URL}/images/blog-images/introducing-our-security-vulnerability-research-program.png`,
   },
+  "/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy": {
+    title: "How a Fractional CISO Builds a Strong Cybersecurity Strategy",
+    description:
+      "What building a cybersecurity strategy actually looks like in practice — from the first two weeks understanding the business through the risk assessment, roadmap, and ongoing execution.",
+    canonical: `${BASE_URL}/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy`,
+    image: `${BASE_URL}/images/blog-images/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy.png`,
+  },
 };

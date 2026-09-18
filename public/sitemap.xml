@@ -147,6 +147,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/introducing-our-security-vulnerability-research-program</loc>
     <priority>0.7</priority>
   </url>

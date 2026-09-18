@@ -11,7 +11,7 @@ export const allArticles = [
                 category: "Security Leadership",
                 categoryColor: "sky",
                 featured: false,
-                image: "/images/blog-images/How a Fractional CISO Builds a Strong Cybersecurity Strategy.png",
+                image: "/images/blog-images/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy.png",
                 imageAlt: "How a Fractional CISO Builds a Strong Cybersecurity Strategy",
                 link: "/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy",
               },
