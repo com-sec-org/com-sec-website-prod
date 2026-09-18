@@ -302,6 +302,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-09-15T00:00:00Z",
   },
+  "/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy": {
+    title: "How a Fractional CISO Builds a Strong Cybersecurity Strategy",
+    description:
+      "What building a cybersecurity strategy actually looks like in practice — from the first two weeks through ongoing execution.",
+    image: `${BASE_URL}/images/blog-images/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy.png`,
+    url: `${BASE_URL}/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-09-18T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
