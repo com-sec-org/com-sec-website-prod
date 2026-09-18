@@ -22,9 +22,21 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Index() {
   const [focus, setFocus] = useState<string>("all");
+  const [caseStudyCategory, setCaseStudyCategory] = useState("Energy");
+
+  const caseStudyCategories = [
+    "HealthTech",
+    "AI SaaS",
+    "FinTech",
+    "Energy",
+    "EdTech",
+    "Services",
+    "Ag",
+  ];
 
   const mapMarkers = [
     { id: "north-america", label: "North America", top: 30, left: 24 },
@@ -1087,6 +1099,172 @@ export default function Index() {
               </Button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="case-studies" className="bg-slate-50 py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+              Client stories
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl">
+              Security programs built to stay ready
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              See how Com-Sec helps technology teams make security, compliance,
+              and customer assurance part of everyday operations.
+            </p>
+          </div>
+
+          <div className="mt-10 flex flex-wrap justify-center gap-2" role="tablist" aria-label="Case study categories">
+            {caseStudyCategories.map((category) => (
+              <button
+                key={category}
+                type="button"
+                role="tab"
+                aria-selected={caseStudyCategory === category}
+                onClick={() => setCaseStudyCategory(category)}
+                className={`rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+                  caseStudyCategory === category
+                    ? "border-primary bg-primary text-white shadow-md"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-accent hover:text-primary"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          {caseStudyCategory === "Energy" ? (
+            <article className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
+              <div className="grid lg:grid-cols-[1.05fr_1.95fr]">
+                <aside className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">
+                    Energy technology
+                  </div>
+                  <h3 className="mt-6 text-3xl font-bold leading-tight">
+                    Satoshi Energy
+                  </h3>
+                  <p className="mt-3 text-lg leading-7 text-blue-100">
+                    Bitcoin energy infrastructure
+                  </p>
+
+                  <dl className="mt-10 space-y-6 border-t border-white/15 pt-8 text-sm">
+                    <div>
+                      <dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt>
+                      <dd className="mt-1 text-white/90">August 2025 to present</dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold uppercase tracking-wider text-orange-200">Compliance platform</dt>
+                      <dd className="mt-1 text-white/90">Drata</dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold uppercase tracking-wider text-orange-200">Trust Center</dt>
+                      <dd className="mt-1 text-white/90">SafeBase by Drata</dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold uppercase tracking-wider text-orange-200">Audit partner</dt>
+                      <dd className="mt-1 text-white/90">Sensiba</dd>
+                    </div>
+                  </dl>
+                </aside>
+
+                <div className="p-7 sm:p-10 lg:p-12">
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">SOC 2 Type II readiness &amp; maintenance</p>
+                  <h3 className="mt-4 text-3xl font-bold leading-tight text-primary sm:text-4xl">
+                    From SOC 2 Readiness to an Ongoing Security and Audit Readiness Program
+                  </h3>
+                  <p className="mt-6 text-lg leading-8 text-slate-700">
+                    Satoshi Energy needed more than help preparing evidence for a SOC 2 audit. It needed a security and compliance program that could operate continuously while supporting a growing technology business.
+                  </p>
+                  <p className="mt-4 leading-7 text-slate-600">
+                    Com-Sec turned individual compliance requirements into an operating program that supports control implementation, audit coordination, and customer assurance—before, during, and between audit periods.
+                  </p>
+
+                  <div className="mt-10 grid gap-8 border-t border-slate-200 pt-10 lg:grid-cols-2">
+                    <section>
+                      <h4 className="text-xl font-bold text-primary">The challenge</h4>
+                      <p className="mt-3 leading-7 text-slate-600">
+                        SOC 2 readiness demands more than policies in a platform. Satoshi Energy needed controls operating consistently across access, personnel, vendors, risk, infrastructure, change management, vulnerability management, incident response, continuity, and governance throughout the audit period.
+                      </p>
+                      <p className="mt-3 leading-7 text-slate-600">
+                        The internal team also needed to keep the business moving—not rebuild compliance as a separate project each year.
+                      </p>
+                    </section>
+                    <section>
+                      <h4 className="text-xl font-bold text-primary">Com-Sec&apos;s approach</h4>
+                      <p className="mt-3 leading-7 text-slate-600">
+                        Working directly in Drata, Com-Sec identified gaps, coordinated remediation, validated evidence, maintained policies, supported personnel compliance, and organized vendor, risk, access-review, and security-exception activities.
+                      </p>
+                      <p className="mt-3 leading-7 text-slate-600">
+                        The team bridged auditor requirements and technical owners, coordinated penetration testing and audit requests, and implemented a SafeBase Trust Center for scalable customer assurance.
+                      </p>
+                    </section>
+                  </div>
+
+                  <section className="mt-10 rounded-xl bg-slate-50 p-6 sm:p-8">
+                    <h4 className="text-xl font-bold text-primary">Results</h4>
+                    <ul className="mt-5 grid gap-3 text-slate-700 sm:grid-cols-2">
+                      {[
+                        "Ongoing SOC 2 maintenance keeps controls, evidence, and remediation active between audit periods.",
+                        "Drata operates as a continuous compliance environment—not only an evidence repository before an audit.",
+                        "Risk, vendor security, personnel compliance, policies, and access reviews are part of the recurring lifecycle.",
+                        "Penetration testing and security testing are tracked through remediation and retesting as applicable.",
+                        "Com-Sec centralizes audit coordination, reducing the burden of evidence requests and follow-ups.",
+                        "SafeBase provides a centralized, scalable path to approved security and compliance materials.",
+                      ].map((result) => (
+                        <li key={result} className="flex gap-3 text-sm leading-6">
+                          <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
+                          <span>{result}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+
+                  <div className="mt-10 grid gap-8 lg:grid-cols-2">
+                    <section>
+                      <h4 className="text-xl font-bold text-primary">Why Com-Sec</h4>
+                      <p className="mt-3 leading-7 text-slate-600">
+                        Com-Sec provides continuity across governance, compliance, technical security, audit coordination, and customer assurance. That means a team that can translate auditor expectations, work inside the existing environment, help implement controls, validate evidence, and remain involved as requirements evolve.
+                      </p>
+                    </section>
+                    <section className="rounded-xl border border-orange-200 bg-orange-50 p-6">
+                      <p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client perspective · pending approval</p>
+                      <blockquote className="mt-3 text-lg font-medium leading-7 text-primary">
+                        “Com-Sec worked alongside our team throughout the SOC 2 process, helping us understand what was required, close gaps, coordinate the audit, and keep the program moving after the initial audit cycle. Having one team supporting both the compliance requirements and the underlying security work made the process significantly easier to manage.”
+                      </blockquote>
+                      <p className="mt-4 text-sm font-semibold text-slate-600">— [Name, Title — confirm], Satoshi Energy</p>
+                    </section>
+                  </div>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10">
+                    <h4 className="text-xl font-bold text-primary">Built for continuous audit readiness</h4>
+                    <p className="mt-3 max-w-3xl leading-7 text-slate-600">
+                      SOC 2 should not become a project your team rebuilds every year. Com-Sec helps companies move from audit readiness to an operating security program covering compliance, technical security, testing, evidence, remediation, and audit coordination.
+                    </p>
+                    <Button className="mt-6 bg-accent text-white hover:bg-accent/90" asChild>
+                      <Link to="/contact">Build a security program that stays ready <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    </Button>
+                  </section>
+
+                  <section className="mt-10 rounded-xl border border-amber-300 bg-amber-50 p-5" aria-label="Publication validation notice">
+                    <p className="text-sm font-bold text-amber-950">Publication validation required</p>
+                    <p className="mt-1 text-sm leading-6 text-amber-900">
+                      This case study includes a draft client quote and must be confirmed before publication. Validate engagement dates and status, the industry/company description, permission to use the Satoshi Energy name and logo, publicly disclosable SOC 2 report periods and Type I/II outcomes, and whether Sensiba may be named.
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </article>
+          ) : (
+            <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center">
+              <h3 className="text-xl font-bold text-primary">More {caseStudyCategory} stories are coming soon</h3>
+              <p className="mt-3 leading-7 text-slate-600">
+                We&apos;re preparing client-approved stories for this category. Explore Energy to read the currently available case study.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
