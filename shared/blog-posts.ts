@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "10-steps-to-building-an-effective-security-program",
+                title: "10 Steps to Building an Effective Security Program",
+                excerpt: "Building a security program is a sequence of practical steps that build on each other. Here's the order we use with every client.",
+                date: "September 22, 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Program",
+                categoryColor: "sky",
+                featured: false,
+                image: "/images/blog-images/10-steps-to-building-an-effective-security-program.png",
+                imageAlt: "10 Steps to Building an Effective Security Program",
+                link: "/blog/10-steps-to-building-an-effective-security-program",
+              },
+              {
                 id: "how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy",
                 title: "How a Fractional CISO Builds a Strong Cybersecurity Strategy",
                 excerpt: "What building a cybersecurity strategy actually looks like in practice - from the first two weeks understanding the business through the risk assessment, roadmap, and ongoing execution.",
