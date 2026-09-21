@@ -311,6 +311,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-09-18T00:00:00Z",
   },
+  "/blog/10-steps-to-building-an-effective-security-program": {
+    title: "10 Steps to Building an Effective Security Program",
+    description:
+      "Building a security program is a sequence of practical steps that build on each other. Here's the order we use with every client.",
+    image: `${BASE_URL}/images/blog-images/10-steps-to-building-an-effective-security-program.png`,
+    url: `${BASE_URL}/blog/10-steps-to-building-an-effective-security-program`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-09-22T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

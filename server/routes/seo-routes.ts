@@ -843,4 +843,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy`,
     image: `${BASE_URL}/images/blog-images/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy.png`,
   },
+  "/blog/10-steps-to-building-an-effective-security-program": {
+    title: "10 Steps to Building an Effective Security Program",
+    description:
+      "Building a security program is a sequence of practical steps that build on each other. Here's the 10-step order Com-Sec uses with every client.",
+    canonical: `${BASE_URL}/blog/10-steps-to-building-an-effective-security-program`,
+    image: `${BASE_URL}/images/blog-images/10-steps-to-building-an-effective-security-program.png`,
+  },
 };
