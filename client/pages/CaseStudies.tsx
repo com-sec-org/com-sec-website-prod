@@ -6,7 +6,6 @@ import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom"
 
 const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"];
 const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
-const caryHealthCardLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F6b172341f1184d68bd31de51a31053ae?format=webp&width=800&height=1200";
 const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
 
 const studiesByCategory: Record<string, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
@@ -217,9 +216,7 @@ export default function CaseStudies() {
                         <div className="flex items-start justify-between gap-5">
                           <div>
                             <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">{category}</span>
-                            {study.id === "caryhealth" && <img src={caryHealthCardLogo} alt="CaryHealth logo" className="mt-4 h-14 w-40 object-contain object-left" />}
-                            {study.id === "vheda-health" && <img src={vhedaHealthLogo} alt="Vheda Health logo" className="mt-4 h-14 w-40 object-contain object-left" />}
-                            {!['caryhealth', 'vheda-health'].includes(study.id) && <h2 className="mt-3 text-2xl font-bold leading-tight text-primary">{study.client}</h2>}
+                            <h2 className="mt-3 text-2xl font-bold leading-tight text-primary">{study.client}</h2>
                           </div>
                         </div>
                         <h3 className="mt-6 max-w-xl text-lg font-semibold leading-7 text-slate-700">{study.title}</h3>
