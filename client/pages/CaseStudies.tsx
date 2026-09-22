@@ -2,20 +2,55 @@ import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import { useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 
 const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services", "Ag"];
 
+const studiesByCategory: Record<string, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
+  HealthTech: [
+    {
+      id: "caryhealth",
+      client: "CaryHealth",
+      title: "From First Questionnaire to Acquisition",
+      summary: "How an embedded security team helped CaryHealth move from a customer SIG questionnaire through growth and acquisition due diligence.",
+      meta: "Digital pharmacy · SOC 2 · HIPAA",
+    },
+    {
+      id: "vheda-health",
+      client: "Vheda Health",
+      title: "Buried in HITRUST, Understaffed on IT: How Vheda Health Made Com-Sec Part of the Team",
+      summary: "How Vheda Health combined HITRUST readiness, security operations, and embedded IT support with Com-Sec.",
+      meta: "Virtual care · HITRUST · Managed IT",
+    },
+  ],
+  "AI SaaS": [],
+  FinTech: [],
+  Energy: [
+    {
+      id: "satoshi-energy",
+      client: "Satoshi Energy",
+      title: "From SOC 2 Readiness to an Ongoing Security and Audit Readiness Program",
+      summary: "How Satoshi Energy turned SOC 2 readiness into an operating security and customer assurance program.",
+      meta: "Energy technology · SOC 2 Type II",
+    },
+  ],
+  EdTech: [],
+  Services: [],
+  Ag: [],
+};
+
 export default function CaseStudies() {
+  const { studyId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const requestedCategory = searchParams.get("category");
-  const [category, setCategory] = useState(
-    requestedCategory && categories.includes(requestedCategory) ? requestedCategory : "Energy",
-  );
+  const requestedStudy = studyId ?? searchParams.get("study");
+  const categoryFromStudy = categories.find((item) => studiesByCategory[item]?.some((study) => study.id === requestedStudy));
+  const category = requestedCategory && categories.includes(requestedCategory) ? requestedCategory : categoryFromStudy ?? "Energy";
+
+  const categoryStudies = studiesByCategory[category] ?? [];
+  const selectedStudy = categoryStudies.find((study) => study.id === requestedStudy);
 
   const selectCategory = (nextCategory: string) => {
-    setCategory(nextCategory);
     setSearchParams({ category: nextCategory });
   };
 
@@ -48,7 +83,13 @@ export default function CaseStudies() {
             ))}
           </div>
 
-          {category === "Energy" ? (
+          {selectedStudy && (
+            <button type="button" onClick={() => setSearchParams({ category })} className="mt-8 inline-flex items-center text-sm font-semibold text-accent hover:text-primary">
+              <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category} case studies
+            </button>
+          )}
+
+          {selectedStudy?.id === "satoshi-energy" ? (
             <article className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
               <div className="grid lg:grid-cols-[1.05fr_1.95fr]">
                 <aside className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
@@ -91,8 +132,9 @@ export default function CaseStudies() {
                 </div>
               </div>
             </article>
-          ) : category === "HealthTech" ? (
+          ) : selectedStudy && category === "HealthTech" ? (
             <>
+            {selectedStudy.id === "caryhealth" && (
             <article className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
               <div className="grid lg:grid-cols-[1.05fr_1.95fr]">
                 <aside className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
@@ -147,7 +189,9 @@ export default function CaseStudies() {
                 </div>
               </div>
             </article>
+            )}
 
+            {selectedStudy.id === "vheda-health" && (
             <article className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
               <div className="border-b border-amber-200 bg-amber-50 px-7 py-4 text-sm font-semibold leading-6 text-amber-950 sm:px-10 lg:px-12">
                 Status: DRAFT. Quote is not final — pending client wording approval. Do not publish until every item in the checklist below is confirmed.
@@ -210,9 +254,32 @@ export default function CaseStudies() {
                 </div>
               </div>
             </article>
+            )}
             </>
           ) : (
-            <div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center"><h2 className="text-xl font-bold text-primary">More {category} stories are coming soon</h2><p className="mt-3 leading-7 text-slate-600">We&apos;re preparing client-approved stories for this category. Choose Energy or HealthTech to read an available case study.</p></div>
+            <div className="mt-8">
+              {categoryStudies.length > 0 ? (
+                <div className="grid gap-6 md:grid-cols-2">
+                  {categoryStudies.map((study) => (
+                    <article key={study.id} className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl sm:p-8">
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="text-xs font-bold uppercase tracking-[0.18em] text-accent">{category}</span>
+                        <span className="text-xs font-medium text-slate-500">Case study</span>
+                      </div>
+                      <h2 className="mt-5 text-2xl font-bold leading-tight text-primary">{study.client}</h2>
+                      <h3 className="mt-3 text-lg font-semibold leading-7 text-slate-700">{study.title}</h3>
+                      <p className="mt-4 flex-1 leading-7 text-slate-600">{study.summary}</p>
+                      <div className="mt-6 flex items-center justify-between gap-4 border-t border-slate-100 pt-5">
+                        <span className="text-sm text-slate-500">{study.meta}</span>
+                        <Link to={`/case-studies/${study.id}?category=${encodeURIComponent(category)}`} className="inline-flex items-center whitespace-nowrap text-sm font-semibold text-accent transition-colors group-hover:text-primary">Read case study <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center"><h2 className="text-xl font-bold text-primary">More {category} stories are coming soon</h2><p className="mt-3 leading-7 text-slate-600">We&apos;re preparing client-approved stories for this category. Check back soon for the next client story.</p></div>
+              )}
+            </div>
           )}
         </div>
       </section>
