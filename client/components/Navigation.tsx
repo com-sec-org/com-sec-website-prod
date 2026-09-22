@@ -127,19 +127,35 @@ export function Navigation() {
                       </div>
                     </div>
                   </div>
-                  <Link to="/blogs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Blogs</Link>
-                  <Link to="/phishing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Phishing Test</Link>
+                  <Link to="/blogs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Blog</Link>
+                  <Link to="/phishing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Phishing Testing</Link>
                   <Link to="/pricing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Pricing</Link>
                 </div>
               </div>
             </div>
 
-            <Link
-              to="/case-studies"
-              className={`text-foreground hover:text-accent transition-colors ${isActive("/case-studies") ? "text-accent" : ""}`}
-            >
-              Case Studies
-            </Link>
+            <div className="relative group">
+              <Link
+                to="/case-studies"
+                className={`flex items-center text-foreground hover:text-accent transition-colors ${isActive("/case-studies") ? "text-accent" : ""}`}
+              >
+                Case Studies
+                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
+              </Link>
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-2">
+                  {['HealthTech', 'AI SaaS', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
+                    <Link
+                      key={category}
+                      to={`/case-studies?category=${encodeURIComponent(category)}`}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                    >
+                      {category}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
 
             {/* Frameworks Dropdown */}
             <div className="relative group">
@@ -363,8 +379,8 @@ export function Navigation() {
                           <Link to="/partnerships" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Partnerships</Link>
                         </div>}
                       </div>
-                      <Link to="/blogs" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Blogs</Link>
-                      <Link to="/phishing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Phishing Test</Link>
+                      <Link to="/blogs" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+                      <Link to="/phishing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Phishing Testing</Link>
                       <Link to="/pricing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
                     </div>
                   </div>
