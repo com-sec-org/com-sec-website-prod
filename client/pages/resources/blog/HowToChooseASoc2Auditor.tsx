@@ -231,7 +231,7 @@ export default function HowToChooseASoc2Auditor() {
               <section className="mb-10">
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    I get this question constantly. A founder gets two SOC 2 audit quotes. One is $30,000. The other is $12,000. Same framework. Same company. Same scope. They ask me which one to pick.
+                    I get this question constantly. A founder gets two SOC 2 audit quotes. One is $20,000. The other is $8,000. Same framework. Same company. Same scope. They ask me which one to pick.
                   </p>
                   <p className="text-gray-700 leading-relaxed text-lg">
                     My answer is always the same: why is the cheap one so cheap?
