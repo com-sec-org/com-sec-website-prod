@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 
 const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services", "Ag"];
 
@@ -41,7 +41,8 @@ const studiesByCategory: Record<string, { id: string; client: string; title: str
 
 export default function CaseStudies() {
   const { studyId } = useParams();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const requestedCategory = searchParams.get("category");
   const requestedStudy = studyId ?? searchParams.get("study");
   const categoryFromStudy = categories.find((item) => studiesByCategory[item]?.some((study) => study.id === requestedStudy));
@@ -51,7 +52,7 @@ export default function CaseStudies() {
   const selectedStudy = categoryStudies.find((study) => study.id === requestedStudy);
 
   const selectCategory = (nextCategory: string) => {
-    setSearchParams({ category: nextCategory });
+    navigate(`/case-studies?category=${encodeURIComponent(nextCategory)}`);
   };
 
   return (
@@ -84,9 +85,9 @@ export default function CaseStudies() {
           </div>
 
           {selectedStudy && (
-            <button type="button" onClick={() => setSearchParams({ category })} className="mt-8 inline-flex items-center text-sm font-semibold text-accent hover:text-primary">
+            <Link to={`/case-studies?category=${encodeURIComponent(category)}`} className="mt-8 inline-flex items-center text-sm font-semibold text-accent hover:text-primary">
               <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category} case studies
-            </button>
+            </Link>
           )}
 
           {selectedStudy?.id === "satoshi-energy" ? (
