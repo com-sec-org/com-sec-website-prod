@@ -383,7 +383,7 @@ export function Navigation() {
                 {expandedSection === "case-studies" && (
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
-                      {['HealthTech', 'AI SaaS', 'FinTech', 'Energy', 'EdTech', 'Services', 'Ag'].map((category) => (
+                      {['HealthTech', 'AI SaaS', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
                         <Link
                           key={category}
                           to={`/case-studies?category=${encodeURIComponent(category)}`}

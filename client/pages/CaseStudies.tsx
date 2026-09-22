@@ -4,7 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 
-const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services", "Ag"];
+const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"];
 
 const studiesByCategory: Record<string, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
   HealthTech: [
@@ -36,7 +36,6 @@ const studiesByCategory: Record<string, { id: string; client: string; title: str
   ],
   EdTech: [],
   Services: [],
-  Ag: [],
 };
 
 export default function CaseStudies() {
@@ -129,7 +128,6 @@ export default function CaseStudies() {
 
                   <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Built for continuous audit readiness</h3><p className="mt-3 max-w-3xl leading-7 text-slate-600">SOC 2 shouldn&apos;t become a project your team rebuilds every year. Com-Sec helps companies move from audit readiness to an operating security program covering compliance, technical security, testing, evidence, remediation, and audit coordination.</p><Button className="mt-6 bg-accent text-white hover:bg-accent/90" asChild><Link to="/contact">Build a security program that stays ready <ArrowRight className="ml-2 h-4 w-4" /></Link></Button></section>
 
-                  <section className="mt-10 rounded-xl border border-amber-300 bg-amber-50 p-5" aria-label="Publication validation notice"><p className="text-sm font-bold text-amber-950">Publication validation required</p><p className="mt-1 text-sm leading-6 text-amber-900">Before publication, confirm engagement dates and status, the industry/company description, permission to use the Satoshi Energy name and logo, report and audit periods, SOC 2 Type I/II disclosures, Sensiba naming, penetration-test disclosures, SafeBase references, and the approved client quote and attribution.</p></section>
                 </div>
               </div>
             </article>
@@ -186,7 +184,7 @@ export default function CaseStudies() {
 
                   <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li><a className="text-accent underline" href="https://www.cary.health/about" target="_blank" rel="noreferrer">CaryHealth company overview</a></li><li><a className="text-accent underline" href="https://com-sec.io/blog/caryhealth-first-client-story" target="_blank" rel="noreferrer">Com-Sec&apos;s CaryHealth first-client story</a></li><li><a className="text-accent underline" href="https://www.cary.health/press-release-news/caretria-acquires-caryhealth-creating-an-industry-leading-direct-to-patient-pharmacy-platform" target="_blank" rel="noreferrer">CareTria acquisition announcement</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/e4O-dHquGGpViGF" target="_blank" rel="noreferrer">CaryHealth vCISO SOW in Canva</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/S13pBb7bSl3IVHp" target="_blank" rel="noreferrer">CaryHealth July 2025 update in Canva</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/RkoO1FSxukse6mM" target="_blank" rel="noreferrer">CaryHealth 2026 roadmap in Canva</a></li><li><a className="text-accent underline" href="https://app.notion.com/p/dc4f2cfa33ad42eda3d3269d4309a14d?pvs=204" target="_blank" rel="noreferrer">CaryHealth security and compliance playbook in Notion</a></li></ul></section>
 
-                  <section className="mt-10 rounded-xl border border-amber-300 bg-amber-50 p-6"><h3 className="text-xl font-bold text-amber-950">Publication checklist (before this goes live)</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-amber-900"><li>Confirm the client&apos;s legal and public-facing name</li><li>Confirm engagement dates and current status</li><li>Written permission to use company name and logo</li><li>Verify every audit, certification, score, finding count, date, customer reference, and measurable result</li><li>Approval before naming auditors, partners, customers, or platforms</li><li>Replace the draft quote with client-approved language and attribution</li><li>Remove internal pricing, staffing, health ratings, and confidential operating details</li><li>Final Com-Sec review before publication</li></ul></section>
+
                 </div>
               </div>
             </article>
@@ -195,7 +193,7 @@ export default function CaseStudies() {
             {selectedStudy.id === "vheda-health" && (
             <article className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
               <div className="border-b border-amber-200 bg-amber-50 px-7 py-4 text-sm font-semibold leading-6 text-amber-950 sm:px-10 lg:px-12">
-                Status: DRAFT. Quote is not final — pending client wording approval. Do not publish until every item in the checklist below is confirmed.
+                Status: DRAFT. Quote is not final — pending client wording approval. Do not publish until the remaining facts and approvals are confirmed.
               </div>
               <div className="grid lg:grid-cols-[1.05fr_1.95fr]">
                 <aside className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
@@ -251,7 +249,7 @@ export default function CaseStudies() {
 
                   <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li><a className="text-accent underline" href="https://vheda.com/about/" target="_blank" rel="noreferrer">Vheda Health company overview</a></li><li><a className="text-accent underline" href="https://vheda.com/what-we-do/" target="_blank" rel="noreferrer">Vheda Health services and populations</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/3_O_gcYpZ823UDQ" target="_blank" rel="noreferrer">Vheda Health Q1 2025 update in Canva</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/eFhTcJpObouXoXp" target="_blank" rel="noreferrer">Vheda Health 2026 roadmap in Canva</a></li><li><a className="text-accent underline" href="https://app.notion.com/p/39982f7daf118162b284e62af3fad135?pvs=204" target="_blank" rel="noreferrer">Vheda Health client tracker in Notion</a></li></ul></section>
 
-                  <section className="mt-10 rounded-xl border border-amber-300 bg-amber-50 p-6"><h3 className="text-xl font-bold text-amber-950">Publication checklist (before this goes live)</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-amber-900"><li>Confirm the client&apos;s legal and public-facing name</li><li>Confirm engagement dates and current status</li><li>Written permission to use company name and logo</li><li>Verify every audit, certification, score, finding count, date, customer reference, and measurable result</li><li>Approval before naming auditors, partners, customers, or platforms</li><li>Replace the draft quote with client-approved language and attribution</li><li>Remove internal pricing, staffing, health ratings, and confidential operating details</li><li>Final Com-Sec review before publication</li></ul></section>
+
                 </div>
               </div>
             </article>
