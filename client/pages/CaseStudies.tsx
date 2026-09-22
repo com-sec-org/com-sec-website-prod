@@ -137,6 +137,11 @@ export default function CaseStudies() {
             <article className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
               <div className="grid lg:grid-cols-[1.05fr_1.95fr]">
                 <aside className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200"
+                    alt="CaryHealth logo"
+                    className="mb-8 h-12 w-auto object-contain object-left sm:h-14"
+                  />
                   <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
                   <h2 className="mt-6 text-3xl font-bold">CaryHealth</h2>
                   <p className="mt-3 text-lg text-blue-100">Digital pharmacy</p>
