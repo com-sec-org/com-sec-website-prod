@@ -6,7 +6,7 @@ import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom"
 
 const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"];
 const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
-const caryHealthCardLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fa4fa5e5526c14a70b50ee2ff9424c4b7?format=webp&width=800&height=1200";
+const caryHealthCardLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F6b172341f1184d68bd31de51a31053ae?format=webp&width=800&height=1200";
 const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
 
 const studiesByCategory: Record<string, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
