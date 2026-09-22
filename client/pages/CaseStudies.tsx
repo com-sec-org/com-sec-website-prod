@@ -2,13 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 
-const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"];
+const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"] as const;
+type Category = (typeof categories)[number];
 const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
 const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
 
-const studiesByCategory: Record<string, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
+const studiesByCategory: Record<Category, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
   HealthTech: [
     {
       id: "caryhealth",
@@ -34,18 +35,17 @@ const studiesByCategory: Record<string, { id: string; client: string; title: str
 
 export default function CaseStudies() {
   const { studyId } = useParams();
-  const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const requestedCategory = searchParams.get("category");
   const requestedStudy = studyId ?? searchParams.get("study");
-  const categoryFromStudy = categories.find((item) => studiesByCategory[item]?.some((study) => study.id === requestedStudy));
-  const category = requestedCategory && categories.includes(requestedCategory) ? requestedCategory : categoryFromStudy ?? "Energy";
+  const categoryFromStudy = categories.find((item) => studiesByCategory[item].some((study) => study.id === requestedStudy));
+  const category = categories.find((item) => item === requestedCategory) ?? categoryFromStudy ?? "HealthTech";
 
   const categoryStudies = studiesByCategory[category] ?? [];
   const selectedStudy = categoryStudies.find((study) => study.id === requestedStudy);
 
-  const selectCategory = (nextCategory: string) => {
-    navigate(`/case-studies?category=${encodeURIComponent(nextCategory)}`);
+  const selectCategory = (nextCategory: Category) => {
+    setSearchParams({ category: nextCategory });
   };
 
   return (
