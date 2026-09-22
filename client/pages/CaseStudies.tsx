@@ -5,6 +5,8 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 
 const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"];
+const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
+const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
 
 const studiesByCategory: Record<string, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
   HealthTech: [
@@ -18,9 +20,9 @@ const studiesByCategory: Record<string, { id: string; client: string; title: str
     {
       id: "vheda-health",
       client: "Vheda Health",
-      title: "Buried in HITRUST, Understaffed on IT: How Vheda Health Made Com-Sec Part of the Team",
-      summary: "How Vheda Health combined HITRUST readiness, security operations, and embedded IT support with Com-Sec.",
-      meta: "Virtual care · HITRUST · Managed IT",
+      title: "From HITRUST Complexity to an Embedded Security & IT Partnership",
+      summary: "How Vheda Health turned HITRUST readiness into an embedded security and IT partnership.",
+      meta: "Virtual Care · HITRUST · Managed IT",
     },
   ],
   "AI SaaS": [],
@@ -58,17 +60,20 @@ export default function CaseStudies() {
     <>
       <Navigation />
       <div className="min-h-screen bg-slate-50 pt-16">
-      <section className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 py-16 text-white sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-200">Client stories</p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">Security programs built to stay ready</h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-blue-100">See how Com-Sec helps technology teams make security, compliance, and customer assurance part of everyday operations.</p>
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 py-14 text-white sm:py-18">
+        <div className="absolute -right-24 -top-32 h-96 w-96 rounded-full bg-blue-400/10 blur-3xl" aria-hidden="true" />
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-orange-200">Client stories</p>
+            <h1 className="mt-5 max-w-3xl text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-6xl">Real Clients. Real Security Outcomes.</h1>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-blue-100 sm:text-lg">See how Com-Sec helps technology teams make security, compliance, and customer assurance part of everyday operations.</p>
+          </div>
         </div>
       </section>
 
       <section className="py-10 sm:py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap gap-2" role="tablist" aria-label="Case study categories">
+          <div className="inline-flex max-w-full flex-wrap gap-1 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-sm" role="tablist" aria-label="Case study categories">
             {categories.map((item) => (
               <button
                 key={item}
@@ -76,7 +81,7 @@ export default function CaseStudies() {
                 role="tab"
                 aria-selected={category === item}
                 onClick={() => selectCategory(item)}
-                className={`rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${category === item ? "border-primary bg-primary text-white shadow-md" : "border-slate-200 bg-white text-slate-600 hover:border-accent hover:text-primary"}`}
+                className={`rounded-xl px-4 py-2.5 text-sm font-semibold transition-all ${category === item ? "bg-primary text-white shadow-sm" : "text-slate-600 hover:bg-slate-100 hover:text-primary"}`}
               >
                 {item}
               </button>
@@ -90,13 +95,13 @@ export default function CaseStudies() {
           )}
 
           {selectedStudy?.id === "satoshi-energy" ? (
-            <article className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
-              <div className="grid lg:grid-cols-[1.05fr_1.95fr]">
-                <aside className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+            <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
+              <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
+                <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
                   <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">Energy technology</div>
                   <h2 className="mt-6 text-3xl font-bold">Satoshi Energy</h2>
                   <p className="mt-3 text-lg text-blue-100">Bitcoin energy infrastructure</p>
-                  <dl className="mt-10 space-y-6 border-t border-white/15 pt-8 text-sm">
+                  <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">August 2025 to present</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Trust Center</dt><dd className="mt-1 text-white/90">SafeBase by Drata</dd></div>
@@ -104,7 +109,7 @@ export default function CaseStudies() {
                   </dl>
                 </aside>
 
-                <div className="p-7 sm:p-10 lg:p-12">
+                <div className="p-7 sm:p-10 lg:p-14">
                   <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">SOC 2 Type II readiness &amp; maintenance</p>
                   <h2 className="mt-4 text-3xl font-bold leading-tight text-primary sm:text-4xl">From SOC 2 Readiness to an Ongoing Security and Audit Readiness Program</h2>
                   <p className="mt-6 text-lg leading-8 text-slate-700">Satoshi Energy needed more than help preparing evidence for a SOC 2 audit. The company needed a security and compliance program that could operate continuously while supporting a growing technology business.</p>
@@ -124,7 +129,7 @@ export default function CaseStudies() {
                     "SafeBase provides a centralized, scalable path to approved security and compliance documentation.",
                   ].map((result) => <li key={result} className="flex gap-3"><CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" /><span>{result}</span></li>)}</ul></section>
 
-                  <div className="mt-10 grid gap-8 lg:grid-cols-2"><section><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><p className="mt-3 leading-7 text-slate-600">Satoshi Energy needed a team that could work inside the existing environment, understand what auditors were asking for, translate requirements for engineering and business stakeholders, help implement controls, validate evidence, and remain involved as the program evolved.</p><p className="mt-3 leading-7 text-slate-600">Com-Sec provided continuity across governance, compliance, technical security, audit coordination, and customer assurance—turning SOC 2 from a periodic audit project into an ongoing security program.</p></section><section className="rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client perspective · pending approval</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">“Com-Sec worked alongside our team throughout the SOC 2 process, helping us understand what was required, close gaps, coordinate the audit, and keep the program moving after the initial audit cycle. Having one team supporting both the compliance requirements and the underlying security work made the process significantly easier to manage.”</blockquote><p className="mt-4 text-sm font-semibold text-slate-600">— [Name, Title — confirm], Satoshi Energy</p></section></div>
+                  <div className="mt-10 grid gap-8 lg:grid-cols-2"><section><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><p className="mt-3 leading-7 text-slate-600">Satoshi Energy needed a team that could work inside the existing environment, understand what auditors were asking for, translate requirements for engineering and business stakeholders, help implement controls, validate evidence, and remain involved as the program evolved.</p><p className="mt-3 leading-7 text-slate-600">Com-Sec provided continuity across governance, compliance, technical security, audit coordination, and customer assurance—turning SOC 2 from a periodic audit project into an ongoing security program.</p></section><section className="rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">“Com-Sec worked alongside our team throughout the SOC 2 process, helping us understand what was required, close gaps, coordinate the audit, and keep the program moving after the initial audit cycle. Having one team supporting both the compliance requirements and the underlying security work made the process significantly easier to manage.”</blockquote><p className="mt-4 text-sm font-semibold text-slate-600">— Satoshi Energy</p></section></div>
 
                   <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Built for continuous audit readiness</h3><p className="mt-3 max-w-3xl leading-7 text-slate-600">SOC 2 shouldn&apos;t become a project your team rebuilds every year. Com-Sec helps companies move from audit readiness to an operating security program covering compliance, technical security, testing, evidence, remediation, and audit coordination.</p><Button className="mt-6 bg-accent text-white hover:bg-accent/90" asChild><Link to="/contact">Build a security program that stays ready <ArrowRight className="ml-2 h-4 w-4" /></Link></Button></section>
 
@@ -134,31 +139,31 @@ export default function CaseStudies() {
           ) : selectedStudy && category === "HealthTech" ? (
             <>
             {selectedStudy.id === "caryhealth" && (
-            <article className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
-              <div className="grid lg:grid-cols-[1.05fr_1.95fr]">
-                <aside className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+            <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
+              <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
+                <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200"
+                    src={caryHealthLogo}
                     alt="CaryHealth logo"
                     className="mb-8 h-12 w-auto object-contain object-left sm:h-14"
                   />
                   <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
                   <h2 className="mt-6 text-3xl font-bold">CaryHealth</h2>
                   <p className="mt-3 text-lg text-blue-100">Digital pharmacy</p>
-                  <dl className="mt-10 space-y-6 border-t border-white/15 pt-8 text-sm">
+                  <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">HealthTech, digital pharmacy</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">CaryHealth (formerly CaryRx)</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Relationship</dt><dd className="mt-1 text-white/90">Com-Sec&apos;s first client</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">Began pre-launch, ran through CaryHealth&apos;s acquisition by CareTria in May 2026 [confirm first year of paid work]</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">Began pre-launch and continued through CaryHealth&apos;s acquisition by CareTria in May 2026</dd></div>
                   </dl>
                 </aside>
 
-                <div className="p-7 sm:p-10 lg:p-12">
+                <div className="p-7 sm:p-10 lg:p-14">
                   <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">From first questionnaire to acquisition</p>
                   <h2 className="mt-4 text-3xl font-bold leading-tight text-primary sm:text-4xl">From First Questionnaire to Acquisition</h2>
 
-                  <section className="mt-8"><h3 className="text-xl font-bold text-primary">Client overview</h3><ul className="mt-4 grid gap-3 text-slate-700 sm:grid-cols-2"><li><strong>Industry:</strong> HealthTech, digital pharmacy</li><li><strong>Company:</strong> CaryHealth (formerly CaryRx)</li><li><strong>Services:</strong> vCISO, SOC 2 readiness and maintenance, HIPAA support, penetration testing, security engineering, security awareness, vendor risk, audit coordination</li><li><strong>GRC platform:</strong> Drata</li><li><strong>Relationship:</strong> Com-Sec&apos;s first client</li><li><strong>Engagement:</strong> Began pre-launch, ran through CaryHealth&apos;s acquisition by CareTria in May 2026 [confirm first year of paid work]</li></ul></section>
+                  <section className="mt-8"><h3 className="text-xl font-bold text-primary">Client overview</h3><ul className="mt-4 grid gap-3 text-slate-700 sm:grid-cols-2"><li><strong>Industry:</strong> HealthTech, digital pharmacy</li><li><strong>Company:</strong> CaryHealth (formerly CaryRx)</li><li><strong>Services:</strong> vCISO, SOC 2 readiness and maintenance, HIPAA support, penetration testing, security engineering, security awareness, vendor risk, audit coordination</li><li><strong>GRC platform:</strong> Drata</li><li><strong>Relationship:</strong> Com-Sec&apos;s first client</li><li><strong>Engagement:</strong> Began pre-launch and continued through CaryHealth&apos;s acquisition by CareTria in May 2026</li></ul></section>
 
                   <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Executive summary</h3><p className="mt-4 text-lg leading-8 text-slate-700">CaryHealth&apos;s security program didn&apos;t just pass its acquisition due diligence, it was clean enough that it wasn&apos;t a negotiating point.</p><p className="mt-4 leading-7 text-slate-600">CaryHealth CEO Areo Nazari knew Farbod from his time leading security at Lark. What started as a small request to help complete a customer SIG questionnaire quickly grew into a long-term partnership. Com-Sec became CaryHealth&apos;s embedded security team, building its security framework and leading vCISO, SOC 2 and HIPAA readiness, cloud and application security, penetration testing, employee training, onboarding and offboarding, vendor reviews, audit coordination, compliance, and IT support.</p><p className="mt-4 leading-7 text-slate-600">The partnership continued through CaryHealth&apos;s growth and eventual acquisition by CareTria to form an integrated direct-to-patient pharmacy platform. Internal delivery reports show the results: a SOC 2 audit with zero findings, full Drata governance and personnel compliance, and a 96/100 external security score.</p></section>
 
@@ -181,11 +186,10 @@ export default function CaseStudies() {
 
                   <section className="mt-10"><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><p className="mt-4 leading-7 text-slate-600">CaryHealth didn&apos;t need five vendors for strategy, compliance, engineering, testing, and daily operations. It needed one team that could move from advice to execution and scale with the company. That&apos;s what let the security program hold up under acquisition scrutiny instead of becoming a liability in the deal.</p></section>
 
-                  <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;I brought Farbod one questionnaire because I trusted him from our Lark days — I wasn&apos;t shopping for a vendor. That trust is why it turned into the security program that got us through diligence. When CareTria&apos;s team went through our environment, it wasn&apos;t a red flag. It didn&apos;t slow the deal down. That&apos;s what I actually paid for, even if I didn&apos;t know it at the time.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600">— Areo Nazari, CEO, CaryHealth</p><p className="mt-3 text-sm italic text-slate-500">(Draft — send to Areo for final wording approval before publishing.)</p></section>
+                  <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;I brought Farbod one questionnaire because I trusted him from our Lark days — I wasn&apos;t shopping for a vendor. That trust is why it turned into the security program that got us through diligence. When CareTria&apos;s team went through our environment, it wasn&apos;t a red flag. It didn&apos;t slow the deal down. That&apos;s what I actually paid for, even if I didn&apos;t know it at the time.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600">— Areo Nazari, CEO, CaryHealth</p></section>
 
                   <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Call to action</h3><p className="mt-4 leading-7 text-slate-600">If your security program needs to survive a customer&apos;s SIG questionnaire, an auditor, or a buyer&apos;s due diligence team — not just look good on paper — talk to Com-Sec.</p><p className="mt-4 text-lg font-semibold leading-7 text-primary">Version 2:</p><p className="mt-2 text-lg font-semibold leading-7 text-primary">Security that holds up to customers, auditors, and buyers. That’s Com-Sec.</p><Button className="mt-6 bg-accent text-white hover:bg-accent/90" asChild><Link to="/contact">Talk to Com-Sec <ArrowRight className="ml-2 h-4 w-4" /></Link></Button></section>
 
-                  <section className="mt-10 rounded-xl border border-amber-300 bg-amber-50 p-6"><h3 className="text-xl font-bold text-amber-950">Still needed</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-amber-900"><li>Confirm the year of the original SIG questionnaire / first paid engagement</li><li>Permission to use CaryHealth&apos;s name and logo</li><li>Confirm &quot;SOC 2 with zero findings&quot; is publishable</li><li>Confirm the 96/100 score is publishable</li><li>Any enterprise deal, health plan, or pharma review directly supported by this work</li><li>Estimated internal hours/hires avoided</li><li>Confirm the engagement can be framed as concluding because of the CareTria acquisition</li></ul></section>
 
                   <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li><a className="text-accent underline" href="https://www.cary.health/about" target="_blank" rel="noreferrer">CaryHealth company overview</a></li><li><a className="text-accent underline" href="https://com-sec.io/blog/caryhealth-first-client-story" target="_blank" rel="noreferrer">Com-Sec&apos;s CaryHealth first-client story</a></li><li><a className="text-accent underline" href="https://www.cary.health/press-release-news/caretria-acquires-caryhealth-creating-an-industry-leading-direct-to-patient-pharmacy-platform" target="_blank" rel="noreferrer">CareTria acquisition announcement</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/e4O-dHquGGpViGF" target="_blank" rel="noreferrer">CaryHealth vCISO SOW in Canva</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/S13pBb7bSl3IVHp" target="_blank" rel="noreferrer">CaryHealth July 2025 update in Canva</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/RkoO1FSxukse6mM" target="_blank" rel="noreferrer">CaryHealth 2026 roadmap in Canva</a></li><li><a className="text-accent underline" href="https://app.notion.com/p/dc4f2cfa33ad42eda3d3269d4309a14d?pvs=204" target="_blank" rel="noreferrer">CaryHealth security and compliance playbook in Notion</a></li></ul></section>
 
@@ -196,86 +200,85 @@ export default function CaseStudies() {
             )}
 
             {selectedStudy.id === "vheda-health" && (
-            <article className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
-              <div className="border-b border-amber-200 bg-amber-50 px-7 py-4 text-sm font-semibold leading-6 text-amber-950 sm:px-10 lg:px-12">
-                Status: DRAFT. Quote is not final — pending client wording approval. Do not publish until the remaining facts and approvals are confirmed.
-              </div>
-              <div className="grid lg:grid-cols-[1.05fr_1.95fr]">
-                <aside className="bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
+            <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
+              <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
+                <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+                  <img
+                    src={vhedaHealthLogo}
+                    alt="Vheda Health logo"
+                    className="mb-8 h-16 w-full max-w-[250px] object-contain object-left"
+                  />
+                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech · Virtual Care</div>
                   <h2 className="mt-6 text-3xl font-bold">Vheda Health</h2>
-                  <p className="mt-3 text-lg text-blue-100">Virtual care</p>
-                  <dl className="mt-10 space-y-6 border-t border-white/15 pt-8 text-sm">
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">HealthTech, virtual care</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">Vheda Health</dd></div>
+                  <p className="mt-3 text-lg text-blue-100">Embedded security &amp; IT partnership</p>
+                  <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">HealthTech, Virtual Care</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Vanta</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Assessment partners</dt><dd className="mt-1 text-white/90">Prescient, Sensiba (per current internal records)</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">March 2024 to present</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Headcount</dt><dd className="mt-1 text-white/90">123 per client tracker</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">March 2024 – Present</dd></div>
                   </dl>
                 </aside>
 
-                <div className="p-7 sm:p-10 lg:p-12">
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">Buried in HITRUST, understaffed on IT</p>
-                  <h2 className="mt-4 text-3xl font-bold leading-tight text-primary sm:text-4xl">Buried in HITRUST, Understaffed on IT: How Vheda Health Made Com-Sec Part of the Team</h2>
+                <div className="p-7 sm:p-10 lg:p-14">
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">HealthTech · Virtual Care</p>
+                  <h2 className="mt-4 text-3xl font-bold leading-tight text-primary sm:text-4xl">From HITRUST Complexity to an Embedded Security &amp; IT Partnership</h2>
 
-                  <section className="mt-8"><h3 className="text-xl font-bold text-primary">Client overview</h3><ul className="mt-4 grid gap-3 text-slate-700 sm:grid-cols-2"><li><strong>Industry:</strong> HealthTech, virtual care</li><li><strong>Company:</strong> Vheda Health</li><li><strong>Services:</strong> vCISO, HITRUST readiness, managed IT, security operations, security awareness, vendor reviews, incident response, penetration-testing support</li><li><strong>GRC platform:</strong> Vanta</li><li><strong>Assessment partners:</strong> Prescient, Sensiba (per current internal records)</li><li><strong>Engagement:</strong> March 2024 to present</li><li><strong>Headcount:</strong> 123 per client tracker</li></ul></section>
+                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Client Overview</h3><ul className="mt-5 grid gap-4 text-slate-700 sm:grid-cols-2"><li><strong>Industry:</strong> HealthTech, Virtual Care</li><li><strong>Company:</strong> Vheda Health</li><li className="sm:col-span-2"><strong>Services:</strong> vCISO, HITRUST Readiness, Managed IT, Security Operations, Security Awareness, Vendor Risk Reviews, Incident Response, Penetration Testing Support</li><li><strong>GRC Platform:</strong> Vanta</li><li><strong>Engagement:</strong> March 2024 – Present</li></ul></section>
 
-                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Executive summary</h3><p className="mt-4 leading-7 text-slate-600">Vheda Health delivers virtual-first chronic care, maternal health, and behavioral health programs for Medicaid, Medicare, and Special Needs Plan populations, making data protection, regulatory readiness, and health-plan trust critical to the business. The relationship with Com-Sec began through a long-standing professional connection between Vheda Health founder Shameet Luhar and Farbod, who first worked together at Deloitte in 2005. When the demands of HITRUST readiness outgrew Vheda Health’s internal capacity, Com-Sec was brought in to lead the effort.</p><p className="mt-4 leading-7 text-slate-600">What began as HITRUST support expanded into a broader security and IT partnership. Com-Sec now provides ongoing vCISO leadership, managed IT, security operations, vendor reviews, incident response support, security awareness, and penetration-testing support. A full-time Com-Sec IT support analyst works directly with Vheda Health, while monthly leadership meetings and participation in partner calls keep security, compliance, and IT priorities aligned.</p><p className="mt-4 leading-7 text-slate-600">Since the engagement began in March 2024, internal reporting has shown measurable progress, including an external security score improvement from 91 to 96, remediation of penetration-test findings, resolution of a security incident, centralized IT support, and continued advancement through the HITRUST validation process.</p></section>
+                  <section className="mt-12 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">The Challenge</h3><div className="mt-5 space-y-4 leading-7 text-slate-600"><p>Vheda Health delivers virtual-first healthcare programs across chronic care, maternal health, and behavioral health. Operating in healthcare means security, privacy, regulatory requirements, and customer assurance are closely tied to everyday business operations.</p><p>As the organization worked through HITRUST readiness, the scope of security and compliance responsibilities continued to grow. The team needed to manage assessment requirements and remediation while also supporting employees, endpoints, cloud infrastructure, vendor security reviews, payer requirements, incident response, and day-to-day IT operations.</p><p>The challenge was no longer simply completing a compliance project.</p><p>Vheda Health needed additional security leadership and hands-on operational support that could work alongside its internal team and keep security, compliance, and IT moving together.</p></div></section>
 
-                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">The challenge</h3><p className="mt-4 leading-7 text-slate-600">Vheda Health was managing a demanding HITRUST initiative while also supporting a growing workforce, member-facing technology, cloud infrastructure, payer requirements, and day-to-day IT operations. The workload had expanded beyond what the internal security function could efficiently manage alone.</p><p className="mt-4 leading-7 text-slate-600">At the same time, hundreds of users and devices had to be supported, payer security questionnaires and vendor reviews continued to arrive, and incident-response readiness had to be maintained. Device compliance visibility was limited, and key security activities were not yet centralized into a single operating process.</p><p className="mt-4 leading-7 text-slate-600">With the HITRUST assessment approaching, Vheda needed both strategic leadership and hands-on execution—someone to drive remediation, evidence, and assessment readiness forward without allowing daily security and IT responsibilities to fall behind.</p></section>
+                  <section className="mt-12 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Com-Sec’s Approach</h3><div className="mt-5 space-y-4 leading-7 text-slate-600"><p>Com-Sec began by supporting Vheda Health’s HITRUST readiness program, helping the team interpret requirements, identify gaps, organize evidence, coordinate remediation, and prepare for assessment activities.</p><p>As the relationship developed, the engagement expanded into an embedded security and IT partnership.</p><p>Com-Sec provides ongoing vCISO leadership and works directly with Vheda Health on security governance, risk management, vendor security reviews, incident response, business continuity, cloud security, access management, security awareness, and compliance initiatives.</p><p>A dedicated Com-Sec IT support analyst also works directly with Vheda Health, providing hands-on support for day-to-day IT operations.</p><p>The program includes:</p></div><ul className="mt-5 grid gap-3 text-sm leading-6 text-slate-700 sm:grid-cols-2">{[
+                    "HITRUST readiness and assessment support",
+                    "Ongoing vCISO leadership",
+                    "Managed IT and end-user support",
+                    "Microsoft Intune device management and compliance",
+                    "Security incident response and documentation",
+                    "Vendor security and risk reviews",
+                    "Penetration-test remediation",
+                    "AWS and GuardDuty security reviews",
+                    "Access management and onboarding/offboarding improvements",
+                    "Risk register and security governance management",
+                    "Phishing simulations and security awareness campaigns",
+                    "Security Champions initiatives",
+                    "Partner and payer security-assurance support",
+                    "Recurring security, compliance, and IT leadership meetings",
+                  ].map((item) => <li key={item} className="flex gap-3"><CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" /><span>{item}</span></li>)}</ul><p className="mt-6 leading-7 text-slate-600">Rather than treating compliance, security, and IT as separate projects, Com-Sec helped establish an operating model where these activities could be managed together.</p></section>
 
-                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Com-Sec&apos;s approach</h3><p className="mt-4 leading-7 text-slate-600">Com-Sec took an active role in running the HITRUST program while also becoming part of Vheda Health’s day-to-day security and IT operations. The team interpreted requirements, identified gaps, coordinated evidence, tracked remediation, and kept assessment work moving alongside Vheda’s internal owners.</p><p className="mt-4 leading-7 text-slate-600">The engagement expanded well beyond compliance. A full-time Com-Sec IT support analyst provides onsite support, while monthly leadership meetings and continuous communication keep priorities, risks, and open actions visible. Com-Sec also centralized support through Asana and Microsoft Teams, strengthened onboarding and offboarding, reviewed Intune enrollment and device compliance, and supported access management, vendor reviews, incident response, business continuity, cloud security, and recurring governance.</p><p className="mt-4 leading-7 text-slate-600">Security awareness and technical improvement were built into the program as well. Com-Sec launched phishing campaigns, recurring newsletters, and awareness communications, while also supporting penetration-test remediation, SecurityScorecard improvement, AWS and GuardDuty review, Vanta migration, and HITRUST assessment planning.</p></section>
+                  <section className="mt-12 rounded-2xl bg-slate-50 p-6 sm:p-8"><h3 className="text-xl font-bold text-primary">The Results</h3><p className="mt-4 leading-7 text-slate-600">The engagement has produced measurable improvements across Vheda Health’s security, compliance, and IT operations.</p><div className="mt-7 grid gap-4 sm:grid-cols-2"><div className="rounded-2xl bg-primary p-5 text-white sm:col-span-2"><p className="text-4xl font-bold tracking-tight">91 → 96</p><p className="mt-2 text-sm font-semibold text-blue-100">External SecurityScorecard rating improvement</p></div><div className="rounded-2xl border border-blue-100 bg-white p-5"><p className="text-2xl font-bold text-primary">123 users</p><p className="mt-2 text-sm leading-6 text-slate-600">Enrolled in Microsoft Intune for improved endpoint visibility and device compliance</p></div><div className="rounded-2xl border border-blue-100 bg-white p-5"><p className="text-lg font-bold text-primary">Penetration-test remediation completed</p><p className="mt-2 text-sm leading-6 text-slate-600">Identified security findings were tracked through remediation</p></div><div className="rounded-2xl border border-blue-100 bg-white p-5"><p className="text-lg font-bold text-primary">Embedded IT support</p><p className="mt-2 text-sm leading-6 text-slate-600">A dedicated Com-Sec IT analyst works directly with the Vheda Health team</p></div><div className="rounded-2xl border border-blue-100 bg-white p-5"><p className="text-lg font-bold text-primary">Recurring security governance</p><p className="mt-2 text-sm leading-6 text-slate-600">Security, compliance, risk, and IT priorities are reviewed with leadership on an ongoing basis</p></div></div><div className="mt-5 grid gap-3 sm:grid-cols-2"><div className="rounded-xl border border-slate-200 bg-white p-4"><p className="font-semibold text-primary">Improved cloud-security visibility</p><p className="mt-1 text-sm leading-6 text-slate-600">AWS and GuardDuty security monitoring incorporated into ongoing security operations</p></div><div className="rounded-xl border border-slate-200 bg-white p-4"><p className="font-semibold text-primary">Centralized IT support</p><p className="mt-1 text-sm leading-6 text-slate-600">IT requests and operational activities organized through established support workflows</p></div><div className="rounded-xl border border-slate-200 bg-white p-4"><p className="font-semibold text-primary">Formalized security awareness</p><p className="mt-1 text-sm leading-6 text-slate-600">Phishing simulations, awareness communications, and Security Champions activities became part of the security program</p></div><div className="rounded-xl border border-slate-200 bg-white p-4"><p className="font-semibold text-primary">Structured vendor risk management</p><p className="mt-1 text-sm leading-6 text-slate-600">Vendor security reviews and third-party risk activities are incorporated into ongoing operations</p></div><div className="rounded-xl border border-slate-200 bg-white p-4 sm:col-span-2"><p className="font-semibold text-primary">Ongoing HITRUST support</p><p className="mt-1 text-sm leading-6 text-slate-600">Assessment preparation, evidence management, remediation, and readiness activities are managed as part of the broader security program</p></div></div></section>
 
-                  <section className="mt-10 rounded-xl bg-slate-50 p-6 sm:p-8"><h3 className="text-xl font-bold text-primary">Results</h3><ul className="mt-5 grid gap-3 text-sm leading-6 text-slate-700 sm:grid-cols-2">{[
-                    "External SecurityScorecard rating improved from 91 to 96",
-                    "Security incidents resolved and documented",
-                    "AWS: zero findings in February and March 2025",
-                    "Four Thoropass issues remediated; remaining items assigned",
-                    "Penetration-test findings remediated (March 2025)",
-                    "HITRUST i1 eligibility confirmed, CSF subscription renewed",
-                    "Centralized IT support running in Asana and Microsoft Teams",
-                    "Full-time Com-Sec IT support analyst embedded on-site",
-                    "Monthly security, compliance, and IT meetings with leadership",
-                    "Partner-facing security and compliance support on demand",
-                    "Security Champions program launched",
-                    "Monthly risk-register updates and incident logging in place",
-                    "123 users enrolled in Microsoft Intune, giving real visibility into device compliance",
-                    "Vendor-security reviews, awareness training, phishing simulations, and security communications formalized",
-                  ].map((result) => <li key={result} className="flex gap-3"><CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" /><span>{result}</span></li>)}</ul></section>
+                  <section className="mt-12 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">More Than Compliance Support</h3><div className="mt-5 space-y-4 leading-7 text-slate-600"><p>The relationship with Vheda Health evolved beyond a traditional compliance engagement.</p><p>Instead of providing recommendations and leaving implementation to the client, Com-Sec works alongside Vheda Health across strategic security leadership and day-to-day execution.</p><p>The same team can help address a HITRUST requirement, review a security risk, respond to a partner questionnaire, investigate an incident, improve endpoint compliance, coordinate remediation, and support ongoing IT operations.</p><p>This gives Vheda Health a consistent security and compliance function without having to coordinate multiple disconnected providers.</p></div></section>
 
-                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><p className="mt-4 leading-7 text-slate-600">The relationship started on trust, but it grew because Com-Sec could execute, not just advise. Vheda needed executive security leadership, HITRUST, technical security, partner assurance, and daily IT operations handled by one accountable team — not five vendors it had to manage itself.</p></section>
+                  <section className="mt-12 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><div className="mt-5 space-y-4 leading-7 text-slate-600"><p>Healthcare organizations often need more than help preparing for an assessment.</p><p>They need someone who can connect compliance requirements with the technical and operational work required to maintain them.</p><p>For Vheda Health, Com-Sec provides that combination through an embedded model covering security leadership, compliance, technical security, and IT operations.</p><p>The result is a security program that operates as part of the organization rather than as a separate compliance exercise.</p></div></section>
 
-                  <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;We were drowning in HITRUST when I called Farbod — not because I&apos;d shopped for vendors, but because I knew he&apos;d tell me the truth about what we actually needed. Two years later, Com-Sec doesn&apos;t feel outsourced. They&apos;ve got someone on our IT team full-time, they&apos;re in our leadership meetings every month, and when a health plan partner asks a hard question, they&apos;re already on the call.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600">— Shameet Luhar, Founder, Vheda Health</p><p className="mt-3 text-sm italic text-slate-500">(Draft — send to Shameet for final wording approval before publishing.)</p></section>
+                  <section className="mt-12 rounded-2xl bg-primary p-7 text-white sm:p-9"><h3 className="text-2xl font-bold">Need Security, Compliance, and IT to Work as One Program?</h3><p className="mt-4 max-w-2xl leading-7 text-blue-100">If HITRUST, security operations, and IT responsibilities are stretching your internal team, Com-Sec can provide the leadership and hands-on support needed to bring them together.</p><Button className="mt-6 bg-accent text-white hover:bg-accent/90" asChild><Link to="/contact">Talk to Com-Sec <ArrowRight className="ml-2 h-4 w-4" /></Link></Button></section>
 
-                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Call to action</h3><p className="mt-4 leading-7 text-slate-600">If HITRUST, security, and IT support are pulling your team in three directions at once, talk to Com-Sec about what &quot;embedded&quot; actually looks like.</p><Button className="mt-6 bg-accent text-white hover:bg-accent/90" asChild><Link to="/contact">Talk to Com-Sec <ArrowRight className="ml-2 h-4 w-4" /></Link></Button></section>
-
-                  <section className="mt-10 rounded-xl border border-amber-300 bg-amber-50 p-6"><h3 className="text-xl font-bold text-amber-950">Still needed</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-amber-900"><li>Confirm current HITRUST certification status and exact validated-assessment result</li><li>Confirm engagement start date and current status</li><li>Permission to describe the 2005 Deloitte connection</li><li>Permission to describe the internal capacity challenge that led to the engagement</li><li>Permission to use Vheda Health&apos;s name and logo</li><li>Confirm the 91→96 score improvement is publishable</li><li>Confirm user/device counts are publishable</li><li>Any payer contract, market launch, or security review this program enabled</li><li>Estimated internal hours/hiring costs avoided</li></ul></section>
-
-                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li><a className="text-accent underline" href="https://vheda.com/about/" target="_blank" rel="noreferrer">Vheda Health company overview</a></li><li><a className="text-accent underline" href="https://vheda.com/what-we-do/" target="_blank" rel="noreferrer">Vheda Health services and populations</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/3_O_gcYpZ823UDQ" target="_blank" rel="noreferrer">Vheda Health Q1 2025 update in Canva</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/eFhTcJpObouXoXp" target="_blank" rel="noreferrer">Vheda Health 2026 roadmap in Canva</a></li><li><a className="text-accent underline" href="https://app.notion.com/p/39982f7daf118162b284e62af3fad135?pvs=204" target="_blank" rel="noreferrer">Vheda Health client tracker in Notion</a></li></ul></section>
-
-
+                  <section className="mt-10"><h3 className="text-sm font-bold uppercase tracking-[0.18em] text-slate-500">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li><a className="text-accent underline" href="https://vheda.com/about/" target="_blank" rel="noreferrer">Vheda Health company overview</a></li><li><a className="text-accent underline" href="https://vheda.com/what-we-do/" target="_blank" rel="noreferrer">Vheda Health services and populations</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/3_O_gcYpZ823UDQ" target="_blank" rel="noreferrer">Vheda Health Q1 2025 update in Canva</a></li><li><a className="text-accent underline" href="https://www.canva.com/d/eFhTcJpObouXoXp" target="_blank" rel="noreferrer">Vheda Health 2026 roadmap in Canva</a></li><li><a className="text-accent underline" href="https://app.notion.com/p/39982f7daf118162b284e62af3fad135?pvs=204" target="_blank" rel="noreferrer">Vheda Health client tracker in Notion</a></li></ul></section>
                 </div>
               </div>
             </article>
             )}
             </>
           ) : (
-            <div className="mt-8">
+            <div className="mt-10">
               {categoryStudies.length > 0 ? (
                 <div className="grid gap-6 md:grid-cols-2">
                   {categoryStudies.map((study) => (
-                    <article key={study.id} className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl sm:p-8">
-                      <div className="flex items-center justify-between gap-4">
-                        <span className="text-xs font-bold uppercase tracking-[0.18em] text-accent">{category}</span>
-                        <span className="text-xs font-medium text-slate-500">Case study</span>
-                      </div>
-                      <h2 className="mt-5 text-2xl font-bold leading-tight text-primary">{study.client}</h2>
-                      <h3 className="mt-3 text-lg font-semibold leading-7 text-slate-700">{study.title}</h3>
-                      <p className="mt-4 flex-1 leading-7 text-slate-600">{study.summary}</p>
-                      <div className="mt-6 flex items-center justify-between gap-4 border-t border-slate-100 pt-5">
-                        <span className="text-sm text-slate-500">{study.meta}</span>
-                        <Link to={`/case-studies/${study.id}?category=${encodeURIComponent(category)}`} className="inline-flex items-center whitespace-nowrap text-sm font-semibold text-accent transition-colors group-hover:text-primary">Read case study <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    <article key={study.id} className="group relative flex flex-col overflow-hidden rounded-[1.5rem] border border-slate-200/80 bg-white shadow-[0_18px_50px_-30px_rgba(15,23,42,0.45)] transition-all hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_24px_60px_-28px_rgba(15,23,42,0.5)]">
+                      <div className="h-1.5 bg-gradient-to-r from-accent via-orange-300 to-blue-500" />
+                      <div className="flex flex-1 flex-col p-7 sm:p-8">
+                        <div className="flex items-start justify-between gap-5">
+                          <div>
+                            <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">{category}</span>
+                            <h2 className="mt-3 text-2xl font-bold leading-tight text-primary">{study.client}</h2>
+                          </div>
+                          {study.id === "caryhealth" && <img src={caryHealthLogo} alt="CaryHealth logo" className="h-12 w-28 object-contain object-right" />}
+                          {study.id === "vheda-health" && <img src={vhedaHealthLogo} alt="Vheda Health logo" className="h-12 w-28 object-contain object-right" />}
+                        </div>
+                        <h3 className="mt-6 max-w-xl text-lg font-semibold leading-7 text-slate-700">{study.title}</h3>
+                        <p className="mt-4 flex-1 leading-7 text-slate-600">{study.summary}</p>
+                        <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 pt-5">
+                          <span className="text-sm text-slate-500">{study.meta}</span>
+                          <Link to={`/case-studies/${study.id}?category=${encodeURIComponent(category)}`} className="inline-flex items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent">Read case study <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                        </div>
                       </div>
                     </article>
                   ))}
