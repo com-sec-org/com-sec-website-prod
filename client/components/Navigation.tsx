@@ -136,7 +136,7 @@ export function Navigation() {
 
             <div className="relative group">
               <Link
-                to="/case-studies"
+                to="/case-studies?category=HealthTech"
                 className={`flex items-center text-foreground hover:text-accent transition-colors ${isActive("/case-studies") ? "text-accent" : ""}`}
               >
                 Case Studies
