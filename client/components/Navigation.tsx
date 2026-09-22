@@ -6,6 +6,7 @@ import { Shield, Menu, X, ChevronDown } from "lucide-react";
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const [isAboutMenuOpen, setIsAboutMenuOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -14,6 +15,7 @@ export function Navigation() {
   useEffect(() => {
     if (!isMenuOpen) {
       setExpandedSection(null);
+      setIsAboutMenuOpen(false);
     }
   }, [isMenuOpen]);
 
@@ -100,43 +102,57 @@ export function Navigation() {
               </div>
             </div>
 
-            <Link
-              to="/pricing"
-              className={`text-foreground hover:text-accent transition-colors ${
-                isActive("/pricing")
-                  ? "text-accent"
-                  : ""
-              }`}
-            >
-              Pricing
-            </Link>
-
             {/* Resources Dropdown */}
             <div className="relative group">
               <button className="flex items-center text-foreground hover:text-accent transition-colors">
                 Resources
                 <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
-                  <Link
-                    to="/blogs"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Blog
-                  </Link>
-                  <Link
-                    to="/approach"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Approach
-                  </Link>
-                  <Link
-                    to="/phishing"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Phishing Test
-                  </Link>
+                  <div className="relative group/about">
+                    <button
+                      type="button"
+                      onClick={() => setIsAboutMenuOpen(!isAboutMenuOpen)}
+                      className="w-full flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                    >
+                      About Us
+                      <ChevronDown className={`h-4 w-4 -rotate-90 transition-transform ${isAboutMenuOpen ? "rotate-0" : ""}`} />
+                    </button>
+                    <div className={`absolute left-full top-0 ml-1 w-48 rounded-lg border bg-white shadow-xl transition-all duration-300 ${isAboutMenuOpen ? "opacity-100 visible" : "opacity-0 invisible group-hover/about:opacity-100 group-hover/about:visible"}`}>
+                      <div className="py-2">
+                        <Link to="/company" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Our Company</Link>
+                        <Link to="/careers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Careers</Link>
+                        <Link to="/partnerships" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Partnerships</Link>
+                      </div>
+                    </div>
+                  </div>
+                  <Link to="/blogs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Blog</Link>
+                  <Link to="/phishing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Phishing Testing</Link>
+                  <Link to="/pricing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Pricing</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <Link
+                to="/case-studies"
+                className={`flex items-center text-foreground hover:text-accent transition-colors ${isActive("/case-studies") ? "text-accent" : ""}`}
+              >
+                Case Studies
+                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
+              </Link>
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-2">
+                  {['HealthTech', 'AI SaaS', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
+                    <Link
+                      key={category}
+                      to={`/case-studies?category=${encodeURIComponent(category)}`}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                    >
+                      {category}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
@@ -201,42 +217,6 @@ export function Navigation() {
               </div>
             </div>
 
-            {/* About Us Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center text-foreground hover:text-accent transition-colors">
-                About Us
-                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="py-2">
-                  <Link
-                    to="/company"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Our Company
-                  </Link>
-                  <Link
-                    to="/careers"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Careers
-                  </Link>
-                  {/* <Link
-                    to="/team"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Team
-                  </Link> */}
-                  <Link
-                    to="/partnerships"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Partnerships
-                  </Link>
-                </div>
-              </div>
-            </div>
-
             <Link
               to="/contact"
               className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform ${
@@ -274,21 +254,6 @@ export function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-white border-t max-h-[70vh] overflow-y-auto">
             <div className="flex flex-col pt-2">
-              {/* Pricing Link */}
-              <div className="border-b border-gray-100">
-                <Link
-                  to="/pricing"
-                  className={`block px-4 py-3 text-sm font-medium transition-colors ${
-                    isActive("/pricing")
-                      ? "text-accent bg-accent/10"
-                      : "text-gray-900 hover:text-accent hover:bg-gray-50"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Pricing
-                </Link>
-              </div>
-
               {/* Services Section */}
               <div className="border-b border-gray-100">
                 <button
@@ -391,6 +356,64 @@ export function Navigation() {
                 )}
               </div>
 
+              {/* Resources Section */}
+              <div className="border-b border-gray-100">
+                <button
+                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  onClick={() => setExpandedSection(expandedSection === "resources" ? null : "resources")}
+                >
+                  <span className="text-sm font-medium text-gray-900">Resources</span>
+                  <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "resources" ? "rotate-180" : ""}`} />
+                </button>
+                {expandedSection === "resources" && (
+                  <div className="px-4 pb-3 bg-gray-50">
+                    <div className="flex flex-col space-y-1">
+                      <div>
+                        <button type="button" className="w-full px-3 py-2 text-left flex items-center justify-between text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setExpandedSection(expandedSection === "resources-about" ? "resources" : "resources-about")}>
+                          About Us
+                          <ChevronDown className={`h-4 w-4 transition-transform ${expandedSection === "resources-about" ? "rotate-180" : "-rotate-90"}`} />
+                        </button>
+                        {expandedSection === "resources-about" && <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
+                          <Link to="/company" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Our Company</Link>
+                          <Link to="/careers" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Careers</Link>
+                          <Link to="/partnerships" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Partnerships</Link>
+                        </div>}
+                      </div>
+                      <Link to="/blogs" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+                      <Link to="/phishing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Phishing Testing</Link>
+                      <Link to="/pricing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Case Studies Section */}
+              <div className="border-b border-gray-100">
+                <button
+                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  onClick={() => setExpandedSection(expandedSection === "case-studies" ? null : "case-studies")}
+                >
+                  <span className="text-sm font-medium text-gray-900">Case Studies</span>
+                  <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "case-studies" ? "rotate-180" : ""}`} />
+                </button>
+                {expandedSection === "case-studies" && (
+                  <div className="px-4 pb-3 bg-gray-50">
+                    <div className="flex flex-col space-y-1">
+                      {['HealthTech', 'AI SaaS', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
+                        <Link
+                          key={category}
+                          to={`/case-studies?category=${encodeURIComponent(category)}`}
+                          className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {category}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
               {/* Frameworks Section */}
               <div className="border-b border-gray-100">
                 <button
@@ -466,98 +489,6 @@ export function Navigation() {
                         onClick={() => setIsMenuOpen(false)}
                       >
                         CMMC
-                      </Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Resources Section */}
-              <div className="border-b border-gray-100">
-                <button
-                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
-                  onClick={() =>
-                    setExpandedSection(
-                      expandedSection === "resources" ? null : "resources",
-                    )
-                  }
-                >
-                  <span className="text-sm font-medium text-gray-900">
-                    Resources
-                  </span>
-                  <ChevronDown
-                    className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "resources" ? "rotate-180" : ""}`}
-                  />
-                </button>
-                {expandedSection === "resources" && (
-                  <div className="px-4 pb-3 bg-gray-50">
-                    <div className="flex flex-col space-y-1">
-                      <Link
-                        to="/blogs"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Blogs
-                      </Link>
-                      <Link
-                        to="/approach"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Approach
-                      </Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* About Section */}
-              <div className="border-b border-gray-100">
-                <button
-                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
-                  onClick={() =>
-                    setExpandedSection(
-                      expandedSection === "about" ? null : "about",
-                    )
-                  }
-                >
-                  <span className="text-sm font-medium text-gray-900">
-                    About Us
-                  </span>
-                  <ChevronDown
-                    className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "about" ? "rotate-180" : ""}`}
-                  />
-                </button>
-                {expandedSection === "about" && (
-                  <div className="px-4 pb-3 bg-gray-50">
-                    <div className="flex flex-col space-y-1">
-                      <Link
-                        to="/company"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Our Company
-                      </Link>
-                      <Link
-                        to="/careers"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Careers
-                      </Link>
-                      {/* <Link
-                        to="/team"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Team
-                      </Link> */}
-                      <Link
-                        to="/partnerships"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Partnerships
                       </Link>
                     </div>
                   </div>
