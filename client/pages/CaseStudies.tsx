@@ -6,6 +6,7 @@ import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom"
 
 const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"];
 const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
+const caryHealthCardLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff32d89ffb46b4cc38fc21810b7b1964a?format=webp&width=800&height=1200";
 const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
 
 const studiesByCategory: Record<string, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
@@ -138,7 +139,7 @@ export default function CaseStudies() {
 
                   <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;I brought Farbod one questionnaire because I trusted him from our Lark days — I wasn&apos;t shopping for a vendor. That trust is why it turned into the security program that got us through diligence. When CareTria&apos;s team went through our environment, it wasn&apos;t a red flag. It didn&apos;t slow the deal down. That&apos;s what I actually paid for, even if I didn&apos;t know it at the time.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600">— Areo Nazari, CEO, CaryHealth</p></section>
 
-                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Call to action</h3><p className="mt-4 leading-7 text-slate-600">If your security program needs to survive a customer&apos;s SIG questionnaire, an auditor, or a buyer&apos;s due diligence team — not just look good on paper — talk to Com-Sec.</p><Button className="mt-6 bg-accent text-white hover:bg-accent/90" asChild><Link to="/contact">Talk to Com-Sec <ArrowRight className="ml-2 h-4 w-4" /></Link></Button></section>
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Call to action</h3><p className="mt-4 leading-7 text-slate-600">If your security program needs to survive a customer&apos;s SIG questionnaire, an auditor, or a buyer&apos;s due diligence team — not just look good on paper — <Link to="/contact" className="font-semibold text-accent underline underline-offset-4 hover:text-primary">talk to Com-Sec</Link>.</p></section>
 
 
                   <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li><a className="text-accent underline" href="https://www.cary.health/about" target="_blank" rel="noreferrer">CaryHealth company overview</a></li><li><a className="text-accent underline" href="https://com-sec.io/blog/caryhealth-first-client-story" target="_blank" rel="noreferrer">Com-Sec&apos;s CaryHealth first-client story</a></li><li><a className="text-accent underline" href="https://www.cary.health/press-release-news/caretria-acquires-caryhealth-creating-an-industry-leading-direct-to-patient-pharmacy-platform" target="_blank" rel="noreferrer">CareTria acquisition announcement</a></li></ul></section>
@@ -217,10 +218,10 @@ export default function CaseStudies() {
                         <div className="flex items-start justify-between gap-5">
                           <div>
                             <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">{category}</span>
-                            <h2 className="mt-3 text-2xl font-bold leading-tight text-primary">{study.client}</h2>
+                            {study.id === "caryhealth" && <img src={caryHealthCardLogo} alt="CaryHealth logo" className="mt-4 h-14 w-40 object-contain object-left" />}
+                            {study.id === "vheda-health" && <img src={vhedaHealthLogo} alt="Vheda Health logo" className="mt-4 h-14 w-40 object-contain object-left" />}
+                            {!['caryhealth', 'vheda-health'].includes(study.id) && <h2 className="mt-3 text-2xl font-bold leading-tight text-primary">{study.client}</h2>}
                           </div>
-                          {study.id === "caryhealth" && <img src={caryHealthLogo} alt="CaryHealth logo" className="h-12 w-28 object-contain object-right" />}
-                          {study.id === "vheda-health" && <img src={vhedaHealthLogo} alt="Vheda Health logo" className="h-12 w-28 object-contain object-right" />}
                         </div>
                         <h3 className="mt-6 max-w-xl text-lg font-semibold leading-7 text-slate-700">{study.title}</h3>
                         <p className="mt-4 flex-1 leading-7 text-slate-600">{study.summary}</p>
