@@ -320,6 +320,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-09-22T00:00:00Z",
   },
+  "/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference": {
+    title: "Cybersecurity Strategy vs. Cybersecurity Roadmap: What's the Difference?",
+    description:
+      "These two terms get used interchangeably. They're not the same thing. Understanding the difference matters.",
+    image: `${BASE_URL}/images/blog-images/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference.png`,
+    url: `${BASE_URL}/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-09-23T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

@@ -850,4 +850,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/10-steps-to-building-an-effective-security-program`,
     image: `${BASE_URL}/images/blog-images/10-steps-to-building-an-effective-security-program.png`,
   },
+  "/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference": {
+    title: "Cybersecurity Strategy vs. Cybersecurity Roadmap: What's the Difference?",
+    description:
+      "Strategy and roadmap get used interchangeably, but they're not the same thing. Here's what each one answers, how they work together, and why the distinction matters.",
+    canonical: `${BASE_URL}/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference`,
+    image: `${BASE_URL}/images/blog-images/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference.png`,
+  },
 };
