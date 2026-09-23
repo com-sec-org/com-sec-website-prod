@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference",
+                title: "Cybersecurity Strategy vs. Cybersecurity Roadmap: What's the Difference?",
+                excerpt: "These two terms get used interchangeably. They're not the same thing — and understanding the difference matters.",
+                date: "September 23 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Leadership",
+                categoryColor: "sky",
+                featured: false,
+                image: "/images/blog-images/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference.png",
+                imageAlt: "Cybersecurity Strategy vs. Cybersecurity Roadmap: What's the Difference?",
+                link: "/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference",
+              },
+              {
                 id: "10-steps-to-building-an-effective-security-program",
                 title: "10 Steps to Building an Effective Security Program",
                 excerpt: "Building a security program is a sequence of practical steps that build on each other. Here's the order we use with every client.",
