@@ -2,6 +2,24 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference",
+                title:
+                  "Cybersecurity Strategy vs. Cybersecurity Roadmap: What's the Difference?",
+                excerpt:
+                  "These two terms get used interchangeably. They're not the same thing — and understanding the difference matters.",
+                date: "September 23, 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Leadership",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image:
+                  "/images/blog-images/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference.png",
+                imageAlt:
+                  "Cybersecurity Strategy vs. Cybersecurity Roadmap: What's the Difference?",
+                link: "/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference",
+              },
+              {
                 id: "introducing-our-security-vulnerability-research-program",
                 title: "Introducing Our Security Vulnerability Research Program",
                 excerpt: "Continuous external threat hunting from vetted researchers, included in every vCISO and managed security engagement. You only pay when something real is found.",
@@ -43,6 +61,7 @@ export const allArticles = [
               //   imageAlt: "SOC 2 compliance services in California for startups and tech companies",
               //   link: "/blog/soc-2-compliance-services-california",
               // },
+              
               {
                 id: "what-247-security-monitoring-actually-looks-like-for-a-small-company",
                 title: "What 24/7 Security Monitoring Actually Looks Like for a Small Company",
