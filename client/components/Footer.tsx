@@ -84,7 +84,7 @@ export function Footer() {
 
           {columns.map((column) => (
             <div key={column.heading}>
-              <h3 className="font-mono text-sm uppercase tracking-[0.15em] text-white/60 mb-5">
+              <h3 className="font-mono text-[13px] uppercase tracking-[0.15em] text-white/60 mb-5">
                 {column.heading}
               </h3>
               <ul className="space-y-3">
@@ -92,7 +92,7 @@ export function Footer() {
                   <li key={link.to}>
                     <Link
                       to={link.to}
-                      className="text-base text-white/80 hover:text-accent transition-colors"
+                      className="text-[15px] text-white/80 hover:text-accent transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -104,7 +104,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-white/15 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-sm text-white/60">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[13px] text-white/60">
             <span>© {new Date().getFullYear()} Com-Sec. All rights reserved.</span>
             <Link to="/privacy-policy" className="underline underline-offset-2 hover:text-accent transition-colors">
               Privacy Policy
