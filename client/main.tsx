@@ -143,6 +143,7 @@ import IntroducingOurSecurityVulnerabilityResearchProgram from "./pages/resource
 import HowFractionalCisoBuildsStrategy from "./pages/resources/blog/HowFractionalCisoBuildsStrategy";
 import TenStepsToBuildingAnEffectiveSecurityProgram from "./pages/resources/blog/TenStepsToBuildingAnEffectiveSecurityProgram";
 import CybersecurityStrategyVsRoadmap from "./pages/resources/blog/CybersecurityStrategyVsRoadmap";
+import HowToBuildAComplianceRoadmap from "./pages/resources/blog/HowToBuildAComplianceRoadmap";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -411,6 +412,7 @@ const App = () => (
               <Route path="/blog/how-a-fractional-ciso-builds-a-strong-cybersecurity-strategy" element={<HowFractionalCisoBuildsStrategy />} />
               <Route path="/blog/10-steps-to-building-an-effective-security-program" element={<TenStepsToBuildingAnEffectiveSecurityProgram />} />
               <Route path="/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference" element={<CybersecurityStrategyVsRoadmap />} />
+              <Route path="/blog/how-to-build-a-compliance-roadmap-for-your-business" element={<HowToBuildAComplianceRoadmap />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

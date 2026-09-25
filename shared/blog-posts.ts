@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "how-to-build-a-compliance-roadmap-for-your-business",
+                title: "How to Build a Compliance Roadmap for Your Business",
+                excerpt: "A compliance roadmap turns an overwhelming list of requirements into a sequenced plan your team can actually execute. Here's how to build one.",
+                date: "September 25 2026",
+                readTime: "7 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/how-to-build-a-compliance-roadmap-for-your-business.png",
+                imageAlt: "How to Build a Compliance Roadmap for Your Business",
+                link: "/blog/how-to-build-a-compliance-roadmap-for-your-business",
+              },
+              {
                 id: "cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference",
                 title: "Cybersecurity Strategy vs. Cybersecurity Roadmap: What's the Difference?",
                 excerpt: "These two terms get used interchangeably. They're not the same thing — and understanding the difference matters.",
