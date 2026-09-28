@@ -46,14 +46,6 @@ export default function WhySecurityAwarenessTrainingMatters() {
       emoji: "🧩",
     },
     {
-      title: "How to Build a Compliance Roadmap for Your Business",
-      excerpt:
-        "A compliance roadmap turns an overwhelming list of requirements into a sequenced plan your team can actually execute. Here's how to build one.",
-      link: "/blog/how-to-build-a-compliance-roadmap-for-your-business",
-      category: "Compliance",
-      emoji: "🗺️",
-    },
-    {
       title: "How a Fractional CISO Builds a Strong Cybersecurity Strategy",
       excerpt:
         "What building a cybersecurity strategy actually looks like in practice — from the first two weeks through ongoing execution.",
@@ -233,7 +225,7 @@ export default function WhySecurityAwarenessTrainingMatters() {
                     </b>
                     , and{" "}
                     <b>
-                      <Link to="/hipaa" className="text-sky-700 font-semibold hover:underline">
+                      <Link to="/hitrust" className="text-sky-700 font-semibold hover:underline">
                         HITRUST
                       </Link>
                     </b>{" "}

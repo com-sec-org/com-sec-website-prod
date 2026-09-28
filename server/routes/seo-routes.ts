@@ -857,4 +857,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference`,
     image: `${BASE_URL}/images/blog-images/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference.png`,
   },
+  "/blog/why-security-awareness-training-matters-for-every-employee": {
+    title: "Why Security Awareness Training Matters for Every Employee",
+    description:
+      "Security awareness training won't stop breaches on its own, but it still matters. Here's why, and how to do it in a way that actually provides value instead of just checking a compliance box.",
+    canonical: `${BASE_URL}/blog/why-security-awareness-training-matters-for-every-employee`,
+    image: `${BASE_URL}/images/blog-images/why-security-awareness-training-matters-for-every-employee.png`,
+  },
 };
