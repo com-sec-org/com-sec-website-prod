@@ -147,6 +147,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/why-security-awareness-training-matters-for-every-employee</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference</loc>
     <priority>0.7</priority>
   </url>

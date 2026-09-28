@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "why-security-awareness-training-matters-for-every-employee",
+                title: "Why Security Awareness Training Matters for Every Employee",
+                excerpt: "Security awareness training is not going to stop breaches. But it still matters. Here's why, and how to do it in a way that actually provides value.",
+                date: "September 28 2026",
+                readTime: "7 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Awareness",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/why-security-awareness-training-matters-for-every-employee.png",
+                imageAlt: "Why Security Awareness Training Matters for Every Employee",
+                link: "/blog/why-security-awareness-training-matters-for-every-employee",
+              },            
+              {
                 id: "cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference",
                 title: "Cybersecurity Strategy vs. Cybersecurity Roadmap: What's the Difference?",
                 excerpt: "These two terms get used interchangeably. They're not the same thing — and understanding the difference matters.",

@@ -329,6 +329,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-09-23T00:00:00Z",
   },
+  "/blog/why-security-awareness-training-matters-for-every-employee": {
+    title: "Why Security Awareness Training Matters for Every Employee",
+    description:
+      "Security awareness training won't stop breaches on its own, but it still matters. Here's why, and how to do it right.",
+    image: `${BASE_URL}/images/blog-images/why-security-awareness-training-matters-for-every-employee.png`,
+    url: `${BASE_URL}/blog/why-security-awareness-training-matters-for-every-employee`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-09-28T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
