@@ -6,8 +6,6 @@ import { Link, useParams, useSearchParams } from "react-router-dom";
 
 const categories = ["HealthTech", "InsurTech", "AgTech", "AI / SaaS", "Global Mobility", "FinTech", "Energy", "EdTech", "Services"] as const;
 type Category = (typeof categories)[number];
-const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
-const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
 
 const studiesByCategory: Record<Category, { id: string; client: string; title: string; summary: string; meta: string }[]> = {
   HealthTech: [
@@ -134,17 +132,11 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <img
-                    src={caryHealthLogo}
-                    alt="CaryHealth logo"
-                    className="mb-8 h-12 w-auto object-contain object-left sm:h-14"
-                  />
-                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
-                  <h2 className="mt-6 text-3xl font-bold">CaryHealth</h2>
+                  <h2 className="text-3xl font-bold">CaryHealth</h2>
+                  <div className="mt-4 inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
                   <p className="mt-3 text-lg text-blue-100">Digital pharmacy</p>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">HealthTech, digital pharmacy</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">CaryHealth (formerly CaryRx)</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Relationship</dt><dd className="mt-1 text-white/90">Com-Sec&apos;s first client</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">Began pre-launch and continued through CaryHealth&apos;s acquisition by CareTria in May 2026</dd></div>
@@ -194,12 +186,10 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F5a0f96bd5473494f8409248dd6efa1b5?format=webp&width=800&height=1200" alt="Rave Health logo" className="mb-8 h-12 w-auto max-w-full object-contain object-left sm:h-14" />
-                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
-                  <h2 className="mt-6 text-3xl font-bold">Rave Health</h2>
+                  <h2 className="text-3xl font-bold">Rave Health</h2>
+                  <div className="mt-4 inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">HealthTech</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">Rave Health</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Auditor</dt><dd className="mt-1 text-white/90">Atom</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">August 2024 to present</dd></div>
@@ -240,12 +230,10 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fdfa0e53c71244e589f5ce5b2934ddded?format=webp&width=800&height=1200" alt="GloveBox logo" className="mb-8 h-12 w-auto max-w-full object-contain object-left sm:h-14" />
-                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">InsurTech</div>
-                  <h2 className="mt-6 text-3xl font-bold">GloveBox</h2>
+                  <h2 className="text-3xl font-bold">GloveBox</h2>
+                  <div className="mt-4 inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">InsurTech</div>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">InsurTech</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">GloveBox</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Audit partner</dt><dd className="mt-1 text-white/90">Sensiba</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Partner</dt><dd className="mt-1 text-white/90">IRU MDM</dd></div>
@@ -290,12 +278,10 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F130ec20790da4bb1892afd75e4811146?format=webp&width=800&height=1200" alt="CropTrak logo" className="mb-8 h-12 w-auto max-w-full object-contain object-left sm:h-14" />
-                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">AgTech</div>
-                  <h2 className="mt-6 text-3xl font-bold">CropTrak</h2>
+                  <h2 className="text-3xl font-bold">CropTrak</h2>
+                  <div className="mt-4 inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">AgTech</div>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">AgTech</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">CropTrak</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Audit partner</dt><dd className="mt-1 text-white/90">Sensiba LLC</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">October 2024 to present</dd></div>
@@ -340,12 +326,10 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <div className="mb-8 text-3xl font-bold tracking-tight text-white sm:text-4xl">ConnectlyAI</div>
-                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">AI / SaaS</div>
-                  <h2 className="mt-6 text-3xl font-bold">ConnectlyAI</h2>
+                  <h2 className="text-3xl font-bold">ConnectlyAI</h2>
+                  <div className="mt-4 inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">AI / SaaS</div>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">AI / SaaS</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">ConnectlyAI</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Vanta</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement model</dt><dd className="mt-1 text-white/90">Project-based ISO 27001 engagement</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">External assessment</dt><dd className="mt-1 text-white/90">Stage 1 and Stage 2 certification audit</dd></div>
@@ -392,12 +376,10 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F2331d94f4f6c48fba38a92491432abbf?format=webp&width=800&height=1200" alt="PerchPeek logo" className="mb-8 h-12 w-auto max-w-full object-contain object-left sm:h-14" />
-                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">Global Mobility</div>
-                  <h2 className="mt-6 text-3xl font-bold">PerchPeek</h2>
+                  <h2 className="text-3xl font-bold">PerchPeek</h2>
+                  <div className="mt-4 inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">Global Mobility</div>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">Global mobility, employee relocation management, and relocation technology</dd></div>
-                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">PerchPeek</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Assessment partner</dt><dd className="mt-1 text-white/90">Prescient Security</dd></div>
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">January 2024 to present</dd></div>
@@ -448,13 +430,8 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <img
-                    src={vhedaHealthLogo}
-                    alt="Vheda Health logo"
-                    className="mb-8 h-16 w-full max-w-[250px] object-contain object-left"
-                  />
-                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech · Virtual Care</div>
-                  <h2 className="mt-6 text-3xl font-bold">Vheda Health</h2>
+                  <h2 className="text-3xl font-bold">Vheda Health</h2>
+                  <div className="mt-4 inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech · Virtual Care</div>
                   <p className="mt-3 text-lg text-blue-100">Embedded security &amp; IT partnership</p>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
                     <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">HealthTech, Virtual Care</dd></div>
