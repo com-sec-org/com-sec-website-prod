@@ -4,7 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 
-const categories = ["HealthTech", "InsurTech", "AgTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"] as const;
+const categories = ["HealthTech", "InsurTech", "AgTech", "AI / SaaS", "FinTech", "Energy", "EdTech", "Services"] as const;
 type Category = (typeof categories)[number];
 const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
 const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
@@ -51,7 +51,15 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
       meta: "AgTech · SOC 2 · Managed IT",
     },
   ],
-  "AI SaaS": [],
+  "AI / SaaS": [
+    {
+      id: "connectlyai",
+      client: "ConnectlyAI",
+      title: "From ISO 27001 Readiness to Stage 2: A Focused Certification Program for a Fast-Moving AI Company",
+      summary: "ConnectlyAI needed to prepare for ISO/IEC 27001:2022 without shifting the burden of running a certification program onto its engineering and product teams.",
+      meta: "AI / SaaS · ISO/IEC 27001:2022 · Vanta",
+    },
+  ],
   FinTech: [],
   Energy: [],
   EdTech: [],
@@ -314,6 +322,58 @@ export default function CaseStudies() {
                   <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Keep security running between audits</h3><p className="mt-4 leading-7 text-slate-600">If your security program disappears between audit periods, <Link to="/contact" className="font-semibold text-accent underline underline-offset-4 hover:text-primary">talk to Com-Sec</Link>.</p></section>
 
                   <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li>CropTrak SOC 2 Maintenance Plan — Canva</li><li>CropTrak Roadmap — Canva</li><li>CropTrak SCC Meeting Notes — Google Drive</li><li>CropTrak Drata</li></ul></section>
+                </div>
+              </div>
+            </article>
+            )}
+
+            {selectedStudy.id === "connectlyai" && (
+            <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
+              <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
+                <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+                  <div role="img" aria-label="ConnectlyAI logo" className="mb-8 text-3xl font-bold tracking-tight text-white sm:text-4xl">ConnectlyAI</div>
+                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">AI / SaaS</div>
+                  <h2 className="mt-6 text-3xl font-bold">ConnectlyAI</h2>
+                  <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">AI / SaaS</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">ConnectlyAI</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Vanta</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement model</dt><dd className="mt-1 text-white/90">Project-based ISO 27001 engagement</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">External assessment</dt><dd className="mt-1 text-white/90">Stage 1 and Stage 2 certification audit</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">Completed April 2026</dd></div>
+                  </dl>
+                </aside>
+
+                <div className="p-7 sm:p-10 lg:p-14">
+                  <h2 className="text-3xl font-bold leading-tight text-primary sm:text-4xl">From ISO 27001 Readiness to Stage 2: A Focused Certification Program for a Fast-Moving AI Company</h2>
+
+                  <section className="mt-8"><h3 className="text-xl font-bold text-primary">Client Overview</h3><ul className="mt-4 grid gap-3 text-slate-700 sm:grid-cols-2"><li><strong>Industry:</strong> AI / SaaS</li><li><strong>Company:</strong> ConnectlyAI</li><li><strong>Services:</strong> ISO/IEC 27001:2022 readiness, control implementation, internal audit, remediation support, and external audit coordination</li><li><strong>GRC platform:</strong> Vanta</li><li><strong>Engagement model:</strong> Project-based ISO 27001 engagement</li><li><strong>External assessment:</strong> Stage 1 and Stage 2 certification audit</li><li><strong>Engagement:</strong> Completed April 2026</li></ul></section>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Executive Summary</h3><p className="mt-4 text-lg leading-8 text-slate-700">ConnectlyAI needed to prepare for ISO/IEC 27001:2022 without shifting the burden of running a certification program onto its engineering and product teams.</p><p className="mt-4 leading-7 text-slate-600">Com-Sec managed the engagement as a focused ISO 27001 project, working with Connectly to establish and document its ISMS, map and implement applicable controls, organize evidence in Vanta, conduct the internal audit, identify and remediate gaps, and coordinate preparation for the independent Stage 1 and Stage 2 audits.</p><p className="mt-4 leading-7 text-slate-600">The work extended beyond policy documentation. Com-Sec worked with Connectly teams on operational evidence and control implementation across areas including incident response, business continuity and disaster recovery, risk management, personnel security, device security, secure development, vulnerability management, access controls, supplier security, information deletion, and regulatory and authority contacts.</p><p className="mt-4 leading-7 text-slate-600">Following the Stage 2 audit, Com-Sec coordinated remediation of the remaining audit findings, updated the corrective action records, and supported submission of the final evidence for auditor review.</p></section>
+
+                  <div className="mt-10 grid gap-8 border-t border-slate-200 pt-10 lg:grid-cols-2">
+                    <section><h3 className="text-xl font-bold text-primary">The Challenge</h3><p className="mt-3 leading-7 text-slate-600">ISO 27001 requires more than having security tools and policies in place. An organization must demonstrate that its ISMS operates consistently, controls are implemented as stated, responsibilities are assigned, risks are managed, and sufficient evidence exists to support independent assessment.</p><p className="mt-3 leading-7 text-slate-600">For a fast-moving AI and SaaS company, the challenge was turning existing engineering and security practices into a structured, auditable ISO 27001 program without requiring the internal team to become compliance specialists.</p><p className="mt-3 leading-7 text-slate-600">Connectly needed a clear path from readiness through internal audit, Stage 1, remediation, Stage 2, and final corrective actions.</p></section>
+                    <section><h3 className="text-xl font-bold text-primary">Com-Sec&apos;s Approach</h3><p className="mt-3 leading-7 text-slate-600">Com-Sec structured the engagement around the full ISO/IEC 27001:2022 certification lifecycle.</p><p className="mt-3 leading-7 text-slate-600">The team reviewed and refined Connectly&apos;s ISMS documentation and policies, evaluated Annex A control implementation, organized control evidence through Vanta, and worked directly with the relevant engineering, HR, security, and management stakeholders to resolve evidence and implementation gaps.</p><p className="mt-3 leading-7 text-slate-600">Com-Sec then conducted the ISO 27001 internal audit, documented findings and observations, and worked with Connectly to remediate identified gaps before the external assessment.</p><p className="mt-3 leading-7 text-slate-600">Preparation also included supporting practical security activities and evidence across areas such as incident response testing, BC/DR exercises, risk assessment and treatment, employee screening and competency, endpoint security, vulnerability and security scanning, secure engineering practices, information deletion, supplier management, and contact with relevant authorities.</p><p className="mt-3 leading-7 text-slate-600">Com-Sec supported the external audit process through Stage 1 and Stage 2, responding to evidence requests, coordinating remediation, and helping Connectly address the final audit findings through documented root-cause analysis, corrective actions, ownership, and supporting evidence.</p></section>
+                  </div>
+
+                  <section className="mt-10 rounded-xl bg-slate-50 p-6 sm:p-8"><h3 className="text-xl font-bold text-primary">Results</h3><ul className="mt-5 grid gap-3 text-sm leading-6 text-slate-700 sm:grid-cols-2">{[
+                    "ISO/IEC 27001:2022 readiness program carried through internal audit, Stage 1, Stage 2, and post-audit remediation.",
+                    "ISMS policies, controls, risks, and supporting evidence centralized and managed through Vanta.",
+                    "ISO 27001 internal audit completed, with findings translated into actionable remediation items.",
+                    "Stage 1 audit observations and corrective actions addressed ahead of Stage 2.",
+                    "Stage 2 corrective actions completed for identified findings, including Contact with Authorities (Control 5.5), Information Deletion (Control 8.10), and Screening (Control 6.1).",
+                    "Corrective Action Report updated and accepted by the auditor, with remediation evidence submitted for closure.",
+                    "Operational security activities incorporated into the certification program, including incident response, BC/DR, risk management, personnel security, secure engineering, vulnerability management, and information deletion.",
+                    "Internal engineering and business teams retained ownership of their systems while Com-Sec drove the compliance and audit workstream.",
+                  ].map((result) => <li key={result} className="flex gap-3"><CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" /><span>{result}</span></li>)}</ul></section>
+
+                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><p className="mt-4 leading-7 text-slate-600">Connectly didn&apos;t need an ongoing compliance department added to its organization. It needed a team that could take a defined ISO 27001 objective and drive it from readiness through audit.</p><p className="mt-4 leading-7 text-slate-600">Com-Sec connected the standard&apos;s requirements with Connectly&apos;s actual engineering and business practices, translated audit requirements into specific actions for internal owners, reviewed the resulting evidence, and coordinated the certification process through Stage 2 and remediation.</p><p className="mt-4 leading-7 text-slate-600">The result was a structured, project-based engagement with a clear objective and finish line rather than an open-ended compliance commitment.</p></section>
+
+                  <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client Perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;Com-Sec helped us turn ISO 27001 into a structured project with clear ownership and a defined path through readiness, internal audit, and external assessment. Their team worked directly with ours to keep evidence, remediation, and audit requirements moving together.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600"><span className="block">ConnectlyAI</span></p></section>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Take ISO 27001 from readiness through audit</h3><p className="mt-4 leading-7 text-slate-600">If ISO 27001 is becoming a second roadmap for your engineering team, <Link to="/contact" className="font-semibold text-accent underline underline-offset-4 hover:text-primary">Com-Sec can help take it from readiness through audit</Link>.</p></section>
+
+                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li>Connectly ISO/IEC 27001:2022 internal audit and remediation records</li><li>Vanta compliance and evidence records</li><li>Stage 1 and Stage 2 audit records</li><li>ISO 27001 Corrective Action Report / findings sheet</li><li>Connectly security and ISMS documentation</li><li>Final certification documentation</li><li>Client verification and publication approval</li></ul></section>
                 </div>
               </div>
             </article>
