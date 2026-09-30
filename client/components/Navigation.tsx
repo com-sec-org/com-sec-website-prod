@@ -144,7 +144,7 @@ export function Navigation() {
               </Link>
               <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
-                  {['HealthTech', 'InsurTech', 'AgTech', 'AI / SaaS', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
+                  {['HealthTech', 'InsurTech', 'AgTech', 'AI / SaaS', 'Global Mobility', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
                     <Link
                       key={category}
                       to={`/case-studies?category=${encodeURIComponent(category)}`}
@@ -399,7 +399,7 @@ export function Navigation() {
                 {expandedSection === "case-studies" && (
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
-                      {['HealthTech', 'InsurTech', 'AgTech', 'AI / SaaS', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
+                      {['HealthTech', 'InsurTech', 'AgTech', 'AI / SaaS', 'Global Mobility', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
                         <Link
                           key={category}
                           to={`/case-studies?category=${encodeURIComponent(category)}`}
