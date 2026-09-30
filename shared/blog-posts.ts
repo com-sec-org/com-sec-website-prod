@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "what-does-a-fractional-ciso-do-roles-and-responsibilities",
+                title: "What Does a Fractional CISO Do? Roles and Responsibilities",
+                excerpt: "The title sounds impressive, but most founders considering hiring one have the same question: what does this person actually do, week to week?",
+                date: "September 30 2026",
+                readTime: "7 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Leadership",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/what-does-a-fractional-ciso-do-roles-and-responsibilities.png",
+                imageAlt: "What Does a Fractional CISO Do? Roles and Responsibilities",
+                link: "/blog/what-does-a-fractional-ciso-do-roles-and-responsibilities",
+              },            
+              {
                 id: "why-security-awareness-training-matters-for-every-employee",
                 title: "Why Security Awareness Training Matters for Every Employee",
                 excerpt: "Security awareness training is not going to stop breaches. But it still matters. Here's why, and how to do it in a way that actually provides value.",
