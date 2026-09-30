@@ -4,7 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 
-const categories = ["HealthTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"] as const;
+const categories = ["HealthTech", "InsurTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"] as const;
 type Category = (typeof categories)[number];
 const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
 const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
@@ -31,6 +31,15 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
       title: "From HITRUST Complexity to an Embedded Security & IT Partnership",
       summary: "How Vheda Health turned HITRUST readiness into an embedded security and IT partnership.",
       meta: "Virtual Care · HITRUST · Managed IT",
+    },
+  ],
+  InsurTech: [
+    {
+      id: "glovebox",
+      client: "GloveBox",
+      title: "Building the Security Operations Behind Recurring SOC 2 Assurance",
+      summary: "GloveBox partnered with Com-Sec to strengthen the operational foundation behind its SOC 2 program.",
+      meta: "InsurTech · SOC 2 · Managed IT",
     },
   ],
   "AI SaaS": [],
@@ -93,7 +102,7 @@ export default function CaseStudies() {
             </Link>
           )}
 
-          {selectedStudy && category === "HealthTech" ? (
+          {selectedStudy ? (
             <>
             {selectedStudy.id === "caryhealth" && (
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
@@ -196,6 +205,57 @@ export default function CaseStudies() {
                   <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client Perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;Com-Sec gives us one team for the security work that would otherwise be spread across several providers. They understand the audit, the technology, and what our team needs day to day.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600"><span className="block">Richard Kaskel</span><span className="block">CEO, Rave Health</span></p></section>
 
                   <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Build security without managing multiple providers</h3><p className="mt-4 leading-7 text-slate-600">Need a security program that connects compliance, technical security, and day-to-day IT operations? <Link to="/contact" className="font-semibold text-accent underline underline-offset-4 hover:text-primary">Talk to Com-Sec</Link>.</p></section>
+                </div>
+              </div>
+            </article>
+            )}
+
+            {selectedStudy.id === "glovebox" && (
+            <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
+              <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
+                <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+                  <div role="img" aria-label="GloveBox logo" className="mb-8 text-3xl font-bold tracking-tight text-white sm:text-4xl">GloveBox</div>
+                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">InsurTech</div>
+                  <h2 className="mt-6 text-3xl font-bold">GloveBox</h2>
+                  <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">InsurTech</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">GloveBox</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Audit partner</dt><dd className="mt-1 text-white/90">Sensiba</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Partner</dt><dd className="mt-1 text-white/90">IRU MDM</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">September 2024 to present</dd></div>
+                  </dl>
+                </aside>
+
+                <div className="p-7 sm:p-10 lg:p-14">
+                  <h2 className="text-3xl font-bold leading-tight text-primary sm:text-4xl">Building the Security Operations Behind Recurring SOC 2 Assurance</h2>
+
+                  <section className="mt-8"><h3 className="text-xl font-bold text-primary">Client Overview</h3><ul className="mt-4 grid gap-3 text-slate-700 sm:grid-cols-2"><li><strong>Industry:</strong> InsurTech</li><li><strong>Company:</strong> GloveBox</li><li><strong>Services:</strong> vCISO, managed IT, SOC 2, penetration testing</li><li><strong>GRC platform:</strong> Drata</li><li><strong>Audit partner:</strong> Sensiba</li><li><strong>Partner:</strong> IRU MDM</li><li><strong>Engagement:</strong> September 2024 to present</li></ul></section>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Executive Summary</h3><p className="mt-4 text-lg leading-8 text-slate-700">GloveBox partnered with Com-Sec to strengthen the operational foundation behind its SOC 2 program. Rather than treating compliance as a once-a-year audit activity, Com-Sec helped turn security requirements into repeatable processes across policies, access management, employee lifecycle workflows, endpoint support, technical testing, and evidence management.</p><p className="mt-4 leading-7 text-slate-600">Through one engagement, Com-Sec supported vCISO guidance, managed IT, Drata oversight, SSO initiatives, penetration testing, and recurring security operations. This gave GloveBox a more connected model for managing compliance and security work across the year.</p><p className="mt-4 leading-7 text-slate-600">The result is a program where audit readiness is supported by everyday operational practices, helping GloveBox maintain better alignment between its controls, systems, employees, and evidence.</p></section>
+
+                  <div className="mt-10 grid gap-8 border-t border-slate-200 pt-10 lg:grid-cols-2">
+                    <section><h3 className="text-xl font-bold text-primary">The Challenge</h3><p className="mt-3 leading-7 text-slate-600">GloveBox needed a security program that could support recurring SOC 2 assurance while also keeping pace with day-to-day operational needs. The company’s controls were not limited to policy documents or annual audit evidence; they depended on whether access, devices, applications, employee changes, and security testing were consistently managed.</p><p className="mt-3 leading-7 text-slate-600">For a growing InsurTech team, this created several connected challenges. Policies needed to move through approval and publication. Drata needed ongoing review and evidence support. SSO coverage had to be advanced across critical applications. Onboarding and offboarding processes needed to support timely access provisioning and removal. Endpoint support and MDM-related work also needed to be tied back to the broader security program.</p><p className="mt-3 leading-7 text-slate-600">The challenge was not simply completing SOC 2 tasks. It was building an operating model where compliance, IT, and security worked together continuously enough to support audit readiness and reduce last-minute evidence gaps.</p></section>
+                    <section><h3 className="text-xl font-bold text-primary">Com-Sec’s Approach</h3><p className="mt-3 leading-7 text-slate-600">Com-Sec helped GloveBox connect executive-level security guidance with hands-on operational execution. Instead of treating SOC 2, IT support, endpoint management, SSO, and penetration testing as separate efforts, Com-Sec supported them as parts of the same security program.</p><p className="mt-3 leading-7 text-slate-600">The team helped move policies through approval and publication, monitored the program in Drata, supported evidence collection and control readiness, and helped keep audit-related work visible as part of recurring operations. Com-Sec also advanced SSO implementation for critical applications and supported the design of employee lifecycle processes so that onboarding and offboarding could better align with access control requirements.</p><p className="mt-3 leading-7 text-slate-600">On the technical side, Com-Sec delivered penetration testing and helped integrate the results into the broader remediation and compliance program. Recurring IT support helped address the operational issues that directly affect security controls, including endpoint support, access management, and user lifecycle needs.</p><p className="mt-3 leading-7 text-slate-600">This model gave GloveBox one team that understood both the compliance expectations and the operational systems behind them.</p></section>
+                  </div>
+
+                  <section className="mt-10 rounded-xl bg-slate-50 p-6 sm:p-8"><h3 className="text-xl font-bold text-primary">Results</h3><ul className="mt-5 grid gap-3 text-sm leading-6 text-slate-700 sm:grid-cols-2">{[
+                    "Policies moved through approval and publication to support SOC 2 readiness.",
+                    "Drata oversight became part of recurring security and compliance operations.",
+                    "SSO work advanced for critical applications.",
+                    "Onboarding and offboarding processes were designed to better support access control and evidence expectations.",
+                    "Penetration testing was incorporated into the security program.",
+                    "Recurring IT support was connected to compliance and security operations.",
+                    "vCISO, managed IT, SOC 2 support, and technical testing were brought together under one operating model.",
+                  ].map((result) => <li key={result} className="flex gap-3"><CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" /><span>{result}</span></li>)}</ul></section>
+
+                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><p className="mt-4 leading-7 text-slate-600">GloveBox did not need a compliance advisor who only reviewed policies once a year. It needed a team that could help connect policies, systems, users, evidence, and technical validation.</p><p className="mt-4 leading-7 text-slate-600">Com-Sec connected the executive security program to the operational details. For GloveBox, that meant helping controls work across access management, employee lifecycle processes, endpoint support, audit evidence, Drata monitoring, and penetration testing, not just appear complete in an audit binder.</p></section>
+
+                  <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client Perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;Com-Sec helps us turn SOC 2 requirements into day-to-day security operations. They support the audit work, the technical controls, and the IT processes that keep the program running throughout the year.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600"><span className="block">Ryan Mathisen</span><span className="block">CEO, GloveBox</span></p></section>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Build security that works beyond the audit</h3><p className="mt-4 leading-7 text-slate-600">If your policies say one thing and daily operations do another, <Link to="/contact" className="font-semibold text-accent underline underline-offset-4 hover:text-primary">talk to Com-Sec</Link>.</p></section>
+
+                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li>GloveBox Canva reference</li><li>GloveBox Drata</li><li>GloveBox SCC Meetings (Google Drive)</li></ul></section>
                 </div>
               </div>
             </article>
