@@ -338,6 +338,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-09-28T00:00:00Z",
   },
+  "/blog/what-does-a-fractional-ciso-do-roles-and-responsibilities": {
+    title: "What Does a Fractional CISO Do? Roles and Responsibilities",
+    description:
+      "The CISO title gets thrown around loosely. Here's what the role should actually include, week to week.",
+    image: `${BASE_URL}/images/blog-images/what-does-a-fractional-ciso-do-roles-and-responsibilities.png`,
+    url: `${BASE_URL}/blog/what-does-a-fractional-ciso-do-roles-and-responsibilities`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-09-30T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
