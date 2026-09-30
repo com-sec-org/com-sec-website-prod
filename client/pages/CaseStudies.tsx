@@ -159,7 +159,7 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <div role="img" aria-label="Rave Health logo" className="mb-8 text-3xl font-bold tracking-tight text-white sm:text-4xl">Rave <span className="font-medium text-blue-200">Health</span></div>
+                  <img src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F5a0f96bd5473494f8409248dd6efa1b5?format=webp&width=800&height=1200" alt="Rave Health logo" className="mb-8 h-12 w-auto max-w-full object-contain object-left sm:h-14" />
                   <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
                   <h2 className="mt-6 text-3xl font-bold">Rave Health</h2>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
