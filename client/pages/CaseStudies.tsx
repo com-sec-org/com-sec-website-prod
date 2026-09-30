@@ -4,7 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 
-const categories = ["HealthTech", "InsurTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"] as const;
+const categories = ["HealthTech", "InsurTech", "AgTech", "AI SaaS", "FinTech", "Energy", "EdTech", "Services"] as const;
 type Category = (typeof categories)[number];
 const caryHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Fd55a94343bf843fe802dba632ce12c59?format=webp&width=800&height=1200";
 const vhedaHealthLogo = "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F21d2ed258d9242689e8728242991d350?format=webp&width=800&height=1200";
@@ -40,6 +40,15 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
       title: "Building the Security Operations Behind Recurring SOC 2 Assurance",
       summary: "GloveBox partnered with Com-Sec to strengthen the operational foundation behind its SOC 2 program.",
       meta: "InsurTech · SOC 2 · Managed IT",
+    },
+  ],
+  AgTech: [
+    {
+      id: "croptrak",
+      client: "CropTrak",
+      title: "Making Security Part of the Operating Rhythm at an Agricultural Technology Company",
+      summary: "CropTrak works with customers that expect real, ongoing security assurance, not just a clean audit report once a year.",
+      meta: "AgTech · SOC 2 · Managed IT",
     },
   ],
   "AI SaaS": [],
@@ -255,6 +264,56 @@ export default function CaseStudies() {
 
                   <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Build security that works beyond the audit</h3><p className="mt-4 leading-7 text-slate-600">If your policies say one thing and daily operations do another, <Link to="/contact" className="font-semibold text-accent underline underline-offset-4 hover:text-primary">talk to Com-Sec</Link>.</p></section>
 
+                </div>
+              </div>
+            </article>
+            )}
+
+            {selectedStudy.id === "croptrak" && (
+            <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
+              <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
+                <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+                  <div role="img" aria-label="CropTrak logo" className="mb-8 text-3xl font-bold tracking-tight text-white sm:text-4xl">CropTrak</div>
+                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">AgTech</div>
+                  <h2 className="mt-6 text-3xl font-bold">CropTrak</h2>
+                  <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">AgTech</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">CropTrak</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Audit partner</dt><dd className="mt-1 text-white/90">Sensiba LLC</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">October 2024 to present</dd></div>
+                  </dl>
+                </aside>
+
+                <div className="p-7 sm:p-10 lg:p-14">
+                  <h2 className="text-3xl font-bold leading-tight text-primary sm:text-4xl">Making Security Part of the Operating Rhythm at an Agricultural Technology Company</h2>
+
+                  <section className="mt-8"><h3 className="text-xl font-bold text-primary">Client Overview</h3><ul className="mt-4 grid gap-3 text-slate-700 sm:grid-cols-2"><li><strong>Industry:</strong> AgTech</li><li><strong>Company:</strong> CropTrak</li><li><strong>Services:</strong> vCISO, SOC 2, managed IT, security operations, penetration testing</li><li><strong>GRC platform:</strong> Drata</li><li><strong>Audit partner:</strong> Sensiba LLC</li><li><strong>Engagement:</strong> October 2024 to present</li></ul></section>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Executive Summary</h3><p className="mt-4 text-lg leading-8 text-slate-700">CropTrak works with customers that expect real, ongoing security assurance, not just a clean audit report once a year. For a company operating in a compliance-sensitive environment, SOC 2 cannot be treated as an annual documentation exercise. The controls have to be reflected in the way the business operates every day: how devices are secured, how access is granted and reviewed, how employees are supported, how security issues are handled, and how technology decisions are made over time.</p><p className="mt-4 leading-7 text-slate-600">Com-Sec helped turn those requirements into an operating rhythm that could be sustained throughout the year. That included ongoing vCISO leadership, continuous SOC 2 control maintenance in Drata, coordination with auditors and internal stakeholders, EDR implementation and endpoint security improvements, recurring user access reviews, and day-to-day IT and security guidance. Instead of allowing evidence collection, control reviews, and remediation work to pile up before an audit, Com-Sec helped integrate those activities into normal business operations.</p><p className="mt-4 leading-7 text-slate-600">The result was a more consistent security program with clearer ownership, stronger control visibility, and less dependence on last-minute audit preparation. Security and compliance became part of CropTrak’s regular operating model rather than a seasonal project, giving the company a more practical way to maintain SOC 2 readiness while also improving the underlying security posture that customers rely on.</p></section>
+
+                  <div className="mt-10 grid gap-8 border-t border-slate-200 pt-10 lg:grid-cols-2">
+                    <section><h3 className="text-xl font-bold text-primary">The Challenge</h3><p className="mt-3 leading-7 text-slate-600">A major challenge for CropTrak was the amount of ongoing security work required outside the audit itself. Customer security questionnaires, evidence requests, access reviews, and IT administration all demanded consistent attention and clear documentation.</p><p className="mt-3 leading-7 text-slate-600">Drata helped provide continuous visibility into compliance by centralizing control monitoring, evidence collection, and CSPM oversight. This made it easier to identify gaps early and maintain security standards throughout the year instead of waiting until audit season.</p><p className="mt-3 leading-7 text-slate-600">At the same time, recurring IT tasks such as user access changes, endpoint support, and account management needed to stay aligned with those controls. The goal was to connect day-to-day operations with the broader compliance program so that security requirements were consistently maintained in practice.</p></section>
+                    <section><h3 className="text-xl font-bold text-primary">Com-Sec&apos;s Approach</h3><p className="mt-3 leading-7 text-slate-600">Com-Sec helped CropTrak build a year-round operating rhythm around security and compliance. A structured roadmap established priorities and gave the team a clear view of upcoming initiatives, while biweekly meetings created a regular cadence for reviewing progress, addressing open issues, and adjusting priorities as needed.</p><p className="mt-3 leading-7 text-slate-600">SCC meetings added another layer of accountability by bringing key stakeholders together to review security and compliance topics. Meeting notes, action items, and follow-ups helped keep responsibilities visible and ensured that important tasks did not get lost between audit cycles. This structure supported ongoing work in Drata, audit coordination, MDM implementation, access reviews, and recurring IT and security guidance.</p><p className="mt-3 leading-7 text-slate-600">Com-Sec also reinforced the program through continuous security awareness efforts. Phishing simulations, security newsletters, and annual awareness training helped keep security top of mind for employees throughout the year, extending the program beyond technical controls and making security part of CropTrak’s day-to-day culture.</p></section>
+                  </div>
+
+                  <section className="mt-10 rounded-xl bg-slate-50 p-6 sm:p-8"><h3 className="text-xl font-bold text-primary">Results</h3><ul className="mt-5 grid gap-3 text-sm leading-6 text-slate-700 sm:grid-cols-2">{[
+                    "Achieved and maintained SOC 2 compliance with year-round control maintenance, evidence management, remediation, and audit coordination.",
+                    "Established a biweekly security and compliance cadence with documented action items, ownership, and follow-up.",
+                    "Integrated recurring access reviews into normal business operations.",
+                    "Implemented EDR and incorporated endpoint protection into ongoing security operations.",
+                    "Maintained active Drata monitoring to keep controls and evidence current throughout the year.",
+                    "Established ongoing security awareness through annual training, phishing simulations, and recurring security communications.",
+                    "Centralized IT and security support through Com-Sec, giving CropTrak one team for compliance, customer assurance, and day-to-day security operations.",
+                  ].map((result) => <li key={result} className="flex gap-3"><CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" /><span>{result}</span></li>)}</ul></section>
+
+                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><p className="mt-4 leading-7 text-slate-600">Com-Sec helps growing companies run security between audits, not just before them.</p><p className="mt-4 leading-7 text-slate-600">For CropTrak, that meant connecting executive oversight, compliance, devices, access, and daily operations into one rhythm.</p></section>
+
+                  <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client Perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;Com-Sec helped us make security part of how we operate instead of something we scramble to address before an audit.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600"><span className="block">Brandon Frye</span><span className="block">CTO, CropTrak</span></p></section>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Keep security running between audits</h3><p className="mt-4 leading-7 text-slate-600">If your security program disappears between audit periods, <Link to="/contact" className="font-semibold text-accent underline underline-offset-4 hover:text-primary">talk to Com-Sec</Link>.</p></section>
+
+                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li>CropTrak SOC 2 Maintenance Plan — Canva</li><li>CropTrak Roadmap — Canva</li><li>CropTrak SCC Meeting Notes — Google Drive</li><li>CropTrak Drata</li></ul></section>
                 </div>
               </div>
             </article>
