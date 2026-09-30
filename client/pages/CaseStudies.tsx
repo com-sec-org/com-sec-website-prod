@@ -331,7 +331,7 @@ export default function CaseStudies() {
             <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
               <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
                 <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff2292f60f6e74e4186795bf2e715d120?format=webp&width=800&height=1200" alt="ConnectlyAI logo" className="mb-8 block h-auto w-full max-w-[240px] object-contain object-left brightness-0 invert" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F894ed77f9a9b4b508174d3b22cdb1d2d?format=webp&width=800&height=1200" alt="ConnectlyAI logo" className="mb-8 block h-auto w-full max-w-[240px] object-contain object-left mix-blend-screen" />
                   <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">AI / SaaS</div>
                   <h2 className="mt-6 text-3xl font-bold">ConnectlyAI</h2>
                   <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
