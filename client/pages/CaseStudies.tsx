@@ -19,6 +19,13 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
       meta: "Digital pharmacy · SOC 2 · HIPAA",
     },
     {
+      id: "rave-health",
+      client: "Rave Health",
+      title: "One Team for Compliance, Security, and IT",
+      summary: "Rave Health needed a security partner that could support both compliance and day-to-day operations.",
+      meta: "HealthTech · SOC 2 · Managed IT",
+    },
+    {
       id: "vheda-health",
       client: "Vheda Health",
       title: "From HITRUST Complexity to an Embedded Security & IT Partnership",
@@ -143,6 +150,52 @@ export default function CaseStudies() {
                   <section className="mt-10"><h3 className="text-xl font-bold text-primary">Sources</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600"><li><a className="text-accent underline" href="https://www.cary.health/about" target="_blank" rel="noreferrer">CaryHealth company overview</a></li><li><a className="text-accent underline" href="https://com-sec.io/blog/caryhealth-first-client-story" target="_blank" rel="noreferrer">Com-Sec&apos;s CaryHealth first-client story</a></li><li><a className="text-accent underline" href="https://www.cary.health/press-release-news/caretria-acquires-caryhealth-creating-an-industry-leading-direct-to-patient-pharmacy-platform" target="_blank" rel="noreferrer">CareTria acquisition announcement</a></li></ul></section>
 
 
+                </div>
+              </div>
+            </article>
+            )}
+
+            {selectedStudy.id === "rave-health" && (
+            <article className="mt-10 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_24px_70px_-34px_rgba(15,23,42,0.5)]">
+              <div className="grid lg:grid-cols-[0.9fr_2.1fr]">
+                <aside className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-950 to-slate-950 p-7 text-white sm:p-10 lg:p-12">
+                  <div role="img" aria-label="Rave Health logo" className="mb-8 text-3xl font-bold tracking-tight text-white sm:text-4xl">Rave <span className="font-medium text-blue-200">Health</span></div>
+                  <div className="inline-flex rounded-full border border-orange-300/30 bg-orange-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-200">HealthTech</div>
+                  <h2 className="mt-6 text-3xl font-bold">Rave Health</h2>
+                  <dl className="mt-10 space-y-5 border-t border-white/15 pt-6 text-sm">
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Industry</dt><dd className="mt-1 text-white/90">HealthTech</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Company</dt><dd className="mt-1 text-white/90">Rave Health</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">GRC platform</dt><dd className="mt-1 text-white/90">Drata</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Auditor</dt><dd className="mt-1 text-white/90">Atom</dd></div>
+                    <div><dt className="font-semibold uppercase tracking-wider text-orange-200">Engagement</dt><dd className="mt-1 text-white/90">August 2024 to present</dd></div>
+                  </dl>
+                </aside>
+
+                <div className="p-7 sm:p-10 lg:p-14">
+                  <h2 className="text-3xl font-bold leading-tight text-primary sm:text-4xl">One Team for Compliance, Security, and IT</h2>
+
+                  <section className="mt-8"><h3 className="text-xl font-bold text-primary">Client Overview</h3><ul className="mt-4 grid gap-3 text-slate-700 sm:grid-cols-2"><li><strong>Industry:</strong> HealthTech</li><li><strong>Company:</strong> Rave Health</li><li><strong>Services:</strong> Managed IT, vCISO, SOC 2, penetration testing</li><li><strong>GRC platform:</strong> Drata</li><li><strong>Auditor:</strong> Atom</li><li><strong>Engagement:</strong> August 2024 to present</li></ul></section>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Executive Summary</h3><p className="mt-4 text-lg leading-8 text-slate-700">Rave Health needed a security partner that could support both compliance and day-to-day operations. The company required SOC 2 guidance, penetration testing, executive-level security leadership, and ongoing IT support without adding the complexity of managing multiple separate providers.</p><p className="mt-4 leading-7 text-slate-600">Com-Sec brought those responsibilities together under one engagement. The team guided the SOC 2 program in Drata, coordinated with Atom throughout the audit, supported evidence collection and remediation, delivered penetration testing, and remained involved in recurring IT and security operations.</p><p className="mt-4 leading-7 text-slate-600">As Rave Health moved through the final stage of its SOC 2 audit, Com-Sec continued working through the remaining findings and providing the supporting evidence needed for closure. Because the same team understood both the technical environment and the compliance program, issues could be addressed with more context and fewer handoffs between vendors.</p></section>
+
+                  <div className="mt-10 grid gap-8 border-t border-slate-200 pt-10 lg:grid-cols-2">
+                    <section><h3 className="text-xl font-bold text-primary">The Challenge</h3><p className="mt-3 leading-7 text-slate-600">Rave Health needed to strengthen several areas at the same time: SOC 2 compliance, penetration testing, executive-level security guidance, and everyday IT support.</p><p className="mt-3 leading-7 text-slate-600">For a lean team, managing each of those functions through separate providers would have added unnecessary coordination, handoffs, and overhead.</p><p className="mt-3 leading-7 text-slate-600">The SOC 2 program required ongoing attention across Drata, evidence collection, control remediation, access reviews, policies, and auditor requests. At the same time, technical security needed to be validated through penetration testing while day-to-day IT issues continued to require support.</p><p className="mt-3 leading-7 text-slate-600">The challenge was finding a model that could connect compliance, technical security, and IT operations rather than treating them as separate projects. Rave Health needed consistent ownership and a team that understood both its audit requirements and the technical environment behind them.</p></section>
+                    <section><h3 className="text-xl font-bold text-primary">Com-Sec&apos;s Approach</h3><p className="mt-3 leading-7 text-slate-600">Com-Sec brought Rave Health&apos;s compliance, technical security, and IT needs together under one operating model.</p><p className="mt-3 leading-7 text-slate-600">Monthly meetings created a consistent cadence for reviewing SOC 2 progress, open risks, remediation items, and upcoming priorities. Ad hoc sessions provided additional space to work through deeper technical topics such as AWS configuration and cloud security.</p><p className="mt-3 leading-7 text-slate-600">Day-to-day communication stayed active through Slack, giving Rave Health a direct channel for questions, operational issues, and time-sensitive security concerns.</p><p className="mt-3 leading-7 text-slate-600">Com-Sec also supported the broader security culture through recurring newsletters and phishing campaigns designed to keep employees engaged and strengthen security awareness between formal training cycles.</p><p className="mt-3 leading-7 text-slate-600">Monthly reporting tied the program together by giving Rave Health clear visibility into ongoing security and compliance work. Alongside that reporting, Com-Sec continued guiding the SOC 2 program, coordinating with Atom, supporting evidence collection and remediation, delivering penetration testing, and staying involved in recurring IT and security operations.</p></section>
+                  </div>
+
+                  <section className="mt-10 rounded-xl bg-slate-50 p-6 sm:p-8"><h3 className="text-xl font-bold text-primary">Results</h3><ul className="mt-5 grid gap-3 text-sm leading-6 text-slate-700 sm:grid-cols-2">{[
+                    "SOC 2 remediation progressed from multiple open findings to one remaining evidence item in the latest internal record.",
+                    "Ongoing remediation, evidence collection, and control validation supported, including direct coordination with the auditor.",
+                    "Penetration testing incorporated into the security program, with identified findings remediated.",
+                    "Ongoing vCISO guidance, IT support, audit coordination, and security operations established under one team.",
+                    "Consistent support provided across strategic security initiatives and day-to-day operational needs since August 2024.",
+                  ].map((result) => <li key={result} className="flex gap-3"><CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" /><span>{result}</span></li>)}</ul></section>
+
+                  <section className="mt-10"><h3 className="text-xl font-bold text-primary">Why Com-Sec</h3><p className="mt-4 leading-7 text-slate-600">Rave Health didn&apos;t have to translate between an auditor, a penetration tester, an IT provider, and a strategic advisor.</p><p className="mt-4 leading-7 text-slate-600">Com-Sec connected the work and kept the program moving. Instead of treating compliance, technical security, and IT as separate projects, the engagement gave Rave Health one team with context across all three.</p></section>
+
+                  <section className="mt-10 rounded-xl border border-orange-200 bg-orange-50 p-6"><p className="text-xs font-bold uppercase tracking-wider text-orange-700">Client Perspective</p><blockquote className="mt-3 text-lg font-medium leading-7 text-primary">&quot;Com-Sec gives us one team for the security work that would otherwise be spread across several providers. They understand the audit, the technology, and what our team needs day to day.&quot;</blockquote><p className="mt-4 text-sm font-semibold text-slate-600"><span className="block">Richard Kaskel</span><span className="block">CEO, Rave Health</span></p></section>
+
+                  <section className="mt-10 border-t border-slate-200 pt-10"><h3 className="text-xl font-bold text-primary">Build security without managing multiple providers</h3><p className="mt-4 leading-7 text-slate-600">Need a security program that connects compliance, technical security, and day-to-day IT operations? <Link to="/contact" className="font-semibold text-accent underline underline-offset-4 hover:text-primary">Talk to Com-Sec</Link>.</p></section>
                 </div>
               </div>
             </article>
