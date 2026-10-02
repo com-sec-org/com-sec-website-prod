@@ -864,4 +864,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/why-security-awareness-training-matters-for-every-employee`,
     image: `${BASE_URL}/images/blog-images/why-security-awareness-training-matters-for-every-employee.png`,
   },
+  "/blog/what-does-a-fractional-ciso-do-roles-and-responsibilities": {
+    title: "What Does a Fractional CISO Do? Roles and Responsibilities",
+    description:
+      "The CISO title gets thrown around loosely, and 'fractional' makes it even more ambiguous. Here's what a fractional CISO's role and responsibilities should actually include, week to week.",
+    canonical: `${BASE_URL}/blog/what-does-a-fractional-ciso-do-roles-and-responsibilities`,
+    image: `${BASE_URL}/images/blog-images/what-does-a-fractional-ciso-do-roles-and-responsibilities.png`,
+  },
 };
