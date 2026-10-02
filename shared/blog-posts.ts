@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "7-signs-your-business-needs-fractional-security-leadership",
+                title: "7 Signs Your Business Needs Fractional Security Leadership",
+                excerpt: "There's a point where the \"we'll figure it out\" approach to security breaks. Here are the seven signs your company has outgrown it.",
+                date: "October 3 2026",
+                readTime: "6 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Leadership",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/7-signs-your-business-needs-fractional-security-leadership.png",
+                imageAlt: "7 Signs Your Business Needs Fractional Security Leadership",
+                link: "/blog/7-signs-your-business-needs-fractional-security-leadership",
+              },
+              {
                 id: "what-does-a-fractional-ciso-do-roles-and-responsibilities",
                 title: "What Does a Fractional CISO Do? Roles and Responsibilities",
                 excerpt: "The title sounds impressive, but most founders considering hiring one have the same question: what does this person actually do, week to week?",

@@ -145,6 +145,7 @@ import TenStepsToBuildingAnEffectiveSecurityProgram from "./pages/resources/blog
 import CybersecurityStrategyVsRoadmap from "./pages/resources/blog/CybersecurityStrategyVsRoadmap";
 import WhySecurityAwarenessTrainingMatters from "./pages/resources/blog/WhySecurityAwarenessTrainingMatters";
 import WhatDoesAFractionalCisoDo from "./pages/resources/blog/WhatDoesAFractionalCisoDo";
+import SevenSignsYourBusinessNeedsFractionalSecurityLeadership from "./pages/resources/blog/SevenSignsYourBusinessNeedsFractionalSecurityLeadership";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -415,6 +416,7 @@ const App = () => (
               <Route path="/blog/cybersecurity-strategy-vs-cybersecurity-roadmap-whats-the-difference" element={<CybersecurityStrategyVsRoadmap />} />
               <Route path="/blog/why-security-awareness-training-matters-for-every-employee" element={<WhySecurityAwarenessTrainingMatters />} />
               <Route path="/blog/what-does-a-fractional-ciso-do-roles-and-responsibilities" element={<WhatDoesAFractionalCisoDo />} />
+              <Route path="/blog/7-signs-your-business-needs-fractional-security-leadership" element={<SevenSignsYourBusinessNeedsFractionalSecurityLeadership />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
