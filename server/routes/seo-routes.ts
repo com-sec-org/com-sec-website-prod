@@ -871,4 +871,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/what-does-a-fractional-ciso-do-roles-and-responsibilities`,
     image: `${BASE_URL}/images/blog-images/what-does-a-fractional-ciso-do-roles-and-responsibilities.png`,
   },
+  "/blog/7-signs-your-business-needs-fractional-security-leadership": {
+    title: "7 Signs Your Business Needs Fractional Security Leadership",
+    description:
+      "There's a point where the 'we'll figure it out' approach to security breaks, and the signs are usually obvious in hindsight. Here are the seven signs your company has outgrown it.",
+    canonical: `${BASE_URL}/blog/7-signs-your-business-needs-fractional-security-leadership`,
+    image: `${BASE_URL}/images/blog-images/7-signs-your-business-needs-fractional-security-leadership.png`,
+  },
 };

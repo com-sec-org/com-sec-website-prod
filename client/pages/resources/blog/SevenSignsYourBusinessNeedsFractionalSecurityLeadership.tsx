@@ -360,7 +360,7 @@ export default function SevenSignsYourBusinessNeedsFractionalSecurityLeadership(
                   <p className="text-gray-700 leading-relaxed text-lg">
                     Investor interest in cybersecurity has increased significantly in the last two years. During due diligence for Series A and B rounds, questions about security posture,{" "}
                     <b>
-                      <Link to="/" className="text-sky-700 font-semibold hover:underline">
+                      <Link to="/compliance-privacy-grc" className="text-sky-700 font-semibold hover:underline">
                         compliance certifications
                       </Link>
                     </b>
