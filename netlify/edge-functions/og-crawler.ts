@@ -347,6 +347,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-09-30T00:00:00Z",
   },
+  "/blog/7-signs-your-business-needs-fractional-security-leadership": {
+    title: "7 Signs Your Business Needs Fractional Security Leadership",
+    description:
+      "There's a point where the 'we'll figure it out' approach to security breaks. Here are the seven signs your company has outgrown it.",
+    image: `${BASE_URL}/images/blog-images/7-signs-your-business-needs-fractional-security-leadership.png`,
+    url: `${BASE_URL}/blog/7-signs-your-business-needs-fractional-security-leadership`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-03T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
