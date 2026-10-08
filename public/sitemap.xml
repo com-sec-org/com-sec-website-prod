@@ -147,6 +147,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/7-signs-your-business-needs-fractional-security-leadership</loc>
     <priority>0.7</priority>
   </url>

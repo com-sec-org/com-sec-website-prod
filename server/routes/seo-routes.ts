@@ -878,4 +878,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/7-signs-your-business-needs-fractional-security-leadership`,
     image: `${BASE_URL}/images/blog-images/7-signs-your-business-needs-fractional-security-leadership.png`,
   },
+  "/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years": {
+    title: "The HIPAA Security Rule Is Getting Its Biggest Overhaul in 20 Years. Here's What's Actually Changing.",
+    description:
+      "The proposed HIPAA Security Rule overhaul is the most significant revision since the rule was written. Here's what's actually changing, why the delay doesn't matter as much as you think, and what to do now.",
+    canonical: `${BASE_URL}/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years`,
+    image: `${BASE_URL}/images/blog-images/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years.png`,
+  },
 };

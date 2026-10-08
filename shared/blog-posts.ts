@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years",
+                title: "The HIPAA Security Rule Is Getting Its Biggest Overhaul in 20 Years. Here's What's Actually Changing.",
+                excerpt: "Some companies are treating the delay as permission to wait. That's a mistake. Here's what's actually in the proposed rule, and what to do now.",
+                date: "October 9 2026",
+                readTime: "4 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years.png",
+                imageAlt: "The HIPAA Security Rule Is Getting Its Biggest Overhaul in 20 Years. Here's What's Actually Changing.",
+                link: "/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years",
+              },
+              {
                 id: "7-signs-your-business-needs-fractional-security-leadership",
                 title: "7 Signs Your Business Needs Fractional Security Leadership",
                 excerpt: "There's a point where the \"we'll figure it out\" approach to security breaks. Here are the seven signs your company has outgrown it.",

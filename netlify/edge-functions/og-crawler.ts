@@ -356,6 +356,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-03T00:00:00Z",
   },
+  "/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years": {
+    title: "The HIPAA Security Rule Is Getting Its Biggest Overhaul in 20 Years. Here's What's Actually Changing.",
+    description:
+      "The proposed HIPAA Security Rule overhaul is the most significant revision since the rule was written. Here's what's in it and what to do now.",
+    image: `${BASE_URL}/images/blog-images/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years.png`,
+    url: `${BASE_URL}/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-09T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
