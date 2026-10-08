@@ -146,6 +146,7 @@ import CybersecurityStrategyVsRoadmap from "./pages/resources/blog/Cybersecurity
 import WhySecurityAwarenessTrainingMatters from "./pages/resources/blog/WhySecurityAwarenessTrainingMatters";
 import WhatDoesAFractionalCisoDo from "./pages/resources/blog/WhatDoesAFractionalCisoDo";
 import SevenSignsYourBusinessNeedsFractionalSecurityLeadership from "./pages/resources/blog/SevenSignsYourBusinessNeedsFractionalSecurityLeadership";
+import HipaaSecurityRuleOverhaul from "./pages/resources/blog/HipaaSecurityRuleOverhaul";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -417,6 +418,7 @@ const App = () => (
               <Route path="/blog/why-security-awareness-training-matters-for-every-employee" element={<WhySecurityAwarenessTrainingMatters />} />
               <Route path="/blog/what-does-a-fractional-ciso-do-roles-and-responsibilities" element={<WhatDoesAFractionalCisoDo />} />
               <Route path="/blog/7-signs-your-business-needs-fractional-security-leadership" element={<SevenSignsYourBusinessNeedsFractionalSecurityLeadership />} />
+              <Route path="/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years" element={<HipaaSecurityRuleOverhaul />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
