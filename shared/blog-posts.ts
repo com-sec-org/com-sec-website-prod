@@ -2,10 +2,24 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "what-the-change-healthcare-breach-should-have-taught-every-health-tech-company",
+                title: "What the Change Healthcare Breach Should Have Taught Every Health Tech Company",
+                excerpt: "The root cause was almost embarrassingly simple: a Citrix remote access portal without multi-factor authentication.",
+                date: "October 9 2026",
+                readTime: "4 min read",
+                author: "Farbod Fakhrai",
+                category: "Healthcare",
+                categoryColor: "bg-teal-100 text-teal-800",
+                featured: false,
+                image: "/images/blog-images/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company.png",
+                imageAlt: "What the Change Healthcare Breach Should Have Taught Every Health Tech Company",
+                link: "/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company",
+              },
+              {
                 id: "the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years",
                 title: "The HIPAA Security Rule Is Getting Its Biggest Overhaul in 20 Years. Here's What's Actually Changing.",
                 excerpt: "Some companies are treating the delay as permission to wait. That's a mistake. Here's what's actually in the proposed rule, and what to do now.",
-                date: "October 9 2026",
+                date: "October 8 2026",
                 readTime: "4 min read",
                 author: "Farbod Fakhrai",
                 category: "Compliance",
