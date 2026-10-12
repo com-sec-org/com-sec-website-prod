@@ -147,6 +147,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years</loc>
     <priority>0.7</priority>
   </url>

@@ -885,4 +885,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years`,
     image: `${BASE_URL}/images/blog-images/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years.png`,
   },
+  "/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company": {
+    title: "What the Change Healthcare Breach Should Have Taught Every Health Tech Company",
+    description:
+      "The Change Healthcare ransomware attack compromised 190 million patient records and became the largest healthcare data breach in U.S. history. Here are the five lessons every health tech company should take from it.",
+    canonical: `${BASE_URL}/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company`,
+    image: `${BASE_URL}/images/blog-images/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company.png`,
+  },
 };
