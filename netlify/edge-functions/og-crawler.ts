@@ -365,6 +365,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-09T00:00:00Z",
   },
+  "/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company": {
+    title: "What the Change Healthcare Breach Should Have Taught Every Health Tech Company",
+    description:
+      "The largest healthcare data breach in U.S. history was caused by a missing MFA control. Here are the five lessons every health tech company should take from it.",
+    image: `${BASE_URL}/images/blog-images/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company.png`,
+    url: `${BASE_URL}/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-09T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

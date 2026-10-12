@@ -19,7 +19,7 @@ export const allArticles = [
                 id: "the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years",
                 title: "The HIPAA Security Rule Is Getting Its Biggest Overhaul in 20 Years. Here's What's Actually Changing.",
                 excerpt: "Some companies are treating the delay as permission to wait. That's a mistake. Here's what's actually in the proposed rule, and what to do now.",
-                date: "October 8 2026",
+                date: "October 9 2026",
                 readTime: "4 min read",
                 author: "Farbod Fakhrai",
                 category: "Compliance",
