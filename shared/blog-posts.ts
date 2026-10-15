@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble",
+                title: "Your Q4 Compliance Planning Checklist (So Q1 Isn't a Scramble)",
+                excerpt: "Every year, the same thing happens. Security and compliance get pushed to January, then suddenly everything is urgent. Q4 is the time to set up Q1 for success.",
+                date: "October 12 2026",
+                readTime: "4 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble.png",
+                imageAlt: "Your Q4 Compliance Planning Checklist (So Q1 Isn't a Scramble)",
+                link: "/blog/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble",
+              },            
+              {
                 id: "what-the-change-healthcare-breach-should-have-taught-every-health-tech-company",
                 title: "What the Change Healthcare Breach Should Have Taught Every Health Tech Company",
                 excerpt: "The root cause was almost embarrassingly simple: a Citrix remote access portal without multi-factor authentication.",

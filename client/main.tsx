@@ -148,6 +148,7 @@ import WhatDoesAFractionalCisoDo from "./pages/resources/blog/WhatDoesAFractiona
 import SevenSignsYourBusinessNeedsFractionalSecurityLeadership from "./pages/resources/blog/SevenSignsYourBusinessNeedsFractionalSecurityLeadership";
 import HipaaSecurityRuleOverhaul from "./pages/resources/blog/HipaaSecurityRuleOverhaul";
 import ChangeHealthcareBreachLessons from "./pages/resources/blog/ChangeHealthcareBreachLessons";
+import Q4ComplianceChecklist from "./pages/resources/blog/Q4ComplianceChecklist";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -421,6 +422,7 @@ const App = () => (
               <Route path="/blog/7-signs-your-business-needs-fractional-security-leadership" element={<SevenSignsYourBusinessNeedsFractionalSecurityLeadership />} />
               <Route path="/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years" element={<HipaaSecurityRuleOverhaul />} />
               <Route path="/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company" element={<ChangeHealthcareBreachLessons />} />
+              <Route path="/blog/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble" element={<Q4ComplianceChecklist />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
