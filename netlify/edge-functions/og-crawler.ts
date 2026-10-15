@@ -374,6 +374,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-09T00:00:00Z",
   },
+  "/blog/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble": {
+    title: "Your Q4 Compliance Planning Checklist (So Q1 Isn't a Scramble)",
+    description:
+      "Every year, security and compliance get pushed to January, then suddenly everything is urgent. Q4 is the time to set up Q1 for success. Here's how.",
+    image: `${BASE_URL}/images/blog-images/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble.png`,
+    url: `${BASE_URL}/blog/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-12T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

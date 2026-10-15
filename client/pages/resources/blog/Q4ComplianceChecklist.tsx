@@ -38,14 +38,6 @@ export default function Q4ComplianceChecklist() {
 
   const relatedArticles = [
     {
-      title: "How to Build a Compliance Roadmap for Your Business",
-      excerpt:
-        "A compliance roadmap turns an overwhelming list of requirements into a sequenced plan your team can actually execute. Here's how to build one.",
-      link: "/blog/how-to-build-a-compliance-roadmap-for-your-business",
-      category: "Compliance",
-      emoji: "🗺️",
-    },
-    {
       title: "10 Steps to Building an Effective Security Program",
       excerpt:
         "Building a security program is a sequence of practical steps that build on each other. Here's the order we use with every client.",
@@ -102,7 +94,7 @@ export default function Q4ComplianceChecklist() {
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="Farbod Fakhrai" />
-        <meta property="article:published_time" content="2026-10-09T00:00:00Z" />
+        <meta property="article:published_time" content="2026-10-12T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comsec" />
@@ -155,7 +147,7 @@ export default function Q4ComplianceChecklist() {
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>October 9, 2026</span>
+                <span>October 12, 2026</span>
               </div>
 
               <div className="flex items-center gap-2">
@@ -273,7 +265,7 @@ export default function Q4ComplianceChecklist() {
                     <li>Added new SaaS tools and integrations</li>
                     <li>Onboarded new employees and maybe offboarded others</li>
                     <li>Changed cloud infrastructure</li>
-                    <li>Adopted AI tools (see the shadow AI problem)</li>
+                    <li>Adopted AI tools across the team, approved or not</li>
                     <li>Added new customers with new compliance requirements</li>
                     <li>Changed your product in ways that affect data handling</li>
                   </ul>
