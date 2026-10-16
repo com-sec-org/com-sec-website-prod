@@ -147,6 +147,10 @@
 
   <!-- Blog Articles -->
     <url>
+    <loc>https://com-sec.io/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters</loc>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://com-sec.io/blog/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble</loc>
     <priority>0.7</priority>
   </url>

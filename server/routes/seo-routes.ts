@@ -899,4 +899,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble`,
     image: `${BASE_URL}/images/blog-images/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble.png`,
   },
+  "/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters": {
+    title: "Your AI Agents Are a Security Blind Spot. Here's Why That Matters.",
+    description:
+      "88% of organizations that have deployed AI agents have experienced agent-related security incidents. Here's what breaks when agents go wrong, and what to do about it.",
+    canonical: `${BASE_URL}/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters`,
+    image: `${BASE_URL}/images/blog-images/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters.png`,
+  },
 };

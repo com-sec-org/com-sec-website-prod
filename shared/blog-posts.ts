@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "your-ai-agents-are-a-security-blind-spot-heres-why-that-matters",
+                title: "Your AI Agents Are a Security Blind Spot. Here's Why That Matters.",
+                excerpt: "88% of organizations that have deployed AI agents have experienced agent-related security incidents. Here's what breaks when agents go wrong, and what to do about it.",
+                date: "October 14 2026",
+                readTime: "4 min read",
+                author: "Farbod Fakhrai",
+                category: "AI Governance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters.png",
+                imageAlt: "Your AI Agents Are a Security Blind Spot. Here's Why That Matters.",
+                link: "/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters",
+              },
+              {
                 id: "your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble",
                 title: "Your Q4 Compliance Planning Checklist (So Q1 Isn't a Scramble)",
                 excerpt: "Every year, the same thing happens. Security and compliance get pushed to January, then suddenly everything is urgent. Q4 is the time to set up Q1 for success.",

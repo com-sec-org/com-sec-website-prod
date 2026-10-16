@@ -149,6 +149,7 @@ import SevenSignsYourBusinessNeedsFractionalSecurityLeadership from "./pages/res
 import HipaaSecurityRuleOverhaul from "./pages/resources/blog/HipaaSecurityRuleOverhaul";
 import ChangeHealthcareBreachLessons from "./pages/resources/blog/ChangeHealthcareBreachLessons";
 import Q4ComplianceChecklist from "./pages/resources/blog/Q4ComplianceChecklist";
+import AiAgentsSecurityBlindSpot from "./pages/resources/blog/AiAgentsSecurityBlindSpot";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -423,6 +424,7 @@ const App = () => (
               <Route path="/blog/the-hipaa-security-rule-is-getting-its-biggest-overhaul-in-20-years" element={<HipaaSecurityRuleOverhaul />} />
               <Route path="/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company" element={<ChangeHealthcareBreachLessons />} />
               <Route path="/blog/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble" element={<Q4ComplianceChecklist />} />
+              <Route path="/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters" element={<AiAgentsSecurityBlindSpot />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
