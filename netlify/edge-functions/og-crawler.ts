@@ -383,6 +383,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-12T00:00:00Z",
   },
+  "/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters": {
+    title: "Your AI Agents Are a Security Blind Spot. Here's Why That Matters.",
+    description:
+      "88% of organizations that have deployed AI agents have experienced agent-related security incidents. Here's what breaks when agents go wrong, and what to do about it.",
+    image: `${BASE_URL}/images/blog-images/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters.png`,
+    url: `${BASE_URL}/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-14T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
