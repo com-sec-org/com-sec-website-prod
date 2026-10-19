@@ -150,6 +150,7 @@ import HipaaSecurityRuleOverhaul from "./pages/resources/blog/HipaaSecurityRuleO
 import ChangeHealthcareBreachLessons from "./pages/resources/blog/ChangeHealthcareBreachLessons";
 import Q4ComplianceChecklist from "./pages/resources/blog/Q4ComplianceChecklist";
 import AiAgentsSecurityBlindSpot from "./pages/resources/blog/AiAgentsSecurityBlindSpot";
+import HealthcareBreaches2026 from "./pages/resources/blog/HealthcareBreaches2026";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -216,7 +217,7 @@ function CanonicalLink() {
     const SITE_URL = "https://com-sec.io";
     const canonicalUrl = `${SITE_URL}${location.pathname}`;
 
-    let link = document.querySelector("link[rel='canonical']");
+    let link = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!link) {
       link = document.createElement("link");
       link.rel = "canonical";
@@ -425,6 +426,7 @@ const App = () => (
               <Route path="/blog/what-the-change-healthcare-breach-should-have-taught-every-health-tech-company" element={<ChangeHealthcareBreachLessons />} />
               <Route path="/blog/your-q4-compliance-planning-checklist-so-q1-isnt-a-scramble" element={<Q4ComplianceChecklist />} />
               <Route path="/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters" element={<AiAgentsSecurityBlindSpot />} />
+              <Route path="/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026" element={<HealthcareBreaches2026 />}/>
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
@@ -475,14 +477,6 @@ const App = () => (
 
 // Ensure single root creation
 const container = document.getElementById("root")!;
-let root: any;
-
-// Check if root already exists (for HMR)
-if (!container._reactRootContainer) {
-  root = createRoot(container);
-  container._reactRootContainer = root;
-} else {
-  root = container._reactRootContainer;
-}
+const root = createRoot(container);
 
 root.render(<App />);
