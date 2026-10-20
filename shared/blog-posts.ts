@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "healthcare-breaches-hit-281-in-the-first-half-of-2026",
+                title: "Healthcare Breaches Hit 281 in the First Half of 2026. Here's What That Means for Health Tech Startups.",
+                excerpt: "Healthcare data breaches aren't slowing down. They're accelerating. These numbers aren't just industry statistics — they're a preview of the threat landscape you're operating in.",
+                date: "October 19 2026",
+                readTime: "4 min read",
+                author: "Farbod Fakhrai",
+                category: "Healthcare",
+                categoryColor: "bg-teal-100 text-teal-800",
+                featured: false,
+                image: "/images/blog-images/healthcare-breaches-hit-281-in-the-first-half-of-2026.png",
+                imageAlt: "Healthcare Breaches Hit 281 in the First Half of 2026. Here's What That Means for Health Tech Startups.",
+                link: "/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026",
+              },
+              {
                 id: "your-ai-agents-are-a-security-blind-spot-heres-why-that-matters",
                 title: "Your AI Agents Are a Security Blind Spot. Here's Why That Matters.",
                 excerpt: "88% of organizations that have deployed AI agents have experienced agent-related security incidents. Here's what breaks when agents go wrong, and what to do about it.",

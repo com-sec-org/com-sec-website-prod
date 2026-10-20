@@ -392,6 +392,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-14T00:00:00Z",
   },
+  "/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026": {
+    title: "Healthcare Breaches Hit 281 in the First Half of 2026. Here's What That Means for Health Tech Startups.",
+    description:
+      "281 healthcare data breaches in six months. That's more than one per day. Here's why healthcare is the target, where startups get exposed, and what to do about it.",
+    image: `${BASE_URL}/images/blog-images/healthcare-breaches-hit-281-in-the-first-half-of-2026.png`,
+    url: `${BASE_URL}/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-19T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────
