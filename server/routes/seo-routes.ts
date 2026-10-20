@@ -906,4 +906,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters`,
     image: `${BASE_URL}/images/blog-images/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters.png`,
   },
+  "/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026": {
+    title: "Healthcare Breaches Hit 281 in the First Half of 2026. Here's What That Means for Health Tech Startups.",
+    description:
+      "281 healthcare data breaches in the first half of 2026 alone, with a single breach exposing 3.8 million patient records. Here's why healthcare is the target, where health tech startups get exposed, and what to do about it.",
+    canonical: `${BASE_URL}/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026`,
+    image: `${BASE_URL}/images/blog-images/healthcare-breaches-hit-281-in-the-first-half-of-2026.png`,
+  },
 };
