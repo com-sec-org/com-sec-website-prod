@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -31,12 +31,95 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+declare global {
+  interface Window {
+    turnstile?: {
+      render: (container: HTMLElement, options: Record<string, unknown>) => string;
+      reset: (widgetId?: string) => void;
+      execute: (widgetId: string) => void;
+    };
+  }
+}
+
+const TURNSTILE_SCRIPT_SRC = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY;
+const TURNSTILE_UNAVAILABLE_MESSAGE = "Spam protection couldn't load. Please refresh the page and try again.";
+
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const [turnstileError, setTurnstileError] = useState("");
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const turnstileWidgetId = useRef<string | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const pendingSubmitRef = useRef(false);
+
+  useEffect(() => {
+    if (!TURNSTILE_SITE_KEY) return;
+
+    const renderWidget = () => {
+      if (!turnstileRef.current || turnstileWidgetId.current || !window.turnstile) return;
+      turnstileWidgetId.current = window.turnstile.render(turnstileRef.current, {
+        sitekey: TURNSTILE_SITE_KEY,
+        appearance: "execute",
+        callback: (token: string) => {
+          setTurnstileError("");
+          setTurnstileToken(token);
+        },
+        "expired-callback": () => setTurnstileToken(""),
+        "error-callback": () => {
+          pendingSubmitRef.current = false;
+          setTurnstileToken("");
+          setTurnstileError(TURNSTILE_UNAVAILABLE_MESSAGE);
+        },
+      });
+    };
+
+    if (window.turnstile) {
+      renderWidget();
+      return;
+    }
+
+    let script = document.querySelector<HTMLScriptElement>(`script[src="${TURNSTILE_SCRIPT_SRC}"]`);
+    if (!script) {
+      script = document.createElement("script");
+      script.src = TURNSTILE_SCRIPT_SRC;
+      script.async = true;
+      document.head.appendChild(script);
+    }
+    const handleScriptError = () => setTurnstileError(TURNSTILE_UNAVAILABLE_MESSAGE);
+    script.addEventListener("load", renderWidget);
+    script.addEventListener("error", handleScriptError);
+    return () => {
+      script?.removeEventListener("load", renderWidget);
+      script?.removeEventListener("error", handleScriptError);
+    };
+  }, []);
+
+  const resetTurnstile = () => {
+    setTurnstileToken("");
+    if (turnstileWidgetId.current) window.turnstile?.reset(turnstileWidgetId.current);
+  };
+
+  useEffect(() => {
+    if (turnstileToken && pendingSubmitRef.current) {
+      pendingSubmitRef.current = false;
+      formRef.current?.requestSubmit();
+    }
+  }, [turnstileToken]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!turnstileToken) {
+      if (!turnstileWidgetId.current || !window.turnstile) {
+        setTurnstileError(TURNSTILE_UNAVAILABLE_MESSAGE);
+        return;
+      }
+      pendingSubmitRef.current = true;
+      window.turnstile.execute(turnstileWidgetId.current);
+      return;
+    }
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
@@ -49,6 +132,8 @@ export default function Contact() {
       service: formData.get("service") as string,
       budget: formData.get("budget") as string,
       message: formData.get("message") as string,
+      website: formData.get("website") as string,
+      turnstileToken,
     };
 
     try {
@@ -72,6 +157,7 @@ export default function Contact() {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
+      resetTurnstile();
     }
   };
 
@@ -161,7 +247,12 @@ export default function Contact() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-6" onSubmit={handleSubmit}>
+                <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
+                  <div className="hidden" aria-hidden="true">
+                    <Label htmlFor="website">Website</Label>
+                    <Input id="website" name="website" tabIndex={-1} autoComplete="off" />
+                  </div>
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="firstName">First Name *</Label>
@@ -281,6 +372,12 @@ export default function Contact() {
                       required
                     />
                   </div>
+
+                  <div ref={turnstileRef} className="flex justify-center" />
+
+                  {turnstileError && (
+                    <p className="text-red-600 text-center text-sm">{turnstileError}</p>
+                  )}
 
                   <Button
                     type="submit"

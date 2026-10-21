@@ -4,7 +4,6 @@ import dotenv from "dotenv"; // 👈 ADD THIS LINE
 import { handleDemo } from "./routes/demo";
 import phishingTestRoutes from "./routes/phishing-test";
 import submitPhishingTestRoutes from "./routes/submitPhishingTest";
-import { submitContactForm } from "./routes/contact";
 import { handleChatbot } from "./routes/chatbot";
 import { generateSitemap } from "./routes/seo-routes";
 
@@ -19,9 +18,6 @@ export function createServer() {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
-  // Debug: Check if API key is loading (can remove after testing)
-  console.log("✅ Loaded API Key:", process.env.RESEND_API_KEY);
-
   // Example API routes
   app.get("/api/ping", (_req, res) => {
     res.json({ message: "Hello from Express server v2!" });
@@ -32,9 +28,6 @@ export function createServer() {
   // Phishing test routes
   app.use("/api", phishingTestRoutes);
   app.use("/api", submitPhishingTestRoutes);
-
-  // Contact form route
-  app.post("/api/contact", submitContactForm);
 
   // Chatbot route
   app.post("/api/chat", handleChatbot);
