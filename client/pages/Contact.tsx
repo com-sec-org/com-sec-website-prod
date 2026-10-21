@@ -375,12 +375,7 @@ export default function Contact() {
 
                   <div ref={turnstileRef} className="flex justify-center" />
 
-                  {!TURNSTILE_SITE_KEY && (
-                    <p className="text-red-600 text-center text-sm">
-                      Spam protection is not configured, so the message cannot be sent.
-                    </p>
-                  )}
-                  {TURNSTILE_SITE_KEY && turnstileError && (
+                  {turnstileError && (
                     <p className="text-red-600 text-center text-sm">{turnstileError}</p>
                   )}
 
