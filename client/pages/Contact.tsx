@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -31,12 +31,62 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+declare global {
+  interface Window {
+    turnstile?: {
+      render: (container: HTMLElement, options: Record<string, unknown>) => string;
+      reset: (widgetId?: string) => void;
+    };
+  }
+}
+
+const TURNSTILE_SCRIPT_SRC = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const turnstileWidgetId = useRef<string | null>(null);
+
+  useEffect(() => {
+    const siteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY;
+    if (!siteKey) return;
+
+    const renderWidget = () => {
+      if (!turnstileRef.current || turnstileWidgetId.current || !window.turnstile) return;
+      turnstileWidgetId.current = window.turnstile.render(turnstileRef.current, {
+        sitekey: siteKey,
+        callback: (token: string) => setTurnstileToken(token),
+        "expired-callback": () => setTurnstileToken(""),
+        "error-callback": () => setTurnstileToken(""),
+      });
+    };
+
+    if (window.turnstile) {
+      renderWidget();
+      return;
+    }
+
+    let script = document.querySelector<HTMLScriptElement>(`script[src="${TURNSTILE_SCRIPT_SRC}"]`);
+    if (!script) {
+      script = document.createElement("script");
+      script.src = TURNSTILE_SCRIPT_SRC;
+      script.async = true;
+      document.head.appendChild(script);
+    }
+    script.addEventListener("load", renderWidget);
+    return () => script?.removeEventListener("load", renderWidget);
+  }, []);
+
+  const resetTurnstile = () => {
+    setTurnstileToken("");
+    if (turnstileWidgetId.current) window.turnstile?.reset(turnstileWidgetId.current);
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!turnstileToken) return;
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
@@ -49,6 +99,8 @@ export default function Contact() {
       service: formData.get("service") as string,
       budget: formData.get("budget") as string,
       message: formData.get("message") as string,
+      website: formData.get("website") as string,
+      turnstileToken,
     };
 
     try {
@@ -72,6 +124,7 @@ export default function Contact() {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
+      resetTurnstile();
     }
   };
 
@@ -162,6 +215,11 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <form className="space-y-6" onSubmit={handleSubmit}>
+                  <div className="hidden" aria-hidden="true">
+                    <Label htmlFor="website">Website</Label>
+                    <Input id="website" name="website" tabIndex={-1} autoComplete="off" />
+                  </div>
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="firstName">First Name *</Label>
@@ -282,11 +340,13 @@ export default function Contact() {
                     />
                   </div>
 
+                  <div ref={turnstileRef} className="flex justify-center" />
+
                   <Button
                     type="submit"
                     className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 disabled:opacity-50"
                     size="lg"
-                    disabled={isSubmitting}
+                    disabled={isSubmitting || !turnstileToken}
                   >
                     <Send className="mr-2 h-5 w-5" />
                     {isSubmitting ? 'Sending...' : 'Send Message'}
