@@ -41,25 +41,33 @@ declare global {
 }
 
 const TURNSTILE_SCRIPT_SRC = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY;
+const TURNSTILE_UNAVAILABLE_MESSAGE = "Spam protection couldn't load. Please refresh the page and try again.";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [turnstileToken, setTurnstileToken] = useState("");
+  const [turnstileError, setTurnstileError] = useState("");
   const turnstileRef = useRef<HTMLDivElement>(null);
   const turnstileWidgetId = useRef<string | null>(null);
 
   useEffect(() => {
-    const siteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY;
-    if (!siteKey) return;
+    if (!TURNSTILE_SITE_KEY) return;
 
     const renderWidget = () => {
       if (!turnstileRef.current || turnstileWidgetId.current || !window.turnstile) return;
       turnstileWidgetId.current = window.turnstile.render(turnstileRef.current, {
-        sitekey: siteKey,
-        callback: (token: string) => setTurnstileToken(token),
+        sitekey: TURNSTILE_SITE_KEY,
+        callback: (token: string) => {
+          setTurnstileError("");
+          setTurnstileToken(token);
+        },
         "expired-callback": () => setTurnstileToken(""),
-        "error-callback": () => setTurnstileToken(""),
+        "error-callback": () => {
+          setTurnstileToken("");
+          setTurnstileError(TURNSTILE_UNAVAILABLE_MESSAGE);
+        },
       });
     };
 
@@ -75,8 +83,13 @@ export default function Contact() {
       script.async = true;
       document.head.appendChild(script);
     }
+    const handleScriptError = () => setTurnstileError(TURNSTILE_UNAVAILABLE_MESSAGE);
     script.addEventListener("load", renderWidget);
-    return () => script?.removeEventListener("load", renderWidget);
+    script.addEventListener("error", handleScriptError);
+    return () => {
+      script?.removeEventListener("load", renderWidget);
+      script?.removeEventListener("error", handleScriptError);
+    };
   }, []);
 
   const resetTurnstile = () => {
@@ -341,6 +354,15 @@ export default function Contact() {
                   </div>
 
                   <div ref={turnstileRef} className="flex justify-center" />
+
+                  {!TURNSTILE_SITE_KEY && (
+                    <p className="text-red-600 text-center text-sm">
+                      Spam protection is not configured, so the message cannot be sent.
+                    </p>
+                  )}
+                  {TURNSTILE_SITE_KEY && turnstileError && (
+                    <p className="text-red-600 text-center text-sm">{turnstileError}</p>
+                  )}
 
                   <Button
                     type="submit"
