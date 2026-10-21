@@ -36,6 +36,7 @@ declare global {
     turnstile?: {
       render: (container: HTMLElement, options: Record<string, unknown>) => string;
       reset: (widgetId?: string) => void;
+      execute: (widgetId: string) => void;
     };
   }
 }
@@ -51,6 +52,8 @@ export default function Contact() {
   const [turnstileError, setTurnstileError] = useState("");
   const turnstileRef = useRef<HTMLDivElement>(null);
   const turnstileWidgetId = useRef<string | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const pendingSubmitRef = useRef(false);
 
   useEffect(() => {
     if (!TURNSTILE_SITE_KEY) return;
@@ -59,12 +62,14 @@ export default function Contact() {
       if (!turnstileRef.current || turnstileWidgetId.current || !window.turnstile) return;
       turnstileWidgetId.current = window.turnstile.render(turnstileRef.current, {
         sitekey: TURNSTILE_SITE_KEY,
+        appearance: "execute",
         callback: (token: string) => {
           setTurnstileError("");
           setTurnstileToken(token);
         },
         "expired-callback": () => setTurnstileToken(""),
         "error-callback": () => {
+          pendingSubmitRef.current = false;
           setTurnstileToken("");
           setTurnstileError(TURNSTILE_UNAVAILABLE_MESSAGE);
         },
@@ -97,9 +102,24 @@ export default function Contact() {
     if (turnstileWidgetId.current) window.turnstile?.reset(turnstileWidgetId.current);
   };
 
+  useEffect(() => {
+    if (turnstileToken && pendingSubmitRef.current) {
+      pendingSubmitRef.current = false;
+      formRef.current?.requestSubmit();
+    }
+  }, [turnstileToken]);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!turnstileToken) return;
+    if (!turnstileToken) {
+      if (!turnstileWidgetId.current || !window.turnstile) {
+        setTurnstileError(TURNSTILE_UNAVAILABLE_MESSAGE);
+        return;
+      }
+      pendingSubmitRef.current = true;
+      window.turnstile.execute(turnstileWidgetId.current);
+      return;
+    }
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
@@ -227,7 +247,7 @@ export default function Contact() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-6" onSubmit={handleSubmit}>
+                <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
                   <div className="hidden" aria-hidden="true">
                     <Label htmlFor="website">Website</Label>
                     <Input id="website" name="website" tabIndex={-1} autoComplete="off" />
@@ -368,7 +388,7 @@ export default function Contact() {
                     type="submit"
                     className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 disabled:opacity-50"
                     size="lg"
-                    disabled={isSubmitting || !turnstileToken}
+                    disabled={isSubmitting}
                   >
                     <Send className="mr-2 h-5 w-5" />
                     {isSubmitting ? 'Sending...' : 'Send Message'}
