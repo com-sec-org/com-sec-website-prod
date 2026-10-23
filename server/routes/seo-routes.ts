@@ -197,16 +197,16 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
 
   // Frameworks
   "/soc2": {
-    title: "SOC 2 Compliance & Readiness Guide | Security & Trust | Com-Sec",
+    title: "SOC 2 Compliance Services & Audit Consulting | Com-Sec",
     description:
-      "Learn SOC 2 requirements, audit preparation steps, controls, and best practices.",
+      "Get SOC 2 compliance services and consulting with Com-Sec. Access SOC 2 audit support, readiness assessments, and gap analysis to prepare for SOC 2 Type I and Type II certification.",
     canonical: `${BASE_URL}/soc2`,
     image: `${BASE_URL}/images/frameworks/soc2.webp`,
   },
   "/iso27001": {
-    title: "ISO 27001 Compliance | Information Security Management System | Com-Sec",
+    title: "ISO 27001 Compliance Consulting & ISMS Implementation | Com-Sec",
     description:
-      "Understand ISO 27001 requirements, Annex A controls, risk assessments, and certification readiness.",
+      "Get ISO 27001 certification and implementation support from an expert ISO 27001 consultant. Cover ISMS implementation, ISO 27001 requirements, security risk assessment, and certification costs with Com-Sec.",
     canonical: `${BASE_URL}/iso27001`,
     image: `${BASE_URL}/images/frameworks/iso27001.webp`,
   },
@@ -218,9 +218,9 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     image: `${BASE_URL}/images/frameworks/hipaa.webp`,
   },
   "/hitrust": {
-    title: "HITRUST CSF Certification & Compliance Guide | Com-Sec",
+    title: "HITRUST CSF Certification & Compliance Services | Com-Sec",
     description:
-      "Learn how HITRUST CSF certification works, control maturity scoring, and readiness.",
+      "Achieve HITRUST CSF certification and HITRUST compliance support with Com-Sec. Explore assessment readiness, implementation guidance, and HITRUST certification cost.",
     canonical: `${BASE_URL}/hitrust`,
     image: `${BASE_URL}/images/frameworks/hitrust.webp`,
   },

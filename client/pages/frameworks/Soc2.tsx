@@ -28,11 +28,11 @@ export default function Soc2() {
   return (
     <>
   <Helmet>
-    <title>SOC 2 Compliance | Security, Trust, & Audit Readiness | Com-Sec</title>
+    <title>SOC 2 Compliance Services & Audit Consulting | Com-Sec</title>
 
     <meta
       name="description"
-      content="Achieve SOC 2 Type I and Type II compliance with Com-Sec. We help organizations implement controls, prepare evidence, manage audits, and meet Trust Service Criteria for enterprise customers."
+      content="Get SOC 2 compliance services and consulting with Com-Sec. Access SOC 2 audit support, readiness assessments, and gap analysis to prepare for SOC 2 Type I and Type II certification."
     />
 
     <meta

@@ -37,11 +37,11 @@ export default function Iso27001() {
 
     <>
   <Helmet>
-    <title>ISO 27001 Compliance | ISMS Implementation & Certification | Com-Sec</title>
+    <title>ISO 27001 Compliance Consulting & ISMS Implementation | Com-Sec</title>
 
     <meta
       name="description"
-      content="Achieve ISO 27001 certification with Com-Sec’s proven ISMS implementation methodology. We help you establish, implement, maintain, and audit your Information Security Management System (ISMS) aligned with ISO 27001 requirements."
+      content="Get ISO 27001 certification and implementation support from an expert ISO 27001 consultant. Cover ISMS implementation, ISO 27001 requirements, security risk assessment, and certification costs with Com-Sec."
     />
 
     <meta
