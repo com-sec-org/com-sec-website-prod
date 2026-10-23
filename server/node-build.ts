@@ -12,8 +12,10 @@ const port = process.env.PORT || 3000;
 const __dirname = import.meta.dirname;
 const distPath = path.join(__dirname, "../spa");
 
-// Read index.html once at startup and cache it
-const indexHtmlPath = path.join(distPath, "index.html");
+// Read the app shell once at startup and cache it. scripts/prerender.mjs turns
+// index.html into the prerendered homepage and keeps the empty shell as spa-shell.html.
+const shellPath = path.join(distPath, "spa-shell.html");
+const indexHtmlPath = fs.existsSync(shellPath) ? shellPath : path.join(distPath, "index.html");
 let indexHtmlTemplate = "";
 try {
   indexHtmlTemplate = fs.readFileSync(indexHtmlPath, "utf-8");

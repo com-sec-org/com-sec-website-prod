@@ -3,8 +3,6 @@ import { SEO_ROUTES, type PageSEO } from "../../server/routes/seo-routes.ts";
 const SOCIAL_CRAWLER_UA =
   /facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|WhatsApp|Discordbot|Applebot|Pinterest|redditbot|rogerbot|embedly|Googlebot-Image|PostInspector|Iframely|SocialPreview|prerender/i;
 
-const GOOGLE_CRAWLER_UA = /Googlebot(?!-Image)/i;
-
 const BASE_URL = "https://com-sec.io";
 
 interface OgData {
@@ -14,11 +12,6 @@ interface OgData {
   url: string;
   author?: string;
   publishedTime?: string;
-}
-
-interface GooglePageData extends OgData {
-  canonical: string;
-  bodyHtml: string;
 }
 
 // ─── Social media OG routes ───────────────────────────────────────────────────
@@ -412,144 +405,6 @@ const OG_ROUTES: Record<string, OgData> = {
   },
 };
 
-// ─── Google full-content routes ───────────────────────────────────────────────
-
-const GOOGLE_ROUTES: Record<string, GooglePageData> = {
-  "/compliance-audit-readiness": {
-    title: "Cybersecurity & Compliance Audit Services | Com-Sec",
-    description:
-      "Get top cybersecurity compliance, cloud security, GDPR, HITRUST, and IT audit services. Ensure readiness with continuous monitoring. Secure your business with Com-Sec today!",
-    image: `${BASE_URL}/images/blog-images/compliance-audit.png`,
-    url: `${BASE_URL}/compliance-audit-readiness`,
-    canonical: `${BASE_URL}/compliance-audit-readiness`,
-    bodyHtml: `
-<header>
-  <nav><a href="${BASE_URL}">Com-Sec</a></nav>
-</header>
-<main>
-  <section>
-    <h1>Compliance &amp; Audit Readiness</h1>
-    <p>Comprehensive compliance readiness services to help your organization prepare for and pass audits across multiple frameworks including SOC 2, HIPAA, ISO 27001, and more.</p>
-    <a href="${BASE_URL}/contact">Start Compliance Journey</a>
-  </section>
-
-  <section>
-    <h2>Compliance Frameworks We Support</h2>
-    <p>Expert guidance across all major compliance and regulatory frameworks.</p>
-    <ul>
-      <li><a href="${BASE_URL}/soc2">SOC 2 — Service Organization Control 2</a></li>
-      <li><a href="${BASE_URL}/hipaa">HIPAA — Health Insurance Portability</a></li>
-      <li><a href="${BASE_URL}/iso27001">ISO 27001 — Information Security Management</a></li>
-      <li><a href="${BASE_URL}/pci-dss">PCI DSS — Payment Card Industry</a></li>
-      <li><a href="${BASE_URL}/gdpr">GDPR — General Data Protection</a></li>
-      <li><a href="${BASE_URL}/nist">NIST — Cybersecurity Framework</a></li>
-      <li><a href="${BASE_URL}/hitrust">HITRUST — Healthcare Trust Alliance</a></li>
-      <li><a href="${BASE_URL}/cmmc">CMMC — Cybersecurity Maturity Model</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Our Compliance Readiness Process</h2>
-    <p>A proven methodology to ensure audit success across all frameworks.</p>
-    <ol>
-      <li>
-        <h3>Initial Assessment</h3>
-        <p>Comprehensive evaluation of your current compliance posture and gap identification. Duration: 1–2 weeks.</p>
-      </li>
-      <li>
-        <h3>Framework Mapping</h3>
-        <p>Map your existing controls to the required compliance framework requirements. Duration: 1 week.</p>
-      </li>
-      <li>
-        <h3>Gap Remediation</h3>
-        <p>Develop and implement action plans to address identified compliance gaps. Duration: 4–8 weeks.</p>
-      </li>
-      <li>
-        <h3>Policy Development</h3>
-        <p>Create or update policies and procedures to meet compliance requirements. Duration: 2–4 weeks.</p>
-      </li>
-      <li>
-        <h3>Training &amp; Awareness</h3>
-        <p>Train your team on new policies and compliance requirements. Duration: 1–2 weeks.</p>
-      </li>
-      <li>
-        <h3>Pre-Audit Review</h3>
-        <p>Conduct mock audits and final readiness verification before the official audit. Duration: 1–2 weeks.</p>
-      </li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>Comprehensive Readiness Services</h2>
-
-    <article>
-      <h3>Gap Assessment &amp; Analysis</h3>
-      <p>Comprehensive evaluation of your current state against compliance requirements.</p>
-      <ul>
-        <li>Current state assessment</li>
-        <li>Control gap identification</li>
-        <li>Risk prioritization matrix</li>
-        <li>Remediation roadmap</li>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Policy &amp; Procedure Development</h3>
-      <p>Creation and updating of policies and procedures to meet compliance standards.</p>
-      <ul>
-        <li>Policy template library</li>
-        <li>Custom policy development</li>
-        <li>Procedure documentation</li>
-        <li>Version control system</li>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Training &amp; Awareness Programs</h3>
-      <p>Employee training programs to ensure compliance understanding and adherence.</p>
-      <ul>
-        <li>Role-based training</li>
-        <li>Interactive workshops</li>
-        <li>Compliance documentation</li>
-        <li>Ongoing education</li>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Continuous Monitoring</h3>
-      <p>Ongoing monitoring to ensure sustained compliance and readiness for future audits.</p>
-      <ul>
-        <li>Automated compliance checks</li>
-        <li>Regular assessments</li>
-        <li>Compliance dashboards</li>
-        <li>Audit trail management</li>
-      </ul>
-    </article>
-  </section>
-
-  <section>
-    <h2>Our Success Record</h2>
-    <ul>
-      <li>100% First-Time Pass Rate — Clients pass audits on first attempt</li>
-      <li>200+ Successful Audits — Audits completed successfully</li>
-      <li>100% Time Reduction — Maximum efficiency in audit prep</li>
-      <li>24/7 Support Available — Expert support when you need it</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Ready to Achieve Compliance?</h2>
-    <p>Start your compliance journey with our proven methodology and expert guidance. We'll help you pass your audit with confidence.</p>
-    <a href="${BASE_URL}/contact">Start Your Assessment</a>
-    <a href="${BASE_URL}/soc2">Explore Frameworks</a>
-  </section>
-</main>
-<footer>
-  <p>&copy; Com-Sec. Cybersecurity &amp; Compliance Services.</p>
-</footer>`,
-  },
-};
-
 // ─── HTML builders ────────────────────────────────────────────────────────────
 
 function esc(str: string): string {
@@ -582,56 +437,87 @@ function buildOgHtml(og: OgData): string {
 </html>`;
 }
 
-function buildGoogleHtml(page: GooglePageData): string {
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>${esc(page.title)}</title>
-  <meta name="description" content="${esc(page.description)}" />
-  <link rel="canonical" href="${esc(page.canonical)}" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="${esc(page.title)}" />
-  <meta property="og:description" content="${esc(page.description)}" />
-  <meta property="og:image" content="${esc(page.image)}" />
-  <meta property="og:url" content="${esc(page.url)}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Com-Sec" />
-</head>
-<body>
-${page.bodyHtml}
-</body>
-</html>`;
+// ─── Per-route <title>/meta rewriting ─────────────────────────────────────────
+// Pages are prerendered at build time (scripts/prerender.mjs), and unknown or
+// redirecting routes fall back to the app shell. This rewrites <title>, the meta
+// description and the canonical link to match SEO_ROUTES, so the very first HTML
+// byte (what crawlers, curl, and social scrapers see) is correct.
+//
+// Prerendered HTML is serialized by Chrome: void tags have no "/>", and react-helmet
+// puts data-react-helmet before name/rel. So tags are matched whole, in any
+// attribute order, with or without "/>". Only <head> is touched, never the
+// contents of its <script>/<style> blocks, and duplicates are removed.
+
+const TITLE_TAG = /<title\b[^>]*>[\s\S]*?<\/title\s*>/gi;
+const META_TAG = /<meta\b(?:[^>"']|"[^"]*"|'[^']*')*>/gi;
+const LINK_TAG = /<link\b(?:[^>"']|"[^"]*"|'[^']*')*>/gi;
+const RAW_TEXT_BLOCK = /<(script|style)\b[\s\S]*?<\/\1\s*>/gi;
+
+function hasAttr(tag: string, name: string, value: string): boolean {
+  return new RegExp(`\\s${name}\\s*=\\s*(["']?)${value}\\1(?=[\\s/>])`, "i").test(tag);
 }
 
-// ─── Per-route <title>/meta rewriting ─────────────────────────────────────────
-// index.html is a single static file served for every route (SPA fallback), so
-// without this every page would inherit the homepage's hardcoded title/description.
-// This rewrites those tags to match the requested route using SEO_ROUTES, so the
-// very first HTML byte (what crawlers, curl, and social scrapers see) is correct —
-// not just the client-side react-helmet update that only real browsers benefit from.
+// Keeps react-helmet's marker so it replaces the tag in the browser instead of adding a second one.
+function helmetAttr(tag: string): string {
+  return /\sdata-react-helmet\b/i.test(tag) ? ' data-react-helmet="true"' : "";
+}
+
+// Replaces the first tag that matches and drops any others; reports whether one was found.
+function replaceTag(
+  head: string,
+  pattern: RegExp,
+  matches: (tag: string) => boolean,
+  build: (tag: string) => string,
+): { head: string; found: boolean } {
+  let found = false;
+  const result = head.replace(pattern, (tag) => {
+    if (!matches(tag)) return tag;
+    if (found) return "";
+    found = true;
+    return build(tag);
+  });
+  return { head: result, found };
+}
 
 function rewriteMetaTags(html: string, seo: PageSEO): string {
-  html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(seo.title)}</title>`);
+  const headEnd = html.search(/<\/head\s*>/i);
+  if (headEnd === -1) return html;
 
-  html = html.replace(
-    /<meta\s+name="description"[\s\S]*?\/>/,
-    `<meta name="description" content="${esc(seo.description)}" />`,
+  const blocks: string[] = [];
+  let head = html
+    .slice(0, headEnd)
+    .replace(RAW_TEXT_BLOCK, (block) => `\u0000${blocks.push(block) - 1}\u0000`);
+
+  const title = `<title>${esc(seo.title)}</title>`;
+  let result = replaceTag(head, TITLE_TAG, () => true, () => title);
+  head = result.found ? result.head : `${head}  ${title}\n`;
+
+  // Missing description/canonical tags go right after the title.
+  const afterTitle = (tag: string) => {
+    const end = head.search(/<\/title\s*>/i) + "</title>".length;
+    head = `${head.slice(0, end)}\n    ${tag}${head.slice(end)}`;
+  };
+
+  result = replaceTag(
+    head,
+    META_TAG,
+    (tag) => hasAttr(tag, "name", "description"),
+    (tag) => `<meta${helmetAttr(tag)} name="description" content="${esc(seo.description)}" />`,
   );
+  head = result.head;
+  if (!result.found) afterTitle(`<meta name="description" content="${esc(seo.description)}" />`);
 
-  if (/<link\s+rel="canonical"/.test(html)) {
-    html = html.replace(
-      /<link\s+rel="canonical"[\s\S]*?\/>/,
-      `<link rel="canonical" href="${esc(seo.canonical)}" />`,
-    );
-  } else {
-    html = html.replace(
-      "</title>",
-      `</title>\n    <link rel="canonical" href="${esc(seo.canonical)}" />`,
-    );
-  }
+  result = replaceTag(
+    head,
+    LINK_TAG,
+    (tag) => hasAttr(tag, "rel", "canonical"),
+    (tag) => `<link${helmetAttr(tag)} rel="canonical" href="${esc(seo.canonical)}" />`,
+  );
+  head = result.head;
+  if (!result.found) afterTitle(`<link rel="canonical" href="${esc(seo.canonical)}" />`);
 
-  return html;
+  head = head.replace(/\u0000(\d+)\u0000/g, (_, index) => blocks[Number(index)]);
+  return head + html.slice(headEnd);
 }
 
 // ─── Handler ──────────────────────────────────────────────────────────────────
@@ -639,15 +525,6 @@ function rewriteMetaTags(html: string, seo: PageSEO): string {
 export default async function handler(request: Request, context: { next: () => Promise<Response> }) {
   const url = new URL(request.url);
   const ua = request.headers.get("user-agent") ?? "";
-
-  if (GOOGLE_CRAWLER_UA.test(ua)) {
-    const page = GOOGLE_ROUTES[url.pathname];
-    if (page) {
-      return new Response(buildGoogleHtml(page), {
-        headers: { "content-type": "text/html; charset=utf-8" },
-      });
-    }
-  }
 
   if (SOCIAL_CRAWLER_UA.test(ua)) {
     const og = OG_ROUTES[url.pathname];
