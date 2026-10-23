@@ -2,10 +2,24 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "your-open-source-dependencies-are-someone-elses-weekend-project",
+                title: "Your Open-Source Dependencies Are Someone Else's Weekend Project. Act Accordingly.",
+                excerpt: "Every modern software company runs on open source. The risk profile has changed significantly, and most companies haven't adjusted.",
+                date: "October 23 2026",
+                readTime: "4 min read",
+                author: "Farbod Fakhrai",
+                category: "Application Security",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/your-open-source-dependencies-are-someone-elses-weekend-project.png",
+                imageAlt: "Your Open-Source Dependencies Are Someone Else's Weekend Project. Act Accordingly.",
+                link: "/blog/your-open-source-dependencies-are-someone-elses-weekend-project",
+              },            
+              {
                 id: "what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care",
                 title: "What Your Cyber Insurance Carrier Is About to Ask You (And Why You Should Care)",
                 excerpt: "Cyber insurance used to be simple. That era is over. Here's what carriers are actually asking now, and what it means for your premium.",
-                date: "October 22 2026",
+                date: "October 21 2026",
                 readTime: "5 min read",
                 author: "Farbod Fakhrai",
                 category: "Risk Management",
