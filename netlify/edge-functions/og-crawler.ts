@@ -438,33 +438,86 @@ function buildOgHtml(og: OgData): string {
 }
 
 // ─── Per-route <title>/meta rewriting ─────────────────────────────────────────
-// index.html is a single static file served for every route (SPA fallback), so
-// without this every page would inherit the homepage's hardcoded title/description.
-// This rewrites those tags to match the requested route using SEO_ROUTES, so the
-// very first HTML byte (what crawlers, curl, and social scrapers see) is correct —
-// not just the client-side react-helmet update that only real browsers benefit from.
+// Pages are prerendered at build time (scripts/prerender.mjs), and unknown or
+// redirecting routes fall back to the app shell. This rewrites <title>, the meta
+// description and the canonical link to match SEO_ROUTES, so the very first HTML
+// byte (what crawlers, curl, and social scrapers see) is correct.
+//
+// Prerendered HTML is serialized by Chrome: void tags have no "/>", and react-helmet
+// puts data-react-helmet before name/rel. So tags are matched whole, in any
+// attribute order, with or without "/>". Only <head> is touched, never the
+// contents of its <script>/<style> blocks, and duplicates are removed.
+
+const TITLE_TAG = /<title\b[^>]*>[\s\S]*?<\/title\s*>/gi;
+const META_TAG = /<meta\b(?:[^>"']|"[^"]*"|'[^']*')*>/gi;
+const LINK_TAG = /<link\b(?:[^>"']|"[^"]*"|'[^']*')*>/gi;
+const RAW_TEXT_BLOCK = /<(script|style)\b[\s\S]*?<\/\1\s*>/gi;
+
+function hasAttr(tag: string, name: string, value: string): boolean {
+  return new RegExp(`\\s${name}\\s*=\\s*(["']?)${value}\\1(?=[\\s/>])`, "i").test(tag);
+}
+
+// Keeps react-helmet's marker so it replaces the tag in the browser instead of adding a second one.
+function helmetAttr(tag: string): string {
+  return /\sdata-react-helmet\b/i.test(tag) ? ' data-react-helmet="true"' : "";
+}
+
+// Replaces the first tag that matches and drops any others; reports whether one was found.
+function replaceTag(
+  head: string,
+  pattern: RegExp,
+  matches: (tag: string) => boolean,
+  build: (tag: string) => string,
+): { head: string; found: boolean } {
+  let found = false;
+  const result = head.replace(pattern, (tag) => {
+    if (!matches(tag)) return tag;
+    if (found) return "";
+    found = true;
+    return build(tag);
+  });
+  return { head: result, found };
+}
 
 function rewriteMetaTags(html: string, seo: PageSEO): string {
-  html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(seo.title)}</title>`);
+  const headEnd = html.search(/<\/head\s*>/i);
+  if (headEnd === -1) return html;
 
-  html = html.replace(
-    /<meta\s+name="description"[\s\S]*?\/>/,
-    `<meta name="description" content="${esc(seo.description)}" />`,
+  const blocks: string[] = [];
+  let head = html
+    .slice(0, headEnd)
+    .replace(RAW_TEXT_BLOCK, (block) => `\u0000${blocks.push(block) - 1}\u0000`);
+
+  const title = `<title>${esc(seo.title)}</title>`;
+  let result = replaceTag(head, TITLE_TAG, () => true, () => title);
+  head = result.found ? result.head : `${head}  ${title}\n`;
+
+  // Missing description/canonical tags go right after the title.
+  const afterTitle = (tag: string) => {
+    const end = head.search(/<\/title\s*>/i) + "</title>".length;
+    head = `${head.slice(0, end)}\n    ${tag}${head.slice(end)}`;
+  };
+
+  result = replaceTag(
+    head,
+    META_TAG,
+    (tag) => hasAttr(tag, "name", "description"),
+    (tag) => `<meta${helmetAttr(tag)} name="description" content="${esc(seo.description)}" />`,
   );
+  head = result.head;
+  if (!result.found) afterTitle(`<meta name="description" content="${esc(seo.description)}" />`);
 
-  if (/<link\s+rel="canonical"/.test(html)) {
-    html = html.replace(
-      /<link\s+rel="canonical"[\s\S]*?\/>/,
-      `<link rel="canonical" href="${esc(seo.canonical)}" />`,
-    );
-  } else {
-    html = html.replace(
-      "</title>",
-      `</title>\n    <link rel="canonical" href="${esc(seo.canonical)}" />`,
-    );
-  }
+  result = replaceTag(
+    head,
+    LINK_TAG,
+    (tag) => hasAttr(tag, "rel", "canonical"),
+    (tag) => `<link${helmetAttr(tag)} rel="canonical" href="${esc(seo.canonical)}" />`,
+  );
+  head = result.head;
+  if (!result.found) afterTitle(`<link rel="canonical" href="${esc(seo.canonical)}" />`);
 
-  return html;
+  head = head.replace(/\u0000(\d+)\u0000/g, (_, index) => blocks[Number(index)]);
+  return head + html.slice(headEnd);
 }
 
 // ─── Handler ──────────────────────────────────────────────────────────────────
