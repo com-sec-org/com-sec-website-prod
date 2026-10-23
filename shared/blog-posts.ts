@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care",
+                title: "What Your Cyber Insurance Carrier Is About to Ask You (And Why You Should Care)",
+                excerpt: "Cyber insurance used to be simple. That era is over. Here's what carriers are actually asking now, and what it means for your premium.",
+                date: "October 22 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "Risk Management",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care.png",
+                imageAlt: "What Your Cyber Insurance Carrier Is About to Ask You (And Why You Should Care)",
+                link: "/blog/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care",
+              },
+              {
                 id: "healthcare-breaches-hit-281-in-the-first-half-of-2026",
                 title: "Healthcare Breaches Hit 281 in the First Half of 2026. Here's What That Means for Health Tech Startups.",
                 excerpt: "Healthcare data breaches aren't slowing down. They're accelerating. These numbers aren't just industry statistics — they're a preview of the threat landscape you're operating in.",
