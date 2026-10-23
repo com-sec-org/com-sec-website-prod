@@ -401,6 +401,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-19T00:00:00Z",
   },
+  "/blog/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care": {
+    title: "What Your Cyber Insurance Carrier Is About to Ask You (And Why You Should Care)",
+    description:
+      "Cyber insurance used to be simple. That era is over. Here's what carriers are actually asking now, and what it means for your premium.",
+    image: `${BASE_URL}/images/blog-images/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care.png`,
+    url: `${BASE_URL}/blog/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-22T00:00:00Z",
+  },
 };
 
 // ─── Google full-content routes ───────────────────────────────────────────────

@@ -913,4 +913,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026`,
     image: `${BASE_URL}/images/blog-images/healthcare-breaches-hit-281-in-the-first-half-of-2026.png`,
   },
+  "/blog/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care": {
+    title: "What Your Cyber Insurance Carrier Is About to Ask You (And Why You Should Care)",
+    description:
+      "Cyber insurance applications now look a lot more like a security audit than a formality. Here's what carriers are actually asking, why it matters beyond the policy, and what to do before your renewal.",
+    canonical: `${BASE_URL}/blog/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care`,
+    image: `${BASE_URL}/images/blog-images/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care.png`,
+  },
 };
