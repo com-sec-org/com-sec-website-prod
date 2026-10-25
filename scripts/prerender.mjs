@@ -73,7 +73,10 @@ function startServer(shellHtml) {
     const pathname = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
     const file = path.join(DIST, pathname);
     if (path.extname(pathname) && file.startsWith(DIST) && fs.existsSync(file) && fs.statSync(file).isFile()) {
-      res.writeHead(200, { "content-type": MIME[path.extname(file).toLowerCase()] ?? "application/octet-stream" });
+      res.writeHead(200, {
+        "content-type": MIME[path.extname(file).toLowerCase()] ?? "application/octet-stream",
+        "content-length": fs.statSync(file).size,
+      });
       fs.createReadStream(file).pipe(res);
       return;
     }
