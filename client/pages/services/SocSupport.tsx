@@ -86,17 +86,6 @@ export default function SocSupport() {
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": "https://com-sec.io/#organization",
-      name: "Com-Sec",
-      url: "https://com-sec.io",
-      logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-    })}
-  </script>
-
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
       "@type": "Service",
       "@id": "https://com-sec.io/soc-support#service",
       name: "24/7 SOC Support Services",
@@ -106,7 +95,9 @@ export default function SocSupport() {
       category: "Managed Security Services",
       url: "https://com-sec.io/soc-support",
       provider: {
+        "@type": "Organization",
         "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
       },
       areaServed: {
         "@type": "AdministrativeArea",
@@ -162,9 +153,11 @@ export default function SocSupport() {
               <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
                 SOC Support
               </span>
+              <span className="sr-only">{" "}</span>
               <span className="mx-2 animate-typewriter-word animation-delay-400 text-white">
                 &
               </span>
+              <span className="sr-only">{" "}</span>
               <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent animate-gradient-shift">
                 Monitoring
               </span>

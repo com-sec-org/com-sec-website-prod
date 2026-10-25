@@ -390,6 +390,7 @@ export default function Testimonials() {
 
             <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-fade-in">
               Client
+              {" "}
               <span className="block text-yellow-400 animate-sparkle">Testimonials</span>
             </h1>
             

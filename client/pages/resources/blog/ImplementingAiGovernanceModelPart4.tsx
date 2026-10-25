@@ -107,7 +107,6 @@ export default function ImplementingAiGovernanceModelPart4() {
         <meta property="article:published_time" content="2026-07-29T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"

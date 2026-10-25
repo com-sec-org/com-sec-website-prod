@@ -253,17 +253,6 @@ export default function Nist() {
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://com-sec.io/#organization",
-        name: "Com-Sec",
-        url: "https://com-sec.io",
-        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-      })}
-    </script>
-
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://com-sec.io/nist#service",
         name: "NIST Cybersecurity Framework (CSF) Implementation Services",
@@ -273,7 +262,9 @@ export default function Nist() {
           "Com-Sec helps organizations implement the NIST Cybersecurity Framework (CSF) through cybersecurity assessments, gap analysis, risk management, framework implementation, security control development, continuous monitoring, and cybersecurity maturity improvement based on the NIST Identify, Protect, Detect, Respond, and Recover functions.",
         url: "https://com-sec.io/nist",
         provider: {
+          "@type": "Organization",
           "@id": "https://com-sec.io/#organization",
+          name: "Com-Sec",
         },
         areaServed: {
           "@type": "AdministrativeArea",
@@ -322,6 +313,7 @@ export default function Nist() {
               </div>
               <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
                 NIST Cybersecurity
+                {" "}
                 <span className="block text-blue-200">Framework</span>
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">

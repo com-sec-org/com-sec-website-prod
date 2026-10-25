@@ -51,17 +51,6 @@ export default function Soc2() {
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://com-sec.io/#organization",
-        name: "Com-Sec",
-        url: "https://com-sec.io",
-        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-      })}
-    </script>
-
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://com-sec.io/soc2#service",
         name: "SOC 2 Compliance Services",
@@ -71,7 +60,9 @@ export default function Soc2() {
         category: "Cybersecurity Compliance Services",
         url: "https://com-sec.io/soc2",
         provider: {
+          "@type": "Organization",
           "@id": "https://com-sec.io/#organization",
+          name: "Com-Sec",
         },
         areaServed: {
           "@type": "AdministrativeArea",
@@ -121,7 +112,7 @@ export default function Soc2() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              SOC 2<span className="block text-accent">Compliance</span>
+              SOC 2{" "}<span className="block text-accent">Compliance</span>
             </h1>
 
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">

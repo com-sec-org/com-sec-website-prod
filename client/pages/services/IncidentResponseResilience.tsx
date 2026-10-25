@@ -63,6 +63,7 @@ export default function IncidentResponseResilience() {
                 <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
                   Incident Response &
                 </span>
+                {" "}
                 <span className="block bg-gradient-to-r from-white to-yellow-300 bg-clip-text text-transparent">
                   Business Resilience
                 </span>

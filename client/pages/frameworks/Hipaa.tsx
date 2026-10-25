@@ -54,17 +54,6 @@ export default function Hipaa() {
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://com-sec.io/#organization",
-        name: "Com-Sec",
-        url: "https://com-sec.io",
-        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-      })}
-    </script>
-
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://com-sec.io/hipaa#service",
         name: "HIPAA Compliance Services",
@@ -73,7 +62,9 @@ export default function Hipaa() {
           "Com-Sec provides HIPAA compliance consulting, HIPAA risk assessments, gap analysis, policy development, security safeguards implementation, workforce training, audit readiness, and ongoing compliance support for healthcare organizations and business associates.",
         url: "https://com-sec.io/hipaa",
         provider: {
+          "@type": "Organization",
           "@id": "https://com-sec.io/#organization",
+          name: "Com-Sec",
         },
         areaServed: {
           "@type": "Place",
@@ -129,6 +120,7 @@ export default function Hipaa() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               HIPAA
+              {" "}
               <span className="block text-green-400">Compliance</span>
             </h1>
 

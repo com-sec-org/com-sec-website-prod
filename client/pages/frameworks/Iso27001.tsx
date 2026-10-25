@@ -60,17 +60,6 @@ export default function Iso27001() {
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://com-sec.io/#organization",
-        name: "Com-Sec",
-        url: "https://com-sec.io",
-        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-      })}
-    </script>
-
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://com-sec.io/iso27001#service",
         name: "ISO 27001 Compliance & Certification Services",
@@ -80,7 +69,9 @@ export default function Iso27001() {
         category: "ISO 27001 Compliance Services",
         url: "https://com-sec.io/iso27001",
         provider: {
+          "@type": "Organization",
           "@id": "https://com-sec.io/#organization",
+          name: "Com-Sec",
         },
         areaServed: {
           "@type": "AdministrativeArea",
@@ -142,6 +133,7 @@ export default function Iso27001() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               ISO 27001
+              {" "}
               <span className="block text-blue-400">Information Security</span>
             </h1>
 

@@ -107,7 +107,6 @@ export default function RollingOutAiRightWayPart1() {
         <meta property="article:published_time" content="2026-06-22T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
@@ -151,6 +150,7 @@ export default function RollingOutAiRightWayPart1() {
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
               Rolling Out AI the Right Way:
+              {" "}
               <br />
               A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
             </h1>

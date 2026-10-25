@@ -31,12 +31,12 @@ export default function ComplianceAuditReadiness() {
     <>
      <Helmet>
         {/* 🧠 Meta Title */}
-        <title>Cybersecurity & Compliance Audit Services | Com-Sec</title>
+        <title>Audit Preparation Advisory & Mock Audits | Com-Sec</title>
 
         {/* 🧾 Meta Description */}
         <meta
           name="description"
-          content="Get top cybersecurity compliance, cloud security, GDPR, HITRUST, and IT audit services. Ensure readiness with continuous monitoring. Secure your business with Com-Sec today!"
+          content="Audit preparation advisory for SOC 2, HIPAA, ISO 27001, PCI DSS, HITRUST and CMMC: gap assessment, remediation, policies, training and a mock audit."
         />
 
 <link
@@ -46,7 +46,7 @@ export default function ComplianceAuditReadiness() {
 
         {/* (Optional) Extra SEO meta tags */}
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Cybersecurity & Compliance Audit Services | Com-Sec" />
+        <meta property="og:title" content="Audit Preparation Advisory & Mock Audits | Com-Sec" />
         <meta
           property="og:description"
           content="Com-Sec provides top-tier compliance readiness and cybersecurity audit services across SOC 2, HIPAA, ISO 27001, GDPR, and more."
@@ -58,17 +58,6 @@ export default function ComplianceAuditReadiness() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
-            "@id": "https://com-sec.io/#organization",
-            name: "Com-Sec",
-            url: "https://com-sec.io",
-            logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
             "@type": "Service",
             "@id": "https://com-sec.io/compliance-audit-service#service",
             serviceType: "Compliance Audit Service",
@@ -76,7 +65,9 @@ export default function ComplianceAuditReadiness() {
             description:
               "Com-Sec provides cybersecurity and compliance audit services to help organizations assess security controls, identify compliance gaps, prepare for audits, and achieve compliance with SOC 2, ISO 27001, HIPAA, PCI DSS, GDPR, NIST, HITRUST, and CMMC.",
             provider: {
+              "@type": "Organization",
               "@id": "https://com-sec.io/#organization",
+              name: "Com-Sec",
             },
             areaServed: {
               "@type": "Place",
@@ -128,11 +119,13 @@ export default function ComplianceAuditReadiness() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-                Compliance
+                Audit Preparation
               </span>
+              <span className="sr-only">{" "}</span>
               <span className="mx-2 animate-typewriter-word animation-delay-400 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
-                & Audit
+                & Compliance
               </span>
+              <span className="sr-only">{" "}</span>
               <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
                 Readiness
               </span>

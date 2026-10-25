@@ -25,6 +25,7 @@ export default function About() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               About
+              {" "}
               <span className="block text-accent">Com-Sec</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
@@ -43,6 +44,13 @@ export default function About() {
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                 Our Story
               </h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                Com-Sec is a cybersecurity and compliance services company that
+                helps organizations, from startups to enterprises, with virtual
+                CISO (vCISO) leadership, compliance and audit readiness,
+                penetration testing, and managed security operations. Com-Sec is
+                a company name; it is not COMSEC (communications security).
+              </p>
               <p className="text-lg text-muted-foreground mb-6">
                 Founded in 2009, Com-Sec emerged from a simple yet critical
                 observation: businesses needed more than just generic security
@@ -148,100 +156,6 @@ export default function About() {
                   We maintain the highest standards in our services, staying
                   current with the latest security practices and regulations.
                 </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Our Expert Team
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Certified security professionals dedicated to your protection
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-24 h-24 bg-gradient-to-br from-primary to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">JS</span>
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  John Smith
-                </h3>
-                <p className="text-accent font-medium mb-3">
-                  Chief Security Officer
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  CISSP, CISM | 12+ years in cybersecurity consulting and
-                  enterprise security architecture.
-                </p>
-                <div className="flex justify-center space-x-2 text-xs">
-                  <span className="bg-accent/10 text-accent px-2 py-1 rounded">
-                    CISSP
-                  </span>
-                  <span className="bg-accent/10 text-accent px-2 py-1 rounded">
-                    CISM
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-24 h-24 bg-gradient-to-br from-primary to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">ED</span>
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  Emily Davis
-                </h3>
-                <p className="text-accent font-medium mb-3">
-                  Compliance Director
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  CPA, CIA | 10+ years specializing in SOC 2, HIPAA, and
-                  international compliance frameworks.
-                </p>
-                <div className="flex justify-center space-x-2 text-xs">
-                  <span className="bg-accent/10 text-accent px-2 py-1 rounded">
-                    CPA
-                  </span>
-                  <span className="bg-accent/10 text-accent px-2 py-1 rounded">
-                    CIA
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-24 h-24 bg-gradient-to-br from-primary to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">MC</span>
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  Michael Chen
-                </h3>
-                <p className="text-accent font-medium mb-3">
-                  Senior Penetration Tester
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  CEH, OSCP | 8+ years in ethical hacking and vulnerability
-                  assessments for Fortune 500 companies.
-                </p>
-                <div className="flex justify-center space-x-2 text-xs">
-                  <span className="bg-accent/10 text-accent px-2 py-1 rounded">
-                    CEH
-                  </span>
-                  <span className="bg-accent/10 text-accent px-2 py-1 rounded">
-                    OSCP
-                  </span>
-                </div>
               </CardContent>
             </Card>
           </div>

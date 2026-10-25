@@ -32,10 +32,10 @@ export default function PenetrationTesting() {
     <>
     {/* 🧠 SEO Metadata */}
     <Helmet>
-      <title>Professional Penetration Testing Services | Com-Sec</title>
+      <title>Penetration Testing Services | Web, Cloud & API | Com-Sec</title>
       <meta
         name="description"
-        content="Secure your systems with expert pen testing services. Identify vulnerabilities and strengthen cybersecurity defenses. Get reliable testing with Com-Sec today!"
+        content="Penetration testing services for web apps, APIs, cloud, networks and mobile apps, with a CVSS-rated report, retesting and an attestation letter. From $2,500."
       />
 
 <link
@@ -45,7 +45,7 @@ export default function PenetrationTesting() {
       <meta name="robots" content="index, follow" />
       <meta
         property="og:title"
-        content="Professional Penetration Testing Services | Com-Sec"
+        content="Penetration Testing Services | Web, Cloud & API | Com-Sec"
       />
       <meta
         property="og:description"
@@ -61,17 +61,6 @@ export default function PenetrationTesting() {
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
-          "@id": "https://com-sec.io/#organization",
-          name: "Com-Sec",
-          url: "https://com-sec.io",
-          logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-        })}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
           "@type": "Service",
           "@id": "https://com-sec.io/penetration-testing-services#service",
           name: "Professional Penetration Testing Services",
@@ -80,7 +69,9 @@ export default function PenetrationTesting() {
             "Com-Sec provides professional penetration testing services to identify security vulnerabilities across network infrastructure, web applications, wireless environments, client-side applications, physical security, and social engineering attack vectors. Our ethical hackers deliver actionable remediation guidance to strengthen your organization's cybersecurity posture.",
           url: "https://com-sec.io/penetration-testing-services",
           provider: {
+            "@type": "Organization",
             "@id": "https://com-sec.io/#organization",
+            name: "Com-Sec",
           },
           areaServed: {
             "@type": "AdministrativeArea",
@@ -136,8 +127,9 @@ export default function PenetrationTesting() {
 
               <h1 className="text-4xl md:text-6xl font-bold leading-tight animate-slide-up">
                 Penetration
+                {" "}
                 <span className="block text-red-400 animate-glow-red">
-                  Testing
+                  Testing Services
                 </span>
               </h1>
 

@@ -80,7 +80,7 @@ export const SEO_CONFIG = {
     title:
       "Trusted Cybersecurity & SOC 2 Compliance Services | Com-Sec",
     description:
-      "Comsec delivers expert cybersecurity services including SOC 2 compliance, penetration testing, cloud security, and compliance audits to protect and scale your business, including compliance frameworks like ISO 27001, HIPAA, and GDPR.",
+      "Com-Sec is a cybersecurity and compliance services company: vCISO, SOC 2 and audit readiness, penetration testing and managed security operations.",
     canonical: "/",
     keywords: [
       "cybersecurity services",
@@ -128,9 +128,9 @@ export const SEO_CONFIG = {
 
   "/penetration-testing-services": buildPageSEO({
     title:
-      "Penetration Testing Services | Internal & External Pen Testing | Com-Sec",
+      "Penetration Testing Services | Web, Cloud & API | Com-Sec",
     description:
-      "Advanced penetration testing services for web apps, APIs, cloud, internal networks, and mobile applications.",
+      "Penetration testing services for web apps, APIs, cloud, networks and mobile apps, with a CVSS-rated report, retesting and an attestation letter. From $2,500.",
     canonical: "/penetration-testing-services",
     keywords: ["penetration testing", "pentest services", "app security"],
     image: `${BASE_URL}/images/services/penetration-testing.webp`,
@@ -351,11 +351,32 @@ export const SEO_CONFIG = {
   }),
 
   "/compliance-audit-service": buildPageSEO({
-    title: "Cybersecurity & Compliance Audit Services | Com-Sec",
+    title: "Audit Preparation Advisory & Mock Audits | Com-Sec",
     description:
-      "Get top cybersecurity compliance, cloud security, GDPR, HITRUST, and IT audit services. Ensure readiness with continuous monitoring. Secure your business with Com-Sec today!",
+      "Audit preparation advisory for SOC 2, HIPAA, ISO 27001, PCI DSS, HITRUST and CMMC: gap assessment, remediation, policies, training and a mock audit.",
     canonical: "/compliance-audit-service",
     image: `${BASE_URL}/images/services/audit-readiness.webp`,
+  }),
+
+  "/fractional-security-leadership": buildPageSEO({
+    title: "Virtual CISO (vCISO) Services | Fractional CISO | Com-Sec",
+    description:
+      "Virtual CISO (vCISO) services from Com-Sec: security strategy, board reporting, risk management and compliance oversight, from 8 hours a month.",
+    canonical: "/fractional-security-leadership",
+  }),
+
+  "/compliance-privacy-grc": buildPageSEO({
+    title: "Compliance Readiness Consulting & GRC Services | Com-Sec",
+    description:
+      "Compliance readiness consulting for SOC 2, ISO 27001, HIPAA, GDPR and HITRUST: readiness and gap assessments, policies, evidence and audit coordination.",
+    canonical: "/compliance-privacy-grc",
+  }),
+
+  "/managed-security-services": buildPageSEO({
+    title: "Managed Security Operations & 24/7 SOC (MSSP) | Com-Sec",
+    description:
+      "Managed security operations from Com-Sec: 24/7 SOC monitoring, threat detection, incident response, endpoint and vulnerability management. From $3,500/month.",
+    canonical: "/managed-security-services",
   }),
 
   "/about": buildPageSEO({

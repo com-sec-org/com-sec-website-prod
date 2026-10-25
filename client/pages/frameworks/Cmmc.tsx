@@ -236,17 +236,6 @@ export default function Cmmc() {
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://com-sec.io/#organization",
-        name: "Com-Sec",
-        url: "https://com-sec.io",
-        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-      })}
-    </script>
-
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://com-sec.io/cmmc#service",
         name: "CMMC Compliance Services",
@@ -256,7 +245,9 @@ export default function Cmmc() {
           "Com-Sec helps defense contractors achieve Cybersecurity Maturity Model Certification (CMMC) compliance through readiness assessments, gap analysis, NIST SP 800-171 implementation, System Security Plan (SSP) development, security control implementation, assessment preparation, and certification support.",
         url: "https://com-sec.io/cmmc",
         provider: {
+          "@type": "Organization",
           "@id": "https://com-sec.io/#organization",
+          name: "Com-Sec",
         },
         areaServed: {
           "@type": "AdministrativeArea",
@@ -306,6 +297,7 @@ export default function Cmmc() {
               </div>
               <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
                 CMMC
+                {" "}
                 <span className="block text-blue-200">Compliance</span>
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">

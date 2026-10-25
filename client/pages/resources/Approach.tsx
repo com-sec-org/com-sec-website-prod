@@ -103,6 +103,7 @@ export default function Approach() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Our Strategic
+              {" "}
               <span className="block text-emerald-400">Approach</span>
             </h1>
 

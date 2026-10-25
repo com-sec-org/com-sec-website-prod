@@ -150,17 +150,6 @@ export default function PciDss() {
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://com-sec.io/#organization",
-        name: "Com-Sec",
-        url: "https://com-sec.io",
-        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-      })}
-    </script>
-
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://com-sec.io/pci-dss#service",
         name: "PCI DSS Compliance Services",
@@ -170,7 +159,9 @@ export default function PciDss() {
           "Com-Sec helps organizations achieve PCI DSS compliance through PCI DSS gap analysis, security assessments, remediation planning, policy implementation, vulnerability management, penetration testing coordination, Self-Assessment Questionnaire (SAQ) support, QSA audit readiness, and ongoing compliance consulting to protect payment card data.",
         url: "https://com-sec.io/pci-dss",
         provider: {
+          "@type": "Organization",
           "@id": "https://com-sec.io/#organization",
+          name: "Com-Sec",
         },
         areaServed: {
           "@type": "AdministrativeArea",
@@ -219,6 +210,7 @@ export default function PciDss() {
               </div>
               <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
                 PCI DSS
+                {" "}
                 <span className="block text-blue-200">Compliance</span>
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">

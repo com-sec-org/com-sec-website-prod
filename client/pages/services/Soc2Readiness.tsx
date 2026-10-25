@@ -53,6 +53,7 @@ export default function Soc2Readiness() {
 
               <h1 className="text-4xl md:text-6xl font-bold leading-tight animate-slide-up">
                 SOC 2
+                {" "}
                 <span className="block text-accent animate-glow">
                   Readiness
                 </span>
