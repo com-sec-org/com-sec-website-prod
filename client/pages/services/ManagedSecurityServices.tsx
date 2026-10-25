@@ -63,6 +63,7 @@ export default function ManagedSecurityServices() {
                 <span className="bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
                   Managed Security
                 </span>
+                {" "}
                 <span className="block bg-gradient-to-r from-white to-yellow-300 bg-clip-text text-transparent">
                   Operations & 24/7 SOC
                 </span>

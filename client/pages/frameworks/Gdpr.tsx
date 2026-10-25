@@ -311,6 +311,7 @@ export default function Gdpr() {
               </div>
               <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
                 GDPR
+                {" "}
                 <span className="block text-blue-200">Compliance</span>
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">

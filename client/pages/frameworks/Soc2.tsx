@@ -112,7 +112,7 @@ export default function Soc2() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              SOC 2<span className="block text-accent">Compliance</span>
+              SOC 2{" "}<span className="block text-accent">Compliance</span>
             </h1>
 
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">

@@ -56,6 +56,7 @@ export default function MeetTeamJayush() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Meet the Team:
+                {" "}
                 <span className="block text-pink-200 animate-pulse">
                   Jayush Chawla
                 </span>

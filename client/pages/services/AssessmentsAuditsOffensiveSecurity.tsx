@@ -63,6 +63,7 @@ export default function AssessmentsAuditsOffensiveSecurity() {
                 <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
                   Security Assessments,
                 </span>
+                {" "}
                 <span className="block bg-gradient-to-r from-white to-pink-400 bg-clip-text text-transparent">
                   Audits & Offensive Security
                 </span>

@@ -313,6 +313,7 @@ export default function Nist() {
               </div>
               <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
                 NIST Cybersecurity
+                {" "}
                 <span className="block text-blue-200">Framework</span>
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">

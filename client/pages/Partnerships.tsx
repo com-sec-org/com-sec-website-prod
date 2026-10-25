@@ -205,6 +205,7 @@ export default function Partnerships() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Our Trusted
+              {" "}
               <span className="block text-accent">Partners</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">

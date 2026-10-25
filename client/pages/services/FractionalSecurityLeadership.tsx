@@ -62,6 +62,7 @@ export default function FractionalSecurityLeadership() {
                 <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                   Virtual CISO (vCISO) &
                 </span>
+                {" "}
                 <span className="block bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
                   Fractional Security Leadership
                 </span>

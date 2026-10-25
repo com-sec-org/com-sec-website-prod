@@ -63,6 +63,7 @@ export default function CompliancePrivacyGRC() {
                 <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
                   Compliance Readiness Consulting,
                 </span>
+                {" "}
                 <span className="block bg-gradient-to-r from-white to-green-400 bg-clip-text text-transparent">
                   Privacy & GRC
                 </span>

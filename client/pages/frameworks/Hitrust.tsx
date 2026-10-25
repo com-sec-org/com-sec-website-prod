@@ -109,6 +109,7 @@ export default function Hitrust() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               HITRUST
+              {" "}
               <span className="block text-red-400">CSF</span>
             </h1>
 

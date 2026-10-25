@@ -167,6 +167,7 @@ export default function PhishingTest() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Run a Free
+              {" "}
               <span className="block text-red-300">Phishing Test</span>
             </h1>
 

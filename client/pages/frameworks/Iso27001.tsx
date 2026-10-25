@@ -133,6 +133,7 @@ export default function Iso27001() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               ISO 27001
+              {" "}
               <span className="block text-blue-400">Information Security</span>
             </h1>
 

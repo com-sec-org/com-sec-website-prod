@@ -240,8 +240,10 @@ export default function Careers() {
               <span className="block bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
                 Shape the Future of
               </span>
+              {" "}
               <span className="block text-white mt-2">
                 Cybersecurity
+                <span className="sr-only">{" "}</span>
                 <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text animate-pulse ml-4">
                   Together
                 </span>

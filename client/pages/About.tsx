@@ -25,6 +25,7 @@ export default function About() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               About
+              {" "}
               <span className="block text-accent">Com-Sec</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">

@@ -56,6 +56,7 @@ export default function MeetTeamRojin() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Meet the Team:
+                {" "}
                 <span className="block text-emerald-200 animate-pulse">
                   Rojin Rezaei
                 </span>

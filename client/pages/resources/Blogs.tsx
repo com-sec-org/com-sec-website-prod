@@ -163,6 +163,7 @@ export default function Blogs() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Cybersecurity
+              {" "}
               <span className="block text-blue-400">Insights & Updates</span>
             </h1>
 

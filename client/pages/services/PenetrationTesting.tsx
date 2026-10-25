@@ -127,6 +127,7 @@ export default function PenetrationTesting() {
 
               <h1 className="text-4xl md:text-6xl font-bold leading-tight animate-slide-up">
                 Penetration
+                {" "}
                 <span className="block text-red-400 animate-glow-red">
                   Testing Services
                 </span>

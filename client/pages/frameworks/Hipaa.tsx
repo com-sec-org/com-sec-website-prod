@@ -120,6 +120,7 @@ export default function Hipaa() {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               HIPAA
+              {" "}
               <span className="block text-green-400">Compliance</span>
             </h1>
 

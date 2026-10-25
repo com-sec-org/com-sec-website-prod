@@ -153,9 +153,11 @@ export default function SocSupport() {
               <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
                 SOC Support
               </span>
+              <span className="sr-only">{" "}</span>
               <span className="mx-2 animate-typewriter-word animation-delay-400 text-white">
                 &
               </span>
+              <span className="sr-only">{" "}</span>
               <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent animate-gradient-shift">
                 Monitoring
               </span>

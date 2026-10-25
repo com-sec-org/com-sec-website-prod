@@ -672,10 +672,12 @@ export default function Index() {
     Simplifying
   </span>
 
+  <span className="sr-only">{" "}</span>
   <span className="glass-loop ml-[0.15em] text-white">
     Security
   </span>
 
+  <span className="sr-only">{" "}</span>
   <span className="glass-loop ml-[0.15em]">
     <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent">
       & Compliance

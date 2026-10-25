@@ -121,9 +121,11 @@ export default function ComplianceAuditReadiness() {
               <span className="animate-typewriter-word animation-delay-200 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 Audit Preparation
               </span>
+              <span className="sr-only">{" "}</span>
               <span className="mx-2 animate-typewriter-word animation-delay-400 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
                 & Compliance
               </span>
+              <span className="sr-only">{" "}</span>
               <span className="block animate-confidence-reveal animation-delay-600 bg-gradient-to-r from-orange-400 via-amber-300 to-white bg-clip-text text-transparent animate-gradient-shift">
                 Readiness
               </span>

@@ -153,6 +153,7 @@ export default function CoworkProblemPart2() {
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
               Rolling Out AI the Right Way:
+              {" "}
               <br />
               A 5-Part Playbook for Companies That Can't Afford to Get It Wrong
             </h1>

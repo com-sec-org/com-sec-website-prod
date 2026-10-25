@@ -82,8 +82,10 @@ export default function Company() {
               <span className="block bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent animate-shimmer">
                 Where Security
               </span>
+              {" "}
               <span className="block text-white mt-2">
                 Meets
+                <span className="sr-only">{" "}</span>
                 <span className="text-transparent bg-gradient-to-r from-pink-400 to-yellow-400 bg-clip-text animate-pulse ml-4">
                   Innovation
                 </span>
