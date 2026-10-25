@@ -44,6 +44,13 @@ export default function About() {
                 Our Story
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
+                Com-Sec is a cybersecurity and compliance services company that
+                helps organizations, from startups to enterprises, with virtual
+                CISO (vCISO) leadership, compliance and audit readiness,
+                penetration testing, and managed security operations. Com-Sec is
+                a company name; it is not COMSEC (communications security).
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
                 Founded in 2009, Com-Sec emerged from a simple yet critical
                 observation: businesses needed more than just generic security
                 solutions. They needed partners who understood their unique

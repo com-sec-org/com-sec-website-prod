@@ -696,6 +696,13 @@ export default function Index() {
               </span>
             </p>
 
+            <p className="text-base sm:text-lg mb-8 text-white/80 max-w-3xl mx-auto animate-fade-in-delayed animation-delay-2500 opacity-0">
+              Com-Sec is a cybersecurity and compliance services company that
+              helps organizations, from startups to enterprises, with virtual
+              CISO (vCISO) leadership, compliance and audit readiness,
+              penetration testing, and managed security operations.
+            </p>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delayed animation-delay-2500 opacity-0">
               <Button
                 size="lg"
