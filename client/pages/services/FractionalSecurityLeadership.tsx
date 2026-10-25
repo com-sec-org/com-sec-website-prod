@@ -27,10 +27,10 @@ export default function FractionalSecurityLeadership() {
   return (
     <>
       <Helmet>
-        <title>Fractional Security Leadership | vCISO & Security Strategy | Com-Sec</title>
+        <title>Virtual CISO (vCISO) Services | Fractional CISO | Com-Sec</title>
         <meta
           name="description"
-          content="Fractional CISO and security leadership services including security strategy, governance, and risk management. Enterprise-grade security leadership at a fraction of the cost."
+          content="Virtual CISO (vCISO) services from Com-Sec: security strategy, board reporting, risk management and compliance oversight, from 8 hours a month."
         />
         <link rel="canonical" href="https://com-sec.io/fractional-security-leadership" />
         <meta name="robots" content="index, follow" />
@@ -60,10 +60,10 @@ export default function FractionalSecurityLeadership() {
 
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-                  Fractional Security
+                  Virtual CISO (vCISO) &
                 </span>
                 <span className="block bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
-                  Leadership
+                  Fractional Security Leadership
                 </span>
               </h1>
 

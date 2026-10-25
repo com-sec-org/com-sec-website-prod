@@ -32,10 +32,10 @@ export default function PenetrationTesting() {
     <>
     {/* 🧠 SEO Metadata */}
     <Helmet>
-      <title>Professional Penetration Testing Services | Com-Sec</title>
+      <title>Penetration Testing Services | Web, Cloud & API | Com-Sec</title>
       <meta
         name="description"
-        content="Secure your systems with expert pen testing services. Identify vulnerabilities and strengthen cybersecurity defenses. Get reliable testing with Com-Sec today!"
+        content="Penetration testing services for web apps, APIs, cloud, networks and mobile apps, with a CVSS-rated report, retesting and an attestation letter. From $2,500."
       />
 
 <link
@@ -45,7 +45,7 @@ export default function PenetrationTesting() {
       <meta name="robots" content="index, follow" />
       <meta
         property="og:title"
-        content="Professional Penetration Testing Services | Com-Sec"
+        content="Penetration Testing Services | Web, Cloud & API | Com-Sec"
       />
       <meta
         property="og:description"
@@ -128,7 +128,7 @@ export default function PenetrationTesting() {
               <h1 className="text-4xl md:text-6xl font-bold leading-tight animate-slide-up">
                 Penetration
                 <span className="block text-red-400 animate-glow-red">
-                  Testing
+                  Testing Services
                 </span>
               </h1>
 

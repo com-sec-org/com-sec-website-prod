@@ -87,7 +87,7 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
   "/": {
     title: "Trusted Cybersecurity & SOC 2 Compliance Services | Com-Sec",
     description:
-      "Com-Sec delivers expert cybersecurity services including SOC 2 compliance, penetration testing, cloud security, and compliance audits to protect and scale your business, including compliance frameworks like ISO 27001, HIPAA, and GDPR.",
+      "Com-Sec is a cybersecurity and compliance services company: vCISO, SOC 2 and audit readiness, penetration testing and managed security operations.",
     canonical: `${BASE_URL}/`,
     image: `${BASE_URL}/images/pages/home.webp`,
     keywords: "cybersecurity services, soc 2 readiness, penetration testing, iso 27001 compliance, cloud security",
@@ -116,9 +116,9 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     image: `${BASE_URL}/images/soc2-readiness.webp`,
   },
   "/penetration-testing-services": {
-    title: "Penetration Testing Services | Internal & External Pen Testing | Com-Sec",
+    title: "Penetration Testing Services | Web, Cloud & API | Com-Sec",
     description:
-      "Advanced penetration testing services for web apps, APIs, cloud, internal networks, and mobile applications.",
+      "Penetration testing services for web apps, APIs, cloud, networks and mobile apps, with a CVSS-rated report, retesting and an attestation letter. From $2,500.",
     canonical: `${BASE_URL}/penetration-testing-services`,
     image: `${BASE_URL}/images/services/penetration-testing.webp`,
   },
@@ -130,9 +130,9 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     image: `${BASE_URL}/images/cloud-security.webp`,
   },
   "/compliance-audit-service": {
-    title: "Cybersecurity & Compliance Audit Services | Com-Sec",
+    title: "Audit Preparation Advisory & Mock Audits | Com-Sec",
     description:
-      "Get top cybersecurity compliance, cloud security, GDPR, HITRUST, and IT audit services. Ensure readiness with continuous monitoring. Secure your business with Com-Sec today!",
+      "Audit preparation advisory for SOC 2, HIPAA, ISO 27001, PCI DSS, HITRUST and CMMC: gap assessment, remediation, policies, training and a mock audit.",
     canonical: `${BASE_URL}/compliance-audit-service`,
     image: `${BASE_URL}/images/services/audit-readiness.webp`,
   },
@@ -165,21 +165,21 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     image: `${BASE_URL}/images/risk-management.webp`,
   },
   "/fractional-security-leadership": {
-    title: "Fractional Security Leadership | vCISO & Security Strategy | Com-Sec",
+    title: "Virtual CISO (vCISO) Services | Fractional CISO | Com-Sec",
     description:
-      "Fractional CISO and security leadership services including security strategy, governance, and risk management. Enterprise-grade security leadership at a fraction of the cost.",
+      "Virtual CISO (vCISO) services from Com-Sec: security strategy, board reporting, risk management and compliance oversight, from 8 hours a month.",
     canonical: `${BASE_URL}/fractional-security-leadership`,
   },
   "/managed-security-services": {
-    title: "Managed Security Services (MSSP) | 24/7 SOC Monitoring | Com-Sec",
+    title: "Managed Security Operations & 24/7 SOC (MSSP) | Com-Sec",
     description:
-      "24/7 Managed Security Services with SOC monitoring, threat detection, incident response, and endpoint management. Enterprise security operations outsourced.",
+      "Managed security operations from Com-Sec: 24/7 SOC monitoring, threat detection, incident response, endpoint and vulnerability management. From $3,500/month.",
     canonical: `${BASE_URL}/managed-security-services`,
   },
   "/compliance-privacy-grc": {
-    title: "Compliance, Privacy & GRC Services | Com-Sec",
+    title: "Compliance Readiness Consulting & GRC Services | Com-Sec",
     description:
-      "Comprehensive compliance, privacy, and GRC services covering SOC 2, ISO 27001, HIPAA, GDPR, HITRUST, and AI governance. Expert guidance for regulatory frameworks.",
+      "Compliance readiness consulting for SOC 2, ISO 27001, HIPAA, GDPR and HITRUST: readiness and gap assessments, policies, evidence and audit coordination.",
     canonical: `${BASE_URL}/compliance-privacy-grc`,
   },
   "/assessments-audits-offensive-security": {

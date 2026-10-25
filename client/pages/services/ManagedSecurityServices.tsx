@@ -29,10 +29,10 @@ export default function ManagedSecurityServices() {
   return (
     <>
       <Helmet>
-        <title>Managed Security Services (MSSP) | 24/7 SOC Monitoring | Com-Sec</title>
+        <title>Managed Security Operations & 24/7 SOC (MSSP) | Com-Sec</title>
         <meta
           name="description"
-          content="24/7 Managed Security Services with SOC monitoring, threat detection, incident response, and endpoint management. Enterprise security operations outsourced."
+          content="Managed security operations from Com-Sec: 24/7 SOC monitoring, threat detection, incident response, endpoint and vulnerability management. From $3,500/month."
         />
         <link rel="canonical" href="https://com-sec.io/managed-security-services" />
         <meta name="robots" content="index, follow" />
@@ -64,7 +64,7 @@ export default function ManagedSecurityServices() {
                   Managed Security
                 </span>
                 <span className="block bg-gradient-to-r from-white to-yellow-300 bg-clip-text text-transparent">
-                  Services & SOC
+                  Operations & 24/7 SOC
                 </span>
               </h1>
 

@@ -29,14 +29,14 @@ export default function CompliancePrivacyGRC() {
   return (
     <>
       <Helmet>
-        <title>Compliance, Privacy & GRC Services | Com-Sec</title>
+        <title>Compliance Readiness Consulting & GRC Services | Com-Sec</title>
         <meta
           name="description"
-          content="Comprehensive compliance, privacy, and GRC services covering SOC 2, ISO 27001, HIPAA, GDPR, HITRUST, and AI governance. Expert guidance for regulatory frameworks."
+          content="Compliance readiness consulting for SOC 2, ISO 27001, HIPAA, GDPR and HITRUST: readiness and gap assessments, policies, evidence and audit coordination."
         />
         <link rel="canonical" href="https://com-sec.io/compliance-privacy-grc" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Compliance, Privacy & GRC Services | Com-Sec" />
+        <meta property="og:title" content="Compliance Readiness Consulting & GRC Services | Com-Sec" />
         <meta property="og:description" content="Expert compliance, privacy, and governance services for SOC 2, ISO 27001, HIPAA, GDPR, and more." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://com-sec.io/compliance-privacy-grc" />
@@ -61,10 +61,10 @@ export default function CompliancePrivacyGRC() {
 
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                  Compliance, Privacy &
+                  Compliance Readiness Consulting,
                 </span>
                 <span className="block bg-gradient-to-r from-white to-green-400 bg-clip-text text-transparent">
-                  GRC Solutions
+                  Privacy & GRC
                 </span>
               </h1>
 
