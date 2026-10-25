@@ -103,7 +103,6 @@ export default function Soc2IsSimplerThanYouThink() {
         <meta property="og:locale" content="en_US" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"

@@ -97,7 +97,6 @@ export default function Q4ComplianceChecklist() {
         <meta property="article:published_time" content="2026-10-12T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"

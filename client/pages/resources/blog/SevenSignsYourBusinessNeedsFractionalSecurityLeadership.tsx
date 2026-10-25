@@ -105,7 +105,6 @@ export default function SevenSignsYourBusinessNeedsFractionalSecurityLeadership(
         <meta property="article:published_time" content="2026-10-03T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"

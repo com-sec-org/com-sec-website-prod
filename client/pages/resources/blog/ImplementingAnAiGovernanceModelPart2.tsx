@@ -105,7 +105,6 @@ export default function ImplementingAnAiGovernanceModelPart2() {
         <meta property="og:locale" content="en_US" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
