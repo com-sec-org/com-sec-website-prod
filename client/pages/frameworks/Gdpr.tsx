@@ -248,17 +248,6 @@ export default function Gdpr() {
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://com-sec.io/#organization",
-        name: "Com-Sec",
-        url: "https://com-sec.io",
-        logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-      })}
-    </script>
-
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://com-sec.io/gdpr#service",
         name: "GDPR Compliance Services",
@@ -268,7 +257,9 @@ export default function Gdpr() {
           "Com-Sec helps organizations achieve GDPR compliance through data discovery, privacy assessments, data mapping, DPIAs, policy development, privacy by design implementation, security controls, staff training, and ongoing compliance support. Our GDPR services help organizations protect personal data, comply with EU data protection regulations, and reduce regulatory risk.",
         url: "https://com-sec.io/gdpr",
         provider: {
+          "@type": "Organization",
           "@id": "https://com-sec.io/#organization",
+          name: "Com-Sec",
         },
         areaServed: {
           "@type": "AdministrativeArea",

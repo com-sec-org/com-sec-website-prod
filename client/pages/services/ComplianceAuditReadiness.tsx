@@ -58,17 +58,6 @@ export default function ComplianceAuditReadiness() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
-            "@id": "https://com-sec.io/#organization",
-            name: "Com-Sec",
-            url: "https://com-sec.io",
-            logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
             "@type": "Service",
             "@id": "https://com-sec.io/compliance-audit-service#service",
             serviceType: "Compliance Audit Service",
@@ -76,7 +65,9 @@ export default function ComplianceAuditReadiness() {
             description:
               "Com-Sec provides cybersecurity and compliance audit services to help organizations assess security controls, identify compliance gaps, prepare for audits, and achieve compliance with SOC 2, ISO 27001, HIPAA, PCI DSS, GDPR, NIST, HITRUST, and CMMC.",
             provider: {
+              "@type": "Organization",
               "@id": "https://com-sec.io/#organization",
+              name: "Com-Sec",
             },
             areaServed: {
               "@type": "Place",

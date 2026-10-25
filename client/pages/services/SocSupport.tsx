@@ -86,17 +86,6 @@ export default function SocSupport() {
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": "https://com-sec.io/#organization",
-      name: "Com-Sec",
-      url: "https://com-sec.io",
-      logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-    })}
-  </script>
-
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
       "@type": "Service",
       "@id": "https://com-sec.io/soc-support#service",
       name: "24/7 SOC Support Services",
@@ -106,7 +95,9 @@ export default function SocSupport() {
       category: "Managed Security Services",
       url: "https://com-sec.io/soc-support",
       provider: {
+        "@type": "Organization",
         "@id": "https://com-sec.io/#organization",
+        name: "Com-Sec",
       },
       areaServed: {
         "@type": "AdministrativeArea",

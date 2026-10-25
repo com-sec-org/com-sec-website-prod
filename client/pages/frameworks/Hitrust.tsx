@@ -33,17 +33,6 @@ export default function Hitrust() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
-            "@id": "https://com-sec.io/#organization",
-            name: "Com-Sec",
-            url: "https://com-sec.io",
-            logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
             "@type": "Service",
             "@id": "https://com-sec.io/hitrust#service",
             name: "HITRUST Certification Consulting Services",
@@ -54,7 +43,9 @@ export default function Hitrust() {
             serviceType: "HITRUST Certification Consulting",
             category: "Cybersecurity Compliance",
             provider: {
+              "@type": "Organization",
               "@id": "https://com-sec.io/#organization",
+              name: "Com-Sec",
             },
             areaServed: {
               "@type": "Place",

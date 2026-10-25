@@ -61,17 +61,6 @@ export default function PenetrationTesting() {
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
-          "@id": "https://com-sec.io/#organization",
-          name: "Com-Sec",
-          url: "https://com-sec.io",
-          logo: "https://com-sec.io/images/logo/com-sec_logo.png",
-        })}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
           "@type": "Service",
           "@id": "https://com-sec.io/penetration-testing-services#service",
           name: "Professional Penetration Testing Services",
@@ -80,7 +69,9 @@ export default function PenetrationTesting() {
             "Com-Sec provides professional penetration testing services to identify security vulnerabilities across network infrastructure, web applications, wireless environments, client-side applications, physical security, and social engineering attack vectors. Our ethical hackers deliver actionable remediation guidance to strengthen your organization's cybersecurity posture.",
           url: "https://com-sec.io/penetration-testing-services",
           provider: {
+            "@type": "Organization",
             "@id": "https://com-sec.io/#organization",
+            name: "Com-Sec",
           },
           areaServed: {
             "@type": "AdministrativeArea",

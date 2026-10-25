@@ -67,11 +67,14 @@ export default function Index() {
             "@type": "Organization",
             "@id": "https://com-sec.io/#organization",
             name: "Com-Sec",
+            legalName: "Com-Sec LLC",
             url: "https://com-sec.io/",
             logo: "https://com-sec.io/images/logo/com-sec_logo.png",
             description:
-              "Com-Sec delivers expert cybersecurity services including SOC 2 compliance, penetration testing, cloud security, and compliance audits, supporting frameworks like ISO 27001, HIPAA, and GDPR.",
-            foundingDate: "2020",
+              "Com-Sec is a cybersecurity and compliance services company providing virtual CISO (vCISO) leadership, compliance and audit readiness, penetration testing, and managed security operations.",
+            disambiguatingDescription:
+              "Com-Sec is the name of a company (Com-Sec LLC). It is not COMSEC, the communications security term.",
+            sameAs: ["https://www.linkedin.com/company/com-sec/"],
             address: {
               "@type": "PostalAddress",
               addressLocality: "Washington",
@@ -79,11 +82,9 @@ export default function Index() {
               postalCode: "20001",
               addressCountry: "US",
             },
-            sameAs: ["https://www.linkedin.com/company/com-sec"],
             contactPoint: {
               "@type": "ContactPoint",
               email: "team@com-sec.io",
-              telephone: "857-832-1623",
               contactType: "customer service",
             },
           })}
