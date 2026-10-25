@@ -80,7 +80,7 @@ export const SEO_CONFIG = {
     title:
       "Trusted Cybersecurity & SOC 2 Compliance Services | Com-Sec",
     description:
-      "Comsec delivers expert cybersecurity services including SOC 2 compliance, penetration testing, cloud security, and compliance audits to protect and scale your business, including compliance frameworks like ISO 27001, HIPAA, and GDPR.",
+      "Com-Sec delivers expert cybersecurity services including SOC 2 compliance, penetration testing, cloud security, and compliance audits to protect and scale your business, including compliance frameworks like ISO 27001, HIPAA, and GDPR.",
     canonical: "/",
     keywords: [
       "cybersecurity services",

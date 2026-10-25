@@ -87,7 +87,7 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
   "/": {
     title: "Trusted Cybersecurity & SOC 2 Compliance Services | Com-Sec",
     description:
-      "Comsec delivers expert cybersecurity services including SOC 2 compliance, penetration testing, cloud security, and compliance audits to protect and scale your business, including compliance frameworks like ISO 27001, HIPAA, and GDPR.",
+      "Com-Sec delivers expert cybersecurity services including SOC 2 compliance, penetration testing, cloud security, and compliance audits to protect and scale your business, including compliance frameworks like ISO 27001, HIPAA, and GDPR.",
     canonical: `${BASE_URL}/`,
     image: `${BASE_URL}/images/pages/home.webp`,
     keywords: "cybersecurity services, soc 2 readiness, penetration testing, iso 27001 compliance, cloud security",
