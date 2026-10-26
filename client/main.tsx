@@ -152,6 +152,7 @@ import Q4ComplianceChecklist from "./pages/resources/blog/Q4ComplianceChecklist"
 import AiAgentsSecurityBlindSpot from "./pages/resources/blog/AiAgentsSecurityBlindSpot";
 import HealthcareBreaches2026 from "./pages/resources/blog/HealthcareBreaches2026";
 import CyberInsuranceCarrierQuestions from "./pages/resources/blog/CyberInsuranceCarrierQuestions";
+import HowToReportSecurityToYourBoard from "./pages/resources/blog/HowToReportSecurityToYourBoard";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -429,6 +430,7 @@ const App = () => (
               <Route path="/blog/your-ai-agents-are-a-security-blind-spot-heres-why-that-matters" element={<AiAgentsSecurityBlindSpot />} />
               <Route path="/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026" element={<HealthcareBreaches2026 />} />
               <Route path="/blog/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care" element={<CyberInsuranceCarrierQuestions />} />
+              <Route path="/blog/how-to-report-security-to-your-board-without-putting-them-to-sleep" element={<HowToReportSecurityToYourBoard />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

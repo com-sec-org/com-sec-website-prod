@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "how-to-report-security-to-your-board-without-putting-them-to-sleep",
+                title: "How to Report Security to Your Board Without Putting Them to Sleep (or Scaring Them)",
+                excerpt: "Either the report is so technical that board members tune out, or it's so high-level that it's meaningless. Neither outcome helps you.",
+                date: "October 26 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Leadership",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/how-to-report-security-to-your-board-without-putting-them-to-sleep.png",
+                imageAlt: "How to Report Security to Your Board Without Putting Them to Sleep (or Scaring Them)",
+                link: "/blog/how-to-report-security-to-your-board-without-putting-them-to-sleep",
+              },            
+              {
                 id: "what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care",
                 title: "What Your Cyber Insurance Carrier Is About to Ask You (And Why You Should Care)",
                 excerpt: "Cyber insurance used to be simple. That era is over. Here's what carriers are actually asking now, and what it means for your premium.",
