@@ -920,4 +920,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care`,
     image: `${BASE_URL}/images/blog-images/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care.png`,
   },
+  "/blog/how-to-report-security-to-your-board-without-putting-them-to-sleep": {
+    title: "How to Report Security to Your Board Without Putting Them to Sleep (or Scaring Them)",
+    description:
+      "Either the report is so technical that board members tune out, or it's so high-level that it's meaningless. Here's the structure, metrics, and cadence that actually builds confidence and secures budget.",
+    canonical: `${BASE_URL}/blog/how-to-report-security-to-your-board-without-putting-them-to-sleep`,
+    image: `${BASE_URL}/images/blog-images/how-to-report-security-to-your-board-without-putting-them-to-sleep.png`,
+  },
 };
