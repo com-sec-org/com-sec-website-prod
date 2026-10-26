@@ -403,6 +403,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-22T00:00:00Z",
   },
+  "/blog/how-to-report-security-to-your-board-without-putting-them-to-sleep": {
+    title: "How to Report Security to Your Board Without Putting Them to Sleep (or Scaring Them)",
+    description:
+      "Most security leaders struggle with board reporting. Here's the structure, metrics, and cadence that actually builds confidence and secures budget.",
+    image: `${BASE_URL}/images/blog-images/how-to-report-security-to-your-board-without-putting-them-to-sleep.png`,
+    url: `${BASE_URL}/blog/how-to-report-security-to-your-board-without-putting-them-to-sleep`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-26T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────
