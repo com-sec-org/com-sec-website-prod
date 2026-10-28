@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "the-white-house-ai-accord-what-it-means-for-startups",
+                title: "The White House AI Accord: What It Means for Startups and Why AI Assurance Just Got Real",
+                excerpt: "It's not a law. There are no penalties for non-compliance. But if you're building or deploying AI, this accord is going to affect you — whether you signed it or not.",
+                date: "October 28 2026",
+                readTime: "4 min read",
+                author: "Farbod Fakhrai",
+                category: "AI Governance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/the-white-house-ai-accord-what-it-means-for-startups.png",
+                imageAlt: "The White House AI Accord: What It Means for Startups and Why AI Assurance Just Got Real",
+                link: "/blog/the-white-house-ai-accord-what-it-means-for-startups",
+              },
+              {
                 id: "how-to-report-security-to-your-board-without-putting-them-to-sleep",
                 title: "How to Report Security to Your Board Without Putting Them to Sleep (or Scaring Them)",
                 excerpt: "Either the report is so technical that board members tune out, or it's so high-level that it's meaningless. Neither outcome helps you.",
