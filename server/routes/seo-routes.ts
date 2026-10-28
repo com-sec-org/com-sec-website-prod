@@ -927,4 +927,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/how-to-report-security-to-your-board-without-putting-them-to-sleep`,
     image: `${BASE_URL}/images/blog-images/how-to-report-security-to-your-board-without-putting-them-to-sleep.png`,
   },
+  "/blog/your-open-source-dependencies-are-someone-elses-weekend-project": {
+    title: "Your Open-Source Dependencies Are Someone Else's Weekend Project. Act Accordingly.",
+    description:
+      "Every modern software company runs on open source. Recent supply chain attacks show the risk profile has changed significantly, and most startups haven't adjusted. Here's what to do about it.",
+    canonical: `${BASE_URL}/blog/your-open-source-dependencies-are-someone-elses-weekend-project`,
+    image: `${BASE_URL}/images/blog-images/your-open-source-dependencies-are-someone-elses-weekend-project.png`,
+  },
 };
