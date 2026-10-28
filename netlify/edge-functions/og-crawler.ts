@@ -412,6 +412,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-26T00:00:00Z",
   },
+  "/blog/your-open-source-dependencies-are-someone-elses-weekend-project": {
+    title: "Your Open-Source Dependencies Are Someone Else's Weekend Project. Act Accordingly.",
+    description:
+      "Every modern software company runs on open source. The risk profile has changed significantly, and most companies haven't adjusted.",
+    image: `${BASE_URL}/images/blog-images/your-open-source-dependencies-are-someone-elses-weekend-project.png`,
+    url: `${BASE_URL}/blog/your-open-source-dependencies-are-someone-elses-weekend-project`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-23T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────

@@ -5,7 +5,7 @@ import { allArticles } from "./blog-posts";
 import { canonicalBlogPaths } from "../scripts/rss-plugin";
 
 const post: FeedPost = { id: "example", title: 'A & <B> "test"', excerpt: "It's useful & safe", date: "September 09 2026", author: "A & B", category: "Security" };
-const now = new Date("2026-10-26T00:00:00Z");
+const now = new Date("2026-10-27T00:00:00Z");
 const paths = new Map([["/blog/example", "/blog/example"], ["/blog/older", "/blog/older"]]);
 describe("RSS", () => {
   it("escapes metadata and includes canonical URLs, GUID, author and categories", () => {
@@ -41,13 +41,13 @@ describe("RSS", () => {
     for (const id of ["zero-trust-architecture-implementation", "cloud-security-best-practices-2024", "soc2-vs-iso27001-comparison", "soc-2-compliance-services-california"]) {
       expect(xml).not.toContain("https://com-sec.io/blog/" + id + "<");
     }
-    expect((xml.match(/<item>/g) ?? []).length).toBe(96);
+    expect((xml.match(/<item>/g) ?? []).length).toBe(97);
     const canonical = "https://com-sec.io/blog/soc-2-vs-iso-27001-which-is-right-for-you";
     expect(routes.get("/blog/soc2-vs-iso27001-comparison")).toBe(canonical.replace("https://com-sec.io", ""));
     expect(xml.split("<link>" + canonical + "</link>").length - 1).toBe(1);
     expect(xml.split('<guid isPermaLink="true">' + canonical + "</guid>").length - 1).toBe(1);
     const urls = [...xml.matchAll(/<guid isPermaLink="true">([^<]+)<\/guid>/g)].map(match => match[1]);
-    expect(new Set(urls).size).toBe(96);
+    expect(new Set(urls).size).toBe(97);
   });
 });
 
@@ -94,8 +94,8 @@ describe("RSS images", () => {
   it("adds images to all 92 repository items without changing other RSS content", () => {
     const routes = canonicalBlogPaths(fs.readFileSync("client/main.tsx", "utf8"));
     const xml = generateRss(allArticles, routes, now);
-    expect(xml.match(/<media:content url="https:\/\//g)).toHaveLength(96);
-    expect(xml.match(/<media:thumbnail url="https:\/\//g)).toHaveLength(96);
+    expect(xml.match(/<media:content url="https:\/\//g)).toHaveLength(97);
+    expect(xml.match(/<media:thumbnail url="https:\/\//g)).toHaveLength(97);
     const withoutImages = generateRss(allArticles.map(p => ({ ...p, image: undefined })), routes, now);
     expect(xml.replace(/^.*<media:(?:content|thumbnail) .*\n/gm, "")).toBe(withoutImages);
   });
