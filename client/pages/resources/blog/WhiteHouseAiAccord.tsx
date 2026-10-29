@@ -47,14 +47,6 @@ export default function WhiteHouseAiAccord() {
       emoji: "🤖",
     },
     {
-      title: "How to Build a Compliance Roadmap for Your Business",
-      excerpt:
-        "A compliance roadmap turns an overwhelming list of requirements into a sequenced plan your team can actually execute. Here's how to build one.",
-      link: "/blog/how-to-build-a-compliance-roadmap-for-your-business",
-      category: "Compliance",
-      emoji: "🗺️",
-    },
-    {
       title: "Your Open-Source Dependencies Are Someone Else's Weekend Project. Act Accordingly.",
       excerpt:
         "Every modern software company runs on open source. The risk profile has changed significantly, and most companies haven't adjusted.",
@@ -105,10 +97,9 @@ export default function WhiteHouseAiAccord() {
         <meta property="og:site_name" content="Com-Sec" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="Farbod Fakhrai" />
-        <meta property="article:published_time" content="2026-10-09T00:00:00Z" />
+        <meta property="article:published_time" content="2026-10-28T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
@@ -158,7 +149,7 @@ export default function WhiteHouseAiAccord() {
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>October 9, 2026</span>
+                <span>October 28, 2026</span>
               </div>
 
               <div className="flex items-center gap-2">

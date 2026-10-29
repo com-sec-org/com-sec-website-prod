@@ -934,4 +934,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/your-open-source-dependencies-are-someone-elses-weekend-project`,
     image: `${BASE_URL}/images/blog-images/your-open-source-dependencies-are-someone-elses-weekend-project.png`,
   },
+  "/blog/the-white-house-ai-accord-what-it-means-for-startups": {
+    title: "The White House AI Accord: What It Means for Startups and Why AI Assurance Just Got Real",
+    description:
+      "On September 29, 2026, the White House brought together executives from OpenAI, Google, Meta, Nvidia, xAI, and Anthropic to sign a voluntary agreement on AI oversight. It's not a law, but it's going to affect you whether you signed it or not.",
+    canonical: `${BASE_URL}/blog/the-white-house-ai-accord-what-it-means-for-startups`,
+    image: `${BASE_URL}/images/blog-images/the-white-house-ai-accord-what-it-means-for-startups.png`,
+  },
 };
