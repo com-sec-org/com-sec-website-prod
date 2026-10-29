@@ -421,6 +421,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-23T00:00:00Z",
   },
+  "/blog/the-white-house-ai-accord-what-it-means-for-startups": {
+    title: "The White House AI Accord: What It Means for Startups and Why AI Assurance Just Got Real",
+    description:
+      "A voluntary agreement that outlines how companies should monitor, audit, and govern their AI systems. It's not a law, but it's going to affect you whether you signed it or not.",
+    image: `${BASE_URL}/images/blog-images/the-white-house-ai-accord-what-it-means-for-startups.png`,
+    url: `${BASE_URL}/blog/the-white-house-ai-accord-what-it-means-for-startups`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-28T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────

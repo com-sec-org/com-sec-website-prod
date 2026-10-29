@@ -154,6 +154,7 @@ import HealthcareBreaches2026 from "./pages/resources/blog/HealthcareBreaches202
 import CyberInsuranceCarrierQuestions from "./pages/resources/blog/CyberInsuranceCarrierQuestions";
 import HowToReportSecurityToYourBoard from "./pages/resources/blog/HowToReportSecurityToYourBoard";
 import OpenSourceDependenciesSupplyChainRisk from "./pages/resources/blog/OpenSourceDependenciesSupplyChainRisk";
+import WhiteHouseAiAccord from "./pages/resources/blog/WhiteHouseAiAccord";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -433,6 +434,7 @@ const App = () => (
               <Route path="/blog/what-your-cyber-insurance-carrier-is-about-to-ask-you-and-why-you-should-care" element={<CyberInsuranceCarrierQuestions />} />
               <Route path="/blog/how-to-report-security-to-your-board-without-putting-them-to-sleep" element={<HowToReportSecurityToYourBoard />} />
               <Route path="/blog/your-open-source-dependencies-are-someone-elses-weekend-project" element={<OpenSourceDependenciesSupplyChainRisk />} />
+              <Route path="/blog/the-white-house-ai-accord-what-it-means-for-startups" element={<WhiteHouseAiAccord />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
