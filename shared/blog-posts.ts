@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you",
+                title: "AICPA SOC 2 Updates: What's Changing and What It Means for You",
+                excerpt: "The AICPA is making changes to SOC 2, and most companies aren't paying attention yet. Here's what's happening and what it means for you.",
+                date: "October 30 2026",
+                readTime: "3 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you.png",
+                imageAlt: "AICPA SOC 2 Updates: What's Changing and What It Means for You",
+                link: "/blog/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you",
+              },
+              {
                 id: "the-white-house-ai-accord-what-it-means-for-startups",
                 title: "The White House AI Accord: What It Means for Startups and Why AI Assurance Just Got Real",
                 excerpt: "It's not a law. There are no penalties for non-compliance. But if you're building or deploying AI, this accord is going to affect you — whether you signed it or not.",

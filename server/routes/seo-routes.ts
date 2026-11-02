@@ -941,4 +941,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/the-white-house-ai-accord-what-it-means-for-startups`,
     image: `${BASE_URL}/images/blog-images/the-white-house-ai-accord-what-it-means-for-startups.png`,
   },
+  "/blog/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you": {
+    title: "AICPA SOC 2 Updates: What's Changing and What It Means for You",
+    description:
+      "The AICPA is rewriting the attestation standards that govern SOC 2 examinations. Here's what's changing, what auditors already expect, and what you should do now.",
+    canonical: `${BASE_URL}/blog/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you`,
+    image: `${BASE_URL}/images/blog-images/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you.png`,
+  },
 };
