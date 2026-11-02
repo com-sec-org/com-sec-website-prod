@@ -430,6 +430,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-28T00:00:00Z",
   },
+  "/blog/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you": {
+    title: "AICPA SOC 2 Updates: What's Changing and What It Means for You",
+    description:
+      "The AICPA is making changes to SOC 2, and most companies aren't paying attention yet. Here's what's happening and what it means for you.",
+    image: `${BASE_URL}/images/blog-images/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you.png`,
+    url: `${BASE_URL}/blog/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-10-30T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────

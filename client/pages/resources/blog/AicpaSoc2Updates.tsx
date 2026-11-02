@@ -38,14 +38,6 @@ export default function AicpaSoc2Updates() {
 
   const relatedArticles = [
     {
-      title: "How to Build a Compliance Roadmap for Your Business",
-      excerpt:
-        "A compliance roadmap turns an overwhelming list of requirements into a sequenced plan your team can actually execute. Here's how to build one.",
-      link: "/blog/how-to-build-a-compliance-roadmap-for-your-business",
-      category: "Compliance",
-      emoji: "🗺️",
-    },
-    {
       title: "Your Q4 Compliance Planning Checklist (So Q1 Isn't a Scramble)",
       excerpt:
         "Every year, the same thing happens. Security and compliance get pushed to January, then suddenly everything is urgent. Q4 is the time to set up Q1 for success.",
@@ -105,7 +97,6 @@ export default function AicpaSoc2Updates() {
         <meta property="article:published_time" content="2026-10-30T00:00:00Z" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comsec" />
 
         <meta
           name="twitter:title"
