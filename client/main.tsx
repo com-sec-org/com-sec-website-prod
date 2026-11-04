@@ -14,6 +14,7 @@ import About from "./pages/About";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Partnerships from "./pages/Partnerships";
+import Refer from "./pages/Refer";
 
 // Service Pages
 // NEW 5-BUCKET SERVICES
@@ -442,6 +443,7 @@ const App = () => (
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/partnerships" element={<Partnerships />} />
+              <Route path="/refer" element={<Refer />} />
 
               {/* ── 404 Fixes: high-traffic URLs → correct pages ── */}
               <Route path="/blog/what-is-a-vciso-understanding-the-role-and-how-it-supports-your-cybersecurity-goals" element={<Navigate to="/blog/what-is-vciso-role-cybersecurity" replace />} />

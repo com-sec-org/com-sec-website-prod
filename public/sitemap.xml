@@ -24,6 +24,10 @@
     <loc>https://com-sec.io/partnerships</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://com-sec.io/refer</loc>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Services -->
   <url>

@@ -130,6 +130,7 @@ export function Navigation() {
                   <Link to="/blogs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Blog</Link>
                   <Link to="/phishing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Phishing Testing</Link>
                   <Link to="/pricing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Pricing</Link>
+                  <Link to="/refer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Refer &amp; Earn 10%</Link>
                 </div>
               </div>
             </div>
@@ -382,6 +383,7 @@ export function Navigation() {
                       <Link to="/blogs" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Blog</Link>
                       <Link to="/phishing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Phishing Testing</Link>
                       <Link to="/pricing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
+                      <Link to="/refer" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Refer &amp; Earn 10%</Link>
                     </div>
                   </div>
                 )}
