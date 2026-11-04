@@ -53,6 +53,7 @@ const columns: FooterColumn[] = [
       { label: "About", to: "/company" },
       { label: "Careers", to: "/careers" },
       { label: "Partnerships", to: "/partnerships" },
+      { label: "Refer & Earn 10%", to: "/refer" },
       { label: "Testimonials", to: "/testimonials" },
       { label: "Contact", to: "/contact" },
     ],

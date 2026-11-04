@@ -339,6 +339,12 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/partnerships`,
     keywords: "partnerships, compliance, security, auditors, IT consulting",
   },
+  "/refer": {
+    title: "Refer a Company to Com-Sec and Earn 10% | Com-Sec",
+    description:
+      "Know a company that needs SOC 2, ISO 27001, HITRUST, a vCISO, penetration testing, or managed security? Introduce them to Com-Sec and earn 10% of their first invoice.",
+    canonical: `${BASE_URL}/refer`,
+  },
   "/contact": {
     title: "Contact Com-Sec | Get a Free Cybersecurity Consultation",
     description:
