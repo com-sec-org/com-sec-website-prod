@@ -1,116 +1,127 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { ArrowRight, Check } from "lucide-react";
+import {
+  Briefcase,
+  CheckCircle,
+  ChevronRight,
+  ClipboardCheck,
+  Layers,
+  Search,
+  ShieldCheck,
+} from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const INTRO_EMAIL = "team@com-sec.io";
 
-const services = [
-  "SOC 2",
-  "ISO 27001",
-  "HITRUST",
-  "vCISO",
-  "Penetration testing",
-  "Managed security",
-];
+const PRIMARY_BUTTON =
+  "bg-gradient-to-r from-accent to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white border-0 transform hover:scale-105 transition-all duration-300";
 
 const steps = [
   {
-    title: "Make the intro.",
-    body: (
-      <>
-        Email us at{" "}
-        <a
-          href={`mailto:${INTRO_EMAIL}`}
-          className="font-semibold underline underline-offset-2 hover:text-orange-700"
-        >
-          {INTRO_EMAIL}
-        </a>
-        , or connect us directly with your contact.
-      </>
-    ),
+    title: "Make an introduction",
+    body: "Connect us with a founder, executive, or company that could benefit from our services. A simple email introduction is all it takes.",
   },
   {
-    title: "We take it from there.",
-    body: "Our team meets with them, learns what they need, and puts together a proposal.",
+    title: "We handle the rest",
+    body: "We'll learn about their needs, recommend the right services, and manage the entire sales process. You don't need to sell anything.",
   },
   {
-    title: "You get paid.",
-    body: "Once they sign and pay their first invoice, we send you 10% of it.",
+    title: "Get rewarded",
+    body: "When your referral becomes a client and pays their first invoice, you'll receive 10% of that payment within 30 days.",
   },
 ];
 
-const goodFits = [
-  "Startups and growing companies facing their first security review or compliance audit",
-  "Healthcare and fintech companies handling sensitive data",
-  "Teams without a full-time security leader",
+const referralNeeds = [
+  {
+    icon: ClipboardCheck,
+    title: "SOC 2, ISO 27001, HITRUST, or HIPAA",
+    body: "Compliance readiness, implementation, and audit support.",
+  },
+  {
+    icon: Briefcase,
+    title: "Fractional CISO",
+    body: "Experienced security leadership without hiring a full-time CISO.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Managed Cybersecurity",
+    body: "Ongoing security operations, monitoring, and IT support.",
+  },
+  {
+    icon: Search,
+    title: "Penetration Testing",
+    body: "Independent security assessments of applications, APIs, and cloud environments.",
+  },
+  {
+    icon: Layers,
+    title: "Security Program Development",
+    body: "Building and maintaining security programs that scale.",
+  },
 ];
 
-const goodToKnow = [
-  "The referral must be a new Com-Sec client.",
-  "The payout is 10% of the client's first paid invoice, sent within 30 days of payment.",
-  "If more than one person refers the same company, the first intro counts.",
+const participants = [
+  {
+    title: "Clients",
+    body: "Recommend us to other companies in your network.",
+  },
+  {
+    title: "Founders and executives",
+    body: "Introduce fellow business leaders.",
+  },
+  {
+    title: "Investors and advisors",
+    body: "Connect portfolio companies that need security support.",
+  },
+  {
+    title: "Consultants and technology partners",
+    body: "Refer opportunities outside your service offerings.",
+  },
+  {
+    title: "Friends of Com-Sec",
+    body: "Anyone who knows a business we can help.",
+  },
 ];
 
-// 18-point seal, drawn in a 200 x 200 viewBox.
-const SEAL_POINTS = Array.from({ length: 36 }, (_, i) => {
-  const radius = i % 2 === 0 ? 100 : 87;
-  const angle = (Math.PI * i) / 18;
-  return `${(100 + radius * Math.sin(angle)).toFixed(2)},${(100 - radius * Math.cos(angle)).toFixed(2)}`;
-}).join(" ");
-
-function RewardSeal() {
-  return (
-    <div
-      aria-hidden="true"
-      className="relative mx-auto aspect-square w-64 sm:w-80 lg:w-[26rem] animate-in zoom-in-75 fade-in duration-700 motion-reduce:animate-none"
-    >
-      <svg viewBox="0 0 200 200" className="absolute inset-0 h-full w-full">
-        <polygon points={SEAL_POINTS} className="fill-amber-300" />
-        <circle
-          cx="100"
-          cy="100"
-          r="74"
-          fill="none"
-          strokeWidth="1.5"
-          strokeDasharray="1 5"
-          strokeLinecap="round"
-          className="stroke-primary"
-        />
-      </svg>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-primary">
-        <span className="text-7xl sm:text-8xl lg:text-9xl font-extrabold tracking-tighter leading-none">
-          10%
-        </span>
-        <span className="mt-2 font-mono text-xs sm:text-sm uppercase tracking-[0.15em]">
-          Your thank-you
-        </span>
-      </div>
-    </div>
-  );
-}
-
-// A few hand-placed shapes for a sense of occasion. Decorative, and kept sparse on purpose.
-const CONFETTI = [
-  "left-[4%] top-[18%] h-3 w-3 rounded-full bg-amber-300",
-  "left-[44%] top-[12%] h-2 w-6 rotate-12 rounded-full bg-accent",
-  "right-[6%] top-[14%] h-2 w-5 -rotate-45 rounded-full bg-white/70",
-  "right-[42%] bottom-[12%] h-3 w-3 rotate-45 bg-accent",
-  "left-[10%] bottom-[10%] h-2 w-5 rotate-45 rounded-full bg-white/50",
-  "right-[4%] bottom-[20%] h-3 w-3 rounded-full bg-accent",
+const faqs = [
+  {
+    question: "Do I need to sign up?",
+    answer: "No. Simply make an introduction.",
+  },
+  {
+    question: "Do I need to help close the deal?",
+    answer: "Not at all. Our team handles discovery, proposals, and onboarding.",
+  },
+  {
+    question: "When do I get paid?",
+    answer: "Within 30 days after the referred client pays their first invoice.",
+  },
+  {
+    question: "Can I refer more than one company?",
+    answer:
+      "Absolutely. There's no limit to the number of qualifying referrals you can make.",
+  },
+  {
+    question: "What if someone else already referred the company?",
+    answer: "The first qualifying introduction receives the referral reward.",
+  },
 ];
 
 export default function Refer() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Refer a Company to Com-Sec and Earn 10% | Com-Sec</title>
+        <title>Make an Introduction. Earn 10%. | Com-Sec</title>
         <meta
           name="description"
-          content="Know a company that needs SOC 2, ISO 27001, HITRUST, a vCISO, penetration testing, or managed security? Introduce them to Com-Sec and earn 10% of their first invoice."
+          content="Know a company that needs cybersecurity or compliance support? Introduce them to Com-Sec and we'll thank you with 10% of their first paid invoice."
         />
         <link rel="canonical" href="https://com-sec.io/refer" />
       </Helmet>
@@ -118,182 +129,202 @@ export default function Refer() {
       <Navigation />
 
       <main>
-        {/* Hero: the reward is the first thing anyone sees */}
-        <section className="relative overflow-hidden bg-primary pt-28 pb-20 text-white lg:pt-36 lg:pb-28">
-          <div aria-hidden="true" className="hidden lg:block">
-            {CONFETTI.map((shape) => (
-              <span key={shape} className={cn("absolute", shape)} />
-            ))}
-          </div>
+        {/* Hero */}
+        <section className="pt-24 pb-20 bg-gradient-to-br from-primary to-blue-900 text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Make an Introduction.{" "}
+              <span className="block bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                Earn 10%.
+              </span>
+            </h1>
 
-          <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.2fr_1fr] lg:px-8">
-            <div>
-              <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-                Refer a Company to Com-Sec and{" "}
-                <span className="text-amber-300">Earn 10%</span>
-              </h1>
+            <p className="text-xl md:text-2xl font-semibold mb-6">
+              Know a company that needs cybersecurity or compliance support?
+              We'd love an introduction.
+            </p>
+            <p className="text-lg md:text-xl mb-4 text-white/90">
+              At Com-Sec, we help growing companies strengthen security, achieve
+              compliance, and manage ongoing cybersecurity operations.
+            </p>
+            <p className="text-lg md:text-xl mb-4 text-white/90">
+              If you introduce us to a company that becomes a client, we'll thank
+              you with{" "}
+              <strong className="font-bold text-white">
+                10% of their first paid invoice
+              </strong>
+              .
+            </p>
+            <p className="text-lg md:text-xl mb-8 text-white/90">
+              No registration. No complicated process. Just a warm introduction.
+            </p>
 
-              <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/90 md:text-xl">
-                Know a company that needs SOC 2, ISO 27001, HITRUST, a vCISO,
-                penetration testing, or managed security? Introduce them to
-                Com-Sec. When they become a client, we'll pay you 10% of their
-                first invoice as a thank-you.
-              </p>
-
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
-                <Button
-                  asChild
-                  size="lg"
-                  className="h-14 gap-2 bg-amber-300 px-8 text-lg font-bold text-primary hover:bg-amber-200 focus-visible:ring-amber-200 focus-visible:ring-offset-primary"
-                >
-                  <Link to="/contact">
-                    Make an intro
-                    <ArrowRight className="h-5 w-5" aria-hidden="true" />
-                  </Link>
-                </Button>
-                <a
-                  href={`mailto:${INTRO_EMAIL}`}
-                  className="text-base font-medium text-white underline underline-offset-4 hover:text-amber-300"
-                >
-                  or email {INTRO_EMAIL}
-                </a>
-              </div>
-
-              <p className="mt-6 text-base text-white/80">
-                Already working with us? Just connect us directly with your
-                contact.
-              </p>
-            </div>
-
-            <RewardSeal />
+            <Button size="lg" className={PRIMARY_BUTTON} asChild>
+              <Link to="/contact">
+                Make a Referral
+                <ChevronRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </Link>
+            </Button>
           </div>
         </section>
 
-        {/* How it works: three steps that climb to the payoff */}
-        <section className="bg-orange-50 py-20 lg:py-28">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-extrabold tracking-tight text-primary md:text-5xl">
-              How it works
+        {/* How It Works */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-16 text-center">
+              How It Works
             </h2>
 
-            <ol className="mt-12 grid gap-6 lg:grid-cols-3 lg:items-end">
-              {steps.map((step, index) => {
-                const isPayoff = index === steps.length - 1;
-                return (
-                  <li
-                    key={step.title}
-                    className={cn(
-                      "rounded-2xl p-8 text-primary",
-                      isPayoff ? "bg-amber-300 lg:min-h-[23rem]" : "bg-white",
-                      index === 0 && "lg:min-h-[17rem]",
-                      index === 1 && "lg:min-h-[20rem]",
-                    )}
-                  >
-                    <span className="font-mono text-sm uppercase tracking-[0.15em]">
-                      Step {index + 1}
-                    </span>
-                    <h3
-                      className={cn(
-                        "mt-4 font-extrabold tracking-tight",
-                        isPayoff ? "text-4xl" : "text-3xl",
-                      )}
-                    >
-                      {step.title}
-                    </h3>
-                    <p className="mt-4 text-lg leading-relaxed">{step.body}</p>
-                    {isPayoff && (
-                      <p
-                        aria-hidden="true"
-                        className="mt-6 text-7xl font-extrabold leading-none tracking-tighter lg:text-8xl"
-                      >
-                        10%
-                      </p>
-                    )}
-                  </li>
-                );
-              })}
+            <ol className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {steps.map((step, index) => (
+                <li key={step.title}>
+                  <Card className="h-full hover:shadow-lg transition-shadow border-2 hover:border-accent/20">
+                    <CardHeader>
+                      <span className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-accent to-orange-500 text-xl font-bold text-white">
+                        {index + 1}
+                      </span>
+                      <CardTitle className="text-xl text-primary">
+                        {step.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{step.body}</p>
+                    </CardContent>
+                  </Card>
+                </li>
+              ))}
             </ol>
           </div>
         </section>
 
-        {/* Who can refer, and who to think of */}
-        <section className="bg-white py-20 lg:py-28">
-          <div className="mx-auto grid max-w-7xl gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-            <div>
-              <h2 className="text-4xl font-extrabold tracking-tight text-primary md:text-5xl">
-                Who can refer?
+        {/* Who Should You Refer? */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Who Should You Refer?
               </h2>
-              <p className="mt-6 text-2xl leading-snug text-primary md:text-3xl">
-                Clients, partners, friends, and anyone in our network.
-              </p>
-              <p className="mt-4 text-lg text-gray-700">
-                You don't need to sign up.
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                We work with startups, growing businesses, and established
+                organizations that need:
               </p>
             </div>
 
-            <div>
-              <h2 className="text-4xl font-extrabold tracking-tight text-primary md:text-5xl">
-                Good fits
-              </h2>
-              <ul className="mt-6 space-y-5">
-                {goodFits.map((fit) => (
-                  <li key={fit} className="flex gap-4 text-lg text-gray-800">
-                    <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-300 text-primary">
-                      <Check className="h-4 w-4" strokeWidth={3} aria-hidden="true" />
-                    </span>
-                    {fit}
-                  </li>
-                ))}
-              </ul>
-              <ul className="mt-8 flex flex-wrap gap-2" aria-label="Services we can help with">
-                {services.map((service) => (
-                  <li
-                    key={service}
-                    className="rounded-full bg-orange-50 px-4 py-1.5 text-sm font-medium text-primary"
+            <div className="flex flex-wrap justify-center gap-8">
+              {referralNeeds.map((need) => {
+                const Icon = need.icon;
+                return (
+                  <Card
+                    key={need.title}
+                    className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] hover:shadow-lg transition-shadow border-2 hover:border-accent/20"
                   >
-                    {service}
-                  </li>
-                ))}
-              </ul>
+                    <CardHeader>
+                      <Icon className="h-10 w-10 text-accent mb-3" aria-hidden="true" />
+                      <CardTitle className="text-lg text-primary">{need.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground text-sm">{need.body}</p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
+
+            <p className="mt-12 text-center text-lg text-gray-700">
+              We specialize in supporting{" "}
+              <strong className="font-bold text-primary">
+                AI, SaaS, HealthTech, FinTech, and other technology-driven
+                companies.
+              </strong>
+            </p>
           </div>
         </section>
 
-        {/* Closing ask, with the terms in plain sight beside it */}
-        <section className="bg-amber-300 py-20 text-primary lg:py-24">
-          <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.2fr_1fr] lg:px-8">
-            <div>
-              <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl">
-                Who comes to mind?
+        {/* Who Can Participate? */}
+        <section className="py-20 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Who Can Participate?
               </h2>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
-                <Button
-                  asChild
-                  size="lg"
-                  className="h-14 gap-2 bg-primary px-8 text-lg font-bold text-white hover:bg-primary/90"
-                >
-                  <Link to="/contact">
-                    Make an intro
-                    <ArrowRight className="h-5 w-5" aria-hidden="true" />
-                  </Link>
-                </Button>
-                <a
-                  href={`mailto:${INTRO_EMAIL}`}
-                  className="text-base font-medium underline underline-offset-4 hover:text-orange-800"
-                >
-                  or email {INTRO_EMAIL}
-                </a>
-              </div>
+              <p className="text-xl text-muted-foreground">
+                Our referral program is open to:
+              </p>
             </div>
 
-            <div className="rounded-2xl bg-white/70 p-6">
-              <h2 className="font-mono text-sm uppercase tracking-[0.15em]">Good to know</h2>
-              <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed">
-                {goodToKnow.map((line) => (
-                  <li key={line}>{line}</li>
-                ))}
-              </ul>
-            </div>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {participants.map((participant) => (
+                <li key={participant.title} className="flex gap-4 items-start">
+                  <CheckCircle
+                    className="h-6 w-6 text-accent flex-shrink-0 mt-0.5"
+                    aria-hidden="true"
+                  />
+                  <p className="text-lg text-gray-700">
+                    <strong className="font-semibold text-primary">
+                      {participant.title}:
+                    </strong>{" "}
+                    {participant.body}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Frequently Asked Questions */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
+              Frequently Asked Questions
+            </h2>
+
+            <dl className="space-y-4">
+              {faqs.map((faq) => (
+                <div
+                  key={faq.question}
+                  className="rounded-lg border-2 bg-white p-6"
+                >
+                  <dt className="text-lg font-semibold text-primary">
+                    {faq.question}
+                  </dt>
+                  <dd className="mt-2 text-muted-foreground">{faq.answer}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        {/* Know Someone We Can Help? */}
+        <section className="py-20 bg-gradient-to-br from-primary to-blue-900 text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl font-bold mb-6">Know Someone We Can Help?</h2>
+            <p className="text-xl mb-8 text-white/90">
+              A quick introduction could help a company strengthen its security
+              and earn you a referral reward.
+            </p>
+
+            <Button size="lg" className={PRIMARY_BUTTON} asChild>
+              <Link to="/contact">
+                Make an Introduction
+                <ChevronRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </Link>
+            </Button>
+
+            <p className="mt-6 text-lg text-white/90">
+              Or email{" "}
+              <a
+                href={`mailto:${INTRO_EMAIL}`}
+                className="font-bold text-white underline underline-offset-4 hover:text-orange-300"
+              >
+                {INTRO_EMAIL}
+              </a>
+              .
+            </p>
+
+            <p className="mt-10 text-sm italic text-white/70">
+              Referral rewards apply to qualifying new clients. Additional
+              program terms and eligibility requirements may apply.
+            </p>
           </div>
         </section>
       </main>
