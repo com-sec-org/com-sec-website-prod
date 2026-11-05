@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs",
+                title: "Zero Trust for Startups: What It Actually Means (Without the Enterprise BS)",
+                excerpt: "Every startup founder thinks zero trust requires a seven-figure budget and a team of 20. It doesn't. Here's what it actually is and what it looks like at a 50-person company.",
+                date: "November 2 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "Security Architecture",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs.png",
+                imageAlt: "Zero Trust for Startups: What It Actually Means (Without the Enterprise BS)",
+                link: "/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs",
+              },            
+              {
                 id: "aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you",
                 title: "AICPA SOC 2 Updates: What's Changing and What It Means for You",
                 excerpt: "The AICPA is making changes to SOC 2, and most companies aren't paying attention yet. Here's what's happening and what it means for you.",
