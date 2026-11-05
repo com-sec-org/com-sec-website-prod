@@ -49,6 +49,12 @@ const goodFits = [
   "Teams without a full-time security leader",
 ];
 
+const goodToKnow = [
+  "The referral must be a new Com-Sec client.",
+  "The payout is 10% of the client's first paid invoice, sent within 30 days of payment.",
+  "If more than one person refers the same company, the first intro counts.",
+];
+
 // 18-point seal, drawn in a 200 x 200 viewBox.
 const SEAL_POINTS = Array.from({ length: 36 }, (_, i) => {
   const radius = i % 2 === 0 ? 100 : 87;
@@ -253,29 +259,40 @@ export default function Refer() {
           </div>
         </section>
 
-        {/* Closing ask */}
+        {/* Closing ask, with the terms in plain sight beside it */}
         <section className="bg-amber-300 py-20 text-primary lg:py-24">
-          <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl">
-              Who comes to mind?
-            </h2>
-            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
-              <Button
-                asChild
-                size="lg"
-                className="h-14 gap-2 bg-primary px-8 text-lg font-bold text-white hover:bg-primary/90"
-              >
-                <Link to="/contact">
-                  Make an intro
-                  <ArrowRight className="h-5 w-5" aria-hidden="true" />
-                </Link>
-              </Button>
-              <a
-                href={`mailto:${INTRO_EMAIL}`}
-                className="text-base font-medium underline underline-offset-4 hover:text-orange-800"
-              >
-                or email {INTRO_EMAIL}
-              </a>
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.2fr_1fr] lg:px-8">
+            <div>
+              <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl">
+                Who comes to mind?
+              </h2>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+                <Button
+                  asChild
+                  size="lg"
+                  className="h-14 gap-2 bg-primary px-8 text-lg font-bold text-white hover:bg-primary/90"
+                >
+                  <Link to="/contact">
+                    Make an intro
+                    <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                  </Link>
+                </Button>
+                <a
+                  href={`mailto:${INTRO_EMAIL}`}
+                  className="text-base font-medium underline underline-offset-4 hover:text-orange-800"
+                >
+                  or email {INTRO_EMAIL}
+                </a>
+              </div>
+            </div>
+
+            <div className="rounded-2xl bg-white/70 p-6">
+              <h2 className="font-mono text-sm uppercase tracking-[0.15em]">Good to know</h2>
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed">
+                {goodToKnow.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
