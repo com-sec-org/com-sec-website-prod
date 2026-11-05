@@ -157,6 +157,7 @@ import HowToReportSecurityToYourBoard from "./pages/resources/blog/HowToReportSe
 import OpenSourceDependenciesSupplyChainRisk from "./pages/resources/blog/OpenSourceDependenciesSupplyChainRisk";
 import WhiteHouseAiAccord from "./pages/resources/blog/WhiteHouseAiAccord";
 import AicpaSoc2Updates from "./pages/resources/blog/AicpaSoc2Updates";
+import ZeroTrustForStartups from "./pages/resources/blog/ZeroTrustForStartups";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -438,6 +439,7 @@ const App = () => (
               <Route path="/blog/your-open-source-dependencies-are-someone-elses-weekend-project" element={<OpenSourceDependenciesSupplyChainRisk />} />
               <Route path="/blog/the-white-house-ai-accord-what-it-means-for-startups" element={<WhiteHouseAiAccord />} />
               <Route path="/blog/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you" element={<AicpaSoc2Updates />} />
+              <Route path="/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs" element={<ZeroTrustForStartups />} />
               <Route path="/about" element={<About />} />
 
               <Route path="/testimonials" element={<Testimonials />} />

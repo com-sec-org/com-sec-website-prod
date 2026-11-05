@@ -954,4 +954,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you`,
     image: `${BASE_URL}/images/blog-images/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you.png`,
   },
+  "/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs": {
+    title: "Zero Trust for Startups: What It Actually Means (Without the Enterprise BS)",
+    description:
+      "Zero trust doesn't require a seven-figure budget and a team of 20. Here's what it actually means, what it looks like at a 50-person startup, and the common mistakes to avoid.",
+    canonical: `${BASE_URL}/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs`,
+    image: `${BASE_URL}/images/blog-images/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs.png`,
+  },
 };
