@@ -160,8 +160,8 @@ export default function Refer() {
               </div>
 
               <p className="mt-6 text-base text-white/80">
-                You don't need to sign up. Already working with us? Just connect
-                us directly with your contact.
+                Already working with us? Just connect us directly with your
+                contact.
               </p>
             </div>
 
