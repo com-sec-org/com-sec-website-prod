@@ -287,7 +287,7 @@ export default function TransparencyAccuracyAccountabilityAiHealthcare() {
               <section className="mb-12">
                 <div className={`${hero.gradientClass} rounded-xl p-8 text-white text-center`}>
                   <h3 className="text-2xl font-bold mb-4">
-                    Want to be audit ready in 2025 without last minute chaos
+                    Want to be audit ready without last minute chaos
                   </h3>
                   <p className="text-white/90 text-lg mb-6">
                     We help you map requirements to real controls, set up evidence workflows, and stay ready for
