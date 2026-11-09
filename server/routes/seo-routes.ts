@@ -954,4 +954,18 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you`,
     image: `${BASE_URL}/images/blog-images/aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you.png`,
   },
+  "/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs": {
+    title: "Zero Trust for Startups: What It Actually Means (Without the Enterprise BS)",
+    description:
+      "Zero trust doesn't require a seven-figure budget and a team of 20. Here's what it actually means, what it looks like at a 50-person startup, and the common mistakes to avoid.",
+    canonical: `${BASE_URL}/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs`,
+    image: `${BASE_URL}/images/blog-images/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs.png`,
+  },
+  "/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough": {
+    title: "Business Email Compromise: The $3 Billion Problem No One Talks About Enough",
+    description:
+      "In 2025, the FBI's IC3 received 24,768 BEC complaints with $3.05 billion in reported losses. Here's why BEC works so well, why startups are especially vulnerable, and how to defend against it.",
+    canonical: `${BASE_URL}/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough`,
+    image: `${BASE_URL}/images/blog-images/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough.png`,
+  },
 };

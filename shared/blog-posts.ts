@@ -14,7 +14,7 @@ export const allArticles = [
                 image: "/images/blog-images/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough.png",
                 imageAlt: "Business Email Compromise: The $3 Billion Problem No One Talks About Enough",
                 link: "/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough",
-              },            
+              },
               {
                 id: "zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs",
                 title: "Zero Trust for Startups: What It Actually Means (Without the Enterprise BS)",
@@ -28,7 +28,7 @@ export const allArticles = [
                 image: "/images/blog-images/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs.png",
                 imageAlt: "Zero Trust for Startups: What It Actually Means (Without the Enterprise BS)",
                 link: "/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs",
-              },            
+              },
               {
                 id: "aicpa-soc-2-updates-whats-changing-and-what-it-means-for-you",
                 title: "AICPA SOC 2 Updates: What's Changing and What It Means for You",
