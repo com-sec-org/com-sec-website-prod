@@ -439,6 +439,24 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-10-30T00:00:00Z",
   },
+  "/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs": {
+    title: "Zero Trust for Startups: What It Actually Means (Without the Enterprise BS)",
+    description:
+      "Zero trust doesn't require a seven-figure budget and a team of 20. Here's what it actually means and what it looks like at a 50-person startup.",
+    image: `${BASE_URL}/images/blog-images/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs.png`,
+    url: `${BASE_URL}/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-11-02T00:00:00Z",
+  },
+  "/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough": {
+    title: "Business Email Compromise: The $3 Billion Problem No One Talks About Enough",
+    description:
+      "The numbers keep getting worse, and most companies still aren't treating business email compromise like the threat it is. Here's how to defend against it.",
+    image: `${BASE_URL}/images/blog-images/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough.png`,
+    url: `${BASE_URL}/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-11-09T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────
