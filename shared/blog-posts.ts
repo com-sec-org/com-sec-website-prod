@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "business-email-compromise-the-3-billion-problem-no-one-talks-about-enough",
+                title: "Business Email Compromise: The $3 Billion Problem No One Talks About Enough",
+                excerpt: "Business email compromise is not new. But the numbers keep getting worse, and most companies still aren't treating it like the threat it is.",
+                date: "November 9 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "Threat Landscape",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough.png",
+                imageAlt: "Business Email Compromise: The $3 Billion Problem No One Talks About Enough",
+                link: "/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough",
+              },            
+              {
                 id: "zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs",
                 title: "Zero Trust for Startups: What It Actually Means (Without the Enterprise BS)",
                 excerpt: "Every startup founder thinks zero trust requires a seven-figure budget and a team of 20. It doesn't. Here's what it actually is and what it looks like at a 50-person company.",
