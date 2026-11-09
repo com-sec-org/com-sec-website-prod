@@ -345,6 +345,42 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
       "Know a company that needs cybersecurity or compliance support? Introduce them to Com-Sec and we'll thank you with 10% of their first paid invoice.",
     canonical: `${BASE_URL}/refer`,
   },
+  "/products": {
+    title: "Shield Products | Security & Compliance Tools | Com-Sec",
+    description:
+      "Shield helps teams organize audit evidence, train employees, and track penetration test findings through remediation. Explore the first three Shield products and see what we are building next.",
+    canonical: `${BASE_URL}/products`,
+  },
+  "/products/shield-grc": {
+    title: "Shield GRC: Know What Is Ready for Your Audit | Com-Sec",
+    description:
+      "Manage policies, controls, evidence, and audit tasks in one place. Assign owners, track outstanding requests, and see what needs attention before your next audit.",
+    canonical: `${BASE_URL}/products/shield-grc`,
+  },
+  "/products/shield-learn": {
+    title: "Shield Learn: Security Awareness & Phishing Training | Com-Sec",
+    description:
+      "Run security awareness training and phishing simulations from one place. See who has completed training, where employees get tripped up, and who needs follow-up.",
+    canonical: `${BASE_URL}/products/shield-learn`,
+  },
+  "/products/shield-pentest": {
+    title: "Shield Pentest: Track Findings to a Verified Fix | Com-Sec",
+    description:
+      "Manage penetration tests from scope through retesting. Give testers, security teams, and engineers one place to see what was tested, what was found, and what still needs to be fixed.",
+    canonical: `${BASE_URL}/products/shield-pentest`,
+  },
+  "/products/shield-endpoint": {
+    title: "Shield Endpoint: Manage and Secure Company Devices | Com-Sec",
+    description:
+      "Enroll company devices, see who uses them, and check whether they meet your security requirements. Manage encryption and screen locks, deploy approved apps, and support device offboarding.",
+    canonical: `${BASE_URL}/products/shield-endpoint`,
+  },
+  "/products/shield-ai": {
+    title: "Shield AI: Responsible AI Use for Employees | Com-Sec",
+    description:
+      "Keep an inventory of AI tools, track who owns them, and manage requests for new ones. Document what data each tool can handle, review vendor risks, and revisit approvals as use changes.",
+    canonical: `${BASE_URL}/products/shield-ai`,
+  },
   "/contact": {
     title: "Contact Com-Sec | Get a Free Cybersecurity Consultation",
     description:
