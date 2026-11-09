@@ -15,6 +15,8 @@ import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Partnerships from "./pages/Partnerships";
 import Refer from "./pages/Refer";
+import Products from "./pages/products/Products";
+import ProductPage from "./pages/products/ProductPage";
 
 // Service Pages
 // NEW 5-BUCKET SERVICES
@@ -448,6 +450,12 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/partnerships" element={<Partnerships />} />
               <Route path="/refer" element={<Refer />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/shield-grc" element={<ProductPage slug="shield-grc" />} />
+              <Route path="/products/shield-learn" element={<ProductPage slug="shield-learn" />} />
+              <Route path="/products/shield-pentest" element={<ProductPage slug="shield-pentest" />} />
+              <Route path="/products/shield-endpoint" element={<ProductPage slug="shield-endpoint" />} />
+              <Route path="/products/shield-ai" element={<ProductPage slug="shield-ai" />} />
 
               {/* ── 404 Fixes: high-traffic URLs → correct pages ── */}
               <Route path="/blog/what-is-a-vciso-understanding-the-role-and-how-it-supports-your-cybersecurity-goals" element={<Navigate to="/blog/what-is-vciso-role-cybersecurity" replace />} />

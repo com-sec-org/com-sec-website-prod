@@ -2,11 +2,105 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Shield, Menu, X, ChevronDown } from "lucide-react";
+import {
+  availableProducts,
+  productPath,
+  roadmapProducts,
+} from "@/pages/products/shieldProducts";
+
+// Services menu. An item without `to` has no page yet and renders grayed out
+// (not clickable) until its page is built and the route is added here.
+type ServiceItem = { label: string; to?: string };
+type ServiceGroup = { title: string; to?: string; items: ServiceItem[] };
+
+const serviceGroups: ServiceGroup[] = [
+  {
+    title: "vCISO Leadership",
+    items: [
+      { label: "Fractional Security Leadership", to: "/fractional-security-leadership" },
+      { label: "Risk Management" },
+      { label: "Vendor Risk Management" },
+      { label: "Policies & Procedures" },
+      { label: "Incident Response Planning & Resilience", to: "/incident-response-resilience" },
+      { label: "Security Questionnaires & RFPs" },
+      { label: "Security Awareness & Phishing" },
+    ],
+  },
+  {
+    title: "Managed Security, Compliance & IT",
+    to: "/managed-security-services",
+    items: [
+      { label: "Security Operations & Monitoring", to: "/soc-support-monitoring-services" },
+      { label: "Ongoing Compliance Management", to: "/compliance-privacy-grc" },
+      { label: "Vulnerability & Patch Management" },
+      { label: "Endpoint & Device Management" },
+      { label: "Identity & Access Management" },
+      { label: "Employee Onboarding & Offboarding" },
+      { label: "SaaS & Asset Management" },
+      { label: "IT Support" },
+    ],
+  },
+  {
+    title: "Audit Readiness & Certification",
+    to: "/compliance-audit-readiness",
+    items: [
+      { label: "SOC 2 Type I & Type II", to: "/soc2-readiness" },
+      { label: "ISO 27001", to: "/iso27001" },
+      { label: "ISO 42001" },
+      { label: "HIPAA", to: "/hipaa" },
+      { label: "HITRUST", to: "/hitrust" },
+      { label: "PCI DSS", to: "/pci-dss" },
+      { label: "GDPR", to: "/gdpr" },
+      { label: "NIST", to: "/nist" },
+      { label: "CMMC", to: "/cmmc" },
+    ],
+  },
+  {
+    title: "Penetration Testing & Security Assessments",
+    to: "/penetration-testing-services",
+    items: [
+      { label: "Web Application Penetration Testing", to: "/penetration-testing-services" },
+      { label: "API Penetration Testing", to: "/penetration-testing-services" },
+      { label: "AI Application Penetration Testing" },
+      { label: "Cloud Security Assessments", to: "/assessments-audits-offensive-security" },
+      { label: "Vulnerability Assessments", to: "/assessments-audits-offensive-security" },
+      { label: "Retesting & Remediation Verification" },
+    ],
+  },
+  {
+    title: "AI Governance",
+    items: [
+      { label: "AI Tool & Model Inventory" },
+      { label: "AI Acceptable Use Policies" },
+      { label: "AI Vendor Reviews" },
+      { label: "AI Risk & Impact Assessments" },
+      { label: "AI Tool & Use Case Approvals" },
+    ],
+  },
+  {
+    title: "CTO, Engineering & DevOps Support",
+    items: [
+      { label: "Fractional CTO & Technology Roadmaps" },
+      { label: "Cloud Engineering & Security Hardening" },
+      { label: "DevOps & Infrastructure Automation" },
+      { label: "DevSecOps & CI/CD Security" },
+      { label: "Application & Infrastructure Hardening" },
+      { label: "Audit-Ready Infrastructure" },
+      { label: "Hands-On Security Remediation" },
+      { label: "Technical Incident Response" },
+    ],
+  },
+];
+
+// A section with no page of its own and no linked items is grayed out entirely.
+const isGroupAvailable = (group: ServiceGroup) =>
+  Boolean(group.to) || group.items.some((item) => item.to);
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [isAboutMenuOpen, setIsAboutMenuOpen] = useState(false);
+  const [mobileServiceGroup, setMobileServiceGroup] = useState<string | null>(null);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -16,6 +110,7 @@ export function Navigation() {
     if (!isMenuOpen) {
       setExpandedSection(null);
       setIsAboutMenuOpen(false);
+      setMobileServiceGroup(null);
     }
   }, [isMenuOpen]);
 
@@ -34,7 +129,8 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {/* Services Dropdown */}
+            {/* Services Dropdown: section list with a flyout per section
+                (same pattern as About Us under Resources). */}
             <div className="relative group">
               <button className="flex items-center text-foreground hover:text-accent transition-colors">
                 Services
@@ -42,61 +138,126 @@ export function Navigation() {
               </button>
               <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
-                  {/* NEW 5-BUCKET SERVICES */}
-                  <Link
-                    to="/fractional-security-leadership"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Fractional Security Leadership
-                  </Link>
-                  <Link
-                    to="/managed-security-services"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Managed Security Services (MSSP)
-                  </Link>
-                  <Link
-                    to="/compliance-privacy-grc"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Compliance, Privacy & GRC
-                  </Link>
-                  <Link
-                    to="/assessments-audits-offensive-security"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Assessments, Audits & Offensive Security
-                  </Link>
-                  <Link
-                    to="/incident-response-resilience"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Incident Response & Resilience
-                  </Link>
+                  {serviceGroups.map((group) =>
+                    isGroupAvailable(group) ? (
+                      <div key={group.title} className="relative group/svc">
+                        {group.to ? (
+                          <Link
+                            to={group.to}
+                            className="w-full flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent group-hover/svc:bg-accent/10 group-hover/svc:text-accent transition-colors"
+                          >
+                            {group.title}
+                            <ChevronDown className="h-4 w-4 -rotate-90 shrink-0" />
+                          </Link>
+                        ) : (
+                          <button
+                            type="button"
+                            className="w-full flex items-center justify-between px-4 py-2 text-left text-sm text-gray-700 hover:bg-accent/10 hover:text-accent group-hover/svc:bg-accent/10 group-hover/svc:text-accent transition-colors"
+                          >
+                            {group.title}
+                            <ChevronDown className="h-4 w-4 -rotate-90 shrink-0" />
+                          </button>
+                        )}
+                        {/* pl-1 (not margin) keeps the hover area continuous into the flyout */}
+                        <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/svc:opacity-100 group-hover/svc:visible group-focus-within/svc:opacity-100 group-focus-within/svc:visible transition-all duration-200">
+                          <div className="w-72 rounded-lg border bg-white shadow-xl py-2">
+                            {group.items.map((item) =>
+                              item.to ? (
+                                <Link
+                                  key={item.label}
+                                  to={item.to}
+                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                                >
+                                  {item.label}
+                                </Link>
+                              ) : (
+                                <span
+                                  key={item.label}
+                                  aria-disabled="true"
+                                  title="Coming soon"
+                                  className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
+                                >
+                                  {item.label}
+                                </span>
+                              ),
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <span
+                        key={group.title}
+                        aria-disabled="true"
+                        title="Coming soon"
+                        className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
+                      >
+                        {group.title}
+                      </span>
+                    ),
+                  )}
+                </div>
+              </div>
+            </div>
 
+            {/* Products Dropdown: live Shield products, plus a roadmap flyout */}
+            <div className="relative group">
+              <Link
+                to="/products"
+                className={`flex items-center text-foreground hover:text-accent transition-colors ${location.pathname.startsWith("/products") ? "text-accent" : ""}`}
+              >
+                Products
+                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
+              </Link>
+              <div className="absolute top-full left-0 mt-2 w-60 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-2">
+                  {availableProducts.map((p) => (
+                    <Link
+                      key={p.slug}
+                      to={productPath(p.slug)}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                    >
+                      {p.name}
+                    </Link>
+                  ))}
+                  <div className="relative group/roadmap">
+                    <button
+                      type="button"
+                      className="w-full flex items-center justify-between px-4 py-2 text-left text-sm text-gray-700 hover:bg-accent/10 hover:text-accent group-hover/roadmap:bg-accent/10 group-hover/roadmap:text-accent transition-colors"
+                    >
+                      On the Roadmap
+                      <ChevronDown className="h-4 w-4 -rotate-90 shrink-0" />
+                    </button>
+                    <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/roadmap:opacity-100 group-hover/roadmap:visible group-focus-within/roadmap:opacity-100 group-focus-within/roadmap:visible transition-all duration-200">
+                      <div className="w-56 rounded-lg border bg-white shadow-xl py-2">
+                        {roadmapProducts.map((p) =>
+                          p.page ? (
+                            <Link
+                              key={p.slug}
+                              to={productPath(p.slug)}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                            >
+                              {p.name}
+                            </Link>
+                          ) : (
+                            <span
+                              key={p.slug}
+                              aria-disabled="true"
+                              title="Coming soon"
+                              className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
+                            >
+                              {p.name}
+                            </span>
+                          ),
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="my-2 border-t" />
                   <Link
-                    to="/compliance-audit-readiness"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                    to="/products"
+                    className="block px-4 py-2 text-sm font-medium text-gray-900 hover:bg-accent/10 hover:text-accent transition-colors"
                   >
-                    Compliance and Audit Readiness
-                  </Link>
-                  <Link
-                    to="/penetration-testing-services"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    Penetration Testing
-                  </Link>
-                  <Link
-                    to="/soc-support-monitoring-services"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    SOC Support
-                  </Link>
-                  <Link
-                    to="/soc2-readiness"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    SOC 2 Readiness
+                    All Shield Products
                   </Link>
                 </div>
               </div>
@@ -158,66 +319,6 @@ export function Navigation() {
               </div>
             </div>
 
-            {/* Frameworks Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center text-foreground hover:text-accent transition-colors">
-                Frameworks
-                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="py-2">
-                  <Link
-                    to="/soc2"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    SOC 2
-                  </Link>
-                  <Link
-                    to="/iso27001"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    ISO 27001
-                  </Link>
-                  <Link
-                    to="/hitrust"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    HITRUST
-                  </Link>
-                  <Link
-                    to="/hipaa"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    HIPAA
-                  </Link>
-                  <Link
-                    to="/pci-dss"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    PCI-DSS
-                  </Link>
-                  <Link
-                    to="/nist"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    NIST
-                  </Link>
-                  <Link
-                    to="/gdpr"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    GDPR
-                  </Link>
-                  <Link
-                    to="/cmmc"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    CMMC
-                  </Link>
-                </div>
-              </div>
-            </div>
-
             <Link
               to="/contact"
               className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform ${
@@ -275,83 +376,103 @@ export function Navigation() {
                 {expandedSection === "services" && (
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
-                      <Link
-                        to="/compliance-audit-readiness"
-                        className="block px-3 py-2 text-sm text-red-600 hover:text-green-600 hover:bg-white rounded transition-colors font-semibold"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Compliance and Audit Readiness
-                      </Link>
-                      <Link
-                        to="/penetration-testing-services"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Penetration Testing
-                      </Link>
-                      <Link
-                        to="/it-support"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        IT Support
-                      </Link>
-                      <Link
-                        to="/soc-support-monitoring-services"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        SOC Support
-                      </Link>
-                      <Link
-                        to="/soc2-readiness"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        SOC 2 Readiness
-                      </Link>
-                      <Link
-                        to="/security-training"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Security Training
-                      </Link>
-                      {/* <Link
-                        to="/risk-management"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Risk Management
-                      </Link> */}
-                      <Link
-                        to="/certifications-audits"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Certifications & Audits
-                      </Link>
-                      <Link
-                        to="/grc-platforms"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        GRC Platforms
-                      </Link>
-                      <Link
-                        to="/mssp-services"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        MSSP Services
-                      </Link>
-                      <Link
-                        to="/vciso-services"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        vCISO Services
-                      </Link>
+                      {serviceGroups.map((group) =>
+                        !isGroupAvailable(group) ? (
+                          <span
+                            key={group.title}
+                            aria-disabled="true"
+                            className="block px-3 py-2 text-sm text-gray-400 cursor-not-allowed"
+                          >
+                            {group.title}
+                          </span>
+                        ) : (
+                        <div key={group.title}>
+                          <button
+                            type="button"
+                            className="w-full px-3 py-2 text-left flex items-center justify-between text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                            onClick={() =>
+                              setMobileServiceGroup(
+                                mobileServiceGroup === group.title ? null : group.title,
+                              )
+                            }
+                          >
+                            {group.title}
+                            <ChevronDown
+                              className={`h-4 w-4 shrink-0 transition-transform ${mobileServiceGroup === group.title ? "rotate-180" : "-rotate-90"}`}
+                            />
+                          </button>
+                          {mobileServiceGroup === group.title && (
+                          <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
+                            {group.to && (
+                              <Link
+                                to={group.to}
+                                className="block px-3 py-2 text-sm font-medium text-gray-900 hover:text-accent hover:bg-white rounded transition-colors"
+                                onClick={() => setIsMenuOpen(false)}
+                              >
+                                Overview
+                              </Link>
+                            )}
+                            {group.items.map((item) =>
+                              item.to ? (
+                                <Link
+                                  key={item.label}
+                                  to={item.to}
+                                  className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                                  onClick={() => setIsMenuOpen(false)}
+                                >
+                                  {item.label}
+                                </Link>
+                              ) : (
+                                <span
+                                  key={item.label}
+                                  aria-disabled="true"
+                                  className="block px-3 py-2 text-sm text-gray-400 cursor-not-allowed"
+                                >
+                                  {item.label}
+                                </span>
+                              ),
+                            )}
+                          </div>
+                          )}
+                        </div>
+                        ),
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Products Section */}
+              <div className="border-b border-gray-100">
+                <button
+                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  onClick={() => setExpandedSection(expandedSection === "products" ? null : "products")}
+                >
+                  <span className="text-sm font-medium text-gray-900">Products</span>
+                  <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "products" || expandedSection === "products-roadmap" ? "rotate-180" : ""}`} />
+                </button>
+                {(expandedSection === "products" || expandedSection === "products-roadmap") && (
+                  <div className="px-4 pb-3 bg-gray-50">
+                    <div className="flex flex-col space-y-1">
+                      <Link to="/products" className="block px-3 py-2 text-sm font-medium text-gray-900 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>All Shield Products</Link>
+                      {availableProducts.map((p) => (
+                        <Link key={p.slug} to={productPath(p.slug)} className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>{p.name}</Link>
+                      ))}
+                      <div>
+                        <button type="button" className="w-full px-3 py-2 text-left flex items-center justify-between text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setExpandedSection(expandedSection === "products-roadmap" ? "products" : "products-roadmap")}>
+                          On the Roadmap
+                          <ChevronDown className={`h-4 w-4 transition-transform ${expandedSection === "products-roadmap" ? "rotate-180" : "-rotate-90"}`} />
+                        </button>
+                        {expandedSection === "products-roadmap" && <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
+                          {roadmapProducts.map((p) =>
+                            p.page ? (
+                              <Link key={p.slug} to={productPath(p.slug)} className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>{p.name}</Link>
+                            ) : (
+                              <span key={p.slug} aria-disabled="true" className="block px-3 py-2 text-sm text-gray-400 cursor-not-allowed">{p.name}</span>
+                            ),
+                          )}
+                        </div>}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -411,87 +532,6 @@ export function Navigation() {
                           {category}
                         </Link>
                       ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Frameworks Section */}
-              <div className="border-b border-gray-100">
-                <button
-                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
-                  onClick={() =>
-                    setExpandedSection(
-                      expandedSection === "frameworks" ? null : "frameworks",
-                    )
-                  }
-                >
-                  <span className="text-sm font-medium text-gray-900">
-                    Frameworks
-                  </span>
-                  <ChevronDown
-                    className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "frameworks" ? "rotate-180" : ""}`}
-                  />
-                </button>
-                {expandedSection === "frameworks" && (
-                  <div className="px-4 pb-3 bg-gray-50">
-                    <div className="flex flex-col space-y-1">
-                      <Link
-                        to="/soc2"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        SOC 2
-                      </Link>
-                      <Link
-                        to="/iso27001"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        ISO 27001
-                      </Link>
-                      <Link
-                        to="/hitrust"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        HITRUST
-                      </Link>
-                      <Link
-                        to="/hipaa"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        HIPAA
-                      </Link>
-                      <Link
-                        to="/pci-dss"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        PCI-DSS
-                      </Link>
-                      <Link
-                        to="/nist"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        NIST
-                      </Link>
-                      <Link
-                        to="/gdpr"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        GDPR
-                      </Link>
-                      <Link
-                        to="/cmmc"
-                        className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        CMMC
-                      </Link>
                     </div>
                   </div>
                 )}
