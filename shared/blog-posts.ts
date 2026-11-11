@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft",
+                title: "The Binance Hack: What Businesses Can Learn From a $6 Billion Theft",
+                excerpt: "A convincing recruiter, a software download, and one employee's computer. Here's what the Binance theft teaches every business about access, approvals, and AI tooling.",
+                date: "November 12 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "Threat Landscape",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft.png",
+                imageAlt: "The Binance Hack: What Businesses Can Learn From a $6 Billion Theft",
+                link: "/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft",
+              },            
+              {
                 id: "business-email-compromise-the-3-billion-problem-no-one-talks-about-enough",
                 title: "Business Email Compromise: The $3 Billion Problem No One Talks About Enough",
                 excerpt: "Business email compromise is not new. But the numbers keep getting worse, and most companies still aren't treating it like the threat it is.",

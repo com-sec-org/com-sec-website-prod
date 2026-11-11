@@ -161,6 +161,7 @@ import WhiteHouseAiAccord from "./pages/resources/blog/WhiteHouseAiAccord";
 import AicpaSoc2Updates from "./pages/resources/blog/AicpaSoc2Updates";
 import ZeroTrustForStartups from "./pages/resources/blog/ZeroTrustForStartups";
 import BusinessEmailCompromise from "./pages/resources/blog/BusinessEmailCompromise";
+import BinanceHack from "./pages/resources/blog/BinanceHack";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -445,6 +446,7 @@ const App = () => (
               <Route path="/blog/zero-trust-for-startups" element={<ZeroTrustForStartups />} />
               <Route path="/blog/zero-trust-for-startups-what-it-actually-means-without-the-enterprise-bs" element={<ZeroTrustForStartups />} />
               <Route path="/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough" element={<BusinessEmailCompromise />} />
+              <Route path="/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft" element={<BinanceHack />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/contact" element={<Contact />} />
