@@ -1004,4 +1004,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough`,
     image: `${BASE_URL}/images/blog-images/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough.png`,
   },
+  "/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft": {
+    title: "The Binance Hack: What Businesses Can Learn From a $6 Billion Theft",
+    description:
+      "The FBI attributed a $6 billion Binance theft to North Korea's TraderTraitor group. Here's what any business can learn about access, approvals, and AI tools.",
+    canonical: `${BASE_URL}/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft`,
+    image: `${BASE_URL}/images/blog-images/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft.png`,
+  },
 };
