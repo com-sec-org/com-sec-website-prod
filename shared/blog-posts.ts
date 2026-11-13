@@ -14,7 +14,7 @@ export const allArticles = [
                 image: "/images/blog-images/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft.png",
                 imageAlt: "The Binance Hack: What Businesses Can Learn From a $6 Billion Theft",
                 link: "/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft",
-              },            
+              },
               {
                 id: "business-email-compromise-the-3-billion-problem-no-one-talks-about-enough",
                 title: "Business Email Compromise: The $3 Billion Problem No One Talks About Enough",
