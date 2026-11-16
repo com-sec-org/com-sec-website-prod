@@ -238,12 +238,6 @@ export default function CaseStudies() {
             ))}
           </div>
 
-          {selectedStudy && (
-            <Link to={`/case-studies?category=${encodeURIComponent(category)}`} className="mt-8 inline-flex items-center text-sm font-semibold text-accent hover:text-primary">
-              <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category} case studies
-            </Link>
-          )}
-
           {selectedStudy ? (
             <>
             {selectedStudy.id === "caryhealth" && (
@@ -597,6 +591,10 @@ export default function CaseStudies() {
             )}
 
             {caseStudyDetails[selectedStudy.id] && <CaseStudyArticle study={caseStudyDetails[selectedStudy.id]} />}
+
+            <Link to={`/case-studies?category=${encodeURIComponent(category)}`} className="mt-10 inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-primary shadow-sm transition-colors hover:border-accent hover:text-accent">
+              <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category} case studies
+            </Link>
             </>
           ) : (
             <div className="mt-10">
