@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
+import { CaseStudyArticle } from "@/components/CaseStudyArticle";
+import { caseStudyDetails } from "@/data/caseStudyDetails";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 
@@ -30,6 +32,13 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
       summary: "How Vheda Health turned HITRUST readiness into an embedded security and IT partnership.",
       meta: "Virtual Care · HITRUST · Managed IT",
     },
+    {
+      id: "tjm-labs",
+      client: "TJM Labs",
+      title: "From Single-Entity Type I to Combined Type II After an Acquisition",
+      summary: "How TJM Labs went from a first SOC 2 Type I to a combined Type II audit after acquiring Pharmesol, while headcount roughly tripled.",
+      meta: "Pharmacy automation · SOC 2 · Penetration testing",
+    },
   ],
   InsurTech: [
     {
@@ -57,6 +66,34 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
       summary: "ConnectlyAI needed to prepare for ISO/IEC 27001:2022 without shifting the burden of running a certification program onto its engineering and product teams.",
       meta: "AI / SaaS · ISO/IEC 27001:2022 · Vanta",
     },
+    {
+      id: "germain-software",
+      client: "Germain Software",
+      title: "SOC 2 Maintained Year on Year, HITRUST r2 Certified on the First Attempt",
+      summary: "When a major healthcare prospect made HITRUST r2 a condition of the deal, Germain Software got certified first time on the same control environment as its SOC 2.",
+      meta: "Digital experience software · SOC 2 · HITRUST r2",
+    },
+    {
+      id: "cicerai",
+      client: "Cicerai",
+      title: "SOC 2 in Three Months, and an ISO 27001 Program Building on the Same Controls",
+      summary: "Cicerai reached SOC 2 roughly three months after engaging Com-Sec, then started ISO 27001 from the same control foundation.",
+      meta: "Legal tech · SOC 2 · ISO 27001",
+    },
+    {
+      id: "loops-ai",
+      client: "Loops AI",
+      title: "Building an ISO 42001 Program Before AI Governance Becomes a Customer Fire Drill",
+      summary: "Loops AI started building an accountable AI management system before a customer, regulator, or board forced the conversation.",
+      meta: "AI / SaaS · ISO 42001",
+    },
+    {
+      id: "busplanner",
+      client: "BusPlanner",
+      title: "Coordinating SOC 2, ISO 27001, and Internal Audit Work in One Program",
+      summary: "BusPlanner brought policy review, ISO 27001 alignment, internal audit, and SOC 2 Type II into one coordinated program.",
+      meta: "Transportation software · SOC 2 · ISO 27001",
+    },
   ],
   "Global Mobility": [
     {
@@ -67,10 +104,91 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
       meta: "Global Mobility · ISO 27001 · Penetration testing",
     },
   ],
-  FinTech: [],
-  Energy: [],
-  EdTech: [],
-  Services: [],
+  FinTech: [
+    {
+      id: "honk",
+      client: "Honk",
+      title: "From Ad Hoc IT to Audit Ready: How Honk Built a Year Round Security Program",
+      summary: "Honk received its SOC 2 Type 2 report six months after kickoff, while Com-Sec took over the IT operations behind the controls.",
+      meta: "Mobility payments · SOC 2 Type 2 · Managed IT",
+    },
+    {
+      id: "castellum-ai",
+      client: "Castellum.AI",
+      title: "SOC 2 Type 2 Kept Current Year After Year, With Penetration Testing Built Into Every Cycle",
+      summary: "Castellum.AI sells into regulated financial institutions, so its SOC 2 Type 2 has to hold continuously, not just at audit time.",
+      meta: "Compliance tech · SOC 2 Type 2 · Penetration testing",
+    },
+    {
+      id: "powder",
+      client: "Powder",
+      title: "SOC 2 Was the Requirement. A Working Security and IT Program Was the Result.",
+      summary: "Powder connected its SOC 2 program to business continuity, disaster recovery, and day-to-day IT across the employee lifecycle.",
+      meta: "FinTech · SOC 2 · Managed IT",
+    },
+  ],
+  Energy: [
+    {
+      id: "satoshi-energy",
+      client: "Satoshi Energy",
+      title: "From SOC 2 Readiness to an Ongoing Security and Audit Readiness Program",
+      summary: "Satoshi Energy needed a security and compliance program that keeps operating between audits, not just evidence for one.",
+      meta: "Energy technology · SOC 2 Type II · Trust Center",
+    },
+    {
+      id: "trace-electricity",
+      client: "Trace Electricity",
+      title: "Moving ISO 27001 From Implementation to Internal Audit",
+      summary: "Trace Electricity set out to take ISO 27001 from implementation through internal audit and into certification prep within one year.",
+      meta: "Energy technology · ISO 27001",
+    },
+  ],
+  EdTech: [
+    {
+      id: "gptzero",
+      client: "GPTZero",
+      title: "Three Years, Three SOC 2 Cycles, and a Security Function That Scaled With the Company",
+      summary: "One of Com-Sec's earliest clients, GPTZero has kept SOC 2 and institutional security reviews running while its team roughly tripled.",
+      meta: "AI content detection · SOC 2 · Penetration testing",
+    },
+    {
+      id: "mentorpro",
+      client: "MentorPRO",
+      title: "From IT Support to SOC 2, With a Security Team on Call for Every Customer Review",
+      summary: "What began as IT and policy support became MentorPRO's SOC 2 program and its answer to every institutional security review.",
+      meta: "Mentoring software · SOC 2 · Customer assurance",
+    },
+  ],
+  Services: [
+    {
+      id: "quester",
+      client: "Quester",
+      title: "SOC 2 Type 2 in Six Months, Privacy Frameworks Alongside It, and ISO 27001 Underway",
+      summary: "Quester reached SOC 2 Type 2 in about six months on a control environment that also carries its privacy obligations and now ISO 27001.",
+      meta: "Brand consulting · SOC 2 Type 2 · ISO 27001",
+    },
+    {
+      id: "midas-recovery",
+      client: "Midas Recovery Services",
+      title: "Two Consecutive HITRUST e1 Certifications, Delivered Inside a Focused Engagement Window Each Year",
+      summary: "Midas Recovery approached HITRUST for the first time in May 2025 and was certified that August, then again in August 2026.",
+      meta: "Recovery services · HITRUST e1 · Penetration testing",
+    },
+    {
+      id: "farlinium",
+      client: "Farlinium",
+      title: "The Security Team Behind the Customer Review",
+      summary: "Farlinium built a standing security program to answer demanding enterprise reviews while running a distributed workforce.",
+      meta: "Professional services · SOC 2 · Managed IT",
+    },
+    {
+      id: "vgv",
+      client: "VGV",
+      title: "Strengthening Resilience While Maintaining SOC 2",
+      summary: "VGV kept SOC 2 current while advancing business continuity, disaster recovery, incident response, and day-to-day IT.",
+      meta: "Professional services · SOC 2 · Resilience",
+    },
+  ],
 };
 
 export default function CaseStudies() {
@@ -477,6 +595,8 @@ export default function CaseStudies() {
               </div>
             </article>
             )}
+
+            {caseStudyDetails[selectedStudy.id] && <CaseStudyArticle study={caseStudyDetails[selectedStudy.id]} />}
             </>
           ) : (
             <div className="mt-10">
