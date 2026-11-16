@@ -223,26 +223,27 @@ export default function CaseStudies() {
 
       <section className="py-10 sm:py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex max-w-full flex-wrap gap-1 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-sm" role="tablist" aria-label="Case study categories">
-            {categories.map((item) => (
-              <button
-                key={item}
-                type="button"
-                role="tab"
-                aria-selected={category === item}
-                onClick={() => selectCategory(item)}
-                className={`rounded-xl px-4 py-2.5 text-sm font-semibold transition-all ${category === item ? "bg-primary text-white shadow-sm" : "text-slate-600 hover:bg-slate-100 hover:text-primary"}`}
-              >
-                {item}
-              </button>
-            ))}
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="inline-flex max-w-full flex-wrap gap-1 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-sm" role="tablist" aria-label="Case study categories">
+              {categories.map((item) => (
+                <button
+                  key={item}
+                  type="button"
+                  role="tab"
+                  aria-selected={category === item}
+                  onClick={() => selectCategory(item)}
+                  className={`rounded-xl px-4 py-2.5 text-sm font-semibold transition-all ${category === item ? "bg-primary text-white shadow-sm" : "text-slate-600 hover:bg-slate-100 hover:text-primary"}`}
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
+            {selectedStudy && (
+              <Link to={`/case-studies?category=${encodeURIComponent(category)}`} className="inline-flex shrink-0 items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-primary shadow-sm transition-colors hover:border-accent hover:text-accent">
+                <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category}
+              </Link>
+            )}
           </div>
-
-          {selectedStudy && (
-            <Link to={`/case-studies?category=${encodeURIComponent(category)}`} className="mt-8 inline-flex items-center text-sm font-semibold text-accent hover:text-primary">
-              <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category} case studies
-            </Link>
-          )}
 
           {selectedStudy ? (
             <>
@@ -597,6 +598,10 @@ export default function CaseStudies() {
             )}
 
             {caseStudyDetails[selectedStudy.id] && <CaseStudyArticle study={caseStudyDetails[selectedStudy.id]} />}
+
+            <Link to={`/case-studies?category=${encodeURIComponent(category)}`} className="mt-10 inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-primary shadow-sm transition-colors hover:border-accent hover:text-accent">
+              <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category} case studies
+            </Link>
             </>
           ) : (
             <div className="mt-10">
