@@ -453,8 +453,8 @@ export default function ShieldGrc() {
               <img
                 src="/images/products/shield-grc-dashboard.webp"
                 alt="Shield GRC dashboard on a laptop showing framework readiness, automated test results, policy approvals, risk overview, device monitoring, tasks, and integration status"
-                width={1600}
-                height={900}
+                width={2400}
+                height={1350}
                 fetchPriority="high"
                 className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)] [mask-image:linear-gradient(to_right,transparent,black_18%),linear-gradient(to_left,transparent,black_12%),linear-gradient(to_bottom,transparent,black_14%),linear-gradient(to_top,transparent,black_16%)] [mask-composite:intersect] [-webkit-mask-composite:source-in]"
               />
