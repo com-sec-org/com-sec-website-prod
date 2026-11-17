@@ -517,9 +517,10 @@ export default function ShieldGrc() {
               <img
                 src="/images/products/shield-grc-tests.webp"
                 alt="Shield GRC Tests page showing 20 of 72 connected tests passing, test results by integration across AWS, GitHub, Google Workspace, Slack, device agents, and Pentest, and a list of critical checks with status and framework tags"
-                width={1600}
-                height={900}
+                width={1672}
+                height={941}
                 loading="lazy"
+                decoding="async"
                 className="w-full rounded-2xl border border-white/10 shadow-2xl shadow-orange-500/20"
               />
             </div>
