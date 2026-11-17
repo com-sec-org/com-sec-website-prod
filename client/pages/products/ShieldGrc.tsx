@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import {
@@ -6,22 +7,28 @@ import {
   ArrowRight,
   BadgeCheck,
   Building2,
+  CalendarCheck,
   CheckCircle2,
+  ChevronRight,
   ClipboardCheck,
+  Cloud,
   Code2,
+  Eye,
   FileSearch,
   FileText,
+  FileWarning,
   FolderOpen,
-  Layers,
   ListChecks,
   ListTodo,
   Milestone,
   Plug,
   Rocket,
   RefreshCw,
+  Search,
   Settings,
   ShieldCheck,
   Sparkles,
+  Target,
   Truck,
   UserCheck,
   Users,
@@ -42,144 +49,34 @@ const SECONDARY_CTA =
   "inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-accent/60 sm:text-base sm:px-8";
 const DEMO_HREF = "/contact";
 
-const whyCards: { icon: LucideIcon; title: string; body: string }[] = [
+const valueThemes: { icon: LucideIcon; title: string; body: string; signals: string[] }[] = [
   {
-    icon: Layers,
-    title: "Centralized Compliance Management",
-    body: "Manage frameworks, controls, policies, evidence, and audit requirements without switching between multiple tools.",
+    icon: Eye,
+    title: "See Your Compliance Status Clearly",
+    body: "Get a centralized view of your frameworks, controls, policies, security tests, and outstanding requirements.",
+    signals: ["Framework readiness", "Test results", "Policy approvals"],
   },
   {
-    icon: Activity,
-    title: "Automated Security Monitoring",
-    body: "Connect supported cloud platforms and business applications to monitor security configurations, identify failing checks, and track remediation.",
+    icon: Target,
+    title: "Turn Findings Into Action",
+    body: "Identify failed security checks, missing evidence, and overdue tasks so your team can prioritize remediation.",
+    signals: ["Failed checks", "Missing evidence", "Overdue tasks"],
   },
   {
-    icon: ClipboardCheck,
-    title: "Clear Audit Readiness",
-    body: "Understand which controls are ready, what evidence is missing, and which activities need attention before an audit.",
-  },
-  {
-    icon: Users,
-    title: "Built for Collaboration",
-    body: "Assign tasks, track ownership, manage approvals, and coordinate compliance activities across teams.",
+    icon: CalendarCheck,
+    title: "Stay Organized for Your Next Audit",
+    body: "Keep compliance documentation, control requirements, and audit preparation activities connected in one place.",
+    signals: ["Controls", "Documentation", "Audit preparation"],
   },
 ];
 
-const features: {
-  icon: LucideIcon;
-  title: string;
-  intro: string;
-  bullets: string[];
-}[] = [
-  {
-    icon: ListChecks,
-    title: "Compliance Frameworks & Controls",
-    intro: "Organize security and compliance requirements in a centralized workspace.",
-    bullets: [
-      "View applicable frameworks and requirements.",
-      "Track implementation of security controls.",
-      "Map controls to relevant policies and evidence.",
-      "Identify gaps and monitor remediation progress.",
-      "Track readiness across applicable compliance requirements.",
-    ],
-  },
-  {
-    icon: FileText,
-    title: "Policy Management",
-    intro: "Create, review, approve, and maintain organizational security policies.",
-    bullets: [
-      "Centralized policy library.",
-      "Policy approval workflows.",
-      "Version history and renewal tracking.",
-      "Assigned policy approvers.",
-      "Employee policy acknowledgments.",
-      "Visibility into outstanding policy actions.",
-    ],
-  },
-  {
-    icon: FolderOpen,
-    title: "Evidence & Document Management",
-    intro: "Keep compliance documentation organized and accessible.",
-    bullets: [
-      "Centralized evidence library.",
-      "Upload supporting documentation.",
-      "Associate evidence with compliance requirements.",
-      "Track missing evidence.",
-      "Organize documentation for audit preparation.",
-    ],
-  },
-  {
-    icon: Plug,
-    title: "Automated Monitoring & Integrations",
-    intro: "Monitor security configurations across connected systems.",
-    bullets: [
-      "AWS",
-      "GitHub",
-      "Google Workspace",
-      "Microsoft Entra ID / Microsoft 365",
-      "Endpoint and device monitoring",
-    ],
-  },
-  {
-    icon: AlertTriangle,
-    title: "Risk Management",
-    intro: "Identify, assess, and track security risks.",
-    bullets: [
-      "Centralized risk register.",
-      "Risk severity and ownership.",
-      "Risk assessment and treatment tracking.",
-      "Visibility into remediation activities.",
-      "Risk reporting and oversight.",
-    ],
-  },
-  {
-    icon: Truck,
-    title: "Vendor Risk Management",
-    intro: "Manage third-party security and compliance activities.",
-    bullets: [
-      "Vendor inventory.",
-      "Vendor risk classification.",
-      "Security assessment tracking.",
-      "Supporting documentation.",
-      "Review and remediation follow-ups.",
-    ],
-  },
-  {
-    icon: UserCheck,
-    title: "Personnel & Device Compliance",
-    intro: "Track employee-related security requirements.",
-    bullets: [
-      "Employee onboarding and compliance tasks.",
-      "Policy acknowledgment tracking.",
-      "Personnel security requirements.",
-      "Device inventory and monitoring.",
-      "Visibility into outstanding compliance activities.",
-    ],
-  },
-  {
-    icon: ListTodo,
-    title: "Tasks & Remediation",
-    intro: "Turn security and compliance gaps into actionable work.",
-    bullets: [
-      "Assign tasks to team members.",
-      "Track overdue and upcoming tasks.",
-      "Upload supporting evidence.",
-      "Add comments and coordinate remediation.",
-      "Monitor task completion.",
-    ],
-  },
-  {
-    icon: FileSearch,
-    title: "Audit Management",
-    intro: "Support organizations preparing for independent security and compliance audits.",
-    bullets: [
-      "Organize audit-related activities.",
-      "Track control readiness.",
-      "Prepare supporting evidence.",
-      "Identify outstanding gaps.",
-      "Coordinate internal audit preparation.",
-    ],
-  },
+const expertiseAreas: { icon: LucideIcon; title: string }[] = [
+  { icon: ShieldCheck, title: "SOC 2 readiness and audit preparation" },
+  { icon: ClipboardCheck, title: "ISO 27001 compliance and internal audits" },
+  { icon: AlertTriangle, title: "Security risk assessments" },
+  { icon: Truck, title: "Vendor security reviews" },
+  { icon: FileText, title: "Security policies and governance" },
+  { icon: Cloud, title: "Cloud security and continuous monitoring" },
 ];
 
 const monitoringCapabilities: { icon: LucideIcon; title: string }[] = [
@@ -191,14 +88,151 @@ const monitoringCapabilities: { icon: LucideIcon; title: string }[] = [
   { icon: RefreshCw, title: "Continuous compliance visibility" },
 ];
 
-const dashboardAreas: { title: string; detail: string }[] = [
-  { title: "Framework readiness", detail: "Controls and evidence progress for each framework." },
-  { title: "Automated test results", detail: "Passing checks, items needing remediation, errors, and tests with no recent results." },
-  { title: "Policy approval status", detail: "Policies awaiting approval and other outstanding policy actions." },
-  { title: "Risk overview", detail: "Inherent risk broken down by severity level." },
-  { title: "Device monitoring", detail: "Reporting status across monitored computers." },
-  { title: "Open and overdue tasks", detail: "Overdue, due-soon, upcoming, and completed tasks." },
-  { title: "Integration connectivity", detail: "How many connected integrations are active and whether any report errors." },
+const connectorNames = [
+  "AWS",
+  "GitHub",
+  "Google Workspace",
+  "Microsoft Entra ID / Microsoft 365",
+  "Endpoint and device monitoring",
+];
+
+const remediationFlow: { title: string; body: string }[] = [
+  { title: "Monitor", body: "Automated checks run against supported connected systems." },
+  { title: "Identify", body: "Failed checks and security gaps appear in your Tests view." },
+  { title: "Assign", body: "Assign tasks to the people responsible for the work." },
+  { title: "Remediate", body: "Your team makes the fix and adds evidence and comments to the task." },
+  { title: "Track Progress", body: "Follow task status and review results as checks run again." },
+];
+
+const connectedModules: {
+  icon: LucideIcon;
+  title: string;
+  summary: string;
+  points: string[];
+  note?: string;
+}[] = [
+  {
+    icon: ListChecks,
+    title: "Frameworks & Controls",
+    summary: "Organize security and compliance requirements in a centralized workspace.",
+    points: [
+      "View applicable frameworks and requirements.",
+      "Track implementation of security controls.",
+      "Map controls to relevant policies and evidence.",
+      "Identify gaps and monitor remediation progress.",
+    ],
+    note: "Current focus: SOC 2. ISO 27001 and other frameworks are being expanded.",
+  },
+  {
+    icon: FileText,
+    title: "Policies & Approvals",
+    summary: "Create, review, approve, and maintain organizational security policies.",
+    points: [
+      "Centralized policy library.",
+      "Policy approval workflows.",
+      "Version history and renewal tracking.",
+      "Employee policy acknowledgments.",
+    ],
+  },
+  {
+    icon: FolderOpen,
+    title: "Evidence & Documents",
+    summary: "Keep compliance documentation organized and accessible.",
+    points: [
+      "Centralized evidence library.",
+      "Associate evidence with compliance requirements.",
+      "Track missing evidence.",
+      "Organize documentation for audit preparation.",
+    ],
+  },
+  {
+    icon: Activity,
+    title: "Automated Tests",
+    summary: "Run automated security checks across connected systems and review the results.",
+    points: [
+      "Test status and results by integration.",
+      "Identify failing checks and security gaps.",
+      "Track remediation for failed checks.",
+    ],
+  },
+  {
+    icon: AlertTriangle,
+    title: "Risks & Vendors",
+    summary: "Identify, assess, and track security risks and third-party reviews.",
+    points: [
+      "Centralized risk register with severity and ownership.",
+      "Risk assessment and treatment tracking.",
+      "Vendor inventory and risk classification.",
+      "Vendor security assessment tracking.",
+    ],
+  },
+  {
+    icon: UserCheck,
+    title: "Personnel & Devices",
+    summary: "Track employee-related security requirements and device monitoring.",
+    points: [
+      "Employee onboarding and compliance tasks.",
+      "Policy acknowledgment tracking.",
+      "Device inventory and monitoring.",
+      "Visibility into outstanding compliance activities.",
+    ],
+  },
+  {
+    icon: ListTodo,
+    title: "Tasks & Remediation",
+    summary: "Turn security and compliance gaps into actionable work.",
+    points: [
+      "Assign tasks to team members.",
+      "Track overdue and upcoming tasks.",
+      "Upload supporting evidence.",
+      "Add comments and coordinate remediation.",
+    ],
+  },
+  {
+    icon: FileSearch,
+    title: "Audit Preparation",
+    summary: "Organize readiness activities and supporting evidence before an independent audit.",
+    points: [
+      "Organize audit-related activities.",
+      "Track control readiness.",
+      "Prepare supporting evidence.",
+      "Identify outstanding gaps.",
+    ],
+    note: "Shield supports audit preparation. Independent auditors and certification bodies perform the assessments and issue any reports or certifications.",
+  },
+];
+
+const benefits: { icon: LucideIcon; title: string; body: string }[] = [
+  {
+    icon: Search,
+    title: "Find compliance documentation faster",
+    body: "Locate policies, evidence, and supporting documents by the control or requirement they support.",
+  },
+  {
+    icon: ListChecks,
+    title: "See which controls need attention",
+    body: "Identify gaps and monitor remediation progress across your frameworks.",
+  },
+  {
+    icon: FileWarning,
+    title: "Spot missing evidence and approvals",
+    body: "Track evidence that is still outstanding and policies waiting on approvers.",
+  },
+  {
+    icon: Users,
+    title: "Know who owns each remediation task",
+    body: "Assign tasks, track ownership, and see which items are overdue or due soon.",
+  },
+  {
+    icon: Activity,
+    title: "Review monitoring results in one place",
+    body: "Check test status and results across connected integrations and devices.",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Keep audit preparation visible",
+    body: "Follow control readiness and outstanding gaps as your next audit approaches.",
+  },
 ];
 
 const workflowSteps: { icon: LucideIcon; title: string; body: string }[] = [
@@ -222,14 +256,6 @@ const workflowSteps: { icon: LucideIcon; title: string; body: string }[] = [
     title: "Track Progress and Prepare for Audits",
     body: "Monitor readiness, resolve outstanding issues, and prepare documentation for independent assessments.",
   },
-];
-
-const expertiseHighlights = [
-  "Practical GRC experience",
-  "Security and compliance expertise",
-  "Audit readiness workflows",
-  "Ongoing security monitoring",
-  "Human expertise alongside technology",
 ];
 
 const audiences: { icon: LucideIcon; title: string; body: string }[] = [
@@ -293,26 +319,73 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  light = false,
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
-  light?: boolean;
 }) {
   return (
     <div className="mx-auto mb-12 max-w-3xl text-center">
       {eyebrow && (
         <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">{eyebrow}</p>
       )}
-      <h2
-        className={`mb-4 text-3xl font-bold leading-tight sm:text-4xl ${light ? "text-white" : "text-primary"}`}
-      >
-        {title}
-      </h2>
-      {description && (
-        <p className={`text-lg leading-relaxed ${light ? "text-white/80" : "text-gray-700"}`}>{description}</p>
-      )}
+      <h2 className="mb-4 text-3xl font-bold leading-tight text-primary sm:text-4xl">{title}</h2>
+      {description && <p className="text-lg leading-relaxed text-gray-700">{description}</p>}
+    </div>
+  );
+}
+
+function ConnectedShowcase() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const active = connectedModules[activeIndex];
+  const ActiveIcon = active.icon;
+
+  return (
+    <div className="grid gap-6 lg:grid-cols-12">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:col-span-4 lg:grid-cols-1">
+        {connectedModules.map(({ icon: Icon, title }, i) => {
+          const isActive = i === activeIndex;
+          return (
+            <button
+              key={title}
+              type="button"
+              aria-pressed={isActive}
+              onClick={() => setActiveIndex(i)}
+              className={`flex items-center gap-3 rounded-xl border px-4 py-3 text-left text-sm font-semibold transition-all duration-200 ${
+                isActive
+                  ? "border-accent bg-primary text-white shadow-lg"
+                  : "border-gray-200 bg-white text-primary hover:border-orange-200 hover:bg-orange-50/40"
+              }`}
+            >
+              <Icon className={`h-5 w-5 shrink-0 ${isActive ? "text-orange-400" : "text-accent"}`} aria-hidden="true" />
+              <span>{title}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-xl sm:p-8 lg:col-span-8">
+        <div className="mb-5 flex items-center gap-4">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-r from-accent to-orange-600 text-white">
+            <ActiveIcon className="h-6 w-6" aria-hidden="true" />
+          </span>
+          <h3 className="text-2xl font-bold text-primary">{active.title}</h3>
+        </div>
+        <p className="mb-6 text-lg leading-relaxed text-gray-700">{active.summary}</p>
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {active.points.map((point) => (
+            <li key={point} className="flex gap-2 text-sm text-gray-700">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
+              <span>{point}</span>
+            </li>
+          ))}
+        </ul>
+        {active.note && (
+          <p className="mt-6 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm leading-relaxed text-gray-600">
+            {active.note}
+          </p>
+        )}
+      </div>
     </div>
   );
 }
@@ -389,165 +462,201 @@ export default function ShieldGrc() {
           </div>
         </section>
 
-        {/* Why Shield GRC */}
+        {/* Value */}
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              title="Compliance Shouldn't Be Complicated"
-              description="Preparing for SOC 2, ISO 27001, and other security assessments often involves tracking hundreds of requirements, collecting evidence, reviewing policies, managing risks, and coordinating with auditors. Shield GRC brings these activities together in a structured workspace."
+              eyebrow="Overview"
+              title="Know Where You Stand. Know What Comes Next."
+              description="Security and compliance involve more than completing checklists. Shield GRC brings your controls, policies, evidence, security monitoring, and remediation tasks into one workspace, helping your team understand what's ready, what needs attention, and what to work on next."
             />
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {whyCards.map(({ icon: Icon, title, body }) => (
-                <div
-                  key={title}
-                  className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
-                >
-                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-white">
-                    <Icon className="h-6 w-6" aria-hidden="true" />
-                  </div>
-                  <h3 className="mb-2 text-lg font-bold text-primary">{title}</h3>
-                  <p className="text-sm leading-relaxed text-gray-700">{body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Features */}
-        <section id="features" className="scroll-mt-24 bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 sm:py-24">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <SectionHeading
-              eyebrow="Features"
-              title="Explore Shield GRC"
-              description="A dedicated workspace for each part of your security and compliance program."
-            />
-
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {features.map(({ icon: Icon, title, intro, bullets }) => (
+            <div className="grid gap-6 md:grid-cols-3">
+              {valueThemes.map(({ icon: Icon, title, body, signals }) => (
                 <article
                   key={title}
-                  className="flex flex-col rounded-2xl border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl sm:p-8"
+                  className="flex flex-col rounded-2xl border border-gray-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
                 >
-                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-r from-accent to-orange-600 text-white">
-                    <Icon className="h-5 w-5" aria-hidden="true" />
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-r from-accent to-orange-600 text-white">
+                    <Icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-primary">{title}</h3>
-                  <p className="mb-4 text-sm leading-relaxed text-gray-700">{intro}</p>
-
-                  {title === "Automated Monitoring & Integrations" ? (
-                    <>
-                      <ul className="mb-4 flex flex-wrap gap-2">
-                        {bullets.map((b) => (
-                          <li
-                            key={b}
-                            className="rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-medium text-orange-700"
-                          >
-                            {b}
-                          </li>
-                        ))}
-                      </ul>
-                      <p className="mt-auto text-xs leading-relaxed text-gray-500">
-                        Integration availability and functionality depend on the current supported connector catalog.
-                      </p>
-                    </>
-                  ) : (
-                    <ul className="space-y-2">
-                      {bullets.map((b) => (
-                        <li key={b} className="flex gap-2 text-sm text-gray-700">
-                          <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  {title === "Compliance Frameworks & Controls" && (
-                    <div className="mt-6 space-y-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm">
-                      <p className="text-gray-800">
-                        <span className="font-semibold text-primary">Current focus:</span> SOC 2
-                      </p>
-                      <p className="text-gray-800">
-                        <span className="font-semibold text-primary">On the Roadmap:</span> ISO 27001 and other
-                        frameworks being expanded.
-                      </p>
-                    </div>
-                  )}
-
-                  {title === "Audit Management" && (
-                    <p className="mt-6 rounded-xl border border-gray-100 bg-gray-50 p-4 text-xs leading-relaxed text-gray-600">
-                      Shield supports audit preparation. Independent auditors and certification bodies perform the
-                      assessments and issue any reports or certifications.
-                    </p>
-                  )}
+                  <h3 className="mb-3 text-xl font-bold text-primary">{title}</h3>
+                  <p className="mb-6 text-sm leading-relaxed text-gray-700">{body}</p>
+                  <ul className="mt-auto flex flex-wrap gap-2">
+                    {signals.map((signal) => (
+                      <li key={signal} className="rounded-full bg-primary/5 px-3 py-1 text-xs font-medium text-primary">
+                        {signal}
+                      </li>
+                    ))}
+                  </ul>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Automated security monitoring */}
-        <section className="relative isolate overflow-hidden bg-slate-950 py-16 text-white sm:py-24">
-          <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-5 lg:gap-16 lg:px-8">
-            <div className="lg:col-span-2">
-              <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl">
-                Automated Security Monitoring. Clear Results. Faster Remediation.
+        {/* Expertise */}
+        <section className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 sm:py-24">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">Our Expertise</p>
+              <h2 className="mb-6 text-3xl font-bold leading-tight text-primary sm:text-4xl">
+                Built by People Who Work in Security & Compliance Every Day.
               </h2>
-              <p className="mb-8 text-lg leading-relaxed text-white/80">
-                Shield GRC helps teams monitor security configurations across connected systems, identify failed
-                security checks, and track remediation from one centralized workspace.
+              <p className="mb-4 text-lg leading-relaxed text-gray-700">
+                Shield GRC is developed by Com-Sec, a team with hands-on experience supporting organizations through
+                security assessments, compliance readiness, internal audits, risk management, and ongoing security
+                operations.
               </p>
-              <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-                {monitoringCapabilities.map(({ icon: Icon, title }) => (
-                  <li
-                    key={title}
-                    className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white"
-                  >
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/15 text-orange-400">
-                      <Icon className="h-4 w-4" aria-hidden="true" />
+              <p className="mb-4 leading-relaxed text-gray-700">
+                That experience shapes how Shield is built, from organizing audit evidence and managing policy approvals
+                to tracking security findings and remediation.
+              </p>
+              <p className="leading-relaxed text-gray-700">
+                Our focus is on making compliance requirements easier to understand and manage in practice.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-xl">
+              <h3 className="mb-6 text-lg font-bold text-primary">Areas of experience</h3>
+              <ul className="space-y-4">
+                {expertiseAreas.map(({ icon: Icon, title }) => (
+                  <li key={title} className="flex items-center gap-3 text-gray-800">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+                      <Icon className="h-5 w-5" aria-hidden="true" />
                     </span>
                     {title}
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <div className="relative lg:col-span-3">
-              <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-orange-500/15 blur-3xl" aria-hidden="true" />
-              <img
-                src="/images/products/shield-grc-tests.webp"
-                alt="Shield GRC Tests page showing 20 of 72 connected tests passing, test results by integration across AWS, GitHub, Google Workspace, Slack, device agents, and Pentest, and a list of critical checks with status and framework tags"
-                width={1672}
-                height={941}
-                loading="lazy"
-                decoding="async"
-                className="w-full rounded-2xl border border-white/10 shadow-2xl shadow-orange-500/20"
-              />
+              <p className="mt-6 border-t border-gray-100 pt-6 text-sm leading-relaxed text-gray-600">
+                Shield's automation covers the supported integrations described on this page. It does not automate every
+                framework or service Com-Sec supports.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Dashboard overview */}
-        <section className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 sm:py-24">
+        {/* Security to compliance */}
+        <section className="relative isolate overflow-hidden bg-slate-950 py-16 text-white sm:py-24">
+          <div className="absolute -top-32 left-0 -z-10 h-96 w-96 rounded-full bg-orange-500/10 blur-3xl" aria-hidden="true" />
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid items-center gap-12 lg:grid-cols-5 lg:gap-16">
+              <div className="lg:col-span-2">
+                <p className="mb-3 text-base font-semibold text-orange-300">
+                  Automated Security Monitoring. Clear Results. Faster Remediation.
+                </p>
+                <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl">
+                  From Security Checks to Compliance Progress.
+                </h2>
+                <p className="mb-4 text-lg leading-relaxed text-white/80">
+                  Shield GRC helps teams monitor security configurations across connected systems, identify failed
+                  security checks, and track remediation from one centralized workspace.
+                </p>
+                <p className="mb-8 leading-relaxed text-white/70">
+                  Shield helps connect technical security monitoring with the compliance activities your team manages
+                  every day. When a supported security check identifies an issue, teams can review the finding,
+                  understand what needs remediation, and track the associated work.
+                </p>
+                <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+                  {monitoringCapabilities.map(({ icon: Icon, title }) => (
+                    <li
+                      key={title}
+                      className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white"
+                    >
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/15 text-orange-400">
+                        <Icon className="h-4 w-4" aria-hidden="true" />
+                      </span>
+                      {title}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-8">
+                  <p className="mb-3 text-sm font-semibold text-white">Connected integrations</p>
+                  <ul className="flex flex-wrap gap-2">
+                    {connectorNames.map((name) => (
+                      <li
+                        key={name}
+                        className="rounded-full border border-orange-400/30 bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-200"
+                      >
+                        {name}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-3 text-xs leading-relaxed text-white/60">
+                    Integration availability and functionality depend on the current supported connector catalog.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative lg:col-span-3">
+                <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-orange-500/15 blur-3xl" aria-hidden="true" />
+                <img
+                  src="/images/products/shield-grc-tests.webp"
+                  alt="Shield GRC Tests page showing 20 of 72 connected tests passing, test results by integration across AWS, GitHub, Google Workspace, Slack, device agents, and Pentest, and a list of critical checks with status and framework tags"
+                  width={1672}
+                  height={941}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full rounded-2xl border border-white/10 shadow-2xl shadow-orange-500/20"
+                />
+              </div>
+            </div>
+
+            <ol className="mt-16 grid gap-4 md:grid-cols-5">
+              {remediationFlow.map(({ title, body }, i) => (
+                <li key={title} className="relative rounded-2xl border border-white/10 bg-white/5 p-6">
+                  <div className="mb-4 flex items-center gap-3">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-accent to-orange-600 text-sm font-bold text-white">
+                      {i + 1}
+                    </span>
+                    <h3 className="font-bold text-white">{title}</h3>
+                  </div>
+                  <p className="text-sm leading-relaxed text-white/70">{body}</p>
+                  {i < remediationFlow.length - 1 && (
+                    <ChevronRight
+                      className="absolute -right-3 top-1/2 hidden h-6 w-6 -translate-y-1/2 text-orange-400 md:block"
+                      aria-hidden="true"
+                    />
+                  )}
+                </li>
+              ))}
+            </ol>
+            <p className="mt-6 text-center text-sm text-white/60">
+              Shield tracks remediation work. Your team performs the fixes.
+            </p>
+          </div>
+        </section>
+
+        {/* Connected program */}
+        <section id="features" className="scroll-mt-24 bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              eyebrow="Dashboard"
-              title="Know Exactly Where Your Compliance Program Stands"
-              description="Shield provides a consolidated view of your security and compliance activities, helping teams prioritize the work that matters and understand where attention is needed."
+              eyebrow="Platform"
+              title="Your Security & Compliance Program, Connected."
+              description="Frameworks, policies, evidence, tests, risks, personnel, tasks, and audit preparation are managed in one workspace, so related work stays connected."
             />
+            <ConnectedShowcase />
+          </div>
+        </section>
 
-            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {dashboardAreas.map((area, i) => (
+        {/* Benefits */}
+        <section className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 sm:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <SectionHeading title="Less Time Searching. More Clarity on What Matters." />
+
+            <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {benefits.map(({ icon: Icon, title, body }) => (
                 <li
-                  key={area.title}
-                  className="flex gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
+                  key={title}
+                  className="flex gap-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
                 >
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-accent to-orange-600 text-sm font-bold text-white">
-                    {i + 1}
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                    <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <div>
-                    <h3 className="mb-1 font-bold text-primary">{area.title}</h3>
-                    <p className="text-sm leading-relaxed text-gray-700">{area.detail}</p>
+                    <h3 className="mb-1 font-bold text-primary">{title}</h3>
+                    <p className="text-sm leading-relaxed text-gray-700">{body}</p>
                   </div>
                 </li>
               ))}
@@ -580,47 +689,8 @@ export default function ShieldGrc() {
           </div>
         </section>
 
-        {/* Built by professionals */}
-        <section className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 sm:py-24">
-          <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-            <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">Why Com-Sec</p>
-              <h2 className="mb-6 text-3xl font-bold leading-tight text-primary sm:text-4xl">
-                More Than Software. Built on Real Compliance Experience.
-              </h2>
-              <p className="mb-4 text-lg leading-relaxed text-gray-700">
-                Shield GRC is developed by Com-Sec, a team that works directly with organizations on security
-                assessments, compliance readiness, risk management, internal audits, and ongoing security operations.
-              </p>
-              <p className="mb-4 leading-relaxed text-gray-700">
-                Our experience supporting SOC 2, ISO 27001, HITRUST, and other security and compliance initiatives helps
-                shape how Shield is designed.
-              </p>
-              <p className="leading-relaxed text-gray-700">
-                We understand the challenges organizations face when collecting evidence, managing policies, responding
-                to auditor requests, and maintaining security controls. Shield is designed around those practical
-                workflows.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-xl">
-              <h3 className="mb-6 text-lg font-bold text-primary">What sets Shield apart</h3>
-              <ul className="space-y-4">
-                {expertiseHighlights.map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-gray-800">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
-                      <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
         {/* Audiences */}
-        <section className="bg-white py-16 sm:py-24">
+        <section className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow="Who it's for" title="Who Is Shield GRC For?" />
 
@@ -642,7 +712,7 @@ export default function ShieldGrc() {
         </section>
 
         {/* Roadmap */}
-        <section className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 sm:py-24">
+        <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Roadmap"
@@ -677,16 +747,14 @@ export default function ShieldGrc() {
 
           <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6">
             <h2 className="mb-6 text-3xl font-bold leading-tight sm:text-4xl">
-              Make Compliance Easier to Manage with{" "}
+              Make Security & Compliance{" "}
               <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
-                Shield GRC
+                Easier to Manage.
               </span>
             </h2>
-            <p className="mb-4 text-lg text-white/85">
-              Bring your policies, evidence, security monitoring, risks, and compliance tasks together in one workspace.
-            </p>
-            <p className="mb-10 text-base text-white/70">
-              See how Shield GRC can help your team stay organized and prepare for its next audit.
+            <p className="mb-10 text-lg leading-relaxed text-white/85">
+              Whether you're building your first compliance program or managing ongoing security requirements, Shield
+              GRC gives your team a clearer way to organize the work, monitor progress, and prepare for what comes next.
             </p>
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
