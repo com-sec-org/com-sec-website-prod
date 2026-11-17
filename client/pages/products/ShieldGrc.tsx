@@ -18,6 +18,7 @@ import {
   Milestone,
   Plug,
   Rocket,
+  RefreshCw,
   Settings,
   ShieldCheck,
   Sparkles,
@@ -181,6 +182,15 @@ const features: {
   },
 ];
 
+const monitoringCapabilities: { icon: LucideIcon; title: string }[] = [
+  { icon: ShieldCheck, title: "Automated security checks" },
+  { icon: Plug, title: "Integration monitoring" },
+  { icon: Activity, title: "Test status and results" },
+  { icon: AlertTriangle, title: "Security gap identification" },
+  { icon: ListTodo, title: "Remediation tracking" },
+  { icon: RefreshCw, title: "Continuous compliance visibility" },
+];
+
 const dashboardAreas: { title: string; detail: string }[] = [
   { title: "Framework readiness", detail: "Controls and evidence progress for each framework." },
   { title: "Automated test results", detail: "Passing checks, items needing remediation, errors, and tests with no recent results." },
@@ -326,51 +336,56 @@ export default function ShieldGrc() {
 
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-900 to-blue-800 pt-28 pb-20 text-white sm:pt-32 sm:pb-24">
-          <div className="absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-orange-500/20 blur-3xl" aria-hidden="true" />
+        <section className="relative isolate overflow-hidden bg-primary pt-28 pb-16 text-white sm:pt-32 lg:pb-28">
+          <div className="absolute inset-0 -z-10 bg-gradient-to-br from-slate-950 via-primary to-blue-900" aria-hidden="true" />
+          <div
+            className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(ellipse_at_top_right,black,transparent_70%)]"
+            aria-hidden="true"
+          />
+          <div className="absolute -top-40 right-0 -z-10 h-[36rem] w-[36rem] rounded-full bg-orange-500/20 blur-3xl" aria-hidden="true" />
+          <div className="absolute -bottom-32 left-1/4 -z-10 h-96 w-[40rem] rounded-full bg-orange-600/10 blur-3xl" aria-hidden="true" />
 
-          <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6">
-            <div className="mb-6 inline-flex items-center rounded-full border border-orange-400/30 bg-orange-500/10 px-4 py-2 text-sm font-medium text-orange-300">
-              <ShieldCheck className="mr-2 h-4 w-4" aria-hidden="true" />
-              Shield GRC
+          <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+            <div className="text-center lg:col-span-5 lg:text-left">
+              <div className="mb-6 inline-flex items-center rounded-full border border-orange-400/30 bg-orange-500/10 px-4 py-2 text-sm font-medium text-orange-300">
+                <ShieldCheck className="mr-2 h-4 w-4" aria-hidden="true" />
+                Shield GRC
+              </div>
+
+              <h1 className="mb-6 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+                Meet Shield GRC —{" "}
+                <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
+                  Your Compliance Command Center
+                </span>
+              </h1>
+
+              <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl lg:mx-0">
+                Manage security, compliance, risks, policies, evidence, and audit readiness in one place. Shield GRC
+                helps organizations see what's working, close gaps, and stay ready for their next audit.
+              </p>
+
+              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
+                <Link to={DEMO_HREF} className={PRIMARY_CTA}>
+                  Request a Demo
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+                <a href="#features" className={SECONDARY_CTA}>
+                  Explore Features
+                </a>
+              </div>
             </div>
 
-            <h1 className="mb-6 text-4xl font-bold leading-tight sm:text-5xl">
-              Meet Shield GRC —{" "}
-              <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
-                Your Compliance Command Center
-              </span>
-            </h1>
-
-            <p className="mx-auto mb-4 max-w-3xl text-lg text-white/90 sm:text-xl">
-              Manage security, compliance, risks, policies, evidence, and audit readiness in one place. Shield GRC
-              helps organizations understand what's working, identify gaps, and stay prepared for their next audit.
-            </p>
-            <p className="mx-auto mb-10 max-w-3xl text-base leading-relaxed text-white/70">
-              Built by the security and compliance professionals at Com-Sec, Shield combines practical GRC workflows,
-              automated security monitoring, and clear visibility into compliance progress.
-            </p>
-
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Link to={DEMO_HREF} className={PRIMARY_CTA}>
-                Request a Demo
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <a href="#features" className={SECONDARY_CTA}>
-                Explore Features
-              </a>
+            <div className="relative lg:col-span-7 lg:-mr-8 xl:-mr-24">
+              <div className="absolute inset-x-8 top-1/2 -z-10 h-2/3 -translate-y-1/2 rounded-full bg-orange-500/25 blur-3xl" aria-hidden="true" />
+              <img
+                src="/images/products/shield-grc-dashboard.webp"
+                alt="Shield GRC dashboard on a laptop showing framework readiness, automated test results, policy approvals, risk overview, device monitoring, tasks, and integration status"
+                width={1600}
+                height={900}
+                fetchPriority="high"
+                className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)] [mask-image:linear-gradient(to_right,transparent,black_18%),linear-gradient(to_left,transparent,black_12%),linear-gradient(to_bottom,transparent,black_14%),linear-gradient(to_top,transparent,black_16%)] [mask-composite:intersect] [-webkit-mask-composite:source-in]"
+              />
             </div>
-          </div>
-
-          <div className="relative z-10 mx-auto mt-14 max-w-5xl px-4 sm:px-6 lg:px-8">
-            <img
-              src="/images/products/shield-grc-dashboard.webp"
-              alt="Shield GRC dashboard on a laptop showing framework readiness, automated test results, policy approvals, risk overview, device monitoring, tasks, and integration status"
-              width={1600}
-              height={900}
-              fetchPriority="high"
-              className="w-full rounded-2xl border border-white/10 shadow-2xl shadow-orange-500/20 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-4 motion-safe:duration-700"
-            />
           </div>
         </section>
 
@@ -471,46 +486,71 @@ export default function ShieldGrc() {
           </div>
         </section>
 
-        {/* Dashboard showcase */}
-        <section className="bg-slate-950 py-16 text-white sm:py-24">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <SectionHeading
-              title="Know Exactly Where Your Compliance Program Stands"
-              description="Shield provides a consolidated view of your security and compliance activities, helping teams prioritize the work that matters and understand where attention is needed."
-              light
-            />
-
-            <div className="grid items-start gap-10 lg:grid-cols-5">
-              <div className="lg:sticky lg:top-28 lg:col-span-3">
-                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-orange-500/10">
-                  <img
-                    src="/images/products/shield-grc-dashboard.webp"
-                    alt="Shield GRC dashboard overview with framework progress, test results, policy approvals, inherent risk, computer status, open tasks, and integrations"
-                    width={1600}
-                    height={900}
-                    loading="lazy"
-                    className="h-auto w-full"
-                  />
-                </div>
-              </div>
-
-              <ul className="grid gap-3 lg:col-span-2">
-                {dashboardAreas.map((area, i) => (
+        {/* Automated security monitoring */}
+        <section className="relative isolate overflow-hidden bg-slate-950 py-16 text-white sm:py-24">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-5 lg:gap-16 lg:px-8">
+            <div className="lg:col-span-2">
+              <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl">
+                Automated Security Monitoring. Clear Results. Faster Remediation.
+              </h2>
+              <p className="mb-8 text-lg leading-relaxed text-white/80">
+                Shield GRC helps teams monitor security configurations across connected systems, identify failed
+                security checks, and track remediation from one centralized workspace.
+              </p>
+              <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+                {monitoringCapabilities.map(({ icon: Icon, title }) => (
                   <li
-                    key={area.title}
-                    className="group flex gap-4 rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-accent/50 hover:bg-white/10"
+                    key={title}
+                    className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white"
                   >
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
-                      {i + 1}
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/15 text-orange-400">
+                      <Icon className="h-4 w-4" aria-hidden="true" />
                     </span>
-                    <div>
-                      <h3 className="font-semibold text-white">{area.title}</h3>
-                      <p className="text-sm leading-relaxed text-white/70">{area.detail}</p>
-                    </div>
+                    {title}
                   </li>
                 ))}
               </ul>
             </div>
+
+            <div className="relative lg:col-span-3">
+              <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-orange-500/15 blur-3xl" aria-hidden="true" />
+              <img
+                src="/images/products/shield-grc-tests.webp"
+                alt="Shield GRC Tests page showing 20 of 72 connected tests passing, test results by integration across AWS, GitHub, Google Workspace, Slack, device agents, and Pentest, and a list of critical checks with status and framework tags"
+                width={1600}
+                height={900}
+                loading="lazy"
+                className="w-full rounded-2xl border border-white/10 shadow-2xl shadow-orange-500/20"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Dashboard overview */}
+        <section className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 sm:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <SectionHeading
+              eyebrow="Dashboard"
+              title="Know Exactly Where Your Compliance Program Stands"
+              description="Shield provides a consolidated view of your security and compliance activities, helping teams prioritize the work that matters and understand where attention is needed."
+            />
+
+            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {dashboardAreas.map((area, i) => (
+                <li
+                  key={area.title}
+                  className="flex gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
+                >
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-accent to-orange-600 text-sm font-bold text-white">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3 className="mb-1 font-bold text-primary">{area.title}</h3>
+                    <p className="text-sm leading-relaxed text-gray-700">{area.detail}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
