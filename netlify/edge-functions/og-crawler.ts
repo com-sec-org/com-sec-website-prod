@@ -466,6 +466,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-11-12T00:00:00Z",
   },
+  "/blog/your-security-page-doesnt-close-deals-a-soc-2-report-does": {
+    title: "Your Security Page Doesn't Close Deals. A SOC 2 Report Does.",
+    description:
+      "A security page tells prospects you take security seriously. It doesn't answer the first question their security team asks. Here's how that gap stretches sales cycles.",
+    image: `${BASE_URL}/images/blog-images/your-security-page-doesnt-close-deals-a-soc-2-report-does.png`,
+    url: `${BASE_URL}/blog/your-security-page-doesnt-close-deals-a-soc-2-report-does`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-11-13T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────
