@@ -198,48 +198,6 @@ export const caseStudyDetails: Record<string, CaseStudyDetail> = {
     },
   },
 
-  busplanner: {
-    client: "BusPlanner",
-    badge: "AI / SaaS",
-    tagline: "Transportation software",
-    title: "Coordinating SOC 2, ISO 27001, and Internal Audit Work in One Program",
-    overview: [
-      { label: "Industry", value: "Transportation software" },
-      { label: "Services", value: "vCISO, SOC 2, ISO 27001 control alignment, internal audit" },
-      { label: "Delivery partner", value: "CEEL" },
-      { label: "Auditor", value: "Sensiba" },
-      { label: "Engagement", value: "January 2026 to present" },
-    ],
-    summary: [
-      "BusPlanner had overlapping assurance work moving at once: policy review, ISO 27001 control alignment, internal audit, and a SOC 2 Type II review. Run as separate projects, that means duplicate evidence, conflicting priorities, and more coordination for a team that didn't have the bandwidth for it.",
-      "Com-Sec organized the work as one program: guiding policy review, examining ISO 27001 controls, supporting internal audit activities, and preparing BusPlanner for SOC 2 Type II.",
-      "The program gave BusPlanner a clearer view of what could be reused, what needed additional work, and how the separate assurance objectives actually fit together.",
-    ],
-    challenge: [
-      "BusPlanner had overlapping assurance work: policy review, ISO 27001 control alignment, internal audit, and a SOC 2 Type II review. Running each as a separate project would have created duplicate evidence, conflicting priorities, and more coordination for the internal team.",
-    ],
-    approach: {
-      intro: ["Com-Sec helped organize the work as one program. The team guided policy review, examined ISO 27001 controls, supported internal audit activities, and prepared the company for SOC 2 Type II."],
-    },
-    results: [
-      "Policy review completed or advanced",
-      "ISO 27001 controls reviewed",
-      "Internal audit work performed",
-      "SOC 2 Type II audit supported",
-      "Multiple assurance requirements coordinated through one team",
-    ],
-    why: {
-      intro: ["Com-Sec works across frameworks and audit stages. Clients don't have to rebuild the same program for every standard or coordinate separate advisors for readiness, internal audit, and external assessment."],
-    },
-    quote: {
-      text: "Com-Sec helped us bring several overlapping compliance efforts into one plan. That made the work easier to prioritize and reduced duplication for our team.",
-      attribution: "BusPlanner",
-    },
-    cta: {
-      heading: "One program, not parallel projects",
-      text: ["If your compliance projects keep duplicating the same work, talk to Com-Sec."],
-    },
-  },
 
   /* ------------------------------------------------------------------ FinTech */
   honk: {

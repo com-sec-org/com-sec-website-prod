@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { AnchoredSections } from "@/components/service-page/AnchoredSections";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -26,6 +27,35 @@ import {
   Eye,
   Star,
 } from "lucide-react";
+
+// Source: Pentest one pager ("AI assisted testing for smaller scopes and red team exercises with our partner").
+const pentestExtraSections = [
+  {
+    id: "ai-assisted",
+    eyebrow: "AI-Assisted Pen Testing",
+    title: "Faster Testing for Smaller Scopes",
+    body: "For smaller applications and focused scopes, AI-assisted testing speeds up discovery and lowers cost. Every finding is still reviewed and validated by our testers.",
+    points: [
+      "Suited to smaller apps and focused scopes",
+      "Faster turnaround at a lower cost",
+      "Every finding validated by a human tester",
+      "Same report format, ready for audits and customers",
+    ],
+  },
+  {
+    id: "red-team",
+    eyebrow: "Red Team Exercises",
+    title: "Test People, Process and Detection",
+    body: "A red team exercise goes beyond finding vulnerabilities. Working with our partner, we simulate a goal based attack to test how well your people, processes and detection hold up.",
+    points: [
+      "Goal based attack simulation",
+      "Tests detection and response, not just defenses",
+      "Social engineering where in scope",
+      "Delivered with our red team partner",
+      "Debrief with lessons for your security team",
+    ],
+  },
+];
 
 export default function PenetrationTesting() {
   return (
@@ -625,6 +655,9 @@ export default function PenetrationTesting() {
           </div>
         </div>
       </section>
+
+      {/* Also available: Services menu links here (#ai-assisted, #red-team) */}
+      <AnchoredSections sections={pentestExtraSections} startSoft />
 
       {/* CTA Section */}
       <section className="py-20 bg-white">

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
+import { AnchoredSections } from "@/components/service-page/AnchoredSections";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -25,6 +26,37 @@ import {
   Award,
   BookOpen,
 } from "lucide-react";
+
+// Sources: Audit Readiness one pager ("FedRAMP readiness with our partner", "ADA accessibility
+// testing with a VPAT") and the Services menu scope notes. Kept as sections, not pages, until there's more to say.
+const auditExtraSections = [
+  {
+    id: "fedramp",
+    eyebrow: "FedRAMP",
+    title: "FedRAMP Readiness, With Our Partner",
+    body: "Selling cloud services to US federal agencies requires FedRAMP authorization. Com-Sec prepares you for it together with our FedRAMP partner.",
+    points: [
+      "Gap assessment against the FedRAMP baseline",
+      "System Security Plan (SSP) development",
+      "Control implementation support",
+      "Evidence and documentation for your assessor",
+      "Builds on NIST 800-53 and your existing controls",
+      "Coordination with our FedRAMP partner throughout",
+    ],
+  },
+  {
+    id: "ada-vpat",
+    eyebrow: "ADA / VPAT",
+    title: "Accessibility Testing and VPAT",
+    body: "Public sector and enterprise buyers increasingly ask for proof your product is accessible. We test against WCAG and produce a VPAT, your Accessibility Conformance Report.",
+    points: [
+      "Accessibility testing against WCAG",
+      "Findings prioritized with fix guidance",
+      "VPAT / Accessibility Conformance Report",
+      "Support answering accessibility questions in RFPs",
+    ],
+  },
+];
 
 export default function ComplianceAuditReadiness() {
   return (
@@ -492,9 +524,9 @@ export default function ComplianceAuditReadiness() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               {
-                stat: "100%",
-                label: "First-Time Pass Rate",
-                description: "Clients pass audits on first attempt",
+                stat: "100+",
+                label: "Clients Supported",
+                description: "Teams guided from readiness through their audits",
               },
               {
                 stat: "200+",
@@ -529,6 +561,9 @@ export default function ComplianceAuditReadiness() {
           </div>
         </div>
       </section>
+
+      {/* Also available: Services menu links here (#fedramp, #ada-vpat) */}
+      <AnchoredSections sections={auditExtraSections} startSoft />
 
       {/* CTA Section */}
       <section className="py-20 bg-white">
