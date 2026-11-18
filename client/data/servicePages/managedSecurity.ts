@@ -31,7 +31,7 @@ import { defaultCta, whyComSec } from "./common";
 
 // Managed Security & IT. Sources: "Managed Security, Compliance & IT One Pager" (file 11),
 // "SOC 2 Maintenance Plans One Pager" Advanced tier (file 13), Services Booklet p. 6.
-// Specific resold tools are not named until confirmed (open question).
+// Resold tools named as examples, per user 2026-11-18: Primo, CrowdStrike, Iru MDM, Jamf Cloud, 1Password.
 
 const related = {
   group: { label: "Managed Security & IT", to: "/managed-security-it", body: "Monitoring, endpoints, access and IT, managed for you." },
@@ -43,6 +43,15 @@ const related = {
   saas: { label: "SaaS & Asset Management", to: "/saas-asset-management", body: "Apps, licenses and hardware inventory kept current." },
   it: { label: "IT Support", to: "/it-support", body: "Day to day IT help for your team, run by a security first MSP." },
 };
+
+// Tools Com-Sec resells and manages. Named as examples, not a complete list.
+const resoldTools = (
+  title: string,
+  names: string[],
+  description = "We resell, deploy and manage proven security and IT tools, so licensing, setup and day to day management come from one team. Examples below, among several others:",
+): ServicePageContent["platforms"] => ({ title, description, names });
+
+const ALL_TOOLS = ["Primo", "CrowdStrike", "Iru MDM", "Jamf Cloud", "1Password"];
 
 const mspCallout = {
   title: "Your MSP, or Your IT Team's Partner",
@@ -121,6 +130,7 @@ export const managedSecurityItPage: ServicePageContent = {
       { title: "Report", body: "Clear monthly reviews and audit evidence.", points: ["Monthly security reports", "Evidence in your GRC platform"] },
     ],
   },
+  platforms: resoldTools("Tools We Resell and Manage", ALL_TOOLS),
   why: [
     { icon: ShieldCheck, title: "Compliance Built In", body: "Every alert, review and change is logged as evidence for your audits." },
     { icon: Users, title: "Named Security Contact", body: "A named contact for your team, with a dedicated analyst at higher tiers." },
@@ -130,7 +140,7 @@ export const managedSecurityItPage: ServicePageContent = {
     { q: "Are you an MSP or an MSSP?", a: "Both. We manage day to day IT like devices, accounts and support, and we run security operations like 24/7 monitoring and incident response." },
     { q: "Do you replace our IT team?", a: "Only if you want us to. We can act as your whole IT team, or work alongside your internal IT staff and take on security and compliance work." },
     { q: "How does this help with SOC 2 or ISO 27001?", a: "The controls auditors test, such as access reviews, device compliance, logging and onboarding records, are run by us every day and recorded as evidence." },
-    { q: "Do you provide the security tools?", a: "We deploy and manage the tools you need, including MDM, EDR, identity and email security, and can work with tools you already own." },
+    { q: "Do you provide the security tools?", a: "Yes. We resell, deploy and manage the tools you need, such as Primo, CrowdStrike, Iru MDM, Jamf Cloud and 1Password, among others. We can also manage tools you already own." },
     { q: "Can we start small?", a: "Yes. Many clients start with monitoring and response, then add endpoints, identity, patching and IT support as they grow." },
   ],
   related: [related.soc, related.it, { label: "Fractional Security Leadership", to: "/fractional-security-leadership", body: "Pair managed operations with a vCISO who owns your strategy." }],
@@ -196,10 +206,11 @@ export const endpointDevicePage: ServicePageContent = {
       { title: "Manage", body: "Ongoing monitoring and lifecycle.", points: ["Compliance checks", "Joiners and leavers"] },
     ],
   },
+  platforms: resoldTools("Endpoint Tools We Resell and Manage", ["Iru MDM", "Jamf Cloud", "CrowdStrike", "Primo"], "We resell, deploy and manage leading MDM and endpoint protection tools, or manage the ones you already own. Examples below, among several others:"),
   why: whyComSec,
   faqs: [
     { q: "What's the difference between MDM and EDR?", a: "MDM manages a device's settings, apps and compliance. EDR watches the device for malicious activity and helps respond to it. Most companies need both." },
-    { q: "Do you support Mac and Windows?", a: "Yes. We manage mixed fleets of macOS and Windows devices." },
+    { q: "Do you support Mac and Windows?", a: "Yes. We manage mixed fleets of macOS and Windows devices, using tools such as Iru MDM, Jamf Cloud and CrowdStrike, or the tools you already have." },
     { q: "Will this slow our team down?", a: "No. Rollouts are planned to avoid disruption, and zero touch setup means new hires get a ready to use laptop on day one." },
     { q: "Does this help with audits?", a: "Yes. Device encryption, updates and endpoint protection are common SOC 2, ISO 27001 and HIPAA controls, and our records serve as evidence." },
   ],
@@ -266,6 +277,7 @@ export const identityAccessPage: ServicePageContent = {
       { title: "Review", body: "Kept clean over time.", points: ["Quarterly reviews", "Evidence recorded"] },
     ],
   },
+  platforms: resoldTools("Identity Tools We Resell and Manage", ["1Password"], "Alongside your identity provider, we resell and manage tools such as password managers that keep credentials secure. Examples below, among several others:"),
   why: whyComSec,
   faqs: [
     { q: "Which identity providers do you work with?", a: "Common providers such as Google Workspace, Microsoft Entra ID and Okta. We work with what you have or help you choose." },
@@ -509,7 +521,7 @@ export const itSupportPage: ServicePageContent = {
         "Help requests from your team",
         "Laptops, accounts and app access",
         "Onboarding and offboarding",
-        "Security tool management, such as MDM and endpoint protection",
+        "Tools we resell and manage, such as CrowdStrike, Jamf Cloud and 1Password",
         "Incident response with root cause analysis",
       ],
     },
@@ -550,6 +562,7 @@ export const itSupportPage: ServicePageContent = {
       { title: "Improve", body: "Fix root causes, not just tickets.", points: ["Monthly reviews", "Security improvements"] },
     ],
   },
+  platforms: resoldTools("Tools We Resell and Manage", ALL_TOOLS),
   why: [
     { icon: ShieldCheck, title: "Security First", body: "IT run by a security and compliance team, so fixes don't create new risks." },
     { icon: ClipboardCheck, title: "Audit Ready", body: "Changes, access and onboarding records double as audit evidence." },
@@ -558,7 +571,7 @@ export const itSupportPage: ServicePageContent = {
   faqs: [
     { q: "Do you replace our IT team?", a: "Only if you want us to. We can be your whole IT team, or support your existing IT staff with security tooling, compliance work and overflow." },
     { q: "How do employees get help?", a: "Through a support channel agreed during onboarding, so requests are tracked and nothing gets lost." },
-    { q: "Do you provide and manage security tools?", a: "Yes. We deploy and manage the tools your environment needs, such as MDM, endpoint protection and identity, and can work with tools you already have." },
+    { q: "Do you provide and manage security tools?", a: "Yes. We resell, deploy and manage tools such as Primo, CrowdStrike, Iru MDM, Jamf Cloud and 1Password, among others, and can work with tools you already have." },
     { q: "Is IT support available on its own?", a: "IT support is usually part of our managed security or advanced maintenance plans. Book a call and we'll recommend the right fit." },
   ],
   related: [related.group, related.onboarding, related.endpoint],
