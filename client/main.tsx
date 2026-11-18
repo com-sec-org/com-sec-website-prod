@@ -37,6 +37,14 @@ import SocSupport from "./pages/services/SocSupport";
 // Framework Pages
 import Soc2Framework from "./pages/frameworks/Soc2";
 import Iso27001 from "./pages/frameworks/Iso27001";
+import Iso42001 from "./pages/services/Iso42001";
+import { ServicePage } from "./components/service-page/ServicePage";
+import { securityQuestionnairesPage, riskManagementPage, policiesProceduresPage, vendorRiskPage, securityAwarenessPage } from "./data/servicePages/vciso";
+import { managedSecurityItPage, endpointDevicePage, identityAccessPage, vulnerabilityPatchPage, onboardingOffboardingPage, saasAssetPage, itSupportPage } from "./data/servicePages/managedSecurity";
+import { webAppTestingPage, apiTestingPage, cloudReviewPage, desktopMobilePage, networkTestingPage, retestingPage, pentestReportsPage } from "./data/servicePages/penTesting";
+import { aiGovernancePage, aiToolInventoryPage, aiAcceptableUsePage, aiVendorReviewsPage, aiRiskAssessmentsPage } from "./data/servicePages/aiGovernance";
+import { ctoDevopsPage, auditReadyInfraPage, cloudHardeningPage, devsecopsPage, appInfraHardeningPage, technicalIrPage } from "./data/servicePages/ctoDevops";
+import { internalAuditsPage } from "./data/servicePages/internalAudits";
 import Hipaa from "./pages/frameworks/Hipaa";
 import Hitrust from "./pages/frameworks/Hitrust";
 import PciDss from "./pages/frameworks/PciDss";
@@ -214,11 +222,19 @@ class ErrorBoundary extends Component<Props, State> {
 }
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    // Menu items can point at a section (e.g. /ai-governance#approval-workflows): scroll to it once rendered.
+    if (hash) {
+      const id = decodeURIComponent(hash.slice(1));
+      const timer = window.setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50);
+      return () => window.clearTimeout(timer);
+    }
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return null;
 }
@@ -298,6 +314,39 @@ const App = () => (
               <Route path="/nist" element={<Nist />} />
               <Route path="/gdpr" element={<Gdpr />} />
               <Route path="/cmmc" element={<Cmmc />} />
+              <Route path="/iso42001" element={<Iso42001 />} />
+              {/* Services menu pages (shared ServicePage template, content in client/data/servicePages) */}
+              <Route path="/security-questionnaires" element={<ServicePage content={securityQuestionnairesPage} />} />
+              <Route path="/risk-management" element={<ServicePage content={riskManagementPage} />} />
+              <Route path="/policies-procedures" element={<ServicePage content={policiesProceduresPage} />} />
+              <Route path="/vendor-risk-management" element={<ServicePage content={vendorRiskPage} />} />
+              <Route path="/security-awareness-training" element={<ServicePage content={securityAwarenessPage} />} />
+              <Route path="/managed-security-it" element={<ServicePage content={managedSecurityItPage} />} />
+              <Route path="/endpoint-device-management" element={<ServicePage content={endpointDevicePage} />} />
+              <Route path="/identity-access-management" element={<ServicePage content={identityAccessPage} />} />
+              <Route path="/vulnerability-patch-management" element={<ServicePage content={vulnerabilityPatchPage} />} />
+              <Route path="/employee-onboarding-offboarding" element={<ServicePage content={onboardingOffboardingPage} />} />
+              <Route path="/saas-asset-management" element={<ServicePage content={saasAssetPage} />} />
+              <Route path="/it-support" element={<ServicePage content={itSupportPage} />} />
+              <Route path="/web-application-penetration-testing" element={<ServicePage content={webAppTestingPage} />} />
+              <Route path="/api-security-testing" element={<ServicePage content={apiTestingPage} />} />
+              <Route path="/cloud-security-review" element={<ServicePage content={cloudReviewPage} />} />
+              <Route path="/mobile-desktop-app-testing" element={<ServicePage content={desktopMobilePage} />} />
+              <Route path="/network-penetration-testing" element={<ServicePage content={networkTestingPage} />} />
+              <Route path="/penetration-retesting" element={<ServicePage content={retestingPage} />} />
+              <Route path="/penetration-test-reports" element={<ServicePage content={pentestReportsPage} />} />
+              <Route path="/ai-governance" element={<ServicePage content={aiGovernancePage} />} />
+              <Route path="/ai-tool-inventory" element={<ServicePage content={aiToolInventoryPage} />} />
+              <Route path="/ai-acceptable-use-policy" element={<ServicePage content={aiAcceptableUsePage} />} />
+              <Route path="/ai-vendor-reviews" element={<ServicePage content={aiVendorReviewsPage} />} />
+              <Route path="/ai-risk-assessments" element={<ServicePage content={aiRiskAssessmentsPage} />} />
+              <Route path="/cto-engineering-devops" element={<ServicePage content={ctoDevopsPage} />} />
+              <Route path="/audit-ready-infrastructure" element={<ServicePage content={auditReadyInfraPage} />} />
+              <Route path="/cloud-security-hardening" element={<ServicePage content={cloudHardeningPage} />} />
+              <Route path="/devsecops" element={<ServicePage content={devsecopsPage} />} />
+              <Route path="/application-infrastructure-hardening" element={<ServicePage content={appInfraHardeningPage} />} />
+              <Route path="/technical-incident-response" element={<ServicePage content={technicalIrPage} />} />
+              <Route path="/internal-audits" element={<ServicePage content={internalAuditsPage} />} />
 
               {/* Resource Routes */}
               <Route path="/resources/approach" element={<Approach />} />

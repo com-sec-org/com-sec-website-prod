@@ -87,13 +87,6 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
       summary: "Loops AI started building an accountable AI management system before a customer, regulator, or board forced the conversation.",
       meta: "AI / SaaS · ISO 42001",
     },
-    {
-      id: "busplanner",
-      client: "BusPlanner",
-      title: "Coordinating SOC 2, ISO 27001, and Internal Audit Work in One Program",
-      summary: "BusPlanner brought policy review, ISO 27001 alignment, internal audit, and SOC 2 Type II into one coordinated program.",
-      meta: "Transportation software · SOC 2 · ISO 27001",
-    },
   ],
   "Global Mobility": [
     {
@@ -191,19 +184,29 @@ const studiesByCategory: Record<Category, { id: string; client: string; title: s
   ],
 };
 
+const ALL = "All";
+type View = Category | typeof ALL;
+const views: View[] = [ALL, ...categories];
+const allStudies = categories.flatMap((category) => studiesByCategory[category].map((study) => ({ ...study, category })));
+const listHref = (view: View) => (view === ALL ? "/case-studies" : `/case-studies?category=${encodeURIComponent(view)}`);
+
 export default function CaseStudies() {
   const { studyId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const requestedCategory = searchParams.get("category");
   const requestedStudy = studyId ?? searchParams.get("study");
   const categoryFromStudy = categories.find((item) => studiesByCategory[item].some((study) => study.id === requestedStudy));
-  const category = categories.find((item) => item === requestedCategory) ?? categoryFromStudy ?? "HealthTech";
+  // "All" (every study, unfiltered) is the default view; a category or a study's own category narrows it.
+  const category: View =
+    categories.find((item) => item === requestedCategory) ??
+    (requestedCategory === ALL ? ALL : (categoryFromStudy ?? ALL));
 
-  const categoryStudies = studiesByCategory[category] ?? [];
-  const selectedStudy = categoryStudies.find((study) => study.id === requestedStudy);
+  const categoryStudies = category === ALL ? allStudies : allStudies.filter((study) => study.category === category);
+  const selectedStudy = allStudies.find((study) => study.id === requestedStudy);
+  const backLabel = category === ALL ? "all case studies" : `${category} case studies`;
 
-  const selectCategory = (nextCategory: Category) => {
-    setSearchParams({ category: nextCategory });
+  const selectCategory = (nextCategory: View) => {
+    setSearchParams(nextCategory === ALL ? {} : { category: nextCategory });
   };
 
   return (
@@ -225,7 +228,7 @@ export default function CaseStudies() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="inline-flex max-w-full flex-wrap gap-1 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-sm" role="tablist" aria-label="Case study categories">
-              {categories.map((item) => (
+              {views.map((item) => (
                 <button
                   key={item}
                   type="button"
@@ -239,8 +242,8 @@ export default function CaseStudies() {
               ))}
             </div>
             {selectedStudy && (
-              <Link to={`/case-studies?category=${encodeURIComponent(category)}`} className="inline-flex shrink-0 items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-primary shadow-sm transition-colors hover:border-accent hover:text-accent">
-                <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category}
+              <Link to={listHref(category)} className="inline-flex shrink-0 items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-primary shadow-sm transition-colors hover:border-accent hover:text-accent">
+                <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {backLabel}
               </Link>
             )}
           </div>
@@ -599,8 +602,8 @@ export default function CaseStudies() {
 
             {caseStudyDetails[selectedStudy.id] && <CaseStudyArticle study={caseStudyDetails[selectedStudy.id]} />}
 
-            <Link to={`/case-studies?category=${encodeURIComponent(category)}`} className="mt-10 inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-primary shadow-sm transition-colors hover:border-accent hover:text-accent">
-              <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {category} case studies
+            <Link to={listHref(category)} className="mt-10 inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-primary shadow-sm transition-colors hover:border-accent hover:text-accent">
+              <ArrowRight className="mr-2 h-4 w-4 rotate-180" /> Back to {backLabel}
             </Link>
             </>
           ) : (
@@ -613,7 +616,7 @@ export default function CaseStudies() {
                       <div className="flex flex-1 flex-col p-7 sm:p-8">
                         <div className="flex items-start justify-between gap-5">
                           <div>
-                            <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">{category}</span>
+                            <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">{study.category}</span>
                             <h2 className="mt-3 text-2xl font-bold leading-tight text-primary">{study.client}</h2>
                           </div>
                         </div>
@@ -621,7 +624,7 @@ export default function CaseStudies() {
                         <p className="mt-4 flex-1 leading-7 text-slate-600">{study.summary}</p>
                         <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 pt-5">
                           <span className="text-sm text-slate-500">{study.meta}</span>
-                          <Link to={`/case-studies/${study.id}?category=${encodeURIComponent(category)}`} className="inline-flex items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent">Explore the story <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                          <Link to={category === ALL ? `/case-studies/${study.id}?category=${ALL}` : `/case-studies/${study.id}?category=${encodeURIComponent(category)}`} className="inline-flex items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent">Explore the story <ArrowRight className="ml-2 h-4 w-4" /></Link>
                         </div>
                       </div>
                     </article>

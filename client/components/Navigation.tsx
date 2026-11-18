@@ -13,86 +13,89 @@ import {
 type ServiceItem = { label: string; to?: string };
 type ServiceGroup = { title: string; to?: string; items: ServiceItem[] };
 
-// "Not routed yet" items have an older page file in client/pages/services but
-// no route in client/main.tsx, so they stay grayed until that page is
-// reviewed and routed.
+// Every Services item has a page (most use the shared ServicePage template,
+// content in client/data/servicePages) or a #section on its group page.
 const serviceGroups: ServiceGroup[] = [
   {
     title: "Audit Readiness & Certification",
-    to: "/compliance-audit-readiness",
+    to: "/compliance-audit-service",
     items: [
       // /soc2-readiness stays live (it gets search traffic) but is no longer in the menu.
       { label: "SOC 2", to: "/soc2" },
       { label: "HIPAA", to: "/hipaa" },
       { label: "ISO 27001", to: "/iso27001" },
-      { label: "ISO 42001" },
+      { label: "ISO 42001", to: "/iso42001" },
       { label: "HITRUST", to: "/hitrust" },
       { label: "GDPR", to: "/gdpr" },
       { label: "PCI DSS", to: "/pci-dss" },
       { label: "NIST", to: "/nist" },
       { label: "CMMC", to: "/cmmc" },
-      { label: "FedRAMP" },
-      { label: "Internal Audits" },
-      { label: "ADA/VPAT" },
+      { label: "FedRAMP", to: "/compliance-audit-service#fedramp" },
+      { label: "Internal Audits", to: "/internal-audits" },
+      { label: "ADA/VPAT", to: "/compliance-audit-service#ada-vpat" },
     ],
   },
   {
     title: "vCISO Leadership",
+    to: "/fractional-security-leadership",
     items: [
       { label: "Fractional Security Leadership", to: "/fractional-security-leadership" },
-      { label: "Security Questionnaires & RFPs" },
-      { label: "Risk Management" }, // /risk-management: not routed yet
-      { label: "Policies & Procedures" },
-      { label: "Vendor Risk Management" },
-      { label: "Security Awareness & Phishing" }, // /security-training: not routed yet
+      { label: "Security Questionnaires & RFPs", to: "/security-questionnaires" },
+      { label: "Risk Management", to: "/risk-management" },
+      { label: "Policies & Procedures", to: "/policies-procedures" },
+      { label: "Vendor Risk Management", to: "/vendor-risk-management" },
+      { label: "Security Awareness & Phishing", to: "/security-awareness-training" },
       { label: "Incident Response & Resilience", to: "/incident-response-resilience" },
     ],
   },
   {
     title: "Managed Security & IT",
+    to: "/managed-security-it",
     items: [
-      { label: "Security Operations & Monitoring", to: "/soc-support-monitoring-services" },
-      { label: "Endpoint & Device Management" },
-      { label: "Identity & Access Management" },
-      { label: "Vulnerability & Patch Management" },
-      { label: "Employee Onboarding & Offboarding" },
-      { label: "SaaS & Asset Management" },
-      { label: "IT Support" }, // /it-support: not routed yet
+      { label: "Security Operations & Monitoring", to: "/soc-support" },
+      { label: "Endpoint & Device Management", to: "/endpoint-device-management" },
+      { label: "Identity & Access Management", to: "/identity-access-management" },
+      { label: "Vulnerability & Patch Management", to: "/vulnerability-patch-management" },
+      { label: "Employee Onboarding & Offboarding", to: "/employee-onboarding-offboarding" },
+      { label: "SaaS & Asset Management", to: "/saas-asset-management" },
+      { label: "IT Support", to: "/it-support" },
     ],
   },
   {
     title: "Penetration Testing",
     to: "/penetration-testing-services",
     items: [
-      { label: "Web Application Testing" },
-      { label: "API Security Testing" },
-      { label: "Cloud Security Review" },
-      { label: "Desktop & Mobile App Testing" },
-      { label: "Network & Infrastructure Testing" },
-      { label: "Retesting & Remediation Verification" },
-      { label: "Pen Test Reports for Audits & Customers" },
-      { label: "AI-Assisted Pen Testing" },
-      { label: "Red Team Exercises" },
+      { label: "Web Application Testing", to: "/web-application-penetration-testing" },
+      { label: "API Security Testing", to: "/api-security-testing" },
+      { label: "Cloud Security Review", to: "/cloud-security-review" },
+      { label: "Desktop & Mobile App Testing", to: "/mobile-desktop-app-testing" },
+      { label: "Network & Infrastructure Testing", to: "/network-penetration-testing" },
+      { label: "Retesting & Remediation Verification", to: "/penetration-retesting" },
+      { label: "Pen Test Reports for Audits & Customers", to: "/penetration-test-reports" },
+      { label: "AI-Assisted Pen Testing", to: "/penetration-testing-services#ai-assisted" },
+      { label: "Red Team Exercises", to: "/penetration-testing-services#red-team" },
     ],
   },
   {
     title: "AI Governance",
+    to: "/ai-governance",
     items: [
-      { label: "AI Tool Inventory" },
-      { label: "Acceptable Use Policies" },
-      { label: "AI Vendor Reviews" },
-      { label: "AI Risk Assessments" },
-      { label: "Approval Workflows" },
+      { label: "AI Tool Inventory", to: "/ai-tool-inventory" },
+      { label: "Acceptable Use Policies", to: "/ai-acceptable-use-policy" },
+      { label: "AI Vendor Reviews", to: "/ai-vendor-reviews" },
+      { label: "AI Risk Assessments", to: "/ai-risk-assessments" },
+      { label: "Approval Workflows", to: "/ai-governance#approval-workflows" },
     ],
   },
   {
     title: "CTO, Engineering & DevOps",
+    to: "/cto-engineering-devops",
     items: [
-      { label: "Audit-Ready Infrastructure" },
-      { label: "Cloud Security Hardening" }, // /cloud-security: not routed yet
-      { label: "DevSecOps & CI/CD Security" },
-      { label: "Application & Infrastructure Hardening" },
-      { label: "Technical Incident Response" },
+      { label: "Audit-Ready Infrastructure", to: "/audit-ready-infrastructure" },
+      { label: "Cloud Security Hardening", to: "/cloud-security-hardening" },
+      { label: "DevSecOps & CI/CD Security", to: "/devsecops" },
+      { label: "Application & Infrastructure Hardening", to: "/application-infrastructure-hardening" },
+      { label: "Technical Incident Response", to: "/technical-incident-response" },
     ],
   },
 ];
@@ -266,7 +269,7 @@ export function Navigation() {
 
             <div className="relative group">
               <Link
-                to="/case-studies?category=HealthTech"
+                to="/case-studies"
                 className={`flex items-center text-foreground hover:text-accent transition-colors ${isActive("/case-studies") ? "text-accent" : ""}`}
               >
                 Case Studies
@@ -274,6 +277,13 @@ export function Navigation() {
               </Link>
               <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
+                  <Link
+                    to="/case-studies"
+                    className="block px-4 py-2 text-sm font-medium text-gray-900 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    All Case Studies
+                  </Link>
+                  <div className="my-1 border-t" />
                   {['HealthTech', 'InsurTech', 'AgTech', 'AI / SaaS', 'Global Mobility', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
                     <Link
                       key={category}
@@ -466,6 +476,13 @@ export function Navigation() {
                 {expandedSection === "case-studies" && (
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
+                      <Link
+                        to="/case-studies"
+                        className="block rounded px-3 py-2 text-sm font-medium text-gray-900 hover:bg-white hover:text-accent transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        All Case Studies
+                      </Link>
                       {['HealthTech', 'InsurTech', 'AgTech', 'AI / SaaS', 'Global Mobility', 'FinTech', 'Energy', 'EdTech', 'Services'].map((category) => (
                         <Link
                           key={category}
