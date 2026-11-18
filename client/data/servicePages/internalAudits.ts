@@ -61,10 +61,10 @@ export const internalAuditsPage: ServicePageContent = {
     eyebrow: "How it works",
     title: "How the Audit Runs",
     steps: [
-      { title: "Plan", body: "Agree scope, criteria and schedule.", points: ["Audit plan", "Document request"] },
-      { title: "Review", body: "Documents and records examined.", points: ["Policies and SoA", "Risk records"] },
-      { title: "Test", body: "Interviews and control sampling.", points: ["Clauses 4 to 10", "Annex A controls"] },
-      { title: "Report & Close", body: "Findings and corrective actions.", points: ["Audit report", "Closure support"] },
+      { title: "Plan", body: "Agree scope, criteria and schedule.", points: ["Audit plan and criteria", "Auditees and schedule agreed", "Document request"] },
+      { title: "Review", body: "Documents and records examined before fieldwork.", points: ["Policies, scope and SoA", "Risk assessment and treatment records", "Previous audit findings"] },
+      { title: "Fieldwork", body: "Interviews and evidence sampling.", points: ["Opening meeting", "Clauses 4 to 10 tested", "Annex A controls sampled"] },
+      { title: "Report & Close", body: "Findings shared and fixed.", points: ["Closing meeting", "Report with nonconformities and observations", "Corrective actions tracked to closure"] },
     ],
   },
   structure: {

@@ -176,31 +176,54 @@ export const iso42001Page: ServicePageContent = {
   phases: {
     eyebrow: "How it works",
     title: "From First Call to Certificate",
-    description: "A clear path in four phases, typically four to six months end to end.",
+    description:
+      "A clear path in four phases, typically four to six months end to end. Auditors expect your AIMS to have been running, with records, before the Stage 2 audit.",
     steps: [
       {
         title: "Scope & Assess",
         timing: "Weeks 1 to 3",
         body: "We learn how you build and use AI, then measure the gap.",
-        points: ["AI system inventory", "AIMS scope and boundaries", "Gap assessment and prioritized roadmap"],
+        points: [
+          "Kickoff and AI system inventory",
+          "AIMS scope and boundaries",
+          "Gap assessment against ISO 42001 and Annex A",
+          "Prioritized roadmap",
+          "Certification body selected and audit dates booked",
+        ],
       },
       {
         title: "Build",
         timing: "Weeks 3 to 10",
         body: "We put the AIMS in place alongside your team.",
-        points: ["AI policy and procedures", "Risk and impact assessments", "Statement of Applicability", "Training and roles"],
+        points: [
+          "AI policy, roles and procedures",
+          "AI risk assessment and treatment plan",
+          "AI impact assessments",
+          "Statement of Applicability",
+          "Controls implemented and staff trained",
+        ],
       },
       {
         title: "Operate & Verify",
         timing: "Weeks 10 to 16",
         body: "The AIMS runs and produces the records auditors sample.",
-        points: ["Evidence in your GRC platform", "Internal audit", "Management review"],
+        points: [
+          "Evidence collected in your GRC platform",
+          "Internal audit of the full AIMS",
+          "Corrective actions for internal audit findings",
+          "Management review",
+        ],
       },
       {
         title: "Certify",
         timing: "Weeks 16 to 24",
         body: "Your certification body runs a two stage audit. We are with you throughout.",
-        points: ["Stage 1 documentation review", "Stage 2 certification audit", "Corrective action support"],
+        points: [
+          "Stage 1 documentation review",
+          "Stage 1 findings closed",
+          "Stage 2 certification audit",
+          "Nonconformities closed and certificate issued",
+        ],
       },
     ],
   },
@@ -239,7 +262,7 @@ export const iso42001Page: ServicePageContent = {
     {
       icon: Award,
       title: "Seasoned InfoSec Team",
-      body: "Hands on experience with ISO 42001, ISO 27001 and SOC 2, and a 100% first time audit pass rate.",
+      body: "Hands on experience with ISO 42001, ISO 27001 and SOC 2, and more than 100 clients guided through their audits.",
     },
     {
       icon: Layers,

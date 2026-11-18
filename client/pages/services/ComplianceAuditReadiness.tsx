@@ -524,9 +524,9 @@ export default function ComplianceAuditReadiness() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               {
-                stat: "100%",
-                label: "First-Time Pass Rate",
-                description: "Clients pass audits on first attempt",
+                stat: "100+",
+                label: "Clients Supported",
+                description: "Teams guided from readiness through their audits",
               },
               {
                 stat: "200+",
