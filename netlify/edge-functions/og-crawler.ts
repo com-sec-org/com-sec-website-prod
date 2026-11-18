@@ -457,6 +457,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-11-09T00:00:00Z",
   },
+  "/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft": {
+    title: "The Binance Hack: What Businesses Can Learn From a $6 Billion Theft",
+    description:
+      "A convincing recruiter, a software download, and one employee's computer. Here's what the Binance theft teaches every business about access, approvals, and AI tooling.",
+    image: `${BASE_URL}/images/blog-images/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft.png`,
+    url: `${BASE_URL}/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-11-12T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────

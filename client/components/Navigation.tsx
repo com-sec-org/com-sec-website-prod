@@ -13,88 +13,92 @@ import {
 type ServiceItem = { label: string; to?: string };
 type ServiceGroup = { title: string; to?: string; items: ServiceItem[] };
 
+// "Not routed yet" items have an older page file in client/pages/services but
+// no route in client/main.tsx, so they stay grayed until that page is
+// reviewed and routed.
 const serviceGroups: ServiceGroup[] = [
-  {
-    title: "vCISO Leadership",
-    items: [
-      { label: "Fractional Security Leadership", to: "/fractional-security-leadership" },
-      { label: "Risk Management" },
-      { label: "Vendor Risk Management" },
-      { label: "Policies & Procedures" },
-      { label: "Incident Response Planning & Resilience", to: "/incident-response-resilience" },
-      { label: "Security Questionnaires & RFPs" },
-      { label: "Security Awareness & Phishing" },
-    ],
-  },
-  {
-    title: "Managed Security, Compliance & IT",
-    to: "/managed-security-services",
-    items: [
-      { label: "Security Operations & Monitoring", to: "/soc-support-monitoring-services" },
-      { label: "Ongoing Compliance Management", to: "/compliance-privacy-grc" },
-      { label: "Vulnerability & Patch Management" },
-      { label: "Endpoint & Device Management" },
-      { label: "Identity & Access Management" },
-      { label: "Employee Onboarding & Offboarding" },
-      { label: "SaaS & Asset Management" },
-      { label: "IT Support" },
-    ],
-  },
   {
     title: "Audit Readiness & Certification",
     to: "/compliance-audit-readiness",
     items: [
-      { label: "SOC 2 Type I & Type II", to: "/soc2-readiness" },
+      // /soc2-readiness stays live (it gets search traffic) but is no longer in the menu.
+      { label: "SOC 2", to: "/soc2" },
+      { label: "HIPAA", to: "/hipaa" },
       { label: "ISO 27001", to: "/iso27001" },
       { label: "ISO 42001" },
-      { label: "HIPAA", to: "/hipaa" },
       { label: "HITRUST", to: "/hitrust" },
-      { label: "PCI DSS", to: "/pci-dss" },
       { label: "GDPR", to: "/gdpr" },
+      { label: "PCI DSS", to: "/pci-dss" },
       { label: "NIST", to: "/nist" },
       { label: "CMMC", to: "/cmmc" },
+      { label: "FedRAMP" },
+      { label: "Internal Audits" },
+      { label: "ADA/VPAT" },
     ],
   },
   {
-    title: "Penetration Testing & Security Assessments",
+    title: "vCISO Leadership",
+    items: [
+      { label: "Fractional Security Leadership", to: "/fractional-security-leadership" },
+      { label: "Security Questionnaires & RFPs" },
+      { label: "Risk Management" }, // /risk-management: not routed yet
+      { label: "Policies & Procedures" },
+      { label: "Vendor Risk Management" },
+      { label: "Security Awareness & Phishing" }, // /security-training: not routed yet
+      { label: "Incident Response & Resilience", to: "/incident-response-resilience" },
+    ],
+  },
+  {
+    title: "Managed Security & IT",
+    items: [
+      { label: "Security Operations & Monitoring", to: "/soc-support-monitoring-services" },
+      { label: "Endpoint & Device Management" },
+      { label: "Identity & Access Management" },
+      { label: "Vulnerability & Patch Management" },
+      { label: "Employee Onboarding & Offboarding" },
+      { label: "SaaS & Asset Management" },
+      { label: "IT Support" }, // /it-support: not routed yet
+    ],
+  },
+  {
+    title: "Penetration Testing",
     to: "/penetration-testing-services",
     items: [
-      { label: "Web Application Penetration Testing", to: "/penetration-testing-services" },
-      { label: "API Penetration Testing", to: "/penetration-testing-services" },
-      { label: "AI Application Penetration Testing" },
-      { label: "Cloud Security Assessments", to: "/assessments-audits-offensive-security" },
-      { label: "Vulnerability Assessments", to: "/assessments-audits-offensive-security" },
+      { label: "Web Application Testing" },
+      { label: "API Security Testing" },
+      { label: "Cloud Security Review" },
+      { label: "Desktop & Mobile App Testing" },
+      { label: "Network & Infrastructure Testing" },
       { label: "Retesting & Remediation Verification" },
+      { label: "Pen Test Reports for Audits & Customers" },
+      { label: "AI-Assisted Pen Testing" },
+      { label: "Red Team Exercises" },
     ],
   },
   {
     title: "AI Governance",
     items: [
-      { label: "AI Tool & Model Inventory" },
-      { label: "AI Acceptable Use Policies" },
+      { label: "AI Tool Inventory" },
+      { label: "Acceptable Use Policies" },
       { label: "AI Vendor Reviews" },
-      { label: "AI Risk & Impact Assessments" },
-      { label: "AI Tool & Use Case Approvals" },
+      { label: "AI Risk Assessments" },
+      { label: "Approval Workflows" },
     ],
   },
   {
-    title: "CTO, Engineering & DevOps Support",
+    title: "CTO, Engineering & DevOps",
     items: [
-      { label: "Fractional CTO & Technology Roadmaps" },
-      { label: "Cloud Engineering & Security Hardening" },
-      { label: "DevOps & Infrastructure Automation" },
+      { label: "Audit-Ready Infrastructure" },
+      { label: "Cloud Security Hardening" }, // /cloud-security: not routed yet
       { label: "DevSecOps & CI/CD Security" },
       { label: "Application & Infrastructure Hardening" },
-      { label: "Audit-Ready Infrastructure" },
-      { label: "Hands-On Security Remediation" },
       { label: "Technical Incident Response" },
     ],
   },
 ];
 
-// A section with no page of its own and no linked items is grayed out entirely.
-const isGroupAvailable = (group: ServiceGroup) =>
-  Boolean(group.to) || group.items.some((item) => item.to);
+// Items without a page yet link to the contact form until their page is built.
+const COMING_SOON_HREF = "/contact";
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -138,63 +142,38 @@ export function Navigation() {
               </button>
               <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
-                  {serviceGroups.map((group) =>
-                    isGroupAvailable(group) ? (
+                  {serviceGroups.map((group) => {
+                    const headingClass =
+                      "w-full flex items-center justify-between px-4 py-2 text-left text-sm text-gray-700 hover:bg-accent/10 hover:text-accent group-hover/svc:bg-accent/10 group-hover/svc:text-accent transition-colors";
+                    const heading = (
+                      <>
+                        {group.title}
+                        <ChevronDown className="h-4 w-4 -rotate-90 shrink-0" />
+                      </>
+                    );
+                    // Heading links to its page, or to contact until that page exists.
+                    return (
                       <div key={group.title} className="relative group/svc">
-                        {group.to ? (
-                          <Link
-                            to={group.to}
-                            className="w-full flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent group-hover/svc:bg-accent/10 group-hover/svc:text-accent transition-colors"
-                          >
-                            {group.title}
-                            <ChevronDown className="h-4 w-4 -rotate-90 shrink-0" />
-                          </Link>
-                        ) : (
-                          <button
-                            type="button"
-                            className="w-full flex items-center justify-between px-4 py-2 text-left text-sm text-gray-700 hover:bg-accent/10 hover:text-accent group-hover/svc:bg-accent/10 group-hover/svc:text-accent transition-colors"
-                          >
-                            {group.title}
-                            <ChevronDown className="h-4 w-4 -rotate-90 shrink-0" />
-                          </button>
-                        )}
+                        <Link to={group.to ?? COMING_SOON_HREF} className={headingClass}>
+                          {heading}
+                        </Link>
                         {/* pl-1 (not margin) keeps the hover area continuous into the flyout */}
                         <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/svc:opacity-100 group-hover/svc:visible group-focus-within/svc:opacity-100 group-focus-within/svc:visible transition-all duration-200">
                           <div className="w-72 rounded-lg border bg-white shadow-xl py-2">
-                            {group.items.map((item) =>
-                              item.to ? (
-                                <Link
-                                  key={item.label}
-                                  to={item.to}
-                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                                >
-                                  {item.label}
-                                </Link>
-                              ) : (
-                                <span
-                                  key={item.label}
-                                  aria-disabled="true"
-                                  title="Coming soon"
-                                  className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
-                                >
-                                  {item.label}
-                                </span>
-                              ),
-                            )}
+                            {group.items.map((item) => (
+                              <Link
+                                key={item.label}
+                                to={item.to ?? COMING_SOON_HREF}
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
                           </div>
                         </div>
                       </div>
-                    ) : (
-                      <span
-                        key={group.title}
-                        aria-disabled="true"
-                        title="Coming soon"
-                        className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
-                      >
-                        {group.title}
-                      </span>
-                    ),
-                  )}
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -229,26 +208,15 @@ export function Navigation() {
                     </button>
                     <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/roadmap:opacity-100 group-hover/roadmap:visible group-focus-within/roadmap:opacity-100 group-focus-within/roadmap:visible transition-all duration-200">
                       <div className="w-56 rounded-lg border bg-white shadow-xl py-2">
-                        {roadmapProducts.map((p) =>
-                          p.page ? (
-                            <Link
-                              key={p.slug}
-                              to={productPath(p.slug)}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                            >
-                              {p.name}
-                            </Link>
-                          ) : (
-                            <span
-                              key={p.slug}
-                              aria-disabled="true"
-                              title="Coming soon"
-                              className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
-                            >
-                              {p.name}
-                            </span>
-                          ),
-                        )}
+                        {roadmapProducts.map((p) => (
+                          <Link
+                            key={p.slug}
+                            to={p.page ? productPath(p.slug) : COMING_SOON_HREF}
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                          >
+                            {p.name}
+                          </Link>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -376,16 +344,7 @@ export function Navigation() {
                 {expandedSection === "services" && (
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
-                      {serviceGroups.map((group) =>
-                        !isGroupAvailable(group) ? (
-                          <span
-                            key={group.title}
-                            aria-disabled="true"
-                            className="block px-3 py-2 text-sm text-gray-400 cursor-not-allowed"
-                          >
-                            {group.title}
-                          </span>
-                        ) : (
+                      {serviceGroups.map((group) => (
                         <div key={group.title}>
                           <button
                             type="button"
@@ -412,31 +371,20 @@ export function Navigation() {
                                 Overview
                               </Link>
                             )}
-                            {group.items.map((item) =>
-                              item.to ? (
-                                <Link
-                                  key={item.label}
-                                  to={item.to}
-                                  className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
-                                  onClick={() => setIsMenuOpen(false)}
-                                >
-                                  {item.label}
-                                </Link>
-                              ) : (
-                                <span
-                                  key={item.label}
-                                  aria-disabled="true"
-                                  className="block px-3 py-2 text-sm text-gray-400 cursor-not-allowed"
-                                >
-                                  {item.label}
-                                </span>
-                              ),
-                            )}
+                            {group.items.map((item) => (
+                              <Link
+                                key={item.label}
+                                to={item.to ?? COMING_SOON_HREF}
+                                className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors"
+                                onClick={() => setIsMenuOpen(false)}
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
                           </div>
                           )}
                         </div>
-                        ),
-                      )}
+                      ))}
                     </div>
                   </div>
                 )}
@@ -464,13 +412,9 @@ export function Navigation() {
                           <ChevronDown className={`h-4 w-4 transition-transform ${expandedSection === "products-roadmap" ? "rotate-180" : "-rotate-90"}`} />
                         </button>
                         {expandedSection === "products-roadmap" && <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
-                          {roadmapProducts.map((p) =>
-                            p.page ? (
-                              <Link key={p.slug} to={productPath(p.slug)} className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>{p.name}</Link>
-                            ) : (
-                              <span key={p.slug} aria-disabled="true" className="block px-3 py-2 text-sm text-gray-400 cursor-not-allowed">{p.name}</span>
-                            ),
-                          )}
+                          {roadmapProducts.map((p) => (
+                            <Link key={p.slug} to={p.page ? productPath(p.slug) : COMING_SOON_HREF} className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>{p.name}</Link>
+                          ))}
                         </div>}
                       </div>
                     </div>
