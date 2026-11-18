@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "your-security-page-doesnt-close-deals-a-soc-2-report-does",
+                title: "Your Security Page Doesn't Close Deals. A SOC 2 Report Does.",
+                excerpt: "A security page tells prospects you take security seriously. It doesn't answer the first question their security team asks. Here's how that gap stretches sales cycles.",
+                date: "November 13 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "Compliance",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/your-security-page-doesnt-close-deals-a-soc-2-report-does.png",
+                imageAlt: "Your Security Page Doesn't Close Deals. A SOC 2 Report Does.",
+                link: "/blog/your-security-page-doesnt-close-deals-a-soc-2-report-does",
+              },
+              {
                 id: "the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft",
                 title: "The Binance Hack: What Businesses Can Learn From a $6 Billion Theft",
                 excerpt: "A convincing recruiter, a software download, and one employee's computer. Here's what the Binance theft teaches every business about access, approvals, and AI tooling.",

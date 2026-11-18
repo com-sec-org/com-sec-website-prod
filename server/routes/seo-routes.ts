@@ -1011,4 +1011,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft`,
     image: `${BASE_URL}/images/blog-images/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft.png`,
   },
+  "/blog/your-security-page-doesnt-close-deals-a-soc-2-report-does": {
+    title: "Your Security Page Doesn't Close Deals. A SOC 2 Report Does.",
+    description:
+      "Enterprise buyers don't read your security page. They ask for a SOC 2 report. Here's how that gap slows deals and what startups should do this week.",
+    canonical: `${BASE_URL}/blog/your-security-page-doesnt-close-deals-a-soc-2-report-does`,
+    image: `${BASE_URL}/images/blog-images/your-security-page-doesnt-close-deals-a-soc-2-report-does.png`,
+  },
 };
