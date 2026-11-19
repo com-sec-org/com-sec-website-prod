@@ -462,6 +462,24 @@ export default function ShieldGrc() {
           </div>
         </section>
 
+        {/* Launch video */}
+        <section className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              className="w-full overflow-hidden rounded-2xl border border-gray-100 bg-black shadow-2xl"
+            >
+              <source
+                src="https://cdn.builder.io/o/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F214f9aee77104b7f84473bcab2ef3ef2?alt=media&token=8b6ee875-daa5-49d8-b2cb-5a254c70cd21&apiKey=0ba8b9be18d047ca8e1a6f29e75eea99"
+                type="video/mp4"
+              />
+              Your browser does not support embedded video.
+            </video>
+          </div>
+        </section>
+
         {/* Value */}
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
