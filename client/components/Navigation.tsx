@@ -254,6 +254,7 @@ export function Navigation() {
                     <div className={`absolute left-full top-0 ml-1 w-48 rounded-lg border bg-white shadow-xl transition-all duration-300 ${isAboutMenuOpen ? "opacity-100 visible" : "opacity-0 invisible group-hover/about:opacity-100 group-hover/about:visible"}`}>
                       <div className="py-2">
                         <Link to="/company" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Our Company</Link>
+                        <Link to="/team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Our Teams</Link>
                         <Link to="/careers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Careers</Link>
                         <Link to="/partnerships" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Partnerships</Link>
                       </div>
@@ -451,6 +452,7 @@ export function Navigation() {
                         </button>
                         {expandedSection === "resources-about" && <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
                           <Link to="/company" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Our Company</Link>
+                          <Link to="/team" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Our Teams</Link>
                           <Link to="/careers" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Careers</Link>
                           <Link to="/partnerships" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Partnerships</Link>
                         </div>}

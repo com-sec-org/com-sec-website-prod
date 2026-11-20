@@ -548,6 +548,15 @@ export default function Company() {
               </Link>
             </Button>
 
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white bg-transparent hover:bg-white hover:text-purple-700 transform hover:scale-110 transition-all duration-300"
+              asChild
+            >
+              <Link to="/team">Meet Our Team</Link>
+            </Button>
+
           </div>
         </div>
       </section>
