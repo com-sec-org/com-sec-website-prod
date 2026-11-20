@@ -49,6 +49,7 @@ export default function Team() {
         "Wazuh",
         "Security Monitoring",
         "Audit Readiness",
+        "ISO 42001",
       ],
     },
     {
@@ -136,6 +137,7 @@ export default function Team() {
         "HITRUST",
         "HIPAA",
         "Audit Readiness",
+        "ISO 42001",
         "Security Documentation",
       ],
     },
