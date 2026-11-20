@@ -66,6 +66,19 @@ export default function Team() {
       ],
     },
     {
+      name: "KJ",
+      role: "Junior Security Analyst",
+      image: "/images/team/placeholder.png",
+      description:
+        "KJ is a Junior Security Analyst at Com-Sec who is building hands-on experience across client compliance work. He collects audit evidence, tracks remediation items to closure, and assists senior analysts during client reviews.",
+      expertise: [
+        "Evidence Collection",
+        "Remediation Tracking",
+        "Security Documentation",
+        "Control Testing",
+      ],
+    },
+    {
       name: "Manoj Kumar",
       role: "Senior Security Analyst",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
