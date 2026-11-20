@@ -38,6 +38,20 @@ export default function Team() {
       ],
     },
     {
+      name: "Bhim",
+      role: "Security Analyst",
+      image: "/images/team/placeholder.png",
+      description:
+        "Bhim is a Security Analyst at Com-Sec who works directly with clients on SOC 2 and ISO 27001 requirements. He also supports Wazuh deployments, helping teams turn security monitoring and alerting into the evidence auditors ask for.",
+      expertise: [
+        "SOC 2",
+        "ISO 27001",
+        "Wazuh",
+        "Security Monitoring",
+        "Audit Readiness",
+      ],
+    },
+    {
       name: "Manoj Kumar",
       role: "Senior Security Analyst",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
