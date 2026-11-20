@@ -50,6 +50,7 @@ export default function Team() {
         "Security Monitoring",
         "Audit Readiness",
         "ISO 42001",
+        "IT Support",
       ],
     },
     {
@@ -81,7 +82,7 @@ export default function Team() {
     },
     {
       name: "Manoj Kumar",
-      role: "Senior Security Analyst",
+      role: "Senior Security & Compliance Manager",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
       description:
         "Manoj Kumar Pellur Santhosh Kumar is a Senior Security Analyst with experience leading security, IT security, and compliance programs across client environments. He specializes in endpoint security, identity and access management, cloud security controls, vulnerability management, risk assessments, audit readiness, and compliance frameworks including SOC 2, ISO 27001, HIPAA, HITRUST, and CMS-regulated requirements.",
@@ -101,6 +102,7 @@ export default function Team() {
         "CMS Compliance",
         "Audit Readiness",
         "Third-Party Risk Management",
+        "IT Support",
       ],
     },
     {
@@ -118,10 +120,10 @@ export default function Team() {
     },
     {
       name: "Parag Khankari",
-      role: "Information Security Analyst",
+      role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag Khankari is an Information Security Analyst with experience in cybersecurity risk assessments, vulnerability assessments, audit readiness, access control reviews, incident response support, and security monitoring. He supports organizations across SOC 2, HITRUST, ISO 27001, and HIPAA by reviewing controls, collecting evidence, documenting risks, and helping maintain a strong security posture.",
+        "Parag Khankari is a Security & Compliance Manager who oversees client compliance programs from readiness through audit. He coordinates risk assessments, control reviews, and evidence collection across SOC 2, HITRUST, ISO 27001, and HIPAA, and keeps each organization's security program on track between audit cycles.",
       expertise: [
         "Threat Analysis",
         "Vulnerability Assessment",
