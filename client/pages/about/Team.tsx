@@ -14,7 +14,7 @@ export default function Team() {
     {
       name: "Farbod Fakhrai",
       role: "Founder & CEO",
-      image: "/images/team/farbs1.jpg",
+      image: "/images/team/farbod.webp",
       description:
         "Farbod is the Founder & CEO of Com-Sec, leading the vision for building a more secure and compliant world. With deep expertise in cybersecurity strategy and organizational leadership, he guides Com-Sec in delivering innovative security solutions and helping organizations achieve regulatory assurance. His strategic leadership and industry insights drive the company's mission to empower businesses with resilient security programs.",
       expertise: [
