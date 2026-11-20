@@ -67,10 +67,10 @@ export default function Team() {
     },
     {
       name: "KJ",
-      role: "Junior Security Analyst",
-      image: "/images/team/placeholder.png",
+      role: "Security Analyst",
+      image: "/images/team/kj.webp",
       description:
-        "KJ is a Junior Security Analyst at Com-Sec who is building hands-on experience across client compliance work. He collects audit evidence, tracks remediation items to closure, and assists senior analysts during client reviews.",
+        "KJ is a Security Analyst at Com-Sec who is building hands-on experience across client compliance work. He collects audit evidence, tracks remediation items to closure, and assists senior analysts during client reviews.",
       expertise: [
         "Evidence Collection",
         "Remediation Tracking",
