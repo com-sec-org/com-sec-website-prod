@@ -52,6 +52,20 @@ export default function Team() {
       ],
     },
     {
+      name: "Raj",
+      role: "Security Analyst",
+      image: "/images/team/raj.webp",
+      description:
+        "Raj is a Security Analyst at Com-Sec who helps clients meet SOC 2, ISO 27001, and HITRUST requirements. He works through control gaps and evidence needs with each client so audits move forward without surprises.",
+      expertise: [
+        "SOC 2",
+        "ISO 27001",
+        "HITRUST",
+        "Audit Readiness",
+        "Control Gap Analysis",
+      ],
+    },
+    {
       name: "Manoj Kumar",
       role: "Senior Security Analyst",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
