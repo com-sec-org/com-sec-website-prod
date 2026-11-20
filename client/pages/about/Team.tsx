@@ -38,11 +38,11 @@ export default function Team() {
       ],
     },
     {
-      name: "Bhim",
+      name: "Cavour",
       role: "Security Analyst",
-      image: "/images/team/placeholder.png",
+      image: "/images/team/cavour.webp",
       description:
-        "Bhim is a Security Analyst at Com-Sec who works directly with clients on SOC 2 and ISO 27001 requirements. He also supports Wazuh deployments, helping teams turn security monitoring and alerting into the evidence auditors ask for.",
+        "Cavour is a Security Analyst at Com-Sec who works directly with clients on SOC 2 and ISO 27001 requirements. He also supports Wazuh deployments, helping teams turn security monitoring and alerting into the evidence auditors ask for.",
       expertise: [
         "SOC 2",
         "ISO 27001",
