@@ -14,7 +14,7 @@ export default function Team() {
     {
       name: "Farbod Fakhrai",
       role: "Founder & CEO",
-      image: "/images/team/farbs1.jpg",
+      image: "/images/team/farbod.webp",
       description:
         "Farbod is the Founder & CEO of Com-Sec, leading the vision for building a more secure and compliant world. With deep expertise in cybersecurity strategy and organizational leadership, he guides Com-Sec in delivering innovative security solutions and helping organizations achieve regulatory assurance. His strategic leadership and industry insights drive the company's mission to empower businesses with resilient security programs.",
       expertise: [
@@ -38,8 +38,51 @@ export default function Team() {
       ],
     },
     {
+      name: "Cavour",
+      role: "Security Analyst",
+      image: "/images/team/cavour.webp",
+      description:
+        "Cavour is a Security Analyst at Com-Sec who works directly with clients on SOC 2 and ISO 27001 requirements. He also supports Wazuh deployments, helping teams turn security monitoring and alerting into the evidence auditors ask for.",
+      expertise: [
+        "SOC 2",
+        "ISO 27001",
+        "Wazuh",
+        "Security Monitoring",
+        "Audit Readiness",
+        "ISO 42001",
+        "IT Support",
+      ],
+    },
+    {
+      name: "Raj",
+      role: "Security Analyst",
+      image: "/images/team/raj.webp",
+      description:
+        "Raj is a Security Analyst at Com-Sec who helps clients meet SOC 2, ISO 27001, and HITRUST requirements. He works through control gaps and evidence needs with each client so audits move forward without surprises.",
+      expertise: [
+        "SOC 2",
+        "ISO 27001",
+        "HITRUST",
+        "Audit Readiness",
+        "Control Gap Analysis",
+      ],
+    },
+    {
+      name: "KJ",
+      role: "Security Analyst",
+      image: "/images/team/kj.webp",
+      description:
+        "KJ is a Security Analyst at Com-Sec who is building hands-on experience across client compliance work. He collects audit evidence, tracks remediation items to closure, and assists senior analysts during client reviews.",
+      expertise: [
+        "Evidence Collection",
+        "Remediation Tracking",
+        "Security Documentation",
+        "Control Testing",
+      ],
+    },
+    {
       name: "Manoj Kumar",
-      role: "Senior Security Analyst",
+      role: "Senior Security & Compliance Manager",
       image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F290af4abcaf646438ded5ea504684d9d?format=webp&width=800&height=1200",
       description:
         "Manoj Kumar Pellur Santhosh Kumar is a Senior Security Analyst with experience leading security, IT security, and compliance programs across client environments. He specializes in endpoint security, identity and access management, cloud security controls, vulnerability management, risk assessments, audit readiness, and compliance frameworks including SOC 2, ISO 27001, HIPAA, HITRUST, and CMS-regulated requirements.",
@@ -59,6 +102,7 @@ export default function Team() {
         "CMS Compliance",
         "Audit Readiness",
         "Third-Party Risk Management",
+        "IT Support",
       ],
     },
     {
@@ -76,10 +120,10 @@ export default function Team() {
     },
     {
       name: "Parag Khankari",
-      role: "Information Security Analyst",
+      role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag Khankari is an Information Security Analyst with experience in cybersecurity risk assessments, vulnerability assessments, audit readiness, access control reviews, incident response support, and security monitoring. He supports organizations across SOC 2, HITRUST, ISO 27001, and HIPAA by reviewing controls, collecting evidence, documenting risks, and helping maintain a strong security posture.",
+        "Parag Khankari is a Security & Compliance Manager who oversees client compliance programs from readiness through audit. He coordinates risk assessments, control reviews, and evidence collection across SOC 2, HITRUST, ISO 27001, and HIPAA, and keeps each organization's security program on track between audit cycles.",
       expertise: [
         "Threat Analysis",
         "Vulnerability Assessment",
@@ -95,6 +139,7 @@ export default function Team() {
         "HITRUST",
         "HIPAA",
         "Audit Readiness",
+        "ISO 42001",
         "Security Documentation",
       ],
     },

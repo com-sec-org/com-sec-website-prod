@@ -60,7 +60,7 @@ import PhishingTest from "./pages/resources/PhishingTest";
 // About Pages
 import Company from "./pages/about/Company";
 import Careers from "./pages/about/Careers";
-// import Team from "./pages/about/Team";
+import Team from "./pages/about/Team";
 
 // Blog Pages
 import Iso27001Guide from "./pages/resources/blog/Iso27001Guide";
@@ -358,11 +358,11 @@ const App = () => (
               {/* About Routes */}
               <Route path="/about/company" element={<Navigate to="/company" replace />} />
               <Route path="/about/careers" element={<Careers />} />
-              {/* <Route path="/about/team" element={<Team />} /> */}
+              <Route path="/about/team" element={<Team />} />
               {/* Top-level About Routes (duplicates for new paths) */}
               <Route path="/company" element={<Company />} />
               <Route path="/careers" element={<Careers />} />
-              {/* <Route path="/team" element={<Team />} /> */}
+              <Route path="/team" element={<Team />} />
 
               {/* Top-level Blog Post Routes (duplicates for new paths) */}
               <Route
