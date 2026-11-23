@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import {Card, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import { CheckCircle, ChevronRight } from "lucide-react";
 import { PricingLayout } from "@/components/pricing/PricingLayout";
-import { ServiceCatalog } from "@/components/pricing/ShieldServiceCatalog";
 import { oneTimeEngagements } from "@/components/pricing/pricingData";
 
 export default function PricingOneTime() {
@@ -145,21 +144,6 @@ export default function PricingOneTime() {
               })}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-slate-950 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Internal Audit & AI Security</h2>
-            <p className="text-slate-400 text-lg">Starting prices for internal audit and AI security engagements.</p>
-          </div>
-          <ServiceCatalog
-            names={[
-              "Internal Audit & Assurance",
-              "AI Security & Governance",
-            ]}
-          />
         </div>
       </section>
     </PricingLayout>
