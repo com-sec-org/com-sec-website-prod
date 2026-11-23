@@ -267,12 +267,51 @@ export function Navigation() {
               </div>
             </div>
 
-            <Link
-              to="/pricing"
-              className={`flex items-center text-foreground hover:text-accent transition-colors ${isActive("/pricing") ? "text-accent" : ""}`}
-            >
-              Pricing
-            </Link>
+            {/* Pricing Dropdown */}
+            <div className="relative group">
+              <Link
+                to="/pricing"
+                className={`flex items-center text-foreground hover:text-accent transition-colors ${location.pathname.startsWith("/pricing") ? "text-accent" : ""}`}
+              >
+                Pricing
+                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
+              </Link>
+              <div className="absolute top-full left-0 mt-2 w-60 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-2">
+                  <Link
+                    to="/pricing/one-time"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    One-Time Engagements
+                  </Link>
+                  <Link
+                    to="/pricing/ongoing"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                  >
+                    Ongoing Support
+                  </Link>
+                  <div className="relative group/grc">
+                    <Link
+                      to="/pricing/calculator"
+                      className="w-full flex items-center justify-between px-4 py-2 text-left text-sm text-gray-700 hover:bg-accent/10 hover:text-accent group-hover/grc:bg-accent/10 group-hover/grc:text-accent transition-colors"
+                    >
+                      Shield GRC
+                      <ChevronDown className="h-4 w-4 -rotate-90 shrink-0" />
+                    </Link>
+                    <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/grc:opacity-100 group-hover/grc:visible group-focus-within/grc:opacity-100 group-focus-within/grc:visible transition-all duration-200">
+                      <div className="w-56 rounded-lg border bg-white shadow-xl py-2">
+                        <Link
+                          to="/pricing/calculator"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                        >
+                          Package Calculator
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="relative group">
               <Link
@@ -479,6 +518,27 @@ export function Navigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Pricing
+                </Link>
+                <Link
+                  to="/pricing/one-time"
+                  className="block px-8 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  One-Time Engagements
+                </Link>
+                <Link
+                  to="/pricing/ongoing"
+                  className="block px-8 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Ongoing Support
+                </Link>
+                <Link
+                  to="/pricing/calculator"
+                  className="block px-8 py-2 pb-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Shield GRC Package Calculator
                 </Link>
               </div>
 
