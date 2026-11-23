@@ -10,6 +10,9 @@ import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
 import Services from "./pages/Services";
 import Pricing from "./pages/Pricing";
+import PricingOneTime from "./pages/PricingOneTime";
+import PricingOngoing from "./pages/PricingOngoing";
+import PricingCalculator from "./pages/PricingCalculator";
 import About from "./pages/About";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
@@ -275,6 +278,9 @@ const App = () => (
               {/* Service & Pricing Routes */}
               <Route path="/services" element={<Services />} />
               <Route path="/pricing" element={<Pricing />} />
+              <Route path="/pricing/one-time" element={<PricingOneTime />} />
+              <Route path="/pricing/ongoing" element={<PricingOngoing />} />
+              <Route path="/pricing/calculator" element={<PricingCalculator />} />
 
               {/* NEW 5-BUCKET SERVICES */}
               <Route path="/fractional-security-leadership" element={<FractionalSecurityLeadership />} />

@@ -190,10 +190,18 @@ const productNavigation = [
   { product: "Shield AI", category: "AI security and governance" },
 ];
 
-export function ServiceCatalog() {
+export function ServiceCatalog({
+  names,
+  showVciso = false,
+}: {
+  names: string[];
+  showVciso?: boolean;
+}) {
   return (
     <div className="grid gap-8 lg:grid-cols-2">
-      {serviceCategories.map((category) => (
+      {serviceCategories
+        .filter((category) => names.includes(category.name))
+        .map((category) => (
         <div key={category.name} className="rounded-xl border border-slate-700 bg-slate-900 p-6">
           <h3 className="text-xl font-bold text-white">{category.name}</h3>
           <p className="mt-1 mb-5 text-sm text-slate-400">{category.summary}</p>
@@ -223,6 +231,7 @@ export function ServiceCatalog() {
         </div>
       ))}
 
+      {showVciso && (
       <div className="rounded-xl border border-slate-700 bg-slate-900 p-6 lg:col-span-2">
         <h3 className="text-xl font-bold text-white">Virtual CISO & Managed Security</h3>
         <p className="mt-1 mb-6 text-sm text-slate-400">Your outsourced security department.</p>
@@ -248,6 +257,7 @@ export function ServiceCatalog() {
           ))}
         </div>
       </div>
+      )}
     </div>
   );
 }
