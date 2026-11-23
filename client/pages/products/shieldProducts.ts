@@ -60,7 +60,7 @@ export const shieldProducts: ShieldProduct[] = [
     },
   },
   {
-    name: "Shield Pentest",
+    name: "Shield Defense",
     slug: "shield-pentest",
     available: true,
     icon: Bug,
@@ -73,7 +73,7 @@ export const shieldProducts: ShieldProduct[] = [
         "Review findings, supporting evidence, and remediation guidance.",
         "Assign fixes, request retests, and document closure.",
       ],
-      cta: "Request a Shield Pentest demo",
+      cta: "Request a Shield Defense demo",
     },
   },
   {

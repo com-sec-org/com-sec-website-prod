@@ -253,8 +253,8 @@ export function Navigation() {
                     </button>
                     <div className={`absolute left-full top-0 ml-1 w-48 rounded-lg border bg-white shadow-xl transition-all duration-300 ${isAboutMenuOpen ? "opacity-100 visible" : "opacity-0 invisible group-hover/about:opacity-100 group-hover/about:visible"}`}>
                       <div className="py-2">
-                        <Link to="/company" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Our Company</Link>
-                        <Link to="/team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Our Teams</Link>
+                        <Link to="/company" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Company</Link>
+                        <Link to="/team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Team</Link>
                         <Link to="/careers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Careers</Link>
                         <Link to="/partnerships" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Partnerships</Link>
                       </div>
@@ -262,11 +262,17 @@ export function Navigation() {
                   </div>
                   <Link to="/blogs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Blog</Link>
                   <Link to="/phishing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Phishing Testing</Link>
-                  <Link to="/pricing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Pricing</Link>
                   <Link to="/refer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">Refer &amp; Earn 10%</Link>
                 </div>
               </div>
             </div>
+
+            <Link
+              to="/pricing"
+              className={`flex items-center text-foreground hover:text-accent transition-colors ${isActive("/pricing") ? "text-accent" : ""}`}
+            >
+              Pricing
+            </Link>
 
             <div className="relative group">
               <Link
@@ -451,19 +457,29 @@ export function Navigation() {
                           <ChevronDown className={`h-4 w-4 transition-transform ${expandedSection === "resources-about" ? "rotate-180" : "-rotate-90"}`} />
                         </button>
                         {expandedSection === "resources-about" && <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
-                          <Link to="/company" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Our Company</Link>
-                          <Link to="/team" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Our Teams</Link>
+                          <Link to="/company" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Company</Link>
+                          <Link to="/team" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Team</Link>
                           <Link to="/careers" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Careers</Link>
                           <Link to="/partnerships" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Partnerships</Link>
                         </div>}
                       </div>
                       <Link to="/blogs" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Blog</Link>
                       <Link to="/phishing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Phishing Testing</Link>
-                      <Link to="/pricing" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
                       <Link to="/refer" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Refer &amp; Earn 10%</Link>
                     </div>
                   </div>
                 )}
+              </div>
+
+              {/* Pricing Section */}
+              <div className="border-b border-gray-100">
+                <Link
+                  to="/pricing"
+                  className="block px-4 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Pricing
+                </Link>
               </div>
 
               {/* Case Studies Section */}
