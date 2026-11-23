@@ -4,6 +4,12 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
+  DefenseSubscriptions,
+  ProductNavigation,
+  ServiceCatalog,
+} from "@/components/pricing/ShieldServiceCatalog";
+import { PackageCalculator } from "@/components/pricing/PackageCalculator";
+import {
   Card,
   CardDescription,
   CardHeader,
@@ -222,7 +228,7 @@ export default function Pricing() {
               <span className="text-sm font-semibold">Transparent Pricing</span>
             </div>
             <h1 className="pricing-hero-title text-5xl md:text-7xl font-bold mb-6">
-              Security Solutions for Every Budget
+              Pricing
             </h1>
             <p className="pricing-hero-subtitle text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
               Comprehensive cybersecurity and compliance services with flexible
@@ -491,6 +497,42 @@ export default function Pricing() {
                 );
               })}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Shield Pricing & Services */}
+      <section className="py-20 bg-slate-950 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+          <div>
+            <div className="mb-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Shield — Pricing & Services</h2>
+              <p className="text-slate-400 text-lg">Starting prices for each service line.</p>
+            </div>
+            <ServiceCatalog />
+          </div>
+
+          <div>
+            <div className="mb-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Shield Defense Subscriptions</h2>
+              <p className="text-slate-400 text-lg">Recurring packages that turn one-time penetration tests into ongoing vulnerability management.</p>
+            </div>
+            <DefenseSubscriptions />
+          </div>
+
+          <div>
+            <div className="mb-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Build your own security package</h2>
+              <p className="text-slate-400 text-lg">Select the offerings you need and see your estimated costs.</p>
+            </div>
+            <PackageCalculator />
+          </div>
+
+          <div>
+            <div className="mb-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Explore Shield</h2>
+            </div>
+            <ProductNavigation />
           </div>
         </div>
       </section>
