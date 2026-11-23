@@ -5,49 +5,9 @@ type ServiceCategory = {
   name: string;
   summary: string;
   rows: ServiceRow[];
-  note?: string;
 };
 
 const serviceCategories: ServiceCategory[] = [
-  {
-    name: "Shield GRC",
-    summary: "Security, compliance and audit readiness.",
-    rows: [
-      { service: "SOC 2 Type I Readiness", price: "$6,000", billing: "One-time" },
-      { service: "SOC 2 Type II Readiness", price: "$7,500", billing: "One-time" },
-      { service: "ISO 27001 Readiness", price: "$6,000", billing: "One-time" },
-      { service: "ISO 27701 Readiness", price: "$5,000", billing: "One-time" },
-      { service: "ISO 42001 Readiness", price: "$6,000", billing: "One-time" },
-      { service: "HIPAA Compliance", price: "$4,500", billing: "One-time" },
-      { service: "HITRUST Readiness", price: "$10,000", billing: "One-time" },
-      { service: "PCI DSS Readiness", price: "$5,000", billing: "One-time" },
-      { service: "GDPR Readiness", price: "$4,500", billing: "One-time" },
-      { service: "Compliance Gap Assessment", price: "$2,000", billing: "One-time" },
-      { service: "Managed Compliance", price: "$1,000", billing: "Monthly" },
-      { service: "GRC Platform", price: "$3,000", billing: "Annually" },
-    ],
-  },
-  {
-    name: "Shield Defense",
-    summary: "Vulnerability scanning, penetration testing and remediation management.",
-    rows: [
-      { service: "External Vulnerability Scanning", price: "$250", billing: "Monthly" },
-      { service: "Internal Vulnerability Scanning", price: "$500", billing: "Monthly" },
-      { service: "Continuous Vulnerability Management", price: "$750", billing: "Monthly" },
-      { service: "Web Application Penetration Testing", price: "$3,500", billing: "Per test" },
-      { service: "API Penetration Testing", price: "$3,500", billing: "Per test" },
-      { service: "Mobile Application Penetration Testing", price: "$4,500", billing: "Per test" },
-      { service: "External Network Penetration Testing", price: "$2,500", billing: "Per test" },
-      { service: "Internal Network Penetration Testing", price: "$4,500", billing: "Per test" },
-      { service: "Cloud Penetration Testing", price: "$6,000", billing: "Per test" },
-      { service: "Cloud Security Assessment", price: "$2,800", billing: "Per assessment" },
-      { service: "AI/LLM Penetration Testing", price: "$6,000", billing: "Per test" },
-      { service: "Red Team Assessment", price: "$15,000", billing: "Per engagement" },
-      { service: "Security Remediation Support", price: "$100", billing: "Hourly" },
-      { service: "Penetration Testing as a Service", price: "$500", billing: "Monthly" },
-    ],
-    note: "All penetration testing engagements include access to Shield Defense, detailed findings, remediation guidance, vulnerability tracking, and one retest within a defined window.",
-  },
   {
     name: "Managed IT & Security Operations",
     summary: "Secure and manage your technology infrastructure.",
@@ -142,54 +102,6 @@ const vcisoTiers = [
   },
 ];
 
-const defenseSubscriptions = [
-  {
-    name: "Scan",
-    price: "$250",
-    period: "per month",
-    features: [
-      "Vulnerability scanning",
-      "Findings dashboard",
-      "Severity classification",
-      "Remediation guidance",
-      "Vulnerability tracking",
-    ],
-  },
-  {
-    name: "Defense",
-    price: "$750",
-    period: "per month · annual commitment",
-    features: [
-      "Everything in Scan",
-      "Annual scoped penetration test",
-      "Remediation validation",
-      "Risk prioritization",
-      "Quarterly security reviews",
-    ],
-  },
-  {
-    name: "Defense Pro",
-    price: "$1,500",
-    period: "per month · annual commitment",
-    features: [
-      "Everything in Defense",
-      "Two scoped penetration tests annually",
-      "Managed vulnerabilities",
-      "Technical remediation support",
-      "Monthly security reviews",
-    ],
-  },
-];
-
-const productNavigation = [
-  { product: "Shield GRC", category: "Governance, risk and compliance" },
-  { product: "Shield Defense", category: "Penetration testing and vulnerability management" },
-  { product: "Shield CISO", category: "Security leadership and managed security" },
-  { product: "Shield IT", category: "Managed IT and infrastructure security" },
-  { product: "Shield Audit", category: "Internal audit and assurance" },
-  { product: "Shield AI", category: "AI security and governance" },
-];
-
 export function ServiceCatalog({
   names,
   showVciso = false,
@@ -225,9 +137,6 @@ export function ServiceCatalog({
               </tbody>
             </table>
           </div>
-          {category.note && (
-            <p className="mt-4 text-sm leading-relaxed text-slate-300">{category.note}</p>
-          )}
         </div>
       ))}
 
@@ -258,51 +167,6 @@ export function ServiceCatalog({
         </div>
       </div>
       )}
-    </div>
-  );
-}
-
-export function DefenseSubscriptions() {
-  return (
-    <div className="grid gap-6 md:grid-cols-3">
-      {defenseSubscriptions.map((plan) => (
-        <div key={plan.name} className="flex flex-col rounded-xl border border-slate-700 bg-slate-900 p-6">
-          <p className="text-lg font-bold text-white">{plan.name}</p>
-          <p className="mt-4 text-3xl font-bold text-orange-400">{plan.price}</p>
-          <p className="text-sm text-slate-400">{plan.period}</p>
-          <ul className="mt-5 space-y-2">
-            {plan.features.map((feature) => (
-              <li key={feature} className="flex items-start gap-2 text-sm text-slate-300">
-                <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-orange-400" />
-                {feature}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export function ProductNavigation() {
-  return (
-    <div className="overflow-x-auto rounded-xl border border-slate-700">
-      <table className="w-full text-left text-sm">
-        <thead className="bg-slate-800 text-slate-300">
-          <tr>
-            <th className="px-4 py-3 font-semibold">Product</th>
-            <th className="px-4 py-3 font-semibold">Service category</th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-slate-800">
-          {productNavigation.map((item) => (
-            <tr key={item.product} className="text-slate-300">
-              <td className="px-4 py-3 font-semibold text-white">{item.product}</td>
-              <td className="px-4 py-3">{item.category}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
   );
 }

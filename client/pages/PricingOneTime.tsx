@@ -10,7 +10,7 @@ export default function PricingOneTime() {
   return (
     <PricingLayout
       title="One-Time Compliance & Security Engagements | Com-Sec"
-      description="Fixed-scope compliance and security engagements, including SOC 2 and ISO 27001 readiness, penetration testing, and internal audits."
+      description="Fixed-scope compliance and security engagements, including SOC 2 and ISO 27001 readiness, security assessments, and internal audits."
       canonical="https://com-sec.io/pricing/one-time"
       heroTitle="One-Time Compliance & Security Engagements"
       heroSubtitle="Fixed-scope assessments, audit readiness, and penetration testing with clear deliverables and pricing."
@@ -151,13 +151,11 @@ export default function PricingOneTime() {
       <section className="py-20 bg-slate-950 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Shield Services</h2>
-            <p className="text-slate-400 text-lg">Starting prices for Shield GRC, Shield Defense penetration testing, internal audit, and AI security.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Internal Audit & AI Security</h2>
+            <p className="text-slate-400 text-lg">Starting prices for internal audit and AI security engagements.</p>
           </div>
           <ServiceCatalog
             names={[
-              "Shield GRC",
-              "Shield Defense",
               "Internal Audit & Assurance",
               "AI Security & Governance",
             ]}

@@ -13,21 +13,15 @@ type Offering = {
 };
 
 const offerings: Offering[] = [
-  { id: "grc-platform", label: "Shield GRC Platform", price: 3000, cadence: "annual" },
-  { id: "soc2-readiness", label: "SOC 2 Readiness", price: 6000, cadence: "one-time" },
-  { id: "iso27001-readiness", label: "ISO 27001 Readiness", price: 6000, cadence: "one-time" },
-  { id: "webapp-pentest", label: "Web Application Penetration Test", price: 3500, cadence: "one-time" },
-  { id: "cloud-assessment", label: "Cloud Security Assessment", price: 2800, cadence: "one-time" },
-  { id: "internal-audit", label: "Internal Audit", price: 3500, cadence: "one-time" },
-  { id: "ai-assessment", label: "AI Security Assessment", price: 3500, cadence: "one-time" },
+  { id: "soc2-type1", label: "SOC 2 Type I Readiness", price: 6000, cadence: "one-time" },
+  { id: "soc2-type2", label: "SOC 2 Type II Readiness", price: 7500, cadence: "one-time" },
+  { id: "iso27001", label: "ISO 27001 Readiness", price: 6000, cadence: "one-time" },
+  { id: "iso42001", label: "ISO 42001 Readiness", price: 6000, cadence: "one-time" },
+  { id: "hipaa", label: "HIPAA Compliance", price: 4500, cadence: "one-time" },
   { id: "defense-scan", label: "Shield Defense – Scan", price: 250, cadence: "monthly" },
-  { id: "managed-compliance", label: "Managed Compliance", price: 1000, cadence: "monthly" },
-  { id: "vciso", label: "Virtual CISO", price: 1800, cadence: "monthly" },
-  { id: "managed-it", label: "Managed IT", price: 75, cadence: "monthly", unit: "user" },
-  { id: "soc-mdr", label: "24/7 SOC & MDR", price: 35, cadence: "monthly", unit: "endpoint" },
 ];
 
-const defaultSelected = ["grc-platform", "soc2-readiness", "webapp-pentest", "defense-scan"];
+const defaultSelected = ["soc2-type1", "defense-scan"];
 
 const cadenceSuffix: Record<Cadence, string> = {
   "one-time": "",
