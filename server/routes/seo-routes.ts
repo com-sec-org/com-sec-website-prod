@@ -364,7 +364,7 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/products/shield-learn`,
   },
   "/products/shield-pentest": {
-    title: "Shield Pentest: Track Findings to a Verified Fix | Com-Sec",
+    title: "Shield Defense: Track Findings to a Verified Fix | Com-Sec",
     description:
       "Manage penetration tests from scope through retesting. Give testers, security teams, and engineers one place to see what was tested, what was found, and what still needs to be fixed.",
     canonical: `${BASE_URL}/products/shield-pentest`,
