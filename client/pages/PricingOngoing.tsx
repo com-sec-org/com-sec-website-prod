@@ -3,14 +3,13 @@ import { Button } from "@/components/ui/button";
 import {Card, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import { CheckCircle, ChevronRight } from "lucide-react";
 import { PricingLayout } from "@/components/pricing/PricingLayout";
-import { ServiceCatalog } from "@/components/pricing/ShieldServiceCatalog";
 import { ongoingSupportServices } from "@/components/pricing/pricingData";
 
 export default function PricingOngoing() {
   return (
     <PricingLayout
       title="Ongoing Security & IT Support | Com-Sec"
-      description="Monthly security, compliance, and managed IT support, including virtual CISO services."
+      description="Monthly security, compliance, and managed IT support."
       canonical="https://com-sec.io/pricing/ongoing"
       heroTitle="Ongoing Security & IT Support"
       heroSubtitle="Continuous monthly security, compliance, and managed IT support services."
@@ -133,17 +132,6 @@ export default function PricingOngoing() {
         </div>
       </section>
 
-      <section className="py-20 bg-slate-950 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
-          <div>
-            <div className="mb-12 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Managed IT, Virtual CISO & Managed Security</h2>
-              <p className="text-slate-400 text-lg">Monthly leadership and operations support.</p>
-            </div>
-            <ServiceCatalog names={["Managed IT & Security Operations"]} showVciso />
-          </div>
-        </div>
-      </section>
     </PricingLayout>
   );
 }
