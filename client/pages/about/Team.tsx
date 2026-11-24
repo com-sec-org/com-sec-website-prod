@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function Team() {
   const [expandedMember, setExpandedMember] = React.useState<string | null>(null);
+  const [expandedBio, setExpandedBio] = React.useState<string | null>(null);
 
   const teamMembers = [
     {
@@ -344,9 +345,18 @@ export default function Team() {
                   </CardHeader>
 
                   <CardContent className="pt-0">
-                    <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    <p
+                      className={`text-sm text-muted-foreground leading-relaxed min-h-[7.125rem] ${expandedBio === member.name ? "" : "line-clamp-5"}`}
+                    >
                       {member.description}
                     </p>
+                    <button
+                      type="button"
+                      onClick={() => setExpandedBio(expandedBio === member.name ? null : member.name)}
+                      className="mb-4 text-xs font-medium text-accent hover:underline"
+                    >
+                      {expandedBio === member.name ? "Show less" : "Read more"}
+                    </button>
 
                     {/* Expertise Tags */}
                     <div className="flex flex-wrap gap-2 justify-center">
