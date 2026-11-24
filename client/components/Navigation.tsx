@@ -2,11 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Shield, Menu, X, ChevronDown } from "lucide-react";
-import {
-  availableProducts,
-  productPath,
-  roadmapProducts,
-} from "@/pages/products/shieldProducts";
 
 // Services menu. An item without `to` has no page yet and renders grayed out
 // (not clickable) until its page is built and the route is added here.
@@ -181,58 +176,12 @@ export function Navigation() {
               </div>
             </div>
 
-            {/* Products Dropdown: live Shield products, plus a roadmap flyout */}
-            <div className="relative group">
-              <Link
-                to="/products"
-                className={`flex items-center text-foreground hover:text-accent transition-colors ${location.pathname.startsWith("/products") ? "text-accent" : ""}`}
-              >
-                Products
-                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
-              </Link>
-              <div className="absolute top-full left-0 mt-2 w-60 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="py-2">
-                  {availableProducts.map((p) => (
-                    <Link
-                      key={p.slug}
-                      to={productPath(p.slug)}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                    >
-                      {p.name}
-                    </Link>
-                  ))}
-                  <div className="relative group/roadmap">
-                    <button
-                      type="button"
-                      className="w-full flex items-center justify-between px-4 py-2 text-left text-sm text-gray-700 hover:bg-accent/10 hover:text-accent group-hover/roadmap:bg-accent/10 group-hover/roadmap:text-accent transition-colors"
-                    >
-                      On the Roadmap
-                      <ChevronDown className="h-4 w-4 -rotate-90 shrink-0" />
-                    </button>
-                    <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/roadmap:opacity-100 group-hover/roadmap:visible group-focus-within/roadmap:opacity-100 group-focus-within/roadmap:visible transition-all duration-200">
-                      <div className="w-56 rounded-lg border bg-white shadow-xl py-2">
-                        {roadmapProducts.map((p) => (
-                          <Link
-                            key={p.slug}
-                            to={p.page ? productPath(p.slug) : COMING_SOON_HREF}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
-                          >
-                            {p.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="my-2 border-t" />
-                  <Link
-                    to="/products"
-                    className="block px-4 py-2 text-sm font-medium text-gray-900 hover:bg-accent/10 hover:text-accent transition-colors"
-                  >
-                    All Shield Products
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <Link
+              to="/products"
+              className={`text-foreground hover:text-accent transition-colors ${location.pathname.startsWith("/products") ? "text-accent" : ""}`}
+            >
+              Products
+            </Link>
 
             {/* Resources Dropdown */}
             <div className="relative group">
@@ -448,34 +397,9 @@ export function Navigation() {
 
               {/* Products Section */}
               <div className="border-b border-gray-100">
-                <button
-                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
-                  onClick={() => setExpandedSection(expandedSection === "products" ? null : "products")}
-                >
-                  <span className="text-sm font-medium text-gray-900">Products</span>
-                  <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "products" || expandedSection === "products-roadmap" ? "rotate-180" : ""}`} />
-                </button>
-                {(expandedSection === "products" || expandedSection === "products-roadmap") && (
-                  <div className="px-4 pb-3 bg-gray-50">
-                    <div className="flex flex-col space-y-1">
-                      <Link to="/products" className="block px-3 py-2 text-sm font-medium text-gray-900 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>All Shield Products</Link>
-                      {availableProducts.map((p) => (
-                        <Link key={p.slug} to={productPath(p.slug)} className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>{p.name}</Link>
-                      ))}
-                      <div>
-                        <button type="button" className="w-full px-3 py-2 text-left flex items-center justify-between text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setExpandedSection(expandedSection === "products-roadmap" ? "products" : "products-roadmap")}>
-                          On the Roadmap
-                          <ChevronDown className={`h-4 w-4 transition-transform ${expandedSection === "products-roadmap" ? "rotate-180" : "-rotate-90"}`} />
-                        </button>
-                        {expandedSection === "products-roadmap" && <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
-                          {roadmapProducts.map((p) => (
-                            <Link key={p.slug} to={p.page ? productPath(p.slug) : COMING_SOON_HREF} className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>{p.name}</Link>
-                          ))}
-                        </div>}
-                      </div>
-                    </div>
-                  </div>
-                )}
+                <Link to="/products" className="block px-4 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors" onClick={() => setIsMenuOpen(false)}>
+                  Products
+                </Link>
               </div>
 
               {/* Resources Section */}
