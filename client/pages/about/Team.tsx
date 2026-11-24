@@ -159,10 +159,10 @@ export default function Team() {
     },
     {
       name: "Bojan Trifunovic",
-      role: "Chief of Staff",
+      role: "Information Security Manager",
       image: "/images/team/bojan-trifunovic.webp",
       description:
-        "Bojan is the Chief of Staff at Com-Sec, overseeing organizational operations and strategic initiatives. He ensures seamless coordination across teams and drives operational excellence. Bojan's leadership and organizational expertise help streamline processes and support Com-Sec's mission to deliver exceptional security and compliance solutions.",
+        "Bojan is the Information Security Manager at Com-Sec, overseeing the information security program and the policies, controls, and reviews that protect client and company data. He coordinates security assessments and keeps compliance efforts moving from readiness through audit.",
       expertise: [
         "Operations Management",
         "Strategic Planning",
