@@ -319,13 +319,7 @@ export default function Team() {
                         <img
                           src={member.image}
                           alt={member.name}
-                          className={`w-full h-full transform group-hover:scale-110 transition-transform duration-500 ${
-                            member.name === "Banu Priya"
-                              ? "object-cover object-top"
-                              : member.name === "Samuel Soto"
-                                ? "object-cover object-top"
-                                : "object-cover object-center"
-                          }`}
+                          className="absolute left-[-12.5%] top-0 w-[125%] max-w-none h-auto transform group-hover:scale-110 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
                         <div className="absolute inset-0 ring-2 ring-white/20 rounded-full"></div>
