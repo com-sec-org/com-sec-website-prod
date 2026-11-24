@@ -147,7 +147,7 @@ export default function Team() {
     {
       name: "Bojan Trifunovic",
       role: "Chief of Staff",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F75ec1e6ecbdd448d8bf98c7c050990f3?format=webp&width=800&height=1200",
+      image: "/images/team/bojan-trifunovic.webp",
       description:
         "Bojan is the Chief of Staff at Com-Sec, overseeing organizational operations and strategic initiatives. He ensures seamless coordination across teams and drives operational excellence. Bojan's leadership and organizational expertise help streamline processes and support Com-Sec's mission to deliver exceptional security and compliance solutions.",
       expertise: [
