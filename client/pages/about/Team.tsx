@@ -357,7 +357,7 @@ export default function Team() {
                                     : member.name === "Manoj Kumar"
                                       ? "left-[-29%] -top-[20%] w-[150%]"
                                     : member.name === "Cavour Lafleur"
-                                      ? "left-[-18.75%] -top-[11%] w-[137.5%]"
+                                      ? "left-[-12.5%] -top-[15.6%] w-[125%]"
                                     : "left-[-12.5%] top-0 w-[125%]"
                           }`}
                         />
