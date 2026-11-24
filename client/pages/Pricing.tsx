@@ -3,49 +3,81 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import { PricingLayout } from "@/components/pricing/PricingLayout";
 
-type PriceItem = { name: string; price: string; unit?: string; note: string };
+type PriceItem = { name: string; price: string; billing: string; note: string };
 
 const priceGroups: { title: string; description: string; items: PriceItem[] }[] = [
   {
-    title: "One-Time Projects",
-    description: "Fixed-scope work, paid once.",
+    title: "Managed Security Hours",
+    description: "Monthly hour buckets. Engineer and analyst work draws from the same bucket.",
     items: [
-      { name: "Security Assessments", price: "$4,000", note: "Fixed scope, typically 4 to 8 weeks. Includes penetration testing and internal audits." },
-      { name: "Compliance & Audit Readiness", price: "$6,000", note: "SOC 2 Type I and II, ISO 27001, ISO 42001, HIPAA, HITRUST and GDPR." },
+      { name: "10 hour bucket", price: "$2,000", billing: "/ month", note: "$200 per hour. Early stage, SOC 2 maintenance, questionnaires." },
+      { name: "20 hour bucket", price: "$3,600", billing: "/ month", note: "$180 per hour. Readiness in flight plus vCISO." },
+      { name: "40 hour bucket", price: "$6,400", billing: "/ month", note: "$160 per hour. Multi-framework program, for example SOC 2 plus HIPAA or ISO." },
+      { name: "60 hour bucket", price: "$8,700", billing: "/ month", note: "$145 per hour. Regulated health tech with a heavy audit load." },
+      { name: "80 hour bucket", price: "$10,800", billing: "/ month", note: "$135 per hour. Embedded security team, replaces a first security hire." },
+      { name: "120 hour bucket", price: "$15,000", billing: "/ month", note: "$125 per hour. Full outsourced security function." },
+    ],
+  },
+  {
+    title: "Managed Services & Maintenance",
+    description: "Ongoing plans billed every month.",
+    items: [
+      { name: "Compliance maintenance (SOC 2, ISO, HITRUST)", price: "$2,000", billing: "/ month", note: "Control upkeep, evidence review and auditor coordination after the report. Questionnaires included." },
+      { name: "Essential MSSP", price: "$3,500", billing: "/ month", note: "Core security monitoring and incident response." },
+      { name: "Advanced MSSP and SOC", price: "$7,500", billing: "/ month", note: "24/7 monitoring, threat hunting, playbooks, dedicated analyst, EDR management." },
+      { name: "Enterprise MSSP and SOC", price: "$12,000+", billing: "/ month", note: "Custom. Managed IT, endpoint, identity, cloud, quarterly reviews." },
+      { name: "Managed IT", price: "$2,500+", billing: "/ month", note: "Endpoint, identity, patching, onboarding and offboarding, SaaS and asset management." },
+    ],
+  },
+  {
+    title: "Audits & Readiness",
+    description: "Fixed-scope engagements, paid once.",
+    items: [
+      { name: "SOC 2 Type I audit readiness", price: "$6,000", billing: "one-time", note: "Scope, control mapping, gap list, evidence prep and auditor coordination through the Type I report." },
+      { name: "SOC 2 Type I and Type II audit readiness", price: "$8,000", billing: "one-time", note: "Both reports planned together." },
+      { name: "SOC 2 Type I audit", price: "$6,000", billing: "one-time", note: "Audit only, through partner auditor." },
+      { name: "SOC 2 Type I and Type II audit", price: "$8,000", billing: "one-time", note: "Audit only, through partner auditor." },
+      { name: "Full SOC 2 package", price: "$18,500", billing: "one-time", note: "Type I audit plus about $10,000 for the auditor. Platform subscription is extra." },
+      { name: "ISO 27001 readiness", price: "$7,000", billing: "one-time", note: "ISMS scope, risk assessment, SoA and policies." },
+      { name: "ISO 27001 internal audit", price: "$3,500", billing: "one-time", note: "3 to 4 weeks with controls and evidence already in place." },
+      { name: "ISO 27001 readiness plus internal audit", price: "$8,500", billing: "one-time", note: "One package, 50 percent due at signing." },
+      { name: "ISO 42001 readiness", price: "$10,000", billing: "one-time", note: "AI governance management system. $2,500 as an add-on to ISO 27001." },
+      { name: "Privacy: GDPR / CCPA / ISO 27701", price: "$6,000", billing: "one-time", note: "GDPR, CCPA and privacy program alignment on top of ISO 27001." },
+      { name: "HIPAA risk analysis and readiness", price: "$6,000", billing: "one-time", note: "ePHI inventory, risk analysis, risk management plan, policies and training." },
+      { name: "HITRUST e1 readiness", price: "$6,000", billing: "one-time", note: "Scoping and readiness. MyCSF license and assessor are separate." },
+      { name: "HITRUST i1 readiness", price: "$12,000", billing: "one-time", note: "Scoping and readiness. MyCSF license and assessor are separate." },
+      { name: "HITRUST r2 readiness", price: "$15,000", billing: "one-time", note: "Scoping and readiness. MyCSF license and assessor are separate." },
     ],
   },
   {
     title: "Penetration Testing",
     description: "One-time tests, priced per engagement.",
     items: [
-      { name: "Web Application", price: "$3,500", note: "OWASP Top 10, APIs, authentication, access control and session management." },
-      { name: "Mobile Application", price: "$6,500", note: "iOS and Android analysis, local storage, API layer and certificate pinning." },
-      { name: "Cloud Infrastructure", price: "$2,500", note: "AWS, Azure and GCP configuration, IAM and network segmentation." },
-      { name: "Network Infrastructure", price: "$2,500", note: "Internal and external testing, firewall and VPN review, Active Directory." },
+      { name: "Web application", price: "$3,500", billing: "one-time", note: "OWASP Top 10, authentication, access control, business logic. One retest included." },
+      { name: "API", price: "$3,500", billing: "one-time", note: "REST and GraphQL authentication, authorization and data exposure." },
+      { name: "Cloud or network infrastructure", price: "$3,500", billing: "one-time", note: "Cloud configuration, IAM, segmentation, internal and external network, Active Directory." },
+      { name: "Mobile application", price: "$5,500", billing: "one-time", note: "iOS and Android binary analysis, local storage, API layer." },
     ],
   },
   {
-    title: "Monthly Managed Services",
-    description: "Ongoing plans billed every month.",
+    title: "Security Products",
+    description: "Annual subscriptions and resold platforms.",
     items: [
-      { name: "Essential MSSP", price: "$3,500", unit: "/month", note: "Core security monitoring and incident response." },
-      { name: "Advanced MSSP", price: "$6,500", unit: "/month", note: "Complete security operations and threat management." },
-      { name: "SOC Essentials", price: "$3,000", unit: "/month", note: "24/7 monitoring, incident response, monthly reports and basic threat intelligence." },
-      { name: "SOC Professional", price: "$7,500", unit: "/month", note: "Threat hunting, custom playbooks, a dedicated analyst and biweekly reviews." },
+      { name: "Shield GRC", price: "$7,500", billing: "/ year", note: "Controls, policies, evidence and audit tracking." },
+      { name: "Shield Learn", price: "$6,500", billing: "/ year", note: "Security awareness and training." },
+      { name: "Shield Defense", price: "$10,500", billing: "/ year", note: "Security monitoring and defense." },
+      { name: "Resold GRC platform", price: "$9,500", billing: "per contract", note: "Drata, Vanta or Ceel. Platform subscription is billed per contract." },
     ],
   },
   {
-    title: "Custom Quote",
-    description: "Scoped to your environment. Contact us for pricing.",
+    title: "Other Services",
+    description: "Standalone services and recurring scans.",
     items: [
-      { name: "Full SOC 2 Audit Package", price: "Custom", note: "Readiness, evidence collection, GRC platform support and auditor coordination." },
-      { name: "Enterprise MSSP", price: "Custom", note: "Everything in Advanced, plus managed IT and endpoint security." },
-      { name: "SOC Enterprise", price: "Custom", note: "Dedicated SOC team, custom integrations and on-site support." },
-      { name: "Specialized Penetration Testing", price: "Custom", note: "API, red team, retesting, AI-assisted, wireless, social engineering and physical. Typically 3 to 6 weeks." },
-      { name: "Fractional Security Leadership (vCISO)", price: "Custom", note: "Risk management, policies, vendor risk and security awareness." },
-      { name: "Managed IT & IT Support", price: "Custom", note: "Endpoints, identity, patching, onboarding and offboarding." },
-      { name: "AI Governance", price: "Custom", note: "AI tool inventory, acceptable use policies, vendor reviews and risk assessments." },
-      { name: "Security Questionnaires & RFPs", price: "Custom", note: "Included in vCISO and SOC 2 maintenance plans, or scoped separately." },
+      { name: "Security questionnaires", price: "$500", billing: "per item", note: "Included in retainers. Standalone only on request." },
+      { name: "Incident response tabletop", price: "$2,500", billing: "one-time", note: "Scenario exercise, findings and updated IR plan." },
+      { name: "BC/DR plan and test", price: "$2,500", billing: "one-time", note: "Business impact analysis, recovery plan and a test." },
+      { name: "ADA / VPAT", price: "$2,500", billing: "one-time", note: "Accessibility review and VPAT report." },
+      { name: "PCI ASV scans", price: "$1,500", billing: "annual", note: "Quarterly external scans and attestation." },
     ],
   },
 ];
@@ -89,23 +121,43 @@ export default function Pricing() {
           </div>
 
           {priceGroups.map((group) => (
-            <div key={group.title} className="mb-14 last:mb-0">
-              <h3 className="text-2xl font-bold text-white mb-1">{group.title}</h3>
-              <p className="text-slate-400 mb-6">{group.description}</p>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {group.items.map((item) => (
-                  <div key={item.name} className="flex flex-col rounded-xl border border-slate-700 bg-slate-900 p-6 transition-colors hover:border-orange-400/50">
-                    <h4 className="font-semibold text-white mb-3">{item.name}</h4>
-                    <p className="text-3xl font-bold text-orange-400">
-                      {item.price}
-                      {item.unit && <span className="ml-1 text-base font-medium text-slate-400">{item.unit}</span>}
-                    </p>
-                    <p className="mt-3 text-sm text-slate-400">{item.note}</p>
-                  </div>
-                ))}
+            <div key={group.title} className="mb-12 last:mb-0">
+              <div className="mb-4">
+                <h3 className="text-2xl font-bold text-white">{group.title}</h3>
+                <p className="text-slate-400">{group.description}</p>
+              </div>
+              <div className="overflow-x-auto rounded-xl border border-slate-700">
+                <table className="w-full min-w-[640px] text-left text-sm">
+                  <thead className="bg-slate-800 text-slate-300">
+                    <tr>
+                      <th className="px-6 py-3 font-semibold">Service</th>
+                      <th className="px-6 py-3 font-semibold">Price</th>
+                      <th className="px-6 py-3 font-semibold">Details</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-700 bg-slate-900">
+                    {group.items.map((item) => (
+                      <tr key={item.name} className="align-top hover:bg-slate-800/60">
+                        <td className="px-6 py-4 font-semibold text-white">{item.name}</td>
+                        <td className="whitespace-nowrap px-6 py-4">
+                          <span className="text-lg font-bold text-orange-400">{item.price}</span>
+                          <span className="ml-1.5 text-slate-400">{item.billing}</span>
+                        </td>
+                        <td className="px-6 py-4 text-slate-400">{item.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           ))}
+
+          <div className="mt-14 rounded-xl border border-slate-700 bg-slate-900 p-6 text-sm text-slate-400">
+            <p className="font-semibold text-white mb-2">Retainer terms</p>
+            <p>
+              Retainers are billed monthly in advance, Net 30. Unused hours do not roll over. Overage is billed at 110 percent of the bucket rate. Engineer and analyst work draws from the same bucket.
+            </p>
+          </div>
         </div>
       </section>
 

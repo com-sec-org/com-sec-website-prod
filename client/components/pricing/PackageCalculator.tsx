@@ -14,14 +14,14 @@ type Offering = {
 
 const offerings: Offering[] = [
   { id: "soc2-type1", label: "SOC 2 Type I Readiness", price: 6000, cadence: "one-time" },
-  { id: "soc2-type2", label: "SOC 2 Type II Readiness", price: 7500, cadence: "one-time" },
-  { id: "iso27001", label: "ISO 27001 Readiness", price: 6000, cadence: "one-time" },
-  { id: "iso42001", label: "ISO 42001 Readiness", price: 6000, cadence: "one-time" },
-  { id: "hipaa", label: "HIPAA Compliance", price: 4500, cadence: "one-time" },
-  { id: "defense-scan", label: "Shield Defense – Scan", price: 250, cadence: "monthly" },
+  { id: "soc2-type1-type2", label: "SOC 2 Type I and Type II Readiness", price: 8000, cadence: "one-time" },
+  { id: "iso27001", label: "ISO 27001 Readiness", price: 7000, cadence: "one-time" },
+  { id: "iso42001", label: "ISO 42001 Readiness", price: 10000, cadence: "one-time" },
+  { id: "hipaa", label: "HIPAA Risk Analysis and Readiness", price: 6000, cadence: "one-time" },
+  { id: "shield-defense", label: "Shield Defense", price: 10500, cadence: "annual" },
 ];
 
-const defaultSelected = ["soc2-type1", "defense-scan"];
+const defaultSelected = ["soc2-type1", "shield-defense"];
 
 const cadenceSuffix: Record<Cadence, string> = {
   "one-time": "",
