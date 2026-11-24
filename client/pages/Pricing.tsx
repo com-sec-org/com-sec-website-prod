@@ -3,6 +3,53 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import { PricingLayout } from "@/components/pricing/PricingLayout";
 
+type PriceItem = { name: string; price: string; unit?: string; note: string };
+
+const priceGroups: { title: string; description: string; items: PriceItem[] }[] = [
+  {
+    title: "One-Time Projects",
+    description: "Fixed-scope work, paid once.",
+    items: [
+      { name: "Security Assessments", price: "$4,000", note: "Fixed scope, typically 4 to 8 weeks. Includes penetration testing and internal audits." },
+      { name: "Compliance & Audit Readiness", price: "$6,000", note: "SOC 2 Type I and II, ISO 27001, ISO 42001, HIPAA, HITRUST and GDPR." },
+    ],
+  },
+  {
+    title: "Penetration Testing",
+    description: "One-time tests, priced per engagement.",
+    items: [
+      { name: "Web Application", price: "$3,500", note: "OWASP Top 10, APIs, authentication, access control and session management." },
+      { name: "Mobile Application", price: "$6,500", note: "iOS and Android analysis, local storage, API layer and certificate pinning." },
+      { name: "Cloud Infrastructure", price: "$2,500", note: "AWS, Azure and GCP configuration, IAM and network segmentation." },
+      { name: "Network Infrastructure", price: "$2,500", note: "Internal and external testing, firewall and VPN review, Active Directory." },
+    ],
+  },
+  {
+    title: "Monthly Managed Services",
+    description: "Ongoing plans billed every month.",
+    items: [
+      { name: "Essential MSSP", price: "$3,500", unit: "/month", note: "Core security monitoring and incident response." },
+      { name: "Advanced MSSP", price: "$6,500", unit: "/month", note: "Complete security operations and threat management." },
+      { name: "SOC Essentials", price: "$3,000", unit: "/month", note: "24/7 monitoring, incident response, monthly reports and basic threat intelligence." },
+      { name: "SOC Professional", price: "$7,500", unit: "/month", note: "Threat hunting, custom playbooks, a dedicated analyst and biweekly reviews." },
+    ],
+  },
+  {
+    title: "Custom Quote",
+    description: "Scoped to your environment. Contact us for pricing.",
+    items: [
+      { name: "Full SOC 2 Audit Package", price: "Custom", note: "Readiness, evidence collection, GRC platform support and auditor coordination." },
+      { name: "Enterprise MSSP", price: "Custom", note: "Everything in Advanced, plus managed IT and endpoint security." },
+      { name: "SOC Enterprise", price: "Custom", note: "Dedicated SOC team, custom integrations and on-site support." },
+      { name: "Specialized Penetration Testing", price: "Custom", note: "API, red team, retesting, AI-assisted, wireless, social engineering and physical. Typically 3 to 6 weeks." },
+      { name: "Fractional Security Leadership (vCISO)", price: "Custom", note: "Risk management, policies, vendor risk and security awareness." },
+      { name: "Managed IT & IT Support", price: "Custom", note: "Endpoints, identity, patching, onboarding and offboarding." },
+      { name: "AI Governance", price: "Custom", note: "AI tool inventory, acceptable use policies, vendor reviews and risk assessments." },
+      { name: "Security Questionnaires & RFPs", price: "Custom", note: "Included in vCISO and SOC 2 maintenance plans, or scoped separately." },
+    ],
+  },
+];
+
 export default function Pricing() {
   return (
     <PricingLayout
@@ -29,6 +76,36 @@ export default function Pricing() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-slate-950">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Prices at a Glance</h2>
+            <p className="text-lg text-slate-300">
+              All prices are in USD. Starting prices are shown, and final pricing depends on your scope.
+            </p>
+          </div>
+
+          {priceGroups.map((group) => (
+            <div key={group.title} className="mb-14 last:mb-0">
+              <h3 className="text-2xl font-bold text-white mb-1">{group.title}</h3>
+              <p className="text-slate-400 mb-6">{group.description}</p>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {group.items.map((item) => (
+                  <div key={item.name} className="flex flex-col rounded-xl border border-slate-700 bg-slate-900 p-6 transition-colors hover:border-orange-400/50">
+                    <h4 className="font-semibold text-white mb-3">{item.name}</h4>
+                    <p className="text-3xl font-bold text-orange-400">
+                      {item.price}
+                      {item.unit && <span className="ml-1 text-base font-medium text-slate-400">{item.unit}</span>}
+                    </p>
+                    <p className="mt-3 text-sm text-slate-400">{item.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
