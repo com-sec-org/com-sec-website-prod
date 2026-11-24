@@ -319,7 +319,7 @@ export default function Team() {
                         <img
                           src={member.image}
                           alt={member.name}
-                          className={`absolute max-w-none h-auto transform group-hover:scale-110 transition-transform duration-500 ${
+                          className={`absolute max-w-none h-auto ${
                             member.name === "Bojan Trifunovic"
                               ? "left-[-44.3%] top-0 w-[181.8%]"
                               : member.name === "Cavour"
