@@ -162,7 +162,7 @@ export default function Team() {
       role: "Information Security Manager",
       image: "/images/team/bojan-trifunovic.webp",
       description:
-        "Bojan is the Information Security Manager at Com-Sec, overseeing the information security program and the policies, controls, and reviews that protect client and company data. He coordinates security assessments and keeps compliance efforts moving from readiness through audit.",
+        "Bojan is the Information Security Manager at Com-Sec, overseeing the information security program and the policies, controls, and reviews that protect client and company data. He guides HITRUST and ISO 27001 readiness work, coordinating the readiness process from gap assessment through audit so each client can move forward with confidence.",
       expertise: [
         "Operations Management",
         "Strategic Planning",
