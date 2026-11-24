@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function Team() {
   const [expandedMember, setExpandedMember] = React.useState<string | null>(null);
+  const [expandedBio, setExpandedBio] = React.useState<string | null>(null);
 
   const teamMembers = [
     {
@@ -38,11 +39,11 @@ export default function Team() {
       ],
     },
     {
-      name: "Cavour",
+      name: "Cavour Lafleur",
       role: "Security Analyst",
       image: "/images/team/cavour.webp",
       description:
-        "Cavour is a Security Analyst at Com-Sec who works directly with clients on SOC 2 and ISO 27001 requirements. He also supports Wazuh deployments, helping teams turn security monitoring and alerting into the evidence auditors ask for.",
+        "Cavour Lafleur is a Security Analyst at Com-Sec who works directly with clients on SOC 2 and ISO 27001 requirements. He also supports Wazuh deployments, helping teams turn security monitoring and alerting into the evidence auditors ask for.",
       expertise: [
         "SOC 2",
         "ISO 27001",
@@ -68,11 +69,37 @@ export default function Team() {
       ],
     },
     {
-      name: "KJ",
+      name: "Dennis Calpatura",
+      role: "Internal Audit Specialist",
+      image: "/images/team/dennis.webp",
+      description:
+        "Dennis Calpatura is an internal audit expert at Com-Sec who brings certified internal audit experience to client engagements. He evaluates internal controls, tests compliance, and helps organizations strengthen their audit readiness.",
+      expertise: [
+        "Internal Audit",
+        "Internal Controls",
+        "Compliance Testing",
+        "Audit Readiness",
+      ],
+    },
+    {
+      name: "Shamanth Hedge",
+      role: "Security Analyst",
+      image: "/images/team/shamanth-hedge.webp",
+      description:
+        "Shamanth is a Security Analyst at Com-Sec who works across multiple compliance frameworks to get clients audit ready. He maps their controls, closes gaps, and gathers the evidence auditors need so certification moves forward smoothly.",
+      expertise: [
+        "Multi-Framework Compliance",
+        "Audit Readiness",
+        "Control Mapping",
+        "Evidence Collection",
+      ],
+    },
+    {
+      name: "Karanjeet Toor",
       role: "Security Analyst",
       image: "/images/team/kj.webp",
       description:
-        "KJ is a Security Analyst at Com-Sec who is building hands-on experience across client compliance work. He collects audit evidence, tracks remediation items to closure, and assists senior analysts during client reviews.",
+        "Karanjeet Toor is a Security Analyst at Com-Sec who is building hands-on experience across client compliance work. He collects audit evidence, tracks remediation items to closure, and assists senior analysts during client reviews.",
       expertise: [
         "Evidence Collection",
         "Remediation Tracking",
@@ -145,10 +172,10 @@ export default function Team() {
     },
     {
       name: "Bojan Trifunovic",
-      role: "Chief of Staff",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F75ec1e6ecbdd448d8bf98c7c050990f3?format=webp&width=800&height=1200",
+      role: "Information Security Director",
+      image: "/images/team/bojan-trifunovic.webp",
       description:
-        "Bojan is the Chief of Staff at Com-Sec, overseeing organizational operations and strategic initiatives. He ensures seamless coordination across teams and drives operational excellence. Bojan's leadership and organizational expertise help streamline processes and support Com-Sec's mission to deliver exceptional security and compliance solutions.",
+        "Bojan is the Information Security Director at Com-Sec, overseeing information security operations, client engagements, and service delivery. He leads internal teams and coordinates security and compliance initiatives across the company's client portfolio, guiding organizations through SOC 2, HITRUST, and ISO certification processes while providing strategic security leadership through Com-Sec's vCISO services. Representing Com-Sec's leadership team, he drives operational priorities, team performance, client relationships, and continuous service improvement.",
       expertise: [
         "Operations Management",
         "Strategic Planning",
@@ -318,12 +345,20 @@ export default function Team() {
                         <img
                           src={member.image}
                           alt={member.name}
-                          className={`w-full h-full transform group-hover:scale-110 transition-transform duration-500 ${
-                            member.name === "Banu Priya"
-                              ? "object-cover object-top"
-                              : member.name === "Samuel Soto"
-                                ? "object-cover object-top"
-                                : "object-cover object-center"
+                          className={`absolute max-w-none h-auto ${
+                            member.name === "Bojan Trifunovic"
+                              ? "left-[-44.3%] top-0 w-[181.8%]"
+                              : member.name === "Shamanth Hedge"
+                                ? "left-[-21.4%] -top-[19.6%] w-[142.9%]"
+                                : member.name === "Parag Khankari"
+                                  ? "left-[-102.9%] -top-[85.3%] w-[301.2%]"
+                                  : member.name === "Dennis Calpatura"
+                                    ? "left-[-40.9%] -top-[29.5%] w-[173.9%]"
+                                    : member.name === "Manoj Kumar"
+                                      ? "left-[-29%] -top-[20%] w-[150%]"
+                                    : member.name === "Cavour Lafleur"
+                                      ? "left-[-12.5%] -top-[15.6%] w-[125%]"
+                                    : "left-[-12.5%] top-0 w-[125%]"
                           }`}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
@@ -344,9 +379,18 @@ export default function Team() {
                   </CardHeader>
 
                   <CardContent className="pt-0">
-                    <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    <p
+                      className={`text-sm text-muted-foreground leading-relaxed min-h-[7.125rem] ${expandedBio === member.name ? "" : "line-clamp-5"}`}
+                    >
                       {member.description}
                     </p>
+                    <button
+                      type="button"
+                      onClick={() => setExpandedBio(expandedBio === member.name ? null : member.name)}
+                      className="mb-4 text-xs font-medium text-accent hover:underline"
+                    >
+                      {expandedBio === member.name ? "Show less" : "Read more"}
+                    </button>
 
                     {/* Expertise Tags */}
                     <div className="flex flex-wrap gap-2 justify-center">
