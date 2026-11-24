@@ -339,8 +339,10 @@ export default function Team() {
                                 ? "left-[-21.4%] -top-[19.6%] w-[142.9%]"
                                 : member.name === "Parag Khankari"
                                   ? "left-[-102.9%] -top-[85.3%] w-[301.2%]"
-                                  : member.name === "Cavour Lafleur"
-                                    ? "left-[-12.5%] -top-[10%] w-[125%]"
+                                  : member.name === "Manoj Kumar"
+                                    ? "left-[-29%] -top-[20%] w-[150%]"
+                                    : member.name === "Cavour Lafleur"
+                                      ? "left-[-12.5%] -top-[10%] w-[125%]"
                                     : "left-[-12.5%] top-0 w-[125%]"
                           }`}
                         />
