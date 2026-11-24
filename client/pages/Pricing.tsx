@@ -121,20 +121,33 @@ export default function Pricing() {
           </div>
 
           {priceGroups.map((group) => (
-            <div key={group.title} className="mb-14 last:mb-0">
-              <h3 className="text-2xl font-bold text-white mb-1">{group.title}</h3>
-              <p className="text-slate-400 mb-6">{group.description}</p>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {group.items.map((item) => (
-                  <div key={item.name} className="flex flex-col rounded-xl border border-slate-700 bg-slate-900 p-6 transition-colors hover:border-orange-400/50">
-                    <h4 className="font-semibold text-white mb-3">{item.name}</h4>
-                    <p className="flex items-baseline gap-1.5">
-                      <span className="text-3xl font-bold text-orange-400">{item.price}</span>
-                      <span className="text-sm font-medium text-slate-400">{item.billing}</span>
-                    </p>
-                    <p className="mt-3 text-sm text-slate-400">{item.note}</p>
-                  </div>
-                ))}
+            <div key={group.title} className="mb-12 last:mb-0">
+              <div className="mb-4">
+                <h3 className="text-2xl font-bold text-white">{group.title}</h3>
+                <p className="text-slate-400">{group.description}</p>
+              </div>
+              <div className="overflow-x-auto rounded-xl border border-slate-700">
+                <table className="w-full min-w-[640px] text-left text-sm">
+                  <thead className="bg-slate-800 text-slate-300">
+                    <tr>
+                      <th className="px-6 py-3 font-semibold">Service</th>
+                      <th className="px-6 py-3 font-semibold">Price</th>
+                      <th className="px-6 py-3 font-semibold">Details</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-700 bg-slate-900">
+                    {group.items.map((item) => (
+                      <tr key={item.name} className="align-top hover:bg-slate-800/60">
+                        <td className="px-6 py-4 font-semibold text-white">{item.name}</td>
+                        <td className="whitespace-nowrap px-6 py-4">
+                          <span className="text-lg font-bold text-orange-400">{item.price}</span>
+                          <span className="ml-1.5 text-slate-400">{item.billing}</span>
+                        </td>
+                        <td className="px-6 py-4 text-slate-400">{item.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           ))}
