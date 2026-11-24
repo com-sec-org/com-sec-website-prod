@@ -103,6 +103,7 @@ export function Navigation() {
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [isAboutMenuOpen, setIsAboutMenuOpen] = useState(false);
   const [mobileServiceGroup, setMobileServiceGroup] = useState<string | null>(null);
+  const [isMobileAboutOpen, setIsMobileAboutOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -113,6 +114,7 @@ export function Navigation() {
       setExpandedSection(null);
       setIsAboutMenuOpen(false);
       setMobileServiceGroup(null);
+      setIsMobileAboutOpen(false);
     }
   }, [isMenuOpen]);
 
@@ -415,11 +417,11 @@ export function Navigation() {
                   <div className="px-4 pb-3 bg-gray-50">
                     <div className="flex flex-col space-y-1">
                       <div>
-                        <button type="button" className="w-full px-3 py-2 text-left flex items-center justify-between text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setExpandedSection(expandedSection === "resources-about" ? "resources" : "resources-about")}>
+                        <button type="button" className="w-full px-3 py-2 text-left flex items-center justify-between text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}>
                           About Us
-                          <ChevronDown className={`h-4 w-4 transition-transform ${expandedSection === "resources-about" ? "rotate-180" : "-rotate-90"}`} />
+                          <ChevronDown className={`h-4 w-4 transition-transform ${isMobileAboutOpen ? "rotate-180" : "-rotate-90"}`} />
                         </button>
-                        {expandedSection === "resources-about" && <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
+                        {isMobileAboutOpen && <div className="ml-3 flex flex-col space-y-1 border-l border-gray-200 pl-2">
                           <Link to="/company" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Company</Link>
                           <Link to="/team" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Team</Link>
                           <Link to="/careers" className="block px-3 py-2 text-sm text-gray-700 hover:text-accent hover:bg-white rounded transition-colors" onClick={() => setIsMenuOpen(false)}>Careers</Link>
@@ -436,34 +438,23 @@ export function Navigation() {
 
               {/* Pricing Section */}
               <div className="border-b border-gray-100">
-                <Link
-                  to="/pricing"
-                  className="block px-4 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
+                <button
+                  className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  onClick={() => setExpandedSection(expandedSection === "pricing" ? null : "pricing")}
                 >
-                  Pricing
-                </Link>
-                <Link
-                  to="/pricing/one-time"
-                  className="block px-8 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  One-Time Engagements
-                </Link>
-                <Link
-                  to="/pricing/ongoing"
-                  className="block px-8 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Ongoing Support
-                </Link>
-                <Link
-                  to="/pricing/calculator"
-                  className="block px-8 py-2 pb-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Shield GRC Package Calculator
-                </Link>
+                  <span className="text-sm font-medium text-gray-900">Pricing</span>
+                  <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === "pricing" ? "rotate-180" : ""}`} />
+                </button>
+                {expandedSection === "pricing" && (
+                  <div className="px-4 pb-3 bg-gray-50">
+                    <div className="flex flex-col space-y-1">
+                      <Link to="/pricing" className="block rounded px-3 py-2 text-sm font-medium text-gray-900 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Overview</Link>
+                      <Link to="/pricing/one-time" className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>One-Time Engagements</Link>
+                      <Link to="/pricing/ongoing" className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Ongoing Support</Link>
+                      <Link to="/pricing/calculator" className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Shield GRC Package Calculator</Link>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Case Studies Section */}
