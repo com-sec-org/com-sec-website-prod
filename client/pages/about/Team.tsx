@@ -82,11 +82,11 @@ export default function Team() {
       ],
     },
     {
-      name: "KJ",
+      name: "Karanjeet Toor",
       role: "Security Analyst",
       image: "/images/team/kj.webp",
       description:
-        "KJ is a Security Analyst at Com-Sec who is building hands-on experience across client compliance work. He collects audit evidence, tracks remediation items to closure, and assists senior analysts during client reviews.",
+        "Karanjeet Toor is a Security Analyst at Com-Sec who is building hands-on experience across client compliance work. He collects audit evidence, tracks remediation items to closure, and assists senior analysts during client reviews.",
       expertise: [
         "Evidence Collection",
         "Remediation Tracking",
