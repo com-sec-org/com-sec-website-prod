@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { PricingSection } from "@/components/PricingSection";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -1378,8 +1377,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      <PricingSection />
 
       {/* Vendor Partners Section */}
       <section className="py-16 sm:py-20 bg-gradient-to-br from-primary via-primary/95 to-blue-900 text-white">
