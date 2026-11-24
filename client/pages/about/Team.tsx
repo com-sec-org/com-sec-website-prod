@@ -39,11 +39,11 @@ export default function Team() {
       ],
     },
     {
-      name: "Cavour",
+      name: "Cavour Lafleur",
       role: "Security Analyst",
       image: "/images/team/cavour.webp",
       description:
-        "Cavour is a Security Analyst at Com-Sec who works directly with clients on SOC 2 and ISO 27001 requirements. He also supports Wazuh deployments, helping teams turn security monitoring and alerting into the evidence auditors ask for.",
+        "Cavour Lafleur is a Security Analyst at Com-Sec who works directly with clients on SOC 2 and ISO 27001 requirements. He also supports Wazuh deployments, helping teams turn security monitoring and alerting into the evidence auditors ask for.",
       expertise: [
         "SOC 2",
         "ISO 27001",
@@ -339,7 +339,7 @@ export default function Team() {
                                 ? "left-[-21.4%] -top-[19.6%] w-[142.9%]"
                                 : member.name === "Parag Khankari"
                                   ? "left-[-102.9%] -top-[85.3%] w-[301.2%]"
-                                  : member.name === "Cavour"
+                                  : member.name === "Cavour Lafleur"
                                     ? "left-[-12.5%] -top-[10%] w-[125%]"
                                     : "left-[-12.5%] top-0 w-[125%]"
                           }`}
