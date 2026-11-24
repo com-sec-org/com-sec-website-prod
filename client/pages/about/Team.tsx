@@ -69,6 +69,19 @@ export default function Team() {
       ],
     },
     {
+      name: "Dennis",
+      role: "Internal Audit Specialist",
+      image: "/images/team/dennis.webp",
+      description:
+        "Dennis is an internal audit expert at Com-Sec who brings certified internal audit experience to client engagements. He evaluates internal controls, tests compliance, and helps organizations strengthen their audit readiness.",
+      expertise: [
+        "Internal Audit",
+        "Internal Controls",
+        "Compliance Testing",
+        "Audit Readiness",
+      ],
+    },
+    {
       name: "Shamanth Hedge",
       role: "Security Analyst",
       image: "/images/team/shamanth-hedge.webp",
@@ -339,8 +352,10 @@ export default function Team() {
                                 ? "left-[-21.4%] -top-[19.6%] w-[142.9%]"
                                 : member.name === "Parag Khankari"
                                   ? "left-[-102.9%] -top-[85.3%] w-[301.2%]"
-                                  : member.name === "Manoj Kumar"
-                                    ? "left-[-29%] -top-[20%] w-[150%]"
+                                  : member.name === "Dennis"
+                                    ? "left-[-10%] -top-[2%] w-[120%]"
+                                    : member.name === "Manoj Kumar"
+                                      ? "left-[-29%] -top-[20%] w-[150%]"
                                     : member.name === "Cavour Lafleur"
                                       ? "left-[-12.5%] -top-[10%] w-[125%]"
                                     : "left-[-12.5%] top-0 w-[125%]"
