@@ -69,11 +69,11 @@ export default function Team() {
       ],
     },
     {
-      name: "Dennis",
+      name: "Dennis Calpatura",
       role: "Internal Audit Specialist",
       image: "/images/team/dennis.webp",
       description:
-        "Dennis is an internal audit expert at Com-Sec who brings certified internal audit experience to client engagements. He evaluates internal controls, tests compliance, and helps organizations strengthen their audit readiness.",
+        "Dennis Calpatura is an internal audit expert at Com-Sec who brings certified internal audit experience to client engagements. He evaluates internal controls, tests compliance, and helps organizations strengthen their audit readiness.",
       expertise: [
         "Internal Audit",
         "Internal Controls",
@@ -352,7 +352,7 @@ export default function Team() {
                                 ? "left-[-21.4%] -top-[19.6%] w-[142.9%]"
                                 : member.name === "Parag Khankari"
                                   ? "left-[-102.9%] -top-[85.3%] w-[301.2%]"
-                                  : member.name === "Dennis"
+                                  : member.name === "Dennis Calpatura"
                                     ? "left-[-10%] -top-[2%] w-[120%]"
                                     : member.name === "Manoj Kumar"
                                       ? "left-[-29%] -top-[20%] w-[150%]"
