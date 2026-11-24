@@ -337,9 +337,11 @@ export default function Team() {
                               ? "left-[-44.3%] top-0 w-[181.8%]"
                               : member.name === "Shamanth Hedge"
                                 ? "left-[-21.4%] -top-[19.6%] w-[142.9%]"
-                                : member.name === "Cavour"
-                                  ? "left-[-12.5%] -top-[10%] w-[125%]"
-                                  : "left-[-12.5%] top-0 w-[125%]"
+                                : member.name === "Parag Khankari"
+                                  ? "left-[-102.9%] -top-[85.3%] w-[301.2%]"
+                                  : member.name === "Cavour"
+                                    ? "left-[-12.5%] -top-[10%] w-[125%]"
+                                    : "left-[-12.5%] top-0 w-[125%]"
                           }`}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
