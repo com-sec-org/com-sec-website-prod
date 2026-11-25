@@ -172,7 +172,7 @@ export default function Team() {
     },
     {
       name: "Bojan Trifunovic",
-      role: "Information Security Director",
+      role: "Director of Information Security",
       image: "/images/team/bojan-trifunovic.webp",
       description:
         "Bojan is the Information Security Director at Com-Sec, overseeing information security operations, client engagements, and service delivery. He leads internal teams and coordinates security and compliance initiatives across the company's client portfolio, guiding organizations through SOC 2, HITRUST, and ISO certification processes while providing strategic security leadership through Com-Sec's vCISO services. Representing Com-Sec's leadership team, he drives operational priorities, team performance, client relationships, and continuous service improvement.",
