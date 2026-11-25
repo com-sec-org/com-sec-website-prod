@@ -150,7 +150,7 @@ export default function Team() {
       role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag Khankari is a Security & Compliance Manager who oversees client compliance programs from readiness through audit. He coordinates risk assessments, control reviews, and evidence collection across SOC 2, HITRUST, ISO 27001, and HIPAA, and keeps each organization's security program on track between audit cycles. He is helping an MSP build the Shield GRC platform, bringing a working understanding of development alongside a deep grasp of each compliance framework.",
+        "Parag Khankari is a Security & Compliance Manager at Com-Sec, where he leads end-to-end security and compliance programs, helping organizations achieve and maintain compliance across SOC 2, ISO 27001, ISO 42001, HITRUST, and HIPAA. He specializes in audit readiness, risk management, security assessments, control implementation, and continuous compliance monitoring. He works closely with clients, engineering teams, and external auditors to strengthen security programs and ensure successful audit outcomes. He also plays a key role in the development of Com-Sec Shield, a GRC platform designed to simplify and automate security and compliance operations. By combining his technical knowledge with hands-on compliance experience, he helps translate complex regulatory requirements into practical, scalable solutions.",
       expertise: [
         "Threat Analysis",
         "Vulnerability Assessment",
