@@ -204,7 +204,6 @@ export default function Team() {
         "Fernando Pineda is a Senior Software Engineer at Com-Sec who builds the Shield GRC platform and supports the security of the company's field platform. He also helps clients with their backend systems, bringing hands-on experience in secure software development.",
       expertise: [
         "Secure Software Development",
-        "Field Platform Security",
         "Backend Support",
         "Client Engineering",
       ],
@@ -411,7 +410,7 @@ export default function Team() {
                         ? member.expertise.map((skill, idx) => (
                             <span
                               key={idx}
-                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium cursor-default transition-all duration-300 hover:bg-primary hover:text-white hover:scale-110 hover:shadow-md"
                             >
                               {skill}
                             </span>
@@ -419,7 +418,7 @@ export default function Team() {
                         : member.expertise.slice(0, 2).map((skill, idx) => (
                             <span
                               key={idx}
-                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium cursor-default transition-all duration-300 hover:bg-primary hover:text-white hover:scale-110 hover:shadow-md"
                             >
                               {skill}
                             </span>
