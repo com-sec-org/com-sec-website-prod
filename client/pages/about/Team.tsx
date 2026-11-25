@@ -236,6 +236,21 @@ export default function Team() {
     },
   ];
 
+  const teamOrder = [
+    "Farbod Fakhrai",
+    "Bojan Trifunovic",
+    "Win Raguini",
+    "Manoj Kumar",
+    "Banu Priya",
+    "Parag Khankari",
+    "Fernando Pineda",
+    "Dennis Calpatura",
+    "Cavour Lafleur",
+    "Raj",
+    "Shamanth Hedge",
+    "Karanjeet Toor",
+  ];
+
   return (
     <>
   <Helmet>
@@ -335,7 +350,7 @@ export default function Team() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {[...teamMembers].filter((member) => !['Fernando Garcia', 'Ryan Chen', 'Safaras Patel'].includes(member.name)).sort((a, b) => a.name.localeCompare(b.name)).map((member, index) => (
+            {[...teamMembers].filter((member) => !['Fernando Garcia', 'Ryan Chen', 'Safaras Patel'].includes(member.name)).sort((a, b) => teamOrder.indexOf(a.name) - teamOrder.indexOf(b.name)).map((member, index) => (
               <Card
                 key={index}
                 className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:ring-2 hover:ring-accent/60 animate-scale-in animation-delay-${(index + 1) * 100} opacity-0 bg-white border-0 shadow-lg overflow-hidden`}
