@@ -197,6 +197,19 @@ export default function Team() {
       ],
     },
     {
+      name: "Fernando Pineda",
+      role: "Junior Software Security Engineer",
+      image: "/images/team/placeholder.webp",
+      description:
+        "Fernando Pineda is a Junior Software Security Engineer at Com-Sec who supports the security of the company's field platform. He also helps clients with their backend systems, building hands-on experience in secure software development as he grows in the role.",
+      expertise: [
+        "Secure Software Development",
+        "Field Platform Security",
+        "Backend Support",
+        "Client Engineering",
+      ],
+    },
+    {
       name: "Ryan Chen",
       role: "Director of Partnerships",
       image: "/images/team/ryan.jpg",
