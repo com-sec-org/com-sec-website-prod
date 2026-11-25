@@ -198,10 +198,10 @@ export default function Team() {
     },
     {
       name: "Fernando Pineda",
-      role: "Junior Software Security Engineer",
-      image: "/images/team/placeholder.webp",
+      role: "Senior Software Engineer",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F3d78bb7bfc9449c687f2a3354acd43ab?format=webp&width=800&height=1200",
       description:
-        "Fernando Pineda is a Junior Software Security Engineer at Com-Sec who supports the security of the company's field platform. He also helps clients with their backend systems, building hands-on experience in secure software development as he grows in the role.",
+        "Fernando Pineda is a Senior Software Engineer at Com-Sec who supports the security of the company's field platform. He also helps clients with their backend systems, bringing hands-on experience in secure software development.",
       expertise: [
         "Secure Software Development",
         "Field Platform Security",
