@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Shield, Menu, X, ChevronDown } from "lucide-react";
+import {
+  availableProducts,
+  productPath,
+} from "@/pages/products/shieldProducts";
 
 // Services menu. An item without `to` has no page yet and renders grayed out
 // (not clickable) until its page is built and the route is added here.
@@ -178,12 +182,29 @@ export function Navigation() {
               </div>
             </div>
 
-            <Link
-              to="/products"
-              className={`text-foreground hover:text-accent transition-colors ${location.pathname.startsWith("/products") ? "text-accent" : ""}`}
-            >
-              Products
-            </Link>
+            {/* Products Dropdown */}
+            <div className="relative group">
+              <Link
+                to="/products"
+                className={`flex items-center text-foreground hover:text-accent transition-colors ${location.pathname.startsWith("/products") ? "text-accent" : ""}`}
+              >
+                Products
+                <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" />
+              </Link>
+              <div className="absolute top-full left-0 mt-2 w-60 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-2">
+                  {availableProducts.map((p) => (
+                    <Link
+                      key={p.slug}
+                      to={productPath(p.slug)}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
+                    >
+                      {p.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
 
             {/* Resources Dropdown */}
             <div className="relative group">
