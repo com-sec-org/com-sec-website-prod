@@ -211,11 +211,11 @@ export default function Team() {
     {
       name: "Roshani",
       role: "Security Analyst",
-      image: "/images/team/placeholder.webp",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff7a0758f766c4fc1a70b60c1b5e07eec?format=webp&width=800&height=1200",
       description:
         "Roshani is a Security Analyst at Com-Sec who helps clients achieve certification and prepares them for audit readiness across multiple compliance frameworks. She guides each client through their readiness process so certification moves forward smoothly.",
       expertise: [
-        "Certification Support",
+        "Readiness",
         "Audit Readiness",
         "Multi-Framework Compliance",
       ],
