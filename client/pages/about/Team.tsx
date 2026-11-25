@@ -28,7 +28,7 @@ export default function Team() {
     {
       name: "Win Raguini",
       role: "Director of Engineering",
-      image: "/images/team/Win.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F80c57969d2a747a2b1306568fda75b58?format=webp&width=800&height=1200",
       description:
         "Win provides engineering support to help clients address security issues in their environments, code, and infrastructure. With experience ranging from iOS development to OAuth implementation, he ensures our clients have the necessary technical resources. Win excels at translating complex security requirements into practical engineering solutions.",
       expertise: [
@@ -150,7 +150,7 @@ export default function Team() {
       role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag Khankari is a Security & Compliance Manager who oversees client compliance programs from readiness through audit. He coordinates risk assessments, control reviews, and evidence collection across SOC 2, HITRUST, ISO 27001, and HIPAA, and keeps each organization's security program on track between audit cycles.",
+        "Parag Khankari is a Security & Compliance Manager at Com-Sec, where he leads end-to-end security and compliance programs, helping organizations achieve and maintain compliance across SOC 2, ISO 27001, ISO 42001, HITRUST, and HIPAA. He specializes in audit readiness, risk management, security assessments, control implementation, and continuous compliance monitoring. He works closely with clients, engineering teams, and external auditors to strengthen security programs and ensure successful audit outcomes. He also plays a key role in the development of Com-Sec Shield, a GRC platform designed to simplify and automate security and compliance operations. By combining his technical knowledge with hands-on compliance experience, he helps translate complex regulatory requirements into practical, scalable solutions.",
       expertise: [
         "Threat Analysis",
         "Vulnerability Assessment",
@@ -197,6 +197,30 @@ export default function Team() {
       ],
     },
     {
+      name: "Fernando Pineda",
+      role: "Senior Software Engineer",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F3d78bb7bfc9449c687f2a3354acd43ab?format=webp&width=800&height=1200",
+      description:
+        "Fernando Pineda is a Senior Software Engineer at Com-Sec who builds the Shield GRC platform and supports the security of the company's field platform. He also helps clients with their backend systems, bringing hands-on experience in secure software development.",
+      expertise: [
+        "Secure Software Development",
+        "Backend Support",
+        "Client Engineering",
+      ],
+    },
+    {
+      name: "Roshani",
+      role: "Security Analyst",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2Ff7a0758f766c4fc1a70b60c1b5e07eec?format=webp&width=800&height=1200",
+      description:
+        "Roshani is a Security Analyst at Com-Sec who helps clients achieve certification and prepares them for audit readiness across multiple compliance frameworks. She guides each client through their readiness process so certification moves forward smoothly.",
+      expertise: [
+        "Readiness",
+        "Audit Readiness",
+        "Multi-Framework Compliance",
+      ],
+    },
+    {
       name: "Ryan Chen",
       role: "Director of Partnerships",
       image: "/images/team/ryan.jpg",
@@ -222,6 +246,22 @@ export default function Team() {
         "Exploitation Techniques",
       ],
     },
+  ];
+
+  const teamOrder = [
+    "Farbod Fakhrai",
+    "Bojan Trifunovic",
+    "Win Raguini",
+    "Manoj Kumar",
+    "Banu Priya",
+    "Parag Khankari",
+    "Fernando Pineda",
+    "Dennis Calpatura",
+    "Cavour Lafleur",
+    "Raj",
+    "Shamanth Hedge",
+    "Karanjeet Toor",
+    "Roshani",
   ];
 
   return (
@@ -323,10 +363,10 @@ export default function Team() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {[...teamMembers].filter((member) => !['Fernando Garcia', 'Ryan Chen', 'Safaras Patel'].includes(member.name)).sort((a, b) => a.name.localeCompare(b.name)).map((member, index) => (
+            {[...teamMembers].filter((member) => !['Fernando Garcia', 'Ryan Chen', 'Safaras Patel'].includes(member.name)).sort((a, b) => teamOrder.indexOf(a.name) - teamOrder.indexOf(b.name)).map((member, index) => (
               <Card
                 key={index}
-                className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-scale-in animation-delay-${(index + 1) * 100} opacity-0 bg-white border-0 shadow-lg overflow-hidden`}
+                className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:ring-2 hover:ring-accent/60 animate-scale-in animation-delay-${(index + 1) * 100} opacity-0 bg-white border-0 shadow-lg overflow-hidden`}
               >
                 <div className="relative">
                   {/* Member Image */}
@@ -345,7 +385,7 @@ export default function Team() {
                         <img
                           src={member.image}
                           alt={member.name}
-                          className={`absolute max-w-none h-auto ${
+                          className={`absolute max-w-none h-auto transition-transform duration-500 group-hover:scale-110 ${
                             member.name === "Bojan Trifunovic"
                               ? "left-[-44.3%] top-0 w-[181.8%]"
                               : member.name === "Shamanth Hedge"
@@ -398,7 +438,7 @@ export default function Team() {
                         ? member.expertise.map((skill, idx) => (
                             <span
                               key={idx}
-                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium cursor-default transition-all duration-300 hover:bg-primary hover:text-white hover:scale-110 hover:shadow-md"
                             >
                               {skill}
                             </span>
@@ -406,7 +446,7 @@ export default function Team() {
                         : member.expertise.slice(0, 2).map((skill, idx) => (
                             <span
                               key={idx}
-                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                              className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium cursor-default transition-all duration-300 hover:bg-primary hover:text-white hover:scale-110 hover:shadow-md"
                             >
                               {skill}
                             </span>
