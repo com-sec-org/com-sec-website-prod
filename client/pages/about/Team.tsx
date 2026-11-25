@@ -338,7 +338,7 @@ export default function Team() {
             {[...teamMembers].filter((member) => !['Fernando Garcia', 'Ryan Chen', 'Safaras Patel'].includes(member.name)).sort((a, b) => a.name.localeCompare(b.name)).map((member, index) => (
               <Card
                 key={index}
-                className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-scale-in animation-delay-${(index + 1) * 100} opacity-0 bg-white border-0 shadow-lg overflow-hidden`}
+                className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:ring-2 hover:ring-accent/60 animate-scale-in animation-delay-${(index + 1) * 100} opacity-0 bg-white border-0 shadow-lg overflow-hidden`}
               >
                 <div className="relative">
                   {/* Member Image */}
@@ -357,7 +357,7 @@ export default function Team() {
                         <img
                           src={member.image}
                           alt={member.name}
-                          className={`absolute max-w-none h-auto ${
+                          className={`absolute max-w-none h-auto transition-transform duration-500 group-hover:scale-110 ${
                             member.name === "Bojan Trifunovic"
                               ? "left-[-44.3%] top-0 w-[181.8%]"
                               : member.name === "Shamanth Hedge"
