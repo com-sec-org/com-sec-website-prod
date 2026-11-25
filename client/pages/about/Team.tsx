@@ -28,7 +28,7 @@ export default function Team() {
     {
       name: "Win Raguini",
       role: "Director of Engineering",
-      image: "/images/team/Win.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F0ba8b9be18d047ca8e1a6f29e75eea99%2F80c57969d2a747a2b1306568fda75b58?format=webp&width=800&height=1200",
       description:
         "Win provides engineering support to help clients address security issues in their environments, code, and infrastructure. With experience ranging from iOS development to OAuth implementation, he ensures our clients have the necessary technical resources. Win excels at translating complex security requirements into practical engineering solutions.",
       expertise: [
