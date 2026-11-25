@@ -176,6 +176,7 @@ import BusinessEmailCompromise from "./pages/resources/blog/BusinessEmailComprom
 import SecurityPageSoc2 from "./pages/resources/blog/SecurityPageSoc2";
 import BinanceHack from "./pages/resources/blog/BinanceHack";
 import FireworksAiBreach from "./pages/resources/blog/FireworksAiBreach";
+import ThirdPartyScriptHack from "./pages/resources/blog/ThirdPartyScriptHack";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -507,6 +508,7 @@ const App = () => (
               <Route path="/blog/your-security-page-doesnt-close-deals-a-soc-2-report-does" element={<SecurityPageSoc2 />} />
               <Route path="/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft" element={<BinanceHack />} />
               <Route path="/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack" element={<FireworksAiBreach />} />
+              <Route path="/blog/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies" element={<ThirdPartyScriptHack />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/contact" element={<Contact />} />
