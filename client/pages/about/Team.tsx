@@ -209,6 +209,18 @@ export default function Team() {
       ],
     },
     {
+      name: "Roshani",
+      role: "Security Analyst",
+      image: "/images/team/placeholder.webp",
+      description:
+        "Roshani is a Security Analyst at Com-Sec who helps clients achieve certification and prepares them for audit readiness across multiple compliance frameworks. She guides each client through their readiness process so certification moves forward smoothly.",
+      expertise: [
+        "Certification Support",
+        "Audit Readiness",
+        "Multi-Framework Compliance",
+      ],
+    },
+    {
       name: "Ryan Chen",
       role: "Director of Partnerships",
       image: "/images/team/ryan.jpg",
@@ -249,6 +261,7 @@ export default function Team() {
     "Raj",
     "Shamanth Hedge",
     "Karanjeet Toor",
+    "Roshani",
   ];
 
   return (
