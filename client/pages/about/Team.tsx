@@ -150,7 +150,7 @@ export default function Team() {
       role: "Security & Compliance Manager",
       image: "/images/team/Parag.jpg",
       description:
-        "Parag Khankari is a Security & Compliance Manager who oversees client compliance programs from readiness through audit. He coordinates risk assessments, control reviews, and evidence collection across SOC 2, HITRUST, ISO 27001, and HIPAA, and keeps each organization's security program on track between audit cycles.",
+        "Parag Khankari is a Security & Compliance Manager who oversees client compliance programs from readiness through audit. He coordinates risk assessments, control reviews, and evidence collection across SOC 2, HITRUST, ISO 27001, and HIPAA, and keeps each organization's security program on track between audit cycles. He is helping an MSP build the Shield GRC platform, bringing a working understanding of development alongside a deep grasp of each compliance framework.",
       expertise: [
         "Threat Analysis",
         "Vulnerability Assessment",
