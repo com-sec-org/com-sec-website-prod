@@ -484,6 +484,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-11-23T00:00:00Z",
   },
+  "/blog/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies": {
+    title: "The Code You Didn't Write: How a Third-Party Script Hack Hit 178 Companies",
+    description:
+      "A flaw at a single script provider let attackers skim card details from at least 178 organizations. Here's how to find and lock down the third-party code on your own website.",
+    image: `${BASE_URL}/images/blog-images/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies.png`,
+    url: `${BASE_URL}/blog/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-11-25T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────

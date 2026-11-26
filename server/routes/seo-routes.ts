@@ -1025,4 +1025,11 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
     canonical: `${BASE_URL}/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack`,
     image: `${BASE_URL}/images/blog-images/one-breach-three-victims-the-fireworks-ai-supply-chain-attack.png`,
   },
+  "/blog/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies": {
+    title: "The Code You Didn't Write: How a Third-Party Script Hack Hit 178 Companies",
+    description:
+      "Attackers hit 178 organizations through a third-party script flaw in Optimizely. Here's how to inventory, lock down, and monitor the scripts on your website.",
+    canonical: `${BASE_URL}/blog/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies`,
+    image: `${BASE_URL}/images/blog-images/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies.png`,
+  },
 };
