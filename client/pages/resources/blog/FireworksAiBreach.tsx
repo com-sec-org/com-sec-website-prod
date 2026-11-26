@@ -18,7 +18,7 @@ export default function FireworksAiBreach() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "One Breach, Three Victims: The Fireworks AI Supply Chain Attack",
+      title: "Three Victims: The AI Supply Chain Attacks",
       text: "A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.",
       url: window.location.href,
     };
@@ -66,7 +66,7 @@ export default function FireworksAiBreach() {
   return (
     <>
       <Helmet>
-        <title>One Breach, Three Victims: The Fireworks AI Supply Chain Attack</title>
+        <title>Three Victims: The AI Supply Chain Attacks</title>
 
         <meta
           name="description"
@@ -80,7 +80,7 @@ export default function FireworksAiBreach() {
 
         <meta
           property="og:title"
-          content="One Breach, Three Victims: The Fireworks AI Supply Chain Attack"
+          content="Three Victims: The AI Supply Chain Attacks"
         />
 
         <meta
@@ -108,7 +108,7 @@ export default function FireworksAiBreach() {
 
         <meta
           name="twitter:title"
-          content="One Breach, Three Victims: The Fireworks AI Supply Chain Attack"
+          content="Three Victims: The AI Supply Chain Attacks"
         />
 
         <meta
@@ -144,7 +144,7 @@ export default function FireworksAiBreach() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-balance">
-              One Breach, Three Victims: The Fireworks AI Supply Chain Attack
+              Three Victims: The AI Supply Chain Attacks
             </h1>
 
             <p className="text-xl text-sky-100 mb-8 leading-relaxed">
@@ -188,7 +188,7 @@ export default function FireworksAiBreach() {
             <div className="mb-12 flex justify-center">
               <img
                 src="/images/blog-images/one-breach-three-victims-the-fireworks-ai-supply-chain-attack.png"
-                alt="One Breach, Three Victims: The Fireworks AI Supply Chain Attack"
+                alt="Three Victims: The AI Supply Chain Attacks"
                 className="rounded-xl shadow-md max-w-xl w-full h-auto"
               />
             </div>

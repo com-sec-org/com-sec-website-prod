@@ -3,7 +3,7 @@
 export const allArticles = [
               {
                 id: "one-breach-three-victims-the-fireworks-ai-supply-chain-attack",
-                title: "One Breach, Three Victims: The Fireworks AI Supply Chain Attack",
+                title: "Three Victims: The AI Supply Chain Attacks",
                 excerpt: "A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.",
                 date: "November 23 2026",
                 readTime: "5 min read",
@@ -12,7 +12,7 @@ export const allArticles = [
                 categoryColor: "bg-sky-100 text-sky-800",
                 featured: false,
                 image: "/images/blog-images/one-breach-three-victims-the-fireworks-ai-supply-chain-attack.png",
-                imageAlt: "One Breach, Three Victims: The Fireworks AI Supply Chain Attack",
+                imageAlt: "Three Victims: The AI Supply Chain Attacks",
                 link: "/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack",
               },
               {
