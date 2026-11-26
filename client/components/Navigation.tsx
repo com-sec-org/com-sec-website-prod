@@ -264,6 +264,8 @@ export function Navigation() {
                   >
                     Ongoing Support
                   </Link>
+                  {/* TEMP: Shield GRC pricing item disabled. Re-enable when ready. */}
+                  {/*
                   <div className="relative group/grc">
                     <Link
                       to="/pricing/calculator"
@@ -283,6 +285,7 @@ export function Navigation() {
                       </div>
                     </div>
                   </div>
+                  */}
                 </div>
               </div>
             </div>
@@ -476,7 +479,7 @@ export function Navigation() {
                       <Link to="/pricing" className="block rounded px-3 py-2 text-sm font-medium text-gray-900 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Overview</Link>
                       <Link to="/pricing/one-time" className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>One-Time Engagements</Link>
                       <Link to="/pricing/ongoing" className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Ongoing Support</Link>
-                      <Link to="/pricing/calculator" className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Shield GRC Package Calculator</Link>
+                      {/* <Link to="/pricing/calculator" className="block rounded px-3 py-2 text-sm text-gray-700 hover:bg-white hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Shield GRC Package Calculator</Link> */}
                     </div>
                   </div>
                 )}
