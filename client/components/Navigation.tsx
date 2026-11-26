@@ -182,7 +182,8 @@ export function Navigation() {
               </div>
             </div>
 
-            {/* Products Dropdown */}
+            {/* TEMP: Products dropdown disabled. Re-enable when the Products page is ready. */}
+            {/*
             <div className="relative group">
               <Link
                 to="/products"
@@ -205,6 +206,7 @@ export function Navigation() {
                 </div>
               </div>
             </div>
+            */}
 
             {/* Resources Dropdown */}
             <div className="relative group">
@@ -418,12 +420,14 @@ export function Navigation() {
                 )}
               </div>
 
-              {/* Products Section */}
+              {/* TEMP: Mobile Products link disabled. Re-enable with the desktop dropdown. */}
+              {/*
               <div className="border-b border-gray-100">
                 <Link to="/products" className="block px-4 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors" onClick={() => setIsMenuOpen(false)}>
                   Products
                 </Link>
               </div>
+              */}
 
               {/* Resources Section */}
               <div className="border-b border-gray-100">
