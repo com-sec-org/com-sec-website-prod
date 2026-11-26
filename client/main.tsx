@@ -175,6 +175,7 @@ import ZeroTrustForStartups from "./pages/resources/blog/ZeroTrustForStartups";
 import BusinessEmailCompromise from "./pages/resources/blog/BusinessEmailCompromise";
 import SecurityPageSoc2 from "./pages/resources/blog/SecurityPageSoc2";
 import BinanceHack from "./pages/resources/blog/BinanceHack";
+import FireworksAiBreach from "./pages/resources/blog/FireworksAiBreach";
 const queryClient = new QueryClient();
 
 interface Props {
@@ -505,6 +506,7 @@ const App = () => (
               <Route path="/blog/business-email-compromise-the-3-billion-problem-no-one-talks-about-enough" element={<BusinessEmailCompromise />} />
               <Route path="/blog/your-security-page-doesnt-close-deals-a-soc-2-report-does" element={<SecurityPageSoc2 />} />
               <Route path="/blog/the-binance-hack-what-businesses-can-learn-from-a-6-billion-theft" element={<BinanceHack />} />
+              <Route path="/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack" element={<FireworksAiBreach />} />
 
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/contact" element={<Contact />} />

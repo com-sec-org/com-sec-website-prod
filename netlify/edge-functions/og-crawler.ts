@@ -475,6 +475,15 @@ const OG_ROUTES: Record<string, OgData> = {
     author: "Farbod Fakhrai",
     publishedTime: "2026-11-13T00:00:00Z",
   },
+  "/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack": {
+    title: "Three Victims: The AI Supply Chain Attacks",
+    description:
+      "A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.",
+    image: `${BASE_URL}/images/blog-images/one-breach-three-victims-the-fireworks-ai-supply-chain-attack.png`,
+    url: `${BASE_URL}/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack`,
+    author: "Farbod Fakhrai",
+    publishedTime: "2026-11-23T00:00:00Z",
+  },
 };
 
 // ─── HTML builders ────────────────────────────────────────────────────────────

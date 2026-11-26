@@ -341,6 +341,10 @@
     <loc>https://com-sec.io/blog/your-security-page-doesnt-close-deals-a-soc-2-report-does</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://com-sec.io/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack</loc>
+    <priority>0.7</priority>
+  </url>
     <url>
     <loc>https://com-sec.io/blog/healthcare-breaches-hit-281-in-the-first-half-of-2026</loc>
     <priority>0.7</priority>

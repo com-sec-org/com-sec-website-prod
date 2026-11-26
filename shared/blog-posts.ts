@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "one-breach-three-victims-the-fireworks-ai-supply-chain-attack",
+                title: "Three Victims: The AI Supply Chain Attacks",
+                excerpt: "A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.",
+                date: "November 23 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "Threat Landscape",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/one-breach-three-victims-the-fireworks-ai-supply-chain-attack.png",
+                imageAlt: "Three Victims: The AI Supply Chain Attacks",
+                link: "/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack",
+              },
+              {
                 id: "your-security-page-doesnt-close-deals-a-soc-2-report-does",
                 title: "Your Security Page Doesn't Close Deals. A SOC 2 Report Does.",
                 excerpt: "A security page tells prospects you take security seriously. It doesn't answer the first question their security team asks. Here's how that gap stretches sales cycles.",
