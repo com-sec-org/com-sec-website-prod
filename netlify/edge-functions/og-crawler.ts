@@ -478,7 +478,7 @@ const OG_ROUTES: Record<string, OgData> = {
   "/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack": {
     title: "One Breach, Three Victims: The Fireworks AI Supply Chain Attack",
     description:
-      "An attacker broke into an AI inference platform, and within weeks three companies were hit in three different ways. Here's what startups building on AI should take from it.",
+      "A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.",
     image: `${BASE_URL}/images/blog-images/one-breach-three-victims-the-fireworks-ai-supply-chain-attack.png`,
     url: `${BASE_URL}/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack`,
     author: "Farbod Fakhrai",

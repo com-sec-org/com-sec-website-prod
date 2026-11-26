@@ -19,7 +19,7 @@ export default function FireworksAiBreach() {
   const handleShare = async () => {
     const shareData = {
       title: "One Breach, Three Victims: The Fireworks AI Supply Chain Attack",
-      text: "An attacker broke into an AI inference platform, and within weeks three companies were hit in three different ways. Here's what startups building on AI should take from it.",
+      text: "A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.",
       url: window.location.href,
     };
 
@@ -70,7 +70,7 @@ export default function FireworksAiBreach() {
 
         <meta
           name="description"
-          content="One breach at AI inference provider Fireworks AI hit Notion, Cursor, and Railway in three different ways. Here's how to manage your AI supply chain risk."
+          content="A breach at AI inference provider Fireworks AI hit Notion and Cursor, while Railway fell to a separate attack in the same wave. Here's how to manage AI supply chain risk."
         />
 
         <link
@@ -85,7 +85,7 @@ export default function FireworksAiBreach() {
 
         <meta
           property="og:description"
-          content="An attacker broke into an AI inference platform, and within weeks three companies were hit in three different ways. Here's what startups building on AI should take from it."
+          content="A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it."
         />
 
         <meta
@@ -113,7 +113,7 @@ export default function FireworksAiBreach() {
 
         <meta
           name="twitter:description"
-          content="An attacker broke into an AI inference platform, and within weeks three companies were hit in three different ways. Here's what startups building on AI should take from it."
+          content="A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it."
         />
 
         <meta
@@ -148,7 +148,7 @@ export default function FireworksAiBreach() {
             </h1>
 
             <p className="text-xl text-sky-100 mb-8 leading-relaxed">
-              An attacker broke into an AI inference platform, and within weeks three companies were hit in three different ways. Here's what startups building on AI should take from it.
+              A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.
             </p>
 
             <div className="flex flex-wrap items-center gap-6 text-sky-200">
@@ -199,7 +199,7 @@ export default function FireworksAiBreach() {
               <section className="mb-10">
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    In fall 2026, Fireworks AI, an inference platform that runs AI models for other companies, disclosed two separate security incidents. Within weeks, the damage had spread to three separate organizations, each hit in a completely different way.
+                    In fall 2026, Fireworks AI, an inference platform that runs AI models for other companies, disclosed two separate security incidents. Within weeks, two of its customers, Notion and Cursor, were hit downstream, and a third company, Railway, fell to a separate attack in the same wave. Each was hit in a completely different way.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
@@ -266,7 +266,7 @@ export default function FireworksAiBreach() {
 
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Cursor, the AI-powered code editor, was hit differently. A stolen access key that Fireworks had issued to Cursor was exposed in the breach. An attacker used that key to publish a trojanized Claude Code extension on Cursor's marketplace. The fake extension tried to install a persistent SSH backdoor on developers' machines.
+                    Cursor, the AI-powered code editor, was hit differently. An access key that Cursor had issued to Fireworks was exposed in the breach. The attacker used it to reach Cursor's data, then used a separate credential found in that data to push a trojanized version of Anthropic's Claude Code extension into the cache that serves Cursor's marketplace. For about 11 hours, the tampered extension tried to install a persistent SSH backdoor on developers' machines.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
@@ -283,11 +283,11 @@ export default function FireworksAiBreach() {
 
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Railway, a cloud platform used by developers, suffered yet another type of damage. While Railway's breach had its own separate entry point (attackers exploited a vulnerability in Railway's build infrastructure on October 20), the broader pattern is the same: AI provider credentials were the target.
+                    Railway, a cloud platform used by developers, was hit in a separate attack during the same wave. Attackers exploited a vulnerability in Railway's own build infrastructure on October 20, but the goal was the same: AI provider credentials.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Attackers decrypted environment variables from roughly 100,000 workspaces and racked up approximately $740,000 in fraudulent AI usage charges. Customers found their keys being used to answer coding questions and run training tasks they never started. Railway is covering the charges itself.
+                    Attackers may have decrypted environment variables from up to 100,000 workspaces, and Railway estimates the stolen keys ran up about $740,000 in fraudulent AI usage charges. Customers found their keys being used to answer coding questions and run training tasks they never started. Railway is working with AI providers on refunds and covering the losses itself where they won't.
                   </p>
                 </div>
               </section>

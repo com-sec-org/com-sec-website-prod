@@ -1021,7 +1021,7 @@ export const SEO_ROUTES: Record<string, PageSEO> = {
   "/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack": {
     title: "One Breach, Three Victims: The Fireworks AI Supply Chain Attack",
     description:
-      "One breach at AI inference provider Fireworks AI hit Notion, Cursor, and Railway in three different ways. Here's how to manage your AI supply chain risk.",
+      "A breach at AI inference provider Fireworks AI hit Notion and Cursor, while Railway fell to a separate attack in the same wave. Here's how to manage AI supply chain risk.",
     canonical: `${BASE_URL}/blog/one-breach-three-victims-the-fireworks-ai-supply-chain-attack`,
     image: `${BASE_URL}/images/blog-images/one-breach-three-victims-the-fireworks-ai-supply-chain-attack.png`,
   },

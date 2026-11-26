@@ -4,7 +4,7 @@ export const allArticles = [
               {
                 id: "one-breach-three-victims-the-fireworks-ai-supply-chain-attack",
                 title: "One Breach, Three Victims: The Fireworks AI Supply Chain Attack",
-                excerpt: "An attacker broke into an AI inference platform, and within weeks three companies were hit in three different ways. Here's what startups building on AI should take from it.",
+                excerpt: "A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.",
                 date: "November 23 2026",
                 readTime: "5 min read",
                 author: "Farbod Fakhrai",
