@@ -2,6 +2,20 @@
 // Publishing: add the article here and its live route in client/main.tsx, then deploy.
 export const allArticles = [
               {
+                id: "the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies",
+                title: "The Code You Didn't Write: How a Third-Party Script Hack Hit 178 Companies",
+                excerpt: "A flaw at a single script provider let attackers skim card details from at least 178 organizations. Here's how to find and lock down the third-party code on your own website.",
+                date: "November 25 2026",
+                readTime: "5 min read",
+                author: "Farbod Fakhrai",
+                category: "Threat Landscape",
+                categoryColor: "bg-sky-100 text-sky-800",
+                featured: false,
+                image: "/images/blog-images/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies.png",
+                imageAlt: "The Code You Didn't Write: How a Third-Party Script Hack Hit 178 Companies",
+                link: "/blog/the-code-you-didnt-write-how-a-third-party-script-hack-hit-178-companies",
+              },
+              {
                 id: "one-breach-three-victims-the-fireworks-ai-supply-chain-attack",
                 title: "Three Victims: The AI Supply Chain Attacks",
                 excerpt: "A breach at one AI inference provider hit Notion and Cursor downstream, while Railway fell to a separate attack in the same wave. Here's what startups building on AI should take from it.",
