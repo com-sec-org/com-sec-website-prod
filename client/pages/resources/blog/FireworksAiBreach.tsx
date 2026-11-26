@@ -199,7 +199,7 @@ export default function FireworksAiBreach() {
               <section className="mb-10">
                 <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    In October 2026, an attacker broke into Fireworks AI, an inference platform that runs AI models for other companies. Within weeks, the damage had spread to three separate organizations, each hit in a completely different way.
+                    In fall 2026, Fireworks AI, an inference platform that runs AI models for other companies, disclosed two separate security incidents. Within weeks, the damage had spread to three separate organizations, each hit in a completely different way.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
@@ -220,19 +220,19 @@ export default function FireworksAiBreach() {
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    The attack happened in two stages.
+                    Fireworks has described two separate incidents.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    On October 6, Fireworks identified unauthorized activity in their systems. An attacker used internal credentials to access environment variables in evaluation jobs for a limited number of customer accounts. API keys and tokens were captured.
+                    On October 6, Fireworks identified unauthorized use of its internal credentials. In an incident that began in early August, an unauthorized party used them to access environment variables in evaluation jobs for a limited number of customer accounts. Fireworks believes API keys and tokens stored there were captured.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Then on October 23, a third-party cloud provider hosting Fireworks' development machines had its own security incident. The attacker used that access to reach Fireworks' dev environment and ran unauthorized workloads that exposed additional customer data, including resource metadata, billing information, and incomplete model weights and datasets.
+                    The second incident started on October 23, when a third-party cloud provider hosting Fireworks' development machines had its own security incident. An attacker used that access to reach Fireworks' development environment, exposing resource metadata, billing information and, for certain customers, incomplete model weights and datasets.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Two breaches. Two different entry points. Both leading back to the same attacker.
+                    Two incidents. Two different entry points. One vendor whose customers paid the price.
                   </p>
                 </div>
               </section>
